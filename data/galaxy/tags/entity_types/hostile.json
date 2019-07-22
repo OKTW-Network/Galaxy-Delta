@@ -1,0 +1,32 @@
+{
+  "values": [
+    "creeper",
+    "spider",
+    "cave_spider",
+    "zombie",
+    "zombie_villager",
+	"zombie_pigman",
+    "husk",
+	"drowned",
+    "skeleton",
+	"wither_skeleton",
+    "stray",
+    "enderman",
+    "phantom",
+    "silverfish",
+    "witch",
+    "slime",
+    "evoker",
+    "vindicator",
+    "pillager",
+    "ravager",
+    "endermite",
+    "shulker",
+    "guardian",
+    "elder_guardian",
+    "blaze",
+    "magma_cube",
+    "ghast",
+    "vex"
+  ]
+}

@@ -1,0 +1,1 @@
+function galaxy:weapon/katana/cooldown/stun

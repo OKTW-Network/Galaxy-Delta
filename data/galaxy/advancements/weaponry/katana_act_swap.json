@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{CustomModelData:10101,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.weaponry.katana_act_swap.title"},
+        "description": {"translate":"advancements.weaponry.katana_act_swap.description"},
+		"frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/katana_actions",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

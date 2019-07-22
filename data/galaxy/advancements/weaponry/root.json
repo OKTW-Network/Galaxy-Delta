@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{CustomModelData:10200,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.weaponry.root.title"},
+        "description": {"translate":"advancements.weaponry.root.description"},
+		"background": "minecraft:textures/block/green_concrete_powder.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:carrot_on_a_stick",
+						"nbt": "{katana:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

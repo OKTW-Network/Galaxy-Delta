@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{CustomModelData:10102,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.weaponry.katana_act_stun.title"},
+        "description": {"translate":"advancements.weaponry.katana_act_stun.description"},
+		"frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/katana_act_swap",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
