@@ -1,5 +1,6 @@
 
 function galaxy:meta/scoreboard/register
+function galaxy:meta/scoreboard/first_time_player_score
 function galaxy:config
 
 function galaxy:hud/initial
