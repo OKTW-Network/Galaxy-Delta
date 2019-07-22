@@ -11,6 +11,7 @@ Choose a language for reading.
 
 Galaxy: delta 是一個想法基於[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)的 Minecraft 資料包專案，內容計畫包含[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)中的所有武器、工具、機器和其功能。
 
+需要另外安裝[資源包](https://github.com/bill96012/Galaxy-delta-resourcepack)。
 
 
 ### 已實作
