@@ -18,6 +18,7 @@ scoreboard players set #katana_act_stun Config 1
 # boolean, default: 1
 scoreboard players set #katana_act_flash Config 1
 
+
 # Should action:swap play sounds?
 # boolean, default: 1
 scoreboard players set #katana_act_swap_sound Config 1
@@ -25,6 +26,7 @@ scoreboard players set #katana_act_swap_sound Config 1
 # Should action:stun play sounds?
 # boolean, default: 1
 scoreboard players set #katana_act_stun_sound Config 1
+
 
 # How long is the cooldown of action:swap-pull?
 # integer, tick, default: 10
@@ -43,8 +45,19 @@ scoreboard players set #katana_act_stun_hit_cd Config 70
 scoreboard players set #katana_act_stun_miss_cd Config 20
 
 # How long is the cooldown of action:flash?
-# integer, tick, default: 20
-scoreboard players set #katana_act_flash_cd Config 20
+# integer, tick, default: 120
+scoreboard players set #katana_act_flash_cd Config 120
+
+
+# How long is the detection timer of action:flash?
+# integer, tick, default: 4
+scoreboard players set #katana_act_flash_timer Config 4
+
+
+# Damage of action:flash.
+# Set to 0 will disable the damage.
+# integer, default: 12
+scoreboard players set #katana_act_flash_damage Config 12
 
 
 ############################################
@@ -59,7 +72,8 @@ scoreboard players set #stu_stun Config 1
 # integer, tick, default: 40
 scoreboard players set #stu_stun_dur Config 40
 
-# Damage of status_effect:stun, 0 to unset.
+# Damage of status_effect:stun.
+# Set to 0 will disable the damage.
 # integer, default: 0
 scoreboard players set #stu_stun_damage Config 0
 
