@@ -72,4 +72,4 @@ scoreboard objectives add cdActFlashTemp1 dummy "num-:Action:Flash cooldown calc
 scoreboard objectives add cdActFlashTemp2 dummy "num-:Action:Flash cooldown calculation temp2"
 
 
-scoreboard objectives add ActFlashTimer dummy "num-Action:Flash timer"
+scoreboard objectives add timActFlash dummy "num-Action:Flash timer"

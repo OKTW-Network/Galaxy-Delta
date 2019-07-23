@@ -1,4 +1,4 @@
-scoreboard players remove @e[scores={ActFlashTimer=1..}] ActFlashTimer 1
+scoreboard players remove @e[scores={timActFlash=1..}] timActFlash 1
 
 scoreboard players set @e[scores={cdActFlash=1..}] isActFlashCd 1
 scoreboard players set @e[scores={cdActFlash=0}] isActFlashCd 0
