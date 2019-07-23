@@ -6,6 +6,10 @@
 
 scoreboard objectives add Config dummy "config"
 
+## general
+
+# A damage calculator temp
+scoreboard objectives add health dummy "num-Health calculator temp"
 
 ## detector
 
