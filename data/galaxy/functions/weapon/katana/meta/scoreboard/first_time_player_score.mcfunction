@@ -31,6 +31,8 @@ scoreboard players remove @a timActFlash 0
 
 scoreboard players remove @a sucActStun 0
 
+scoreboard players remove @a sucActFlash 0
+
 scoreboard players remove @a cdActSwapPull 0
 
 scoreboard players remove @a cdActSwapPut 0
