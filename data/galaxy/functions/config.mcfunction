@@ -14,6 +14,10 @@ scoreboard players set #katana_act_swap Config 1
 # boolean, default: 1
 scoreboard players set #katana_act_stun Config 1
 
+# Enable action:flash?
+# boolean, default: 1
+scoreboard players set #katana_act_flash Config 1
+
 # Should action:swap play sounds?
 # boolean, default: 1
 scoreboard players set #katana_act_swap_sound Config 1
@@ -22,10 +26,13 @@ scoreboard players set #katana_act_swap_sound Config 1
 # boolean, default: 1
 scoreboard players set #katana_act_stun_sound Config 1
 
-# How long is the cooldown of action:swap?
-## WIP
-# integer, tick, default: 0
-scoreboard players set #katana_act_swap_cd Config 0
+# How long is the cooldown of action:swap-pull?
+# integer, tick, default: 10
+scoreboard players set #katana_act_swap_pull_cd Config 10
+
+# How long is the cooldown of action:swap-put?
+# integer, tick, default: 10
+scoreboard players set #katana_act_swap_put_cd Config 10
 
 # How long is the cooldown of action:stun when hit?
 # integer, tick, default: 70
@@ -34,6 +41,10 @@ scoreboard players set #katana_act_stun_hit_cd Config 70
 # How long is the cooldown of action:stun when miss?
 # integer, tick, default: 20
 scoreboard players set #katana_act_stun_miss_cd Config 20
+
+# How long is the cooldown of action:flash?
+# integer, tick, default: 20
+scoreboard players set #katana_act_flash_cd Config 20
 
 
 ############################################
@@ -71,12 +82,19 @@ scoreboard players set #hud Config 1
 scoreboard players set #hud_katana Config 1
 
 # Enable action:swap on HUD:katana?
-# boolean, default: 1
-scoreboard players set #hud_katana_act_swap Config 1
+# Caution: Incompatible with HUD:katana.flash, Enable both will make this one disable!
+# boolean, default: 0
+scoreboard players set #hud_katana_act_swap Config 0
 
 # Enable action:stun on HUD:katana?
 # boolean, default: 1
 scoreboard players set #hud_katana_act_stun Config 1
+
+# Enable action:flash on HUD:katana?
+# Caution: Incompatible with HUD:katana.swap, Enable both will make that one disable!
+# boolean, default: 1
+scoreboard players set #hud_katana_act_flash Config 1
+
 
 
 ############################################

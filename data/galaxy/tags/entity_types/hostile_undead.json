@@ -2,11 +2,11 @@
   "values": [
     "zombie",
     "zombie_villager",
-	"zombie_pigman",
+	  "zombie_pigman",
     "husk",
-	"drowned",
+    "drowned",
     "skeleton",
-	"wither_skeleton",
+	  "wither_skeleton",
     "stray",
     "phantom"
   ]
