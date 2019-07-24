@@ -36,7 +36,7 @@ execute as @a[scores={reqActFlash=1}] if score @s disActFlash matches 3 run kill
 execute as @a[scores={reqActFlash=1}] if score @s disActFlash matches 4 run kill @e[tag=flashPathfinder,tag=distance_5]
 scoreboard players set @a[scores={sucActFlash=1}] sucActFlash 0
 
-execute as @e[tag=flashPathfinder] at @s run tag @e[type=#galaxy:hostile,distance=..1.5] add init-flash-damage
+execute as @e[tag=flashPathfinder] at @s run tag @e[type=#galaxy:hostile,distance=..1.25] add init-flash-damage
 execute as @e[tag=init-flash-damage,type=#galaxy:hostile,type=!#galaxy:hostile_undead] if score #katana_act_flash_damage Config matches 1.. run effect give @s minecraft:instant_damage 1 31 true
 execute as @e[tag=init-flash-damage,type=#galaxy:hostile,type=#galaxy:hostile_undead] if score #katana_act_flash_damage Config matches 1.. run effect give @s minecraft:instant_health 1 31 true
 execute as @e[tag=init-flash-damage] if score #katana_act_flash_damage Config matches 1.. store result score @s health run data get entity @s Health
