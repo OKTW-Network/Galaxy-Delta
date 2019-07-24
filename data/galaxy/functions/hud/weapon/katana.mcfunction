@@ -28,7 +28,8 @@ execute as @a[scores={hudKatana=3,cdActStunTemp1=1..100}] run title @s actionbar
 execute as @a[scores={hudKatana=3,cdActStunTemp1=0}] run title @s actionbar [{"translate":"action.stun","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
 
 execute as @a[scores={hudKatana=4}] store result score @s cdActFlashTemp1 run scoreboard players get @s cdActFlash
-execute as @a[scores={hudKatana=4}] store result score @s cdActFlashTemp2 run scoreboard players get #katana_act_flash_cd Config
+execute as @a[scores={hudKatana=4,disActFlash=1..}] store result score @s cdActFlashTemp2 run scoreboard players get #katana_act_flash_success_cd Config
+execute as @a[scores={hudKatana=4,disActFlash=0}] store result score @s cdActFlashTemp2 run scoreboard players get #katana_act_flash_unsuccessful_cd Config
 execute as @a run scoreboard players operation @s cdActFlashTemp1 *= #static_1000 numeric
 execute as @a run scoreboard players operation @s cdActFlashTemp1 /= @s cdActFlashTemp2
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=951..1000}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"----------","color":"gray"},{"text":"]","color":"dark_gray"}]

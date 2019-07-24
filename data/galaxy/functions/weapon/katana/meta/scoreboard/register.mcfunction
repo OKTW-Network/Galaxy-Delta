@@ -79,4 +79,7 @@ scoreboard objectives add timActFlashTemp1 dummy "num-:Action:Flash timer calcul
 scoreboard objectives add timActFlashTemp2 dummy "num-:Action:Flash timer calculation temp2"
 
 
+scoreboard objectives add disActFlash dummy "num-Action:Flash moved distance"
+
+
 scoreboard objectives add timActFlash dummy "num-Action:Flash timer"

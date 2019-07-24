@@ -45,6 +45,8 @@ scoreboard players remove @a[tag=!InitializedWeaponScore] cdActFlashTemp2 0
 
 scoreboard players remove @a[tag=!InitializedWeaponScore] timActFlash 0
 
+scoreboard players remove @a[tag=!InitializedWeaponScore] disActFlash 0
+
 scoreboard players remove @a[tag=!InitializedWeaponScore] sucActStun 0
 
 scoreboard players remove @a[tag=!InitializedWeaponScore] sucActFlash 0

@@ -46,7 +46,11 @@ scoreboard players set #katana_act_stun_miss_cd Config 20
 
 # How long is the cooldown of action:flash?
 # integer, tick, default: 120
-scoreboard players set #katana_act_flash_cd Config 120
+scoreboard players set #katana_act_flash_success_cd Config 120
+
+# How long is the cooldown of action:flash?
+# integer, tick, default: 60
+scoreboard players set #katana_act_flash_unsuccessful_cd Config 60
 
 
 # How long is the detection timer of action:flash?
