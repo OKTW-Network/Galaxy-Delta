@@ -1,0 +1,1 @@
+advancement grant @s until galaxy:weaponry/katana

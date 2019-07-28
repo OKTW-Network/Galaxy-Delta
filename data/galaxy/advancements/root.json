@@ -2,21 +2,22 @@
     "display": {
         "icon": {
             "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:20100,HideFlags:39}"
+            "nbt": "{CustomModelData:10104,HideFlags:39}"
         },
-        "title": {"translate":"advancements.weaponry.katana_obtain_katana.title"},
-        "description": {"translate":"advancements.weaponry.katana_obtain_katana.description"},
+        "title": {"translate":"advancements.galaxy.root.title"},
+        "description": {"translate":"advancements.galaxy.root.description"},
+		"background": "minecraft:textures/block/dark_oak_planks.png",
         "show_toast": false,
         "announce_to_chat": false
     },
-    "parent": "galaxy:weaponry/katana",
     "criteria": {
-        "katana": {
+        "hi-tech_crafting_table": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-						"nbt": "{katana:1,type:1}"
+                        "item": "minecraft:armor_stand",
+						"nbt": "{HTct:1}"
                     }
                 ]
             }
