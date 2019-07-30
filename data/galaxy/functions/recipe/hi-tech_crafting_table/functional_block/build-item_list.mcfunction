@@ -1,3 +1,3 @@
-scoreboard players set @s guiPageMax 1
+scoreboard players set @s htctListPageMax 1
 
-execute if score @s guiPage matches 1 run replaceitem block ~ ~ ~ container.3 air
+execute if score @s htctListPage matches 1 run replaceitem block ~ ~ ~ container.3 air

@@ -7,6 +7,3 @@ execute if score #katana_act_stun Config matches 1 run scoreboard players add @a
 execute if score #katana_act_flash Config matches 1 run scoreboard players add @a[scores={isRClick=1,timActFlash=1..,reqActFlash=0},nbt={OnGround:1b}] reqActFlash 1
 
 scoreboard players set @a[scores={isRClick=1,RClickCount=..0}] isRClick 0
-
-
-# reqActFlash sender in swap_put
