@@ -1,0 +1,1 @@
+give @s minecraft:armor_stand{display:{Name:"{\"translate\":\"block.galaxy.katana_showcase\",\"italic\":false}"},CustomModelData:20201,placer:1,katanaShowcase:1,type:2,EntityTag:{CustomNameVisible:0b,NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["katana_showcase_placer","type-2"],DisabledSlots:4144959}} 1

@@ -2,16 +2,22 @@
 ### false = 0
 ### true = 1
 
-## general
+# general
 
 scoreboard objectives add Config dummy "config"
 
-## general
-
-# A damage calculator temp
+# damage calculator temp
 scoreboard objectives add health dummy "num-Health calculator temp"
 
-## detector
+# rotation temp1
+scoreboard objectives add rotationTemp1 dummy "num-Rotation temp1"
+
+# rotation temp1
+scoreboard objectives add rotationTemp2 dummy "num-Rotation temp2"
+
+
+
+# detector
 
 # True when player's main-hand is empty.
 scoreboard objectives add isMainHandClear dummy "boolean-MainHand clear"
