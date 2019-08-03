@@ -27,14 +27,14 @@ execute as @e[tag=katana_showcase,tag=function_display] run tag @s remove functi
 execute as @e[tag=katana_showcase] unless data entity @s HandItems[0].Count if data entity @s HandItems[1].Count run replaceitem entity @s weapon.offhand air
 
 ## item convert
-replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,katana:1,type:1}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.katana.name\",\"color\":\"white\",\"italic\":false}"},HideFlags:39,Unbreakable:1b,CustomModelData:10200,katana:1,dur:128,dmg:0,type:1}
-replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,katana:1,type:2}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.nazo.name\",\"color\":\"white\",\"italic\":false}"},HideFlags:39,Unbreakable:1b,CustomModelData:20200,katana:1,dur:128,dmg:0,type:2}
+replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,katana:1,type:1}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.katana\",\"italic\":false}"},HideFlags:39,Unbreakable:1b,CustomModelData:10200,katana:1,dur:128,dmg:0,type:1}
+replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,katana:1,type:2}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.nazo\",\"italic\":false,\"color\":\"yellow\"}"},HideFlags:39,Unbreakable:1b,CustomModelData:20200,katana:1,dur:128,dmg:0,type:2}
 
-replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,scabbard:1,type:1}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.scabbard.name\",\"color\":\"white\",\"italic\":false}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:10202,scabbard:1,type:1,dur:128,dmg:0}
-replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,scabbard:1,type:2}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.scabbard.name\",\"color\":\"white\",\"italic\":false}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:20202,scabbard:1,type:2,dur:128,dmg:0}
+replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,scabbard:1,type:1}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.scabbard\",\"italic\":false}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:10202,scabbard:1,type:1,dur:128,dmg:0}
+replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,scabbard:1,type:2}}}] weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.scabbard\",\"italic\":false,\"color\":\"yellow\"}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:20202,scabbard:1,type:2,dur:128,dmg:0}
 
-replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,edge:1,type:1}}}] weapon.mainhand minecraft:diamond_sword{display:{Name:"{\"translate\":\"item.galaxy.katana.name\",\"color\":\"white\",\"italic\":false}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:10201,edge:1,type:1,dur:128,dmg:0}
-replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,edge:1,type:1}}}] weapon.mainhand minecraft:diamond_sword{display:{Name:"{\"translate\":\"item.galaxy.nazo.name\",\"color\":\"white\",\"italic\":false}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:20201,edge:1,type:2,dur:128,dmg:0}
+replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,edge:1,type:1}}}] weapon.mainhand minecraft:diamond_sword{display:{Name:"{\"translate\":\"item.galaxy.katana\",\"italic\":false}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:10201,edge:1,type:1,dur:128,dmg:0}
+replaceitem entity @e[nbt={SelectedItem:{tag:{katanaDisplay:1,edge:1,type:1}}}] weapon.mainhand minecraft:diamond_sword{display:{Name:"{\"translate\":\"item.galaxy.nazo\",\"italic\":false,\"color\":\"yellow\"}"},HideFlags:63,RepairCost:40,Unbreakable:1b,CustomModelData:20201,edge:1,type:2,dur:128,dmg:0}
 
 
 # throw out non-katana items
