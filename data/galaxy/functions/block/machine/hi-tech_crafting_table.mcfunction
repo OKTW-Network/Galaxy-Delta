@@ -10,6 +10,7 @@ scoreboard players set @e[tag=hi-tech_crafting_table,tag=function_place] htctReq
 execute as @e[tag=hi-tech_crafting_table,tag=function_place,tag=content_data] at @s store result score @s guiMode run data get entity @e[tag=hi-tech_crafting_table_placer,sort=nearest,limit=1] HandItems[0].tag.guiMode
 execute as @e[tag=hi-tech_crafting_table,tag=function_place,tag=content_data] at @s store result score @s htctListPage run data get entity @e[tag=hi-tech_crafting_table_placer,sort=nearest,limit=1] HandItems[0].tag.htctListPage
 execute as @e[tag=hi-tech_crafting_table,tag=function_place,tag=content_data] at @s store result score @s htctCategory run data get entity @e[tag=hi-tech_crafting_table_placer,sort=nearest,limit=1] HandItems[0].tag.htctCategory
+execute as @e[tag=hi-tech_crafting_table,tag=function_place,tag=content_data] at @s store result score @s reqRcpHTct run data get entity @e[tag=hi-tech_crafting_table_placer,sort=nearest,limit=1] HandItems[0].tag.reqRcpHTct
 scoreboard players set @e[tag=hi-tech_crafting_table,tag=function_place] setGui 1
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=function_place] setGuiCover 0
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=function_place] setHTctListPage 0
@@ -39,6 +40,7 @@ execute as @e[tag=hi-tech_crafting_table,tag=function_destroy] at @s run summon 
 execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] at @s store result entity @s Item.tag.EntityTag.HandItems[0].tag.guiMode int 1 run scoreboard players get @e[tag=hi-tech_crafting_table,tag=function_destroy,sort=nearest,limit=1] guiMode
 execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] at @s store result entity @s Item.tag.EntityTag.HandItems[0].tag.htctListPage int 1 run scoreboard players get @e[tag=hi-tech_crafting_table,tag=function_destroy,sort=nearest,limit=1] htctListPage
 execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] at @s store result entity @s Item.tag.EntityTag.HandItems[0].tag.htctCategory int 1 run scoreboard players get @e[tag=hi-tech_crafting_table,tag=function_destroy,sort=nearest,limit=1] htctCategory
+execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] at @s store result entity @s Item.tag.EntityTag.HandItems[0].tag.reqRcpHTct int 1 run scoreboard players get @e[tag=hi-tech_crafting_table,tag=function_destroy,sort=nearest,limit=1] reqRcpHTct
 execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] run tag @s remove function_data_storage
 execute as @e[tag=hi-tech_crafting_table,tag=function_destroy] run kill @s
 
