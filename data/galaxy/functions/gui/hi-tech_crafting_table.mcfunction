@@ -47,6 +47,7 @@ execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:
 execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:1b}]} run scoreboard players remove @s htctCategory 1
 execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:18b}]} run scoreboard players add @s htctCategory 1
 execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:19b}]} run scoreboard players add @s htctCategory 1
+execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:10b}]} run scoreboard players set @s setHTctCategory 1
 
 execute if score @s guiMode matches 0 unless score @s htctCategory = @s htctCategoryTemp run scoreboard players set @s setHTctCategory 1
 
