@@ -1,1 +1,1 @@
-scoreboard players set #global htctCatgMax 4
+scoreboard players set #global htctCatgMax 5
