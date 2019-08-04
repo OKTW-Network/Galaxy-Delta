@@ -44,5 +44,16 @@ execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] at @s s
 execute as @e[tag=hi-tech_crafting_table_item,tag=function_data_storage] run tag @s remove function_data_storage
 execute as @e[tag=hi-tech_crafting_table,tag=function_destroy] run kill @s
 
+# relplace the block when GUI contains non-guiItem
+execute as @e[tag=hi-tech_crafting_table] at @s positioned as @s store result score @s countItems run execute if data block ~ ~ ~ Items[]
+execute as @e[tag=hi-tech_crafting_table] at @s positioned as @s store result score @s countTags run execute if data block ~ ~ ~ Items[].tag.guiItem
+execute as @e[tag=hi-tech_crafting_table] if score @s countItems > @s countTags run tag @s[tag=hi-tech_crafting_table] add function_replace
+execute as @e[tag=hi-tech_crafting_table,tag=function_replace] at @s positioned as @s run function galaxy:gui/delete-gui_item
+execute as @e[tag=hi-tech_crafting_table,tag=function_replace] at @s positioned as @s run setblock ~ ~ ~ minecraft:air destroy
+execute as @e[tag=hi-tech_crafting_table,tag=function_replace] run kill @e[type=minecraft:item,nbt={Item:{tag:{display:{Name:"{\"translate\":\"container.hi_tech_crafting\"}"}}}}]
+execute as @e[tag=hi-tech_crafting_table,tag=function_replace] at @s positioned as @s run setblock ~ ~ ~ minecraft:barrel{CustomName:"{\"translate\":\"container.hi_tech_crafting\"}"} replace
+execute as @e[tag=hi-tech_crafting_table,tag=function_replace] run scoreboard players set @s setGui 1
+execute as @e[tag=hi-tech_crafting_table,tag=function_replace] run tag @s remove function_replace
+
 # gui function
 execute as @e[tag=hi-tech_crafting_table] at @s positioned as @s run function galaxy:gui/hi-tech_crafting_table

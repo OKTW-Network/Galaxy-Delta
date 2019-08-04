@@ -15,21 +15,6 @@ execute if score @s setGui matches 1 run scoreboard players set @s setGui 0
 
 
 
-# relplace the block when GUI contains non-guiItem
-execute store result score @s countItems run execute if data block ~ ~ ~ Items[]
-execute unless data block ~ ~ ~ Items[] run scoreboard players set @s countItems 0
-execute store result score @s countTags run execute if data block ~ ~ ~ Items[].tag.guiItem
-execute unless data block ~ ~ ~ Items[].tag.guiItem run scoreboard players set @s countTags 0
-execute if score @s countItems > @s countTags run tag @s[tag=hi-tech_crafting_table] add function_replace
-execute if entity @s[tag=hi-tech_crafting_table,tag=function_replace] run function galaxy:gui/delete-gui_item
-execute if entity @s[tag=hi-tech_crafting_table,tag=function_replace] run setblock ~ ~ ~ minecraft:air destroy
-kill @e[type=minecraft:item,nbt={Item:{tag:{display:{Name:"{\"translate\":\"container.hi_tech_crafting\"}"}}}}]
-execute as @e[tag=hi-tech_crafting_table,tag=function_replace] at @s run setblock ~ ~ ~ minecraft:barrel{CustomName:"{\"translate\":\"container.hi_tech_crafting\"}"} replace
-scoreboard players set @e[tag=hi-tech_crafting_table,tag=function_replace] setGui 1
-tag @s[tag=hi-tech_crafting_table,tag=function_replace] remove function_replace
-
-
-
 # mode 0 guiCovers
 execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:9b}]} run scoreboard players set @s setGuiCover 1
 execute if score @s guiMode matches 0 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:11b}]} run scoreboard players set @s setGuiCover 1
@@ -58,12 +43,12 @@ execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 run 
 
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 run function galaxy:recipe/hi-tech_crafting_table/delete-item_list
 
-## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 0 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.weapon\",\"italic\":false}"},HideFlags:63,CustomModelData:30104,guiItem:1}
+## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 0 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.tool\",\"italic\":false}"},HideFlags:63,CustomModelData:30104,guiItem:1}
 ## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 0 run replaceitem block ~ ~ ~ container.10 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.all\",\"italic\":false}"},HideFlags:63,CustomModelData:30100,guiItem:1}
 ## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 0 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.material\",\"italic\":false}"},HideFlags:63,CustomModelData:30101,guiItem:1}
 
 ## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 1 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.all\",\"italic\":false}"},HideFlags:63,CustomModelData:30100,guiItem:1}
-execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 1 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.weapon\",\"italic\":false}"},HideFlags:63,CustomModelData:30104,guiItem:1}
+execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 1 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.tool\",\"italic\":false}"},HideFlags:63,CustomModelData:30105,guiItem:1}
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 1 run replaceitem block ~ ~ ~ container.10 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.material\",\"italic\":false}"},HideFlags:63,CustomModelData:30101,guiItem:1}
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 1 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.machine\",\"italic\":false}"},HideFlags:63,CustomModelData:30102,guiItem:1}
 
@@ -77,8 +62,12 @@ execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if s
 
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 4 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.functional_block\",\"italic\":false}"},HideFlags:63,CustomModelData:30103,guiItem:1}
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 4 run replaceitem block ~ ~ ~ container.10 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.weapon\",\"italic\":false}"},HideFlags:63,CustomModelData:30104,guiItem:1}
-execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 4 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.material\",\"italic\":false}"},HideFlags:63,CustomModelData:30101,guiItem:1}
-## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 4 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.all\",\"italic\":false}"},CustomModelData:30100,guiItem:1}
+execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 4 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.tool\",\"italic\":false}"},HideFlags:63,CustomModelData:30105,guiItem:1}
+
+execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 5 run replaceitem block ~ ~ ~ container.1 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.weapon\",\"italic\":false}"},HideFlags:63,CustomModelData:30104,guiItem:1}
+execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 5 run replaceitem block ~ ~ ~ container.10 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.tool\",\"italic\":false}"},HideFlags:63,CustomModelData:30105,guiItem:1}
+execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 5 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.material\",\"italic\":false}"},HideFlags:63,CustomModelData:30101,guiItem:1}
+## execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 if score @s htctCategory matches 5 run replaceitem block ~ ~ ~ container.19 golden_hoe{display:{Name:"{\"translate\":\"gui.htct.all\",\"italic\":false}"},CustomModelData:30100,guiItem:1}
 
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 run scoreboard players set @s htctListPage 1
 execute if score @s guiMode matches 0 if score @s setHTctCategory matches 1 run scoreboard players set @s setHTctListPage 1
@@ -252,11 +241,3 @@ execute if score @s guiMode matches 1 if score @s setHTctRequPage matches 1 run 
 execute if score @s guiMode matches 1 if score @s setHTctRequPage matches 1 run scoreboard players operation @s htctRequPageTemp = @s htctRequPage
 
 execute if score @s setHTctRequPage matches 1 run scoreboard players set @s setHTctRequPage 0
-
-
-
-# make sure the player never get guiItem
-## execute as @a store result score @s countTags run execute if data entity @s Inventory[].tag.guiItem
-## clear @a[scores={countTags=1..}] #galaxy:gui_item{guiItem:1}
-## clear @a #galaxy:gui_item{guiItem:1}
-kill @e[type=minecraft:item,nbt={Item:{tag:{guiItem:1}}}]
