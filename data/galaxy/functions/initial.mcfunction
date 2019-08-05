@@ -7,5 +7,6 @@ function galaxy:gui/initial
 function galaxy:hud/initial
 function galaxy:status_effect/initial
 function galaxy:weapon/initial
+function galaxy:recipe/initial
 
 tellraw @a ["",{"text":"[Galaxy]","color":"yellow"},{"text":" Initialize complete!"}]

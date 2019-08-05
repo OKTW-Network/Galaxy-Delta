@@ -9,12 +9,6 @@ scoreboard objectives add Config dummy "config"
 # damage calculator temp
 scoreboard objectives add health dummy "num-Health calculator temp"
 
-# rotation temp1
-scoreboard objectives add rotationTemp1 dummy "num-Rotation temp1"
-
-# rotation temp1
-scoreboard objectives add rotationTemp2 dummy "num-Rotation temp2"
-
 
 
 # detector

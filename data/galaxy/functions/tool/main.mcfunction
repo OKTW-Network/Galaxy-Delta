@@ -1,0 +1,1 @@
+function galaxy:tool/structure_empower
