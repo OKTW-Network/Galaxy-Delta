@@ -1,0 +1,1 @@
+replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.nazo\",\"italic\":false,\"color\":\"yellow\"}"},HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:20200,katana:1,dur:128,dmg:0,type:2} 1
