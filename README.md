@@ -22,7 +22,7 @@ Galaxy: delta 是一個想法基於[OKTW星系計畫](https://github.com/OKTW-Ne
 
 #### 設定檔
 
-  檔案位置:
+  檔案位置:  
     `datapack/Galaxy-delta/data/galaxy/config`
 
 #### 機器
@@ -32,9 +32,9 @@ Galaxy: delta 是一個想法基於[OKTW星系計畫](https://github.com/OKTW-Ne
   * 獲得方式
     * 結構充能
       * 觸發位置: 工作台
-      * 3 * 3 平面
-        [L][D][R]
-        [I][C][I]
+      * 3 * 3 平面  
+        [L][D][R]  
+        [I][C][I]  
         [R][O][L]
       * L = 青金石磚
       * R = 紅石磚
