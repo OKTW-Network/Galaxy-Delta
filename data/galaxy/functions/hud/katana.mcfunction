@@ -1,8 +1,8 @@
 execute as @a run scoreboard players set @s hudKatana 0
-execute as @a[scores={isHoldKatana=1,isSneak=1}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 1
-execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 2
+execute as @a[scores={isHoldKatana=1,isSneak=1,isMainHandClear=1}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 1
+execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1,isMainHandClear=1}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 2
 execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=0}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_stun Config matches 1 run scoreboard players set @s hudKatana 3
-execute as @a[scores={isHoldKatana=1,isSneak=1},nbt={OnGround:1b}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 4
+execute as @a[scores={isHoldKatana=1,isSneak=1,isMainHandClear=1},nbt={OnGround:1b}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 4
 execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1},nbt={OnGround:1b}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 5
 execute as @a[scores={hudKatana=1..}] run scoreboard players set @s isKatanaHUD 1
 
