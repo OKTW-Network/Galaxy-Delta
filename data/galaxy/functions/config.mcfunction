@@ -1,9 +1,22 @@
 ############################################
+# Machine                                  #
+############################################
+
+# How long does coke furnace take to complete the recipe?
+# integer, tick, default: 400
+scoreboard players set #coke_furnace_dur Config 400
+
+# How long does advanced blast furnace take to complete the recipe?
+# integer, tick, default: 600
+scoreboard players set #advanced_blast_furnace_dur Config 600
+
+
+############################################
 # Weapons                                  #
 ############################################
 
   ########################################
-  # Katanas                              #
+  # Katana                               #
   ########################################
 
 # Enable action:swap?

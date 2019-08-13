@@ -1,5 +1,6 @@
 scoreboard objectives add numeric dummy
 
+scoreboard players set #static_1 numeric 1
 scoreboard players set #static_2 numeric 2
 scoreboard players set #static_4 numeric 4
 scoreboard players set #static_5 numeric 5
