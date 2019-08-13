@@ -33,8 +33,8 @@ scoreboard players remove @e[tag=hi-tech_crafting_table,tag=function_place] reqH
 kill @e[tag=hi-tech_crafting_table_placer]
 execute as @e[tag=hi-tech_crafting_table,tag=function_place] run tag @s remove function_place
 
-# hopper protect
-execute as @e[tag=hi-tech_crafting_table] positioned as @s run function galaxy:block/protection
+# machine protection
+execute as @e[tag=hi-tech_crafting_table] at @s positioned as @s run function galaxy:block/protection
 
 # block destroy
 execute as @e[tag=hi-tech_crafting_table] positioned as @s if block ~ ~ ~ minecraft:air run tag @s add function_destroy
