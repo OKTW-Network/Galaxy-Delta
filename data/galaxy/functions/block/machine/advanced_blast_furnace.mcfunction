@@ -1,7 +1,15 @@
 # block place
 execute as @e[tag=advanced_blast_furnace_placer] at @s run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["advanced_blast_furnace","function_place","initial"]}
 execute as @e[tag=advanced_blast_furnace,tag=function_place] at @s run setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.advanced_blast_furnace"}'} replace
-execute as @e[tag=advanced_blast_furnace,tag=function_place] at @s run summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["advanced_blast_furnace_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10300,fakeBlock:1,advancedBlastFurnace:1}}]}
+execute as @e[tag=advanced_blast_furnace_placer] store result score @s rotation0 run data get entity @s Rotation[0]
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches 45 run scoreboard players set @s rotation0 0
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches -45 run scoreboard players set @s rotation0 0
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches 135 run scoreboard players set @s rotation0 -180
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches -135 run scoreboard players set @s rotation0 -180
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches 0 at @s run summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["advanced_blast_furnace_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10300,fakeBlock:1,advancedBlastFurnace:1}}]}
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches 90 at @s run summon minecraft:armor_stand ~ ~1 ~ {Pose:{Head:[0f,90f,0f]},CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["advanced_blast_furnace_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10300,fakeBlock:1,advancedBlastFurnace:1}}]}
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches -90 at @s run summon minecraft:armor_stand ~ ~1 ~ {Pose:{Head:[0f,-90f,0f]},Rotation:-90,CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["advanced_blast_furnace_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10300,fakeBlock:1,advancedBlastFurnace:1}}]}
+execute as @e[tag=advanced_blast_furnace_placer] if score @s rotation0 matches -180 at @s run summon minecraft:armor_stand ~ ~1 ~ {Pose:{Head:[0f,180f,0f]},Rotation:-180,CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["advanced_blast_furnace_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10300,fakeBlock:1,advancedBlastFurnace:1}}]}
 scoreboard players set @e[tag=advanced_blast_furnace,tag=function_place] guiMode 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=function_place] workStatus 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=function_place] setGuiCover 1
