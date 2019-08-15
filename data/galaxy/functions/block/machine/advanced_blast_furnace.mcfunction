@@ -20,7 +20,10 @@ execute as @e[tag=advanced_blast_furnace] at @s positioned as @s run function ga
 # block destroy
 execute as @e[tag=advanced_blast_furnace] positioned as @s if block ~ ~ ~ minecraft:air run tag @s add function_destroy
 execute as @e[tag=advanced_blast_furnace,tag=function_destroy] at @s run function galaxy:block/machine/summon/advanced_blast_furnace
-execute as @e[tag=advanced_blast_furnace,tag=function_destroy] at @s run kill @e[tag=advanced_blast_furnace_fake_block,sort=nearest,limit=1]
+execute as @e[tag=advanced_blast_furnace,tag=function_destroy] at @s run summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["fake_block_remover"]}
+execute as @e[tag=fake_block_remover] at @s positioned as @s run kill @e[tag=advanced_blast_furnace_fake_block,distance=..0.25,sort=nearest,limit=1]
+execute as @e[tag=fake_block_remover] run kill @s
+execute as @e[tag=advanced_blast_furnace,tag=function_destroy] run kill @e[type=minecraft:item,nbt={Item:{tag:{display:{Name:"{\"translate\":\"container.advanced_blast_furnace\"}"}}}}]
 execute as @e[tag=advanced_blast_furnace,tag=function_destroy] run kill @s
 
 # relplace the block when GUI contains non-guiItem
