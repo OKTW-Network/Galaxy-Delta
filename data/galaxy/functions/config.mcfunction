@@ -124,6 +124,6 @@ scoreboard players set #hud_katana_act_flash Config 1
 
 
 
-############################################
+############# DO NOT MODIFY ################
 
 tellraw @a ["",{"text":"[Galaxy/config]","color":"yellow"},{"text":" Settings loaded!"}]

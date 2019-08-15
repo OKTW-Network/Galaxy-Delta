@@ -9,4 +9,6 @@ function galaxy:status_effect/initial
 function galaxy:weapon/initial
 function galaxy:recipe/initial
 
+function galaxy:version_check
+
 tellraw @a ["",{"text":"[Galaxy]","color":"yellow"},{"text":" Initialize complete!"}]

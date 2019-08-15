@@ -4,6 +4,8 @@
 
 # general
 
+scoreboard objectives add Meta dummy "meta"
+
 scoreboard objectives add Config dummy "config"
 
 # damage calculator temp
