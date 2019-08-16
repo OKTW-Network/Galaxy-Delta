@@ -10,6 +10,7 @@ execute if score @s guiMode matches 0 if block ~ ~ ~ minecraft:barrel{Items:[{Sl
 execute if score @s guiMode matches 0 unless score @s workStatus = @s workStatusTemp run scoreboard players set @s setSmelt 1
 execute if score @s guiMode matches 0 unless score @s workStatus = @s workStatusTemp run scoreboard players set @s setProcess 1
 execute if score @s guiMode matches 0 unless score @s workStatus = @s workStatusTemp run scoreboard players set @s setProgress 1
+execute if score @s guiMode matches 0 unless score @s workStatus = @s workStatusTemp run tag @s add function_change_status
 execute if score @s guiMode matches 0 run scoreboard players operation @s workStatusTemp = @s workStatus
 
 
