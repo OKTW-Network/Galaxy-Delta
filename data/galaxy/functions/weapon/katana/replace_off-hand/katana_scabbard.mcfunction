@@ -1,1 +1,1 @@
-replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.scabbard\",\"italic\":false}"},HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:10202,scabbard:1,dur:128,dmg:0,type:1} 1
+replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.scabbard\",\"italic\":false}"},HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:110202,scabbard:1,dur:128,dmg:0,type:1} 1

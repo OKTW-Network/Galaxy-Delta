@@ -12,8 +12,8 @@ execute as @a[scores={hudKatana=2}] run title @s actionbar [{"translate":"action
 execute as @a[scores={hudKatana=3}] store result score @s cdActStunTemp1 run scoreboard players get @s cdActStun
 execute as @a[scores={hudKatana=3,sucActStun=1..}] store result score @s cdActStunTemp2 run scoreboard players get #katana_act_stun_hit_cd Config
 execute as @a[scores={hudKatana=3,sucActStun=0}] store result score @s cdActStunTemp2 run scoreboard players get #katana_act_stun_miss_cd Config
-execute as @a run scoreboard players operation @s cdActStunTemp1 *= #static_1000 numeric
-execute as @a run scoreboard players operation @s cdActStunTemp1 /= @s cdActStunTemp2
+execute as @a[scores={hudKatana=3}] run scoreboard players operation @s cdActStunTemp1 *= #static_1000 numeric
+execute as @a[scores={hudKatana=3}] run scoreboard players operation @s cdActStunTemp1 /= @s cdActStunTemp2
 execute as @a[scores={hudKatana=3,cdActStunTemp1=951..1000}] run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"----------","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=3,cdActStunTemp1=901..950}] run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"+","color":"yellow"},{"text":"---------","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=3,cdActStunTemp1=801..900}] run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=","color":"green"},{"text":"+","color":"yellow"},{"text":"--------","color":"gray"},{"text":"]","color":"dark_gray"}]
@@ -29,8 +29,8 @@ execute as @a[scores={hudKatana=3,cdActStunTemp1=0}] run title @s actionbar [{"t
 
 execute as @a[scores={hudKatana=4}] store result score @s cdActFlashTemp1 run scoreboard players get @s cdActFlash
 execute as @a[scores={hudKatana=4,disActFlash=1..}] store result score @s cdActFlashTemp2 run scoreboard players get #katana_act_flash_cd_max Config
-execute as @a run scoreboard players operation @s cdActFlashTemp1 *= #static_1000 numeric
-execute as @a run scoreboard players operation @s cdActFlashTemp1 /= @s cdActFlashTemp2
+execute as @a[scores={hudKatana=4,disActFlash=1..}] run scoreboard players operation @s cdActFlashTemp1 *= #static_1000 numeric
+execute as @a[scores={hudKatana=4,disActFlash=1..}] run scoreboard players operation @s cdActFlashTemp1 /= @s cdActFlashTemp2
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=951..1000}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"----------","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=901..950}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"+","color":"yellow"},{"text":"---------","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=801..900}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=","color":"green"},{"text":"+","color":"yellow"},{"text":"--------","color":"gray"},{"text":"]","color":"dark_gray"}]
@@ -46,8 +46,8 @@ execute as @a[scores={hudKatana=4,cdActFlashTemp1=0}] run title @s actionbar [{"
 
 execute as @a[scores={hudKatana=5}] store result score @s timActFlashTemp1 run scoreboard players get @s timActFlash
 execute as @a[scores={hudKatana=5}] store result score @s timActFlashTemp2 run scoreboard players get #katana_act_flash_timer Config
-execute as @a run scoreboard players operation @s timActFlashTemp1 *= #static_1000 numeric
-execute as @a run scoreboard players operation @s timActFlashTemp1 /= @s timActFlashTemp2
+execute as @a[scores={hudKatana=5}] run scoreboard players operation @s timActFlashTemp1 *= #static_1000 numeric
+execute as @a[scores={hudKatana=5}] run scoreboard players operation @s timActFlashTemp1 /= @s timActFlashTemp2
 execute as @a[scores={hudKatana=5,timActFlashTemp1=951..1000}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"red"},{"text":"]","color":"gray"}]
 execute as @a[scores={hudKatana=5,timActFlashTemp1=901..950}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"=========","color":"red"},{"text":"+","color":"yellow"},{"text":"]","color":"gray"}]
 execute as @a[scores={hudKatana=5,timActFlashTemp1=801..900}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"========","color":"red"},{"text":"+","color":"yellow"},{"text":"-","color":"gray"},{"text":"]","color":"gray"}]
