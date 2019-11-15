@@ -1,5 +1,5 @@
 function galaxy:weapon/katana/meta/detector/main
-function galaxy:weapon/katana/meta/scoreboard/set_player_score
+execute if entity @a[tag=!InitializedKatanaScore] run function galaxy:weapon/katana/meta/scoreboard/set_player_score
 
 function galaxy:weapon/katana/action/main
 function galaxy:weapon/katana/cooldown/main

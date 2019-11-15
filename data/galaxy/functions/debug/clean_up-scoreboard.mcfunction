@@ -1,0 +1,4 @@
+scoreboard objectives remove isActSwapPullCd
+scoreboard objectives remove isActSwapPutCd
+scoreboard objectives remove isActStunCd
+scoreboard objectives remove isActFlashCd

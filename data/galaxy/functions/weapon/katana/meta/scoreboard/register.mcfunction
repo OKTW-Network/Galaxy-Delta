@@ -33,19 +33,6 @@ scoreboard objectives add reqActStun dummy "request-Action:Stun"
 scoreboard objectives add reqActFlash dummy "request-Action:Flash"
 
 
-# True when player's swap-pull action is in cooldown.
-scoreboard objectives add isActSwapPullCd dummy "boolean-:Action:Swap-PullOut cooldown"
-
-# True when player's swap-pull action is in cooldown.
-scoreboard objectives add isActSwapPutCd dummy "boolean-:Action:Swap-PutIn cooldown"
-
-# True when player's stun action is in cooldown.
-scoreboard objectives add isActStunCd dummy "boolean-Action:Stun cooldown"
-
-# True when player's flash action is in cooldown.
-scoreboard objectives add isActFlashCd dummy "boolean-:Action:Flash cooldown"
-
-
 # How long the swap-pull action cooldown is.
 scoreboard objectives add cdActSwapPull dummy "num-Action:Swap-PullOut cooldown"
 

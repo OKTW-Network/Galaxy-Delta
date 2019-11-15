@@ -1,5 +1,8 @@
 execute as @a[scores={reqActSwapPut=1}] at @s if score #katana_act_swap_sound Config matches 1 run playsound galaxy:katana.store player @a[distance=..32] ~ ~ ~ 1 1 0.2
 
+execute as @a[scores={reqActSwapPut=1}] run function galaxy:weapon/katana/meta/detector/holding_scabbard_style
+execute as @a[scores={reqActSwapPut=1}] run function galaxy:weapon/katana/meta/detector/holding_edge_style
+
 execute as @a[scores={reqActSwapPut=1,styleScabbard=1,styleEdge=1}] run function galaxy:weapon/katana/replace_off-hand/katana
 execute as @a[scores={reqActSwapPut=1,styleScabbard=2,styleEdge=2}] run function galaxy:weapon/katana/replace_off-hand/nazo
 

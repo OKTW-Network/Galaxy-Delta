@@ -1,2 +1,3 @@
 function galaxy:meta/detector/main
-function galaxy:meta/scoreboard/set_player_score
+
+execute if entity @a[tag=!InitializedGlobalScore] run function galaxy:meta/scoreboard/set_player_score
