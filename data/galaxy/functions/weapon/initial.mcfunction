@@ -2,6 +2,9 @@
 function galaxy:weapon/katana/meta/scoreboard/register
 function galaxy:weapon/katana/meta/scoreboard/set_player_score
 
+function galaxy:weapon/energy-saber/meta/scoreboard/register
+function galaxy:weapon/energy-saber/meta/scoreboard/set_player_score
+
 function galaxy:weapon/pistol/meta/scoreboard/register
 function galaxy:weapon/pistol/meta/scoreboard/set_player_score
 

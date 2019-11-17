@@ -3,8 +3,8 @@
 ############################################
 
 # Allow module init prompt print out
-# boolean, default: 1
-scoreboard players set #galaxy_print_init Config 1
+# boolean, default: 0
+scoreboard players set #galaxy_print_init Config 0
 
 # Allow version prompt print out
 # 0 = don't print anything, 1 = only print on version change, 2 = always print version when /reload
@@ -106,6 +106,28 @@ scoreboard players set #katana_act_flash_timer Config 4
 # integer, default: 12
 scoreboard players set #katana_act_flash_damage Config 12
 
+  ########################################
+  # Energy saber                         #
+  ########################################
+
+# Enable action:turn-on/off
+# boolean, default: 1
+scoreboard players set #energy-saber_act_turn Config 1
+
+
+# Action:turn-on/off play sounds
+# boolean, default: 1
+scoreboard players set #energy-saber_act_turn_sound Config 1
+
+
+# Action:turn-on cooldown
+# integer, tick, default: 10
+scoreboard players set #energy-saber_act_turn_on_cd Config 10
+
+# Action:turn-off cooldown
+# integer, tick, default: 10
+scoreboard players set #energy-saber_act_turn_off_cd Config 10
+
 
 ############################################
 # Status effects                           #
@@ -170,4 +192,4 @@ scoreboard players set #hud_shield_projector Config 1
 
 ############# DO NOT MODIFY ################
 
-tellraw @a ["",{"text":"[Galaxy/Config]","color":"yellow"},{"text":" Settings loaded!"}]
+tellraw @a ["",{"text":"[Galaxy/Config]","color":"yellow"},{"text":" Settings reloaded!"}]

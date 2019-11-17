@@ -1,9 +1,9 @@
 execute as @a run scoreboard players set @s hudKatana 0
-execute as @a[scores={isHoldKatana=1,isSneak=1,isMainHandClear=1}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 1
-execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1,isMainHandClear=1}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 2
-execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=0}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_stun Config matches 1 run scoreboard players set @s hudKatana 3
-execute as @a[scores={isHoldKatana=1,isSneak=1,isMainHandClear=1},nbt={OnGround:1b}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 4
-execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1},nbt={OnGround:1b}] if score #hud Config matches 1 if score #hud_katana Config matches 1 if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 5
+execute as @a[scores={isHoldKatana=1,isSneak=1,isMainHandClear=1}] if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 1
+execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1,isMainHandClear=1}] if score #hud_katana_act_swap Config matches 1 if score #hud_katana_act_flash Config matches 0 run scoreboard players set @s hudKatana 2
+execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=0}] if score #hud_katana_act_stun Config matches 1 run scoreboard players set @s hudKatana 3
+execute as @a[scores={isHoldKatana=1,isSneak=1,isMainHandClear=1},nbt={OnGround:1b}] if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 4
+execute as @a[scores={isHoldScabbard=1,isHoldEdge=1,isSneak=1},nbt={OnGround:1b}] if score #hud_katana_act_flash Config matches 1 run scoreboard players set @s hudKatana 5
 execute as @a[scores={hudKatana=1..}] run scoreboard players set @s isKatanaHUD 1
 
 execute as @a[scores={hudKatana=1}] run title @s actionbar [{"translate":"action.swap.draw","color":"aqua"},{"text":" [","color":"gray"},{"keybind":"key.sneak","color":"green"},{"text":" + ","color":"yellow"},{"keybind":"key.use","color":"green"},{"text":"]","color":"gray"}]
@@ -25,7 +25,7 @@ execute as @a[scores={hudKatana=3,cdActStunTemp1=301..400}] run title @s actionb
 execute as @a[scores={hudKatana=3,cdActStunTemp1=201..300}] run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=======","color":"green"},{"text":"+","color":"yellow"},{"text":"--","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=3,cdActStunTemp1=101..200}] run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"========","color":"green"},{"text":"+","color":"yellow"},{"text":"-","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=3,cdActStunTemp1=1..100}] run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=========","color":"green"},{"text":"+","color":"yellow"},{"text":"]","color":"dark_gray"}]
-execute as @a[scores={hudKatana=3,cdActStunTemp1=0}] run title @s actionbar [{"translate":"action.stun","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
+execute as @a[scores={hudKatana=3,cdActStunTemp1=..0}] run title @s actionbar [{"translate":"action.stun","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
 
 execute as @a[scores={hudKatana=4}] store result score @s cdActFlashTemp1 run scoreboard players get @s cdActFlash
 execute as @a[scores={hudKatana=4,disActFlash=1..}] store result score @s cdActFlashTemp2 run scoreboard players get #katana_act_flash_cd_max Config
@@ -42,7 +42,7 @@ execute as @a[scores={hudKatana=4,cdActFlashTemp1=301..400}] run title @s action
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=201..300}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=======","color":"green"},{"text":"+","color":"yellow"},{"text":"--","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=101..200}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"========","color":"green"},{"text":"+","color":"yellow"},{"text":"-","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute as @a[scores={hudKatana=4,cdActFlashTemp1=1..100}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=========","color":"green"},{"text":"+","color":"yellow"},{"text":"]","color":"dark_gray"}]
-execute as @a[scores={hudKatana=4,cdActFlashTemp1=0}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
+execute as @a[scores={hudKatana=4,cdActFlashTemp1=..0}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
 
 execute as @a[scores={hudKatana=5}] store result score @s timActFlashTemp1 run scoreboard players get @s timActFlash
 execute as @a[scores={hudKatana=5}] store result score @s timActFlashTemp2 run scoreboard players get #katana_act_flash_timer Config
@@ -59,7 +59,7 @@ execute as @a[scores={hudKatana=5,timActFlashTemp1=301..400}] run title @s actio
 execute as @a[scores={hudKatana=5,timActFlashTemp1=201..300}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"==","color":"red"},{"text":"+","color":"yellow"},{"text":"-------","color":"gray"},{"text":"]","color":"gray"}]
 execute as @a[scores={hudKatana=5,timActFlashTemp1=101..200}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"=","color":"red"},{"text":"+","color":"yellow"},{"text":"--------","color":"gray"},{"text":"]","color":"gray"}]
 execute as @a[scores={hudKatana=5,timActFlashTemp1=1..100}] run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"+","color":"yellow"},{"text":"---------","color":"gray"},{"text":"]","color":"gray"}]
-execute as @a[scores={hudKatana=5,timActFlashTemp1=0}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"----------","color":"gray"},{"text":"]","color":"dark_gray"}]
+execute as @a[scores={hudKatana=5,timActFlashTemp1=..0}] run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"----------","color":"gray"},{"text":"]","color":"dark_gray"}]
 
 execute as @a[scores={hudKatana=0,isKatanaHUD=1}] run title @s actionbar {"text":""}
 execute as @a[scores={hudKatana=0}] run scoreboard players set @s isKatanaHUD 0

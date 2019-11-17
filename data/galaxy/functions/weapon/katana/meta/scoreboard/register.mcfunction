@@ -46,6 +46,9 @@ scoreboard objectives add cdActStun dummy "num-Action:Stun cooldown"
 scoreboard objectives add cdActFlash dummy "num-Action:Flash cooldown"
 
 
+# Success count of swap-put action.
+scoreboard objectives add sucActSwapPut dummy "num-Action:Swap-PutIn success count"
+
 # Success count of stun action.
 scoreboard objectives add sucActStun dummy "num-Action:Stun success count"
 
