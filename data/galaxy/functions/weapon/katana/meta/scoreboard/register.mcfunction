@@ -69,6 +69,9 @@ scoreboard objectives add timActFlashTemp1 dummy "num-:Action:Flash timer calcul
 scoreboard objectives add timActFlashTemp2 dummy "num-:Action:Flash timer calculation temp2"
 
 
+scoreboard objectives add lmtActFlash dummy "num-Action:Flash distance limit countdown"
+
+
 scoreboard objectives add disActFlash dummy "num-Action:Flash moved distance"
 
 

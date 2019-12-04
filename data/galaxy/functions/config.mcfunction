@@ -101,6 +101,11 @@ scoreboard players set #katana_act_flash_cd_max Config 120
 scoreboard players set #katana_act_flash_timer Config 4
 
 
+# Action:flash distance limit
+# integer, block, default: 5
+scoreboard players set #katana_act_flash_distance_limit Config 5
+
+
 # Action:flash damage
 # Set to 0 will disable the damage.
 # integer, default: 12

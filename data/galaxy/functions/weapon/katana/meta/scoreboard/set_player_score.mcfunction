@@ -27,6 +27,8 @@ scoreboard players remove @a isActStunCd 0
 
 scoreboard players remove @a isActFlashCd 0
 
+scoreboard players remove @a lmtActFlash 0
+
 scoreboard players remove @a timActFlash 0
 
 scoreboard players remove @a disActFlash 0
