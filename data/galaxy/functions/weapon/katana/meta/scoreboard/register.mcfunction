@@ -56,18 +56,6 @@ scoreboard objectives add sucActStun dummy "num-Action:Stun success count"
 scoreboard objectives add sucActFlash dummy "num-Action:Flash success count"
 
 
-scoreboard objectives add cdActStunTemp1 dummy "num-:Action:Stun cooldown calculation temp1"
-
-scoreboard objectives add cdActStunTemp2 dummy "num-:Action:Stun cooldown calculation temp2"
-
-scoreboard objectives add cdActFlashTemp1 dummy "num-:Action:Flash cooldown calculation temp1"
-
-scoreboard objectives add cdActFlashTemp2 dummy "num-:Action:Flash cooldown calculation temp2"
-
-scoreboard objectives add timActFlashTemp1 dummy "num-:Action:Flash timer calculation temp1"
-
-scoreboard objectives add timActFlashTemp2 dummy "num-:Action:Flash timer calculation temp2"
-
 
 scoreboard objectives add lmtActFlash dummy "num-Action:Flash distance limit countdown"
 

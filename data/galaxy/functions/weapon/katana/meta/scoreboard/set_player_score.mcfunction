@@ -47,12 +47,4 @@ scoreboard players remove @a cdActStun 0
 
 scoreboard players remove @a cdActFlash 0
 
-scoreboard players remove @a cdActStunTemp1 0
-
-scoreboard players remove @a cdActStunTemp2 0
-
-scoreboard players remove @a cdActFlashTemp1 0
-
-scoreboard players remove @a cdActFlashTemp2 0
-
 tag @a add InitializedKatanaScore

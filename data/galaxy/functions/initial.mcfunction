@@ -5,6 +5,8 @@ function galaxy:meta/scoreboard/register
 function galaxy:meta/scoreboard/set_player_score
 function galaxy:config
 
+execute unless entity @e[tag=dataBase] run function galaxy:meta/data/create-data_base
+
 function galaxy:gui/initial
 function galaxy:hud/initial
 function galaxy:status_effect/initial

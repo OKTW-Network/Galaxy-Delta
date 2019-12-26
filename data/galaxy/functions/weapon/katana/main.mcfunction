@@ -2,4 +2,4 @@ execute if entity @a[tag=!InitializedKatanaScore] run function galaxy:weapon/kat
 
 function galaxy:weapon/katana/action/main
 function galaxy:weapon/katana/cooldown/main
-function galaxy:weapon/katana/onground_item
+function galaxy:weapon/katana/special_item-entity/main

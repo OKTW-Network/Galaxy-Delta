@@ -69,3 +69,14 @@ scoreboard objectives add workProc1Temp2 dummy "num-GUI working process1 tempora
 scoreboard objectives add workProc1ICount dummy "num-GUI working process1 input item count"
 
 scoreboard objectives add workProc1OCount dummy "num-GUI working process1 output item count"
+
+
+scoreboard objectives add sbldAttribute dummy "num-GUI:Sbld attribute type"
+
+scoreboard objectives add sbldAtbValue dummy "num-GUI:Sbld attribute value"
+
+scoreboard objectives add sbldPistolAtbMax dummy "num-GUI:Sbld maximum attribute type"
+
+scoreboard objectives add sbldPistolAtVMax dummy "num-GUI:Sbld maximum attribute value"
+
+scoreboard objectives add sbldPistolAtVMin dummy "num-GUI:Sbld minimum attribute value"

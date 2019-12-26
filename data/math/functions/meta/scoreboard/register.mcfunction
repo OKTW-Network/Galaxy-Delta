@@ -1,3 +1,4 @@
+scoreboard objectives add random dummy
 scoreboard objectives add numeric dummy
 
 scoreboard players set #static_1 numeric 1
@@ -7,10 +8,7 @@ scoreboard players set #static_5 numeric 5
 scoreboard players set #static_10 numeric 10
 scoreboard players set #static_100 numeric 100
 scoreboard players set #static_1000 numeric 1000
-
-scoreboard players set #dynamic1 numeric 0
-scoreboard players set #dynamic2 numeric 0
-scoreboard players set #dynamic3 numeric 0
+scoreboard players set #static_10000 numeric 10000
 
 scoreboard players set #calculation_temp1 numeric 0
 scoreboard players set #calculation_temp2 numeric 0

@@ -1,4 +1,6 @@
 
+function galaxy:hud/meta/storage/register
+
 function galaxy:hud/meta/scoreboard/register
 function galaxy:hud/meta/scoreboard/set_player_score
 

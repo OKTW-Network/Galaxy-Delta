@@ -1,6 +1,5 @@
 # summon
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["flashPathfinder"]}
-execute store result entity @e[tag=flashPathfinder,limit=1] Pos[1] double 1 run data get entity @s Pos[1]
 execute store result entity @e[tag=flashPathfinder,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
 execute as @e[tag=flashPathfinder,limit=1] at @s run tp ^ ^ ^0.5
 execute store result entity @e[tag=flashPathfinder,limit=1] Rotation[1] float 1 run data get entity @s Rotation[1]
