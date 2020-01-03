@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "item":"minecraft:iron_sword",
+                "nbt": "{wrench:1}"
+            }
+        }
+    },
+    "entity":"this"
+}

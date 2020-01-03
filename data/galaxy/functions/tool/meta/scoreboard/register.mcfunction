@@ -1,17 +1,12 @@
-
 ### boolean use numbers instead of true or false
 ### false = 0
 ### true = 1
 
+# Wrench UUID
+scoreboard objectives add MhWrenchUUIDM dummy "num-MainHand wrench mini UUID most"
 
-# Total damage taken (damage taken + absorbed damage)
-scoreboard objectives add dmgTotal dummy "num-Total damage taken"
+scoreboard objectives add MhWrenchUUIDL dummy "num-MainHand wrench mini UUID least"
 
-# Absorbed Damage (yellow heart)
-scoreboard objectives add dmgAbsorb minecraft.custom:minecraft.damage_absorbed "num-Absorbed damage"
-
-# Damage taken (red heart)
-scoreboard objectives add dmgTake minecraft.custom:minecraft.damage_taken "num-Damage taken"
 
 # Quantity of shield projector
 scoreboard objectives add haveShield dummy "num-Shield quantity"

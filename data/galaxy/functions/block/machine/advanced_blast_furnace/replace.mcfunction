@@ -3,4 +3,3 @@ setblock ~ ~ ~ minecraft:air destroy
 kill @e[type=minecraft:item,nbt={Item:{tag:{display:{Name:"{\"translate\":\"container.advanced_blast_furnace\"}"}}}}]
 setblock ~ ~ ~ minecraft:barrel{CustomName:"{\"translate\":\"container.advanced_blast_furnace\"}"} replace
 function galaxy:gui/advanced_blast_furnace/update
-tag @s remove replace

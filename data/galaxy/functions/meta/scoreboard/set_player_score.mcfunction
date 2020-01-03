@@ -1,6 +1,12 @@
 
 scoreboard players remove @a[tag=!InitializedGlobalScore] health 0
 
+scoreboard players remove @a[tag=!InitializedGlobalScore] dmgTotal 0
+
+scoreboard players remove @a[tag=!InitializedGlobalScore] dmgAbsorb 0
+
+scoreboard players remove @a[tag=!InitializedGlobalScore] dmgTake 0
+
 scoreboard players remove @a[tag=!InitializedGlobalScore] posX 0
 
 scoreboard players remove @a[tag=!InitializedGlobalScore] posY 0

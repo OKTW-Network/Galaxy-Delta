@@ -1,5 +1,6 @@
 ### Triggered with main detector, see functions/meta/detector/use_item
 
+function galaxy:meta/detector/sneak
 function galaxy:weapon/energy-saber/meta/detector/holding_energy-saber
 
 # katana actions

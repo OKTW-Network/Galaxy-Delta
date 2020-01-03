@@ -1,1 +1,1 @@
-function galaxy:recipe/dropped/craft-recipe
+function galaxy:recipe/dropped/main

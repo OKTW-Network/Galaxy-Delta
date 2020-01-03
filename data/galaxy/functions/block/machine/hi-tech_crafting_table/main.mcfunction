@@ -2,7 +2,7 @@
 function galaxy:block/protection
 
 # block destroy
-execute if block ~ ~ ~ minecraft:air run tag @s add destroy
+execute unless block ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.hi_tech_crafting"}'} run tag @s add destroy
 execute if entity @s[tag=destroy] at @s run summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["fake_block_remover"]}
 execute as @e[tag=fake_block_remover] at @s run kill @e[tag=hi-tech_crafting_table_fake_block,distance=..0.25,sort=nearest,limit=1]
 execute as @e[tag=fake_block_remover] run kill @s

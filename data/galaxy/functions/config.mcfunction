@@ -38,14 +38,33 @@ scoreboard players set #advanced_blast_furnace_dur Config 600
 scoreboard players set #shield_projector Config 1
 
 # Shield regen cooldown
-# example: 20 means regen will only start until 20 tick after the attack.
+# for example, 20 means shield regen will only start until 20 tick after the attack.
 # integer, tick, default: 60
 scoreboard players set #shield_regen_cd Config 60
 
 # Shield regen speed
-# example: 20 means every 20 tick regen 4 shield point.
+# for example, 20 means every 20 tick regen 4 shield point.
 # integer, tick, default: 20
 scoreboard players set #shield_regen_speed Config 20
+
+  ########################################
+  # Structure empower                    #
+  ########################################
+
+# Enable Structure empower
+# boolean, default: 1
+scoreboard players set #structure_empower Config 1
+
+# Weather conditions of the process
+# 0 = process in any weather, 1 = only process while thunder weather, 2 = only process while raining (or thunder weather)
+# integer, default: 2
+scoreboard players set #structure_empower_weather_condition Config 2
+
+# Success chance of the process
+# for example, 100 means every tick has a 1/100 chance to successfully process
+# higher value mean lower success chance
+# integer, default: 2000
+scoreboard players set #structure_empower_success_chance Config 2000
 
 
 ############################################

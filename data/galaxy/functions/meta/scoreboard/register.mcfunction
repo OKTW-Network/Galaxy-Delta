@@ -11,6 +11,15 @@ scoreboard objectives add Config dummy "config"
 # damage calculator temp
 scoreboard objectives add health dummy "num-Health calculator temp"
 
+# Total damage taken (damage taken + absorbed damage)
+scoreboard objectives add dmgTotal dummy "num-Total damage taken"
+
+# Absorbed Damage (yellow heart)
+scoreboard objectives add dmgAbsorb minecraft.custom:minecraft.damage_absorbed "num-Absorbed damage"
+
+# Damage taken (red heart)
+scoreboard objectives add dmgTake minecraft.custom:minecraft.damage_taken "num-Damage taken"
+
 # coordinate X
 scoreboard objectives add posX dummy "num-Coordinate X"
 

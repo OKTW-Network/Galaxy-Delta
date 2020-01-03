@@ -4,14 +4,16 @@ execute unless score @s workStatus = @s workStatusTemp run function galaxy:gui/a
 execute run scoreboard players operation @s workStatusTemp = @s workStatus
 
 
-# cover detection
-function galaxy:gui/check-2i1o-cover
-
+# relplace the block when GUI contains non-guiItem
+tag @s[predicate=galaxy:gui/check_cover_slot-2i1o1p1s,predicate=!galaxy:gui/check_cover-2i1o1p1s] add replace
 execute if entity @s[tag=replace] run function galaxy:block/machine/advanced_blast_furnace/replace
+tag @s[tag=replace] remove replace
 
-execute if score @s setGuiCover matches 1 run function galaxy:gui/remove-gui_item
-execute if score @s setGuiCover matches 1 run function galaxy:gui/build-2i1o-cover
-execute if score @s setGuiCover matches 1 run scoreboard players set @s setGuiCover 0
+# gui cover
+tag @s[predicate=galaxy:gui/check_cover-2i1o1p1s] add setGuiCover
+execute if entity @s[tag=setGuiCover] run function galaxy:gui/remove-gui_item
+execute if entity @s[tag=setGuiCover] run function galaxy:gui/build-2i1o1p1s-cover
+tag @s[tag=setGuiCover] remove setGuiCover
 
 
 # machine working
@@ -37,7 +39,7 @@ execute if score @s workStatus matches 1 if block ~ ~ ~ minecraft:barrel[open=tr
 execute if score @s workStatus matches 1 if block ~ ~ ~ minecraft:barrel[open=true] run scoreboard players set @s setProgress 1
 
 # progress bar
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:12b}]} run scoreboard players set @s setProgress 1
+scoreboard players set @s[predicate=!galaxy:gui/check_slot-12] setProgress 1
 
 execute if score @s setProgress matches 1 run function galaxy:gui/remove-gui_item
 
@@ -72,7 +74,7 @@ execute if score @s setProgress matches 1 run scoreboard players set @s setProgr
 
 
 # process status
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b}]} run scoreboard players set @s setProcess 1
+scoreboard players set @s[predicate=!galaxy:gui/check_slot-13] setProcess 1
 
 execute if score @s setProcess matches 1 run function galaxy:gui/remove-gui_item
 
@@ -84,7 +86,7 @@ execute if score @s setProcess matches 1 run scoreboard players set @s setProces
 
 
 # smelt status
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:11b}]} run scoreboard players set @s setSmelt 1
+scoreboard players set @s[predicate=!galaxy:gui/check_slot-11] setSmelt 1
 
 execute if score @s setSmelt matches 1 run function galaxy:gui/remove-gui_item
 

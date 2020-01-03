@@ -1,1 +1,3 @@
-execute if entity @e[tag=structure_empower_detector] run execute as @e[tag=structure_empower_detector] at @s positioned as @s run function galaxy:recipe/structure_empower/craft-recipe
+execute if score #structure_empower_weather_condition Config matches 2 if predicate galaxy:weather/rain run function galaxy:recipe/structure_empower/random
+execute if score #structure_empower_weather_condition Config matches 1 if predicate galaxy:weather/thunder run function galaxy:recipe/structure_empower/random
+execute if score #structure_empower_weather_condition Config matches 0 run function galaxy:recipe/structure_empower/random

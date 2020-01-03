@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+	    "equipment": {
+		    "mainhand": {
+                "item":"minecraft:diamond_sword",
+                "nbt": "{edge:1}"
+            }
+	    }
+    },
+    "entity":"this"
+}

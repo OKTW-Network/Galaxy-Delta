@@ -6,5 +6,4 @@ execute if block ~ ~-1 ~ minecraft:crafting_table run function galaxy:recipe/str
 
 execute if score @s sucRTcRcp matches -1 run playsound minecraft:block.glass.break block @a ~ ~ ~ 1 1.4 0.2
 execute if score @s sucRTcRcp matches -1 run summon minecraft:lightning_bolt ~ ~-1 ~
-execute unless score @s sucRTcRcp matches -1 run function galaxy:tool/summon/structure_empower
 kill @s
