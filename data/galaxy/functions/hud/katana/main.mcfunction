@@ -1,5 +1,5 @@
 function galaxy:meta/detector/sneak
-function galaxy:meta/detector/main-hand_empty
+function galaxy:meta/detector/hand-main_empty
 function galaxy:weapon/katana/meta/detector/holding_katana
 function galaxy:weapon/katana/meta/detector/holding_edge
 function galaxy:weapon/katana/meta/detector/holding_scabbard
