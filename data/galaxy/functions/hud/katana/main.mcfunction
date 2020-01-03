@@ -1,8 +1,8 @@
 function galaxy:meta/detector/sneak
-function galaxy:meta/detector/hand-main_empty
-function galaxy:weapon/katana/meta/detector/holding_katana
-function galaxy:weapon/katana/meta/detector/holding_edge
-function galaxy:weapon/katana/meta/detector/holding_scabbard
+function galaxy:meta/detector/hand_main-empty
+function galaxy:weapon/katana/meta/detector/holding-katana
+function galaxy:weapon/katana/meta/detector/holding-edge
+function galaxy:weapon/katana/meta/detector/holding-scabbard
 
 execute if entity @s[scores={isHoldKatana=1}] run function galaxy:hud/katana
 execute if entity @s[scores={isHoldScabbard=1,isHoldEdge=1}] run function galaxy:hud/katana
