@@ -149,12 +149,12 @@ scoreboard players set #energy_saber_act_turn_sound Config 1
 
 
 # Action: turn-on cooldown
-# integer, tick, default: 10
-scoreboard players set #energy_saber_act_turn_on_cd Config 10
+# integer, tick, default: 30
+scoreboard players set #energy_saber_act_turn_on_cd Config 30
 
 # Action: turn-off cooldown
-# integer, tick, default: 10
-scoreboard players set #energy_saber_act_turn_off_cd Config 10
+# integer, tick, default: 30
+scoreboard players set #energy_saber_act_turn_off_cd Config 30
 
   ########################################
   # Pistol                               #

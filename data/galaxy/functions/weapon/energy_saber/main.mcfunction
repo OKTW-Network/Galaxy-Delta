@@ -2,4 +2,4 @@ execute as @a[tag=!InitializedEnergySaberScore] run function galaxy:weapon/energ
 
 function galaxy:weapon/energy_saber/action/main
 function galaxy:weapon/energy_saber/cooldown/main
-function galaxy:weapon/energy_saber/onground_item
+function galaxy:weapon/energy_saber/special_item_entity/main
