@@ -1,5 +1,5 @@
-execute as @a[scores={reqActSwapPut=1}] run function galaxy:weapon/katana/meta/detector/holding_scabbard
-execute as @a[scores={reqActSwapPut=1}] run function galaxy:weapon/katana/meta/detector/holding_edge
+execute as @a[scores={reqActSwapPut=1}] run function galaxy:weapon/katana/meta/detector/holding-scabbard
+execute as @a[scores={reqActSwapPut=1}] run function galaxy:weapon/katana/meta/detector/holding-edge
 
 scoreboard players set @a[scores={reqActSwapPut=1}] sucActSwapPut 0
 

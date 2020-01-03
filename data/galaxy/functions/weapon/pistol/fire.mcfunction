@@ -33,11 +33,11 @@ execute if score @s reqPistolFire matches 2..3 if score @s MhPistolFireDly >= @s
 execute if score @s reqPistolFire matches 2..3 if score @s MhPistolFireDly < @s FhPistolFireDly run scoreboard players operation @s pistolFireDly = @s FhPistolFireDly
 execute if score @s reqPistolFire matches 1 run scoreboard players operation @s pistolFireDly = @s MhPistolFireDly
 
-execute if score @s reqPistolFire matches 1 at @s run function galaxy:weapon/pistol/bullet/summon_main-hand
-execute if score @s reqPistolFire matches 2 if score @s pistolSwitch matches 0 at @s run function galaxy:weapon/pistol/bullet/summon_main-hand
-execute if score @s reqPistolFire matches 2 if score @s pistolSwitch matches 1 at @s run function galaxy:weapon/pistol/bullet/summon_off-hand
-execute if score @s reqPistolFire matches 3 at @s run function galaxy:weapon/pistol/bullet/summon_main-hand
-execute if score @s reqPistolFire matches 3 at @s run function galaxy:weapon/pistol/bullet/summon_off-hand
+execute if score @s reqPistolFire matches 1 at @s run function galaxy:weapon/pistol/bullet/summon-hand_main
+execute if score @s reqPistolFire matches 2 if score @s pistolSwitch matches 0 at @s run function galaxy:weapon/pistol/bullet/summon-hand_main
+execute if score @s reqPistolFire matches 2 if score @s pistolSwitch matches 1 at @s run function galaxy:weapon/pistol/bullet/summon-hand_off
+execute if score @s reqPistolFire matches 3 at @s run function galaxy:weapon/pistol/bullet/summon-hand_main
+execute if score @s reqPistolFire matches 3 at @s run function galaxy:weapon/pistol/bullet/summon-hand_off
 
 # execute as @a[scores={reqPistolFire=-10}] run say nope
 execute as @a[scores={reqPistolFire=-10}] run scoreboard players set @s reqPistolFire 0

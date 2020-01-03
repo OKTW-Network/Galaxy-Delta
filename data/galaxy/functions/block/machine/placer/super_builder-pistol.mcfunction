@@ -13,7 +13,7 @@ scoreboard players set @e[tag=super_builder-pistol,tag=init] guiMode 0
 scoreboard players set @e[tag=super_builder-pistol,tag=init] sbldAttribute 0
 scoreboard players set @e[tag=super_builder-pistol,tag=init] sbldAtbValue 0
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolStyle 1
-scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolDamage 1
+scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolDamage 5
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolBltDist 10
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolFireDly 6
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolMaxTemp 100
@@ -21,7 +21,7 @@ scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolHeat 4
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolCooling 1
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolCoolDly 12
 scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolBltSped 1
-scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolBltOfst 1
+scoreboard players set @e[tag=super_builder-pistol,tag=init] optPistolBltOfst 10
 execute as @e[tag=super_builder-pistol,tag=init] run function galaxy:gui/super_builder-pistol/update
 execute as @e[tag=super_builder-pistol,tag=init] run tag @s remove init
 kill @s

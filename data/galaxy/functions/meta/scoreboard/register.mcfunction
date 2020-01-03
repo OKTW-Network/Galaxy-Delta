@@ -8,6 +8,9 @@ scoreboard objectives add Meta dummy "meta"
 
 scoreboard objectives add Config dummy "config"
 
+scoreboard objectives add versionGalaxy dummy "player version check"
+
+
 # damage calculator temp
 scoreboard objectives add health dummy "num-Health calculator temp"
 

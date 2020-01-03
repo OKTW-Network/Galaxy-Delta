@@ -1,1 +1,0 @@
-replaceitem entity @s weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.lasor\",\"italic\":false}"},HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:210100,pistol:1,heat:0,delay:0,type:1} 1

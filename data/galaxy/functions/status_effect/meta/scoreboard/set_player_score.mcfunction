@@ -1,7 +1,7 @@
 
-scoreboard players remove @a[tag=!InitializedStatus_effectScore] isStuStun 0
+scoreboard players remove @s isStuStun 0
 
-scoreboard players remove @a[tag=!InitializedStatus_effectScore] durStuStun 0
+scoreboard players remove @s durStuStun 0
 
 
-tag @a[tag=!InitializedStatus_effectScore] add InitializedStatus_effectScore
+tag @s add InitializedStatusEffectScore

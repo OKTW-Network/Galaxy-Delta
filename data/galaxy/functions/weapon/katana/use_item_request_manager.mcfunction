@@ -1,10 +1,10 @@
 ### Triggered with main detector
 
 function galaxy:meta/detector/sneak
-function galaxy:meta/detector/hand-main_empty
-function galaxy:weapon/katana/meta/detector/holding_katana
-function galaxy:weapon/katana/meta/detector/holding_edge
-function galaxy:weapon/katana/meta/detector/holding_scabbard
+function galaxy:meta/detector/hand_main-empty
+function galaxy:weapon/katana/meta/detector/holding-katana
+function galaxy:weapon/katana/meta/detector/holding-edge
+function galaxy:weapon/katana/meta/detector/holding-scabbard
 
 # katana actions
 execute if score #katana_act_swap Config matches 1 run scoreboard players add @s[scores={isRClick=1,isSneak=1,isHoldKatana=1,isMainHandClear=1,reqActSwapPull=0}] reqActSwapPull 1

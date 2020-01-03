@@ -1,20 +1,20 @@
 
-scoreboard players remove @a[tag=!InitializedToolScore] MhWrenchUUIDM 0
+scoreboard players remove @s MhWrenchUUIDM 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] MhWrenchUUIDL 0
+scoreboard players remove @s MhWrenchUUIDL 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] haveShield 0
+scoreboard players remove @s haveShield 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] shieldStatus 0
+scoreboard players remove @s shieldStatus 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] errMultiShield 0
+scoreboard players remove @s errMultiShield 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] cdShield 0
+scoreboard players remove @s cdShield 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] delayShield 0
+scoreboard players remove @s delayShield 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] shieldFull 0
+scoreboard players remove @s shieldFull 0
 
-scoreboard players remove @a[tag=!InitializedToolScore] shieldHealthy 0
+scoreboard players remove @s shieldHealthy 0
 
-tag @a add InitializedToolScore
+tag @s add InitializedToolScore

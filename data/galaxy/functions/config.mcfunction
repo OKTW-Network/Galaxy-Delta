@@ -140,21 +140,21 @@ scoreboard players set #katana_act_flash_damage Config 12
 
 # Enable action:turn-on/off
 # boolean, default: 1
-scoreboard players set #energy-saber_act_turn Config 1
+scoreboard players set #energy_saber_act_turn Config 1
 
 
 # Action: turn-on/off play sounds
 # boolean, default: 1
-scoreboard players set #energy-saber_act_turn_sound Config 1
+scoreboard players set #energy_saber_act_turn_sound Config 1
 
 
 # Action: turn-on cooldown
 # integer, tick, default: 10
-scoreboard players set #energy-saber_act_turn_on_cd Config 10
+scoreboard players set #energy_saber_act_turn_on_cd Config 10
 
 # Action: turn-off cooldown
 # integer, tick, default: 10
-scoreboard players set #energy-saber_act_turn_off_cd Config 10
+scoreboard players set #energy_saber_act_turn_off_cd Config 10
 
   ########################################
   # Pistol                               #

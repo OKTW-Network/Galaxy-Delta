@@ -1,8 +1,7 @@
-function galaxy:debug/remove_all_player_init_tag
-
 function galaxy:version_check
+
 function galaxy:meta/scoreboard/register
-function galaxy:meta/scoreboard/set_player_score
+execute as @a[tag=!InitializedGlobalScore] run function galaxy:meta/scoreboard/set_player_score
 function galaxy:config
 
 execute unless entity @e[tag=dataBase] run function galaxy:meta/data/create-data_base
