@@ -1,6 +1,7 @@
 {
     "values":[
         "galaxy:initial",
+		"creative-utilities:initial",
 		"math:initial"
     ]
 }

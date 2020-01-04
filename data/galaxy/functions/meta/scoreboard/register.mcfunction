@@ -4,11 +4,9 @@
 
 # general
 
-scoreboard objectives add Meta dummy "meta"
-
-scoreboard objectives add Config dummy "config"
-
-scoreboard objectives add versionGalaxy dummy "player version check"
+scoreboard objectives add Meta dummy
+scoreboard objectives add Config dummy
+scoreboard objectives add versionGalaxy dummy
 
 
 # damage calculator temp

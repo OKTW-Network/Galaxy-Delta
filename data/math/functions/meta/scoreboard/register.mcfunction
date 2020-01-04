@@ -1,5 +1,8 @@
-scoreboard objectives add numeric dummy
+scoreboard objectives add Meta dummy
+scoreboard objectives add Config dummy
+scoreboard objectives add versionMath dummy
 
+scoreboard objectives add numeric dummy
 scoreboard players set #static_-1 numeric -1
 scoreboard players set #static_1 numeric 1
 scoreboard players set #static_2 numeric 2
@@ -17,6 +20,5 @@ scoreboard players set #calculation_temp2 numeric 0
 scoreboard players set #calculation_temp3 numeric 0
 
 scoreboard objectives add random dummy
-
 scoreboard players set #random_max random 0
 scoreboard players set #random_result random 0

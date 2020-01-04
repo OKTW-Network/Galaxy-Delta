@@ -1,4 +1,4 @@
-tag @s remove InitializedGlobalScore
+tag @s remove InitializedGalaxyScore
 tag @s remove InitializedToolScore
 tag @s remove InitializedKatanaScore
 tag @s remove InitializedEnergySaberScore

@@ -1,4 +1,4 @@
-function creative-utilities:generate-mini_uuid
+function creative-utilities:mini_uuid/generate
 execute store result score #random_result random run data get storage cu:resources miniUUID.Most
 execute if score #random_result random matches ..-1 run scoreboard players operation #random_result random *= #static_-1 numeric
 scoreboard players operation #random_result random %= #random_max random

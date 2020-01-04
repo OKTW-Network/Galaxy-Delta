@@ -1,5 +1,6 @@
 {
     "values":[
-        "galaxy:tick"
+        "galaxy:tick",
+        "creative-utilities:tick"
     ]
 }

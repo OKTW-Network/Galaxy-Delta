@@ -1,2 +1,3 @@
+scoreboard players remove @s useItemPerSec 0
 
-tag @a[tag=!InitializedCUScore] add InitializedCUScore
+tag @s add InitializedCUScore

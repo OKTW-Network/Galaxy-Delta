@@ -1,6 +1,6 @@
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add create
 execute if entity @s[tag=create] run replaceitem block ~ ~ ~ container.16 minecraft:carrot_on_a_stick{display:{Name:"{\"translate\":\"item.galaxy.lasor\",\"italic\":false}"},CustomModelData:210100,pistol:1,pistolResult:1}
-execute if entity @s[tag=create] run function creative-utilities:generate-mini_uuid
+execute if entity @s[tag=create] run function creative-utilities:mini_uuid/generate
 execute if entity @s[tag=create] store result block ~ ~ ~ Items[{Slot:16b}].tag.miniUUIDMost int 1 run data get storage cu:resources miniUUID.Most
 execute if entity @s[tag=create] store result block ~ ~ ~ Items[{Slot:16b}].tag.miniUUIDLeast int 1 run data get storage cu:resources miniUUID.Least
 tag @s[tag=create] remove create
