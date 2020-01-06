@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:20200,HideFlags:39}"
+            "nbt": "{CustomModelData:20100,HideFlags:39}"
         },
         "title": {"translate":"advancements.weaponry.katana.title"},
         "description": {"translate":"advancements.weaponry.katana.description"},
@@ -10,9 +10,6 @@
         "announce_to_chat": false
     },
     "parent": "galaxy:weaponry/root",
-    "rewards": {
-		"function": "galaxy:advancement/weaponry/katana_actions"
-    },
     "criteria": {
         "katana": {
             "trigger": "minecraft:impossible"

@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:20200,HideFlags:39}"
+            "nbt": "{CustomModelData:20100,HideFlags:39}"
         },
         "title": {"translate":"advancements.galaxy.katana_obtain.title"},
         "description": {"translate":"advancements.galaxy.katana_obtain.description"}

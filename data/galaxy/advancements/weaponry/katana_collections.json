@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{CustomModelData:10207,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.weaponry.collections"},
+        "description": {"translate":"advancements.weaponry.collections.description"},
+		"hidden": true,
+		"frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/katana",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
