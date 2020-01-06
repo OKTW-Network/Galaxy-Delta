@@ -10,7 +10,7 @@ execute if entity @s[tag=replace] run function galaxy:block/machine/advanced_bla
 tag @s[tag=replace] remove replace
 
 # gui cover
-tag @s[predicate=galaxy:gui/check_cover-2i1o1p1s] add setGuiCover
+tag @s[predicate=!galaxy:gui/check_cover-2i1o1p1s] add setGuiCover
 execute if entity @s[tag=setGuiCover] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=setGuiCover] run function galaxy:gui/build-2i1o1p1s-cover
 tag @s[tag=setGuiCover] remove setGuiCover
