@@ -1,7 +1,8 @@
-scoreboard players set #galaxy_version Meta 204
+scoreboard players set #galaxy_version Meta 205
 
-execute unless score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy/Version]: ","color":"yellow","bold":true},{"text":"Previous: "},{"score":{"name":"#galaxy_currently_version","objective":"Meta"}},{"text":" -> Current: "},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
-execute if score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_print_version Config matches 2 run tellraw @a ["",{"text":"[Galaxy/Version]: ","color":"yellow","bold":true},{"text":"Current: "},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
+execute unless score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_version Meta > #galaxy_currently_version Meta if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_currently_version","objective":"Meta"}},{"text":" -> ","color":"green"},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
+execute unless score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_version Meta < #galaxy_currently_version Meta if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_currently_version","objective":"Meta"}},{"text":" -> ","color":"red"},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
+execute if score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_print_version Config matches 2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
 
 scoreboard players operation #galaxy_currently_version Meta = #galaxy_version Meta
 

@@ -8,4 +8,4 @@ execute as @a[tag=!InitializedEnergySaberScore] run function galaxy:weapon/energ
 function galaxy:weapon/pistol/meta/scoreboard/register
 execute as @a[tag=!InitializedPistolScore] run function galaxy:weapon/pistol/meta/scoreboard/set_player_score
 
-execute if score #galaxy_print_init Config matches 1 run tellraw @a ["",{"text":"[Galaxy/module:Weapon]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]
+execute if score #galaxy_print_init Config matches 1 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Weapon: "},{"text":"Initialize complete!"}]

@@ -19,4 +19,4 @@ scoreboard players set #cu_print_config Config 0
 
 ############# DO NOT MODIFY #############
 
-execute if score #cu_print_config Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities/Config]: ","color":"yellow","bold":true},{"text":"Settings loaded!"}]
+execute if score #cu_print_config Config matches 1 run tellraw @a ["",{"text":"[Creative Utilities]: ","color":"yellow","bold":true},{"text":"Config: "},{"text":"Settings loaded!"}]

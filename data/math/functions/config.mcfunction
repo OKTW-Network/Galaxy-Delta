@@ -19,4 +19,4 @@ scoreboard players set #math_print_config Config 0
 
 ############# DO NOT MODIFY #############
 
-execute if score #math_print_config Config matches 1 run tellraw @a ["",{"text":"[Math/Config]: ","color":"yellow","bold":true},{"text":"Settings loaded!"}]
+execute if score #math_print_config Config matches 1 run tellraw @a ["",{"text":"[Math]: ","color":"yellow","bold":true},{"text":"Config: "},{"text":"Settings loaded!"}]

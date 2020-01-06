@@ -257,4 +257,4 @@ scoreboard players set #hud_shield_projector Config 1
 
 ############# DO NOT MODIFY #############
 
-execute if score #galaxy_print_config Config matches 1 run tellraw @a ["",{"text":"[Galaxy/Config]: ","color":"yellow","bold":true},{"text":"Settings loaded!"}]
+execute if score #galaxy_print_config Config matches 1 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Config: "},{"text":"Settings loaded!"}]
