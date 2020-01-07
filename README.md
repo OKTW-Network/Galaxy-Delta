@@ -1,83 +1,52 @@
-# Welecome to the Galaxy: delta
+# Galaxy: delta
 
-Choose a language for reading.
+<img src="https://i.imgur.com/ErHEb6k.png" width="50%" display="block" margin="auto 0">
 
-## Languages
-
-* [中文](#中文)
+| Languages
+| --------------------
+| [English](#English)
+| [中文](#中文)
 
 ---
+###### English
 
-## 中文
+Galaxy: delta is a Minecraft data pack projet of [OKTW Galaxy](https://github.com/OKTW-Network/Galaxy).
 
-歡迎來到 Galaxy: delta!
+# Install
+1. Go to the [releases](https://github.com/bill96012/Galaxy-delta/releases) page and download the release that compatible with your Minecraft version.
+2. Go to your Minecraft world saves folder, Choose a world you want to install the datapack, the path may like `../.minecraft/saves/<world name>` or `../<server folder name>/<world name>`.
+3. Put the datapack in `datapacks` folder, the path may like `../.minecraft/saves/<world name>/datapacks` or `../<server folder name>/<world name>/datapacks`.
+4. Done!
+  4-1. Singleplayer: re-join the world or enter the `/reload` command in chat.
+  4-2. Multiplayer: restart the server or enter the `/reload` command in chat.
 
-Galaxy: delta 是一個想法基於[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)的 Minecraft 資料包專案，內容計畫包含[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)中的所有武器、工具、機器和其功能。
+This datapack will only need to install on server side.
 
-需要另外安裝[資源包](https://github.com/bill96012/Galaxy-delta-resourcepack)。
+**Also needs to install additional [resource pack](https://github.com/bill96012/Galaxy-delta-resourcepack)!**
+
+# Speical Thanks
+* Technical support  
+    * MCRGO6 Map team
 
 
-  #TODO 移動到WIKI
+---
+###### 中文
 
-#### 設定檔
+Galaxy: delta 是一個基於[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)的 Minecraft 資料包專案。
 
-  檔案位置:  
-    `datapack/Galaxy-delta/data/galaxy/config`
+# 安裝
+1. 到 [releases](https://github.com/bill96012/Galaxy-delta/releases) 頁面下載符合你 Minecraft 遊戲版本的檔案。
+2. 到你的 Minecraft 世界存檔資料夾並選擇一個要被安裝資料包的世界，可參考檔案路徑 `../.minecraft/saves/<世界名稱>` 或 `../<伺服器資料夾名稱>/<世界名稱>`。
+3. 將資料包放在名為 `datapacks` 的資料夾內，可參考檔案路徑 `../.minecraft/saves/<世界名稱>/datapacks` 或 `../<伺服器資料夾名稱>/<世界名稱>/datapacks`。
+4. 完成!
+  4-1. 單人模式: 重新進入該世界 或 輸入 `/reload` 指令。
+  4-2. 多人模式: 重新啟動伺服器 或 輸入 `/reload` 指令。
 
-#### 機器
+這個資料包只需要安裝於伺服器端。
 
-* 高科技工作台
-  1. 點擊式合成系統
-  * 獲得方式
-    * 結構充能
-      * 觸發位置: 工作台
-      * 3 * 3 平面  
-        [L][D][R]  
-        [I][C][I]  
-        [R][O][L]
-      * L = 青金石磚
-      * R = 紅石磚
-      * I = 鐵磚
-      * D = 鑽石磚
-      * C = 工作台
-      * O = 黑曜石
-    * 指令
-      * `function galaxy:block/machine/get/hi-tech_crafting_table`
+**需要另外安裝[資源包](https://github.com/bill96012/Galaxy-delta-resourcepack)!**
 
-#### 功能方塊
+# 特別感謝
+* 技術指導  
+    * MCRGO6 地圖製作團隊
 
-* 刀架
-  1. 裝飾用途
-  2. 右鍵放置武士刀
-  3. 兩種樣式
-  * 獲得方式
-    * 高科技合成
-      * 黑橡木半磚 * 3
-    * 指令
-      * `function galaxy:block/functional/get/katana_showcase-1`
-      * `function galaxy:block/functional/get/katana_showcase-2`
-
-#### 工具
-
-* 扳手
-  1. 拆除特定無法破壞的物件
-  * 獲得方式
-    * 高科技合成
-      * 鋼錠 * 3
-      * 鐵錠 * 1
-    * 指令
-      * `function galaxy:tool/get/wrench`
-
-* 結構充能工具
-  1. 大型結構組件工具
-  * 獲得方式
-    * 丟出物品
-      * 烈焰桿 * 6
-      * 金錠 * 4
-      * 玻璃片 * 2
-    * 高科技合成
-      * 烈焰桿 * 4
-      * 金錠 * 2
-      * 玻璃片 * 1
-    * 指令
-      * `function galaxy:tool/get/structure_empower`
