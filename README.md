@@ -24,6 +24,9 @@ This datapack will only need to install on server side.
 
 **Also needs to install additional [resource pack](https://github.com/bill96012/Galaxy-delta-resourcepack)!**
 
+# Wiki
+[Wiki page](https://github.com/bill96012/Galaxy-delta/wiki)
+
 # Speical Thanks
 * Technical support  
     * MCRGO6 Map team
@@ -45,6 +48,9 @@ Galaxy: delta 是一個基於[OKTW星系計畫](https://github.com/OKTW-Network/
 這個資料包只需要安裝於伺服器端。
 
 **需要另外安裝[資源包](https://github.com/bill96012/Galaxy-delta-resourcepack)!**
+
+# Wiki
+[Wiki page](https://github.com/bill96012/Galaxy-delta/wiki)
 
 # 特別感謝
 * 技術指導  
