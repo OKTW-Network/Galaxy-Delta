@@ -14,9 +14,9 @@ execute if entity @s[tag=setDisplay] run function galaxy:weapon/katana/replace-h
 execute if entity @s[tag=setDisplay] run tag @s remove setDisplay
 
 # if main-hand empty
-execute if entity @s[tag=displaying,predicate=!galaxy:hand-main_not_empty,predicate=galaxy:hand_off-not_empty] run replaceitem entity @s weapon.offhand air
-execute if entity @s[tag=displaying,predicate=!galaxy:hand-main_not_empty] run function galaxy:weapon/katana/replace-hand_main/item_conversion-display
-execute if entity @s[tag=displaying,predicate=!galaxy:hand-main_not_empty] run tag @s remove displaying
+execute if entity @s[tag=displaying,predicate=!galaxy:hand_main-not_empty,predicate=galaxy:hand_off-not_empty] run replaceitem entity @s weapon.offhand air
+execute if entity @s[tag=displaying,predicate=!galaxy:hand_main-not_empty] run function galaxy:weapon/katana/replace-hand_main/item_conversion-display
+execute if entity @s[tag=displaying,predicate=!galaxy:hand_main-not_empty] run tag @s remove displaying
 
 
 # throw out non-katana items
