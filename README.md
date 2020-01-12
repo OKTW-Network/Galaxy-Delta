@@ -1,146 +1,58 @@
-# Welecome to the Galaxy: delta
+# Galaxy: delta
 
-Choose a language for reading.
+<img src="https://i.imgur.com/ErHEb6k.png" width="60%">
 
-## Languages
-
-* [中文](#中文)
+| Languages
+| --------------------
+| [English](#English)
+| [中文](#中文)
 
 ---
+###### English
 
-## 中文
+Galaxy: delta is a Minecraft data pack projet of [OKTW Galaxy](https://github.com/OKTW-Network/Galaxy).
 
-歡迎來到 Galaxy: delta!
+# Install
+1. Go to the [releases](https://github.com/bill96012/Galaxy-delta/releases) page and download the release that compatible with your Minecraft version.
+2. Go to your Minecraft world saves folder, Choose a world you want to install the datapack, the path may like `../.minecraft/saves/<world name>` or `../<server folder name>/<world name>`.
+3. Put the datapack in `datapacks` folder, the path may like `../.minecraft/saves/<world name>/datapacks` or `../<server folder name>/<world name>/datapacks`.
+4. Done!  
+    1. Singleplayer: re-join the world or enter the `/reload` command in chat.  
+    2. Multiplayer: restart the server or enter the `/reload` command in chat.
 
-Galaxy: delta 是一個想法基於[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)的 Minecraft 資料包專案，內容計畫包含[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)中的所有武器、工具、機器和其功能。
+This datapack will only need to install on server side.
 
-需要另外安裝[資源包](https://github.com/bill96012/Galaxy-delta-resourcepack)。
+**Also needs to install additional [resource pack](https://github.com/bill96012/Galaxy-delta-resourcepack)!**
 
-### 已實作
+# Wiki
+[Wiki page](https://github.com/bill96012/Galaxy-delta/wiki)
 
-  #TODO 移動到WIKI
+# Speical Thanks
+* Technical support  
+    * MCRGO6 Map team
 
-#### 設定檔
 
-  檔案位置:  
-    `datapack/Galaxy-delta/data/galaxy/config`
+---
+###### 中文
 
-#### 機器
+Galaxy: delta 是一個基於[OKTW星系計畫](https://github.com/OKTW-Network/Galaxy)的 Minecraft 資料包專案。
 
-* 高科技工作台
-  1. 點擊式合成系統
-  * 獲得方式
-    * 結構充能
-      * 觸發位置: 工作台
-      * 3 * 3 平面  
-        [L][D][R]  
-        [I][C][I]  
-        [R][O][L]
-      * L = 青金石磚
-      * R = 紅石磚
-      * I = 鐵磚
-      * D = 鑽石磚
-      * C = 工作台
-      * O = 黑曜石
-    * 指令
-      * `function galaxy:block/machine/get/hi-tech_crafting_table`
+# 安裝
+1. 到 [releases](https://github.com/bill96012/Galaxy-delta/releases) 頁面下載符合你 Minecraft 遊戲版本的檔案。
+2. 到你的 Minecraft 世界存檔資料夾並選擇一個要被安裝資料包的世界，可參考檔案路徑 `../.minecraft/saves/<世界名稱>` 或 `../<伺服器資料夾名稱>/<世界名稱>`。
+3. 將資料包放在名為 `datapacks` 的資料夾內，可參考檔案路徑 `../.minecraft/saves/<世界名稱>/datapacks` 或 `../<伺服器資料夾名稱>/<世界名稱>/datapacks`。
+4. 完成!
+    1. 單人模式: 重新進入該世界 或 輸入 `/reload` 指令。
+    2. 多人模式: 重新啟動伺服器 或 輸入 `/reload` 指令。
 
-#### 功能方塊
+這個資料包只需要安裝於伺服器端。
 
-* 刀架
-  1. 裝飾用途
-  2. 右鍵放置武士刀
-  3. 兩種樣式
-  * 獲得方式
-    * 高科技合成
-      * 黑橡木半磚 * 3
-    * 指令
-      * `function galaxy:block/functional/get/katana_showcase-1`
-      * `function galaxy:block/functional/get/katana_showcase-2`
+**需要另外安裝[資源包](https://github.com/bill96012/Galaxy-delta-resourcepack)!**
 
-#### 工具
+# Wiki
+[Wiki page](https://github.com/bill96012/Galaxy-delta/wiki)
 
-* 扳手
-  1. 拆除特定無法破壞的物件
-  * 獲得方式
-    * 高科技合成
-      * 鋼錠 * 3
-      * 鐵錠 * 1
-    * 指令
-      * `function galaxy:tool/get/wrench`
+# 特別感謝
+* 技術指導  
+    * MCRGO6 地圖製作團隊
 
-* 結構充能工具
-  1. 大型結構組件工具
-  * 獲得方式
-    * 丟出物品
-      * 烈焰桿 * 6
-      * 金錠 * 4
-      * 玻璃片 * 2
-    * 高科技合成
-      * 烈焰桿 * 4
-      * 金錠 * 2
-      * 玻璃片 * 1
-    * 指令
-      * `function galaxy:tool/get/structure_empower`
-
-#### 武器
-
-* 武士刀
-  * 獲得方式
-    * 高科技合成
-      * 木棒 * 2
-      * 鋼錠 * 3
-      * 金粒 * 2
-      * 剝皮黑橡木原木 * 2
-    * 指令
-      * `function galaxy:weapon/katana/get/katana`
-  * 動作/技能
-    * 拔/收刀
-      1. 切換攻擊狀態
-      * 蹲下 + 使用鍵
-        1. 拔刀: 慣用手為空，非慣用手持刀
-        2. 收刀: 慣用手持刀，非慣用手持鞘
-      * 冷卻
-        1. 使用後: 10tick
-    * 擊暈
-      1. 使前方目標暈眩
-      * 拔刀時 + 使用鍵
-      * 冷卻
-        1. 擊中: 70tick
-        2. 未擊中: 20tick
-    * 閃瞬
-      1. 瞬間移動至前方，並且傷害路徑上的目標
-      * 拔刀後立刻收刀
-      * 冷卻
-        1. 使用後: 120tick
-
-#### 狀態效果
-
-* 暈眩
-  1. 暈眩狀態期間，生物停止AI
-
-#### 抬頭顯示(HUD)
-
-* 武士刀
-  * 未拔刀時+蹲下: (預設關閉)
-    * 拔刀動作提示
-  * 未拔刀時+蹲下:
-    * 閃瞬技能冷卻
-  * 拔刀時+蹲下:
-    * 閃瞬觸發時間
-  * 拔刀時:
-    * 擊暈技能冷卻
-
-### 已計畫
-
-* 手槍
-  1. 射速快短距離遠程武器
-
-* 狙擊槍
-  1. 射速低高精準遠距離武器
-
-* 電梯
-  1. 短距離垂直傳送
-  2. 參考 Openblock
-
-    (更多待補)
