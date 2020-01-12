@@ -1,4 +1,4 @@
-execute as @a[scores={reqActSwapPull=1}] at @s if score #katana_act_swap_sound Config matches 1 run playsound galaxy:katana.draw player @a[distance=..32] ~ ~ ~ 1 1 0.2
+execute as @a[scores={reqActSwapPull=1}] at @s if score #katana_act_swap_sound Config matches 1 run playsound galaxy:katana.draw player @a[distance=..32] ~ ~ ~ 1
 
 execute as @a[scores={reqActSwapPull=1}] run function galaxy:weapon/katana/meta/detector/holding-katana
 

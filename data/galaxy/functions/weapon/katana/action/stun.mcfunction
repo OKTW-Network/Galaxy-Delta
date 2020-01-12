@@ -3,7 +3,7 @@ execute as @e[tag=stunSelector] at @s store success score @a[scores={reqActStun=
 kill @e[tag=stunSelector]
 
 execute as @a[scores={reqActStun=1,sucActStun=1..}] store result score @s cdActStun run scoreboard players get #katana_act_stun_hit_cd Config
-execute as @a[scores={reqActStun=1,sucActStun=1..}] at @s if score #katana_act_stun_sound Config matches 1 run playsound minecraft:entity.player.attack.knockback player @a[distance=..32] ~ ~ ~ 1 0.8 0.2
+execute as @a[scores={reqActStun=1,sucActStun=1..}] at @s if score #katana_act_stun_sound Config matches 1 run playsound minecraft:entity.player.attack.knockback player @a[distance=..32] ~ ~ ~ 1 0.8
 
 execute as @a[scores={reqActStun=1,sucActStun=0}] store result score @s cdActStun run scoreboard players get #katana_act_stun_miss_cd Config
-execute as @a[scores={reqActStun=1,sucActStun=0}] at @s if score #katana_act_stun_sound Config matches 1 run playsound galaxy:katana.soop player @a[distance=..32] ~ ~ ~ 1 1 0.2
+execute as @a[scores={reqActStun=1,sucActStun=0}] at @s if score #katana_act_stun_sound Config matches 1 run playsound galaxy:katana.soop player @a[distance=..32] ~ ~ ~ 1
