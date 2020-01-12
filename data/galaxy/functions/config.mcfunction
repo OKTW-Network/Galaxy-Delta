@@ -65,10 +65,9 @@ scoreboard players set #structure_empower Config 1
 scoreboard players set #structure_empower_weather_condition Config 2
 
 # Success chance of the process
-# for example, 100 means every tick has a 1/100 chance to successfully process
-# higher value mean lower success chance
-# integer, default: 2000
-scoreboard players set #structure_empower_success_chance Config 2000
+# higher value mean higher success chance
+# integer, range: 0 ~ 1.0, default: 0.0005
+## see the file at ..\Galaxy-delta\data\galaxy\predicates\configurable\structure_empower_success_chance
 
 
 ############################################
