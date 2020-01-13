@@ -4,6 +4,9 @@
 ### true = 1
 
 
+scoreboard objectives add holdKatana dummy "num-Holding katana"
+
+
 # True when player's off-hand holding katana-type item.
 scoreboard objectives add isHoldKatana dummy "boolean-OffHand holding katana-type item"
 

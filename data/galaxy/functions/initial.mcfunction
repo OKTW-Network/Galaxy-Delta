@@ -9,6 +9,7 @@ execute unless entity @e[tag=dataBase] run function galaxy:meta/data/create-data
 function galaxy:gui/initial
 function galaxy:hud/initial
 function galaxy:status_effect/initial
+function galaxy:block/initial
 function galaxy:tool/initial
 function galaxy:weapon/initial
 function galaxy:recipe/initial

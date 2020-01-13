@@ -10,7 +10,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_pane",Count:2b}
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s store success score @s sucDropRcp run execute if entity @e[type=minecraft:item,tag=dropRcpStrEmp_1,distance=..0.5]
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches 1 store success score @s sucDropRcp run execute if entity @e[type=minecraft:item,tag=dropRcpStrEmp_2,distance=..0.5]
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] if score @s sucDropRcp matches 1 run scoreboard players set @s sucDropRcp -1
-execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2 0.2
+execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run function galaxy:tool/summon/structure_empower
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run kill @e[type=minecraft:item,tag=dropRcpStrEmp_1,distance=..1,sort=nearest,limit=1]
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run kill @e[type=minecraft:item,tag=dropRcpStrEmp_2,distance=..1,sort=nearest,limit=1]
