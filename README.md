@@ -1,6 +1,6 @@
 # Galaxy: delta
 
-<img src="https://i.imgur.com/ErHEb6k.png" width="60%">
+![](https://i.imgur.com/ErHEb6k.png)
 
 | Languages
 | --------------------
