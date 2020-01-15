@@ -3,7 +3,7 @@ data modify entity @e[tag=onGroundItem,tag=init,limit=1] Rotation[0] set from en
 data modify entity @e[tag=onGroundItem,tag=init,limit=1] HandItems[0] set from entity @s Item
 data modify entity @e[tag=onGroundItem,tag=init,limit=1] HandItems[0].tag.onGroundItem set value 1
 execute store result score @s styleScabbard run data get entity @s Item.tag.type
-scoreboard players set #calculation_temp1 numeric 100402
+scoreboard players set #calculation_temp1 numeric 100302
 scoreboard players set #calculation_temp2 numeric 10000
 scoreboard players operation #calculation_temp2 numeric *= @s styleScabbard
 scoreboard players operation #calculation_temp1 numeric += #calculation_temp2 numeric

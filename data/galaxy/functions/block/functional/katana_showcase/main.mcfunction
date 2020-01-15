@@ -18,6 +18,8 @@ execute if entity @s[tag=setDisplay] store result score @s styleKatana run data 
 
 execute if entity @s[tag=setDisplay,tag=type-1] run function galaxy:block/functional/katana_showcase/type-1
 execute if entity @s[tag=setDisplay,tag=type-2] run function galaxy:block/functional/katana_showcase/type-2
+execute if entity @s[tag=setDisplay,tag=type-3] run function galaxy:block/functional/katana_showcase/type-3
+execute if entity @s[tag=setDisplay,tag=type-4] run function galaxy:block/functional/katana_showcase/type-4
 
 execute if entity @s[tag=setDisplay,tag=!displaying] run tag @s add displaying
 execute if entity @s[tag=setDisplay] run function galaxy:weapon/katana/replace-hand_main/item_conversion-display
@@ -48,9 +50,23 @@ execute if entity @s[tag=adjustment,tag=displaying] run scoreboard players add @
 execute if entity @s[tag=adjustment,tag=displaying] if score @s statusBlockDisp matches 5 run scoreboard players set @s statusBlockDisp 1
 execute if entity @s[tag=adjustment,tag=displaying,tag=type-1] run function galaxy:block/functional/katana_showcase/type-1
 execute if entity @s[tag=adjustment,tag=displaying,tag=type-2] run function galaxy:block/functional/katana_showcase/type-2
+execute if entity @s[tag=adjustment,tag=displaying,tag=type-3] run function galaxy:block/functional/katana_showcase/type-3
+execute if entity @s[tag=adjustment,tag=displaying,tag=type-4] run function galaxy:block/functional/katana_showcase/type-4
 execute if entity @s[tag=adjustment,tag=displaying] run tag @s remove adjustment
 
 execute if entity @s[tag=remove] run function galaxy:weapon/katana/replace-hand_main/item_conversion-display
 execute if entity @s[tag=remove,tag=type-1] run function galaxy:block/functional/summon/katana_showcase-1
 execute if entity @s[tag=remove,tag=type-2] run function galaxy:block/functional/summon/katana_showcase-2
+execute if entity @s[tag=remove,tag=type-3] run function galaxy:block/functional/summon/katana_showcase-3
+execute if entity @s[tag=remove,tag=type-4] run function galaxy:block/functional/summon/katana_showcase-4
 execute if entity @s[tag=remove] run kill @s
+
+
+# type-4
+execute if entity @s[tag=type-4] positioned ^ ^ ^-1 if block ~ ~ ~ #galaxy:passable run tag @s add break
+execute if entity @s[tag=break] run summon item ~ ~ ~ {Tags:["dropedItem"],Item:{id:"minecraft:stone",Count:1b}}
+execute if entity @s[tag=break] run data modify entity @e[tag=dropedItem,limit=1] Item set from entity @s HandItems[0]
+execute if entity @s[tag=break] run replaceitem entity @s weapon.mainhand air
+execute if entity @s[tag=break] run tag @e[tag=dropedItem] remove dropedItem
+execute if entity @s[tag=break] run function galaxy:block/functional/summon/katana_showcase-4
+execute if entity @s[tag=break] run kill @s
