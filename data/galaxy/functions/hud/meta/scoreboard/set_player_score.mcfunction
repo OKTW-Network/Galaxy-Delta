@@ -7,4 +7,4 @@ scoreboard players remove @s isPistolHUD 0
 
 scoreboard players remove @s hudPistol 0
 
-tag @s add InitializedHUDScore
+tag @s add InitializedGalaxyHUDScore

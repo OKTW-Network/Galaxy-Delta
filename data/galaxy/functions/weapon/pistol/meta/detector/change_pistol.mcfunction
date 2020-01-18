@@ -1,5 +1,5 @@
 # init pistol UUID score
-execute as @a[tag=!InitializedPistolUUIDScore] run function galaxy:weapon/pistol/meta/scoreboard/set_player_score-pistol_uuid
+execute as @a[tag=!InitializedGalaxyPistolUUIDScore] run function galaxy:weapon/pistol/meta/scoreboard/set_player_score-pistol_uuid
 
 execute if score @s holdPistol matches 1 run tag @s add detectHandMain
 execute if score @s holdPistol matches 2 run tag @s add detectHandMain

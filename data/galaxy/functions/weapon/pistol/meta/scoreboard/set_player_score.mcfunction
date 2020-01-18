@@ -63,4 +63,4 @@ scoreboard players remove @s optPistolBltSped 0
 
 scoreboard players remove @s optPistolBltOfst 0
 
-tag @s add InitializedPistolScore
+tag @s add InitializedGalaxyPistolScore

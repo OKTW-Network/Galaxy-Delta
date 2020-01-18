@@ -1,4 +1,4 @@
-execute as @a[tag=!InitializedBlockFunctionalScore] run function galaxy:block/functional/meta/scoreboard/set_player_score
+execute as @a[tag=!InitializedGalaxyBlockFunctionalScore] run function galaxy:block/functional/meta/scoreboard/set_player_score
 
 execute as @e[tag=functional_placer] at @s run function galaxy:block/functional/placer/main
 

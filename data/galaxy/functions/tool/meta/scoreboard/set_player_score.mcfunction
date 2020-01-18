@@ -17,4 +17,4 @@ scoreboard players remove @s shieldFull 0
 
 scoreboard players remove @s shieldHealthy 0
 
-tag @s add InitializedToolScore
+tag @s add InitializedGalaxyToolScore

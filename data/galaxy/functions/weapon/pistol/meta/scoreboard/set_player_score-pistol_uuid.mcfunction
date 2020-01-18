@@ -4,4 +4,4 @@ execute store result score @s MhPistolUUIDL run data get entity @s SelectedItem.
 execute store result score @s FhPistolUUIDM run data get entity @s Inventory[{Slot:-106b}].tag.miniUUIDMost
 execute store result score @s FhPistolUUIDL run data get entity @s Inventory[{Slot:-106b}].tag.miniUUIDLeast
 
-tag @s add InitializedPistolUUIDScore
+tag @s add InitializedGalaxyPistolUUIDScore

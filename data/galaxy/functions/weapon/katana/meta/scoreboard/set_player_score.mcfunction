@@ -47,4 +47,4 @@ scoreboard players remove @s cdActStun 0
 
 scoreboard players remove @s cdActFlash 0
 
-tag @s add InitializedKatanaScore
+tag @s add InitializedGalaxyKatanaScore

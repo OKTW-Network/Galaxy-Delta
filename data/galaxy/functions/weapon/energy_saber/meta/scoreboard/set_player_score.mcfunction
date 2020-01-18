@@ -13,4 +13,4 @@ scoreboard players remove @s cdActTurnOn 0
 
 scoreboard players remove @s cdActTurnOff 0
 
-tag @s add InitializedEnergySaberScore
+tag @s add InitializedGalaxyEnergySaberScore

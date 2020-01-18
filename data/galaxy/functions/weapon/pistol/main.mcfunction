@@ -1,4 +1,4 @@
-execute as @a[tag=!InitializedPistolScore] run function galaxy:weapon/pistol/meta/scoreboard/set_player_score
+execute as @a[tag=!InitializedGalaxyPistolScore] run function galaxy:weapon/pistol/meta/scoreboard/set_player_score
 
 function galaxy:weapon/pistol/meta/detector/main
 execute as @e[tag=pistolBullet] at @s run function galaxy:weapon/pistol/bullet/main
