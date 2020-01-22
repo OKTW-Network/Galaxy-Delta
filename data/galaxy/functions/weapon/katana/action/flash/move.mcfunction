@@ -6,9 +6,9 @@ execute store result entity @e[tag=flashPathfinder,limit=1] Rotation[1] float 1 
 
 # detection
 scoreboard players set @s sucActFlash 0
-execute store success score @s sucActFlash at @e[tag=flashPathfinder] run execute if block ~ ~ ~ #galaxy:passable
-execute if score @s sucActFlash matches 1 store success score @s sucActFlash at @e[tag=flashPathfinder] run execute if block ~ ~1 ~ #galaxy:passable
-execute if score @s sucActFlash matches 1 store success score @s sucActFlash at @e[tag=flashPathfinder] run execute unless block ~ ~-1 ~ #galaxy:passable
+execute at @e[tag=flashPathfinder] store success score @s sucActFlash if block ~ ~ ~ #galaxy:passable
+execute at @e[tag=flashPathfinder] if score @s sucActFlash matches 1 store success score @s sucActFlash if block ~ ~1 ~ #galaxy:passable
+execute at @e[tag=flashPathfinder] if score @s sucActFlash matches 1 store success score @s sucActFlash unless block ~ ~-1 ~ #galaxy:passable
 
 # success action
 execute if score @s sucActFlash matches 1 run tp @s @e[tag=flashPathfinder,limit=1]
@@ -21,4 +21,4 @@ execute as @e[tag=flashPathfinder] at @s if score #katana_act_flash_damage Confi
 kill @e[tag=flashPathfinder]
 
 # recursive
-execute at @s if score @s lmtActFlash matches 1.. if score @s sucActFlash matches 1 run function galaxy:weapon/katana/action/flash/move
+execute if entity @s[scores={lmtActFlash=1..,sucActFlash=1}] at @s run function galaxy:weapon/katana/action/flash/move

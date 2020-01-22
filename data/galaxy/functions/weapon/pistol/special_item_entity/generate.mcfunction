@@ -1,1 +1,1 @@
-kill @s[predicate=!galaxy:head-not_empty]
+kill @s[predicate=minecraft:head-empty]

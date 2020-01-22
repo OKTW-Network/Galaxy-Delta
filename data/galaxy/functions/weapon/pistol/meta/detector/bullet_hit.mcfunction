@@ -1,4 +1,4 @@
-function galaxy:meta/detector/hitbox
+function cu:detector/hitbox
 execute store success score @s sucHitboxCheck if score @s hitboxX1 >= @e[tag=pistolBullet,tag=flighting,limit=1] posX
 execute if score @s sucHitboxCheck matches 1 store success score @s sucHitboxCheck if score @s hitboxX2 <= @e[tag=pistolBullet,tag=flighting,limit=1] posX
 execute if score @s sucHitboxCheck matches 1 store success score @s sucHitboxCheck if score @s hitboxY1 <= @e[tag=pistolBullet,tag=flighting,limit=1] posY

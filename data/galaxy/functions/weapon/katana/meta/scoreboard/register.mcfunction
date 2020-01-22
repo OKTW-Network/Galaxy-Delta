@@ -27,15 +27,6 @@ scoreboard objectives add styleScabbard dummy "num-scabbard style"
 scoreboard objectives add styleEdge dummy "num-edge style"
 
 
-scoreboard objectives add reqActSwapPull dummy "request-Action:Swap-PullOut"
-
-scoreboard objectives add reqActSwapPut dummy "request-Action:Swap-PutIn"
-
-scoreboard objectives add reqActStun dummy "request-Action:Stun"
-
-scoreboard objectives add reqActFlash dummy "request-Action:Flash"
-
-
 # How long the swap-pull action cooldown is.
 scoreboard objectives add cdActSwapPull dummy "num-Action:Swap-PullOut cooldown"
 
@@ -49,15 +40,9 @@ scoreboard objectives add cdActStun dummy "num-Action:Stun cooldown"
 scoreboard objectives add cdActFlash dummy "num-Action:Flash cooldown"
 
 
-# Success count of swap-put action.
-scoreboard objectives add sucActSwapPut dummy "num-Action:Swap-PutIn success count"
-
-# Success count of stun action.
-scoreboard objectives add sucActStun dummy "num-Action:Stun success count"
 
 # Success count of stun action.
 scoreboard objectives add sucActFlash dummy "num-Action:Flash success count"
-
 
 
 scoreboard objectives add lmtActFlash dummy "num-Action:Flash distance limit countdown"

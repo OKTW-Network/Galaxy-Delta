@@ -14,11 +14,6 @@ scoreboard objectives add statusSaber dummy "num-MainHand energy-saber status"
 scoreboard objectives add styleSaber dummy "num-Energy-saber style"
 
 
-scoreboard objectives add reqActTurnOn dummy "request-Action:Turn-On"
-
-scoreboard objectives add reqActTurnOff dummy "request-Action:Turn-Off"
-
-
 # How long the turn-on action cooldown is.
 scoreboard objectives add cdActTurnOn dummy "num-Action:Turn-On cooldown"
 

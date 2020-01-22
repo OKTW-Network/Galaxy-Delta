@@ -11,31 +11,11 @@ scoreboard players remove @s styleScabbard 0
 
 scoreboard players remove @s styleEdge 0
 
-scoreboard players remove @s reqActSwapPull 0
-
-scoreboard players remove @s reqActSwapPut 0
-
-scoreboard players remove @s reqActStun 0
-
-scoreboard players remove @s reqActFlash 0
-
-scoreboard players remove @s isActSwapPullCd 0
-
-scoreboard players remove @s isActSwapPutCd 0
-
-scoreboard players remove @s isActStunCd 0
-
-scoreboard players remove @s isActFlashCd 0
-
 scoreboard players remove @s lmtActFlash 0
 
 scoreboard players remove @s timActFlash 0
 
 scoreboard players remove @s disActFlash 0
-
-scoreboard players remove @s sucActSwapPut 0
-
-scoreboard players remove @s sucActStun 0
 
 scoreboard players remove @s sucActFlash 0
 
