@@ -6,7 +6,7 @@ execute if score #galaxy_version Meta = #galaxy_currently_version Meta if score 
 
 scoreboard players operation #galaxy_currently_version Meta = #galaxy_version Meta
 
-scoreboard players remove @s versionGalaxy 0
+scoreboard players remove @a versionGalaxy 0
 execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/clean_up-scoreboard
 execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/clean_up-tag
 execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/remove_init_tag
