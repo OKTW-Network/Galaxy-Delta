@@ -7,16 +7,6 @@
 scoreboard objectives add holdKatana dummy "num-Holding katana"
 
 
-# True when player's off-hand holding katana-type item.
-scoreboard objectives add isHoldKatana dummy "boolean-OffHand holding katana-type item"
-
-# True when player's off-hand holding scabbard-type item.
-scoreboard objectives add isHoldScabbard dummy "boolean-OffHand holding scabbard-type item"
-
-# True when player's main-hand holding edge-type item.
-scoreboard objectives add isHoldEdge dummy "boolean-MainHand holding edge-type item"
-
-
 # Record katana-type item's style in player's off-hand.
 scoreboard objectives add styleKatana dummy "num-Katana style"
 

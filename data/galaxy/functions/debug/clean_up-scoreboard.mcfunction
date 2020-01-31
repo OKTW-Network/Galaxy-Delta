@@ -10,3 +10,8 @@ scoreboard objectives remove sucActSwapPut
 scoreboard objectives remove sucActStun
 scoreboard objectives remove reqActTurnOn
 scoreboard objectives remove reqActTurnOff
+scoreboard objectives remove cdActTurnOn
+scoreboard objectives remove cdActTurnOff
+scoreboard objectives remove isHoldKatana
+scoreboard objectives remove isHoldEdge
+scoreboard objectives remove isHoldScabbard

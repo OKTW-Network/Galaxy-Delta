@@ -1,6 +1,6 @@
 execute if score #katana_act_swap_sound Config matches 1 at @s run playsound galaxy:katana.draw player @a ~ ~ ~ 1
 
-function galaxy:weapon/katana/meta/detector/holding-katana
+function galaxy:weapon/katana/meta/detector/style-katana
 
 execute as @s[scores={styleKatana=1}] run function galaxy:weapon/katana/replace-hand_main/katana_edge
 execute as @s[scores={styleKatana=1}] run function galaxy:weapon/katana/replace-hand_off/katana_scabbard

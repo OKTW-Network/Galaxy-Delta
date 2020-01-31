@@ -1,5 +1,5 @@
-function galaxy:weapon/katana/meta/detector/holding-scabbard
-function galaxy:weapon/katana/meta/detector/holding-edge
+function galaxy:weapon/katana/meta/detector/style-scabbard
+function galaxy:weapon/katana/meta/detector/style-edge
 
 scoreboard players set #calculation_temp1 numeric 0
 
