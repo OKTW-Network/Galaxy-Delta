@@ -1,16 +1,35 @@
-scoreboard players set #galaxy_version Meta 222
+scoreboard players set #galaxy_version_x.*.*-* Meta 0
+scoreboard players set #galaxy_version_*.x.*-* Meta 2
+scoreboard players set #galaxy_version_*.*.x-* Meta 2
+scoreboard players set #galaxy_version_*.*.*-x Meta 3
 
-execute unless score #galaxy_currently_version Meta matches -2147483648..2147483647 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
 
-execute unless score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_version Meta > #galaxy_currently_version Meta if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_currently_version","objective":"Meta"}},{"text":" -> ","color":"green"},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
-execute unless score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_version Meta < #galaxy_currently_version Meta if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_currently_version","objective":"Meta"}},{"text":" -> ","color":"red"},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
-execute if score #galaxy_version Meta = #galaxy_currently_version Meta if score #galaxy_print_version Config matches 2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"score":{"name":"#galaxy_version","objective":"Meta"}}]
+scoreboard players operation #new_x.*.*-* Version = #galaxy_version_x.*.*-* Meta
+scoreboard players operation #new_*.x.*-* Version = #galaxy_version_*.x.*-* Meta
+scoreboard players operation #new_*.*.x-* Version = #galaxy_version_*.*.x-* Meta
+scoreboard players operation #new_*.*.*-x Version = #galaxy_version_*.*.*-x Meta
+scoreboard players operation #currently_x.*.*-* Version = #galaxy_currently_version_x.*.*-* Meta
+scoreboard players operation #currently_*.x.*-* Version = #galaxy_currently_version_*.x.*-* Meta
+scoreboard players operation #currently_*.*.x-* Version = #galaxy_currently_version_*.*.x-* Meta
+scoreboard players operation #currently_*.*.*-x Version = #galaxy_currently_version_*.*.*-x Meta
+function cu:version/check
 
-execute unless score #galaxy_version Meta = #galaxy_currently_version Meta run function galaxy:debug/clean_up-scoreboard
+function cu:version/build-new
+function cu:version/build-currently
 
-scoreboard players operation #galaxy_currently_version Meta = #galaxy_version Meta
+execute if score #none Version matches 1 if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+execute if score #change Version matches 1 if score #higher Version matches 1 if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.currently","storage":"cu:resources","interpret":true},{"text":" -> ","color":"green"},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+execute if score #change Version matches 1 if score #lower Version matches 1 if score #galaxy_print_version Config matches 1..2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.currently","storage":"cu:resources","interpret":true},{"text":" -> ","color":"red"},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
+execute if score #change Version matches 0 if score #none Version matches 0 if score #galaxy_print_version Config matches 2 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Version: "},{"nbt":"version.new","storage":"cu:resources","interpret":true}]
 
-scoreboard players remove @a versionGalaxy 0
+execute if score #change Version matches 1 run function galaxy:debug/clean_up-scoreboard
+
+scoreboard players operation #galaxy_currently_version_x.*.*-* Meta = #galaxy_version_x.*.*-* Meta
+scoreboard players operation #galaxy_currently_version_*.x.*-* Meta = #galaxy_version_*.x.*-* Meta
+scoreboard players operation #galaxy_currently_version_*.*.x-* Meta = #galaxy_version_*.*.x-* Meta
+scoreboard players operation #galaxy_currently_version_*.*.*-x Meta = #galaxy_version_*.*.*-x Meta
+
+scoreboard players remove @s versionGalaxy 0
 execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/clean_up-tag
 execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/remove_init_tag
 execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run scoreboard players operation @s versionGalaxy = #galaxy_currently_version Meta
