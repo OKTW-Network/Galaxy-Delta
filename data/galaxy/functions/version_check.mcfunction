@@ -1,7 +1,7 @@
 scoreboard players set #galaxy_version_x.*.*-* Meta 0
 scoreboard players set #galaxy_version_*.x.*-* Meta 2
 scoreboard players set #galaxy_version_*.*.x-* Meta 2
-scoreboard players set #galaxy_version_*.*.*-x Meta 3
+scoreboard players set #galaxy_version_*.*.*-x Meta 5
 
 
 scoreboard players operation #new_x.*.*-* Version = #galaxy_version_x.*.*-* Meta
@@ -24,12 +24,10 @@ execute if score #change Version matches 0 if score #none Version matches 0 if s
 
 execute if score #change Version matches 1 run function galaxy:debug/clean_up-scoreboard
 
+execute if score #change Version matches 1 as @a run function galaxy:debug/clean_up-tag
+execute if score #change Version matches 1 as @a run function galaxy:debug/remove_init_tag
+
 scoreboard players operation #galaxy_currently_version_x.*.*-* Meta = #galaxy_version_x.*.*-* Meta
 scoreboard players operation #galaxy_currently_version_*.x.*-* Meta = #galaxy_version_*.x.*-* Meta
 scoreboard players operation #galaxy_currently_version_*.*.x-* Meta = #galaxy_version_*.*.x-* Meta
 scoreboard players operation #galaxy_currently_version_*.*.*-x Meta = #galaxy_version_*.*.*-x Meta
-
-scoreboard players remove @s versionGalaxy 0
-execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/clean_up-tag
-execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run function galaxy:debug/remove_init_tag
-execute as @a unless score @s versionGalaxy = #galaxy_currently_version Meta run scoreboard players operation @s versionGalaxy = #galaxy_currently_version Meta
