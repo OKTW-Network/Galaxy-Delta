@@ -8,7 +8,6 @@ scoreboard objectives remove reqActSwapPut
 scoreboard objectives remove reqActStun
 scoreboard objectives remove reqActFlash
 scoreboard objectives remove sucActSwapPut
-scoreboard objectives remove sucActStun
 scoreboard objectives remove reqActTurnOn
 scoreboard objectives remove reqActTurnOff
 scoreboard objectives remove cdActTurnOn
