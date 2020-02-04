@@ -18,7 +18,5 @@ scoreboard players set @e[tag=coke_furnace,tag=init] setSmelt 1
 scoreboard players set @e[tag=coke_furnace,tag=init] setProcess 1
 scoreboard players set @e[tag=coke_furnace,tag=init] setProgress 1
 scoreboard players remove @e[tag=coke_furnace,tag=init] workProc1 0
-scoreboard players remove @e[tag=coke_furnace,tag=init] workProc1Temp1 0
-scoreboard players remove @e[tag=coke_furnace,tag=init] workProc1Temp2 0
 execute as @e[tag=coke_furnace,tag=init] run tag @s remove init
 kill @s

@@ -50,25 +50,11 @@ scoreboard objectives add sucRequest dummy "num-GUI request success count"
 scoreboard objectives add sucHTctRcp dummy "num-GUI:HTct recipe check success count"
 
 
-scoreboard objectives add workStatus dummy "num-GUI working status"
-
-scoreboard objectives add workStatusTemp dummy "num-GUI working status temporary"
-
-scoreboard objectives add workProc1 dummy "num-GUI working process1"
-
 scoreboard objectives add setSmelt dummy "num-GUI smelt status update"
 
 scoreboard objectives add setProcess dummy "num-GUI process status update"
 
 scoreboard objectives add setProgress dummy "num-GUI progress bar update"
-
-scoreboard objectives add workProc1Temp1 dummy "num-GUI working process1 temporary1"
-
-scoreboard objectives add workProc1Temp2 dummy "num-GUI working process1 temporary2"
-
-scoreboard objectives add workProc1ICount dummy "num-GUI working process1 input item count"
-
-scoreboard objectives add workProc1OCount dummy "num-GUI working process1 output item count"
 
 
 scoreboard objectives add sbldAttribute dummy "num-GUI:Sbld attribute type"

@@ -1,5 +1,5 @@
 # machine protection
-function galaxy:block/protection
+function galaxy:block/protection-strict
 
 # block destroy
 execute if block ~ ~ ~ minecraft:air run tag @s add destroy

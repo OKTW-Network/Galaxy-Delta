@@ -1,5 +1,5 @@
 # machine protection
-function galaxy:block/protection
+function galaxy:block/protection-strict
 
 # block destroy
 execute unless block ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.hi_tech_crafting"}'} run tag @s add destroy
