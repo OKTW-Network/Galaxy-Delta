@@ -2,6 +2,6 @@ execute as @a[tag=!InitializedGalaxyBlockFunctionalScore] run function galaxy:bl
 
 execute as @e[tag=functional_placer] at @s run function galaxy:block/functional/placer/main
 
-execute as @e[tag=katana_showcase] at @s run function galaxy:block/functional/katana_showcase/main
+execute as @e[tag=katana_display_stand] at @s run function galaxy:block/functional/katana_display_stand/main
 execute as @e[tag=structure_empower_detector] at @s run function galaxy:block/functional/structure_empower
 

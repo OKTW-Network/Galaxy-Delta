@@ -1,7 +1,7 @@
 scoreboard players set #galaxy_version_x.*.*-* Meta 0
 scoreboard players set #galaxy_version_*.x.*-* Meta 2
 scoreboard players set #galaxy_version_*.*.x-* Meta 2
-scoreboard players set #galaxy_version_*.*.*-x Meta 7
+scoreboard players set #galaxy_version_*.*.*-x Meta 8
 
 
 scoreboard players operation #new_x.*.*-* Version = #galaxy_version_x.*.*-* Meta
