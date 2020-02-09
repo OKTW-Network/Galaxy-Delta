@@ -16,4 +16,4 @@ execute as @e[tag=hi-tech_crafting_table_item,tag=storage_data] run tag @s remov
 execute if entity @s[tag=destroy] run kill @s
 
 # gui function
-function galaxy:gui/hi-tech_crafting_table/main
+execute if predicate galaxy:block/barrel-open run function galaxy:gui/hi-tech_crafting_table/main

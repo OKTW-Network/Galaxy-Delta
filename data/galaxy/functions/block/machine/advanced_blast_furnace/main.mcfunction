@@ -14,4 +14,4 @@ execute if entity @s[tag=destroy] run kill @s
 function galaxy:block/machine/advanced_blast_furnace/work/main
 
 # gui function
-function galaxy:gui/advanced_blast_furnace/main
+execute if predicate galaxy:block/barrel-open run function galaxy:gui/advanced_blast_furnace/main
