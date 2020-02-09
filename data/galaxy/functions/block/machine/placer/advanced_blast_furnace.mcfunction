@@ -10,6 +10,7 @@ execute if score @s rotation0 matches 0 at @s run data merge entity @e[tag=advan
 execute if score @s rotation0 matches 90 at @s run data merge entity @e[tag=advanced_blast_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,90f,0f]}}
 execute if score @s rotation0 matches -90 at @s run data merge entity @e[tag=advanced_blast_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,-90f,0f]}}
 execute if score @s rotation0 matches 180 at @s run data merge entity @e[tag=advanced_blast_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
+execute if score @s rotation0 matches -180 at @s run data merge entity @e[tag=advanced_blast_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
 execute as @e[tag=advanced_blast_furnace_fake_block,tag=init] run tag @s remove init
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] guiMode 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workStatus 0

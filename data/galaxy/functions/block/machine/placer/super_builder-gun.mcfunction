@@ -10,6 +10,7 @@ execute if score @s rotation0 matches 0 at @s run data merge entity @e[tag=super
 execute if score @s rotation0 matches 90 at @s run data merge entity @e[tag=super_builder-gun_fake_block,tag=init,limit=1] {Pose:{Head:[0f,90f,0f]}}
 execute if score @s rotation0 matches -90 at @s run data merge entity @e[tag=super_builder-gun_fake_block,tag=init,limit=1] {Pose:{Head:[0f,-90f,0f]}}
 execute if score @s rotation0 matches 180 at @s run data merge entity @e[tag=super_builder-gun_fake_block,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
+execute if score @s rotation0 matches -180 at @s run data merge entity @e[tag=super_builder-gun_fake_block,tag=init,limit=1] {Pose:{Head:[0f,-180f,0f]}}
 scoreboard players set @e[tag=super_builder-gun,tag=init] guiMode 0
 scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAttribute 0
 scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAtbValue 0
