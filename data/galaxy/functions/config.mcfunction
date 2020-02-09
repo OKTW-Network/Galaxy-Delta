@@ -34,24 +34,6 @@ scoreboard players set #advanced_blast_furnace_dur Config 600
 ############################################
 
   ########################################
-  # Shield projector                     #
-  ########################################
-
-# Enable shield projector
-# boolean, default: 1
-scoreboard players set #shield_projector Config 1
-
-# Shield regen cooldown
-# for example, 20 means shield regen will only start until 20 tick after the attack.
-# integer, tick, default: 60
-scoreboard players set #shield_regen_cd Config 60
-
-# Shield regen speed
-# for example, 20 means every 20 tick regen 4 shield point.
-# integer, tick, default: 20
-scoreboard players set #shield_regen_speed Config 20
-
-  ########################################
   # Structure empower                    #
   ########################################
 
