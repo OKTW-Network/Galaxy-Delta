@@ -4,12 +4,12 @@ summon minecraft:armor_stand ~ ~1 ~ {Silent:1b,CustomNameVisible:0b,NoGravity:1b
 execute store result score @s rotation0 run data get entity @s Rotation[0]
 execute if score @s rotation0 matches 45 run scoreboard players set @s rotation0 0
 execute if score @s rotation0 matches -45 run scoreboard players set @s rotation0 0
-execute if score @s rotation0 matches 135 run scoreboard players set @s rotation0 -180
-execute if score @s rotation0 matches -135 run scoreboard players set @s rotation0 -180
+execute if score @s rotation0 matches 135 run scoreboard players set @s rotation0 180
+execute if score @s rotation0 matches -135 run scoreboard players set @s rotation0 180
 execute if score @s rotation0 matches 0 at @s run data merge entity @e[tag=coke_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,0f,0f]}}
 execute if score @s rotation0 matches 90 at @s run data merge entity @e[tag=coke_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,90f,0f]}}
 execute if score @s rotation0 matches -90 at @s run data merge entity @e[tag=coke_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,-90f,0f]}}
-execute if score @s rotation0 matches -180 at @s run data merge entity @e[tag=coke_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
+execute if score @s rotation0 matches 180 at @s run data merge entity @e[tag=coke_furnace_fake_block,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
 execute as @e[tag=coke_furnace_fake_block,tag=init] run tag @s remove init
 scoreboard players set @e[tag=coke_furnace,tag=init] guiMode 0
 scoreboard players set @e[tag=coke_furnace,tag=init] workStatus 0
