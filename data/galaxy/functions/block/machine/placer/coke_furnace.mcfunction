@@ -2,7 +2,6 @@ summon minecraft:armor_stand ~ ~ ~ {Silent:1b,CustomNameVisible:0b,NoGravity:1b,
 setblock ~ ~ ~ minecraft:barrel{CustomName:"{\"translate\":\"container.coke_furnace\"}"} replace
 summon minecraft:armor_stand ~ ~1 ~ {Silent:1b,CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["coke_furnace_fake_block",init],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10200,fakeBlock:1,advancedBlastFurnace:1}}]}
 execute store result score @s rotation0 run data get entity @s Rotation[0]
-tellraw @a [{"score":{"name":"@s","objective":"rotation0"}}]
 execute if score @s rotation0 matches 45 run scoreboard players set @s rotation0 0
 execute if score @s rotation0 matches -45 run scoreboard players set @s rotation0 0
 execute if score @s rotation0 matches 135 run scoreboard players set @s rotation0 180
