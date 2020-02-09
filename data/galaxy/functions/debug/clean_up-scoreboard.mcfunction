@@ -15,3 +15,10 @@ scoreboard objectives remove cdActTurnOff
 scoreboard objectives remove isHoldKatana
 scoreboard objectives remove isHoldEdge
 scoreboard objectives remove isHoldScabbard
+scoreboard objectives remove haveShield
+scoreboard objectives remove shieldStatus
+scoreboard objectives remove errMultiShield
+scoreboard objectives remove cdShield
+scoreboard objectives remove delayShield
+scoreboard objectives remove shieldFull
+scoreboard objectives remove shieldHealthy
