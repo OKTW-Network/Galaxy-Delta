@@ -15,13 +15,13 @@ execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:4b}]} run scoreboard pl
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:20b}]} run scoreboard players remove @s sbldAtbValue 100
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:21b}]} run scoreboard players remove @s sbldAtbValue 10
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:22b}]} run scoreboard players remove @s sbldAtbValue 1
-function galaxy:recipe/super_builder-pistol/get-atb_value_limit
+function galaxy:recipe/super_builder-gun/get-atb_value_limit
 execute if score @s sbldAtbValue matches 1000.. run scoreboard players set @s sbldAtbValue 999
 execute if score @s sbldAtbValue >= @s sbldPistolAtVMax store result score @s sbldAtbValue run scoreboard players get @s sbldPistolAtVMax
 execute if score @s sbldAtbValue <= @s sbldPistolAtVMin store result score @s sbldAtbValue run scoreboard players get @s sbldPistolAtVMin
 execute if score @s sbldAtbValue matches ..-1 run scoreboard players set @s sbldAtbValue 0
 
-function galaxy:gui/super_builder-pistol/build-num_section
+function galaxy:gui/super_builder-gun/build-num_section
 
 replaceitem block ~ ~ ~ container.2 minecraft:gray_stained_glass_pane{display:{Name:"{\"text\":\"+100\",\"italic\":false,\"color\":\"green\"}"},CustomModelData:10200,guiItem:1}
 replaceitem block ~ ~ ~ container.3 minecraft:gray_stained_glass_pane{display:{Name:"{\"text\":\"+10\",\"italic\":false,\"color\":\"green\"}"},CustomModelData:10200,guiItem:1}
@@ -41,4 +41,4 @@ execute if score @s sbldAttribute matches 8 store result score @s optPistolCoolD
 execute if score @s sbldAttribute matches 9 store result score @s optPistolBltSped run scoreboard players get @s sbldAtbValue
 execute if score @s sbldAttribute matches 10 store result score @s optPistolBltOfst run scoreboard players get @s sbldAtbValue
 
-function galaxy:gui/super_builder-pistol/build-result
+function galaxy:gui/super_builder-gun/build-result

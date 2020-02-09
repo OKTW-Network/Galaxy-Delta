@@ -45,9 +45,9 @@ execute if entity @s[tag=setSbldAttribute] unless block ~ ~ ~ minecraft:barrel{I
 execute if entity @s[tag=setSbldAttribute] if score @s sbldAttribute > #global sbldPistolAtbMax run scoreboard players set @s sbldAttribute 1
 execute if entity @s[tag=setSbldAttribute] if score @s sbldAttribute matches ..0 store result score @s sbldAttribute run scoreboard players get #global sbldPistolAtbMax
 
-execute if entity @s[tag=setSbldAttribute] run function galaxy:recipe/super_builder-pistol/build-atb_category
+execute if entity @s[tag=setSbldAttribute] run function galaxy:recipe/super_builder-gun/build-atb_category
 
-execute if entity @s[tag=setSbldAttribute] run function galaxy:gui/super_builder-pistol/build-num_selection_section
+execute if entity @s[tag=setSbldAttribute] run function galaxy:gui/super_builder-gun/build-num_selection_section
 
 tag @s[tag=setSbldAttribute] remove setSbldAttribute
 
@@ -64,13 +64,13 @@ execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:22b}]} run tag @s add s
 
 execute if entity @s[tag=setSbldValue] run function galaxy:gui/remove-gui_item
 
-execute if entity @s[tag=setSbldValue] run function galaxy:gui/super_builder-pistol/build-num_selection_section
+execute if entity @s[tag=setSbldValue] run function galaxy:gui/super_builder-gun/build-num_selection_section
 
 tag @s[tag=setSbldValue] remove setSbldValue
 
 # 
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add setSbldResult
 
-execute if entity @s[tag=setSbldResult] run function galaxy:gui/super_builder-pistol/build-result
+execute if entity @s[tag=setSbldResult] run function galaxy:gui/super_builder-gun/build-result
 
 tag @s[tag=setSbldResult] remove setSbldResult
