@@ -1,6 +1,6 @@
 function galaxy:meta/scoreboard/register
 function galaxy:config
-function galaxy:version_check
+function galaxy:check-version
 
 execute as @a[tag=!InitializedGalaxyScore] run function galaxy:meta/scoreboard/set_player_score
 
