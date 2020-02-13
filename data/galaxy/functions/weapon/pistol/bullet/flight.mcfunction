@@ -8,7 +8,7 @@ execute store result score @s posZ run data get entity @s Pos[2] 10
 
 scoreboard players set @s sucBulletMove 0
 scoreboard players set @s sucBulletHit 0
-execute store success score @s sucBulletMove run execute if block ~ ~ ~ #galaxy:passable
+execute store success score @s sucBulletMove run execute if block ~ ~ ~ #minecraft:passable
 execute if score @s sucBulletMove matches 1 if entity @e[type=!minecraft:player,tag=!pistolBullet,tag=!debug,distance=..4] run tag @e[type=!minecraft:player,tag=!pistolBullet,tag=!debug,distance=..4] add possibleVictim
 execute as @e[tag=possibleVictim] run function galaxy:weapon/pistol/meta/detector/bullet_hit
 

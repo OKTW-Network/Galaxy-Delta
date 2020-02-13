@@ -1,6 +1,6 @@
 # summon
 execute anchored eyes run summon minecraft:armor_stand ^ ^ ^0.5 {DisabledSlots:4144959,Marker:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,Tags:["pistolBullet","init"],HandItems:[{id:"minecraft:diamond_sword",Count:1b,tag:{CustomModelData:100}},{}],ArmorItems:[{},{},{},{id:"minecraft:air",Count:1b}]}
-execute as @e[tag=pistolBullet,tag=init,limit=1] at @s unless block ~ ~ ~ #galaxy:passable run kill @s
+execute as @e[tag=pistolBullet,tag=init,limit=1] at @s unless block ~ ~ ~ #minecraft:passable run kill @s
 execute store result entity @e[tag=pistolBullet,tag=init,limit=1] HandItems[0].tag.bulletDamage int 1 run data get entity @s Inventory[{Slot:-106b}].tag.bulletDamage
 execute store result entity @e[tag=pistolBullet,tag=init,limit=1] HandItems[0].tag.bulletSpeed int 1 run data get entity @s Inventory[{Slot:-106b}].tag.bulletSpeed
 execute store result entity @e[tag=pistolBullet,tag=init,limit=1] HandItems[0].tag.bulletDisLmt int 1 run data get entity @s Inventory[{Slot:-106b}].tag.bulletDisLmt 4

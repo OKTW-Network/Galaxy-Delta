@@ -6,9 +6,9 @@ execute store result entity @e[tag=flashPathfinder,limit=1] Rotation[1] float 1 
 
 # detection
 scoreboard players set @s sucActFlash 0
-execute at @e[tag=flashPathfinder] store success score @s sucActFlash if block ~ ~ ~ #galaxy:passable
-execute at @e[tag=flashPathfinder] if score @s sucActFlash matches 1 store success score @s sucActFlash if block ~ ~1 ~ #galaxy:passable
-execute at @e[tag=flashPathfinder] if score @s sucActFlash matches 1 store success score @s sucActFlash unless block ~ ~-1 ~ #galaxy:passable
+execute at @e[tag=flashPathfinder] store success score @s sucActFlash if block ~ ~ ~ #minecraft:passable
+execute at @e[tag=flashPathfinder] if score @s sucActFlash matches 1 store success score @s sucActFlash if block ~ ~1 ~ #minecraft:passable
+execute at @e[tag=flashPathfinder] if score @s sucActFlash matches 1 store success score @s sucActFlash unless block ~ ~-1 ~ #minecraft:passable
 
 # success action
 execute if score @s sucActFlash matches 1 run tp @s @e[tag=flashPathfinder,limit=1]
