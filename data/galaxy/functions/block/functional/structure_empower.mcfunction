@@ -7,7 +7,7 @@ execute if entity @s[tag=throw] run tag @e[tag=throwItem] remove throwItem
 execute if entity @s[tag=throw] run tag @s remove throw
 
 # remove
-execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=galaxy:tool/hand_main-wrench] run tag @s add remove
-execute if entity @s[tag=remove] run function galaxy:tool/wrench
-execute if entity @s[tag=remove] run function galaxy:tool/summon/structure_empower
-execute if entity @s[tag=remove] run kill @s
+execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=galaxy:tool/hand_main-wrench] run tag @s add dismantle
+execute if entity @s[tag=dismantle] run function galaxy:tool/wrench
+execute if entity @s[tag=dismantle] run function galaxy:tool/summon/structure_empower
+execute if entity @s[tag=dismantle] run kill @s

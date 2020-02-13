@@ -45,25 +45,12 @@ execute if entity @s[tag=throw] run tag @s remove throw
 
 # wrench
 execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=galaxy:tool/hand_main-wrench] run function galaxy:tool/wrench
-
-execute if entity @s[tag=adjustment,tag=displaying] run scoreboard players add @s statusBlockDisp 1
-execute if entity @s[tag=adjustment,tag=displaying] if score @s statusBlockDisp matches 5 run scoreboard players set @s statusBlockDisp 1
-execute if entity @s[tag=adjustment,tag=displaying,tag=type-1] run function galaxy:block/functional/katana_display_stand/type-1
-execute if entity @s[tag=adjustment,tag=displaying,tag=type-2] run function galaxy:block/functional/katana_display_stand/type-2
-execute if entity @s[tag=adjustment,tag=displaying,tag=type-3] run function galaxy:block/functional/katana_display_stand/type-3
-execute if entity @s[tag=adjustment,tag=displaying,tag=type-4] run function galaxy:block/functional/katana_display_stand/type-4
-execute if entity @s[tag=adjustment,tag=displaying] run tag @s remove adjustment
-
-execute if entity @s[tag=remove] run function galaxy:weapon/katana/replace-hand_main/item_conversion-display
-execute if entity @s[tag=remove,tag=type-1] run function galaxy:block/functional/summon/katana_display_stand-1
-execute if entity @s[tag=remove,tag=type-2] run function galaxy:block/functional/summon/katana_display_stand-2
-execute if entity @s[tag=remove,tag=type-3] run function galaxy:block/functional/summon/katana_display_stand-3
-execute if entity @s[tag=remove,tag=type-4] run function galaxy:block/functional/summon/katana_display_stand-4
-execute if entity @s[tag=remove] run kill @s
+execute if entity @s[tag=adjustment,tag=displaying] run function galaxy:block/functional/katana_display_stand/wrench/adjustment
+execute if entity @s[tag=dismantle] run function galaxy:block/functional/katana_display_stand/wrench/dismantle
 
 
 # type-4
-execute if entity @s[tag=type-4] positioned ^ ^ ^-1 if block ~ ~ ~ #galaxy:passable run tag @s add break
+execute if entity @s[tag=type-4] positioned ^ ^ ^-1 if block ~ ~ ~ #minecraft:unattachable run tag @s add break
 execute if entity @s[tag=break] run summon item ~ ~ ~ {Tags:["dropedItem"],Item:{id:"minecraft:stone",Count:1b}}
 execute if entity @s[tag=break] run data modify entity @e[tag=dropedItem,limit=1] Item set from entity @s HandItems[0]
 execute if entity @s[tag=break] run replaceitem entity @s weapon.mainhand air
