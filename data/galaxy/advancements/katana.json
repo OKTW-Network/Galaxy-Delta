@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{CustomModelData:20100,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.galaxy.katana.title"},
+        "description": {"translate":"advancements.galaxy.katana.description"}
+    },
+    "parent": "galaxy:steel",
+    "rewards": {
+		"function": "galaxy:advancement/weaponry/katana"
+    },
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{katana:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

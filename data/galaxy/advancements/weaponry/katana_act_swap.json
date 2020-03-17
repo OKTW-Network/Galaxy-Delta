@@ -10,7 +10,7 @@
         "show_toast": false,
         "announce_to_chat": false
     },
-    "parent": "galaxy:weaponry/katana_actions",
+    "parent": "galaxy:weaponry/katana_act_basic",
     "criteria": {
         "katana": {
             "trigger": "minecraft:impossible"

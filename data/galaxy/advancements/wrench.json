@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword",
+            "nbt": "{CustomModelData:10100,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.galaxy.wrench.title"},
+        "description": {"translate":"advancements.galaxy.wrench.description"}
+    },
+    "parent": "galaxy:steel",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{wrench:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

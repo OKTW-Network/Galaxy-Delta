@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:armor_stand",
+            "nbt": "{CustomModelData:10100,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.galaxy.hi-tech_crafting_table.title"},
+        "description": {"translate":"advancements.galaxy.hi-tech_crafting_table.description"}
+    },
+    "parent": "galaxy:structure_empower",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{HTct:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

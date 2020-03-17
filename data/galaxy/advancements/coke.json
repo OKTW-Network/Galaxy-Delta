@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:command_block",
+            "nbt": "{CustomModelData:1020,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.galaxy.coke.title"},
+        "description": {"translate":"advancements.galaxy.coke.description"}
+    },
+    "parent": "galaxy:hi-tech_crafting_table",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{coke:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

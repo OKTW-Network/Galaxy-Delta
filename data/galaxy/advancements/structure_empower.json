@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:armor_stand",
+            "nbt": "{CustomModelData:30100,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.galaxy.structure_empower.title"},
+        "description": {"translate":"advancements.galaxy.structure_empower.description"}
+    },
+    "parent": "galaxy:root",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{structureEmpower:1}"
+                    }
+                ]
+            }
+        }
+    }
+}

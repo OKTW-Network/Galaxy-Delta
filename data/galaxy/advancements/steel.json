@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:command_block",
+            "nbt": "{CustomModelData:1010,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.galaxy.steel.title"},
+        "description": {"translate":"advancements.galaxy.steel.description"}
+    },
+    "parent": "galaxy:coke",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{ingotSteel:1}"
+                    }
+                ]
+            }
+        }
+    }
+}
