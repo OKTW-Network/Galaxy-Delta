@@ -1,1 +1,1 @@
-clear @a #galaxy:all{guiItem:1}
+clear @a #minecraft:all{guiItem:1}

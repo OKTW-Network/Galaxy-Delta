@@ -72,6 +72,10 @@ scoreboard players set #katana_act_stun Config 1
 # boolean, default: 1
 scoreboard players set #katana_act_flash Config 1
 
+# Enable action: shock
+# boolean, default: 1
+scoreboard players set #katana_act_shock Config 1
+
 
 # Action: swap - play sounds
 # boolean, default: 1
@@ -80,6 +84,15 @@ scoreboard players set #katana_act_swap_sound Config 1
 # Action: stun - play sounds
 # boolean, default: 1
 scoreboard players set #katana_act_stun_sound Config 1
+
+# Action: shock - play sounds
+# boolean, default: 1
+scoreboard players set #katana_act_shock_sound Config 1
+
+
+# Action: shock - particles
+# boolean, default: 1
+scoreboard players set #katana_act_shock_particle Config 1
 
 
 # Action: swap-pull - cooldown
@@ -91,16 +104,20 @@ scoreboard players set #katana_act_swap_pull_cd Config 10
 scoreboard players set #katana_act_swap_put_cd Config 10
 
 # Action: stun - cooldown when hit
-# integer, tick, default: 70
-scoreboard players set #katana_act_stun_hit_cd Config 70
+# integer, tick, default: 60
+scoreboard players set #katana_act_stun_hit_cd Config 60
 
 # Action: stun - cooldown when miss
 # integer, tick, default: 20
 scoreboard players set #katana_act_stun_miss_cd Config 20
 
-# Action: flash - cooldown
+# Action: flash - cooldown max
+# integer, tick, default: 80
+scoreboard players set #katana_act_flash_cd_max Config 80
+
+# Action: shock - cooldown
 # integer, tick, default: 120
-scoreboard players set #katana_act_flash_cd_max Config 120
+scoreboard players set #katana_act_shock_cd Config 120
 
 
 # Action: flash - detection timer
@@ -116,8 +133,19 @@ scoreboard players set #katana_act_flash_distance_limit Config 5
 
 # Action: flash - damage
 # Set to 0 will disable the damage.
-# integer, default: 12
-scoreboard players set #katana_act_flash_damage Config 12
+# integer, default: 16
+scoreboard players set #katana_act_flash_damage Config 16
+
+# Action: shock - damage base
+# Set to 0 will disable the damage.
+# integer, default: 10
+scoreboard players set #katana_act_shock_damage_base Config 10
+
+# Action: shock - damage per block
+# Set to 0 will only give the base of damage.
+# integer, default: 2
+scoreboard players set #katana_act_shock_damage_addition Config 2
+
 
   ########################################
   # Energy saber                         #
@@ -207,6 +235,10 @@ scoreboard players set #hud_katana_act_stun Config 1
 # Caution: Incompatible with HUD:katana.swap, Enable both will make that one disable!
 # boolean, default: 1
 scoreboard players set #hud_katana_act_flash Config 1
+
+# Enable action:shock on HUD:katana
+# boolean, default: 1
+scoreboard players set #hud_katana_act_shock Config 1
 
 
   ########################################

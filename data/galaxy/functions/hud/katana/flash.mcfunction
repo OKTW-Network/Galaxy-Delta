@@ -1,5 +1,5 @@
+function galaxy:weapon/katana/action/flash/cooldown_calculate
 execute store result score #calculation_temp1 numeric run scoreboard players get @s cdActFlash
-execute if entity @s[scores={disActFlash=1..}] store result score #calculation_temp2 numeric run scoreboard players get #katana_act_flash_cd_max Config
 execute if entity @s[scores={disActFlash=1..}] run scoreboard players operation #calculation_temp1 numeric *= #static_1000 numeric
 execute if entity @s[scores={disActFlash=1..}] run scoreboard players operation #calculation_temp1 numeric /= #calculation_temp2 numeric
 execute if score #calculation_temp1 numeric matches 901..1000 run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"+","color":"yellow"},{"text":"---------","color":"gray"},{"text":"]","color":"dark_gray"}]

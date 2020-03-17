@@ -9,8 +9,7 @@ execute store result score @s posZ run data get entity @s Pos[2] 10
 scoreboard players set @s sucBulletMove 0
 scoreboard players set @s sucBulletHit 0
 execute store success score @s sucBulletMove run execute if block ~ ~ ~ #minecraft:passable
-execute if score @s sucBulletMove matches 1 if entity @e[type=!minecraft:player,tag=!pistolBullet,tag=!debug,distance=..4] run tag @e[type=!minecraft:player,tag=!pistolBullet,tag=!debug,distance=..4] add possibleVictim
-execute as @e[tag=possibleVictim] run function galaxy:weapon/pistol/meta/detector/bullet_hit
+execute if score @s sucBulletMove matches 1 run function galaxy:damage/tag/bullet
 
 # execute if score @s sucBulletMove matches 1 store result score #calculation_temp1 numeric run data get entity @s HandItems[0].tag.flightDistance
 # execute if score @s sucBulletMove matches 1 run scoreboard players add #calculation_temp1 numeric 5
@@ -29,11 +28,13 @@ execute if score @s sucBulletMove matches 1 run particle minecraft:enchanted_hit
 execute if score @s sucBulletHit matches 1 store result score #calculation_temp1 numeric run data get entity @s HandItems[0].tag.bulletDamage
 execute if score @s sucBulletHit matches 1 run function galaxy:damage/bullet
 
-execute if entity @s[nbt={HandItems:[{tag:{bulletDisLmt:0}}]}] run kill @s
-execute if score @s sucBulletMove matches 0 run kill @s
-execute if score @s sucBulletHit matches 1 run kill @s
+execute if entity @s[nbt={HandItems:[{tag:{bulletDisLmt:0}}]}] run tag @s add pathfindEnd
+execute if score @s sucBulletMove matches 0 run tag @s add pathfindEnd
+execute if score @s sucBulletHit matches 1 run tag @s add pathfindEnd
+
+execute if entity @s[tag=pathfindEnd] run kill @s
 
 tag @s remove flighting
 
 # recursive
-execute at @s if score @s sucBulletMove matches 1 unless score @s sucBulletHit matches 1 unless entity @s[nbt={HandItems:[{tag:{bulletDisLmt:0}}]}] unless entity @s[nbt={HandItems:[{tag:{disRemain:0}}]}] run function galaxy:weapon/pistol/bullet/flight
+execute if entity @s[tag=!pathfindEnd] unless entity @s[nbt={HandItems:[{tag:{disRemain:0}}]}] at @s run function galaxy:weapon/pistol/bullet/flight

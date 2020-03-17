@@ -1,5 +1,5 @@
 execute at @s run summon minecraft:armor_stand ^ ^ ^1.75 {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["stunSelector"]}
-execute as @e[tag=stunSelector] at @s store success score #calculation_temp1 numeric run tag @e[type=#galaxy:hostile,distance=..1.5] add init-status-stun
+execute as @e[tag=stunSelector] at @s store success score #calculation_temp1 numeric run tag @e[type=#minecraft:hostile,distance=..1.5] add init-status-stun
 kill @e[tag=stunSelector]
 
 scoreboard players operation @s sucActStun = #calculation_temp1 numeric
