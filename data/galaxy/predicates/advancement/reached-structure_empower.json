@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "player": {
+            "advancements": {
+                "galaxy:structure_empower": true
+            }
+        }
+    },
+    "entity":"this"
+}

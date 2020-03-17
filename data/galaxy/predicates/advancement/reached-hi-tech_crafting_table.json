@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "player": {
+            "advancements": {
+                "galaxy:hi-tech_crafting_table": true
+            }
+        }
+    },
+    "entity":"this"
+}

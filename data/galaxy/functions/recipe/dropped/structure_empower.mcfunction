@@ -12,6 +12,7 @@ execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDrop
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] if score @s sucDropRcp matches 1 run scoreboard players set @s sucDropRcp -1
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run function galaxy:tool/summon/structure_empower
+execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 as @a[distance=..4,predicate=!galaxy:advancement/reached-structure_empower] run function galaxy:advancement/structure_empower
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run kill @e[type=minecraft:item,tag=dropRcpStrEmp_1,distance=..1,sort=nearest,limit=1]
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] at @s if score @s sucDropRcp matches -1 run kill @e[type=minecraft:item,tag=dropRcpStrEmp_2,distance=..1,sort=nearest,limit=1]
 execute as @e[type=minecraft:item,tag=dropRcpStrEmp_3] if score @s sucDropRcp matches -1 run kill @s
