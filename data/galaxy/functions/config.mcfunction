@@ -2,16 +2,16 @@
 # General                                  #
 ############################################
 
-# Allow version prompt print out
+# Allow version prompt print out while initializing
 # 0 = don't print anything, 1 = only print while version changed, 2 = always print version when /reload
 # integer, default: 2
 scoreboard players set #galaxy_print_version Config 2
 
-# Allow initial prompt print out
+# Allow initial prompt print out while initializing
 # boolean, default: 0
 scoreboard players set #galaxy_print_init Config 0
 
-# Allow config prompt print out
+# Allow config prompt print out while initializing
 # boolean, default: 0
 scoreboard players set #galaxy_print_config Config 0
 
@@ -48,7 +48,7 @@ scoreboard players set #structure_empower_weather_condition Config 2
 
 # Success chance of the process
 # higher value mean higher success chance
-# integer, range: 0 ~ 1.0, default: 0.0005
+# float, range: 0 ~ 1.0, default: 0.0005
 ## see the file at ..\Galaxy-delta\data\galaxy\predicates\configurable\structure_empower_success_chance
 
 
