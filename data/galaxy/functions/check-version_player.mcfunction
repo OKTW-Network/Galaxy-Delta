@@ -1,5 +1,3 @@
-function galaxy:version
-
 scoreboard players operation #new_x.*.*-* Version = #galaxy_currently_version_x.*.*-* Meta
 scoreboard players operation #new_*.x.*-* Version = #galaxy_currently_version_*.x.*-* Meta
 scoreboard players operation #new_*.*.x-* Version = #galaxy_currently_version_*.*.x-* Meta
