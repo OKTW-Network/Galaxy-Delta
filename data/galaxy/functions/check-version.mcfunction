@@ -21,7 +21,7 @@ execute if score #change Version matches 0 if score #none Version matches 0 if s
 execute if score #change Version matches 1 run function galaxy:debug/clean_up-scoreboard
 
 execute if score #change Version matches 1 as @a run function galaxy:debug/clean_up-tag
-execute if score #change Version matches 1 as @a run function galaxy:debug/remove_init_tag
+execute if score #change Version matches 1 as @a run function galaxy:debug/remove-init_tag
 
 scoreboard players operation #galaxy_currently_version_x.*.*-* Meta = #galaxy_version_x.*.*-* Meta
 scoreboard players operation #galaxy_currently_version_*.x.*-* Meta = #galaxy_version_*.x.*-* Meta
