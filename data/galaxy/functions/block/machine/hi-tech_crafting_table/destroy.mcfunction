@@ -6,4 +6,5 @@ execute as @e[tag=hi-tech_crafting_table_item,tag=storage_data] at @s store resu
 execute as @e[tag=hi-tech_crafting_table_item,tag=storage_data] at @s store result entity @s Item.tag.EntityTag.HandItems[0].tag.htctCategory int 1 run scoreboard players get @e[tag=destroy,sort=nearest,limit=1] htctCategory
 execute as @e[tag=hi-tech_crafting_table_item,tag=storage_data] at @s store result entity @s Item.tag.EntityTag.HandItems[0].tag.reqRcpHTct int 1 run scoreboard players get @e[tag=destroy,sort=nearest,limit=1] reqRcpHTct
 execute as @e[tag=hi-tech_crafting_table_item,tag=storage_data] run tag @s remove storage_data
+function galaxy:gui/remove-gui_item
 kill @s
