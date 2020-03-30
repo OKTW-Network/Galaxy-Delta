@@ -86,7 +86,7 @@ execute if score @s setButtConfirm matches 0 unless block ~ ~ ~ minecraft:barrel
 execute if score @s setButtConfirm matches 1..2 run replaceitem block ~ ~ ~ container.12 minecraft:gray_stained_glass_pane{display:{Name:"{\"translate\":\"gui.htct.craftConfirm\",\"italic\":false}"},CustomModelData:10300,guiItem:1,htctCraft:1}
 
 execute if score @s setButtConfirm matches 1 run execute as @a store success score @s reqHTctCraft run clear @s minecraft:gray_stained_glass_pane{htctCraft:1} 0
-execute if score @s setButtConfirm matches 1 run function galaxy:recipe/hi-tech_crafting_table/craft-recipe
+execute if score @s setButtConfirm matches 1 run function galaxy:recipe/hi-tech_crafting_table/craft
 execute if score @s setButtConfirm matches 1 run function galaxy:gui/remove-gui_item
 
 execute if score @s setButtConfirm matches 1.. run scoreboard players set @s setButtConfirm 0
