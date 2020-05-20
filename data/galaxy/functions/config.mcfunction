@@ -131,18 +131,19 @@ scoreboard players set #katana_act_flash_timer Config 4
 scoreboard players set #katana_act_flash_distance_limit Config 5
 
 
+# Action: stun - damage
+# integer, default: 1
+scoreboard players set #katana_act_stun_damage Config 1
+
 # Action: flash - damage
-# Set to 0 will disable the damage.
 # integer, default: 16
 scoreboard players set #katana_act_flash_damage Config 16
 
 # Action: shock - damage base
-# Set to 0 will disable the damage.
 # integer, default: 10
 scoreboard players set #katana_act_shock_damage_base Config 10
 
 # Action: shock - damage per block
-# Set to 0 will only give the base of damage.
 # integer, default: 2
 scoreboard players set #katana_act_shock_damage_addition Config 2
 
@@ -197,11 +198,6 @@ scoreboard players set #stu_stun Config 1
 # Status_effect:stun duration
 # integer, tick, default: 40
 scoreboard players set #stu_stun_dur Config 40
-
-# Atatus_effect:stun damage
-# Set to 0 will disable the damage.
-# integer, default: 0
-scoreboard players set #stu_stun_damage Config 0
 
 
 ############################################

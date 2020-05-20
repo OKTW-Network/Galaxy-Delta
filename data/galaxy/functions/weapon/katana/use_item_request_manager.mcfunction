@@ -1,4 +1,3 @@
-execute at @s run function galaxy:weapon/katana/meta/detector/check-action-storm
 execute at @s run function galaxy:weapon/katana/meta/detector/check-action-shock
 
 # katana actions
@@ -8,9 +7,9 @@ execute if score #katana_act_stun Config matches 1 if entity @s[predicate=!minec
 execute if score #katana_act_flash Config matches 1 if score #katana_act_swap Config matches 1 if entity @s[predicate=minecraft:sneaking,predicate=minecraft:on_ground,predicate=galaxy:weapon/hand_main-katana_edge,predicate=galaxy:weapon/hand_off-katana_scabbard,scores={timActFlash=1..,cdActFlash=0}] run tag @s add reqActFlash
 execute if score #katana_act_shock Config matches 1 if entity @s[predicate=!minecraft:sneaking,predicate=galaxy:weapon/hand_main-katana_edge,predicate=galaxy:weapon/hand_off-katana_scabbard,tag=canActShock,scores={cdActShock=0}] run tag @s add reqActShock
 
-execute if entity @s[tag=reqActSwapPull] run function galaxy:weapon/katana/action/swap_pull
-execute if entity @s[tag=reqActSwapPut] run function galaxy:weapon/katana/action/swap_put
-execute if entity @s[tag=reqActStun] run function galaxy:weapon/katana/action/stun
+execute if entity @s[tag=reqActSwapPull] run function galaxy:weapon/katana/action/swap_pull/main
+execute if entity @s[tag=reqActSwapPut] run function galaxy:weapon/katana/action/swap_put/main
+execute if entity @s[tag=reqActStun] run function galaxy:weapon/katana/action/stun/main
 execute if entity @s[tag=reqActFlash] run function galaxy:weapon/katana/action/flash/main
 execute if entity @s[tag=reqActShock] run function galaxy:weapon/katana/action/shock/main
 

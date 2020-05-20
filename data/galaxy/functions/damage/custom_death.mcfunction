@@ -1,3 +1,5 @@
+function math:calculation_temp/store_to_1
+
 function cu:library/experience-entity_death
 execute store success score #calculation_temp1 numeric if score @s expMin = @s expMax
 execute unless score #calculation_temp1 numeric matches 1 run scoreboard players operation #calculation_temp2 numeric = @s expMax
@@ -9,5 +11,6 @@ execute store result score #calculation_temp3 numeric run data get storage galax
 execute if score #calculation_temp3 numeric matches 1.. run summon experience_orb ~ ~ ~ {Tags:["initCustomDeath"]}
 execute as @e[type=experience_orb,tag=initCustomDeath] run data modify entity @s Value set from storage galaxy:temporary exp
 tag @e[type=experience_orb,tag=initCustomDeath] remove initCustomDeath
-
 kill @s
+
+function math:calculation_temp/extract_from_1
