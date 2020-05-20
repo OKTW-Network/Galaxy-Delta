@@ -24,6 +24,10 @@ execute if score #calculation_temp3 numeric matches 1 if score #katana_act_flash
 execute unless score #calculation_temp2 numeric matches 1.. run tag @s add pathfindEnd
 execute unless score #calculation_temp3 numeric matches 1 run tag @s add pathfindEnd
 
+tellraw @a [{"score":{"name":"#calculation_temp2","objective":"numeric"}}]
+tellraw @a [{"score":{"name":"#calculation_temp3","objective":"numeric"}}]
+tellraw @a {"text":"------"}
+
 execute if entity @s[tag=pathfindEnd] run function galaxy:damage/action-flash
 execute if entity @s[tag=pathfindEnd] run kill @s
 
