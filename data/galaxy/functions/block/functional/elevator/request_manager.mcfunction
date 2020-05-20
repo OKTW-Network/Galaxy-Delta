@@ -2,7 +2,7 @@ execute store result score #calculation_temp1 numeric run data get entity @s Pos
 execute store result score #calculation_temp2 numeric run data get entity @s Pos[1]
 execute store result score #calculation_temp3 numeric run data get entity @s Pos[2]
 scoreboard players add #calculation_temp2 numeric 1
-execute positioned ~ ~1 ~ as @a[predicate=galaxy:block/step_on-elevator,distance=..0.75] run function galaxy:block/functional/elevator/check_position
+execute positioned ~ ~1 ~ as @a[predicate=galaxy:block/step_on-elevator,distance=..0.7] run function galaxy:block/functional/elevator/check_position
 
 tag @a[tag=elevatorJump,tag=sucElevatorPos,tag=!reqElevatorGoUp] add reqElevatorGoUp
 tag @a[tag=reqElevatorGoUp] remove elevatorJump
