@@ -1,3 +1,5 @@
+function math:calculation_temp/store_to_1
+
 function cu:library/hitbox
 execute store success score #calculation_temp1 numeric if score @s hitboxX1 >= @e[tag=actShockDamageBox,limit=1] hitboxX1 if score @s hitboxX1 <= @e[tag=actShockDamageBox,limit=1] hitboxX2
 execute store success score #calculation_temp1 numeric if score @s hitboxX2 <= @e[tag=actShockDamageBox,limit=1] hitboxX2 if score @s hitboxX2 >= @e[tag=actShockDamageBox,limit=1] hitboxX1
@@ -8,3 +10,5 @@ execute store success score #calculation_temp2 numeric if score @s hitboxY2 <= @
 execute if score #calculation_temp1 numeric matches 1 if score #calculation_temp2 numeric matches 1 run tag @s add actShockDamage
 
 tag @s remove actShockPossibleVictim
+
+function math:calculation_temp/extract_from_1

@@ -1,3 +1,4 @@
+execute store success score #calculation_temp1 numeric if entity @e[tag=actStunDamage]
 execute as @e[tag=actStunDamage] run function galaxy:damage/hurt_display
 execute as @e[tag=actStunDamage] store result score @s health run data get entity @s Health
 execute as @e[tag=actStunDamage] run scoreboard players operation @s health -= #katana_act_stun_damage Config

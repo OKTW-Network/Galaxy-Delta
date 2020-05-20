@@ -1,3 +1,5 @@
+function math:calculation_temp/store_to_1
+
 function cu:library/hitbox
 execute store success score @s sucHitboxCheck if score @s hitboxX1 >= @e[tag=pistolBullet,tag=flighting,limit=1] posX
 execute if score @s sucHitboxCheck matches 1 store success score @s sucHitboxCheck if score @s hitboxX2 <= @e[tag=pistolBullet,tag=flighting,limit=1] posX
@@ -9,3 +11,5 @@ execute if score @s sucHitboxCheck matches 1 run tag @s add bulletDamage
 execute if score @s sucHitboxCheck matches 1 run scoreboard players set @e[tag=pistolBullet,tag=flighting,limit=1] sucBulletHit 1
 
 tag @s remove bulletPossibleVictim
+
+function math:calculation_temp/extract_from_1

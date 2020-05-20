@@ -19,9 +19,7 @@ execute if score #calculation_temp3 numeric matches 1 run scoreboard players add
 execute if score #calculation_temp3 numeric matches 1 run scoreboard players remove #calculation_temp2 numeric 1
 
 # damage
-function math:calculation_temp/store_to_1
 execute if score #calculation_temp3 numeric matches 1 if score #katana_act_flash_damage Config matches 1.. at @s run function galaxy:damage/tag/action-flash
-function math:calculation_temp/extract_from_1
 
 execute unless score #calculation_temp2 numeric matches 1.. run tag @s add pathfindEnd
 execute unless score #calculation_temp3 numeric matches 1 run tag @s add pathfindEnd

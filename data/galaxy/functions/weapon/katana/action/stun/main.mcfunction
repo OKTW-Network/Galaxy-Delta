@@ -1,3 +1,4 @@
-execute at @s positioned ^ ^ ^1 run function galaxy:damage/tag/action-stun
+scoreboard players set #calculation_temp2 numeric 6
+execute at @s run function galaxy:weapon/katana/action/stun/damage-init
 scoreboard players operation @s sucActStun = #calculation_temp1 numeric
 function galaxy:weapon/katana/action/stun/consequence
