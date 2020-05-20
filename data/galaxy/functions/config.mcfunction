@@ -15,6 +15,27 @@ scoreboard players set #galaxy_print_init Config 0
 # boolean, default: 0
 scoreboard players set #galaxy_print_config Config 0
 
+  ########################################
+  # Target list                          #
+  ########################################
+
+# The list will try to fit the result, for example, Enderman is a hostile and neutral mob, make the hostile and neutral option with true and false, the Enderman in the case will not become a target.
+
+# Hostile mobs
+# E.g zombie, phantom, enderman, ...
+# boolean, default: 1
+scoreboard players set #target_hostile Config 1
+
+# Neutral mobs
+# E.g wolf, bee, spider, ...
+# boolean, default: 1
+scoreboard players set #target_neutral Config 1
+
+# Passive mobs
+# E.g sheep, squid, pufferfish, ...
+# boolean, default: 1
+scoreboard players set #target_passive Config 1
+
 
 ############################################
 # Machine                                  #
