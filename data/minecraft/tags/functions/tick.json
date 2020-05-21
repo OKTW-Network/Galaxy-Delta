@@ -1,5 +1,13 @@
 {
     "values":[
-        "galaxy:tick"
+        "galaxy:main",
+        "galaxy:weapon/main",
+        "galaxy:status_effect/main",
+        "galaxy:gui/main",
+        "galaxy:hud/main",
+        "galaxy:block/main",
+        "galaxy:tool/main",
+        "galaxy:recipe/main",
+        "galaxy:visual_effect/main"
     ]
 }
