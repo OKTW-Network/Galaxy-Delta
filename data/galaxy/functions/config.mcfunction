@@ -225,10 +225,7 @@ scoreboard players set #stu_stun_dur Config 40
 # HUD (Head Up Display)                    #
 ############################################
 
-# Enable HUD
-# title, subtitle, actionbar, bossbar, scoreboard side display
-# boolean, default: 1
-scoreboard players set #hud Config 1
+# HUD by using title, subtitle, actionbar, bossbar, scoreboard side display.
 
 
   ########################################
@@ -240,7 +237,6 @@ scoreboard players set #hud Config 1
 scoreboard players set #hud_katana Config 1
 
 # Enable action:swap on HUD:katana
-# Caution: Incompatible with HUD:katana.flash, Enable both will make this one disable!
 # boolean, default: 0
 scoreboard players set #hud_katana_act_swap Config 0
 
@@ -249,7 +245,6 @@ scoreboard players set #hud_katana_act_swap Config 0
 scoreboard players set #hud_katana_act_stun Config 1
 
 # Enable action:flash on HUD:katana
-# Caution: Incompatible with HUD:katana.swap, Enable both will make that one disable!
 # boolean, default: 1
 scoreboard players set #hud_katana_act_flash Config 1
 
