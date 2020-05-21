@@ -15,5 +15,3 @@ execute if score @s elevatorTempDown matches 15 as @a[tag=reqElevatorGoDown] at 
 execute if score @s elevatorTempDown matches 16 as @a[tag=reqElevatorGoDown] at @s run tp @s ~ ~-16 ~
 
 execute at @a[tag=reqElevatorGoDown] run playsound entity.enderman.teleport player @a ~ ~ ~ 0.8 1.2
-
-tag @a[tag=reqElevatorGoDown] remove reqElevatorGoDown
