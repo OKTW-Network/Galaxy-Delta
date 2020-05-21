@@ -1,6 +1,6 @@
 function math:calculation_temp/store_to_1
 
-function cu:library/hitbox
+function cu:library/hitbox/main
 execute store success score @s sucHitboxCheck if score @s hitboxX1 >= @e[tag=actFlashPathfinder,limit=1] posX
 execute if score @s sucHitboxCheck matches 1 store success score @s sucHitboxCheck if score @s hitboxX2 <= @e[tag=actFlashPathfinder,limit=1] posX
 execute if score @s sucHitboxCheck matches 1 store success score @s sucHitboxCheck if score @s hitboxY1 <= @e[tag=actFlashPathfinder,limit=1] posY

@@ -1,6 +1,6 @@
 function math:calculation_temp/store_to_1
 
-function cu:library/hitbox
+function cu:library/hitbox/main
 execute store success score #calculation_temp1 numeric if score @s hitboxX1 >= @e[tag=actShockDamageBox,limit=1] hitboxX1 if score @s hitboxX1 <= @e[tag=actShockDamageBox,limit=1] hitboxX2
 execute store success score #calculation_temp1 numeric if score @s hitboxX2 <= @e[tag=actShockDamageBox,limit=1] hitboxX2 if score @s hitboxX2 >= @e[tag=actShockDamageBox,limit=1] hitboxX1
 execute store success score #calculation_temp1 numeric if score @s hitboxZ1 >= @e[tag=actShockDamageBox,limit=1] hitboxZ1 if score @s hitboxZ1 <= @e[tag=actShockDamageBox,limit=1] hitboxZ2
