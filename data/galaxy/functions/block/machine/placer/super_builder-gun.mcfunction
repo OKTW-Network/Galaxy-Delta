@@ -12,18 +12,9 @@ execute if score @s rotation0 matches -90 at @s run data merge entity @e[tag=sup
 execute if score @s rotation0 matches 180 at @s run data merge entity @e[tag=super_builder-gun_fake_block,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
 execute if score @s rotation0 matches -180 at @s run data merge entity @e[tag=super_builder-gun_fake_block,tag=init,limit=1] {Pose:{Head:[0f,-180f,0f]}}
 scoreboard players set @e[tag=super_builder-gun,tag=init] guiMode 0
-scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAtbType 0
+scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAttribute 0
 scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAtbValue 0
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolStyle 1
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolDamage 5
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolBltDist 10
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolFireDly 6
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolMaxTemp 100
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolHeat 4
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolCooling 1
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolCoolDly 12
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolBltSped 1
-scoreboard players set @e[tag=super_builder-gun,tag=init] optPistolBltOfst 10
+execute as @e[tag=super_builder-gun,tag=init] run function galaxy:gui/super_builder-gun/reset-option
 execute as @e[tag=super_builder-gun,tag=init] run function galaxy:gui/super_builder-gun/update
 execute as @e[tag=super_builder-gun,tag=init] run tag @s remove init
 kill @s

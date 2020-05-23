@@ -7,3 +7,4 @@ tag @s remove InitializedEnergySaberScore
 tag @s remove InitializedPistolScore
 tag @s remove InitializedStatus_effectScore
 tag @s remove InitializedHUDScore
+tag @s remove InitializedGalaxyPistolScore

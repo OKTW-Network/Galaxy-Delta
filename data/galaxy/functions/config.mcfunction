@@ -192,20 +192,20 @@ scoreboard players set #energy_saber_act_turn_on_cd Config 30
 scoreboard players set #energy_saber_act_turn_off_cd Config 30
 
   ########################################
-  # Pistol                               #
+  # Gun                                  #
   ########################################
 
 # Enable firing mode: single
 # boolean, default: 1
-scoreboard players set #pistol_fire_single Config 1
+scoreboard players set #gun_fire_single Config 1
 
 # Enable firing mode: switch
 # boolean, default: 1
-scoreboard players set #pistol_fire_switch Config 1
+scoreboard players set #gun_fire_switch Config 1
 
 # Enable firing mode: double
 # boolean, default: 1
-scoreboard players set #pistol_fire_double Config 1
+scoreboard players set #gun_fire_double Config 1
 
 
 ############################################
@@ -257,17 +257,17 @@ scoreboard players set #hud_katana_act_shock Config 1
   # Pistol                               #
   ########################################
 
-# Enable HUD:pistol
+# Enable HUD:gun
 # boolean, default: 1
-scoreboard players set #hud_pistol Config 1
+scoreboard players set #hud_gun Config 1
 
-# Enable single pistol on HUD:pistol
+# Enable single gun on HUD:gun
 # boolean, default: 1
-scoreboard players set #hud_pistol_single Config 1
+scoreboard players set #hud_gun_single Config 1
 
-# Enable double pistol on HUD:pistol
+# Enable double gun on HUD:gun
 # boolean, default: 1
-scoreboard players set #hud_pistol_double Config 1
+scoreboard players set #hud_gun_double Config 1
 
 
   ########################################

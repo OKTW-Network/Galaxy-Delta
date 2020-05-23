@@ -39,12 +39,6 @@ scoreboard objectives add rotation0 dummy "num-Rotation 0"
 # rotation 1
 scoreboard objectives add rotation1 dummy "num-Rotation 1"
 
-# mini UUID most
-scoreboard objectives add miniUUIDMost dummy "num-Mini UUID most"
-
-# mini UUID least
-scoreboard objectives add miniUUIDLeast dummy "num-Mini UUID least"
-
 
 # detector
 

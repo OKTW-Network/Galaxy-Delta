@@ -1,0 +1,25 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "MhGunCoolDly": {
+          "min": 0,
+          "max": 2147483647
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "FhGunCoolDly": {
+          "min": 0,
+          "max": 2147483647
+        }
+      }
+    }
+  ]
+}

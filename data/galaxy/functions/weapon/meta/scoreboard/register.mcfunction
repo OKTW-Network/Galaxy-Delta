@@ -1,0 +1,15 @@
+scoreboard objectives add optType dummy "num-Generate Option: Type"
+scoreboard objectives add optStyle dummy "num-Generate Option: Style"
+scoreboard objectives add optDamage dummy "num-Generate Option: Damage"
+scoreboard objectives add optDelay dummy "num-Generate Option: Delay"
+scoreboard objectives add optDistance dummy "num-Generate Option: Distance"
+
+scoreboard objectives add optTemperMax dummy "num-Generate Option: Maximum Temperature"
+scoreboard objectives add optHeat dummy "num-Generate Option: Heat"
+scoreboard objectives add optCooling dummy "num-Generate Option: Cooling"
+scoreboard objectives add optCoolingDly dummy "num-Generate Option: Cooling Delay"
+
+scoreboard objectives add optPjDamage dummy "num-Generate Option: Projectile Damage"
+scoreboard objectives add optPjDistance dummy "num-Generate Option: Projectile Distance"
+scoreboard objectives add optPjSpeed dummy "num-Generate Option: Projectile Speed"
+scoreboard objectives add optPjOffset dummy "num-Generate Option: Projectile Offset"
