@@ -23,7 +23,7 @@ execute if score @s sucBulletMove matches 1 store result score #calculation_temp
 execute if score @s sucBulletMove matches 1 run scoreboard players remove #calculation_temp1 numeric 1
 execute if score @s sucBulletMove matches 1 store result entity @s HandItems[0].tag.bulletDisLmt int 1 run scoreboard players get #calculation_temp1 numeric
 
-execute if score @s sucBulletMove matches 1 run particle minecraft:enchanted_hit ~ ~ ~ 0.01 0.01 0.01 0 1
+execute if score @s sucBulletMove matches 1 run particle minecraft:dust 0.054901960784313725 0.7725490196078432 0.9019607843137255 0.5 ~ ~ ~ 0 0 0 0 1
 
 execute if score @s sucBulletHit matches 1 store result score #calculation_temp1 numeric run data get entity @s HandItems[0].tag.bulletDamage
 execute if score @s sucBulletHit matches 1 run function galaxy:damage/bullet
