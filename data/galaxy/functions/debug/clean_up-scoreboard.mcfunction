@@ -22,3 +22,7 @@ scoreboard objectives remove cdShield
 scoreboard objectives remove delayShield
 scoreboard objectives remove shieldFull
 scoreboard objectives remove shieldHealthy
+scoreboard objectives remove sbldAttribute
+scoreboard objectives remove sbldPistolAtbMax
+scoreboard objectives remove sbldPistolAtVMax
+scoreboard objectives remove sbldPistolAtVMin

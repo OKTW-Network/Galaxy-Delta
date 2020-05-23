@@ -1,0 +1,9 @@
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:2b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:3b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:4b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:11b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:12b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:20b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:21b}]} run tag @s add setSbldAtbValue
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:22b}]} run tag @s add setSbldAtbValue

@@ -57,12 +57,12 @@ scoreboard objectives add setProcess dummy "num-GUI process status update"
 scoreboard objectives add setProgress dummy "num-GUI progress bar update"
 
 
-scoreboard objectives add sbldAttribute dummy "num-GUI:Sbld attribute type"
+scoreboard objectives add sbldAtbType dummy "num-GUI:Sbld attribute type"
 
 scoreboard objectives add sbldAtbValue dummy "num-GUI:Sbld attribute value"
 
-scoreboard objectives add sbldPistolAtbMax dummy "num-GUI:Sbld maximum attribute type"
+scoreboard objectives add sbldAtbMax dummy "num-GUI:Sbld maximum attribute type"
 
-scoreboard objectives add sbldPistolAtVMax dummy "num-GUI:Sbld maximum attribute value"
+scoreboard objectives add sbldAtbVMax dummy "num-GUI:Sbld maximum attribute value"
 
-scoreboard objectives add sbldPistolAtVMin dummy "num-GUI:Sbld minimum attribute value"
+scoreboard objectives add sbldAtbVMin dummy "num-GUI:Sbld minimum attribute value"
