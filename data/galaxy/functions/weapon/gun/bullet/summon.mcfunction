@@ -8,6 +8,6 @@ execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 run fun
 execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run function galaxy:weapon/gun/bullet/get_data-hand_off
 
 # offset
-execute unless score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 run function galaxy:weapon/gun/bullet/offset
+function galaxy:weapon/gun/bullet/offset
 
 tag @e[tag=bullet,tag=init] remove init
