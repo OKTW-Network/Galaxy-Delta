@@ -14,4 +14,4 @@ execute if score @s elevatorTempUp matches 14 as @a[tag=reqElevatorGoUp] at @s r
 execute if score @s elevatorTempUp matches 15 as @a[tag=reqElevatorGoUp] at @s run tp @s ~ ~15 ~
 execute if score @s elevatorTempUp matches 16 as @a[tag=reqElevatorGoUp] at @s run tp @s ~ ~16 ~
 
-execute at @a[tag=reqElevatorGoUp] run playsound entity.enderman.teleport player @a ~ ~ ~ 0.8 1.2
+execute at @a[tag=reqElevatorGoUp] run function galaxy:block/functional/elevator/sound-teleport
