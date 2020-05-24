@@ -15,7 +15,7 @@ execute if score @s sbldAttribute matches 3 run scoreboard players set @s sbldAt
 execute if score @s sbldAttribute matches 3 run scoreboard players set @s sbldAtbValueMin 2
 
 # projectile distance
-execute if score @s sbldAttribute matches 4 run scoreboard players set @s sbldAtbValueMax 48
+execute if score @s sbldAttribute matches 4 run scoreboard players set @s sbldAtbValueMax 80
 execute if score @s sbldAttribute matches 4 run scoreboard players set @s sbldAtbValueMin 1
 
 # max temperature
@@ -35,9 +35,9 @@ execute if score @s sbldAttribute matches 8 run scoreboard players set @s sbldAt
 execute if score @s sbldAttribute matches 8 run scoreboard players set @s sbldAtbValueMin 0
 
 # projectile speed
-execute if score @s sbldAttribute matches 9 run scoreboard players set @s sbldAtbValueMax 4
+execute if score @s sbldAttribute matches 9 run scoreboard players set @s sbldAtbValueMax 16
 execute if score @s sbldAttribute matches 9 run scoreboard players set @s sbldAtbValueMin 1
 
 # projectile offset
-execute if score @s sbldAttribute matches 10 run scoreboard players set @s sbldAtbValueMax 180
+execute if score @s sbldAttribute matches 10 run scoreboard players set @s sbldAtbValueMax 999
 execute if score @s sbldAttribute matches 10 run scoreboard players set @s sbldAtbValueMin 0
