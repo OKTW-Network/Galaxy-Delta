@@ -14,5 +14,7 @@ execute if score @s reqGunFire matches 2..3 if score @s MhGunDelay < @s FhGunDel
 execute if score @s reqGunFire matches 1 run scoreboard players operation @s gunDelay = @s MhGunDelay
 
 execute if score @s reqGunFire matches 1.. run function galaxy:weapon/gun/bullet/summon
+#execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/sound-fire
 
-execute as @a[scores={reqGunFire=-10}] run scoreboard players set @s reqGunFire 0
+execute if score @s reqGunFire matches -10 at @s run function galaxy:weapon/gun/sound-overheat
+execute if score @s reqGunFire matches -10 run scoreboard players set @s reqGunFire 0
