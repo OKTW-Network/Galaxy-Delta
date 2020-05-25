@@ -9,6 +9,7 @@ execute if score @s sbldAttribute matches 7 store result score @s sbldAtbValue r
 execute if score @s sbldAttribute matches 8 store result score @s sbldAtbValue run scoreboard players get @s optCoolingDly
 execute if score @s sbldAttribute matches 9 store result score @s sbldAtbValue run scoreboard players get @s optPjSpeed
 execute if score @s sbldAttribute matches 10 store result score @s sbldAtbValue run scoreboard players get @s optPjOffset
+execute if score @s sbldAttribute matches 11 store result score @s sbldAtbValue run scoreboard players get @s optPjPntraAtenu
 
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:2b}]} run scoreboard players add @s sbldAtbValue 100
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:3b}]} run scoreboard players add @s sbldAtbValue 10
@@ -42,5 +43,6 @@ execute if score @s sbldAttribute matches 7 store result score @s optCooling run
 execute if score @s sbldAttribute matches 8 store result score @s optCoolingDly run scoreboard players get @s sbldAtbValue
 execute if score @s sbldAttribute matches 9 store result score @s optPjSpeed run scoreboard players get @s sbldAtbValue
 execute if score @s sbldAttribute matches 10 store result score @s optPjOffset run scoreboard players get @s sbldAtbValue
+execute if score @s sbldAttribute matches 11 store result score @s optPjPntraAtenu run scoreboard players get @s sbldAtbValue
 
 function galaxy:gui/super_builder-gun/build-result

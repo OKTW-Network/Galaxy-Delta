@@ -1,6 +1,6 @@
 scoreboard players set @s optType 1
 scoreboard players set @s optStyle 1
-scoreboard players set @s optPjDamage 4
+scoreboard players set @s optPjDamage 5
 scoreboard players set @s optDelay 10
 scoreboard players set @s optPjDistance 9
 scoreboard players set @s optTemperMax 67
@@ -9,3 +9,4 @@ scoreboard players set @s optCooling 1
 scoreboard players set @s optCoolingDly 12
 scoreboard players set @s optPjSpeed 6
 scoreboard players set @s optPjOffset 20
+scoreboard players set @s optPjPntraAtenu 20

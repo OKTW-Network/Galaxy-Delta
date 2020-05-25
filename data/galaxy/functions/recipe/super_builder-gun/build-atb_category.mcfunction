@@ -1,6 +1,6 @@
 ###IMPORTANT### go check out ../gui/meta/scoreboard/set_score if you modify this file
 
-execute if score @s sbldAttribute matches 0 run replaceitem block ~ ~ ~ container.0 golden_hoe{display:{Name:'{"translate":"attribute.projectile.offset","italic":false}'},HideFlags:63,CustomModelData:10117,guiItem:1}
+execute if score @s sbldAttribute matches 0 run replaceitem block ~ ~ ~ container.0 golden_hoe{display:{Name:'{"translate":"attribute.projectile.penetrateAttenuation","italic":false}'},HideFlags:63,CustomModelData:10121,guiItem:1}
 execute if score @s sbldAttribute matches 0 run replaceitem block ~ ~ ~ container.9 golden_hoe{display:{Name:'{"translate":"attribute.type","italic":false}'},HideFlags:63,CustomModelData:10120,guiItem:1}
 execute if score @s sbldAttribute matches 0 run replaceitem block ~ ~ ~ container.18 golden_hoe{display:{Name:'{"translate":"attribute.style","italic":false}'},HideFlags:63,CustomModelData:10108,guiItem:1}
 
@@ -42,4 +42,8 @@ execute if score @s sbldAttribute matches 9 run replaceitem block ~ ~ ~ containe
 
 execute if score @s sbldAttribute matches 10 run replaceitem block ~ ~ ~ container.0 golden_hoe{display:{Name:'{"translate":"attribute.projectile.speed","italic":false}'},HideFlags:63,CustomModelData:10116,guiItem:1}
 execute if score @s sbldAttribute matches 10 run replaceitem block ~ ~ ~ container.9 golden_hoe{display:{Name:'{"translate":"attribute.projectile.offset","italic":false}'},HideFlags:63,CustomModelData:10117,guiItem:1}
-execute if score @s sbldAttribute matches 10 run replaceitem block ~ ~ ~ container.18 golden_hoe{display:{Name:'{"translate":"attribute.type","italic":false}'},HideFlags:63,CustomModelData:10120,guiItem:1}
+execute if score @s sbldAttribute matches 10 run replaceitem block ~ ~ ~ container.18 golden_hoe{display:{Name:'{"translate":"attribute.projectile.penetrateAttenuation","italic":false}'},HideFlags:63,CustomModelData:10121,guiItem:1}
+
+execute if score @s sbldAttribute matches 11 run replaceitem block ~ ~ ~ container.0 golden_hoe{display:{Name:'{"translate":"attribute.projectile.offset","italic":false}'},HideFlags:63,CustomModelData:10117,guiItem:1}
+execute if score @s sbldAttribute matches 11 run replaceitem block ~ ~ ~ container.9 golden_hoe{display:{Name:'{"translate":"attribute.projectile.penetrateAttenuation","italic":false}'},HideFlags:63,CustomModelData:10121,guiItem:1}
+execute if score @s sbldAttribute matches 11 run replaceitem block ~ ~ ~ container.18 golden_hoe{display:{Name:'{"translate":"attribute.type","italic":false}'},HideFlags:63,CustomModelData:10120,guiItem:1}

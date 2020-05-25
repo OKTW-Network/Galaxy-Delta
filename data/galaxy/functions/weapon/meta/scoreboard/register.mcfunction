@@ -13,3 +13,4 @@ scoreboard objectives add optPjDamage dummy "num-Generate Option: Projectile Dam
 scoreboard objectives add optPjDistance dummy "num-Generate Option: Projectile Distance"
 scoreboard objectives add optPjSpeed dummy "num-Generate Option: Projectile Speed"
 scoreboard objectives add optPjOffset dummy "num-Generate Option: Projectile Offset"
+scoreboard objectives add optPjPntraAtenu dummy "num-Generate Option: Projectile Penetrate Attenuation"

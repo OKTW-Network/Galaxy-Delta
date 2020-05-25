@@ -11,6 +11,7 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].tag.cooling int 1 run scorebo
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.coolingDelay int 1 run scoreboard players get @s optCoolingDly
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.speed int 1 run scoreboard players get @s optPjSpeed
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.offset int 1 run scoreboard players get @s optPjOffset
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.penetrateAttenuation int 1 run scoreboard players get @s optPjPntraAtenu
 
 execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value "{\"translate\":\"item.galaxy.lasor\",\"italic\":false}"
 execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 210100

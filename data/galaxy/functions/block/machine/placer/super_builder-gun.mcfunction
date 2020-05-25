@@ -14,7 +14,7 @@ execute if score @s rotation0 matches -180 at @s run data merge entity @e[tag=su
 scoreboard players set @e[tag=super_builder-gun,tag=init] guiMode 0
 scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAttribute 0
 scoreboard players set @e[tag=super_builder-gun,tag=init] sbldAtbValue 0
-execute as @e[tag=super_builder-gun,tag=init] run function galaxy:gui/super_builder-gun/reset-option
+execute as @e[tag=super_builder-gun,tag=init] run function galaxy:recipe/super_builder-gun/get-option_default
 execute as @e[tag=super_builder-gun,tag=init] run function galaxy:gui/super_builder-gun/update
 execute as @e[tag=super_builder-gun,tag=init] run tag @s remove init
 kill @s
