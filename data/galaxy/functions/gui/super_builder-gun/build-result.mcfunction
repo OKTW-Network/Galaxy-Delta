@@ -1,5 +1,7 @@
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add setTemplate
 execute if entity @s[tag=setTemplate] run function galaxy:gui/super_builder-gun/build-result_template
+tag @s[tag=setTemplate] remove setTemplate
+
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.type int 1 run scoreboard players get @s optType
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.style int 1 run scoreboard players get @s optStyle
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.damage int 1 run scoreboard players get @s optPjDamage
@@ -13,5 +15,7 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.speed int 1 ru
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.offset int 1 run scoreboard players get @s optPjOffset
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.projectile.penetrateAttenuation int 1 run scoreboard players get @s optPjPntraAtenu
 
-execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value "{\"translate\":\"item.galaxy.lasor\",\"italic\":false}"
+execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.lasor","italic":false}'
 execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 210100
+
+# function galaxy:gui/build-tooltip-gun
