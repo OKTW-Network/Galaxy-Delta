@@ -25,8 +25,8 @@ scoreboard objectives add htctRequPageMax dummy "num-GUI:HTct maximum material l
 scoreboard objectives add htctRequSlotMax dummy "num-GUI:HTct maximum material list slot number"
 scoreboard objectives add sucHTctRcp dummy "num-GUI:HTct recipe check success count"
 
+scoreboard objectives add sbldGAtbMax dummy "num-GUI:Sbld-Gun maximum attribute type"
 scoreboard objectives add sbldAttribute dummy "num-GUI:Sbld attribute type"
-scoreboard objectives add sbldAtbMax dummy "num-GUI:Sbld maximum attribute type"
 scoreboard objectives add sbldAtbValue dummy "num-GUI:Sbld attribute value"
 scoreboard objectives add sbldAtbValueMax dummy "num-GUI:Sbld maximum attribute value"
 scoreboard objectives add sbldAtbValueMin dummy "num-GUI:Sbld minimum attribute value"
