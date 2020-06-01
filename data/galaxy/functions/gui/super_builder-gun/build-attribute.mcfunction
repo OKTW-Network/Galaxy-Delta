@@ -4,4 +4,3 @@ execute if score @s sbldAttribute > #global sbldAtbMax run scoreboard players se
 execute if score @s sbldAttribute matches ..-1 store result score @s sbldAttribute run scoreboard players get #global sbldAtbMax
 function galaxy:recipe/super_builder-gun/build-atb_category
 tag @s add setSbldAtbValue
-tag @s remove setSbldAtbTab
