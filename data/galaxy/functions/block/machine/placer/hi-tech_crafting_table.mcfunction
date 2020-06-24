@@ -1,5 +1,5 @@
 summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["hi-tech_crafting_table","init"]}
-setblock ~ ~ ~ minecraft:barrel{CustomName:"{\"translate\":\"container.hi_tech_crafting\"}"} replace
+setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.hi_tech_crafting"}'} replace
 summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["hi-tech_crafting_table_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10100,fakeBlock:1,HTct:1}}]}
 execute if entity @s[tag=content_data] store result score @e[tag=hi-tech_crafting_table,tag=init] guiMode run data get entity @s HandItems[0].tag.guiMode
 execute if entity @s[tag=content_data] store result score @e[tag=hi-tech_crafting_table,tag=init] htctListPage run data get entity @s HandItems[0].tag.htctListPage
