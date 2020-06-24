@@ -3,6 +3,7 @@
 ### true = 1
 
 # Wrench UUID
-scoreboard objectives add MhWrenchUUIDM dummy "num-MainHand wrench mini UUID most"
-
-scoreboard objectives add MhWrenchUUIDL dummy "num-MainHand wrench mini UUID least"
+scoreboard objectives add MhWrenchUUID0 dummy "num-MainHand wrench UUID[0]"
+scoreboard objectives add MhWrenchUUID1 dummy "num-MainHand wrench UUID[1]"
+scoreboard objectives add MhWrenchUUID2 dummy "num-MainHand wrench UUID[2]"
+scoreboard objectives add MhWrenchUUID3 dummy "num-MainHand wrench UUID[3]"
