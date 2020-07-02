@@ -1,3 +1,4 @@
+execute as @e[tag=actFlashDamage] run data modify entity @s HurtTime set value 10s
 execute as @e[tag=actFlashDamage] run function galaxy:damage/hurt_display
 execute as @e[tag=actFlashDamage] store result score @s health run data get entity @s Health
 execute as @e[tag=actFlashDamage] run scoreboard players operation @s health -= #katana_act_flash_damage Config

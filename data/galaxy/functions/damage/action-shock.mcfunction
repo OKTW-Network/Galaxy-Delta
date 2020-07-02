@@ -1,3 +1,4 @@
+execute as @e[tag=actShockDamage] run data modify entity @s HurtTime set value 10s
 execute as @e[tag=actShockDamage] run function galaxy:damage/hurt_display
 execute as @e[tag=actShockDamage] store result score @s health run data get entity @s Health
 execute as @e[tag=actShockDamage] run scoreboard players operation @s health -= #calculation_temp1 numeric
