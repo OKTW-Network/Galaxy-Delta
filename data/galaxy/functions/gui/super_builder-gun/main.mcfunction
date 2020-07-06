@@ -23,6 +23,6 @@ execute if entity @s[tag=setSbldAtbValue] run function galaxy:gui/super_builder-
 tag @s[tag=setSbldAtbValue] remove setSbldAtbValue
 
 # builder result
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add setResult
+execute unless predicate galaxy:gui/check_slot-16 run tag @s add setResult
 execute if entity @s[tag=setResult] run function galaxy:gui/super_builder-gun/build-result
 tag @s[tag=setResult] remove setResult

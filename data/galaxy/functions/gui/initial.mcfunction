@@ -1,4 +1,4 @@
-
+function galaxy:gui/meta/storage/register
 function galaxy:gui/meta/scoreboard/register
 function galaxy:gui/meta/scoreboard/set_score
 

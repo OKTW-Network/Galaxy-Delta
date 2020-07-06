@@ -35,13 +35,13 @@ execute if score @s sbldAttribute matches 8 run scoreboard players set @s sbldAt
 execute if score @s sbldAttribute matches 8 run scoreboard players set @s sbldAtbValueMin 0
 
 # projectile speed
-execute if score @s sbldAttribute matches 9 run scoreboard players set @s sbldAtbValueMax 16
+execute if score @s sbldAttribute matches 9 run scoreboard players set @s sbldAtbValueMax 64
 execute if score @s sbldAttribute matches 9 run scoreboard players set @s sbldAtbValueMin 1
 
 # projectile offset
 execute if score @s sbldAttribute matches 10 run scoreboard players set @s sbldAtbValueMax 999
 execute if score @s sbldAttribute matches 10 run scoreboard players set @s sbldAtbValueMin 0
 
-# projectile penetration attenuation
+# projectile penetration
 execute if score @s sbldAttribute matches 11 run scoreboard players set @s sbldAtbValueMax 100
 execute if score @s sbldAttribute matches 11 run scoreboard players set @s sbldAtbValueMin 0
