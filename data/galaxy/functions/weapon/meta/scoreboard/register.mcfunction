@@ -14,3 +14,4 @@ scoreboard objectives add optPjDistance dummy "num-Generate Option: Projectile D
 scoreboard objectives add optPjSpeed dummy "num-Generate Option: Projectile Speed"
 scoreboard objectives add optPjOffset dummy "num-Generate Option: Projectile Offset"
 scoreboard objectives add optPjPenetrate dummy "num-Generate Option: Projectile Penetrate"
+scoreboard objectives add optPjTrace dummy "num-Generate Option: Projectile Trace"

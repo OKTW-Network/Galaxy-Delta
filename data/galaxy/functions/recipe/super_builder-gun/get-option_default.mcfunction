@@ -9,4 +9,5 @@ scoreboard players set @s optCooling 1
 scoreboard players set @s optCoolingDly 12
 scoreboard players set @s optPjSpeed 24
 scoreboard players set @s optPjOffset 20
-scoreboard players set @s optPjPenetrate 20
+scoreboard players set @s optPjPenetrate 0
+scoreboard players set @s optPjTrace 0

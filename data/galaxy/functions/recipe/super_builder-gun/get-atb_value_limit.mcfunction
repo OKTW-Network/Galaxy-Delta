@@ -11,8 +11,8 @@ execute if score @s sbldAttribute matches 2 run scoreboard players set @s sbldAt
 execute if score @s sbldAttribute matches 2 run scoreboard players set @s sbldAtbValueMin 1
 
 # delay
-execute if score @s sbldAttribute matches 3 run scoreboard players set @s sbldAtbValueMax 999
-execute if score @s sbldAttribute matches 3 run scoreboard players set @s sbldAtbValueMin 2
+execute if score @s sbldAttribute matches 3 run scoreboard players set @s sbldAtbValueMax 200
+execute if score @s sbldAttribute matches 3 run scoreboard players set @s sbldAtbValueMin 3
 
 # projectile distance
 execute if score @s sbldAttribute matches 4 run scoreboard players set @s sbldAtbValueMax 80
@@ -45,3 +45,7 @@ execute if score @s sbldAttribute matches 10 run scoreboard players set @s sbldA
 # projectile penetration
 execute if score @s sbldAttribute matches 11 run scoreboard players set @s sbldAtbValueMax 100
 execute if score @s sbldAttribute matches 11 run scoreboard players set @s sbldAtbValueMin 0
+
+# projectile trace
+execute if score @s sbldAttribute matches 12 run scoreboard players set @s sbldAtbValueMax 225
+execute if score @s sbldAttribute matches 12 run scoreboard players set @s sbldAtbValueMin 0

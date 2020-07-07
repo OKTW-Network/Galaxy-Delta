@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.13 carrot_on_a_stick{gun:1,parts:[{casing_gun:1},{barrel:1},{laser_core:1},{cooling_system:1},{handle:1}]}
+replaceitem block ~ ~ ~ container.13 carrot_on_a_stick{gun:1,type:1,style:1,CustomModelData:1,display:{Name:'{"translate":"item.unknow","italic":false}'},parts:[{casing_gun:1},{barrel:1},{laser_core:1},{cooling_system:1},{handle:1}]}
 # execute if data block ~ ~ ~ Items[{Slot:1b}].tag.sight run data modify block ~ ~ ~ Items[{Slot:13b}].tag.parts append value {sight:1}
 # execute if data block ~ ~ ~ Items[{Slot:7b}].tag.firing_mode run data modify block ~ ~ ~ Items[{Slot:13b}].tag.parts append value {firing_mode:1}
 # execute if data block ~ ~ ~ Items[{Slot:24b}].tag.style run data modify block ~ ~ ~ Items[{Slot:13b}].tag.parts append value {style:1}
@@ -27,4 +27,7 @@ function galaxy:gui/builder-gun/build-result/cooling_delay
 function galaxy:gui/builder-gun/build-result/projectile_speed
 function galaxy:gui/builder-gun/build-result/projectile_offset
 function galaxy:gui/builder-gun/build-result/projectile_penetrate
-# function galaxy:gui/builder-gun/build-result/projectile_trace
+function galaxy:gui/builder-gun/build-result/projectile_trace
+
+execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"translate":"item.galaxy.lasor","italic":false}'
+execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100

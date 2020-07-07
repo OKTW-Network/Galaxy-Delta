@@ -13,7 +13,7 @@ execute if score @s reqGunFire matches 2..3 if score @s MhGunDelay >= @s FhGunDe
 execute if score @s reqGunFire matches 2..3 if score @s MhGunDelay < @s FhGunDelay run scoreboard players operation @s gunDelay = @s FhGunDelay
 execute if score @s reqGunFire matches 1 run scoreboard players operation @s gunDelay = @s MhGunDelay
 
-execute if score @s reqGunFire matches 1.. run function galaxy:weapon/gun/bullet/summon
+execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/bullet/summon
 execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/sound-fire
 
 execute if score @s reqGunFire matches -10 at @s run playsound minecraft:block.note_block.hat player @s ~ ~ ~ 1 1.6
