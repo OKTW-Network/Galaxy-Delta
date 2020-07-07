@@ -31,3 +31,6 @@ function galaxy:gui/builder-gun/build-result/projectile_trace
 
 execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"translate":"item.galaxy.lasor","italic":false}'
 execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b,tag:{type:1,style:1}}]} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
+
+function galaxy:gui/builder-gun/data_save-parts
+function galaxy:gui/builder-gun/data_save-result

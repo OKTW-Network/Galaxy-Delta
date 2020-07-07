@@ -17,5 +17,7 @@ function galaxy:gui/builder-gun/check-unallowed
 execute if entity @s[tag=dropUnallowed] run function galaxy:gui/builder-gun/drop-unallowed
 tag @s[tag=dropUnallowed] remove dropUnallowed
 
-execute if entity @s[tag=lockAssemble] run function galaxy:gui/builder-gun/disassemble
-execute if entity @s[tag=!lockAssemble] run function galaxy:gui/builder-gun/assemble
+# Assemble
+execute if entity @s[tag=!lockAssemble] run function galaxy:gui/builder-gun/assemble-build
+execute if entity @s[tag=lockAssemble] run function galaxy:gui/builder-gun/assemble-destruct
+execute if entity @s[tag=lockAssemble] run function galaxy:gui/builder-gun/assemble-update
