@@ -8,13 +8,13 @@ tag @s[tag=setCover] remove setCover
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add setResult
 execute if entity @s[tag=setResult] run function galaxy:gui/hi-tech_crafting_table/mode1/check-request
 execute if entity @s[tag=setResult] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setResult] run function galaxy:recipe/hi-tech_crafting_table/build-recipe_result
+execute if entity @s[tag=setResult] run function galaxy:recipe/hi-tech_crafting_table/build-result
 tag @s[tag=setResult] remove setResult
 
 # requirement
 function galaxy:gui/hi-tech_crafting_table/mode1/check-require
 execute if entity @s[tag=setRequire] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setRequire] run function galaxy:gui/hi-tech_crafting_table/mode1/delete-recipe_require
+execute if entity @s[tag=setRequire] run function galaxy:gui/hi-tech_crafting_table/mode1/delete-require
 execute if entity @s[tag=setRequire] run function galaxy:gui/hi-tech_crafting_table/mode1/build-require
 tag @s[tag=setRequire] remove setRequire
 
