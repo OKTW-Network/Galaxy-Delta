@@ -195,17 +195,17 @@ scoreboard players set #energy_saber_act_turn_off_cd Config 30
   # Gun                                  #
   ########################################
 
-# Enable firing mode: single
+# Enable pistol firing mode: switch
 # boolean, default: 1
-scoreboard players set #gun_fire_single Config 1
+scoreboard players set #gun_pistol_fire_switch Config 1
 
-# Enable firing mode: switch
+# Enable pistol firing mode: sync
 # boolean, default: 1
-scoreboard players set #gun_fire_switch Config 1
+scoreboard players set #gun_pistol_fire_sync Config 1
 
-# Enable firing mode: double
+# Enable aim
 # boolean, default: 1
-scoreboard players set #gun_fire_double Config 1
+scoreboard players set #gun_aim Config 1
 
 
 ############################################

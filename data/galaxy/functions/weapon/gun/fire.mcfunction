@@ -1,6 +1,3 @@
-execute if score @s MhGunOverheat matches 1 run scoreboard players set @s reqGunFire -10
-execute if score @s FhGunOverheat matches 1 run scoreboard players set @s reqGunFire -10
-
 execute if score @s reqGunFire matches 2 run scoreboard players add @s gunSwitch 1
 execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 2.. run scoreboard players set @s gunSwitch 0
 
@@ -15,6 +12,3 @@ execute if score @s reqGunFire matches 1 run scoreboard players operation @s gun
 
 execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/bullet/summon
 execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/sound-fire
-
-execute if score @s reqGunFire matches -10 at @s run playsound minecraft:block.note_block.hat player @s ~ ~ ~ 1 1.6
-execute if score @s reqGunFire matches -10 run scoreboard players set @s reqGunFire 0

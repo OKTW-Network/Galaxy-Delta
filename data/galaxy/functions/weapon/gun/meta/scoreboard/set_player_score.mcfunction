@@ -3,6 +3,8 @@ scoreboard players remove @s styleMainGun 0
 scoreboard players remove @s styleSecGun 0
 scoreboard players remove @s gunSwitch 0
 scoreboard players remove @s gunDelay 0
+scoreboard players remove @s gunExtraBullet 0
+scoreboard players remove @s gunAim 0
 scoreboard players remove @s MhGunCooling 0
 scoreboard players remove @s MhGunCoolDly 0
 scoreboard players remove @s MhGunTemperMax 0

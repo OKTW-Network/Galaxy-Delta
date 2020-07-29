@@ -9,7 +9,12 @@ execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run fun
 
 # offset
 execute unless score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 run function galaxy:weapon/gun/bullet/offset
-execute if score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 store result entity @e[tag=bullet,tag=init,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
-execute if score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 store result entity @e[tag=bullet,tag=init,limit=1] Rotation[1] float 1 run data get entity @s Rotation[1]
+execute if score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 run function galaxy:weapon/gun/bullet/offset-zero
+
+# color rainbow
+execute if score @e[tag=bullet,tag=init,limit=1] bulletColor matches 16 run function galaxy:weapon/gun/bullet/rainbow
 
 tag @e[tag=bullet,tag=init] remove init
+
+scoreboard players remove @s gunExtraBullet 1
+execute if entity @s[scores={gunExtraBullet=1..}] at @s run function galaxy:weapon/gun/bullet/summon

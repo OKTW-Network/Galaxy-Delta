@@ -2,6 +2,6 @@
     "values":[
         "galaxy:weapon/katana/use_item_request_manager",
         "galaxy:weapon/energy_saber/use_item_request_manager",
-        "galaxy:weapon/gun/use_item_request_manager"
+        "galaxy:weapon/gun/handler-use_item"
     ]
 }
