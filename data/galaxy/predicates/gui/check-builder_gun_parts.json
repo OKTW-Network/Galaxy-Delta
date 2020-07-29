@@ -5,7 +5,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:1b,tag:{component:1,sight:1}}]}"
+          "nbt": "{Items:[{Slot:1b,tag:{addon:1,sight:1}}]}"
         }
       }
     },
@@ -13,7 +13,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:7b,tag:{component:1,firing_mode:1}}]}"
+          "nbt": "{Items:[{Slot:7b,tag:{addon:1,firing_mode:1}}]}"
         }
       }
     },
@@ -61,7 +61,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:24b,tag:{component:1,style:1}}]}"
+          "nbt": "{Items:[{Slot:24b,tag:{addon:1,cosmetic:1}}]}"
         }
       }
     },
@@ -69,7 +69,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:26b,tag:{component:1,projectile_color:1}}]}"
+          "nbt": "{Items:[{Slot:26b,tag:{addon:1,projectile_color:1}}]}"
         }
       }
     }
