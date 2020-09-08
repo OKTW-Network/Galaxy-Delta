@@ -1,6 +1,6 @@
-scoreboard players set #calculation_temp2 numeric 10000
-execute store result score #calculation_temp3 numeric run scoreboard players get @s statusBlockDisp
-scoreboard players operation #calculation_temp2 numeric *= @s styleKatana
-scoreboard players operation #calculation_temp1 numeric += #calculation_temp2 numeric
-scoreboard players operation #calculation_temp3 numeric -= #static_1 numeric
-scoreboard players operation #calculation_temp1 numeric += #calculation_temp3 numeric
+scoreboard players set #2 calcu_temp 10000
+execute store result score #3 calcu_temp run scoreboard players get @s statusBlockDisp
+scoreboard players operation #2 calcu_temp *= @s styleKatana
+scoreboard players operation #1 calcu_temp += #2 calcu_temp
+scoreboard players operation #3 calcu_temp -= #1 num
+scoreboard players operation #1 calcu_temp += #3 calcu_temp

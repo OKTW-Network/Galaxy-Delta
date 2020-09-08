@@ -1,14 +1,14 @@
-execute store result score #calculation_temp1 numeric run scoreboard players get @s MhGunTemper
-execute store result score #calculation_temp2 numeric run scoreboard players get @s MhGunTemperMax
-scoreboard players operation #calculation_temp1 numeric *= #static_1000 numeric
-scoreboard players operation #calculation_temp1 numeric /= #calculation_temp2 numeric
+execute store result score #1 calcu_temp run scoreboard players get @s MhGunTemper
+execute store result score #2 calcu_temp run scoreboard players get @s MhGunTemperMax
+scoreboard players operation #1 calcu_temp *= #1000 num
+scoreboard players operation #1 calcu_temp /= #2 calcu_temp
 execute if score @s MhGunOverheat matches 0 run function galaxy:hud/gun/double-hand_main-overheat_false
 execute if score @s MhGunOverheat matches 1 run function galaxy:hud/gun/double-hand_main-overheat_true
 
-execute store result score #calculation_temp1 numeric run scoreboard players get @s FhGunTemper
-execute store result score #calculation_temp2 numeric run scoreboard players get @s FhGunTemperMax
-scoreboard players operation #calculation_temp1 numeric *= #static_1000 numeric
-scoreboard players operation #calculation_temp1 numeric /= #calculation_temp2 numeric
+execute store result score #1 calcu_temp run scoreboard players get @s FhGunTemper
+execute store result score #2 calcu_temp run scoreboard players get @s FhGunTemperMax
+scoreboard players operation #1 calcu_temp *= #1000 num
+scoreboard players operation #1 calcu_temp /= #2 calcu_temp
 execute if score @s FhGunOverheat matches 0 run function galaxy:hud/gun/double-hand_off-overheat_false
 execute if score @s FhGunOverheat matches 1 run function galaxy:hud/gun/double-hand_off-overheat_true
 

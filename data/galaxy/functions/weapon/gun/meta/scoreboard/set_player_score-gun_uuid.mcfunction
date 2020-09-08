@@ -8,4 +8,4 @@ execute store result score @s FhGunUUID1 run data get entity @s Inventory[{Slot:
 execute store result score @s FhGunUUID2 run data get entity @s Inventory[{Slot:-106b}].tag.UUID[2]
 execute store result score @s FhGunUUID3 run data get entity @s Inventory[{Slot:-106b}].tag.UUID[3]
 
-tag @s add InitializedGalaxyGunUUIDScore
+tag @s add InitializedGalaxyGunUUID

@@ -7,9 +7,9 @@ execute store result score @s posZ run data get entity @s Pos[2] 10
 # damage
 execute if score #katana_act_stun_damage Config matches 1.. at @s run function galaxy:damage/tag/action-stun
 
-scoreboard players remove #calculation_temp2 numeric 1
+scoreboard players remove #2 calcu_temp 1
 
-execute unless score #calculation_temp2 numeric matches 1.. run tag @s add pathfindEnd
+execute unless score #2 calcu_temp matches 1.. run tag @s add pathfindEnd
 
 execute if entity @s[tag=pathfindEnd] run function galaxy:damage/action-stun
 execute if entity @s[tag=pathfindEnd] run kill @s

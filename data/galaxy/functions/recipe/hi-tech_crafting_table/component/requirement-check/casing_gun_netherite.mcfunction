@@ -1,2 +1,2 @@
-execute store result score #calculation_temp1 numeric run clear @s minecraft:netherite_ingot 0
-execute if score #calculation_temp1 numeric matches 6.. run tag @s add sucHTctRcp
+execute store result score #1 calcu_temp run clear @s minecraft:netherite_ingot 0
+execute if score #1 calcu_temp matches 6.. run tag @s add sucHTctRcp

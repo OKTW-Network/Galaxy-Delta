@@ -1,4 +1,4 @@
-function math:calculation_temp/store_to_1
+function math:calcu_temp/store_to_1
 
 function cu:library/hitbox/main
 execute store success score @s sucHitboxCheck if score @s hitboxX1 >= @e[tag=actFlashPathfinder,limit=1] posX
@@ -11,4 +11,4 @@ execute if score @s sucHitboxCheck matches 1 run tag @s add actFlashDamage
 
 tag @s remove actFlashPossibleVictim
 
-function math:calculation_temp/extract_from_1
+function math:calcu_temp/extract_from_1

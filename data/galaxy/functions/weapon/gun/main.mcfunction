@@ -1,5 +1,3 @@
-execute as @a[tag=!InitializedGalaxyGunScore] run function galaxy:weapon/gun/meta/scoreboard/set_player_score
-
 function galaxy:weapon/gun/meta/detector/main
 execute as @a[tag=MhGunChanged] run function galaxy:weapon/gun/data_switch-hand_main
 execute as @a[tag=FhGunChanged] run function galaxy:weapon/gun/data_switch-hand_off

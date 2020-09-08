@@ -1,9 +1,9 @@
-scoreboard players set #calculation_temp7 numeric 0
-execute store result score #calculation_temp4 numeric run data get entity @s Pos[0]
-execute store result score #calculation_temp5 numeric run data get entity @s Pos[1]
-execute store result score #calculation_temp6 numeric run data get entity @s Pos[2]
-execute store success score #calculation_temp7 numeric if score #calculation_temp1 numeric = #calculation_temp4 numeric
-execute if score #calculation_temp7 numeric matches 1 store success score #calculation_temp7 numeric if score #calculation_temp2 numeric = #calculation_temp5 numeric
-execute if score #calculation_temp7 numeric matches 1 store success score #calculation_temp7 numeric if score #calculation_temp3 numeric = #calculation_temp6 numeric
+scoreboard players set #7 calcu_temp 0
+execute store result score #4 calcu_temp run data get entity @s Pos[0]
+execute store result score #5 calcu_temp run data get entity @s Pos[1]
+execute store result score #6 calcu_temp run data get entity @s Pos[2]
+execute store success score #7 calcu_temp if score #1 calcu_temp = #4 calcu_temp
+execute if score #7 calcu_temp matches 1 store success score #7 calcu_temp if score #2 calcu_temp = #5 calcu_temp
+execute if score #7 calcu_temp matches 1 store success score #7 calcu_temp if score #3 calcu_temp = #6 calcu_temp
 
-execute if score #calculation_temp7 numeric matches 1 run tag @s add sucElevatorPos
+execute if score #7 calcu_temp matches 1 run tag @s add sucElevatorPos

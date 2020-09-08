@@ -21,5 +21,3 @@ scoreboard players remove @s FhGunHeat 0
 scoreboard players remove @s FhGunOverheat 0
 scoreboard players remove @s FhGunOverheatSFX 0
 scoreboard players remove @s FhGunDelay 0
-
-tag @s add InitializedGalaxyGunScore

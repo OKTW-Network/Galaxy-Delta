@@ -1,4 +1,4 @@
-scoreboard players operation #calculation_temp1 numeric = @s workProc1
-scoreboard players operation #calculation_temp2 numeric = #advanced_blast_furnace_dur Config
-scoreboard players operation #calculation_temp1 numeric *= #static_1000 numeric
-scoreboard players operation #calculation_temp1 numeric /= #calculation_temp2 numeric
+scoreboard players operation #1 calcu_temp = @s workProc1
+scoreboard players operation #2 calcu_temp = #advanced_blast_furnace_dur Config
+scoreboard players operation #1 calcu_temp *= #1000 num
+scoreboard players operation #1 calcu_temp /= #2 calcu_temp

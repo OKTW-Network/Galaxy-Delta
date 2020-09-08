@@ -1,4 +1,3 @@
-
 function galaxy:block/functional/initial
 function galaxy:block/machine/initial
 

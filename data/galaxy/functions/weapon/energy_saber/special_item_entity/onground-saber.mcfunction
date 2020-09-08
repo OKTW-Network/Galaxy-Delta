@@ -4,10 +4,10 @@ data modify entity @e[tag=onGroundItem,tag=init,limit=1] Rotation[0] set from en
 data modify entity @e[tag=onGroundItem,tag=init,limit=1] HandItems[0] set from entity @s Item
 data modify entity @e[tag=onGroundItem,tag=init,limit=1] HandItems[0].tag.onGroundItem set value 1
 execute store result score @s styleSaber run data get entity @s Item.tag.type
-scoreboard players set #calculation_temp1 numeric 300300
-scoreboard players set #calculation_temp2 numeric 10000
-scoreboard players operation #calculation_temp2 numeric *= @s styleSaber
-scoreboard players operation #calculation_temp1 numeric += #calculation_temp2 numeric
-execute store result entity @e[tag=onGroundItem,tag=init,limit=1] HandItems[0].tag.CustomModelData int 1 run scoreboard players get #calculation_temp1 numeric
+scoreboard players set #1 calcu_temp 300300
+scoreboard players set #2 calcu_temp 10000
+scoreboard players operation #2 calcu_temp *= @s styleSaber
+scoreboard players operation #1 calcu_temp += #2 calcu_temp
+execute store result entity @e[tag=onGroundItem,tag=init,limit=1] HandItems[0].tag.CustomModelData int 1 run scoreboard players get #1 calcu_temp
 tag @e[tag=onGroundItem,tag=init] remove init
 kill @s

@@ -11,5 +11,3 @@ scoreboard players remove @s cdActStun 0
 scoreboard players remove @s cdActFlash 0
 scoreboard players remove @s cdActStorm 0
 scoreboard players remove @s cdActShock 0
-
-tag @s add InitializedGalaxyKatanaScore

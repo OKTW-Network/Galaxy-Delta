@@ -1,4 +1,4 @@
-function math:calculation_temp/store_to_1
+function math:calcu_temp/store_to_1
 
 function cu:library/hitbox/main
 execute store success score @s sucHitboxCheck if score @s hitboxX1 >= @e[tag=bullet,tag=flighting,limit=1] posX
@@ -12,4 +12,4 @@ execute if score @s sucHitboxCheck matches 1 run scoreboard players set @e[tag=b
 
 tag @s remove bulletPossibleVictim
 
-function math:calculation_temp/extract_from_1
+function math:calcu_temp/extract_from_1

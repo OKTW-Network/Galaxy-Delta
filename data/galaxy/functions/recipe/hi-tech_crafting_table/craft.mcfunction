@@ -1,5 +1,5 @@
-scoreboard players set #calculation_temp1 numeric 0
-scoreboard players set #calculation_temp2 numeric 0
+scoreboard players set #1 calcu_temp 0
+scoreboard players set #2 calcu_temp 0
 
 # execute if score @s htctCategory matches 0 run function galaxy:recipe/hi-tech_crafting_table/all/craft
 execute if score @s htctCategory matches 1 run function galaxy:recipe/hi-tech_crafting_table/component/craft

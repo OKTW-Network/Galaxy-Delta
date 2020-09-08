@@ -1,4 +1,4 @@
-execute store success score #calculation_temp1 numeric if entity @e[tag=actStunDamage]
+execute store success score #1 calcu_temp if entity @e[tag=actStunDamage]
 execute as @e[tag=actStunDamage] run data modify entity @s HurtTime set value 10s
 execute as @e[tag=actStunDamage] run function galaxy:damage/hurt_display
 execute as @e[tag=actStunDamage] store result score @s health run data get entity @s Health
