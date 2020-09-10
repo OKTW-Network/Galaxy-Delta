@@ -170,37 +170,37 @@ execute if score @s reqRcpHTct matches 28 if score @s htctRequPage matches 1 run
 execute if score @s reqRcpHTct matches 29 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 29 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 29 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 29 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:green_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 29 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:brown_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 30 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 30 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 30 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 30 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:brown_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 30 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:cyan_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 31 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 31 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 31 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 31 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:cyan_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 31 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:gray_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 32 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 32 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 32 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 32 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:light_gray_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 32 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:green_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 33 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 33 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 33 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 33 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:gray_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 33 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:light_gray_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 34 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 34 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 34 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 34 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:pink_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 34 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:magenta_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 35 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 35 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2
 execute if score @s reqRcpHTct matches 35 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.1 minecraft:terracotta{guiItem:1} 2
-execute if score @s reqRcpHTct matches 35 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:magenta_stained_glass{guiItem:1} 1
+execute if score @s reqRcpHTct matches 35 if score @s htctRequPage matches 1 run replaceitem block ~ ~ ~ container.2 minecraft:pink_stained_glass{guiItem:1} 1
 
 execute if score @s reqRcpHTct matches 36 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequPageMax 1
 execute if score @s reqRcpHTct matches 36 if score @s htctRequPage matches 1 run scoreboard players set @s htctRequSlotMax 2

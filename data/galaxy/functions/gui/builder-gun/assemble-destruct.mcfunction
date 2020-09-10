@@ -3,6 +3,8 @@ tag @s[predicate=!galaxy:gui/check-builder_gun_require,predicate=galaxy:gui/chec
 execute if entity @s[tag=removeResult] run replaceitem block ~ ~ ~ container.13 minecraft:air
 execute if entity @s[tag=removeResult] run data remove entity @s HandItems[0].tag.parts
 execute if entity @s[tag=removeResult] run data remove entity @s HandItems[0].tag.UUID
+execute if entity @s[tag=removeResult] run function galaxy:gui/builder-gun/build-background_hardware
+execute if entity @s[tag=removeResult] run function galaxy:gui/builder-gun/build-background_addon
 tag @s[tag=removeResult] remove lockAssemble
 tag @s[tag=removeResult] remove removeResult
 
@@ -11,5 +13,7 @@ tag @s[predicate=!galaxy:gui/check-builder_gun_result,predicate=galaxy:gui/check
 execute if entity @s[tag=removeParts] run function galaxy:gui/builder-gun/delete-parts
 execute if entity @s[tag=removeParts] run data remove entity @s HandItems[0].tag.parts
 execute if entity @s[tag=removeParts] run data remove entity @s HandItems[0].tag.UUID
+execute if entity @s[tag=removeParts] run function galaxy:gui/builder-gun/build-background_hardware
+execute if entity @s[tag=removeParts] run function galaxy:gui/builder-gun/build-background_addon
 tag @s[tag=removeParts] remove lockAssemble
 tag @s[tag=removeParts] remove removeParts

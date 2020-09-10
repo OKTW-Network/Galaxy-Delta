@@ -40,8 +40,8 @@ execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:1}}] run data modify block
 execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:2}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore set value '[{"translate":"attribute.type","color":"green","italic":false},{"text":": ","color":"dark_gray","italic":false},{"translate":"type.sniper","color":"gray","italic":false}]'
 execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:3}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore set value '[{"translate":"attribute.type","color":"green","italic":false},{"text":": ","color":"dark_gray","italic":false},{"translate":"type.shotgun","color":"gray","italic":false}]'
 execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:1,style:0}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
-execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:2,style:0}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
-execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:3,style:0}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
+execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:2,style:0}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 220100
+execute if data block ~ ~ ~ Items[{Slot:13b,tag:{type:3,style:0}}] run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 230100
 
 function galaxy:gui/builder-gun/data_save-parts
 function galaxy:gui/builder-gun/data_save-result

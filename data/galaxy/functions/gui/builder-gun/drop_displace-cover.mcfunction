@@ -6,7 +6,6 @@ execute unless data block ~ ~ ~ Items[{Slot:5b,tag:{guiItem:1}}] run data modify
 execute unless data block ~ ~ ~ Items[{Slot:6b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:6b}]
 execute unless data block ~ ~ ~ Items[{Slot:8b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:8b}]
 execute unless data block ~ ~ ~ Items[{Slot:12b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:12b}]
-execute unless data block ~ ~ ~ Items[{Slot:13b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:13b}]
 execute unless data block ~ ~ ~ Items[{Slot:14b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:14b}]
 execute unless data block ~ ~ ~ Items[{Slot:15b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:15b}]
 execute unless data block ~ ~ ~ Items[{Slot:16b,tag:{guiItem:1}}] run data modify storage galaxy:temporary GUI.drop append from block ~ ~ ~ Items[{Slot:16b}]
