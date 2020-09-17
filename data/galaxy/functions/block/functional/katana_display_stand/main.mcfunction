@@ -1,19 +1,16 @@
-# init
-scoreboard players set @s[tag=init] holdKatana 100
-scoreboard players set @s[tag=init] statusBlockDisp 1
-tag @s[tag=init] remove init
-
 # display
 function galaxy:block/functional/katana_display_stand/check-display
 execute if entity @s[tag=setDisplay] run function galaxy:block/functional/katana_display_stand/build-display/main
-execute if entity @s[tag=removeOffHand] run function galaxy:block/functional/katana_display_stand/clean_up-off_hand
+execute if entity @s[tag=removeDisplay] run function galaxy:block/functional/katana_display_stand/remove-display
 tag @s[tag=setDisplay] remove setDisplay
-tag @s[tag=removeOffHand] remove removeOffHand
+tag @s[tag=removeDisplay] remove removeDisplay
 
 # throw out non-katana items
-execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=!galaxy:armor_stand/hand_main-katana_display,predicate=!galaxy:tool/hand_main-wrench] run tag @s add throw
-execute if entity @s[tag=throw] run function galaxy:block/functional/katana_display_stand/throw
-tag @s[tag=throw] remove throw
+execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=!galaxy:armor_stand/hand_main-katana_display,predicate=!galaxy:tool/hand_main-wrench] run tag @s add dropUnallowed
+execute if entity @s[tag=dropUnallowed] run data modify storage galaxy:temporary block.drop[0] append from entity @s HandItems[0]
+execute if entity @s[tag=dropUnallowed] run replaceitem entity @s weapon.mainhand air
+execute if entity @s[tag=dropUnallowed] run function galaxy:block/drop_item
+tag @s[tag=dropUnallowed] remove dropUnallowed
 
 # wrench
 execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=galaxy:tool/hand_main-wrench] run function galaxy:tool/wrench

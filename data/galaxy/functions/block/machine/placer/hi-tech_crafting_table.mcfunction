@@ -1,14 +1,12 @@
-summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["hi-tech_crafting_table","init"]}
-setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.hi_tech_crafting"}'} replace
-summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["hi-tech_crafting_table_fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10100,fakeBlock:1}}]}
-execute if entity @s[tag=content_data] store result score @e[tag=hi-tech_crafting_table,tag=init] guiMode run data get entity @s HandItems[0].tag.guiMode
-execute if entity @s[tag=content_data] store result score @e[tag=hi-tech_crafting_table,tag=init] htctListPage run data get entity @s HandItems[0].tag.htctListPage
-execute if entity @s[tag=content_data] store result score @e[tag=hi-tech_crafting_table,tag=init] htctCategory run data get entity @s HandItems[0].tag.htctCategory
-execute if entity @s[tag=content_data] store result score @e[tag=hi-tech_crafting_table,tag=init] reqRcpHTct run data get entity @s HandItems[0].tag.reqRcpHTct
-execute if entity @s[tag=!content_data] run scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] guiMode 0
-execute if entity @s[tag=!content_data] run scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] htctListPage 1
-execute if entity @s[tag=!content_data] run scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] htctCategory 1
-execute if entity @s[tag=!content_data] run scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] htctRequPage 1
+execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["hi-tech_crafting_table","init"]}
+execute unless entity @s[tag=placeFailed] run setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.hi_tech_crafting"}'} replace
+
+execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~1 ~ {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["hi-tech_crafting_table_fake_block","fake_block"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10100,fakeBlock:1}}]}
+
+scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] guiMode 0
+scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] htctListPage 1
+scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] htctCategory 1
+scoreboard players set @e[tag=hi-tech_crafting_table,tag=init] htctRequPage 1
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] setGuiCover 0
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] setHTctListPage 0
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] setHTctCategory 0
@@ -29,4 +27,9 @@ scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] reqRcpHTct 0
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] reqHTctCraft 0
 execute as @e[tag=hi-tech_crafting_table,tag=init] run function galaxy:gui/hi-tech_crafting_table/update
 execute as @e[tag=hi-tech_crafting_table,tag=init] run tag @s remove init
+
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:block/machine/give/hi-tech_crafting_table
+
+execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.1
+
 kill @s

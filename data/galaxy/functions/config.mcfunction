@@ -55,12 +55,8 @@ scoreboard players set #advanced_blast_furnace_dur Config 600
 ############################################
 
   ########################################
-  # Structure empower                    #
+  # Empower tool                         #
   ########################################
-
-# Enable Structure empower
-# boolean, default: 1
-scoreboard players set #structure_empower Config 1
 
 # Weather conditions of the process
 # 0 = process in any weather, 1 = only process while thunder weather, 2 = only process while raining (or thunder weather)
@@ -80,10 +76,6 @@ scoreboard players set #structure_empower_weather_condition Config 2
   ########################################
   # Katana                               #
   ########################################
-
-# Enable action: swap
-# boolean, default: 1
-scoreboard players set #katana_act_swap Config 1
 
 # Enable action: stun
 # boolean, default: 1
@@ -172,11 +164,6 @@ scoreboard players set #katana_act_shock_damage_addition Config 2
   ########################################
   # Energy saber                         #
   ########################################
-
-# Enable action:turn-on/off
-# boolean, default: 1
-scoreboard players set #energy_saber_act_turn Config 1
-
 
 # Action: turn-on/off play sounds
 # boolean, default: 1
