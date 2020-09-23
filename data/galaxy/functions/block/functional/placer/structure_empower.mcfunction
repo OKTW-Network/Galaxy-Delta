@@ -6,8 +6,8 @@ data modify entity @e[tag=structure_empower,tag=init,limit=1] Rotation set from 
 execute as @e[tag=structure_empower,tag=init] at @s run tp ~ ~ ~
 tag @e[tag=structure_empower,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:tool/give/structure_empower
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] at @s run function galaxy:tool/give/structure_empower
 
-execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.2
+execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.4
 
 kill @s

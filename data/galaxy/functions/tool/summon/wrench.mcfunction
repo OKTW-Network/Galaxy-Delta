@@ -1,1 +1,5 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:6,Item:{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"translate":"item.galaxy.wrench","italic":false}'},AttributeModifiers:[{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: -1, Operation: 1, UUID: [I; 0, 670247, 0, 1710], Slot: "mainhand"},{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: 0, Operation: 0, UUID: [I; 0, 587794, 0, 746340], Slot: "mainhand"}],HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:10100,wrench:1}}}
+data modify storage galaxy:get item set value []
+function galaxy:tool/get/wrench
+function cu:uuid/generate
+data modify storage galaxy:get item.tag.UUID set from storage cu:resources UUID
+function galaxy:summon-drop

@@ -1,1 +1,4 @@
-give @s minecraft:stone_sword{display:{Name:'{"translate":"item.galaxy.cosmetic.gun.1","italic":false}'},AttributeModifiers:[{AttributeName: "generic.attack_damage", Slot: "mainhand", Name: "generic.attackDamage", Amount: -1, Operation: 2, UUID: [I; 0, 670247, 0, 1710]},{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: 0, Operation: 0, UUID: [I; 0, 587794, 0, 746340]}],HideFlags:39,RepairCost:2147483647,Unbreakable:1b,CustomModelData:20100,addon:1,cosmetic:1,type:1,data:1,alteration:{style:1}} 1
+data modify storage galaxy:get item prepend value {id:"minecraft:stone_sword",Count:1b}
+data modify storage galaxy:get itemTag set value []
+function galaxy:component/get/tag/cosmetic_gun_1
+data modify storage galaxy:get item[0].tag set from storage galaxy:get itemTag[0]

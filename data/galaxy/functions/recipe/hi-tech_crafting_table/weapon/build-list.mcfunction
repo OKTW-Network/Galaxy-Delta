@@ -1,4 +1,21 @@
-scoreboard players set @s htctListPageMax 1
+scoreboard players remove #2 calcu_temp 1
+scoreboard players operation #2 calcu_temp /= #5 num
+scoreboard players add #2 calcu_temp 1
+scoreboard players operation #2 calcu_temp *= #9 num
+scoreboard players remove #2 calcu_temp 2
+scoreboard players operation #3 calcu_temp %= #5 num
+execute if score #3 calcu_temp matches 1.. run scoreboard players operation #3 calcu_temp -= #5 num
+scoreboard players operation #2 calcu_temp += #3 calcu_temp
 
-#katana
-execute if score @s htctListPage matches 1 run replaceitem block ~ ~ ~ container.3 minecraft:diamond_sword{display:{Name:'{"translate":"item.galaxy.katana","italic":false}',Lore:['[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.minecraft.stick","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"2","color":"gray","italic":false}]','[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.galaxy.steel_ingot","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"3","color":"gray","italic":false}]','[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.minecraft.gold_nugget","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"2","color":"gray","italic":false}]','[{"text":"- ","color":"dark_gray","italic":false},{"translate":"block.minecraft.stripped_dark_oak_log","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"2","color":"gray","italic":false}]']},HideFlags:63,CustomModelData:110100,guiItem:1}
+data modify storage galaxy:temp item prepend from storage galaxy:get item[0]
+data modify storage galaxy:temp item[0].tag merge value {guiItem:1}
+execute store result storage galaxy:temp item[0].Slot byte 1 run scoreboard players get #2 calcu_temp
+
+data remove storage galaxy:get item[0]
+execute store result score #2 calcu_temp store result score #3 calcu_temp run scoreboard players remove #1 calcu_temp 1
+
+execute if score #1 calcu_temp matches 0 run data modify storage galaxy:recipe HTct.categories.weapon.list prepend from storage galaxy:temp item
+execute if score #1 calcu_temp matches 0 run data modify storage galaxy:temp item set value []
+execute if score #1 calcu_temp matches 0 store result score #2 calcu_temp store result score #3 calcu_temp run scoreboard players set #1 calcu_temp 15
+
+execute if data storage galaxy:get item[0] run function galaxy:recipe/hi-tech_crafting_table/weapon/build-list

@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~ ~ {PickupDelay:10s,Item:{id:"minecraft:item_frame",Count:1b,tag:{display:{Name:'{"translate":"block.galaxy.elevator","italic":false}'},CustomModelData:20100,elevator:1,EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["elevator_placer","block_placer"]}}}}
+data modify storage galaxy:get item set value []
+function galaxy:block/functional/get/elevator
+function galaxy:summon-drop

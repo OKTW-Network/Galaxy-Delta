@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:6s,Item:{id:"minecraft:item_frame",Count:1b,tag:{display:{Name:'{"translate":"item.galaxy.structure_empower","italic":false}'},CustomModelData:30100,structureEmpower:1,EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Silent:1b,Tags:["structure_empower_placer","attachment","entity_placer"]}}}}
+data modify storage galaxy:get item set value []
+function galaxy:tool/get/structure_empower
+function galaxy:summon-drop

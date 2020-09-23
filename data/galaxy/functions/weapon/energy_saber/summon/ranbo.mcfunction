@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:10s,Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"translate":"item.galaxy.ranbo","italic":false,"color":"light_purple"}'},AttributeModifiers:[{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 99d, Operation: 0, UUID: [I; 0, 670247, 0, 1710]}],HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:140200,saber:1,dur:128,dmg:0,status:0,type:2}}}
+data modify storage galaxy:get item set value []
+function galaxy:weapon/energy_saber/get/ranbo
+function galaxy:summon-drop

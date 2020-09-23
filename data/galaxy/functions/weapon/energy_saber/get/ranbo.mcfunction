@@ -1,1 +1,4 @@
-give @s minecraft:carrot_on_a_stick{display:{Name:'{"translate":"item.galaxy.ranbo","italic":false,"color":"light_purple"}'},AttributeModifiers:[{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 99d, Operation: 0, UUID: [I; 0, 670247, 0, 1710]}],HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:320200,saber:1,dur:128,dmg:0,status:0,type:2} 1
+data modify storage galaxy:get item prepend value {id:"minecraft:carrot_on_a_stick",Count:1b}
+data modify storage galaxy:get itemTag set value []
+function galaxy:weapon/energy_saber/get/tag/ranbo
+data modify storage galaxy:get item[0].tag set from storage galaxy:get itemTag[0]

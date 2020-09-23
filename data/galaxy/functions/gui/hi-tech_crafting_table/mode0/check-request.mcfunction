@@ -1,0 +1,15 @@
+execute if score @s htctListRcpMax matches 1.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:3b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 2.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:4b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 3.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:5b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 4.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:6b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 5.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:7b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 6.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:12b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 7.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 8.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:14b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 9.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:15b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 10.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 11.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:21b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 12.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:22b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 13.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:23b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 14.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:24b}]} run tag @s add switchToMode1
+execute if score @s htctListRcpMax matches 15.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:25b}]} run tag @s add switchToMode1

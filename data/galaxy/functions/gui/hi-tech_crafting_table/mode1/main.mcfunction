@@ -22,7 +22,7 @@ tag @s[tag=setRequire] remove setRequire
 execute if entity @s[tag=setButtonReturn] run replaceitem block ~ ~ ~ container.18 minecraft:golden_hoe{display:{Name:'{"translate":"gui.back","italic":false}'},HideFlags:63,CustomModelData:10120,guiItem:1}
 tag @s[tag=setButtonReturn] remove setButtonReturn
 
-# mode switch
+# mode switch, return
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:18b}]} run tag @s add switchToMode0
 execute if entity @s[tag=switchToMode0] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=switchToMode0] run function galaxy:gui/hi-tech_crafting_table/switch_mode

@@ -7,6 +7,6 @@ execute if entity @a[tag=wrenchUser,predicate=!minecraft:sneaking] run tag @s ad
 execute if entity @a[tag=wrenchUser,predicate=minecraft:sneaking] run tag @s add dismantle
 execute if entity @a[tag=wrenchUser] run replaceitem entity @s weapon.mainhand air
 execute if entity @s[tag=adjustment] run replaceitem entity @a[tag=wrenchUser,predicate=!galaxy:tool/hand_main-wrench] weapon.mainhand air
-execute as @a[tag=wrenchUser,gamemode=!creative] run function galaxy:tool/get/wrench
-execute as @a[tag=wrenchUser,gamemode=creative,predicate=!galaxy:tool/hand_main-wrench] run function galaxy:tool/get/wrench
+execute as @a[tag=wrenchUser,gamemode=!creative] run function galaxy:tool/give/wrench
+execute as @a[tag=wrenchUser,gamemode=creative,predicate=!galaxy:tool/hand_main-wrench] run function galaxy:tool/give/wrench
 tag @a[tag=wrenchUser] remove wrenchUser

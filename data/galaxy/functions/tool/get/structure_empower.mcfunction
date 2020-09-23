@@ -1,1 +1,4 @@
-give @s minecraft:armor_stand{display:{Name:'{"translate":"item.galaxy.structure_empower","italic":false}'},CustomModelData:30100,structureEmpower:1,EntityTag:{DisabledSlots:4079166,Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f]},Rotation:[0f,0f],CustomNameVisible:0b,Small:1b,ShowArms:1b,Invulnerable:1b,Invisible:1b,Silent:1b,Tags:["structure_empower_detector"],ArmorItems:[{},{},{},{id:"minecraft:armor_stand",Count:1b,tag:{CustomModelData:30100,fakeBlock:1}}]}} 1
+data modify storage galaxy:get item prepend value {id:"minecraft:item_frame",Count:1b}
+data modify storage galaxy:get itemTag set value []
+function galaxy:tool/get/tag/structure_empower
+data modify storage galaxy:get item[0].tag set from storage galaxy:get itemTag[0]

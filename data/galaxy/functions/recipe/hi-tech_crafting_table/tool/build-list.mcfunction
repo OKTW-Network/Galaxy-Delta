@@ -1,7 +1,21 @@
-scoreboard players set @s htctListPageMax 1
+scoreboard players remove #2 calcu_temp 1
+scoreboard players operation #2 calcu_temp /= #5 num
+scoreboard players add #2 calcu_temp 1
+scoreboard players operation #2 calcu_temp *= #9 num
+scoreboard players remove #2 calcu_temp 2
+scoreboard players operation #3 calcu_temp %= #5 num
+execute if score #3 calcu_temp matches 1.. run scoreboard players operation #3 calcu_temp -= #5 num
+scoreboard players operation #2 calcu_temp += #3 calcu_temp
 
-# wrench
-execute if score @s htctListPage matches 1 run replaceitem block ~ ~ ~ container.3 minecraft:iron_sword{display:{Name:'{"translate":"item.galaxy.wrench","italic":false,"color":"white"}',Lore:['[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.galaxy.steel_ingot","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"1","color":"gray","italic":false}]','[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.minecraft.iron_ingot","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"3","color":"gray","italic":false}]']},HideFlags:63,CustomModelData:10100,guiItem:1}
+data modify storage galaxy:temp item prepend from storage galaxy:get item[0]
+data modify storage galaxy:temp item[0].tag merge value {guiItem:1}
+execute store result storage galaxy:temp item[0].Slot byte 1 run scoreboard players get #2 calcu_temp
 
-# structure empower
-execute if score @s htctListPage matches 1 run replaceitem block ~ ~ ~ container.4 minecraft:armor_stand{display:{Name:'{"translate":"item.galaxy.structure_empower","italic":false,"color":"white"}',Lore:['[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.minecraft.blaze_rod","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"4","color":"gray","italic":false}]','[{"text":"- ","color":"dark_gray","italic":false},{"translate":"item.minecraft.gold_ingot","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"2","color":"gray","italic":false}]','[{"text":"- ","color":"dark_gray","italic":false},{"translate":"block.minecraft.glass_pane","color":"gray","italic":false},{"text":" x ","color":"dark_gray","italic":false},{"text":"1","color":"gray","italic":false}]']},CustomModelData:30100,guiItem:1}
+data remove storage galaxy:get item[0]
+execute store result score #2 calcu_temp store result score #3 calcu_temp run scoreboard players remove #1 calcu_temp 1
+
+execute if score #1 calcu_temp matches 0 run data modify storage galaxy:recipe HTct.categories.tool.list prepend from storage galaxy:temp item
+execute if score #1 calcu_temp matches 0 run data modify storage galaxy:temp item set value []
+execute if score #1 calcu_temp matches 0 store result score #2 calcu_temp store result score #3 calcu_temp run scoreboard players set #1 calcu_temp 15
+
+execute if data storage galaxy:get item[0] run function galaxy:recipe/hi-tech_crafting_table/tool/build-list

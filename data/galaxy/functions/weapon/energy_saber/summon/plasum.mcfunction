@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:10s,Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"translate":"item.galaxy.plasum","italic":false}'},AttributeModifiers:[{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 5d, Operation: 0, UUID: [I; 0, 670247, 0, 1710]},{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: -1.5d, Operation: 0, UUID: [I; 0, 587794, 0, 746340]}],HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:130200,saber:1,dur:128,dmg:0,status:0,type:1}}}
+data modify storage galaxy:get item set value []
+function galaxy:weapon/energy_saber/get/plasum
+function galaxy:summon-drop

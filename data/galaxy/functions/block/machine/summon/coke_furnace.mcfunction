@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:10s,Item:{id:"minecraft:item_frame",Count:1b,tag:{display:{Name:'{"translate":"block.galaxy.coke_furnace","italic":false}'},CustomModelData:10200,placer:1,cokeFurnace:1,EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["coke_furnace_placer","block_placer"]}}}}
+data modify storage galaxy:get item set value []
+function galaxy:block/machine/get/coke_furnace
+function galaxy:summon-drop

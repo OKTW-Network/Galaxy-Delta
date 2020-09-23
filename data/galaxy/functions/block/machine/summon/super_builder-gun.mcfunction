@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:10s,Item:{id:"minecraft:item_frame",Count:1b,tag:{display:{Name:'{"translate":"block.galaxy.super_builder-gun","italic":false}'},CustomModelData:10401,placer:1,superBuilderGun:1,EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["super_builder-gun_placer","block_placer"]}}}}
+data modify storage galaxy:get item set value []
+function galaxy:block/machine/get/super_builder-gun
+function galaxy:summon-drop

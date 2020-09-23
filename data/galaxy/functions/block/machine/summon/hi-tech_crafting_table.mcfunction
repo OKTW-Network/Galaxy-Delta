@@ -1,1 +1,3 @@
-summon minecraft:item ~ ~0.25 ~ {PickupDelay:10s,Item:{id:"minecraft:item_frame",Count:1b,tag:{display:{Name:'{"translate":"block.galaxy.hi_tech_crafting_table","italic":false}'},CustomModelData:10100,placer:1,HTct:1,EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["hi-tech_crafting_table_placer","block_placer"]}}}}
+data modify storage galaxy:get item set value []
+function galaxy:block/machine/get/hi-tech_crafting_table
+function galaxy:summon-drop

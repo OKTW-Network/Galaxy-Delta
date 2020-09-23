@@ -1,1 +1,4 @@
-give @s minecraft:carrot_on_a_stick{display:{Name:'{"translate":"item.galaxy.nazo","italic":false,"color":"yellow"}'},HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:120200,katana:1,dur:128,dmg:0,type:2} 1
+data modify storage galaxy:get item prepend value {id:"minecraft:carrot_on_a_stick",Count:1b}
+data modify storage galaxy:get itemTag set value []
+function galaxy:weapon/katana/get/tag/nazo
+data modify storage galaxy:get item[0].tag set from storage galaxy:get itemTag[0]
