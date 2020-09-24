@@ -5,7 +5,7 @@ execute store result score @s posY run data get entity @s Pos[1] 10
 execute store result score @s posZ run data get entity @s Pos[2] 10
 
 # damage
-execute if score #katana_act_stun_damage Config matches 1.. at @s run function galaxy:damage/tag/action-stun
+execute if score #katana_act_stun_damage Config matches 1.. at @s run function galaxy:hitbox/tag/action-stun
 
 scoreboard players remove #2 calcu_temp 1
 

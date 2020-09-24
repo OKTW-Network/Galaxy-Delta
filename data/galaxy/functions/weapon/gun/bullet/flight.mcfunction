@@ -17,7 +17,7 @@ execute if score @s sucBulletMove matches 1 run scoreboard players remove @s bul
 
 execute if score @s sucBulletMove matches 1 run function galaxy:weapon/gun/bullet/color
 
-execute if score @s sucBulletMove matches 1 run function galaxy:damage/tag/bullet
+execute if score @s sucBulletMove matches 1 run function galaxy:hitbox/tag/bullet
 execute if score @s sucBulletHit matches 1 run function galaxy:damage/bullet
 execute if score @s sucBulletHit matches 1 if score @s bulletPenetrate matches 1..99 run function galaxy:weapon/gun/bullet/penetrate
 execute if score @s sucBulletHit matches 1 if score @s bulletPenetrate matches 1..100 run scoreboard players set @s sucBulletHit 0
