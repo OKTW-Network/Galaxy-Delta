@@ -12,11 +12,12 @@ tag @s[tag=setCategoryButton] remove setCategoryButton
 
 # category list
 function galaxy:gui/hi-tech_crafting_table/mode0/check-category
+execute if entity @s[tag=setCategory] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=setCategory] run function galaxy:gui/hi-tech_crafting_table/mode0/delete-category
 execute if entity @s[tag=setCategory] run function galaxy:gui/hi-tech_crafting_table/mode0/build-category
 tag @s[tag=setCategory] remove setCategory
 
-# list button
+# list page button
 function galaxy:gui/hi-tech_crafting_table/mode0/check-list_button
 execute if entity @s[tag=setListButton] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=setListButton] run function galaxy:gui/hi-tech_crafting_table/mode0/build-list_button

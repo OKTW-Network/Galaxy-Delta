@@ -14,6 +14,8 @@ execute if score @s htctListRcpMax matches 13.. unless block ~ ~ ~ minecraft:bar
 execute if score @s htctListRcpMax matches 14.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:24b}]} run scoreboard players set @s reqRcpHTct 14
 execute if score @s htctListRcpMax matches 15.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:25b}]} run scoreboard players set @s reqRcpHTct 15
 
+scoreboard players operation @s reqRcpHTctPage = @s reqRcpHTct
+
 scoreboard players operation #1 calcu_temp = @s htctListPage
 scoreboard players operation #1 calcu_temp -= #1 num
 scoreboard players operation #1 calcu_temp *= #15 num

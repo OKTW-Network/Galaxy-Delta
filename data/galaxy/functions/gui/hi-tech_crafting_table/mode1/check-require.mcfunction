@@ -10,5 +10,3 @@ execute if score @s htctRequSlotMax matches 9.. unless block ~ ~ ~ minecraft:bar
 execute if score @s htctRequSlotMax matches 10.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:20b}]} run tag @s add setRequire
 execute if score @s htctRequSlotMax matches 11.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:21b}]} run tag @s add setRequire
 execute if score @s htctRequSlotMax matches 12 unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:22b}]} run tag @s add setRequire
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:5b}]} run tag @s add setRequire
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:23b}]} run tag @s add setRequire

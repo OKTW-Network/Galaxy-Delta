@@ -5,7 +5,8 @@ scoreboard objectives add countTags dummy "num-GUI taged item quantity"
 
 scoreboard objectives add sucRequest dummy "num-GUI request success count"
 
-scoreboard objectives add reqRcpHTct dummy "num-GUI:HTct request to set recipe"
+scoreboard objectives add reqRcpHTct dummy "num-GUI:HTct request recipe"
+scoreboard objectives add reqRcpHTctPage dummy "num-GUI:HTct request recipe in page"
 scoreboard objectives add reqHTctCraft dummy "num-GUI:HTct request to craft"
 
 scoreboard objectives add setGui dummy "boolean-GUI update"
@@ -25,6 +26,7 @@ scoreboard objectives add htctCatgRcpMax dummy "num-GUI:HTct category recipe tot
 scoreboard objectives add htctRequPage dummy "num-GUI:HTct required page"
 scoreboard objectives add htctRequPageMax dummy "num-GUI:HTct required page max"
 scoreboard objectives add htctRequSlotMax dummy "num-GUI:HTct required slot max"
+scoreboard objectives add htctResuQuan dummy "num-GUI:HTct result quantity"
 scoreboard objectives add sucHTctRcp dummy "num-GUI:HTct recipe check success"
 
 scoreboard objectives add sbldGAtbMax dummy "num-GUI:Sbld-Gun attribute type max"
