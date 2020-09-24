@@ -14,7 +14,7 @@ scoreboard players set @e[tag=coke_furnace,tag=init] setProgress 1
 scoreboard players remove @e[tag=coke_furnace,tag=init] workProc1 0
 tag @e[tag=coke_furnace,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] at @s run function galaxy:block/machine/give/coke_furnace
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:block/machine/give/coke_furnace
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 0.8
 

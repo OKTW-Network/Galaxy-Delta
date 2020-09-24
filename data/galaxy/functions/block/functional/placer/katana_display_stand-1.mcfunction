@@ -5,7 +5,7 @@ scoreboard players set @e[tag=katana_display_stand,tag=type-1,tag=init] holdKata
 scoreboard players set @e[tag=katana_display_stand,tag=type-1,tag=init] statusBlockDisp 1
 tag @e[tag=katana_display_stand,tag=type-1,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] at @s run function galaxy:block/functional/give/katana_display_stand-1
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:block/functional/give/katana_display_stand-1
 
 execute unless entity @s[tag=placeFailed] run playsound block.wood.place block @a ~ ~ ~ 1 1.4
 

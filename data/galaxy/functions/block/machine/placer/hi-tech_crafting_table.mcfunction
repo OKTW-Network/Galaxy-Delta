@@ -16,7 +16,7 @@ scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] reqHTctCraft 0
 execute as @e[tag=hi-tech_crafting_table,tag=init] run function galaxy:gui/hi-tech_crafting_table/update
 execute as @e[tag=hi-tech_crafting_table,tag=init] run tag @s remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] at @s run function galaxy:block/machine/give/hi-tech_crafting_table
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:block/machine/give/hi-tech_crafting_table
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.1
 

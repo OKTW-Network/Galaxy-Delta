@@ -11,7 +11,7 @@ execute as @e[tag=super_builder-gun,tag=init] run function galaxy:recipe/super_b
 execute as @e[tag=super_builder-gun,tag=init] run function galaxy:gui/super_builder-gun/update
 tag @e[tag=super_builder-gun,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] at @s run function galaxy:block/machine/give/super_builder-gun
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:block/machine/give/super_builder-gun
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 0.8
 

@@ -8,7 +8,7 @@ tag @e[tag=fake_block,tag=init] remove init
 execute as @e[tag=builder-gun,tag=init] run function galaxy:gui/builder-gun/update
 tag @e[tag=builder-gun,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] at @s run function galaxy:block/machine/give/advanced_blast_furnace
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlace] run function galaxy:block/machine/give/advanced_blast_furnace
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 0.8
 
