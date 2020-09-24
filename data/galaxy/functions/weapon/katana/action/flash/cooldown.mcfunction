@@ -6,3 +6,4 @@ scoreboard players operation #1 calcu_temp *= #2 calcu_temp
 scoreboard players operation #1 calcu_temp /= #1000 num
 
 scoreboard players operation @s cdActFlash = #1 calcu_temp
+scoreboard players operation @s cdActFlashMax = #1 calcu_temp

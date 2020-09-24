@@ -14,6 +14,7 @@ scoreboard objectives add cdActSwapPull dummy "num-Action:Swap-PullOut cooldown"
 scoreboard objectives add cdActSwapPut dummy "num-Action:Swap-PutIn cooldown"
 scoreboard objectives add cdActStun dummy "num-Action:Stun cooldown"
 scoreboard objectives add cdActFlash dummy "num-Action:Flash cooldown"
+scoreboard objectives add cdActFlashMax dummy "num-Action:Flash cooldown max"
 scoreboard objectives add cdActShock dummy "num-Action:Shock cooldown"
 
 scoreboard objectives add timActFlash dummy "num-Action:Flash timer"

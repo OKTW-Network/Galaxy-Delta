@@ -1,6 +1,5 @@
-summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["actFlashPathfinder"]}
-execute store result entity @e[tag=actFlashPathfinder,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
-execute store result entity @e[tag=actFlashPathfinder,limit=1] Rotation[1] float 1 run data get entity @s Rotation[1]
+execute at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["actFlashPathfinder"]}
+data modify entity @e[tag=actFlashPathfinder,limit=1] Rotation set from entity @s Rotation
 
 scoreboard players set @s actFlashDist 0
 scoreboard players operation @s actFlashMoveRem = #katana_act_flash_distance_limit Config
@@ -12,5 +11,3 @@ execute as @e[tag=actFlashPathfinder] at @s run function galaxy:weapon/katana/ac
 tag @s remove actFalshMove
 
 function galaxy:weapon/katana/action/swap_put/consequence
-
-

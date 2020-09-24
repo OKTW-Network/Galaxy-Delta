@@ -9,4 +9,5 @@ scoreboard players remove @s cdActSwapPull 0
 scoreboard players remove @s cdActSwapPut 0
 scoreboard players remove @s cdActStun 0
 scoreboard players remove @s cdActFlash 0
+scoreboard players remove @s cdActFlashMax 0
 scoreboard players remove @s cdActShock 0

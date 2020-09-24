@@ -8,7 +8,7 @@ function galaxy:hitbox/store-postition
 scoreboard players set #1 calcu_temp 0
 execute at @s if block ~ ~ ~ #minecraft:passable if block ~ ~1 ~ #minecraft:passable unless block ~ ~-1 ~ #minecraft:passable run scoreboard players set #1 calcu_temp 1
 
-execute if score #1 calcu_temp matches 1 at @s run tp @a[tag=actFalshMove] @s
+execute if score #1 calcu_temp matches 1 at @s as @a[tag=actFalshMove] run tp ~ ~ ~
 execute if score #1 calcu_temp matches 1 run scoreboard players add @a[tag=actFalshMove] actFlashDist 25
 execute if score #1 calcu_temp matches 1 run scoreboard players remove @a[tag=actFalshMove] actFlashMoveRem 1
 
