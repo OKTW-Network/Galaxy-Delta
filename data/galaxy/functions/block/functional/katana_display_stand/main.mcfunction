@@ -16,3 +16,4 @@ tag @s[tag=dropUnallowed] remove dropUnallowed
 execute if entity @s[predicate=!minecraft:hand_main-empty,predicate=galaxy:tool/hand_main-wrench] run function galaxy:tool/wrench
 execute if entity @s[tag=adjustment,tag=displaying] run function galaxy:block/functional/katana_display_stand/wrench/adjustment
 execute if entity @s[tag=dismantle] run function galaxy:block/functional/katana_display_stand/wrench/dismantle
+tag @s[tag=adjustment] remove adjustment
