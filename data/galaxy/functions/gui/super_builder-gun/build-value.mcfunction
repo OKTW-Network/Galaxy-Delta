@@ -1,10 +1,10 @@
 replaceitem block ~ ~ ~ container.12 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:20610,guiItem:1}
 replaceitem block ~ ~ ~ container.13 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:20610,guiItem:1}
 replaceitem block ~ ~ ~ container.14 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:20610,guiItem:1}
-execute if score @s sbldAtbValue matches 100..999 run scoreboard players set #3 calcu_temp 3
-execute if score @s sbldAtbValue matches 10..99 run scoreboard players set #3 calcu_temp 2
-execute if score @s sbldAtbValue matches 0..9 run scoreboard players set #3 calcu_temp 1
-execute store result score #1 calcu_temp run scoreboard players get @s sbldAtbValue
+execute if score @s sbldValue matches 100..999 run scoreboard players set #3 calcu_temp 3
+execute if score @s sbldValue matches 10..99 run scoreboard players set #3 calcu_temp 2
+execute if score @s sbldValue matches 0..9 run scoreboard players set #3 calcu_temp 1
+execute store result score #1 calcu_temp run scoreboard players get @s sbldValue
 execute if score #3 calcu_temp matches 1..3 run scoreboard players operation #2 calcu_temp = #1 calcu_temp
 execute if score #3 calcu_temp matches 1..3 run scoreboard players operation #2 calcu_temp %= #10 num
 execute if score #3 calcu_temp matches 1..3 if score #2 calcu_temp matches 0 run replaceitem block ~ ~ ~ container.14 minecraft:white_stained_glass_pane{display:{Name:'{"text":"0","italic":false}'},CustomModelData:20600,guiItem:1}
