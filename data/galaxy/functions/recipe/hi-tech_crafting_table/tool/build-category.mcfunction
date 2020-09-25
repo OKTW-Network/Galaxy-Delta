@@ -15,6 +15,9 @@ function galaxy:recipe/hi-tech_crafting_table/tool/build-list
 data modify storage galaxy:get item set value []
 function galaxy:tool/get/wrench
 data modify storage galaxy:recipe HTct.categories.tool.icon set from storage galaxy:get item[0]
+data modify storage galaxy:temp tag set value {}
+execute if data storage galaxy:recipe HTct.categories.weapon.icon.tag.CustomModelData run data modify storage galaxy:temp tag.CustomModelData set from storage galaxy:recipe HTct.categories.weapon.icon.tag.CustomModelData
+data modify storage galaxy:recipe HTct.categories.weapon.icon.tag set from storage galaxy:temp tag
 data modify storage galaxy:recipe HTct.categories.tool.icon.tag merge value {display:{Name:'{"translate":"gui.htct.tool","italic":false}'},guiItem:1}
 data remove storage galaxy:recipe HTct.categories.tool.icon.tag.display.Lore
 # data modify storage galaxy:recipe HTct.categories.tool.icon set value {id:"minecraft:golden_hoe",Count:1b,tag:{display:{Name:'{"translate":"gui.htct.tool","italic":false}'},HideFlags:63,CustomModelData:30105,guiItem:1}}

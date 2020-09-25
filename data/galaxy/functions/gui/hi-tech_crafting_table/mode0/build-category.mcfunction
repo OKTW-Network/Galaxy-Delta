@@ -4,6 +4,10 @@ data modify entity @s HandItems[0].tag.GUI.categoryPrev.icon merge value {Slot:1
 data modify entity @s HandItems[0].tag.GUI.category.icon merge value {Slot:10b}
 data modify entity @s HandItems[0].tag.GUI.categoryNext.icon merge value {Slot:19b}
 
+data remove block ~ ~ ~ Items[{Slot:1b}]
+data remove block ~ ~ ~ Items[{Slot:10b}]
+data remove block ~ ~ ~ Items[{Slot:19b}]
+
 data modify block ~ ~ ~ Items prepend from entity @s HandItems[0].tag.GUI.categoryPrev.icon
 data modify block ~ ~ ~ Items prepend from entity @s HandItems[0].tag.GUI.category.icon
 data modify block ~ ~ ~ Items prepend from entity @s HandItems[0].tag.GUI.categoryNext.icon
