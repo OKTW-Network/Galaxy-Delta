@@ -29,12 +29,12 @@ function galaxy:component/get/color_lens_black
 function galaxy:component/get/color_lens_brown
 function galaxy:component/get/color_lens_cyan
 function galaxy:component/get/color_lens_gray
+function galaxy:component/get/color_lens_green
 function galaxy:component/get/color_lens_light_gray
 function galaxy:component/get/color_lens_magenta
 function galaxy:component/get/color_lens_pink
 function galaxy:component/get/color_lens_white
 function galaxy:component/get/color_lens_rainbow
-function galaxy:component/get/color_lens_green
 function galaxy:component/get/trigger_sync
 
 data modify storage galaxy:recipe HTct.items set from storage galaxy:get item

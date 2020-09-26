@@ -29,10 +29,10 @@ function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_b
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_brown
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_cyan
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_gray
+function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_green
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_light_gray
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_magenta
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_pink
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_white
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_rainbow
-function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_green
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/trigger_sync
