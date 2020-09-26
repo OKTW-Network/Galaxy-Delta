@@ -7,6 +7,8 @@ execute if score @s reqGunFire matches 3 run function galaxy:weapon/gun/bullet/g
 execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 run function galaxy:weapon/gun/bullet/get_data-hand_main
 execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run function galaxy:weapon/gun/bullet/get_data-hand_off
 
+scoreboard players set @e[tag=bullet,tag=init,limit=1] bulletDistance 0
+
 # offset
 execute unless score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 run function galaxy:weapon/gun/bullet/offset
 execute if score @e[tag=bullet,tag=init,limit=1] bulletOffset matches 0 run function galaxy:weapon/gun/bullet/offset-zero

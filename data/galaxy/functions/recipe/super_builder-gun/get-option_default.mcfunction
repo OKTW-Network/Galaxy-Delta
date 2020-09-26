@@ -1,10 +1,10 @@
 scoreboard players set @s optType 1
 scoreboard players set @s optStyle 0
 scoreboard players set @s optMode 0
+scoreboard players set @s optAimZoom 7
 scoreboard players set @s optPjDamage 1
 scoreboard players set @s optDelay 3
 scoreboard players set @s optPjDistance 16
-scoreboard players set @s optAimZoom 7
 scoreboard players set @s optTemperMax 999
 scoreboard players set @s optHeat 0
 scoreboard players set @s optCooling 999

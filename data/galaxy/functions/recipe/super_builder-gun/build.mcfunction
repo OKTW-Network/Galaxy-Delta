@@ -11,6 +11,9 @@ data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:rec
 function galaxy:recipe/super_builder-gun/build-attribute/firing_mode
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.firing_mode
 
+function galaxy:recipe/super_builder-gun/build-attribute/aim_zoom
+data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.aim_zoom
+
 function galaxy:recipe/super_builder-gun/build-attribute/projectile_damage
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.projectile_damage
 
@@ -19,9 +22,6 @@ data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:rec
 
 function galaxy:recipe/super_builder-gun/build-attribute/projectile_distance
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.projectile_distance
-
-function galaxy:recipe/super_builder-gun/build-attribute/aim_zoom
-data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.aim_zoom
 
 function galaxy:recipe/super_builder-gun/build-attribute/temperature_max
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.temperature_max

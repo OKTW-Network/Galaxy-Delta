@@ -1,10 +1,10 @@
 execute if score @s sbldAttribute matches 1 store result score @s sbldValue run scoreboard players get @s optType
 execute if score @s sbldAttribute matches 2 store result score @s sbldValue run scoreboard players get @s optStyle
 execute if score @s sbldAttribute matches 3 store result score @s sbldValue run scoreboard players get @s optMode
-execute if score @s sbldAttribute matches 4 store result score @s sbldValue run scoreboard players get @s optPjDamage
-execute if score @s sbldAttribute matches 5 store result score @s sbldValue run scoreboard players get @s optDelay
-execute if score @s sbldAttribute matches 6 store result score @s sbldValue run scoreboard players get @s optPjDistance
-execute if score @s sbldAttribute matches 7 store result score @s sbldValue run scoreboard players get @s optAimZoom
+execute if score @s sbldAttribute matches 4 store result score @s sbldValue run scoreboard players get @s optAimZoom
+execute if score @s sbldAttribute matches 5 store result score @s sbldValue run scoreboard players get @s optPjDamage
+execute if score @s sbldAttribute matches 6 store result score @s sbldValue run scoreboard players get @s optDelay
+execute if score @s sbldAttribute matches 7 store result score @s sbldValue run scoreboard players get @s optPjDistance
 execute if score @s sbldAttribute matches 8 store result score @s sbldValue run scoreboard players get @s optTemperMax
 execute if score @s sbldAttribute matches 9 store result score @s sbldValue run scoreboard players get @s optHeat
 execute if score @s sbldAttribute matches 10 store result score @s sbldValue run scoreboard players get @s optCooling 

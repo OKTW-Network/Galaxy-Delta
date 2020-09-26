@@ -42,6 +42,7 @@ scoreboard objectives add sucBulletHit dummy "num-Bullet hit success count"
 
 scoreboard objectives add bulletDamage dummy "num-Bullet damage"
 scoreboard objectives add bulletSpeed dummy "num-Bullet speed"
+scoreboard objectives add bulletDistance dummy "num-Bullet distance"
 scoreboard objectives add bulletDistRem dummy "num-Bullet distance remain"
 scoreboard objectives add bulletMoveRem dummy "num-Bullet move remain"
 scoreboard objectives add bulletOffset dummy "num-Bullet offset"

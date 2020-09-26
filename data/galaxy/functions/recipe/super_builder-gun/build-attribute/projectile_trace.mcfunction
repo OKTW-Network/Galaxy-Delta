@@ -6,4 +6,4 @@ execute if data storage galaxy:recipe SbldG.attributes.projectile_trace.icon.tag
 data modify storage galaxy:recipe SbldG.attributes.projectile_trace.icon.tag set from storage galaxy:temp tag
 data modify storage galaxy:recipe SbldG.attributes.projectile_trace.icon.tag merge value {display:{Name:'{"translate":"attribute.projectile.trace","italic":false}'},HideFlags:63,guiItem:1}
 data modify storage galaxy:recipe SbldG.attributes.projectile_trace.value.min set value 0
-data modify storage galaxy:recipe SbldG.attributes.projectile_trace.value.max set value 225
+data modify storage galaxy:recipe SbldG.attributes.projectile_trace.value.max set value 80
