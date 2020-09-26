@@ -5,8 +5,8 @@ data modify storage galaxy:recipe SbldG.attributes set value {}
 function galaxy:recipe/super_builder-gun/build-attribute/type
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.type
 
-function galaxy:recipe/super_builder-gun/build-attribute/cosmetic
-data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.cosmetic
+function galaxy:recipe/super_builder-gun/build-attribute/style
+data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.style
 
 function galaxy:recipe/super_builder-gun/build-attribute/firing_mode
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.firing_mode
