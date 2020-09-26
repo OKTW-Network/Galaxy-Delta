@@ -1,7 +1,7 @@
-execute store result score #1 calcu_temp run data get entity @s SelectedItem.tag.UUID[0]
-execute store result score #2 calcu_temp run data get entity @s SelectedItem.tag.UUID[1]
-execute store result score #3 calcu_temp run data get entity @s SelectedItem.tag.UUID[2]
-execute store result score #4 calcu_temp run data get entity @s SelectedItem.tag.UUID[3]
+execute store result score #1 calcu_temp run data get entity @s SelectedItem.tag.gun.UUID[0]
+execute store result score #2 calcu_temp run data get entity @s SelectedItem.tag.gun.UUID[1]
+execute store result score #3 calcu_temp run data get entity @s SelectedItem.tag.gun.UUID[2]
+execute store result score #4 calcu_temp run data get entity @s SelectedItem.tag.gun.UUID[3]
 execute unless score #1 calcu_temp = @s MhGunUUID0 run tag @s add MhGunChanged
 execute unless score #2 calcu_temp = @s MhGunUUID1 run tag @s add MhGunChanged
 execute unless score #3 calcu_temp = @s MhGunUUID2 run tag @s add MhGunChanged

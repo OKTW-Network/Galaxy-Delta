@@ -1,7 +1,7 @@
 function math:percent-cleanup
-execute store result score #base percent run data get block ~ ~ ~ Items[{Slot:13b}].tag.parts[{cooling_system:1}].alteration.coolingDelay 1
-# execute store result score #modifier percent run data get block ~ ~ ~ Items[{Slot:13b}].tag.parts[{cooling_system:1}].alteration.coolingDelay_modifier 1
+execute store result score #base percent run data get block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{cooling_system:1}}].component.alteration.coolingDelay 1
+# execute store result score #modifier percent run data get block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{cooling_system:1}}].component.alteration.coolingDelay_modifier 1
 # function math:percent
-# execute if data block ~ ~ ~ Items[{Slot:13b}].tag.parts[{barrel:1}].alteration.coolingDelay_modifier run function galaxy:gui/builder-gun/build-result/cooling_delay-extra
+# execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{barrel:1}}].component.alteration.coolingDelay_modifier run function galaxy:gui/builder-gun/build-result/cooling_delay-extra
 
-execute store result block ~ ~ ~ Items[{Slot:13b}].tag.coolingDelay int 1 run scoreboard players get #base percent
+execute store result block ~ ~ ~ Items[{Slot:13b}].tag.gun.coolingDelay int 1 run scoreboard players get #base percent

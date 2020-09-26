@@ -1,0 +1,1 @@
+execute store result block ~ ~ ~ Items[{Slot:13b}].tag.gun.projectile.color int 1 run data get block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{color_lens:1}}].component.alteration.projectile.color 1

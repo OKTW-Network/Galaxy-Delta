@@ -1,4 +1,4 @@
-execute store result score @s gunAim run data get entity @s SelectedItem.tag.aim_zoom
+execute store result score @s gunAim run data get entity @s SelectedItem.tag.gun.aim_zoom
 effect give @s[scores={gunAim=1}] slowness 1000000 0 true
 effect give @s[scores={gunAim=2}] slowness 1000000 1 true
 effect give @s[scores={gunAim=3}] slowness 1000000 2 true

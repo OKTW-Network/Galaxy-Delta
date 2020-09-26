@@ -2,7 +2,7 @@
     "condition": "minecraft:location_check",
     "predicate": {
         "block": {
-            "nbt": "{Items:[{Slot:7b,tag:{component:1,addon:1,firing_mode:1}},{Slot:24b,tag:{component:1,addon:1,cosmetic:1}},{Slot:26b,tag:{component:1,addon:1,color_lens:1}}]}"
+            "nbt": "{Items:[{Slot:7b,tag:{component:{trigger:1}}},{Slot:24b,tag:{component:{cosmetic:1}}},{Slot:26b,tag:{component:{color_lens:1}}}]}"
         }
     }
 }
