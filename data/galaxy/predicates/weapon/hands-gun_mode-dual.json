@@ -1,0 +1,38 @@
+{
+	"condition": "minecraft:inverted",
+	"term": {
+		"condition": "minecraft:alternative",
+		"terms": [
+      {
+        "condition": "minecraft:inverted",
+          "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "item": "minecraft:carrot_on_a_stick",
+                "nbt": "{gun:{mode:1}}"
+              }
+            }
+          }
+        }
+      },
+      {
+        "condition": "minecraft:inverted",
+          "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "offhand": {
+                "item": "minecraft:carrot_on_a_stick",
+                "nbt": "{gun:{mode:1}}"
+              }
+            }
+          }
+        }
+      }
+    ]
+	}
+}
