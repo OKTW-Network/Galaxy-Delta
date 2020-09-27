@@ -8,9 +8,5 @@ execute unless data block ~ ~ ~ Items[{Slot:20b,tag:{component:{handle:1}}}] run
 execute unless data block ~ ~ ~ Items[{Slot:24b,tag:{component:{cosmetic:1}}}] run tag @s add dropUnallowed
 execute unless data block ~ ~ ~ Items[{Slot:26b,tag:{component:{color_lens:1}}}] run tag @s add dropUnallowed
 
-# execute if data entity @s HandItems[0].tag.GUI.result.tag.gun{type:1} if data block ~ ~ ~ Items[].tag.component.forType unless data block ~ ~ ~ Items[].tag.component{forType:1} run tag @s add dropUnallowed
-# execute if data entity @s HandItems[0].tag.GUI.result.tag.gun{type:2} if data block ~ ~ ~ Items[].tag.component.forType unless data block ~ ~ ~ Items[].tag.component{forType:2} run tag @s add dropUnallowed
-# execute if data entity @s HandItems[0].tag.GUI.result.tag.gun{type:3} if data block ~ ~ ~ Items[].tag.component.forType unless data block ~ ~ ~ Items[].tag.component{forType:3} run tag @s add dropUnallowed
-
 execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.gun run tag @s add dropUnallowed
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.sbldGResult run tag @s add dropUnallowed

@@ -16,4 +16,5 @@ execute unless data block ~ ~ ~ Items[{Slot:22b,tag:{guiItem:1}}] run data modif
 execute unless data block ~ ~ ~ Items[{Slot:23b,tag:{guiItem:1}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:23b}]
 execute unless data block ~ ~ ~ Items[{Slot:25b,tag:{guiItem:1}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:25b}]
 
+execute if data storage galaxy:temp GUI.drop[0] run function galaxy:gui/delete-drop
 execute if data storage galaxy:temp GUI.drop[0] positioned ~ ~1 ~ run function galaxy:gui/drop_item

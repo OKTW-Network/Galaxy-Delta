@@ -8,6 +8,5 @@ execute if data block ~ ~ ~ Items[{Slot:20b}] run data modify storage galaxy:tem
 execute if data block ~ ~ ~ Items[{Slot:24b}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:24b}]
 execute if data block ~ ~ ~ Items[{Slot:26b}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:26b}]
 
+execute if data storage galaxy:temp GUI.drop[0] run function galaxy:gui/delete-drop
 execute if data storage galaxy:temp GUI.drop[0] positioned ~ ~1 ~ run function galaxy:gui/drop_item
-
-function galaxy:gui/builder-gun/delete-parts
