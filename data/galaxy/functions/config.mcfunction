@@ -178,22 +178,6 @@ scoreboard players set #energy_saber_act_turn_on_cd Config 30
 # integer, tick, default: 30
 scoreboard players set #energy_saber_act_turn_off_cd Config 30
 
-  ########################################
-  # Gun                                  #
-  ########################################
-
-# Enable pistol firing mode: switch
-# boolean, default: 1
-scoreboard players set #gun_pistol_fire_switch Config 1
-
-# Enable pistol firing mode: sync
-# boolean, default: 1
-scoreboard players set #gun_pistol_fire_sync Config 1
-
-# Enable aim
-# boolean, default: 1
-scoreboard players set #gun_aim Config 1
-
 
 ############################################
 # Status effects                           #

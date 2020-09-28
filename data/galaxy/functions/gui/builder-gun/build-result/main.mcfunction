@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.13 carrot_on_a_stick{gun:{type:0,style:0,parts:[{component:{casing_gun:1}},{component:{barrel:1}},{component:{laser_core:1}},{component:{cooling_system:1}},{component:{handle:1}}]},display:{Name:'{"translate":"item.galaxy.lasor","italic":false}'}}
+replaceitem block ~ ~ ~ container.13 carrot_on_a_stick{gun:{type:0,style:0,mode:0,status:0,parts:[{component:{casing_gun:1}},{component:{barrel:1}},{component:{laser_core:1}},{component:{cooling_system:1}},{component:{handle:1}}]},display:{Name:'{"translate":"item.galaxy.lasor","italic":false}'}}
 execute if data block ~ ~ ~ Items[{Slot:1b}].tag.component.sight run data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts append value {component:{sight:1}}
 execute if data block ~ ~ ~ Items[{Slot:7b}].tag.component.trigger run data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts append value {component:{trigger:1}}
 execute if data block ~ ~ ~ Items[{Slot:24b}].tag.component.cosmetic run data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts append value {component:{cosmetic:1}}

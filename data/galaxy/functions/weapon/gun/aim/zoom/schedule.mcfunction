@@ -6,4 +6,4 @@ effect give @a[tag=Aiming,scores={Aiming=5}] slowness 1000000 4 true
 effect give @a[tag=Aiming,scores={Aiming=6}] slowness 1000000 5 true
 effect give @a[tag=Aiming,scores={Aiming=7}] slowness 1000000 6 true
 
-schedule function galaxy:weapon/gun/aim_schedule 60s replace
+schedule function galaxy:weapon/gun/aim/zoom/schedule 60s replace

@@ -2,7 +2,7 @@ scoreboard players remove @s reqGunFire 0
 scoreboard players remove @s gunSwitch 0
 scoreboard players remove @s gunDelay 0
 scoreboard players remove @s gunExtraBullet 0
-scoreboard players remove @s gunAim 0
+scoreboard players remove @s gunZoom 0
 scoreboard players remove @s gunType 0
 scoreboard players remove @s MhGunType 0
 scoreboard players remove @s MhGunCooling 0
