@@ -15,4 +15,4 @@ scoreboard players set @s optPjAimOffset 0
 scoreboard players set @s optPjPenetrate 0
 scoreboard players set @s optPjTrace 0
 scoreboard players set @s optPjExtra 0
-scoreboard players set @s optPjColor 16
+scoreboard players set @s optPjColor 17

@@ -1,4 +1,4 @@
-function galaxy:gui/super_builder-gun/get-attribute_icon
+function galaxy:gui/builder-gun/super/get-attribute_icon
 
 data modify entity @s HandItems[0].tag.GUI.attributePrev.icon merge value {Slot:1b}
 data modify entity @s HandItems[0].tag.GUI.attribute.icon merge value {Slot:10b}

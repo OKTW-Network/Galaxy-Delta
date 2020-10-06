@@ -6,4 +6,4 @@ execute if data storage galaxy:recipe SbldG.attributes.projectile_color.icon.tag
 data modify storage galaxy:recipe SbldG.attributes.projectile_color.icon.tag set from storage galaxy:temp tag
 data modify storage galaxy:recipe SbldG.attributes.projectile_color.icon.tag merge value {display:{Name:'{"translate":"attribute.projectile.color","italic":false}'},HideFlags:63,guiItem:1}
 data modify storage galaxy:recipe SbldG.attributes.projectile_color.value.min set value 0
-data modify storage galaxy:recipe SbldG.attributes.projectile_color.value.max set value 16
+data modify storage galaxy:recipe SbldG.attributes.projectile_color.value.max set value 17
