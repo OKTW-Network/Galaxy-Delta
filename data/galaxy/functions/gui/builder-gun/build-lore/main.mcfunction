@@ -2,7 +2,7 @@ data modify storage galaxy:temp lore set value []
 
 function galaxy:gui/builder-gun/build-lore/type
 
-execute unless data storage galaxy:temp itemTag.gun{style:0} run function galaxy:gui/builder-gun/build-lore/style
+execute unless data storage galaxy:temp itemTag.gun{cosmetic:0} run function galaxy:gui/builder-gun/build-lore/cosmetic
 
 execute unless data storage galaxy:temp itemTag.gun.projectile{color:0} run function galaxy:gui/builder-gun/build-lore/projectile_color
 
