@@ -1,0 +1,2 @@
+execute if data storage galaxy:temp itemTag.gun{type:1} run data modify storage galaxy:temp lore append value '{"translate":"%s: %s","with":[{"translate":"attribute.type","color":"gold"},{"translate":"type.pistol","color":"gray","italic":false}],"color":"dark_gray","italic":false}'
+execute if data storage galaxy:temp itemTag.gun{type:2} run data modify storage galaxy:temp lore append value '{"translate":"%s: %s","with":[{"translate":"attribute.type","color":"gold"},{"translate":"type.sniper","color":"gray","italic":false}],"color":"dark_gray","italic":false}'

@@ -35,6 +35,6 @@ function galaxy:component/get/color_lens_magenta
 function galaxy:component/get/color_lens_pink
 function galaxy:component/get/color_lens_white
 function galaxy:component/get/color_lens_rainbow
-function galaxy:component/get/trigger_sync
+function galaxy:component/get/trigger_dual
 
 data modify storage galaxy:recipe HTct.items set from storage galaxy:get item

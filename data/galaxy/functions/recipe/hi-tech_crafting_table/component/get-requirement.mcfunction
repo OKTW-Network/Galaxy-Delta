@@ -35,4 +35,4 @@ function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_m
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_pink
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_white
 function galaxy:recipe/hi-tech_crafting_table/component/requirement/color_lens_rainbow
-function galaxy:recipe/hi-tech_crafting_table/component/requirement/trigger_sync
+function galaxy:recipe/hi-tech_crafting_table/component/requirement/trigger_dual

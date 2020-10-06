@@ -191,10 +191,10 @@ execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},tag=su
 execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_rainbow
 
 # Trigger
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/trigger_sync
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/trigger_sync
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/trigger_sync
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/trigger_sync
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/trigger_dual
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/trigger_dual
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/trigger_dual
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/trigger_dual
 
 execute as @a[scores={reqHTctCraft=1..}] run tag @s remove sucHTctRcp
 execute as @a[scores={reqHTctCraft=1..}] run scoreboard players set @s reqHTctCraft 0

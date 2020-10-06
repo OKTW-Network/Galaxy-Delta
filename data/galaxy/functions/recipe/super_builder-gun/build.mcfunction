@@ -8,8 +8,8 @@ data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:rec
 function galaxy:recipe/super_builder-gun/build-attribute/style
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.style
 
-function galaxy:recipe/super_builder-gun/build-attribute/firing_mode
-data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.firing_mode
+function galaxy:recipe/super_builder-gun/build-attribute/mode
+data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.mode
 
 function galaxy:recipe/super_builder-gun/build-attribute/aim_zoom
 data modify storage galaxy:recipe SbldG.attribute append from storage galaxy:recipe SbldG.attributes.aim_zoom
