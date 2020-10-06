@@ -1,6 +1,7 @@
 {
     "values":[
         "galaxy:main",
+        "galaxy:item_entity/main",
         "galaxy:weapon/main",
         "galaxy:status_effect/main",
         "galaxy:gui/main",
