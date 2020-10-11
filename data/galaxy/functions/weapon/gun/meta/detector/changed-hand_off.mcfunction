@@ -1,8 +1,7 @@
-execute store result score #5 calcu_temp run data get entity @s Inventory[{Slot:-106b}].tag.gun.UUID[0]
-execute store result score #6 calcu_temp run data get entity @s Inventory[{Slot:-106b}].tag.gun.UUID[1]
-execute store result score #7 calcu_temp run data get entity @s Inventory[{Slot:-106b}].tag.gun.UUID[2]
-execute store result score #8 calcu_temp run data get entity @s Inventory[{Slot:-106b}].tag.gun.UUID[3]
-execute unless score #5 calcu_temp = @s FhGunUUID0 run tag @s add FhGunChanged
-execute unless score #6 calcu_temp = @s FhGunUUID1 run tag @s add FhGunChanged
-execute unless score #7 calcu_temp = @s FhGunUUID2 run tag @s add FhGunChanged
-execute unless score #8 calcu_temp = @s FhGunUUID3 run tag @s add FhGunChanged
+function galaxy:weapon/gun/meta/uuid/get-hand_off
+execute unless score @s FhGunUUID0New = @s FhGunUUID0 run tag @s add FhGunChanged
+execute unless score @s FhGunUUID1New = @s FhGunUUID1 run tag @s add FhGunChanged
+execute unless score @s FhGunUUID2New = @s FhGunUUID2 run tag @s add FhGunChanged
+execute unless score @s FhGunUUID3New = @s FhGunUUID3 run tag @s add FhGunChanged
+
+execute if entity @s[tag=FhGunChanged] if score @s FhGunUUID0New = @s MhGunUUID0 if score @s FhGunUUID1New = @s MhGunUUID1 if score @s FhGunUUID2New = @s MhGunUUID2 if score @s FhGunUUID3New = @s MhGunUUID3 run tag @s add FhGunSwap

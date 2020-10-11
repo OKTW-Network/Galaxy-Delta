@@ -1,15 +1,9 @@
-### boolean use numbers instead of true or false
-### false = 0
-### true = 1
-
 scoreboard objectives add reqGunFire dummy "request-Gun fire"
 
 scoreboard objectives add gunSwitch dummy "num-Gun fire switch"
 scoreboard objectives add gunDelay dummy "num-Gun firing delay"
 scoreboard objectives add gunExtraBullet dummy "num-Gun extra bullet"
 scoreboard objectives add gunZoom dummy "num-Gun aim zoom"
-scoreboard objectives add gunType dummy "num-Gun type"
-scoreboard objectives add MhGunType dummy "num-MainHand gun type"
 scoreboard objectives add MhGunCooling dummy "num-MainHand gun cooling"
 scoreboard objectives add MhGunCoolDly dummy "num-MainHand gun cooling delay"
 scoreboard objectives add MhGunTemperMax dummy "num-MainHand gun max temperature"
@@ -17,7 +11,6 @@ scoreboard objectives add MhGunTemper dummy "num-MainHand gun temperature"
 scoreboard objectives add MhGunHeat dummy "num-MainHand gun heat"
 scoreboard objectives add MhGunOverheat dummy "num-MainHand gun overheat"
 scoreboard objectives add MhGunDelay dummy "num-MainHand gun firing delay"
-scoreboard objectives add FhGunType dummy "num-OffHand gun type"
 scoreboard objectives add FhGunCooling dummy "num-OffHand gun cooling"
 scoreboard objectives add FhGunCoolDly dummy "num-OffHand gun cooling delay"
 scoreboard objectives add FhGunTemperMax dummy "num-OffHand gun max temperature"
@@ -34,6 +27,14 @@ scoreboard objectives add FhGunUUID0 dummy "num-OffHand gun UUID[0]"
 scoreboard objectives add FhGunUUID1 dummy "num-OffHand gun UUID[1]"
 scoreboard objectives add FhGunUUID2 dummy "num-OffHand gun UUID[2]"
 scoreboard objectives add FhGunUUID3 dummy "num-OffHand gun UUID[3]"
+scoreboard objectives add MhGunUUID0New dummy "num-MainHand gun new UUID[0]"
+scoreboard objectives add MhGunUUID1New dummy "num-MainHand gun new UUID[1]"
+scoreboard objectives add MhGunUUID2New dummy "num-MainHand gun new UUID[2]"
+scoreboard objectives add MhGunUUID3New dummy "num-MainHand gun new UUID[3]"
+scoreboard objectives add FhGunUUID0New dummy "num-OffHand gun new UUID[0]"
+scoreboard objectives add FhGunUUID1New dummy "num-OffHand gun new UUID[1]"
+scoreboard objectives add FhGunUUID2New dummy "num-OffHand gun new UUID[2]"
+scoreboard objectives add FhGunUUID3New dummy "num-OffHand gun new UUID[3]"
 
 scoreboard objectives add sucBulletMove dummy "num-Bullet moving success count"
 scoreboard objectives add sucBulletHit dummy "num-Bullet hit success count"

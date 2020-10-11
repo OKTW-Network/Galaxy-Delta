@@ -8,8 +8,6 @@ scoreboard players operation #currently_*.*.x-* Version = @s VersionGalaxyZ
 scoreboard players operation #currently_*.*.*-x Version = @s VersionGalaxyA
 function cu:version/check
 
-execute if score #change Version matches 1 run function galaxy:debug/remove-init_tag
-
 scoreboard players operation @s VersionGalaxyX = #galaxy_currently_version_x.*.*-* Meta
 scoreboard players operation @s VersionGalaxyY = #galaxy_currently_version_*.x.*-* Meta
 scoreboard players operation @s VersionGalaxyZ = #galaxy_currently_version_*.*.x-* Meta

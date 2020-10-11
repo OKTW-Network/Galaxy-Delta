@@ -9,5 +9,9 @@ execute if score @s reqGunFire matches 1 run scoreboard players operation @s gun
 execute if score @s reqGunFire matches 2 if score @s MhGunDelay >= @s FhGunDelay run scoreboard players operation @s gunDelay = @s MhGunDelay
 execute if score @s reqGunFire matches 2 if score @s MhGunDelay < @s FhGunDelay run scoreboard players operation @s gunDelay = @s FhGunDelay
 
+execute if score @s reqGunFire matches 1 run function galaxy:weapon/gun/temperature/heat-hand_main
+execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 run function galaxy:weapon/gun/temperature/heat-hand_main
+execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run function galaxy:weapon/gun/temperature/heat-hand_off
+
 execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/bullet/summon
 execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/sound-fire
