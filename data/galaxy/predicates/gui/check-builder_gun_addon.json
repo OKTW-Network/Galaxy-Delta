@@ -1,8 +1,0 @@
-{
-    "condition": "minecraft:location_check",
-    "predicate": {
-        "block": {
-            "nbt": "{Items:[{Slot:7b,tag:{component:{trigger:1}}},{Slot:24b,tag:{component:{cosmetic:1}}},{Slot:26b,tag:{component:{color_lens:1}}}]}"
-        }
-    }
-}

@@ -3,7 +3,7 @@ replaceitem block ~ ~ ~ container.2 minecraft:white_stained_glass_pane{display:{
 replaceitem block ~ ~ ~ container.3 minecraft:white_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:10300,guiItem:1}
 replaceitem block ~ ~ ~ container.4 minecraft:white_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:100,guiItem:1}
 replaceitem block ~ ~ ~ container.5 minecraft:white_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:100,guiItem:1}
-function galaxy:gui/builder-gun/build-background_addon
+function galaxy:gui/builder-gun/build-background_misc
 replaceitem block ~ ~ ~ container.8 minecraft:white_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:100,guiItem:1}
 replaceitem block ~ ~ ~ container.12 minecraft:white_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:100,guiItem:1}
 replaceitem block ~ ~ ~ container.14 minecraft:white_stained_glass_pane{display:{Name:'{"text":""}'},CustomModelData:100,guiItem:1}

@@ -5,7 +5,7 @@ tag @s[tag=setTemplate] remove setTemplate
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.type int 1 run scoreboard players get @s optType
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.cosmetic int 1 run scoreboard players get @s optCosmetic
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.color int 1 run scoreboard players get @s optPjColor
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.mode int 1 run scoreboard players get @s optMode
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.addon int 1 run scoreboard players get @s optAddon
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.damage int 1 run scoreboard players get @s optPjDamage
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.delay int 1 run scoreboard players get @s optDelay
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.distance int 1 run scoreboard players get @s optPjDistance

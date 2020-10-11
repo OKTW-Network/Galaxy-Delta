@@ -12,7 +12,7 @@
             "equipment": {
               "mainhand": {
                 "item": "minecraft:carrot_on_a_stick",
-                "nbt": "{gun:{mode:1}}"
+                "nbt": "{gun:{addon:1}}"
               }
             }
           }
@@ -27,7 +27,7 @@
             "equipment": {
               "offhand": {
                 "item": "minecraft:carrot_on_a_stick",
-                "nbt": "{gun:{mode:1}}"
+                "nbt": "{gun:{addon:1}}"
               }
             }
           }

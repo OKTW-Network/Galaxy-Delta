@@ -1,5 +1,5 @@
 execute unless data block ~ ~ ~ Items[{Slot:1b,tag:{component:{sight:1}}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:1b}]
-execute unless data block ~ ~ ~ Items[{Slot:7b,tag:{component:{trigger:1}}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:7b}]
+execute unless data block ~ ~ ~ Items[{Slot:7b,tag:{component:{addon:1}}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:7b}]
 execute unless data block ~ ~ ~ Items[{Slot:9b,tag:{component:{barrel:1}}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:9b}]
 execute unless data block ~ ~ ~ Items[{Slot:10b,tag:{component:{casing_gun:1}}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:10b}]
 execute unless data block ~ ~ ~ Items[{Slot:11b,tag:{component:{laser_core:1}}}] run data modify storage galaxy:temp GUI.drop append from block ~ ~ ~ Items[{Slot:11b}]

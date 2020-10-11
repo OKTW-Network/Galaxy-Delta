@@ -37,4 +37,4 @@ function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_magenta
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_pink
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_white
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_rainbow
-function galaxy:recipe/hi-tech_crafting_table/component/item/trigger_dual
+function galaxy:recipe/hi-tech_crafting_table/component/item/addon_dual

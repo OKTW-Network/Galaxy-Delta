@@ -6,7 +6,7 @@ execute unless data storage galaxy:temp itemTag.gun{cosmetic:0} run function gal
 
 execute unless data storage galaxy:temp itemTag.gun.projectile{color:0} run function galaxy:gui/builder-gun/build-lore/projectile_color
 
-execute unless data storage galaxy:temp itemTag.gun{mode:0} run function galaxy:gui/builder-gun/build-lore/mode
+execute unless data storage galaxy:temp itemTag.gun{addon:0} run function galaxy:gui/builder-gun/build-lore/addon
 
 data remove storage cu:string toStatic.input
 data modify storage cu:string toStatic.input set value '{"translate":"%s: %s","with":[{"translate":"attribute.projectile.damage","color":"aqua"},{"storage":"galaxy:temp","nbt":"itemTag.gun.projectile.damage","color":"gray"}],"color":"dark_gray","italic":false}'

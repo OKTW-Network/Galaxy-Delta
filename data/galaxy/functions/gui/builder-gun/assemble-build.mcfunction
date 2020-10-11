@@ -12,4 +12,4 @@ execute if entity @s[tag=setParts] run tag @s add lockAssemble
 tag @s[tag=setParts] remove setParts
 
 function galaxy:gui/builder-gun/build-background_hardware
-function galaxy:gui/builder-gun/build-background_addon
+function galaxy:gui/builder-gun/build-background_misc

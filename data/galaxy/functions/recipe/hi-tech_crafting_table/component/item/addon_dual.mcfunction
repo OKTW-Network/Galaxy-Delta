@@ -1,5 +1,5 @@
 data modify storage galaxy:get item set value []
-function galaxy:component/get/trigger_dual
+function galaxy:component/get/addon_dual
 data modify storage galaxy:get recipe append from storage galaxy:get item[0]
 
 data modify storage galaxy:get item set value []
