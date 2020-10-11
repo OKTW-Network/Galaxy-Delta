@@ -6,4 +6,4 @@ data remove storage cu:list index.result
 function cu:list/index
 data modify entity @s HandItems[0].tag.GUI.category set from storage cu:list index.result
 execute store result score @s htctCatgRcpMax run data get entity @s HandItems[0].tag.GUI.category.recipeTotal
-execute store result score @s htctListPageMax run data get entity @s HandItems[0].tag.GUI.category.pageTotal
+execute store result score @s htctRcpePageMax run data get entity @s HandItems[0].tag.GUI.category.recipePageTotal

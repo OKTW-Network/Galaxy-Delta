@@ -10,23 +10,23 @@ execute if entity @s[tag=setCategoryButton] run function galaxy:gui/remove-gui_i
 execute if entity @s[tag=setCategoryButton] run function galaxy:gui/hi-tech_crafting_table/mode0/build-category_button
 tag @s[tag=setCategoryButton] remove setCategoryButton
 
-# category list
+# category column
 function galaxy:gui/hi-tech_crafting_table/mode0/check-category
 execute if entity @s[tag=setCategory] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=setCategory] run function galaxy:gui/hi-tech_crafting_table/mode0/delete-category
 execute if entity @s[tag=setCategory] run function galaxy:gui/hi-tech_crafting_table/mode0/build-category
 tag @s[tag=setCategory] remove setCategory
 
-# list page button
-function galaxy:gui/hi-tech_crafting_table/mode0/check-list_button
-execute if entity @s[tag=setListButton] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setListButton] run function galaxy:gui/hi-tech_crafting_table/mode0/build-list_button
-tag @s[tag=setListButton] remove setListButton
+# recipe list button
+function galaxy:gui/hi-tech_crafting_table/mode0/check-recipe_button
+execute if entity @s[tag=setRecipeButton] run function galaxy:gui/remove-gui_item
+execute if entity @s[tag=setRecipeButton] run function galaxy:gui/hi-tech_crafting_table/mode0/build-recipe_button
+tag @s[tag=setRecipeButton] remove setRecipeButton
 
-# recipe list
-execute if entity @s[tag=setList] run function galaxy:gui/hi-tech_crafting_table/mode0/delete-list
-execute if entity @s[tag=setList] run function galaxy:gui/hi-tech_crafting_table/mode0/build-list
-tag @s[tag=setList] remove setList
+# recipe list page
+execute if entity @s[tag=setRecipePage] run function galaxy:gui/hi-tech_crafting_table/mode0/delete-recipe_page
+execute if entity @s[tag=setRecipePage] run function galaxy:gui/hi-tech_crafting_table/mode0/build-recipe_page
+tag @s[tag=setRecipePage] remove setRecipePage
 
 # mode switch, recipe request
 function galaxy:gui/hi-tech_crafting_table/mode0/check-request

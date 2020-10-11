@@ -1,5 +1,5 @@
-# function galaxy:weapon/energy_saber/get/plasum
-function galaxy:weapon/katana/get/katana
-# function galaxy:weapon/katana/get/nazo
+data modify storage galaxy:get recipe set value []
 
-data modify storage galaxy:recipe HTct.items set from storage galaxy:get item
+# function galaxy:recipe/hi-tech_crafting_table/weapon/item/plasum
+function galaxy:recipe/hi-tech_crafting_table/weapon/item/katana
+# function galaxy:recipe/hi-tech_crafting_table/weapon/item/nazo

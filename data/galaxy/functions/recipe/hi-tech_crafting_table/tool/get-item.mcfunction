@@ -1,4 +1,4 @@
-function galaxy:tool/get/wrench
-function galaxy:tool/get/structure_empower
+data modify storage galaxy:get recipe set value []
 
-data modify storage galaxy:recipe HTct.items set from storage galaxy:get item
+function galaxy:recipe/hi-tech_crafting_table/tool/item/wrench
+function galaxy:recipe/hi-tech_crafting_table/tool/item/structure_empower

@@ -1,6 +1,6 @@
-function galaxy:block/functional/get/elevator
-function galaxy:block/functional/get/katana_display_stand-1
-function galaxy:block/functional/get/katana_display_stand-2
-function galaxy:block/functional/get/katana_display_stand-3
+data modify storage galaxy:get recipe set value []
 
-data modify storage galaxy:recipe HTct.items set from storage galaxy:get item
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/elevator
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/katana_display_stand-1
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/katana_display_stand-2
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/katana_display_stand-3
