@@ -16,7 +16,7 @@ execute if score @s htctRcpeSlotMax matches 15.. unless block ~ ~ ~ minecraft:ba
 
 scoreboard players operation @s reqRcpHTctPage = @s reqRcpHTct
 
-scoreboard players operation #1 calcu_temp = @s htctListPage
+scoreboard players operation #1 calcu_temp = @s htctRcpePage
 scoreboard players operation #1 calcu_temp -= #1 num
 scoreboard players operation #1 calcu_temp *= #15 num
 scoreboard players operation @s reqRcpHTct += #1 calcu_temp
