@@ -1,9 +1,10 @@
 scoreboard objectives add reqGunFire dummy "request-Gun fire"
 
+scoreboard objectives add gunType dummy "num-Gun fire switch"
 scoreboard objectives add gunSwitch dummy "num-Gun fire switch"
 scoreboard objectives add gunDelay dummy "num-Gun firing delay"
-scoreboard objectives add gunExtraBullet dummy "num-Gun extra bullet"
 scoreboard objectives add gunZoom dummy "num-Gun aim zoom"
+scoreboard objectives add gunExtraBullet dummy "num-Gun extra bullet"
 scoreboard objectives add MhGunCooling dummy "num-MainHand gun cooling"
 scoreboard objectives add MhGunCoolDly dummy "num-MainHand gun cooling delay"
 scoreboard objectives add MhGunTemperMax dummy "num-MainHand gun max temperature"
