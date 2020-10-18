@@ -1,6 +1,6 @@
 # relplace the block when GUI contains non-guiItem
 tag @s[predicate=galaxy:gui/check_cover_slot-1i1o1p1s,predicate=!galaxy:gui/check_cover-1i1o1p1s] add replace
-execute if entity @s[tag=replace] run function galaxy:block/machine/coke_furnace/replace
+execute if entity @s[tag=replace] run function galaxy:block/coke_furnace/replace
 tag @s[tag=replace] remove replace
 
 # gui cover

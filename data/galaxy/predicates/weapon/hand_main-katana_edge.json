@@ -4,7 +4,7 @@
 	    "equipment": {
 		    "mainhand": {
                 "item":"minecraft:diamond_sword",
-                "nbt": "{edge:1}"
+                "nbt": "{katana:{type:2b}}"
             }
 	    }
     },

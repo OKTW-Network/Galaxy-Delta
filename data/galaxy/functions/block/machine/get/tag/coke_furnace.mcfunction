@@ -1,1 +1,0 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"block.galaxy.coke_furnace","italic":false}'},CustomModelData:10200,placer:1,cokeFurnace:1,EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["coke_furnace_placer","block_placer"]}}

@@ -1,9 +1,0 @@
-summon minecraft:armor_stand ^ ^ ^-0.37 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,Silent:1b,ShowArms:1b,DisabledSlots:4079166,Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f]},ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:20203,fakeBlock:1}}],Tags:["katana_display_stand","type-4","no_overlap","attachment","drop_mainhand","drop_self",fake_block,"init"]}
-
-data modify entity @e[tag=katana_display_stand,tag=type-4,tag=init,limit=1] Rotation[0] set from entity @s Rotation[0]
-execute as @e[tag=katana_display_stand,tag=type-4,tag=init] at @s run tp ~ ~ ~
-scoreboard players set @e[tag=katana_display_stand,tag=type-4,tag=init] holdKatana 100
-scoreboard players set @e[tag=katana_display_stand,tag=type-4,tag=init] statusBlockDisp 1
-tag @e[tag=katana_display_stand,tag=type-4,tag=init] remove init
-
-tag @s add placeCanceled

@@ -1,3 +1,6 @@
+scoreboard players remove @s modelKatana 0
+scoreboard players remove @s modelScabbard 0
+scoreboard players remove @s modelEdge 0
 scoreboard players remove @s styleKatana 0
 scoreboard players remove @s styleScabbard 0
 scoreboard players remove @s styleEdge 0

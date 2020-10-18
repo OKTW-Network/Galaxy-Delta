@@ -1,9 +1,9 @@
 execute positioned ~ ~-1 ~ if predicate galaxy:block/hopper run setblock ~ ~ ~ air destroy
-execute positioned ~ ~1 ~ if predicate galaxy:block/hopper-facing_down run setblock ~ ~ ~ air destroy
-execute positioned ~ ~ ~-1 if predicate galaxy:block/hopper-facing_south run setblock ~ ~ ~ air destroy
-execute positioned ~ ~ ~1 if predicate galaxy:block/hopper-facing_north run setblock ~ ~ ~ air destroy
-execute positioned ~-1 ~ ~ if predicate galaxy:block/hopper-facing_east run setblock ~ ~ ~ air destroy
-execute positioned ~1 ~ ~ if predicate galaxy:block/hopper-facing_west run setblock ~ ~ ~ air destroy
+execute positioned ~ ~1 ~ if predicate galaxy:block/facing-down run setblock ~ ~ ~ air destroy
+execute positioned ~ ~ ~-1 if predicate galaxy:block/facing-south run setblock ~ ~ ~ air destroy
+execute positioned ~ ~ ~1 if predicate galaxy:block/facing-north run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~ if predicate galaxy:block/facing-east run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~ if predicate galaxy:block/facing-west run setblock ~ ~ ~ air destroy
 
 execute if block ~ ~-1 ~ minecraft:dropper[facing=up] run setblock ~ ~-1 ~ air destroy
 execute if block ~ ~1 ~ minecraft:dropper[facing=down] run setblock ~ ~1 ~ air destroy

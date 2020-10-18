@@ -6,6 +6,10 @@
 
 scoreboard objectives add holdKatana dummy "num-Holding katana"
 
+scoreboard objectives add modelKatana dummy "num-Katana model"
+scoreboard objectives add modelScabbard dummy "num-scabbard model"
+scoreboard objectives add modelEdge dummy "num-edge model"
+
 scoreboard objectives add styleKatana dummy "num-Katana style"
 scoreboard objectives add styleScabbard dummy "num-scabbard style"
 scoreboard objectives add styleEdge dummy "num-edge style"

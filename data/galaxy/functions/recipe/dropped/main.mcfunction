@@ -1,2 +1,2 @@
 function galaxy:recipe/dropped/wrench
-function galaxy:recipe/dropped/structure_empower
+function galaxy:recipe/dropped/empower_lens

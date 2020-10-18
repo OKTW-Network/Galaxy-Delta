@@ -1,1 +1,4 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.wrench","italic":false}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attackDamage",Amount:-1d,Operation:1,UUIDLeast:1710l,UUIDMost:670247l,Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attackSpeed",Amount:0d,Operation:0,UUIDLeast:746340l,UUIDMost:587794l,Slot:"mainhand"}],HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:10100,wrench:1}
+data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.wrench","italic":false}'},HideFlags:39,RepairCost:2147483644,Unbreakable:1b,CustomModelData:30100,wrench:{},EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["wrench"],Item:{id:"minecraft:diamond_sword",Count:1b,tag:{CustomModelData:100}}}}
+function cu:uuid/generate
+data modify storage galaxy:get itemTag[0].wrench.UUID set from storage cu:uuid generate
+data modify storage galaxy:get itemTag[0].EntityTag.Item.tag.customUUID set from storage cu:uuid generate

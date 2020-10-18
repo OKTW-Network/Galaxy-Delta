@@ -1,1 +1,1 @@
-replaceitem entity @s weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:'{"translate":"item.galaxy.plasum","italic":false}'},HideFlags:39,RepairCost:40,Unbreakable:1b,CustomModelData:310200,saber:1,dur:128,dmg:0,status:0,type:1} 1
+replaceitem entity @s weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:'{"translate":"item.galaxy.plasum","italic":false}'},HideFlags:39,RepairCost:2147483644,Unbreakable:1b,CustomModelData:310200,saber:1,dur:128,dmg:0,status:0,type:1} 1

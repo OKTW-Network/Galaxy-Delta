@@ -4,7 +4,7 @@
 	    "equipment": {
 		    "offhand": {
                 "item":"minecraft:carrot_on_a_stick",
-                "nbt": "{katana:1}"
+                "nbt": "{katana:{type:1b}}"
             }
 	    }
     },

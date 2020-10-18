@@ -3,7 +3,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "nbt": "{katanaDisplay:1}"
+                "nbt": "{katanaDisplay:1b}"
             }
         }
     },

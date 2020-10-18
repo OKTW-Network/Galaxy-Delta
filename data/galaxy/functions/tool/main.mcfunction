@@ -1,3 +1,4 @@
-function galaxy:tool/meta/detector/main
+execute as @a[predicate=!galaxy:tool/hand_main-wrench] run function galaxy:tool/wrench/remove-uuid
+execute as @a[predicate=galaxy:tool/hand_main-wrench] run function galaxy:tool/wrench/get-uuid
 
-execute as @e[tag=structure_empower_detector] at @s if predicate galaxy:configurable/structure_empower_success_chance run function galaxy:tool/structure_empower
+execute as @e[tag=structure_empower_detector] at @s run function galaxy:tool/structure_empower

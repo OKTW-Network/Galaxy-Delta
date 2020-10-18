@@ -6,7 +6,7 @@ data modify storage galaxy:temp recipe set from storage galaxy:get recipe
 function galaxy:recipe/hi-tech_crafting_table/build-category
 
 data modify storage galaxy:get item set value []
-function galaxy:tool/get/wrench
+function galaxy:tool/get/wrench-uuid_less
 data modify storage galaxy:recipe HTct.category[-1].icon set from storage galaxy:get item[0]
 data modify storage galaxy:temp itemTag set value {}
 execute if data storage galaxy:recipe HTct.category[-1].icon.tag.CustomModelData run data modify storage galaxy:temp itemTag.CustomModelData set from storage galaxy:recipe HTct.category[-1].icon.tag.CustomModelData

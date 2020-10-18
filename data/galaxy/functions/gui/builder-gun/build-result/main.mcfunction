@@ -5,7 +5,7 @@ execute if data block ~ ~ ~ Items[{Slot:24b}].tag.component.cosmetic run data mo
 execute if data block ~ ~ ~ Items[{Slot:26b}].tag.component.color_lens run data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts append value {component:{color_lens:1}}
 
 function cu:uuid/generate
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.UUID set from storage cu:resources UUID
+data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.UUID set from storage cu:uuid generate
 
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{barrel:1}}] set from block ~ ~ ~ Items[{Slot:9b}].tag
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{casing_gun:1}}] set from block ~ ~ ~ Items[{Slot:10b}].tag

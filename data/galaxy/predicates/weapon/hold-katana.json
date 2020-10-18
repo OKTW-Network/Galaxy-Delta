@@ -8,7 +8,7 @@
         "equipment": {
           "mainhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{katana:1}"
+            "nbt": "{katana:{type:1b}}"
           }
         }
       }
@@ -20,7 +20,31 @@
         "equipment": {
           "offhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{katana:1}"
+            "nbt": "{katana:{type:1b}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:diamond_sword",
+            "nbt": "{katana:{type:2b}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "offhand": {
+            "item": "minecraft:diamond_sword",
+            "nbt": "{katana:{type:2b}}"
           }
         }
       }
@@ -32,7 +56,7 @@
         "equipment": {
           "mainhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{edge:1}"
+            "nbt": "{katana:{type:3b}}"
           }
         }
       }
@@ -44,31 +68,7 @@
         "equipment": {
           "offhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{edge:1}"
-          }
-        }
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "mainhand": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{scabbard:1}"
-          }
-        }
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "offhand": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{scabbard:1}"
+            "nbt": "{katana:{type:3b}}"
           }
         }
       }

@@ -1,4 +1,6 @@
-function galaxy:block/machine/main
-function galaxy:block/functional/main
-
-execute as @e[tag=attachment] at @s run function galaxy:block/attachable
+execute as @e[tag=hi-tech_crafting_table] at @s run function galaxy:block/hi-tech_crafting_table/main
+execute as @e[tag=coke_furnace] at @s run function galaxy:block/coke_furnace/main
+execute as @e[tag=advanced_blast_furnace] at @s run function galaxy:block/advanced_blast_furnace/main
+execute as @e[tag=builder-gun] at @s run function galaxy:block/builder-gun/main
+execute as @e[tag=super_builder-gun] at @s run function galaxy:block/super_builder-gun/main
+execute as @e[tag=elevator] at @s run function galaxy:block/elevator/main

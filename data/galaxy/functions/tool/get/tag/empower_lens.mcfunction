@@ -1,0 +1,1 @@
+data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.empower_lens","italic":false}'},CustomModelData:30200,entityPlacer:{},empower_lens:{},EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Silent:1b,Tags:["entity_placer","empower_lens_placer","attachment"]}}
