@@ -1,4 +1,3 @@
-data remove storage galaxy:recipe HTct
 data modify storage galaxy:recipe HTct.category set value []
 
 function galaxy:recipe/hi-tech_crafting_table/tool/build
