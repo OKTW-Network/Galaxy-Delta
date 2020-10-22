@@ -241,15 +241,6 @@ scoreboard players set #hud_gun_single Config 1
 scoreboard players set #hud_gun_double Config 1
 
 
-  ########################################
-  # Shield projector                     #
-  ########################################
-
-# Enable HUD:shield_projector
-# boolean, default: 1
-scoreboard players set #hud_shield_projector Config 1
-
-
 
 ############# DO NOT MODIFY #############
 
