@@ -16,5 +16,8 @@ execute if score #1 calcu_temp matches 0..3 if score #3 calcu_temp matches 4..5 
 execute if score #1 calcu_temp matches 0..3 if score #2 calcu_temp matches 4.. run scoreboard players remove #2 calcu_temp 4
 execute if score #1 calcu_temp matches 0..3 run scoreboard players operation #1 calcu_temp = #2 calcu_temp
 
-execute if score #1 calcu_temp matches 4..5 if score #3 calcu_temp matches 0..3 run scoreboard players remove #4 calcu_temp 1
+execute if score #1 calcu_temp matches 4 if score #3 calcu_temp matches 0..3 run scoreboard players add #4 calcu_temp 1
+execute if score #1 calcu_temp matches 4 if score #4 calcu_temp matches 4.. run scoreboard players remove #4 calcu_temp 4
+execute if score #1 calcu_temp matches 5 if score #3 calcu_temp matches 0..3 run scoreboard players remove #4 calcu_temp 1
+execute if score #1 calcu_temp matches 5 if score #4 calcu_temp matches ..-1 run scoreboard players add #4 calcu_temp 4
 execute if score #1 calcu_temp matches 4..5 run scoreboard players operation #1 calcu_temp = #4 calcu_temp
