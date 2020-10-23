@@ -29,4 +29,4 @@ execute if score #7 calcu_temp matches 0 if score #6 calcu_temp matches 1.. if b
 execute if score #7 calcu_temp matches 0 run tag @s add wrenchChestCombineFailed
 
 execute if entity @s[tag=!wrenchChestCombineFailed] run scoreboard players operation #2 calcu_temp = #6 calcu_temp
-execute if entity @s[tag=!wrenchChestCombineFailed] run function galaxy:tool/wrench/chest/build-double
+execute if entity @s[tag=!wrenchChestCombineFailed] run function galaxy:tool/wrench/chest/set_block/double
