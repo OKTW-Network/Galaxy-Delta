@@ -13,10 +13,10 @@ execute positioned ^ ^ ^1 if predicate galaxy:block/facing-west run scoreboard p
 execute positioned ^ ^ ^1 if predicate galaxy:block/facing-north run scoreboard players set #4 calcu_temp 2
 execute positioned ^ ^ ^1 if predicate galaxy:block/facing-east run scoreboard players set #4 calcu_temp 3
 
-execute positioned ^ ^ ^1 if predicate galaxy:entity/item_frame/facing-south run scoreboard players set #5 calcu_temp 0
-execute positioned ^ ^ ^1 if predicate galaxy:entity/item_frame/facing-west run scoreboard players set #5 calcu_temp 1
-execute positioned ^ ^ ^1 if predicate galaxy:entity/item_frame/facing-north run scoreboard players set #5 calcu_temp 2
-execute positioned ^ ^ ^1 if predicate galaxy:entity/item_frame/facing-east run scoreboard players set #5 calcu_temp 3
+execute if predicate galaxy:entity/item_frame/facing-south run scoreboard players set #5 calcu_temp 0
+execute if predicate galaxy:entity/item_frame/facing-west run scoreboard players set #5 calcu_temp 1
+execute if predicate galaxy:entity/item_frame/facing-north run scoreboard players set #5 calcu_temp 2
+execute if predicate galaxy:entity/item_frame/facing-east run scoreboard players set #5 calcu_temp 3
 
 scoreboard players set #6 calcu_temp 0
 execute if score #5 calcu_temp = #2 calcu_temp run scoreboard players set #6 calcu_temp 1

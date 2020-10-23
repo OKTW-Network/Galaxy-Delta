@@ -5,7 +5,7 @@ execute if block ~ ~ ~ trapped_chest run tag @s add wrenchChest
 
 execute if block ~ ~ ~ #minecraft:slabs run tag @s add wrenchSlab
 
-# execute if block ~ ~ ~ #minecraft:stairs run tag @s add wrenchStair
+execute if block ~ ~ ~ #minecraft:stairs run tag @s add wrenchStairs
 
 # execute if block ~ ~ ~ ender_chest run tag @s add wrenchH4F
 # execute if block ~ ~ ~ furnace run tag @s add wrenchH4F
