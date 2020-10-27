@@ -15,7 +15,6 @@ execute if predicate galaxy:entity/item_frame/facing-up store result score #4 ca
 execute if score #1 calcu_temp matches 0..3 if score #1 calcu_temp = #3 calcu_temp run scoreboard players add #4 calcu_temp 2
 execute if score #1 calcu_temp matches 0..3 if score #1 calcu_temp = #3 calcu_temp if score #4 calcu_temp matches 4.. run scoreboard players remove #4 calcu_temp 4
 
-execute if score #1 calcu_temp matches 4..5 if score #1 calcu_temp = #3 calcu_temp run scoreboard players add #4 calcu_temp 1
-execute if score #1 calcu_temp matches 4..5 if score #1 calcu_temp = #3 calcu_temp if score #4 calcu_temp matches 6.. run scoreboard players set #4 calcu_temp 4
-
 scoreboard players operation #1 calcu_temp = #4 calcu_temp
+
+function galaxy:tool/wrench/hopper/set_block/main

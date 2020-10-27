@@ -12,9 +12,10 @@ tag @e[tag=UUIDMatch] remove UUIDMatch
 execute as @e[tag=ThisWrench] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/check-block
 execute as @e[tag=ThisWrench,tag=wrenchCustomBlock] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/custom_block/main
 execute as @e[tag=ThisWrench,tag=wrenchChest] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/chest/main
+execute as @e[tag=ThisWrench,tag=wrenchHopper] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/hopper/main
 execute as @e[tag=ThisWrench,tag=wrenchSlab] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/slab/main
 execute as @e[tag=ThisWrench,tag=wrenchStairs] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/stairs/main
-# execute as @e[tag=ThisWrench,tag=wrenchH4F] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/h4f
+execute as @e[tag=ThisWrench,tag=wrenchH4F] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/horizon_4_face/main
 # execute as @e[tag=ThisWrench,tag=wrenchA6F] at @s align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/wrench/a6f
 
 data modify storage galaxy:get item set value []
