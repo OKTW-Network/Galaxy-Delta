@@ -1,7 +1,6 @@
-# relplace the block when GUI contains non-guiItem
-execute if predicate galaxy:gui/check_cover_slot-super_builder unless predicate galaxy:gui/check_cover-super_builder run tag @s add replace
-execute if entity @s[tag=replace] run function galaxy:block/super_builder-gun/replace
-tag @s[tag=replace] remove replace
+execute if predicate galaxy:gui/check_slot-all unless predicate galaxy:gui/check-super_builder run tag @s add dropNotGUI
+execute if entity @s[tag=dropNotGUI] run function galaxy:gui/builder-gun/super/drop-not_gui
+tag @s[tag=dropNotGUI] remove dropNotGUI
 
 # GUI cover
 function galaxy:gui/builder-gun/super/check-cover
