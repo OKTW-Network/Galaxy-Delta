@@ -8,6 +8,7 @@
         "galaxy:block/main",
         "galaxy:entity/main",
         "galaxy:tool/main",
+        "galaxy:book/main",
         "galaxy:recipe/main",
         "galaxy:visual_effect/main"
     ]

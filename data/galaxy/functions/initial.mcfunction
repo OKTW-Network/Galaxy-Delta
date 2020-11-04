@@ -12,6 +12,7 @@ function galaxy:status_effect/initial
 function galaxy:block/initial
 function galaxy:entity/initial
 function galaxy:tool/initial
+function galaxy:book/initial
 function galaxy:weapon/initial
 
 execute as @a run function galaxy:initial-player

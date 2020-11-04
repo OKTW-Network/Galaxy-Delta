@@ -1,0 +1,1 @@
+data modify storage galaxy:book galaxy_delta.indexObj.wiki set value '["",{"text":"            "},{"text":"Wiki","underlined":true,"color":"blue","clickEvent":{"action":"open_url","value":"https://github.com/OKTW-Network/Galaxy-delta/wiki"},"hoverEvent":{"action":"show_text","contents":{"text":"(click to open)","color":"gray"}}}]'

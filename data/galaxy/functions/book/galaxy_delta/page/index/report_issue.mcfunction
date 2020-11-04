@@ -1,0 +1,1 @@
+data modify storage galaxy:book galaxy_delta.indexObj.report_issue set value '["",{"text":"      "},{"text":"Report issue","underlined":true,"color":"red","clickEvent":{"action":"open_url","value":"https://github.com/OKTW-Network/Galaxy-delta/issues"},"hoverEvent":{"action":"show_text","contents":{"text":"(click to open)","color":"gray"}}}]'

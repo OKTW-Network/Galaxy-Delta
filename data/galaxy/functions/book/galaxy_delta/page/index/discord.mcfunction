@@ -1,0 +1,1 @@
+data modify storage galaxy:book galaxy_delta.indexObj.discord set value '["",{"text":"         "},{"text":"Discord","underlined":true,"color":"#7289da","clickEvent":{"action":"open_url","value":"https://discord.gg/E74tcJC"},"hoverEvent":{"action":"show_text","contents":{"text":"https://discord.gg/E74tcJC","underlined":true,"color":"#007bff"}}}]'
