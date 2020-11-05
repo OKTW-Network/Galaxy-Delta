@@ -36,7 +36,6 @@ scoreboard objectives add sbldValueMax dummy "num-GUI:Sbld maximum attribute val
 scoreboard objectives add sbldValueMin dummy "num-GUI:Sbld minimum attribute value"
 
 scoreboard objectives add optType dummy "num-Generate Option: Type"
-scoreboard objectives add optMode dummy "num-Generate Option: Mode"
 scoreboard objectives add optCosmetic dummy "num-Generate Option: Cosmetic"
 scoreboard objectives add optAddon dummy "num-Generate Option: Addon"
 scoreboard objectives add optDamage dummy "num-Generate Option: Damage"

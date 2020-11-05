@@ -14,5 +14,5 @@ execute if entity @s[tag=getCategory] run tag @s add getRecipePage
 execute if entity @s[tag=getCategory] run tag @s add setRecipePage
 tag @s[tag=getCategory] remove getCategory
 
-replaceitem block ~ ~ ~ container.0 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.category","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.18 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.category","italic":false}'},CustomModelData:10201,guiItem:1}
+replaceitem block ~ ~ ~ container.0 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous","italic":false}'},CustomModelData:10200,guiItem:1}
+replaceitem block ~ ~ ~ container.18 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next","italic":false}'},CustomModelData:10201,guiItem:1}

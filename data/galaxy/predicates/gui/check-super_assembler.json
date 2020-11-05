@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "block": {
+            "nbt": "{Items:[{Slot:0b,tag:{guiItem:1}},{Slot:1b,tag:{guiItem:1}},{Slot:2b,tag:{guiItem:1}},{Slot:3b,tag:{guiItem:1}},{Slot:4b,tag:{guiItem:1}},{Slot:5b,tag:{guiItem:1}},{Slot:6b,tag:{guiItem:1}},{Slot:7b,tag:{guiItem:1}},{Slot:8b,tag:{guiItem:1}},{Slot:9b,tag:{guiItem:1}},{Slot:10b,tag:{guiItem:1}},{Slot:11b,tag:{guiItem:1}},{Slot:12b,tag:{guiItem:1}},{Slot:13b,tag:{guiItem:1}},{Slot:14b,tag:{guiItem:1}},{Slot:15b,tag:{guiItem:1}},{Slot:16b,tag:{gun:{sambResult:1}}},{Slot:17b,tag:{guiItem:1}},{Slot:18b,tag:{guiItem:1}},{Slot:19b,tag:{guiItem:1}},{Slot:20b,tag:{guiItem:1}},{Slot:21b,tag:{guiItem:1}},{Slot:22b,tag:{guiItem:1}},{Slot:23b,tag:{guiItem:1}},{Slot:24b,tag:{guiItem:1}},{Slot:25b,tag:{guiItem:1}},{Slot:26b,tag:{guiItem:1}}]}"
+        }
+    }
+}

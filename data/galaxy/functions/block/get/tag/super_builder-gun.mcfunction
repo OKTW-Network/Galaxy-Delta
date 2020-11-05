@@ -1,1 +1,0 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"block.galaxy.super_builder-gun","italic":false}'},CustomModelData:10401,blockPlacer:{},builderGun:{super:1},EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["block_placer","super_builder-gun_placer"]}}
