@@ -1,6 +1,5 @@
 data modify storage galaxy:get recipe set value []
 
-function galaxy:recipe/hi-tech_crafting_table/functional_block/item/elevator
-function galaxy:recipe/hi-tech_crafting_table/functional_block/item/katana_display_stand-1
-function galaxy:recipe/hi-tech_crafting_table/functional_block/item/katana_display_stand-2
-function galaxy:recipe/hi-tech_crafting_table/functional_block/item/katana_display_stand-3
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/hi-tech_crafting_table
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/coke_furnace
+function galaxy:recipe/hi-tech_crafting_table/functional_block/item/advanced_blast_furnace
