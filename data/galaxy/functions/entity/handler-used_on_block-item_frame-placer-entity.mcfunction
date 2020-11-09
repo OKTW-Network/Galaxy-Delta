@@ -1,6 +1,6 @@
 tag @s add triggerPlaceEntity
 
-execute at @s run tag @e[tag=entity_placer,distance=..5,limit=1] add ThisPlacerEntity
+execute at @s run tag @e[tag=entity_placer,distance=..10,limit=1] add ThisPlacerEntity
 
 execute as @e[tag=ThisPlacerEntity] at @s align xyz positioned ~0.5 ~ ~0.5 run function galaxy:entity/check_entity
 

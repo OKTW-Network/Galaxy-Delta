@@ -1,6 +1,6 @@
 tag @s add triggerPlaceBlock
 
-execute at @s run tag @e[tag=block_placer,distance=..5,limit=1] add ThisPlacerBlock
+execute at @s run tag @e[tag=block_placer,distance=..10,limit=1] add ThisPlacerBlock
 
 execute as @e[tag=ThisPlacerBlock] at @s align xyz positioned ~0.5 ~ ~0.5 run function galaxy:block/check_block
 
