@@ -1,9 +1,13 @@
 tag @s add triggerWrench
 
-scoreboard players operation #subject0 UUIDMatch = @s MhWrenchUUID0
-scoreboard players operation #subject1 UUIDMatch = @s MhWrenchUUID1
-scoreboard players operation #subject2 UUIDMatch = @s MhWrenchUUID2
-scoreboard players operation #subject3 UUIDMatch = @s MhWrenchUUID3
+execute if entity @s[tag=WrenchMh] run scoreboard players operation #subject0 UUIDMatch = @s MhWrenchUUID0
+execute if entity @s[tag=WrenchMh] run scoreboard players operation #subject1 UUIDMatch = @s MhWrenchUUID1
+execute if entity @s[tag=WrenchMh] run scoreboard players operation #subject2 UUIDMatch = @s MhWrenchUUID2
+execute if entity @s[tag=WrenchMh] run scoreboard players operation #subject3 UUIDMatch = @s MhWrenchUUID3
+execute if entity @s[tag=!WrenchMh,tag=WrenchFh] run scoreboard players operation #subject0 UUIDMatch = @s FhWrenchUUID0
+execute if entity @s[tag=!WrenchMh,tag=WrenchFh] run scoreboard players operation #subject1 UUIDMatch = @s FhWrenchUUID1
+execute if entity @s[tag=!WrenchMh,tag=WrenchFh] run scoreboard players operation #subject2 UUIDMatch = @s FhWrenchUUID2
+execute if entity @s[tag=!WrenchMh,tag=WrenchFh] run scoreboard players operation #subject3 UUIDMatch = @s FhWrenchUUID3
 scoreboard players set #custom UUIDMatch 1
 execute as @e[tag=wrench] run function cu:uuid/match/main
 tag @e[tag=UUIDMatch,limit=1] add ThisWrench
@@ -23,7 +27,8 @@ function galaxy:tool/get/wrench-uuid_less
 data modify storage cu:replaceitem item set from storage galaxy:get item[0]
 data modify storage cu:replaceitem item.tag.wrench.UUID set from entity @e[tag=ThisWrench,limit=1] Item.tag.customUUID
 data modify storage cu:replaceitem item.tag.EntityTag.Item.tag.customUUID set from entity @e[tag=ThisWrench,limit=1] Item.tag.customUUID
-function cu:replaceitem/hand_main
+execute if entity @s[tag=WrenchMh] run function cu:replaceitem/hand_main
+execute if entity @s[tag=!WrenchMh,tag=WrenchFh] run function cu:replaceitem/hand_off
 
 kill @e[tag=ThisWrench]
 
