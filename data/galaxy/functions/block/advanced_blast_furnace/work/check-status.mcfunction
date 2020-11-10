@@ -1,3 +1,3 @@
-function galaxy:recipe/advanced_blast_furnace
-execute unless score @s workStatus = @s workStatusTemp run function galaxy:gui/advanced_blast_furnace/update
-scoreboard players operation @s workStatusTemp = @s workStatus
+scoreboard players operation #1 calcu_temp = @s workStatus
+function galaxy:block/advanced_blast_furnace/work/get-status
+execute unless score @s workStatus = #1 calcu_temp run tag @s add workStatusUpdate

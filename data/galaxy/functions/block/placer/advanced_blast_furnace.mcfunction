@@ -5,13 +5,17 @@ execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~1 
 execute unless entity @s[tag=placeFailed] run function galaxy:block/directional
 tag @e[tag=fake_block,tag=init] remove init
 
-scoreboard players set @e[tag=advanced_blast_furnace,tag=init] guiMode 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] statesLit 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workStatus 0
-scoreboard players set @e[tag=advanced_blast_furnace,tag=init] setGuiCover 1
-scoreboard players set @e[tag=advanced_blast_furnace,tag=init] setSmelt 1
-scoreboard players set @e[tag=advanced_blast_furnace,tag=init] setProcess 1
-scoreboard players set @e[tag=advanced_blast_furnace,tag=init] setProgress 1
-scoreboard players remove @e[tag=advanced_blast_furnace,tag=init] workProc1 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus0 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus1 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus-1 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Status 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Prog 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] guiMode 0
+execute as @e[tag=advanced_blast_furnace,tag=init] run function galaxy:gui/advanced_blast_furnace/update
 tag @e[tag=advanced_blast_furnace,tag=init] remove init
 
 execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock] run function galaxy:block/give/advanced_blast_furnace

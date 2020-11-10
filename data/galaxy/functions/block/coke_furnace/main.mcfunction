@@ -7,5 +7,8 @@ execute unless predicate galaxy:block/coke_furnace run function galaxy:block/cok
 # block working
 function galaxy:block/coke_furnace/work/main
 
+# block states
+function galaxy:block/coke_furnace/states/main
+
 # gui function
 execute if predicate galaxy:block/barrel-open run function galaxy:gui/coke_furnace/main

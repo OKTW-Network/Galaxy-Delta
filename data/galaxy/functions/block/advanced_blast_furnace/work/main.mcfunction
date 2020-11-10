@@ -1,9 +1,10 @@
-function galaxy:block/advanced_blast_furnace/work/check-status
-execute unless score @s workStatus matches 1 if score @s workProc1 matches 1.. run scoreboard players set @s workProc1 0
-execute if score @s workStatus matches 1 run scoreboard players add @s workProc1 1
+function galaxy:block/advanced_blast_furnace/work/processor1/main
 
-execute if score @s workStatus matches 1 if score @s workProc1 >= #advanced_blast_furnace_dur Config run function galaxy:block/advanced_blast_furnace/work/complete
+function galaxy:block/advanced_blast_furnace/work/check-processor_status
+execute if entity @s[tag=workProcStatusUpdate] run tag @s add setProcess
+execute if entity @s[tag=workProcStatusUpdate] run function galaxy:gui/advanced_blast_furnace/update-progress
+tag @s[tag=workProcStatusUpdate] remove workProcStatusUpdate
 
-execute if score @s workStatus matches 1 if predicate galaxy:block/barrel-open run function galaxy:block/advanced_blast_furnace/work/get-progress
-execute if score @s workStatus matches 1 if predicate galaxy:block/barrel-open run scoreboard players set @s setProgress 1
-execute if score @s workStatus matches 1 if predicate galaxy:block/barrel-open run scoreboard players set @s setSmelt 1
+execute if predicate galaxy:block/barrel-open if score @s workProcStatus1 matches 1..9 run function galaxy:gui/advanced_blast_furnace/update-progress
+
+function galaxy:block/advanced_blast_furnace/work/get-status
