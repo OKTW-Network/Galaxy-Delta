@@ -7,4 +7,5 @@ execute store result score #2 calcu_temp store result score #3 calcu_temp run sc
 execute store result score #4 calcu_temp run data get storage galaxy:recipe HTct.category[-1].recipeInFinalPage
 execute unless score #4 calcu_temp matches 0 store result score #1 calcu_temp store result score #2 calcu_temp store result score #3 calcu_temp run scoreboard players get #4 calcu_temp
 data modify storage galaxy:recipe HTct.category[-1].recipeList set value []
+data modify storage galaxy:temp item set value []
 function galaxy:recipe/hi-tech_crafting_table/build-recipe

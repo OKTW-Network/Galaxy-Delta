@@ -1,6 +1,5 @@
 data modify storage galaxy:recipe HTct.category append value {}
 
-data modify storage galaxy:get item set value []
 function galaxy:recipe/hi-tech_crafting_table/component/get-item
 data modify storage galaxy:temp recipe set from storage galaxy:get recipe
 function galaxy:recipe/hi-tech_crafting_table/build-category
