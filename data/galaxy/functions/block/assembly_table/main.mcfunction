@@ -5,4 +5,4 @@ function galaxy:block/protection-strict
 execute unless predicate galaxy:block/assembly_table run function galaxy:block/assembly_table/destroy
 
 # gui function
-execute if predicate galaxy:block/barrel-open run function galaxy:gui/assembly_table/main
+execute if predicate minecraft:block_states/open run function galaxy:gui/assembly_table/main

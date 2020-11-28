@@ -1,0 +1,6 @@
+execute if score @s wrenchDoFacing matches 0 run setblock ~ ~ ~ observer[facing=south]
+execute if score @s wrenchDoFacing matches 1 run setblock ~ ~ ~ observer[facing=west]
+execute if score @s wrenchDoFacing matches 2 run setblock ~ ~ ~ observer[facing=north]
+execute if score @s wrenchDoFacing matches 3 run setblock ~ ~ ~ observer[facing=east]
+execute if score @s wrenchDoFacing matches 4 run setblock ~ ~ ~ observer[facing=down]
+execute if score @s wrenchDoFacing matches 5 run setblock ~ ~ ~ observer[facing=up]

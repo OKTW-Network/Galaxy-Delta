@@ -6,3 +6,7 @@ scoreboard players remove @s FhWrenchUUID0 0
 scoreboard players remove @s FhWrenchUUID1 0
 scoreboard players remove @s FhWrenchUUID2 0
 scoreboard players remove @s FhWrenchUUID3 0
+scoreboard players remove @s UseWrenchUUID0 0
+scoreboard players remove @s UseWrenchUUID1 0
+scoreboard players remove @s UseWrenchUUID2 0
+scoreboard players remove @s UseWrenchUUID3 0

@@ -11,4 +11,4 @@ function galaxy:block/advanced_blast_furnace/work/main
 function galaxy:block/advanced_blast_furnace/states/main
 
 # gui function
-execute if predicate galaxy:block/barrel-open run function galaxy:gui/advanced_blast_furnace/main
+execute if predicate minecraft:block_states/open run function galaxy:gui/advanced_blast_furnace/main

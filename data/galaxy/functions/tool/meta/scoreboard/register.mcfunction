@@ -1,8 +1,30 @@
-### boolean use numbers instead of true or false
-### false = 0
-### true = 1
+scoreboard objectives add wrenchDoAxis dummy "num-Wrench do axis"
+scoreboard objectives add wrenchDoFacing dummy "num-Wrench do facing"
+scoreboard objectives add wrenchDoAttach dummy "num-Wrench do attachment"
+scoreboard objectives add wrenchDoHalf dummy "num-Wrench do half"
+scoreboard objectives add wrenchDoType dummy "num-Wrench do type"
+scoreboard objectives add wrenchDoSp dummy "num-Wrench do Sp"
 
-# Wrench UUID
+scoreboard objectives add sucWrenchRotate dummy "num-Wrench success count"
+
+scoreboard objectives add wrenchOriID dummy "num-Wrench original ID"
+scoreboard objectives add wrenchOriAxis dummy "num-Wrench original axis"
+scoreboard objectives add wrenchOriFacing dummy "num-Wrench original facing"
+scoreboard objectives add wrenchOriAttach dummy "num-Wrench original attchment"
+scoreboard objectives add wrenchOriFace dummy "num-Wrench original face"
+scoreboard objectives add wrenchOriHalf dummy "num-Wrench original half"
+scoreboard objectives add wrenchOriType dummy "num-Wrench original type"
+
+scoreboard objectives add wrenchBlkX dummy "num-Wrench block X"
+scoreboard objectives add wrenchBlkY dummy "num-Wrench block Y"
+scoreboard objectives add wrenchBlkZ dummy "num-Wrench block Z"
+scoreboard objectives add wrenchBlkAxis dummy "num-Wrench block axis"
+scoreboard objectives add wrenchBlkFacing dummy "num-Wrench block facing"
+scoreboard objectives add wrenchBlkAttach dummy "num-Wrench block attchment"
+scoreboard objectives add wrenchBlkFace dummy "num-Wrench block face"
+scoreboard objectives add wrenchBlkHalf dummy "num-Wrench block half"
+scoreboard objectives add wrenchBlkType dummy "num-Wrench block type"
+
 scoreboard objectives add MhWrenchUUID0 dummy "num-MainHand wrench UUID[0]"
 scoreboard objectives add MhWrenchUUID1 dummy "num-MainHand wrench UUID[1]"
 scoreboard objectives add MhWrenchUUID2 dummy "num-MainHand wrench UUID[2]"
@@ -11,3 +33,7 @@ scoreboard objectives add FhWrenchUUID0 dummy "num-OffHand wrench UUID[0]"
 scoreboard objectives add FhWrenchUUID1 dummy "num-OffHand wrench UUID[1]"
 scoreboard objectives add FhWrenchUUID2 dummy "num-OffHand wrench UUID[2]"
 scoreboard objectives add FhWrenchUUID3 dummy "num-OffHand wrench UUID[3]"
+scoreboard objectives add UseWrenchUUID0 dummy "num-Use wrench UUID[0]"
+scoreboard objectives add UseWrenchUUID1 dummy "num-Use wrench UUID[1]"
+scoreboard objectives add UseWrenchUUID2 dummy "num-Use wrench UUID[2]"
+scoreboard objectives add UseWrenchUUID3 dummy "num-Use wrench UUID[3]"
