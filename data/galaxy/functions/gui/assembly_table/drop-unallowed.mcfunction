@@ -9,7 +9,7 @@ execute unless data block ~ ~ ~ Items[{Slot:24b,tag:{component:{cosmetic:1}}}] r
 execute unless data block ~ ~ ~ Items[{Slot:26b,tag:{component:{color_lens:1}}}] run data modify storage galaxy:gui drop append from block ~ ~ ~ Items[{Slot:26b}]
 
 execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.gun run data modify storage galaxy:gui drop append from block ~ ~ ~ Items[{Slot:13b}]
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.sbldGResult run data modify storage galaxy:gui drop append from block ~ ~ ~ Items[{Slot:13b}]
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.sambResult run data modify storage galaxy:gui drop append from block ~ ~ ~ Items[{Slot:13b}]
 
 execute if data storage galaxy:gui drop[0] run function galaxy:gui/delete-drop
 execute if data storage galaxy:gui drop[0] positioned ~ ~1 ~ run function galaxy:gui/drop_item

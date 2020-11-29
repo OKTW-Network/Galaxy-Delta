@@ -9,4 +9,4 @@ execute unless data block ~ ~ ~ Items[{Slot:24b,tag:{component:{cosmetic:1}}}] r
 execute unless data block ~ ~ ~ Items[{Slot:26b,tag:{component:{color_lens:1}}}] run tag @s add dropUnallowed
 
 execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.gun run tag @s add dropUnallowed
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.sbldGResult run tag @s add dropUnallowed
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.sambResult run tag @s add dropUnallowed
