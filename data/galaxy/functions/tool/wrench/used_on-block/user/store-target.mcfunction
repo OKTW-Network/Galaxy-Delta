@@ -1,3 +1,7 @@
+execute store result score @s wrenchBlkX run data get entity @e[tag=ThisWrenchTarget,limit=1] Pos[0]
+execute store result score @s wrenchBlkY run data get entity @e[tag=ThisWrenchTarget,limit=1] Pos[1]
+execute store result score @s wrenchBlkZ run data get entity @e[tag=ThisWrenchTarget,limit=1] Pos[2]
+
 scoreboard players set @s wrenchBlkAxis -1
 execute at @e[tag=ThisWrenchTarget] if predicate minecraft:block_states/axis-x run scoreboard players set @s wrenchBlkAxis 0
 execute at @e[tag=ThisWrenchTarget] if predicate minecraft:block_states/axis-y run scoreboard players set @s wrenchBlkAxis 1

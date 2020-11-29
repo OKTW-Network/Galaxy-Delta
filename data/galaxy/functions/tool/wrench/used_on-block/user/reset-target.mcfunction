@@ -1,3 +1,6 @@
+scoreboard players reset @s wrenchBlkX
+scoreboard players reset @s wrenchBlkY
+scoreboard players reset @s wrenchBlkZ
 scoreboard players reset @s wrenchBlkAxis
 scoreboard players reset @s wrenchBlkFacing
 scoreboard players reset @s wrenchBlkAttach
