@@ -6,9 +6,7 @@ scoreboard players set @s[tag=type-4] kdsType 4
 # display
 function galaxy:entity/katana_display_stand/check-display
 execute if entity @s[tag=setDisplay] run function galaxy:entity/katana_display_stand/build-display
-execute if entity @s[tag=setDisplay] run say setDisplay
 execute if entity @s[tag=removeDisplay] run function galaxy:entity/katana_display_stand/remove-display
-execute if entity @s[tag=removeDisplay] run say removeDisplay
 tag @s[tag=setDisplay] remove setDisplay
 tag @s[tag=removeDisplay] remove removeDisplay
 
