@@ -10,11 +10,17 @@ execute if score @s reqRcpHTct matches 2 as @a[scores={reqHTctCraft=1..},tag=suc
 execute if score @s reqRcpHTct matches 2 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:tool/give/wrench
 execute if score @s reqRcpHTct matches 2 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:tool/give/wrench
 
+# crowbar
+execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/tool/requirement-check/crowbar
+execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/tool/requirement-remove/crowbar
+execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:tool/give/crowbar
+execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:tool/give/crowbar
+
 # structure empower
-execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/tool/requirement-check/empower_lens
-execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/tool/requirement-remove/empower_lens
-execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:tool/give/empower_lens
-execute if score @s reqRcpHTct matches 3 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:tool/give/empower_lens
+execute if score @s reqRcpHTct matches 4 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/tool/requirement-check/empower_lens
+execute if score @s reqRcpHTct matches 4 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/tool/requirement-remove/empower_lens
+execute if score @s reqRcpHTct matches 4 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:tool/give/empower_lens
+execute if score @s reqRcpHTct matches 4 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:tool/give/empower_lens
 
 
 execute as @a[scores={reqHTctCraft=1..}] run tag @s remove sucHTctRcp
