@@ -10,3 +10,16 @@ scoreboard players remove @s UseWrenchUUID0 0
 scoreboard players remove @s UseWrenchUUID1 0
 scoreboard players remove @s UseWrenchUUID2 0
 scoreboard players remove @s UseWrenchUUID3 0
+
+scoreboard players remove @s MhCrowbarUUID0 0
+scoreboard players remove @s MhCrowbarUUID1 0
+scoreboard players remove @s MhCrowbarUUID2 0
+scoreboard players remove @s MhCrowbarUUID3 0
+scoreboard players remove @s FhCrowbarUUID0 0
+scoreboard players remove @s FhCrowbarUUID1 0
+scoreboard players remove @s FhCrowbarUUID2 0
+scoreboard players remove @s FhCrowbarUUID3 0
+scoreboard players remove @s UseCrowbarUUID0 0
+scoreboard players remove @s UseCrowbarUUID1 0
+scoreboard players remove @s UseCrowbarUUID2 0
+scoreboard players remove @s UseCrowbarUUID3 0

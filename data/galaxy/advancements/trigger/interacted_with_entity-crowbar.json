@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {"item": "minecraft:barrier"},
+        "title": {"text":"interacted_with_entity-crowbar"},
+        "description": {"text":""},
+		"background": "minecraft:textures/block/command_block_back.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "crowbar": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item":{
+                    "nbt": "{crowbar:{}}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "player": {
+            "advancements": {
+                "galaxy:trigger/interacted_with_entity-wrench": true
+            }
+        }
+    },
+    "entity":"this"
+}

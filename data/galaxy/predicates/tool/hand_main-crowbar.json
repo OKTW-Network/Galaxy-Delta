@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "item":"minecraft:item_frame",
+                "nbt": "{crowbar:{}}"
+            }
+        }
+    },
+    "entity":"this"
+}

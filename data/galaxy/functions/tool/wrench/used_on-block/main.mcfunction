@@ -1,4 +1,4 @@
-tag @s[tag=!isUsingWrench] add isUsingWrench
+tag @s[tag=!isUsingWrenchOnBlock] add isUsingWrenchOnBlock
 
 function galaxy:tool/wrench/used_on-block/target/find
 function galaxy:tool/wrench/used_on-block/anchor/find
@@ -11,7 +11,7 @@ tag @s[tag=doWrenchFirstUse] remove doWrenchFirstUse
 
 function galaxy:tool/wrench/used_on-block/anchor/update
 
-execute as @e[tag=ThisWrench] at @e[tag=ThisWrenchTarget] run function galaxy:tool/wrench/spin/main
+execute as @e[tag=ThisWrench] at @e[tag=ThisWrenchTarget] run function galaxy:tool/wrench/block/main
 
 function galaxy:tool/wrench/used_on-block/user/store-target
 

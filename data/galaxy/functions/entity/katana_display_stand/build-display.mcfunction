@@ -3,6 +3,7 @@ execute if entity @s[tag=displaying] run function galaxy:entity/katana_display_s
 replaceitem entity @s weapon.offhand air
 
 execute if predicate galaxy:tool/hand_main-wrench run function galaxy:entity/katana_display_stand/convert_from-display
+execute if predicate galaxy:tool/hand_main-crowbar run function galaxy:entity/katana_display_stand/convert_from-display
 
 execute store result score @s kdsDisplayType run data get entity @s HandItems[0].tag.katana.type
 execute store result score @s kdsDisplayStyle run data get entity @s HandItems[0].tag.katana.style

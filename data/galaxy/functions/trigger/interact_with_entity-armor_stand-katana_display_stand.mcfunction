@@ -1,2 +1,0 @@
-function galaxy:entity/handler-interact_with_entity-armor_stand-katana_display_stand
-advancement revoke @s only galaxy:trigger/interact_with_entity-armor_stand-katana_display_stand
