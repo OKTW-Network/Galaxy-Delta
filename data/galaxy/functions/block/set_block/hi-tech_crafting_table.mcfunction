@@ -14,4 +14,5 @@ scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] countTags 0
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] reqRcpHTct 0
 scoreboard players remove @e[tag=hi-tech_crafting_table,tag=init] reqHTctCraft 0
 execute as @e[tag=hi-tech_crafting_table,tag=init] run function galaxy:gui/hi-tech_crafting_table/update
+execute as @e[tag=hi-tech_crafting_table,tag=init] run function galaxy:gui/hi-tech_crafting_table/main
 execute as @e[tag=hi-tech_crafting_table,tag=init] run tag @s remove init

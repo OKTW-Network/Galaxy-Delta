@@ -9,6 +9,7 @@ scoreboard players set @e[tag=super_assembler,tag=init] sbldAttribute 1
 scoreboard players remove @e[tag=super_assembler,tag=init] sbldValue 0
 execute as @e[tag=super_assembler,tag=init] run function galaxy:recipe/super_assembler/get-option_default
 execute as @e[tag=super_assembler,tag=init] run function galaxy:gui/assembly_table/super/update
+execute as @e[tag=super_assembler,tag=init] run function galaxy:gui/assembly_table/main
 tag @e[tag=super_assembler,tag=init] remove init
 
 execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock] run function galaxy:block/give/super_assembler

@@ -16,6 +16,7 @@ scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Status 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Prog 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] guiMode 0
 execute as @e[tag=advanced_blast_furnace,tag=init] run function galaxy:gui/advanced_blast_furnace/update
+execute as @e[tag=advanced_blast_furnace,tag=init] run function galaxy:gui/advanced_blast_furnace/main
 tag @e[tag=advanced_blast_furnace,tag=init] remove init
 
 execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock] run function galaxy:block/give/advanced_blast_furnace
