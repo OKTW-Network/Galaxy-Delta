@@ -7,6 +7,6 @@ execute as @e[tag=elevator,tag=init] at @s run function galaxy:block/elevator/sc
 execute as @e[tag=elevator,tag=init] at @s run function galaxy:block/elevator/scan_to_temp-down
 tag @e[tag=elevator,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock] run function galaxy:block/give/elevator
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock,gamemode=!creative] run function galaxy:block/give/elevator
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.2

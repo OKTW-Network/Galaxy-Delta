@@ -7,6 +7,6 @@ execute as @e[tag=assembly_table,tag=init] run function galaxy:gui/assembly_tabl
 execute as @e[tag=assembly_table,tag=init] run function galaxy:gui/assembly_table/main
 tag @e[tag=assembly_table,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock] run function galaxy:block/give/advanced_blast_furnace
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock,gamemode=!creative] run function galaxy:block/give/advanced_blast_furnace
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 0.8

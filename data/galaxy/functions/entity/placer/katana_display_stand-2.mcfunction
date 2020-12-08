@@ -7,7 +7,7 @@ function galaxy:entity/directional-angle_8
 scoreboard players set @e[tag=katana_display_stand,tag=type-2,tag=init] kdsStatus 1
 tag @e[tag=katana_display_stand,tag=type-2,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceEntity] run function galaxy:entity/give/katana_display_stand-2
+execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceEntity,gamemode=!creative] run function galaxy:entity/give/katana_display_stand-2
 
 execute unless entity @s[tag=placeFailed] run playsound block.wood.place block @a ~ ~ ~ 1 1.4
 
