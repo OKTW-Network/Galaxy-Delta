@@ -23,6 +23,6 @@ scoreboard players operation #1 calcu_temp += #6 calcu_temp
 
 execute store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players get #1 calcu_temp
 
-execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 run replaceitem entity @s weapon.offhand diamond_sword{entityItem:1b}
+execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 run replaceitem entity @s weapon.offhand netherite_sword{entityItem:1b}
 execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players add #1 calcu_temp 10
 execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 store result entity @s HandItems[1].tag.CustomModelData int 1 run scoreboard players add #1 calcu_temp 10

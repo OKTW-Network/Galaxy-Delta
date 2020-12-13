@@ -31,7 +31,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "item": "minecraft:diamond_sword",
+            "item": "minecraft:netherite_sword",
             "nbt": "{katana:{type:2b}}"
           }
         }
@@ -43,7 +43,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "item": "minecraft:diamond_sword",
+            "item": "minecraft:netherite_sword",
             "nbt": "{katana:{type:2b}}"
           }
         }
