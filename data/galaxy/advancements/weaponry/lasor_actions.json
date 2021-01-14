@@ -11,9 +11,9 @@
         "show_toast": false,
         "announce_to_chat": false
     },
-    "parent": "galaxy:weaponry/katana",
+    "parent": "galaxy:weaponry/lasor",
     "criteria": {
-        "katana": {
+        "lasor": {
             "trigger": "minecraft:impossible"
         }
     }

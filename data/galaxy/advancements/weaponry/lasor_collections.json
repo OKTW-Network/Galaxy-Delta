@@ -2,18 +2,18 @@
     "display": {
         "icon": {
             "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:10108,HideFlags:39}"
+            "nbt": "{CustomModelData:10107,HideFlags:39}"
         },
-        "title": {"translate":"advancements.weaponry.actions.title"},
-        "description": {"translate":"advancements.weaponry.actions.description"},
+        "title": {"translate":"advancements.weaponry.collections"},
+        "description": {"translate":"advancements.weaponry.collections.description"},
 		"hidden": true,
 		"frame": "challenge",
         "show_toast": false,
         "announce_to_chat": false
     },
-    "parent": "galaxy:weaponry/katana",
+    "parent": "galaxy:weaponry/lasor",
     "criteria": {
-        "katana": {
+        "lasor": {
             "trigger": "minecraft:impossible"
         }
     }

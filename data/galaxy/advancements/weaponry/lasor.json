@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:210100,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.weaponry.lasor.title"},
+        "description": {"translate":"advancements.weaponry.lasor.description"},
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/root",
+    "criteria": {
+        "lasor": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
