@@ -44,6 +44,8 @@ data modify storage cu:string toStatic.input set value '{"translate":"%s: %s","w
 function cu:string/convert_to-static
 data modify storage galaxy:temp lore append from storage cu:string toStatic.result
 
+execute unless data storage galaxy:temp itemTag.gun{accelerate:0} run function galaxy:gui/assembly_table/build-lore/accelerate
+
 execute unless data storage galaxy:temp itemTag.gun.projectile{penetrate:0} run function galaxy:gui/assembly_table/build-lore/projectile_penetrate
 
 execute unless data storage galaxy:temp itemTag.gun.projectile{trace:0} run function galaxy:gui/assembly_table/build-lore/projectile_trace

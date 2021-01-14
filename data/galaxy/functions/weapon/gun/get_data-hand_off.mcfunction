@@ -4,4 +4,5 @@ execute store result score @s FhGunCooling run data get entity @s Inventory[{Slo
 execute store result score @s FhGunCoolDly run data get entity @s Inventory[{Slot:-106b}].tag.gun.cooling_delay
 execute store result score @s FhGunHeat run data get entity @s Inventory[{Slot:-106b}].tag.gun.heat
 execute store result score @s FhGunTemperMax run data get entity @s Inventory[{Slot:-106b}].tag.gun.temperMax
+execute store result score @s FhGunAclrate run data get entity @s Inventory[{Slot:-106b}].tag.gun.accelerate
 execute store result score @s gunExtraBullet run data get entity @s Inventory[{Slot:-106b}].tag.gun.projectile.extra

@@ -47,6 +47,9 @@ data modify storage galaxy:recipe Samb.attribute append from storage galaxy:reci
 function galaxy:recipe/super_assembler/build-attribute/aim_zoom
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.aim_zoom
 
+function galaxy:recipe/super_assembler/build-attribute/accelerate
+data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.accelerate
+
 function galaxy:recipe/super_assembler/build-attribute/projectile_penetrate
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_penetrate
 

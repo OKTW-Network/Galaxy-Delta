@@ -9,7 +9,7 @@
     },
     "parent": "galaxy:hi-tech_crafting_table",
     "criteria": {
-        "katana": {
+        "coke": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [

@@ -29,6 +29,7 @@ function galaxy:gui/assembly_table/build-result/projectile_speed
 function galaxy:gui/assembly_table/build-result/projectile_offset
 function galaxy:gui/assembly_table/build-result/projectile_aim_offset
 function galaxy:gui/assembly_table/build-result/aim_zoom
+function galaxy:gui/assembly_table/build-result/accelerate
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{barrel:1}}].component.alteration.projectile.penetrate run function galaxy:gui/assembly_table/build-result/projectile_penetrate
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{barrel:1}}].component.alteration.projectile.trace run function galaxy:gui/assembly_table/build-result/projectile_trace
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{barrel:1}}].component.alteration.projectile.extra run function galaxy:gui/assembly_table/build-result/extra

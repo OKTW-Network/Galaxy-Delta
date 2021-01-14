@@ -11,16 +11,48 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "hi-tech_crafting_table": {
+        "empower_lens": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:armor_stand",
-						"nbt": "{HTct:1}"
+						"nbt": "{empower_lens:{}}"
+                    }
+                ]
+            }
+        },
+        "wrench": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"nbt": "{wrench:{}}"
+                    }
+                ]
+            }
+        },
+        "crowbar": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"nbt": "{crowbar:{}}"
+                    }
+                ]
+            }
+        },
+        "HTct": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"nbt": "{HTct:{}}"
                     }
                 ]
             }
         }
-    }
+    },
+    "requirements": [
+        ["empower_lens","wrench","crowbar","HTct"]
+    ]
 }

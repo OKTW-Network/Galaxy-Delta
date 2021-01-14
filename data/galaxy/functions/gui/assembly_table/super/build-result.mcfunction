@@ -17,6 +17,7 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.speed int 
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.offset int 1 run scoreboard players get @s optPjOffset
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.aim_offset int 1 run scoreboard players get @s optPjAimOffset
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.aim_zoom int 1 run scoreboard players get @s optAimZoom
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.accelerate int 1 run scoreboard players get @s optAccelerate
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.penetrate int 1 run scoreboard players get @s optPjPenetrate
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.trace int 1 run scoreboard players get @s optPjTrace
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.gun.projectile.extra int 1 run scoreboard players get @s optPjExtra

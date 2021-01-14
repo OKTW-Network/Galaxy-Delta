@@ -1,20 +1,20 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:armor_stand",
+            "item": "minecraft:item_frame",
             "nbt": "{CustomModelData:10100,HideFlags:39}"
         },
         "title": {"translate":"advancements.galaxy.hi-tech_crafting_table.title"},
         "description": {"translate":"advancements.galaxy.hi-tech_crafting_table.description"}
     },
-    "parent": "galaxy:structure_empower",
+    "parent": "galaxy:empower_lens",
     "criteria": {
-        "katana": {
+        "HTct": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{HTct:1}"
+                        "nbt": "{HTct:{}}"
                     }
                 ]
             }

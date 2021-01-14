@@ -12,7 +12,8 @@ scoreboard players set @s optCoolingDly 0
 scoreboard players set @s optPjSpeed 64
 scoreboard players set @s optPjOffset 0
 scoreboard players set @s optPjAimOffset 0
-scoreboard players set @s optPjPenetrate 0
 scoreboard players set @s optAimZoom 7
+scoreboard players set @s optAccelerate 0
+scoreboard players set @s optPjPenetrate 0
 scoreboard players set @s optPjTrace 0
 scoreboard players set @s optPjExtra 0

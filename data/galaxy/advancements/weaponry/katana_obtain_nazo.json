@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:120100,HideFlags:39}"
+        },
+        "title": {"translate":"advancements.weaponry.katana_obtain_nazo.title"},
+        "description": {"translate":"advancements.weaponry.katana_obtain_nazo.description"},
+        "hidden": true,
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/katana_collections",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"nbt": "{katana:{style:2b}}"
+                    }
+                ]
+            }
+        }
+    }
+}

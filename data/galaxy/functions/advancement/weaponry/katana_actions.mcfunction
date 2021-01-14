@@ -1,1 +1,1 @@
-advancement grant @s only galaxy:weaponry/katana_collections
+advancement grant @s from galaxy:weaponry/katana_actions
