@@ -46,8 +46,8 @@ scoreboard players set #target_passive Config 1
 scoreboard players set #coke_furnace_dur Config 400
 
 # Advanced blast furnace operating speed
-# integer, tick, default: 600
-scoreboard players set #advanced_blast_furnace_dur Config 600
+# integer, tick, default: 800
+scoreboard players set #advanced_blast_furnace_dur Config 800
 
 
 ############################################

@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{coke:1}"
+                        "nbt": "{coke:{}}"
                     }
                 ]
             }

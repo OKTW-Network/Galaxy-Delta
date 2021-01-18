@@ -1,1 +1,1 @@
-clear @s minecraft:command_block{ingotSteel:1} 6
+clear @s minecraft:command_block{ingotSteel:{}} 6

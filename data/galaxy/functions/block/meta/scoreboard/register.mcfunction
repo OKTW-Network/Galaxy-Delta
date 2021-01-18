@@ -7,7 +7,11 @@ scoreboard objectives add workProcStatus1 dummy "num-Block work processor status
 scoreboard objectives add workProcStatus-1 dummy "num-Block work processor status -1"
 
 scoreboard objectives add workProc1 dummy "num-Block work processor1"
-scoreboard objectives add workProc1Status dummy "num-Block work processor1 status"
+scoreboard objectives add workProc1CanWork dummy "num-Block work processor1 recipe check"
+scoreboard objectives add workProc1CanFuel dummy "num-Block work processor1 fuel check"
+scoreboard objectives add workProc1Burn dummy "num-Block work processor1 burn time"
+scoreboard objectives add workProc1BurnMax dummy "num-Block work processor1 burn time max"
+scoreboard objectives add workProc1Fuel dummy "num-Block work processor1 fuel"
 scoreboard objectives add workProc1Prog dummy "num-Block work processor1 progress"
 
 scoreboard objectives add elevatorTempUp dummy "num-Elevator temp up"

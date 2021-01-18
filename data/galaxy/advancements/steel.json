@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{ingotSteel:1}"
+                        "nbt": "{ingotSteel:{}}"
                     }
                 ]
             }

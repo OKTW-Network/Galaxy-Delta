@@ -1,5 +1,6 @@
 scoreboard objectives add sucCfRcp dummy "num-Recipe:Cf recipe check success count"
 scoreboard objectives add sucABfRcp dummy "num-Recipe:ABf recipe check success count"
+scoreboard objectives add sucABfFuel dummy "num-Recipe:ABf recipe check success count"
 
 scoreboard objectives add sucRTcRcp dummy "num-Recipe:RTc recipe check success count"
 scoreboard objectives add sucRTcRcp1 dummy "num-Recipe:RTc recipe check success count 1"

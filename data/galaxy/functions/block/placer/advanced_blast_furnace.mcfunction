@@ -12,7 +12,10 @@ scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus0 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus1 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus-1 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1 0
-scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Status 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1CanWork 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1CanFuel 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Burn 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1BurnMax 10
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1Prog 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] guiMode 0
 execute as @e[tag=advanced_blast_furnace,tag=init] run function galaxy:gui/advanced_blast_furnace/update
