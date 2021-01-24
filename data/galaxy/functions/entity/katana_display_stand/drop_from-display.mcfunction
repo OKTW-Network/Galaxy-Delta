@@ -5,4 +5,5 @@ execute if score @s kdsDisplayType matches 3 run function galaxy:weapon/katana/g
 execute store result storage galaxy:get item[0].tag.katana.type byte 1 run scoreboard players get @s kdsDisplayType
 execute store result storage galaxy:get item[0].tag.katana.style byte 1 run scoreboard players get @s kdsDisplayStyle
 execute store result storage galaxy:get item[0].tag.CustomModelData int 1 run scoreboard players get @s kdsDisplayModel
+data modify storage galaxy:get item[0].tag.display.Name set from entity @s ArmorItems[3].tag.kdsKatana.Name
 execute if data storage galaxy:get item[0] run function galaxy:item_entity/summon

@@ -1,8 +1,3 @@
-scoreboard players set @s[tag=type-1] kdsType 1
-scoreboard players set @s[tag=type-2] kdsType 2
-scoreboard players set @s[tag=type-3] kdsType 3
-scoreboard players set @s[tag=type-4] kdsType 4
-
 # display
 function galaxy:entity/katana_display_stand/check-display
 execute if entity @s[tag=setDisplay] run function galaxy:entity/katana_display_stand/build-display

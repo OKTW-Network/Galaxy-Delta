@@ -6,4 +6,5 @@ data modify storage cu:replaceitem item set from storage galaxy:get item[0]
 execute store result storage cu:replaceitem item.tag.katana.type byte 1 run scoreboard players get @s kdsDisplayType
 execute store result storage cu:replaceitem item.tag.katana.style byte 1 run scoreboard players get @s kdsDisplayStyle
 execute store result storage cu:replaceitem item.tag.CustomModelData int 1 run scoreboard players get @s kdsDisplayModel
+data modify storage cu:replaceitem item.tag.display.Name set from entity @s ArmorItems[3].tag.kdsKatana.Name
 execute as @a[tag=ThisPlayer] run function cu:replaceitem/hand_main

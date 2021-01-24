@@ -8,6 +8,7 @@ execute if predicate galaxy:tool/hand_main-crowbar run function galaxy:entity/ka
 execute store result score @s kdsDisplayType run data get entity @s HandItems[0].tag.katana.type
 execute store result score @s kdsDisplayStyle run data get entity @s HandItems[0].tag.katana.style
 execute store result score @s kdsDisplayModel run data get entity @s HandItems[0].tag.CustomModelData
+data modify entity @s ArmorItems[3].tag.kdsKatana.Name set from entity @s HandItems[0].tag.display.Name
 
 data modify entity @s HandItems[0].tag.katanaDisplay set value 1b
 

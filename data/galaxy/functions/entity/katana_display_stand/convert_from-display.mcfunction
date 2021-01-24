@@ -7,4 +7,5 @@ data modify storage galaxy:temp item set from storage galaxy:get item[0]
 execute store result storage galaxy:temp item.tag.katana.type byte 1 run scoreboard players get @s kdsDisplayType
 execute store result storage galaxy:temp item.tag.katana.style byte 1 run scoreboard players get @s kdsDisplayStyle
 execute store result storage galaxy:temp item.tag.CustomModelData int 1 run scoreboard players get @s kdsDisplayModel
+data modify storage galaxy:temp item.tag.display.Name set from entity @s ArmorItems[3].tag.kdsKatana.Name
 data modify entity @s HandItems[0] set from storage galaxy:temp item

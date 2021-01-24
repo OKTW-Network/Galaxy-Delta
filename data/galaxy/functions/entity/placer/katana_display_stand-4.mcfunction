@@ -2,6 +2,7 @@ summon minecraft:armor_stand ^ ^ ^-0.37 {CustomNameVisible:0b,NoGravity:1b,Invul
 
 data modify entity @e[tag=katana_display_stand,tag=type-4,tag=init,limit=1] Rotation[0] set from entity @s Rotation[0]
 execute as @e[tag=katana_display_stand,tag=type-4,tag=init] at @s run tp ~ ~ ~
+scoreboard players set @e[tag=katana_display_stand,tag=type-4,tag=init] kdsType 4
 scoreboard players set @e[tag=katana_display_stand,tag=type-4,tag=init] kdsStatus 1
 tag @e[tag=katana_display_stand,tag=type-4,tag=init] remove init
 
