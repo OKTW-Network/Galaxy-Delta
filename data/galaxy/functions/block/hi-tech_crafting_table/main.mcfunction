@@ -1,5 +1,5 @@
 # machine protection
-function galaxy:block/protection-strict
+function galaxy:block/protection/main
 
 # block destroy
 execute unless predicate galaxy:block/hi-tech_crafting_table run function galaxy:block/hi-tech_crafting_table/destroy

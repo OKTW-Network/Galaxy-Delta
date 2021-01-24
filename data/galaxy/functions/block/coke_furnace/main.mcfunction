@@ -1,5 +1,5 @@
 # machine protection
-function galaxy:block/protection-strict
+function galaxy:block/protection/main
 
 # block destroy
 execute unless predicate galaxy:block/coke_furnace run function galaxy:block/coke_furnace/destroy

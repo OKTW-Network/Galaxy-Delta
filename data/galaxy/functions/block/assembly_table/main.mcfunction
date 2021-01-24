@@ -1,5 +1,5 @@
 # machine protection
-function galaxy:block/protection-strict
+function galaxy:block/protection/main
 
 # block destroy
 execute unless predicate galaxy:block/assembly_table run function galaxy:block/assembly_table/destroy
