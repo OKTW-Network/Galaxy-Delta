@@ -10,6 +10,8 @@ scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workStatus 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus0 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus1 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus2 0
+scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus3 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProcStatus-1 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1 0
 scoreboard players set @e[tag=advanced_blast_furnace,tag=init] workProc1CanWork 0

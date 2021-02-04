@@ -7,8 +7,5 @@ execute unless predicate galaxy:block/advanced_blast_furnace run function galaxy
 # block working
 function galaxy:block/advanced_blast_furnace/work/main
 
-# block states
-# function galaxy:block/advanced_blast_furnace/states/main
-
 # gui function
 execute if predicate minecraft:block_states/open run function galaxy:gui/advanced_blast_furnace/main

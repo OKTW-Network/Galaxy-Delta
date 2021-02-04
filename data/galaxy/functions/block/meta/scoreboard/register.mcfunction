@@ -4,6 +4,8 @@ scoreboard objectives add workStatus dummy "num-Block work status"
 scoreboard objectives add workProcStatus dummy "num-Block work processor status"
 scoreboard objectives add workProcStatus0 dummy "num-Block work processor status 0"
 scoreboard objectives add workProcStatus1 dummy "num-Block work processor status 1"
+scoreboard objectives add workProcStatus2 dummy "num-Block work processor status 2"
+scoreboard objectives add workProcStatus3 dummy "num-Block work processor status 3"
 scoreboard objectives add workProcStatus-1 dummy "num-Block work processor status -1"
 
 scoreboard objectives add workProc1 dummy "num-Block work processor1"
