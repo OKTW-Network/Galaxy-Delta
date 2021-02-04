@@ -13,6 +13,3 @@ scoreboard objectives add workProc1Burn dummy "num-Block work processor1 burn ti
 scoreboard objectives add workProc1BurnMax dummy "num-Block work processor1 burn time max"
 scoreboard objectives add workProc1Fuel dummy "num-Block work processor1 fuel"
 scoreboard objectives add workProc1Prog dummy "num-Block work processor1 progress"
-
-scoreboard objectives add elevatorTempUp dummy "num-Elevator temp up"
-scoreboard objectives add elevatorTempDown dummy "num-Elevator temp down"
