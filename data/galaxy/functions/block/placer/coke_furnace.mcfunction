@@ -2,7 +2,7 @@ execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~ ~
 execute unless entity @s[tag=placeFailed] run setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.coke_furnace"}'} replace
 
 execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~1 ~ {Silent:1b,CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["fake_block","coke_furnace_fake_block","init"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:10200,fakeBlock:1}}]}
-execute unless entity @s[tag=placeFailed] run function galaxy:block/directional
+execute unless entity @s[tag=placeFailed] run function galaxy:block/directional-horizon_4_facing
 tag @e[tag=fake_block,tag=init] remove init
 
 scoreboard players set @e[tag=coke_furnace,tag=init] statesLit 0

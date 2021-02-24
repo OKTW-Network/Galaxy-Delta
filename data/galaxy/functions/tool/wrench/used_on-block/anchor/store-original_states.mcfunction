@@ -11,6 +11,8 @@ execute at @s if predicate minecraft:block_states/facing-east run scoreboard pla
 execute at @s if predicate minecraft:block_states/facing-down run scoreboard players set @s wrenchOriFacing 4
 execute at @s if predicate minecraft:block_states/facing-up run scoreboard players set @s wrenchOriFacing 5
 
+execute at @s if score @e[tag=customBlock,distance=..0.05,limit=1] statesFacing matches -2147483648..2147483647 run scoreboard players operation @s wrenchOriFacing = @e[tag=customBlock,distance=..0.05,limit=1] statesFacing
+
 scoreboard players set @s wrenchOriAttach -1
 execute at @s if predicate minecraft:block_states/attachment-floor run scoreboard players set @s wrenchOriAttach 0
 execute at @s if predicate minecraft:block_states/attachment-wall run scoreboard players set @s wrenchOriAttach 1
