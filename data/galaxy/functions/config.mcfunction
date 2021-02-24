@@ -66,7 +66,7 @@ scoreboard players set #empower_lens_weather_condition Config 2
 # Success chance of the process
 # higher value mean higher success chance
 # float, range: 0 ~ 1.0, default: 0.0005
-## see the file at ..\Galaxy-delta\data\galaxy\predicates\configurable\empower_lens_success_chance
+## see the file at ..\data\galaxy\predicates\configurable\empower_lens_success_chance
 
 
 ############################################

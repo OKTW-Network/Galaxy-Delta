@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{assembler:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"assembler\"}}}"
                     }
                 ]
             }

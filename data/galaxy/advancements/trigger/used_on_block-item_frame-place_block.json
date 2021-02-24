@@ -8,17 +8,17 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "item_frame": {
+        "place_block": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "item": {
                     "item": "minecraft:item_frame",
-                    "nbt": "{blockPlacer:{}}"
+                    "nbt": "{CustomData:{galaxy:{Trigger:\"place_block\"}}}"
                 }
             }
         }
     },
     "rewards": {
-		"function": "galaxy:trigger/used_on_block-item_frame-placer-block"
+		"function": "galaxy:trigger/used_on_block-item_frame-place_block"
     }
 }

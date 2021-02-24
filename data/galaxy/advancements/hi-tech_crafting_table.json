@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{HTct:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"hi-tech_crafting_table\"}}}"
                     }
                 ]
             }
