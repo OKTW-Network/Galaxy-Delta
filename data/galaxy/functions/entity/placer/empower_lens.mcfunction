@@ -1,6 +1,6 @@
 tag @s[nbt=!{Facing:1b}] add placeFailed
 
-execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,Invulnerable:1b,Small:1b,Invisible:1b,Silent:1b,ShowArms:1b,DisabledSlots:4079166,Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f]},ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:30300,fakeBlock:1}}],Tags:["customEntity","empower_lens","no_overlap","attachment","drop_self","init"],Team:"GalaxyCustomE"}
+execute unless entity @s[tag=placeFailed] run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,Invulnerable:1b,Small:1b,Invisible:1b,Silent:1b,ShowArms:1b,DisabledSlots:4079166,Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f]},ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:30300}}],Tags:["customEntity","empower_lens","no_overlap","attachment","drop_self","init"],Team:"GalaxyCustomE"}
 
 data modify entity @e[tag=empower_lens,tag=init,limit=1] Rotation set from entity @s Rotation
 execute as @e[tag=empower_lens,tag=init] at @s run tp ~ ~ ~
