@@ -1,1 +1,1 @@
-execute as @e[tag=attachment] at @s run function galaxy:entity/attachable
+execute as @e[tag=customEntity,tag=attachment] at @s run function galaxy:entity/attachable/main

@@ -12,7 +12,7 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "item":{
-                    "nbt": "{wrench:{}}"
+                    "nbt": "{CustomData:{galaxy:{Trigger:\"use_wrench\"}}}"
                 }
             }
         }

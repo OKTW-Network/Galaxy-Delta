@@ -4,7 +4,7 @@
         "equipment": {
             "offhand": {
                 "item":"minecraft:item_frame",
-                "nbt": "{wrench:{}}"
+                "nbt": "{CustomData:{galaxy:{id:\"wrench\"}}}"
             }
         }
     },

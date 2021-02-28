@@ -1,0 +1,3 @@
+function galaxy:update_to_new_version/v03_to_v04/item-player_inventory/main
+function galaxy:update_to_new_version/v03_to_v04/entity
+function galaxy:update_to_new_version/v03_to_v04/block
