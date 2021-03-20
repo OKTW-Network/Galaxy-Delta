@@ -5,7 +5,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:1b,tag:{component:{sight:1}}}]}"
+          "nbt": "{Items:[{Slot:1b,tag:{CustomData:{galaxy:{id:\"component\",tag:{sight:{}}}}}}]}"
         }
       }
     },
@@ -13,7 +13,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:7b,tag:{component:{addon:1}}}]}"
+          "nbt": "{Items:[{Slot:7b,tag:{CustomData:{galaxy:{id:\"component\",tag:{addon:{}}}}}}]}"
         }
       }
     },
@@ -21,7 +21,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:9b,tag:{component:{barrel:1}}}]}"
+          "nbt": "{Items:[{Slot:9b,tag:{CustomData:{galaxy:{id:\"component\",tag:{barrel:{}}}}}}]}"
         }
       }
     },
@@ -29,7 +29,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:10b,tag:{component:{casing_gun:1}}}]}"
+          "nbt": "{Items:[{Slot:10b,tag:{CustomData:{galaxy:{id:\"component\",tag:{casing_gun:{}}}}}}]}"
         }
       }
     },
@@ -37,7 +37,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:11b,tag:{component:{laser_core:1}}}]}"
+          "nbt": "{Items:[{Slot:11b,tag:{CustomData:{galaxy:{id:\"component\",tag:{laser_core:{}}}}}}]}"
         }
       }
     },
@@ -45,7 +45,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:19b,tag:{component:{cooling_system:1}}}]}"
+          "nbt": "{Items:[{Slot:19b,tag:{CustomData:{galaxy:{id:\"component\",tag:{cooling_system:{}}}}}}]}"
         }
       }
     },
@@ -53,7 +53,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:20b,tag:{component:{handle:1}}}]}"
+          "nbt": "{Items:[{Slot:20b,tag:{CustomData:{galaxy:{id:\"component\",tag:{handle_gun:{}}}}}}]}"
         }
       }
     },
@@ -61,7 +61,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:24b,tag:{component:{cosmetic:1}}}]}"
+          "nbt": "{Items:[{Slot:24b,tag:{CustomData:{galaxy:{id:\"component\",tag:{cosmetic:{}}}}}}]}"
         }
       }
     },
@@ -69,7 +69,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "block": {
-          "nbt": "{Items:[{Slot:26b,tag:{component:{color_lens:1}}}]}"
+          "nbt": "{Items:[{Slot:26b,tag:{CustomData:{galaxy:{id:\"component\",tag:{color_lens:{}}}}}}]}"
         }
       }
     }

@@ -1,1 +1,1 @@
-execute store result block ~ ~ ~ Items[{Slot:13b}].tag.gun.accelerate int 1 run data get block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{handle:1}}].component.alteration.accelerate 1
+execute store result block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.accelerate int 1 run data get block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{handle_gun:{}}}}}].CustomData.galaxy.tag.handle_gun.Alteration.accelerate 1

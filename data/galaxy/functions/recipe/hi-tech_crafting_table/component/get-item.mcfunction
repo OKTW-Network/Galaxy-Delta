@@ -10,9 +10,9 @@ function galaxy:recipe/hi-tech_crafting_table/component/item/laser_core_t3
 function galaxy:recipe/hi-tech_crafting_table/component/item/cooling_system_t1
 function galaxy:recipe/hi-tech_crafting_table/component/item/cooling_system_t2
 function galaxy:recipe/hi-tech_crafting_table/component/item/cooling_system_t3
-function galaxy:recipe/hi-tech_crafting_table/component/item/handle_slime
-function galaxy:recipe/hi-tech_crafting_table/component/item/handle_wood
-function galaxy:recipe/hi-tech_crafting_table/component/item/handle_obsidian
+function galaxy:recipe/hi-tech_crafting_table/component/item/handle_gun_slime
+function galaxy:recipe/hi-tech_crafting_table/component/item/handle_gun_wood
+function galaxy:recipe/hi-tech_crafting_table/component/item/handle_gun_obsidian
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_pure
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_penetrate
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_trace

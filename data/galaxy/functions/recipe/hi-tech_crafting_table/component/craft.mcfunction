@@ -52,20 +52,20 @@ execute if score @s reqRcpHTct matches 10 as @a[scores={reqHTctCraft=1..},tag=su
 execute if score @s reqRcpHTct matches 10 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/cooling_system_t3
 
 # Handle
-execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/handle_slime
-execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/handle_slime
-execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/handle_slime
-execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/handle_slime
+execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/handle_gun_slime
+execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/handle_gun_slime
+execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/handle_gun_slime
+execute if score @s reqRcpHTct matches 11 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/handle_gun_slime
 
-execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/handle_wood
-execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/handle_wood
-execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/handle_wood
-execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/handle_wood
+execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/handle_gun_wood
+execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/handle_gun_wood
+execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/handle_gun_wood
+execute if score @s reqRcpHTct matches 12 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/handle_gun_wood
 
-execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/handle_obsidian
-execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/handle_obsidian
-execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/handle_obsidian
-execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/handle_obsidian
+execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/handle_gun_obsidian
+execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/handle_gun_obsidian
+execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/handle_gun_obsidian
+execute if score @s reqRcpHTct matches 13 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/handle_gun_obsidian
 
 # Barrel
 execute if score @s reqRcpHTct matches 14 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/barrel_pure

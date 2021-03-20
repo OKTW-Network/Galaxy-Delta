@@ -8,7 +8,7 @@
         "equipment": {
           "mainhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{gun:{}}"
+            "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
           }
         }
       }
@@ -20,7 +20,7 @@
         "equipment": {
           "offhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{gun:{}}"
+            "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
           }
         }
       }

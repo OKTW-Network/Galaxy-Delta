@@ -10,7 +10,7 @@ scoreboard players operation #3 calcu_temp %= #100 num
 scoreboard players operation #2 calcu_temp -= #3 calcu_temp
 scoreboard players operation #2 calcu_temp += #1 calcu_temp
 
-execute store result storage galaxy:temp item.tag.gun.status int 1 run scoreboard players get #1 calcu_temp
+execute store result storage galaxy:temp item.tag.CustomData.galaxy.tag.status int 1 run scoreboard players get #1 calcu_temp
 execute store result storage galaxy:temp item.tag.CustomModelData int 1 run scoreboard players get #2 calcu_temp
 data modify storage cu:replaceitem item set from storage galaxy:temp item
 function cu:replaceitem/hand_main

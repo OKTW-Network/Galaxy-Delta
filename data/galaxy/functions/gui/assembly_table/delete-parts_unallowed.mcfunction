@@ -4,6 +4,6 @@ execute unless data block ~ ~ ~ Items[{Slot:9b,tag:{component:{barrel:1}}}] run 
 execute unless data block ~ ~ ~ Items[{Slot:10b,tag:{component:{casing_gun:1}}}] run replaceitem block ~ ~ ~ container.10 minecraft:air
 execute unless data block ~ ~ ~ Items[{Slot:11b,tag:{component:{laser_core:1}}}] run replaceitem block ~ ~ ~ container.11 minecraft:air
 execute unless data block ~ ~ ~ Items[{Slot:19b,tag:{component:{cooling_system:1}}}] run replaceitem block ~ ~ ~ container.19 minecraft:air
-execute unless data block ~ ~ ~ Items[{Slot:20b,tag:{component:{handle:1}}}] run replaceitem block ~ ~ ~ container.20 minecraft:air
+execute unless data block ~ ~ ~ Items[{Slot:20b,tag:{component:{handle_gun:1}}}] run replaceitem block ~ ~ ~ container.20 minecraft:air
 execute unless data block ~ ~ ~ Items[{Slot:24b,tag:{component:{cosmetic:1}}}] run replaceitem block ~ ~ ~ container.24 minecraft:air
 execute unless data block ~ ~ ~ Items[{Slot:26b,tag:{component:{color_lens:1}}}] run replaceitem block ~ ~ ~ container.26 minecraft:air

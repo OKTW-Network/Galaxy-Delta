@@ -4,7 +4,7 @@
         "equipment": {
             "mainhand": {
                 "item":"minecraft:carrot_on_a_stick",
-                "nbt": "{gun:{status:0}}"
+                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{status:0}}}}"
             }
         }
     },

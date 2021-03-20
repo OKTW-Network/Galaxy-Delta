@@ -17,7 +17,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{gun:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
                     }
                 ]
             }
