@@ -1,4 +1,4 @@
-function galaxy:weapon/gun/shoot/requrest
+function galaxy:weapon/gun/shoot/request
 
 execute if score @s reqGunFire matches 1.. run scoreboard players remove @s[scores={gunSchedule=1..}] gunSchedule 1
 
