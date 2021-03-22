@@ -12,7 +12,7 @@
             "equipment": {
               "mainhand": {
                 "item": "minecraft:carrot_on_a_stick",
-                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{addon:{id:\"gun.addon.type1.dual\"}}}}}"
+                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
               }
             }
           }
@@ -27,7 +27,7 @@
             "equipment": {
               "offhand": {
                 "item": "minecraft:carrot_on_a_stick",
-                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{addon:{id:\"gun.addon.type1.dual\"}}}}}"
+                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
               }
             }
           }
