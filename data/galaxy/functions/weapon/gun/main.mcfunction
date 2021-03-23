@@ -1,4 +1,4 @@
-execute as @a[scores={gunDelay=0,gunSchedule=1..},tag=usedItem] run function galaxy:weapon/gun/shoot/tick_patch
+execute as @a[scores={gunDelay=0,gunSchedule=1..},tag=cu.usedItem,tag=!galaxy.gunTickPatchLock] run function galaxy:weapon/gun/shoot/tick_patch
 
 function galaxy:weapon/gun/meta/detector/main
 
@@ -16,3 +16,5 @@ execute as @a[scores={FhGunAclrateTim=1..}] run function galaxy:weapon/gun/accel
 execute as @a[scores={gunDelay=1..}] run function galaxy:weapon/gun/delay/main
 
 execute as @a run function galaxy:weapon/gun/meta/detector/untag
+
+tag @a[tag=galaxy.gunTickPatchLock] remove galaxy.gunTickPatchLock
