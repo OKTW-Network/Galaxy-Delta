@@ -77,104 +77,59 @@ scoreboard players set #empower_lens_weather_condition Config 2
   # Katana                               #
   ########################################
 
-# Enable action: stun
+# Enable Action: stun
 # boolean, default: 1
 scoreboard players set #katana_act_stun Config 1
 
-# Enable action: flash
+# Enable Action: flash
 # boolean, default: 1
 scoreboard players set #katana_act_flash Config 1
 
-# Enable action: shock
-# boolean, default: 1
-scoreboard players set #katana_act_shock Config 1
 
-
-# Action: swap - play sounds
+# Sounds - Action: swap
 # boolean, default: 1
 scoreboard players set #katana_act_swap_sound Config 1
 
-# Action: stun - play sounds
+# Sounds - Action: stun
 # boolean, default: 1
 scoreboard players set #katana_act_stun_sound Config 1
 
-# Action: shock - play sounds
-# boolean, default: 1
-scoreboard players set #katana_act_shock_sound Config 1
 
-
-# Action: shock - particles
-# boolean, default: 1
-scoreboard players set #katana_act_shock_particle Config 1
-
-
-# Action: swap-pull - cooldown
+# Cooldown - Action: swap-pull
 # integer, tick, default: 10
 scoreboard players set #katana_act_swap_pull_cd Config 10
 
-# Action: swap-put - cooldown
+# Cooldown - Action: swap-put
 # integer, tick, default: 10
 scoreboard players set #katana_act_swap_put_cd Config 10
 
-# Action: stun - cooldown when hit
+# Cooldown (hit) - Action: stun
 # integer, tick, default: 60
 scoreboard players set #katana_act_stun_hit_cd Config 60
 
-# Action: stun - cooldown when miss
+# Cooldown (miss) - Action: stun
 # integer, tick, default: 20
 scoreboard players set #katana_act_stun_miss_cd Config 20
 
-# Action: flash - cooldown max
+# Cooldown (max) - Action: flash
 # integer, tick, default: 80
 scoreboard players set #katana_act_flash_cd_max Config 80
-
-# Action: shock - cooldown
-# integer, tick, default: 120
-scoreboard players set #katana_act_shock_cd Config 120
-
-
-# Action: flash - detection timer
-# Not recommended higher than or equal to 5.
-# integer, tick, default: 4
-scoreboard players set #katana_act_flash_timer Config 4
-
-
-# Action: flash - distance limit
-# integer, block, default: 5
-scoreboard players set #katana_act_flash_distance_limit Config 5
-
-
-# Action: stun - damage
-# integer, default: 1
-scoreboard players set #katana_act_stun_damage Config 1
-
-# Action: flash - damage
-# integer, default: 16
-scoreboard players set #katana_act_flash_damage Config 16
-
-# Action: shock - damage base
-# integer, default: 10
-scoreboard players set #katana_act_shock_damage_base Config 10
-
-# Action: shock - damage per block
-# integer, default: 2
-scoreboard players set #katana_act_shock_damage_addition Config 2
 
 
   ########################################
   # Energy saber                         #
   ########################################
 
-# Action: turn-on/off play sounds
+# Sounds - Action: turn-on/off
 # boolean, default: 1
 scoreboard players set #energy_saber_act_turn_sound Config 1
 
 
-# Action: turn-on cooldown
+# Cooldown - Action: turn-on
 # integer, tick, default: 30
 scoreboard players set #energy_saber_act_turn_on_cd Config 30
 
-# Action: turn-off cooldown
+# Cooldown - Action: turn-off
 # integer, tick, default: 30
 scoreboard players set #energy_saber_act_turn_off_cd Config 30
 
@@ -186,10 +141,6 @@ scoreboard players set #energy_saber_act_turn_off_cd Config 30
 # Enable status_effect:stun
 # boolean, default: 1
 scoreboard players set #stu_stun Config 1
-
-# Status_effect:stun duration
-# integer, tick, default: 40
-scoreboard players set #stu_stun_dur Config 40
 
 
 ############################################

@@ -2,76 +2,28 @@
   "condition": "minecraft:alternative",
   "terms": [
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "mainhand": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{katana:{type:1b}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/hand_main-katana"
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "offhand": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{katana:{type:1b}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/hand_off-katana"
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "mainhand": {
-            "item": "minecraft:netherite_sword",
-            "nbt": "{katana:{type:2b}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/hand_main-katana_edge"
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "offhand": {
-            "item": "minecraft:netherite_sword",
-            "nbt": "{katana:{type:2b}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/hand_off-katana_edge"
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "mainhand": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{katana:{type:3b}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/hand_main-katana_scabbard"
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "offhand": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{katana:{type:3b}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/hand_off-katana_scabbard"
     }
   ]
 }

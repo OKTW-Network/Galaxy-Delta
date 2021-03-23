@@ -4,7 +4,7 @@
 	    "equipment": {
 		    "mainhand": {
                 "item":"minecraft:netherite_sword",
-                "nbt": "{katana:{type:2b}}"
+                "nbt": "{CustomData:{galaxy:{id:\"katana\",tag:{type:2b}}}}"
             }
 	    }
     },

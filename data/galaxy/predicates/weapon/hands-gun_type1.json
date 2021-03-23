@@ -1,11 +1,11 @@
 {
-	"condition": "minecraft:inverted",
-	"term": {
-		"condition": "minecraft:alternative",
-		"terms": [
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
       {
         "condition": "minecraft:inverted",
-          "term": {
+        "term": {
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
@@ -20,7 +20,7 @@
       },
       {
         "condition": "minecraft:inverted",
-          "term": {
+        "term": {
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
@@ -34,5 +34,5 @@
         }
       }
     ]
-	}
+  }
 }

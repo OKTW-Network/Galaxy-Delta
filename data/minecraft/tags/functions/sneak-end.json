@@ -1,5 +1,6 @@
 {
     "values":[
-        "galaxy:tool/wrench/handler-sneak"
+        "galaxy:tool/wrench/handler-sneak",
+        "galaxy:weapon/katana/action/handler-sneak"
     ]
 }

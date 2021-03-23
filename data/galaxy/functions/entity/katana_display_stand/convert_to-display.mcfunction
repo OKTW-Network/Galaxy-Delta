@@ -4,8 +4,8 @@ scoreboard players set #3 calcu_temp 100
 scoreboard players set #4 calcu_temp 10
 scoreboard players operation #5 calcu_temp = @s kdsType
 scoreboard players operation #6 calcu_temp = @s kdsStatus
-scoreboard players operation #7 calcu_temp = @s kdsDisplayType
-scoreboard players operation #8 calcu_temp = @s kdsDisplayStyle
+execute store result score #7 calcu_temp store result score #9 calcu_temp run data get entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaTag.type
+execute store result score #8 calcu_temp run data get entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaTag.style
 
 scoreboard players remove #5 calcu_temp 1
 scoreboard players remove #6 calcu_temp 1
@@ -23,6 +23,6 @@ scoreboard players operation #1 calcu_temp += #6 calcu_temp
 
 execute store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players get #1 calcu_temp
 
-execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 run replaceitem entity @s weapon.offhand netherite_sword{entityItem:1b}
-execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players add #1 calcu_temp 10
-execute if score @s kdsType matches 1 if score @s kdsDisplayType matches 1 store result entity @s HandItems[1].tag.CustomModelData int 1 run scoreboard players add #1 calcu_temp 10
+execute if score @s kdsType matches 1 if score #9 calcu_temp matches 1 run replaceitem entity @s weapon.offhand netherite_sword{entityItem:1b}
+execute if score @s kdsType matches 1 if score #9 calcu_temp matches 1 store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players add #1 calcu_temp 10
+execute if score @s kdsType matches 1 if score #9 calcu_temp matches 1 store result entity @s HandItems[1].tag.CustomModelData int 1 run scoreboard players add #1 calcu_temp 10

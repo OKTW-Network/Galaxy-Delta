@@ -1,4 +1,4 @@
-execute store result score #1 calcu_temp run scoreboard players get @s cdActShock
+execute store result score #1 calcu_temp run scoreboard players get @s ktnShockCd
 execute store result score #2 calcu_temp run scoreboard players get #katana_act_shock_cd Config
 scoreboard players operation #1 calcu_temp *= #1000 num
 scoreboard players operation #1 calcu_temp /= #2 calcu_temp
@@ -14,4 +14,4 @@ execute if score #1 calcu_temp matches 101..200 run title @s actionbar [{"transl
 execute if score #1 calcu_temp matches 1..100 run title @s actionbar [{"translate":"action.shock","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=========","color":"green"},{"text":"+","color":"yellow"},{"text":"]","color":"dark_gray"}]
 execute if score #1 calcu_temp matches ..0 run title @s actionbar [{"translate":"action.shock","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
 
-scoreboard players set @s hudKatana 6
+scoreboard players set @s hudKatana 5

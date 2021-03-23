@@ -1,4 +1,3 @@
 tag @s[tag=canActSwapPut] remove canActSwapPut
-function galaxy:weapon/katana/meta/detector/style-scabbard
-function galaxy:weapon/katana/meta/detector/style-edge
-execute if score @s styleScabbard matches 1.. if score @s styleEdge matches 1.. if score @s styleScabbard = @s styleEdge run tag @s add canActSwapPut
+function galaxy:weapon/katana/get_data-base
+execute if score @s ktnStlScabbard matches 1.. if score @s ktnStlEdge matches 1.. if score @s ktnStlScabbard = @s ktnStlEdge run tag @s add canActSwapPut

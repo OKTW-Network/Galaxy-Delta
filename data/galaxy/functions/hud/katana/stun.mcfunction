@@ -1,6 +1,6 @@
-execute store result score #1 calcu_temp run scoreboard players get @s cdActStun
-execute if entity @s[scores={sucActStun=1..}] store result score #2 calcu_temp run scoreboard players get #katana_act_stun_hit_cd Config
-execute if entity @s[scores={sucActStun=0}] store result score #2 calcu_temp run scoreboard players get #katana_act_stun_miss_cd Config
+execute store result score #1 calcu_temp run scoreboard players get @s ktnStunCd
+execute if entity @s[scores={ktnStunSuc=1..}] store result score #2 calcu_temp run scoreboard players get #katana_act_stun_hit_cd Config
+execute if entity @s[scores={ktnStunSuc=0}] store result score #2 calcu_temp run scoreboard players get #katana_act_stun_miss_cd Config
 scoreboard players operation #1 calcu_temp *= #1000 num
 scoreboard players operation #1 calcu_temp /= #2 calcu_temp
 execute if score #1 calcu_temp matches 901..1000 run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"+","color":"yellow"},{"text":"---------","color":"gray"},{"text":"]","color":"dark_gray"}]

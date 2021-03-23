@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+	    "equipment": {
+		    "offhand": {
+                "item":"minecraft:netherite_sword",
+                "nbt": "{CustomData:{galaxy:{id:\"katana\",tag:{type:2b}}}}"
+            }
+	    }
+    },
+    "entity":"this"
+}

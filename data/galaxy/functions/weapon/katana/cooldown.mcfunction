@@ -1,8 +1,5 @@
-execute as @a[scores={cdActSwapPull=1..}] run scoreboard players remove @s cdActSwapPull 1
-execute as @a[scores={cdActSwapPut=1..}] run scoreboard players remove @s cdActSwapPut 1
-execute as @a[scores={cdActStun=1..}] run scoreboard players remove @s cdActStun 1
-execute as @a[scores={timActFlash=1..}] run scoreboard players remove @s timActFlash 1
-execute as @a[scores={cdActFlash=1..}] run scoreboard players remove @s cdActFlash 1
-execute as @a[scores={cdActStorm=1..}] run scoreboard players remove @s cdActStorm 1
-execute as @a[scores={timActStorm=1..}] run scoreboard players remove @s timActStorm 1
-execute as @a[scores={cdActShock=1..}] run scoreboard players remove @s cdActShock 1
+execute as @a[scores={ktnSwapPullCd=1..}] run scoreboard players remove @s ktnSwapPullCd 1
+execute as @a[scores={ktnSwapPutCd=1..}] run scoreboard players remove @s ktnSwapPutCd 1
+execute as @a[scores={ktnStunCd=1..}] run scoreboard players remove @s ktnStunCd 1
+execute as @a[scores={ktnFlashCd=1..}] run scoreboard players remove @s ktnFlashCd 1
+execute as @a[scores={ktnShockCd=1..}] run scoreboard players remove @s ktnShockCd 1

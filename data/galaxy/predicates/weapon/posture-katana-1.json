@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "minecraft:hand_main-empty"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/hand_off-katana"
+  }
+]

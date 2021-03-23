@@ -1,32 +1,28 @@
-
-### boolean use numbers instead of true or false
-### false = 0
-### true = 1
-
-
 scoreboard objectives add holdKatana dummy "num-Holding katana"
 
-scoreboard objectives add modelKatana dummy "num-Katana model"
-scoreboard objectives add modelScabbard dummy "num-scabbard model"
-scoreboard objectives add modelEdge dummy "num-edge model"
+scoreboard objectives add ktnMdlKatana dummy "num-Katana model"
+scoreboard objectives add ktnMdlScabbard dummy "num-scabbard model"
+scoreboard objectives add ktnMdlEdge dummy "num-edge model"
 
-scoreboard objectives add styleKatana dummy "num-Katana style"
-scoreboard objectives add styleScabbard dummy "num-scabbard style"
-scoreboard objectives add styleEdge dummy "num-edge style"
+scoreboard objectives add ktnStlKatana dummy "num-Katana style"
+scoreboard objectives add ktnStlScabbard dummy "num-scabbard style"
+scoreboard objectives add ktnStlEdge dummy "num-edge style"
 
-scoreboard objectives add cdActSwapPull dummy "num-Action:Swap-PullOut cooldown"
-scoreboard objectives add cdActSwapPut dummy "num-Action:Swap-PutIn cooldown"
-scoreboard objectives add cdActStun dummy "num-Action:Stun cooldown"
-scoreboard objectives add cdActFlash dummy "num-Action:Flash cooldown"
-scoreboard objectives add cdActFlashMax dummy "num-Action:Flash cooldown max"
-scoreboard objectives add cdActShock dummy "num-Action:Shock cooldown"
+scoreboard objectives add ktnSwapPullCd dummy "num-katana Swap-PullOut cooldown"
+scoreboard objectives add ktnSwapPutCd dummy "num-katana Swap-PutIn cooldown"
+scoreboard objectives add ktnStunCd dummy "num-katana Stun cooldown"
+scoreboard objectives add ktnStunSuc dummy "num-katana Stun success count"
+scoreboard objectives add ktnStunDmg dummy "num-katana Stun damage"
+scoreboard objectives add ktnStunDur dummy "num-katana Stun duration"
+scoreboard objectives add ktnFlashCd dummy "num-katana Flash cooldown"
+scoreboard objectives add ktnFlashCdMax dummy "num-katana Flash cooldown max"
+scoreboard objectives add ktnFlashDmg dummy "num-katana Flash damage"
+scoreboard objectives add ktnFlashCrge dummy "num-katana Flash charge"
+scoreboard objectives add ktnFlashCrgeLvl dummy "num-katana Flash charge level"
+scoreboard objectives add ktnFlashMoved dummy "num-katana Flash moved"
+scoreboard objectives add ktnFlashMoveRem dummy "num-katana Flash move remain"
+scoreboard objectives add ktnFlashDist dummy "num-katana Flash moved distance"
+# scoreboard objectives add ktnShockCd dummy "num-katana Shock cooldown"
 
-scoreboard objectives add timActFlash dummy "num-Action:Flash timer"
-
-scoreboard objectives add sucActStun dummy "num-Action:Stun success count"
-
-scoreboard objectives add actFlashMoveRem dummy "num-Action:Flash move remain"
-scoreboard objectives add actFlashDist dummy "num-Action:Flash moved distance"
-
-scoreboard objectives add PosY1ActShock dummy "num-Action:Shock posY temp1"
-scoreboard objectives add PosY2ActShock dummy "num-Action:Shock posY temp2"
+# scoreboard objectives add PosY1ActShock dummy "num-katana Shock posY temp1"
+# scoreboard objectives add PosY2ActShock dummy "num-katana Shock posY temp2"

@@ -1,4 +1,4 @@
-scoreboard players set #2 calcu_temp 8
+tag @s add galaxy.ktnStunUser
 execute at @s run function galaxy:weapon/katana/action/stun/damage-init
-scoreboard players operation @s sucActStun = #1 calcu_temp
+tag @s remove galaxy.ktnStunUser
 function galaxy:weapon/katana/action/stun/consequence
