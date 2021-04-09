@@ -14,7 +14,8 @@ data modify storage galaxy:temp item[0] set from storage cu:item simplify.item
 data modify storage galaxy:temp item[0].tag merge value {HideFlags:63,guiItem:1}
 execute store result storage galaxy:temp item[0].Slot byte 1 run scoreboard players get #2 calcu_temp
 
-function math:calcu_temp/store_to_1
+function math:calcu_temp/make_data
+data modify storage galaxy:temp +recipe.hi-tech_crafting_table.build-recipe.calcu_temp.self set from storage math:calcu_temp result
 
 execute store result storage galaxy:temp item[0].requireTotal int 1 store result score #1 calcu_temp store result score #2 calcu_temp run data get storage galaxy:temp item[0].require
 scoreboard players operation #1 calcu_temp /= #12 num
@@ -28,7 +29,8 @@ data modify storage galaxy:temp item[0].requireList set value []
 data modify storage galaxy:temp require set value []
 function galaxy:recipe/hi-tech_crafting_table/build-require
 
-function math:calcu_temp/extract_from_1
+data modify storage math:calcu_temp input set from storage galaxy:temp +recipe.hi-tech_crafting_table.build-recipe.calcu_temp.self
+function math:calcu_temp/extract_data
 
 data remove storage galaxy:temp recipe[-1]
 execute store result score #2 calcu_temp store result score #3 calcu_temp run scoreboard players remove #1 calcu_temp 1

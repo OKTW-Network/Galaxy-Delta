@@ -1,6 +1,3 @@
-scoreboard objectives add Meta dummy
-scoreboard objectives add Config dummy
-
 scoreboard objectives add VersionGalaxyX dummy
 scoreboard objectives add VersionGalaxyY dummy
 scoreboard objectives add VersionGalaxyZ dummy

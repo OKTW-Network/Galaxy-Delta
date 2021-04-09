@@ -1,0 +1,11 @@
+{
+  "values": [
+    "galaxy:meta/scoreboard/set_player_score",
+    "galaxy:hud/meta/scoreboard/set_player_score",
+    "galaxy:tool/meta/scoreboard/set_player_score",
+    "galaxy:book/meta/scoreboard/set_player_score",
+    "galaxy:weapon/katana/meta/scoreboard/set_player_score",
+    "galaxy:weapon/energy_saber/meta/scoreboard/set_player_score",
+    "galaxy:weapon/gun/meta/scoreboard/set_player_score"
+  ]
+}

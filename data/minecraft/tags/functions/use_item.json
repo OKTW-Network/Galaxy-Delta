@@ -1,7 +1,7 @@
 {
     "values":[
         "galaxy:weapon/katana/action/handler-use_item",
-        "galaxy:weapon/energy_saber/handler-use_item",
+        "galaxy:weapon/energy_saber/action/handler-use_item",
         "galaxy:weapon/gun/shoot/handler-use_item"
     ]
 }

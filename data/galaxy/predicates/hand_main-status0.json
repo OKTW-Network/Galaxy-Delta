@@ -3,7 +3,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "nbt": "{status:0}"
+                "nbt": "{CustomData:{galaxy:{tag:{status:0b}}}}"
             }
         }
     },

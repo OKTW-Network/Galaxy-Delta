@@ -1,0 +1,16 @@
+{
+  "values": [
+    "galaxy:meta/scoreboard/register",
+    "galaxy:recipe/meta/scoreboard/register",
+    "galaxy:gui/meta/scoreboard/register",
+    "galaxy:hud/meta/scoreboard/register",
+    "galaxy:status_effect/meta/scoreboard/register",
+    "galaxy:block/meta/scoreboard/register",
+    "galaxy:entity/meta/scoreboard/register",
+    "galaxy:tool/meta/scoreboard/register",
+    "galaxy:book/meta/scoreboard/register",
+    "galaxy:weapon/katana/meta/scoreboard/register",
+    "galaxy:weapon/energy_saber/meta/scoreboard/register",
+    "galaxy:weapon/gun/meta/scoreboard/register"
+  ]
+}

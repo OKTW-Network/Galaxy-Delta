@@ -1,5 +1,6 @@
 {
     "values":[
-        "global:load"
+        "galaxy:check_and_run-initial",
+        "galaxy:check_and_run-setup"
     ]
 }

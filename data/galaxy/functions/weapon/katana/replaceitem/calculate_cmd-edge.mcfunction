@@ -1,6 +1,6 @@
 scoreboard players set #1 calcu_temp 110201
 scoreboard players set #2 calcu_temp 10000
-execute store result score #3 calcu_temp run data get storage galaxy:temp katana.replaceitem.itemCustomDataTag.style
+execute store result score #3 calcu_temp run data get storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag.style
 
 scoreboard players remove #3 calcu_temp 1
 

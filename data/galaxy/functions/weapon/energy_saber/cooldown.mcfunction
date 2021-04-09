@@ -1,2 +1,2 @@
-execute as @a[scores={cdSaberTurnOn=1..}] run scoreboard players remove @s cdSaberTurnOn 1
-execute as @a[scores={cdSaberTurnOff=1..}] run scoreboard players remove @s cdSaberTurnOff 1
+execute as @a[scores={sbrTurnOnCd=1..}] run scoreboard players remove @s sbrTurnOnCd 1
+execute as @a[scores={sbrTurnOffCd=1..}] run scoreboard players remove @s sbrTurnOffCd 1
