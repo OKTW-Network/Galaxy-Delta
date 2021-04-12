@@ -3,15 +3,15 @@ data modify storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag set
 
 data modify storage galaxy:get item set value []
 function galaxy:weapon/katana/get/katana
-data modify storage cu:replaceitem item set from storage galaxy:get item[0]
+data modify storage cu:item input set from storage galaxy:get item[0]
 function galaxy:weapon/katana/replaceitem/calculate_cmd-katana
-execute store result storage cu:replaceitem item.tag.CustomModelData int 1 run scoreboard players get @s ktnMdlKatana
+execute store result storage cu:item input.tag.CustomModelData int 1 run scoreboard players get @s ktnMdlKatana
 data modify storage galaxy:temp +weapon.katana.build-lore.itemCustomDataTag set from storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag
 function galaxy:weapon/katana/build-lore/katana
-data modify storage cu:replaceitem item.tag.display.Lore set from storage galaxy:temp +weapon.katana.build-lore.result
-data modify storage cu:replaceitem item.tag.display.Name set from storage galaxy:temp +weapon.katana.replaceitem.itemTag.display.Name
-data modify storage cu:replaceitem item.tag.CustomData.galaxy.tag set from storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag
-data modify storage cu:replaceitem item.tag.CustomData.galaxy.tag.type set value 1b
-function cu:replaceitem/hand_off
+data modify storage cu:item input.tag.display.Lore set from storage galaxy:temp +weapon.katana.build-lore.result
+data modify storage cu:item input.tag.display.Name set from storage galaxy:temp +weapon.katana.replaceitem.itemTag.display.Name
+data modify storage cu:item input.tag.CustomData.galaxy.tag set from storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag
+data modify storage cu:item input.tag.CustomData.galaxy.tag.type set value 1b
+function cu:item/replaceitem/hand_off
 
 replaceitem entity @s weapon.mainhand minecraft:air
