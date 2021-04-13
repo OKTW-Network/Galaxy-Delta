@@ -11,8 +11,8 @@ data modify storage galaxy:recipe Samb.attribute append from storage galaxy:reci
 function galaxy:recipe/super_assembler/build-attribute/projectile_color
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_color
 
-function galaxy:recipe/super_assembler/build-attribute/addon
-data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.addon
+function galaxy:recipe/super_assembler/build-attribute/special
+data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.special
 
 function galaxy:recipe/super_assembler/build-attribute/projectile_damage
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_damage

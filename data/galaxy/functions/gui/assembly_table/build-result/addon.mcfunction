@@ -1,2 +1,0 @@
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.addon.id set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{addon:{}}}}}].CustomData.galaxy.tag.addon.Alteration.addon.id
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.addon.Name set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{addon:{}}}}}].CustomData.galaxy.tag.addon.Alteration.addon.Name

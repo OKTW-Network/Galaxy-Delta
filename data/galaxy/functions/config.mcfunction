@@ -183,10 +183,10 @@ scoreboard players set #galaxy$hud_katana_act_shock Config 1
 # boolean, default: 1
 scoreboard players set #galaxy$hud_gun Config 1
 
-# Enable single gun on HUD:gun
+# Enable type1 gun on HUD:gun
 # boolean, default: 1
-scoreboard players set #galaxy$hud_gun_single Config 1
+scoreboard players set #galaxy$hud_gun_type1 Config 1
 
-# Enable double gun on HUD:gun
+# Enable type2 gun on HUD:gun
 # boolean, default: 1
-scoreboard players set #galaxy$hud_gun_double Config 1
+scoreboard players set #galaxy$hud_gun_type2 Config 1

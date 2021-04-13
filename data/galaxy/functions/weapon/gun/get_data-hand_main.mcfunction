@@ -5,4 +5,6 @@ execute store result score @s MhGunCoolDly run data get entity @s SelectedItem.t
 execute store result score @s MhGunHeat run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.heat
 execute store result score @s MhGunTemperMax run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.temperMax
 execute store result score @s MhGunAclrate run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.accelerate
+execute store result score @s gunCharge run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.charge
+execute store result score @s gunChargeHeat run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.charge_heat
 execute store result score @s gunExtraBullet run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.extra

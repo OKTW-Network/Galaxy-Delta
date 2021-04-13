@@ -5,7 +5,7 @@ tag @s[tag=setTemplate] remove setTemplate
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.type int 1 run scoreboard players get @s optType
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cosmetic int 1 run scoreboard players get @s optCosmetic
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.color int 1 run scoreboard players get @s optPjColor
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.addon int 1 run scoreboard players get @s optAddon
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.special int 1 run scoreboard players get @s optAddon
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.damage int 1 run scoreboard players get @s optPjDamage
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.delay int 1 run scoreboard players get @s optDelay
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.distance int 1 run scoreboard players get @s optPjDistance

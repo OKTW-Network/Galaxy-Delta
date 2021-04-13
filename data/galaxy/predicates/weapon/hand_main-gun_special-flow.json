@@ -5,7 +5,7 @@
     "equipment": {
       "mainhand": {
         "item": "minecraft:carrot_on_a_stick",
-        "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
+        "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type2.flow\"}}}}}"
       }
     }
   }

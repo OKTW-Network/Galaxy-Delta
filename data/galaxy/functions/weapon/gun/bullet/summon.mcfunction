@@ -3,8 +3,9 @@ execute at @s anchored eyes run summon minecraft:armor_stand ^ ^ ^0.5 {DisabledS
 execute as @e[tag=bullet,tag=init] at @s unless block ~ ~ ~ #minecraft:passable unless block ~ ~ ~ #minecraft:transparent run kill @s
 
 execute if score @s reqGunFire matches 1 run function galaxy:weapon/gun/bullet/get_data-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 run function galaxy:weapon/gun/bullet/get_data-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run function galaxy:weapon/gun/bullet/get_data-hand_off
+execute if score @s reqGunFire matches 10 run function galaxy:weapon/gun/bullet/get_data-hand_main
+execute if score @s reqGunFire matches 11 run function galaxy:weapon/gun/bullet/get_data-hand_off
+execute if score @s reqGunFire matches 21 run function galaxy:weapon/gun/bullet/get_data-hand_main
 
 scoreboard players set @e[tag=bullet,tag=init,limit=1] bulletTraceCD 12
 scoreboard players set @e[tag=bullet,tag=init,limit=1] bulletDistance 0

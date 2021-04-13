@@ -6,11 +6,13 @@ execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.cosmetic.Name 
 
 execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.projectile.color run function galaxy:gui/assembly_table/build-lore/projectile_color
 
-execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.addon.Name run function galaxy:gui/assembly_table/build-lore/addon
+execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.special.Name run function galaxy:gui/assembly_table/build-lore/special
 
 data modify storage cu:string toStatic.input set value '{"translate":"%s: %s","with":[{"translate":"attribute.projectile.damage","color":"aqua"},{"storage":"galaxy:temp","nbt":"itemTag.CustomData.galaxy.tag.projectile.damage","color":"gray"}],"color":"dark_gray","italic":false}'
 function cu:string/convert_to-static
 data modify storage galaxy:temp lore append from storage cu:string toStatic.result
+
+execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag{type:2} run function galaxy:gui/assembly_table/build-lore/charge
 
 data modify storage cu:string toStatic.input set value '{"translate":"%s: %st","with":[{"translate":"attribute.delay","color":"aqua"},{"storage":"galaxy:temp","nbt":"itemTag.CustomData.galaxy.tag.delay","color":"gray"}],"color":"dark_gray","italic":false}'
 function cu:string/convert_to-static
@@ -20,9 +22,7 @@ data modify storage cu:string toStatic.input set value '{"translate":"%s: %sB","
 function cu:string/convert_to-static
 data modify storage galaxy:temp lore append from storage cu:string toStatic.result
 
-data modify storage cu:string toStatic.input set value '{"translate":"%s: %s℃/shot","with":[{"translate":"attribute.heat","color":"aqua"},{"storage":"galaxy:temp","nbt":"itemTag.CustomData.galaxy.tag.heat","color":"gray"}],"color":"dark_gray","italic":false}'
-function cu:string/convert_to-static
-data modify storage galaxy:temp lore append from storage cu:string toStatic.result
+function galaxy:gui/assembly_table/build-lore/heat
 
 data modify storage cu:string toStatic.input set value '{"translate":"%s: %s℃","with":[{"translate":"attribute.max_temperature","color":"aqua"},{"storage":"galaxy:temp","nbt":"itemTag.CustomData.galaxy.tag.temperMax","color":"gray"}],"color":"dark_gray","italic":false}'
 function cu:string/convert_to-static
