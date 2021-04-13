@@ -1,7 +1,7 @@
 function galaxy:weapon/katana/get_data-action
 
 tag @s[tag=galaxy.ktnFirstAct] remove galaxy.ktnFirstAct
-tag @s[tag=!cu.usedItem,tag=!cu.useItemBreak] add galaxy.ktnFirstAct
+tag @s[tag=!cu.useItemContinuous,tag=!cu.useItemBreak] add galaxy.ktnFirstAct
 
 # execute at @s run function galaxy:weapon/katana/meta/detector/check-action-shock
 
