@@ -2,4 +2,4 @@ data modify storage cu:compare input1 set from entity @s HandItems[0].tag.Custom
 function galaxy:gui/assembly_table/data_get-parts
 data modify storage cu:compare input2 set from storage galaxy:get item
 function cu:compare/different
-execute if data storage cu:compare {result:1b} run tag @s add rebuildResult
+execute if score #result compare matches 1 run tag @s add rebuildResult
