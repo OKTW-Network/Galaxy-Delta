@@ -8,9 +8,7 @@ execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.projectile.col
 
 execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.special.Name run function galaxy:gui/assembly_table/build-lore/special
 
-data modify storage cu:string toStatic.input set value '{"translate":"%s: %s","with":[{"translate":"attribute.projectile.damage","color":"aqua"},{"storage":"galaxy:temp","nbt":"itemTag.CustomData.galaxy.tag.projectile.damage","color":"gray"}],"color":"dark_gray","italic":false}'
-function cu:string/convert_to-static
-data modify storage galaxy:temp lore append from storage cu:string toStatic.result
+function galaxy:gui/assembly_table/build-lore/projectile-damage
 
 execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag{type:2} run function galaxy:gui/assembly_table/build-lore/charge
 

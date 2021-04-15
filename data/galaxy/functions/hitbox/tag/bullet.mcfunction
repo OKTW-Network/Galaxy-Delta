@@ -1,4 +1,4 @@
-function galaxy:hitbox/tag/target
+function galaxy:hitbox/tag/target-ignore_hurt_time
 tag @e[tag=possibleEntity] add bulletPossibleVictim
 tag @e[tag=possibleEntity] remove possibleEntity
 

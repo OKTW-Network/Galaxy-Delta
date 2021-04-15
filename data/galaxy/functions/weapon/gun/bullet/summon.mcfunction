@@ -19,5 +19,5 @@ execute if score @e[tag=bullet,tag=init,limit=1] bulletColor matches 17 run func
 
 tag @e[tag=bullet,tag=init] remove init
 
-scoreboard players remove @s gunExtraBullet 1
-execute if entity @s[scores={gunExtraBullet=1..}] at @s run function galaxy:weapon/gun/bullet/summon
+scoreboard players remove @s gunBulletSummon 1
+execute if entity @s[scores={gunBulletSummon=1..}] at @s run function galaxy:weapon/gun/bullet/summon

@@ -27,6 +27,9 @@ execute if score @s reqGunFire matches 11 run function galaxy:weapon/gun/tempera
 execute if score @s reqGunFire matches 20 if score @s gunChargeLvl matches ..99 run function galaxy:weapon/gun/temperature/heat-hand_main
 execute if score @s reqGunFire matches 21 run function galaxy:weapon/gun/temperature/heat-hand_main
 
+scoreboard players set @s gunBulletSummon 1
+execute if score @s gunExtraBullet matches 1.. run scoreboard players operation @s gunBulletSummon += @s gunExtraBullet
+
 execute unless score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/bullet/summon
 
 execute unless score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/sound-shoot
