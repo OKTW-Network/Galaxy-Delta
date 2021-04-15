@@ -48,6 +48,8 @@ execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.accelerate run
 
 execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.projectile.penetrate run function galaxy:gui/assembly_table/build-lore/projectile_penetrate
 
+execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.projectile.bounce run function galaxy:gui/assembly_table/build-lore/projectile_bounce
+
 execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.projectile.trace run function galaxy:gui/assembly_table/build-lore/projectile_trace
 
 execute if data storage galaxy:temp itemTag.CustomData.galaxy.tag.projectile.extra run function galaxy:gui/assembly_table/build-lore/projectile_extra

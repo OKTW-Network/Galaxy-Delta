@@ -73,10 +73,10 @@ execute if score @s reqRcpHTct matches 14 as @a[scores={reqHTctCraft=1..},tag=su
 execute if score @s reqRcpHTct matches 14 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/barrel_pure
 execute if score @s reqRcpHTct matches 14 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/barrel_pure
 
-execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/barrel_penetrate
-execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/barrel_penetrate
-execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/barrel_penetrate
-execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/barrel_penetrate
+execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/barrel_bounce
+execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/barrel_bounce
+execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/barrel_bounce
+execute if score @s reqRcpHTct matches 15 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/barrel_bounce
 
 execute if score @s reqRcpHTct matches 16 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/barrel_trace
 execute if score @s reqRcpHTct matches 16 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/barrel_trace

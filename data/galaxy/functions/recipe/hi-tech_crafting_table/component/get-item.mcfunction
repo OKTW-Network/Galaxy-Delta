@@ -14,7 +14,7 @@ function galaxy:recipe/hi-tech_crafting_table/component/item/handle_gun_slime
 function galaxy:recipe/hi-tech_crafting_table/component/item/handle_gun_wood
 function galaxy:recipe/hi-tech_crafting_table/component/item/handle_gun_obsidian
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_pure
-function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_penetrate
+function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_bounce
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_trace
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_condenser
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_scatter
