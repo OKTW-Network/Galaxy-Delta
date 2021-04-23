@@ -3,17 +3,21 @@ data modify storage cu:list include.inputSource set from entity @e[tag=bullet,ta
 function cu:list/include/main
 execute if score #result listInclude matches 0 run scoreboard players set @s sucHitboxCheck 1
 
-function cu:library/hitbox/main
+function cu:get/hitbox_border
+execute store result score @s hitboxXMin run data get storage cu:get hitbox_border.X.min
+execute store result score @s hitboxXMax run data get storage cu:get hitbox_border.X.max
+execute store result score @s hitboxYMin run data get storage cu:get hitbox_border.Y.min
+execute store result score @s hitboxYMax run data get storage cu:get hitbox_border.Y.max
+execute store result score @s hitboxZMin run data get storage cu:get hitbox_border.Z.min
+execute store result score @s hitboxZMax run data get storage cu:get hitbox_border.Z.max
+
 execute store result score #2 calcu_temp store result score #3 calcu_temp store result score #4 calcu_temp run scoreboard players set #1 calcu_temp 0
-execute if score @s hitboxX1 >= @e[tag=bulletTracer,limit=1] hitboxX1 if score @s hitboxX1 < @e[tag=bulletTracer,limit=1] hitboxX2 run scoreboard players set #1 calcu_temp 1
-execute unless score #1 calcu_temp matches 1 if score @s hitboxX2 < @e[tag=bulletTracer,limit=1] hitboxX2 if score @s hitboxX2 >= @e[tag=bulletTracer,limit=1] hitboxX1 run scoreboard players set #1 calcu_temp 1
-execute if score @s hitboxZ1 >= @e[tag=bulletTracer,limit=1] hitboxZ1 if score @s hitboxZ1 < @e[tag=bulletTracer,limit=1] hitboxZ2 run scoreboard players set #2 calcu_temp 1
-execute unless score #2 calcu_temp matches 1 if score @s hitboxZ2 < @e[tag=bulletTracer,limit=1] hitboxZ2 if score @s hitboxZ2 >= @e[tag=bulletTracer,limit=1] hitboxZ1 run scoreboard players set #2 calcu_temp 1
-execute if score @s hitboxY1 >= @e[tag=bulletTracer,limit=1] hitboxY1 if score @s hitboxY1 < @e[tag=bulletTracer,limit=1] hitboxY2 run scoreboard players set #3 calcu_temp 1
-execute unless score #3 calcu_temp matches 1 if score @s hitboxY2 < @e[tag=bulletTracer,limit=1] hitboxY2 if score @s hitboxY2 >= @e[tag=bulletTracer,limit=1] hitboxY1 run scoreboard players set #3 calcu_temp 1
-data modify storage cu:list include.inputTarget set from entity @s UUID
-data modify storage cu:list include.inputSource set from entity @e[tag=bullet,tag=flighting,limit=1] ArmorItems[0].tag.CustomData.galaxy.data.entityDamaged
-function cu:list/include/main
-execute if score #result listInclude matches 0 if score #1 calcu_temp matches 1 if score #2 calcu_temp matches 1 if score #3 calcu_temp matches 1 unless entity @e[tag=bulletTraceTarget] run tag @s add bulletTraceTarget
+execute if score @s hitboxXMax >= @e[tag=bulletTracer,limit=1] hitboxXMax if score @s hitboxXMax < @e[tag=bulletTracer,limit=1] hitboxXMin run scoreboard players set #1 calcu_temp 1
+execute unless score #1 calcu_temp matches 1 if score @s hitboxXMin < @e[tag=bulletTracer,limit=1] hitboxXMin if score @s hitboxXMin >= @e[tag=bulletTracer,limit=1] hitboxXMax run scoreboard players set #1 calcu_temp 1
+execute if score @s hitboxZMax >= @e[tag=bulletTracer,limit=1] hitboxZMax if score @s hitboxZMax < @e[tag=bulletTracer,limit=1] hitboxZMin run scoreboard players set #2 calcu_temp 1
+execute unless score #2 calcu_temp matches 1 if score @s hitboxZMin < @e[tag=bulletTracer,limit=1] hitboxZMin if score @s hitboxZMin >= @e[tag=bulletTracer,limit=1] hitboxZMax run scoreboard players set #2 calcu_temp 1
+execute if score @s hitboxYMin >= @e[tag=bulletTracer,limit=1] hitboxYMin if score @s hitboxYMin < @e[tag=bulletTracer,limit=1] hitboxYMax run scoreboard players set #3 calcu_temp 1
+execute unless score #3 calcu_temp matches 1 if score @s hitboxYMax < @e[tag=bulletTracer,limit=1] hitboxYMax if score @s hitboxYMax >= @e[tag=bulletTracer,limit=1] hitboxYMin run scoreboard players set #3 calcu_temp 1
+execute if score @s sucHitboxCheck matches 1 if score #1 calcu_temp matches 1 if score #2 calcu_temp matches 1 if score #3 calcu_temp matches 1 unless entity @e[tag=bulletTraceTarget] run tag @s add bulletTraceTarget
 
 tag @s remove bulletPossibleTrace
