@@ -20,6 +20,9 @@ function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_condenser
 function galaxy:recipe/hi-tech_crafting_table/component/item/barrel_scatter
 function galaxy:recipe/hi-tech_crafting_table/component/item/sight_clear
 function galaxy:recipe/hi-tech_crafting_table/component/item/sight_scope
+function galaxy:recipe/hi-tech_crafting_table/component/item/special_dual
+function galaxy:recipe/hi-tech_crafting_table/component/item/special_flow
+function galaxy:recipe/hi-tech_crafting_table/component/item/special_sequence
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_red
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_orange
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_yellow
@@ -37,4 +40,4 @@ function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_magenta
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_pink
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_white
 function galaxy:recipe/hi-tech_crafting_table/component/item/color_lens_rainbow
-function galaxy:recipe/hi-tech_crafting_table/component/item/special_dual
+

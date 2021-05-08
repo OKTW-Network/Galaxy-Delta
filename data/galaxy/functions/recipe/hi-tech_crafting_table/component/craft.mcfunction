@@ -104,97 +104,107 @@ execute if score @s reqRcpHTct matches 20 as @a[scores={reqHTctCraft=1..},tag=su
 execute if score @s reqRcpHTct matches 20 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/sight_scope
 execute if score @s reqRcpHTct matches 20 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/sight_scope
 
-# Color lens
-execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_red
-execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_red
-execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_red
-execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_red
-
-execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_orange
-execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_orange
-execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_orange
-execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_orange
-
-execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_yellow
-execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_yellow
-execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_yellow
-execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_yellow
-
-execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_lime
-execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_lime
-execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_lime
-execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_lime
-
-execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_light_blue
-execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_light_blue
-execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_light_blue
-execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_light_blue
-
-execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_blue
-execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_blue
-execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_blue
-execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_blue
-
-execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_purple
-execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_purple
-execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_purple
-execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_purple
-
-execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_black
-execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_black
-execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_black
-execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_black
-
-execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_brown
-execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_brown
-execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_brown
-execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_brown
-
-execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_cyan
-execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_cyan
-execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_cyan
-execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_cyan
-
-execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_gray
-execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_gray
-execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_gray
-execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_gray
-
-execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_green
-execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_green
-execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_green
-execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_green
-
-execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_light_gray
-execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_light_gray
-execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_light_gray
-execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_light_gray
-
-execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_magenta
-execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_magenta
-execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_magenta
-execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_magenta
-
-execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_pink
-execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_pink
-execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_pink
-execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_pink
-
-execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_white
-execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_white
-execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_white
-execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_white
-
-execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_rainbow
-execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_rainbow
-execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_rainbow
-execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_rainbow
-
 # Special
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/special_dual
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/special_dual
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/special_dual
-execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/special_dual
+execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/special_dual
+execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/special_dual
+execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/special_dual
+execute if score @s reqRcpHTct matches 21 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/special_dual
+
+execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/special_flow
+execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/special_flow
+execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/special_flow
+execute if score @s reqRcpHTct matches 22 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/special_flow
+
+execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/special_sequence
+execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/special_sequence
+execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/special_sequence
+execute if score @s reqRcpHTct matches 23 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/special_sequence
+
+# Color lens
+execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_red
+execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_red
+execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_red
+execute if score @s reqRcpHTct matches 24 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_red
+
+execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_orange
+execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_orange
+execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_orange
+execute if score @s reqRcpHTct matches 25 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_orange
+
+execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_yellow
+execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_yellow
+execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_yellow
+execute if score @s reqRcpHTct matches 26 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_yellow
+
+execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_lime
+execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_lime
+execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_lime
+execute if score @s reqRcpHTct matches 27 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_lime
+
+execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_light_blue
+execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_light_blue
+execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_light_blue
+execute if score @s reqRcpHTct matches 28 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_light_blue
+
+execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_blue
+execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_blue
+execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_blue
+execute if score @s reqRcpHTct matches 29 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_blue
+
+execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_purple
+execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_purple
+execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_purple
+execute if score @s reqRcpHTct matches 30 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_purple
+
+execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_black
+execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_black
+execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_black
+execute if score @s reqRcpHTct matches 31 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_black
+
+execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_brown
+execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_brown
+execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_brown
+execute if score @s reqRcpHTct matches 32 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_brown
+
+execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_cyan
+execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_cyan
+execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_cyan
+execute if score @s reqRcpHTct matches 33 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_cyan
+
+execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_gray
+execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_gray
+execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_gray
+execute if score @s reqRcpHTct matches 34 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_gray
+
+execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_green
+execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_green
+execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_green
+execute if score @s reqRcpHTct matches 35 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_green
+
+execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_light_gray
+execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_light_gray
+execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_light_gray
+execute if score @s reqRcpHTct matches 36 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_light_gray
+
+execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_magenta
+execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_magenta
+execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_magenta
+execute if score @s reqRcpHTct matches 37 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_magenta
+
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_pink
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_pink
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_pink
+execute if score @s reqRcpHTct matches 38 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_pink
+
+execute if score @s reqRcpHTct matches 39 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_white
+execute if score @s reqRcpHTct matches 39 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_white
+execute if score @s reqRcpHTct matches 39 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_white
+execute if score @s reqRcpHTct matches 39 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_white
+
+execute if score @s reqRcpHTct matches 40 as @a[scores={reqHTctCraft=1..},gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-check/color_lens_rainbow
+execute if score @s reqRcpHTct matches 40 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:recipe/hi-tech_crafting_table/component/requirement-remove/color_lens_rainbow
+execute if score @s reqRcpHTct matches 40 as @a[scores={reqHTctCraft=1..},tag=sucHTctRcp,gamemode=!creative] run function galaxy:component/give/color_lens_rainbow
+execute if score @s reqRcpHTct matches 40 as @a[scores={reqHTctCraft=1..},gamemode=creative] run function galaxy:component/give/color_lens_rainbow
 
 execute as @a[scores={reqHTctCraft=1..}] run tag @s remove sucHTctRcp
 execute as @a[scores={reqHTctCraft=1..}] run scoreboard players set @s reqHTctCraft 0
