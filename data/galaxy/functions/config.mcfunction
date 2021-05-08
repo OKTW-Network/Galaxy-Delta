@@ -89,7 +89,7 @@ scoreboard players set #galaxy$katana_act_flash Config 1
 # Action: flash - charge
 # false = double click, true = hold and release
 # boolean, default: 1
-scoreboard players set #galaxy$katana_act_flash_charge Config 0
+scoreboard players set #galaxy$katana_act_flash_charge Config 1
 
 
 # Sounds - Action: swap
