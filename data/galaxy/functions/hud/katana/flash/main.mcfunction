@@ -11,6 +11,7 @@ execute if score #1 calcu_temp matches 301..400 run title @s actionbar [{"transl
 execute if score #1 calcu_temp matches 201..300 run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=======","color":"green"},{"text":"+","color":"yellow"},{"text":"--","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute if score #1 calcu_temp matches 101..200 run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"========","color":"green"},{"text":"+","color":"yellow"},{"text":"-","color":"gray"},{"text":"]","color":"dark_gray"}]
 execute if score #1 calcu_temp matches 1..100 run title @s actionbar [{"translate":"action.flash","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=========","color":"green"},{"text":"+","color":"yellow"},{"text":"]","color":"dark_gray"}]
-execute if score #1 calcu_temp matches ..0 run function galaxy:hud/katana/flash/charge
+execute if score #galaxy$katana_act_flash_charge Config matches 0 if score #1 calcu_temp matches ..0 run title @s actionbar [{"translate":"action.flash","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
+execute if score #galaxy$katana_act_flash_charge Config matches 1 if score #1 calcu_temp matches ..0 run function galaxy:hud/katana/flash/charge
 
 scoreboard players set @s hudKatana 4
