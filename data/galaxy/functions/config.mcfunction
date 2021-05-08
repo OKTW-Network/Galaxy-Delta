@@ -89,7 +89,7 @@ scoreboard players set #galaxy$katana_act_flash Config 1
 # Action: flash - charge
 # false = double click, true = hold and release
 # boolean, default: 1
-scoreboard players set #galaxy$katana_act_flash_charge Config 1
+scoreboard players set #galaxy$katana_act_flash_charge Config 0
 
 
 # Sounds - Action: swap
@@ -174,10 +174,6 @@ scoreboard players set #galaxy$status_effect_stun Config 1
 # boolean, default: 1
 scoreboard players set #galaxy$hud_katana Config 1
 
-# Enable action:swap on HUD:katana
-# boolean, default: 0
-scoreboard players set #galaxy$hud_katana_act_swap Config 0
-
 # Enable action:stun on HUD:katana
 # boolean, default: 1
 scoreboard players set #galaxy$hud_katana_act_stun Config 1
@@ -185,10 +181,6 @@ scoreboard players set #galaxy$hud_katana_act_stun Config 1
 # Enable action:flash on HUD:katana
 # boolean, default: 1
 scoreboard players set #galaxy$hud_katana_act_flash Config 1
-
-# Enable action:shock on HUD:katana
-# boolean, default: 1
-scoreboard players set #galaxy$hud_katana_act_shock Config 1
 
 
   ########################################

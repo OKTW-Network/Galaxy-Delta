@@ -6,4 +6,4 @@ function galaxy:hud/gun/temperature/hand_main
 
 title @s actionbar {"translate":"%s","with":[{"nbt":"+HUD.gun.temperature.mainhand","storage":"galaxy:temp","interpret":true}],"color":"white"}
 
-scoreboard players set @s hudPistol 10
+tag @s add galaxy.hud.succes

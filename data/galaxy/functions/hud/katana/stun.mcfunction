@@ -15,4 +15,4 @@ execute if score #1 calcu_temp matches 101..200 run title @s actionbar [{"transl
 execute if score #1 calcu_temp matches 1..100 run title @s actionbar [{"translate":"action.stun","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=========","color":"green"},{"text":"+","color":"yellow"},{"text":"]","color":"dark_gray"}]
 execute if score #1 calcu_temp matches ..0 run title @s actionbar [{"translate":"action.stun","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
 
-scoreboard players set @s hudKatana 3
+tag @s add galaxy.hud.succes

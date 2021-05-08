@@ -9,4 +9,4 @@ execute if score #galaxy$gun_sniper_charge Config matches 1 run function galaxy:
 execute if score #galaxy$gun_sniper_charge Config matches 0 run title @s actionbar {"nbt":"+HUD.gun.temperature.mainhand","storage":"galaxy:temp","interpret":true}
 execute if score #galaxy$gun_sniper_charge Config matches 1 run title @s actionbar {"translate":"%s <| %s","with":[{"nbt":"+HUD.gun.sub.final","storage":"galaxy:temp","interpret":true},{"nbt":"+HUD.gun.temperature.mainhand","storage":"galaxy:temp","interpret":true}],"color":"white"}
 
-scoreboard players set @s hudPistol 20
+tag @s add galaxy.hud.succes
