@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{coke:{}}"
+                        "nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"coke\"}}}"
                     }
                 ]
             }

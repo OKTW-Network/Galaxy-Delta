@@ -1,1 +1,1 @@
-clear @s minecraft:command_block{ingotSteel:{}} 6
+clear @s minecraft:command_block{CustomData:{galaxy:{Type:"item",id:"steel_ingot"}}} 6
