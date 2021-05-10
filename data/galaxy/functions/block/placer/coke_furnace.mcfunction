@@ -15,6 +15,9 @@ scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] work
 scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] workProc1CanWork 0
 scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] workProc1Prog 0
 scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] guiMode 0
+scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] guiSmltValue -2147483648
+scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] guiProcValue -2147483648
+scoreboard players set @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] guiProgValue -2147483648
 execute as @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] run function galaxy:gui/coke_furnace/update
 execute as @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] run function galaxy:gui/coke_furnace/main
 tag @e[tag=customBlock,tag=galaxy.coke_furnace,tag=init] remove init

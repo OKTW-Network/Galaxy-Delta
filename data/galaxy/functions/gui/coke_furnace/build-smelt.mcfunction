@@ -1,7 +1,9 @@
-scoreboard players set #1 calcu_temp 20
 function galaxy:block/coke_furnace/work/processor1/get-progress
-scoreboard players operation #2 calcu_temp = @s workProc1Prog
-execute unless score @s workProc1CanWork matches -1..0 run scoreboard players remove #2 calcu_temp 1000
-execute unless score @s workProc1CanWork matches -1..0 run scoreboard players operation #2 calcu_temp *= #-1 num
-function galaxy:gui/build-1x1-smelt
-data modify block ~ ~ ~ Items append from storage galaxy:temp item
+
+scoreboard players set #slot buildGUI 20
+scoreboard players operation #fuel buildGUI = @s workProc1Prog
+execute unless score @s workProc1CanWork matches -1..0 run scoreboard players remove #fuel buildGUI 1000
+execute unless score @s workProc1CanWork matches -1..0 run scoreboard players operation #fuel buildGUI *= #-1 num
+scoreboard players set #force buildGUI 0
+execute unless predicate galaxy:gui/check_slot-20 run scoreboard players set #force buildGUI 1
+function galaxy:gui/_build/smelt/1x1/main

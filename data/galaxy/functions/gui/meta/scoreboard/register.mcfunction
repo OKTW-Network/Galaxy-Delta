@@ -9,6 +9,12 @@ scoreboard objectives add reqRcpHTct dummy "num-GUI:HTct request recipe"
 scoreboard objectives add reqRcpHTctPage dummy "num-GUI:HTct request recipe in page"
 scoreboard objectives add reqHTctCraft dummy "num-GUI:HTct request to craft"
 
+scoreboard objectives add buildGUI dummy "num-Build GUI"
+
+scoreboard objectives add guiSmltValue dummy "num-GUI smelt value"
+scoreboard objectives add guiProcValue dummy "num-GUI process value"
+scoreboard objectives add guiProgValue dummy "num-GUI progress value"
+
 scoreboard objectives add setGui dummy "boolean-GUI update"
 scoreboard objectives add setGuiCover dummy "boolean-GUI cover update"
 scoreboard objectives add setSmelt dummy "num-GUI smelt status update"

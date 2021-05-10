@@ -22,3 +22,8 @@ tag @s[predicate=!galaxy:gui/check_slot-20] add setSmelt
 execute if entity @s[tag=setSmelt] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=setSmelt] run function galaxy:gui/coke_furnace/build-smelt
 tag @s[tag=setSmelt] remove setSmelt
+
+execute if entity @s[tag=galaxy.gui.updateProcess] run function galaxy:gui/coke_furnace/build-progress
+execute if entity @s[tag=galaxy.gui.updateProcess] run function galaxy:gui/coke_furnace/build-process
+execute if entity @s[tag=galaxy.gui.updateProcess] run function galaxy:gui/coke_furnace/build-smelt
+tag @s[tag=galaxy.gui.updateProcess] remove galaxy.gui.updateProcess
