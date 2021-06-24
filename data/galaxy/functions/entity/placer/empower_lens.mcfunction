@@ -6,7 +6,7 @@ data modify entity @e[tag=customEntity,tag=galaxy.empower_lens,tag=init,limit=1]
 execute as @e[tag=customEntity,tag=galaxy.empower_lens,tag=init] at @s run tp ~ ~ ~
 tag @e[tag=customEntity,tag=galaxy.empower_lens,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceEntity,gamemode=!creative] run function galaxy:tool/give/empower_lens
+execute if entity @s[tag=placeFailed] as @a[tag=ThisPlaceEntity,gamemode=!creative] run function galaxy:tool/give/empower_lens
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.4
 

@@ -1,27 +1,27 @@
-execute if data storage galaxy:gui drop[{Slot:0b}] run replaceitem block ~ ~ ~ container.0 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:1b}] run replaceitem block ~ ~ ~ container.1 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:2b}] run replaceitem block ~ ~ ~ container.2 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:3b}] run replaceitem block ~ ~ ~ container.3 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:4b}] run replaceitem block ~ ~ ~ container.4 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:5b}] run replaceitem block ~ ~ ~ container.5 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:6b}] run replaceitem block ~ ~ ~ container.6 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:7b}] run replaceitem block ~ ~ ~ container.7 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:8b}] run replaceitem block ~ ~ ~ container.8 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:9b}] run replaceitem block ~ ~ ~ container.9 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:10b}] run replaceitem block ~ ~ ~ container.10 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:11b}] run replaceitem block ~ ~ ~ container.11 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:12b}] run replaceitem block ~ ~ ~ container.12 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:13b}] run replaceitem block ~ ~ ~ container.13 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:14b}] run replaceitem block ~ ~ ~ container.14 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:15b}] run replaceitem block ~ ~ ~ container.15 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:16b}] run replaceitem block ~ ~ ~ container.16 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:17b}] run replaceitem block ~ ~ ~ container.17 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:18b}] run replaceitem block ~ ~ ~ container.18 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:19b}] run replaceitem block ~ ~ ~ container.19 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:20b}] run replaceitem block ~ ~ ~ container.20 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:21b}] run replaceitem block ~ ~ ~ container.21 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:22b}] run replaceitem block ~ ~ ~ container.22 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:23b}] run replaceitem block ~ ~ ~ container.23 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:24b}] run replaceitem block ~ ~ ~ container.24 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:25b}] run replaceitem block ~ ~ ~ container.25 minecraft:air
-execute if data storage galaxy:gui drop[{Slot:26b}] run replaceitem block ~ ~ ~ container.26 minecraft:air
+execute if data storage galaxy:gui drop[{Slot:0b}] run item replace block ~ ~ ~ container.0 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:1b}] run item replace block ~ ~ ~ container.1 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:2b}] run item replace block ~ ~ ~ container.2 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:3b}] run item replace block ~ ~ ~ container.3 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:4b}] run item replace block ~ ~ ~ container.4 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:5b}] run item replace block ~ ~ ~ container.5 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:6b}] run item replace block ~ ~ ~ container.6 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:7b}] run item replace block ~ ~ ~ container.7 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:8b}] run item replace block ~ ~ ~ container.8 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:9b}] run item replace block ~ ~ ~ container.9 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:10b}] run item replace block ~ ~ ~ container.10 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:11b}] run item replace block ~ ~ ~ container.11 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:12b}] run item replace block ~ ~ ~ container.12 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:13b}] run item replace block ~ ~ ~ container.13 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:14b}] run item replace block ~ ~ ~ container.14 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:15b}] run item replace block ~ ~ ~ container.15 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:16b}] run item replace block ~ ~ ~ container.16 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:17b}] run item replace block ~ ~ ~ container.17 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:18b}] run item replace block ~ ~ ~ container.18 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:19b}] run item replace block ~ ~ ~ container.19 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:20b}] run item replace block ~ ~ ~ container.20 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:21b}] run item replace block ~ ~ ~ container.21 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:22b}] run item replace block ~ ~ ~ container.22 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:23b}] run item replace block ~ ~ ~ container.23 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:24b}] run item replace block ~ ~ ~ container.24 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:25b}] run item replace block ~ ~ ~ container.25 with minecraft:air
+execute if data storage galaxy:gui drop[{Slot:26b}] run item replace block ~ ~ ~ container.26 with minecraft:air

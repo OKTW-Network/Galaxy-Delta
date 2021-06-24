@@ -9,7 +9,7 @@ execute if entity @s[tag=getRecipePage] run function galaxy:gui/hi-tech_crafting
 execute if entity @s[tag=getRecipePage] run tag @s add setRecipePage
 tag @s[tag=getRecipePage] remove getRecipePage
 
-replaceitem block ~ ~ ~ container.8 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false,"color":"dark_gray"}'},CustomModelData:20200,guiItem:1}
-replaceitem block ~ ~ ~ container.26 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false,"color":"dark_gray"}'},CustomModelData:20201,guiItem:1}
-execute if score @s htctRcpePageMax matches 2.. run replaceitem block ~ ~ ~ container.8 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false}'},CustomModelData:10200,guiItem:1}
-execute if score @s htctRcpePageMax matches 2.. run replaceitem block ~ ~ ~ container.26 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false}'},CustomModelData:10201,guiItem:1}
+item replace block ~ ~ ~ container.8 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false,"color":"dark_gray"}'},CustomModelData:20200,guiItem:1}
+item replace block ~ ~ ~ container.26 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false,"color":"dark_gray"}'},CustomModelData:20201,guiItem:1}
+execute if score @s htctRcpePageMax matches 2.. run item replace block ~ ~ ~ container.8 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false}'},CustomModelData:10200,guiItem:1}
+execute if score @s htctRcpePageMax matches 2.. run item replace block ~ ~ ~ container.26 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false}'},CustomModelData:10201,guiItem:1}

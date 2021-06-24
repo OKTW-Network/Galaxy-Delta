@@ -7,6 +7,6 @@ execute as @e[tag=customBlock,tag=galaxy.assembly_table,tag=init] run function g
 execute as @e[tag=customBlock,tag=galaxy.assembly_table,tag=init] run function galaxy:gui/assembly_table/main
 tag @e[tag=customBlock,tag=galaxy.assembly_table,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock,gamemode=!creative] run function galaxy:block/give/assembly_table
+execute if entity @s[tag=placeFailed] as @a[tag=ThisPlaceBlock,gamemode=!creative] run function galaxy:block/give/assembly_table
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 0.8

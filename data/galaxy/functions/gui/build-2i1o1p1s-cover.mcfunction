@@ -1,21 +1,21 @@
-replaceitem block ~ ~ ~ container.0 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.1 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.3 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.4 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.5 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10300,guiItem:1}
-replaceitem block ~ ~ ~ container.6 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.7 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.8 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.9 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.10 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.14 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.16 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.17 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.18 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.19 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.21 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.22 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.23 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.24 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.25 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
-replaceitem block ~ ~ ~ container.26 minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.0 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.1 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.3 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.4 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.5 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10300,guiItem:1}
+item replace block ~ ~ ~ container.6 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.7 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.8 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.9 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.10 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.14 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.16 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.17 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.18 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.19 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.21 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.22 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.23 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.24 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.25 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,guiItem:1}
+item replace block ~ ~ ~ container.26 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,guiItem:1}

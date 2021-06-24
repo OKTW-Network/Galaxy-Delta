@@ -12,9 +12,9 @@ execute if score @s sbldValue matches ..-1 run scoreboard players set @s sbldVal
 execute unless score @s sbldValue = #1 calcu_temp run tag @s add setValue
 execute unless score @s sbldValue = #1 calcu_temp run tag @s add setResult
 
-replaceitem block ~ ~ ~ container.3 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"+100","italic":false,"color":"green"}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.4 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"+10","italic":false,"color":"green"}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.5 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"+1","italic":false,"color":"green"}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.21 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"-100","italic":false,"color":"red"}'},CustomModelData:10201,guiItem:1}
-replaceitem block ~ ~ ~ container.22 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"-10","italic":false,"color":"red"}'},CustomModelData:10201,guiItem:1}
-replaceitem block ~ ~ ~ container.23 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"-1","italic":false,"color":"red"}'},CustomModelData:10201,guiItem:1}
+item replace block ~ ~ ~ container.3 with minecraft:gray_stained_glass_pane{display:{Name:'{"text":"+100","italic":false,"color":"green"}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.4 with minecraft:gray_stained_glass_pane{display:{Name:'{"text":"+10","italic":false,"color":"green"}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{display:{Name:'{"text":"+1","italic":false,"color":"green"}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.21 with minecraft:gray_stained_glass_pane{display:{Name:'{"text":"-100","italic":false,"color":"red"}'},CustomModelData:10201,guiItem:1}
+item replace block ~ ~ ~ container.22 with minecraft:gray_stained_glass_pane{display:{Name:'{"text":"-10","italic":false,"color":"red"}'},CustomModelData:10201,guiItem:1}
+item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{display:{Name:'{"text":"-1","italic":false,"color":"red"}'},CustomModelData:10201,guiItem:1}

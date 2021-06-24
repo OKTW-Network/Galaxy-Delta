@@ -16,5 +16,5 @@ execute if entity @s[tag=getAttribute] run tag @s add setValueButton
 execute if entity @s[tag=getAttribute] run tag @s add setValue
 tag @s[tag=getAttribute] remove getAttribute
 
-replaceitem block ~ ~ ~ container.0 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous","italic":false}'},CustomModelData:10200,guiItem:1}
-replaceitem block ~ ~ ~ container.18 minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next","italic":false}'},CustomModelData:10201,guiItem:1}
+item replace block ~ ~ ~ container.0 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous","italic":false}'},CustomModelData:10200,guiItem:1}
+item replace block ~ ~ ~ container.18 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next","italic":false}'},CustomModelData:10201,guiItem:1}

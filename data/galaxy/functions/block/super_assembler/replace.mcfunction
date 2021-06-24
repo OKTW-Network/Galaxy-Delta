@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.16 air
+item replace block ~ ~ ~ container.16 with air
 function galaxy:gui/kill-gui_item_entity
 function galaxy:gui/remove-gui_item
 setblock ~ ~ ~ minecraft:air destroy

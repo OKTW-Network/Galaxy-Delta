@@ -1,9 +1,9 @@
-replaceitem block ~ ~ ~ container.1 minecraft:air
-replaceitem block ~ ~ ~ container.7 minecraft:air
-replaceitem block ~ ~ ~ container.9 minecraft:air
-replaceitem block ~ ~ ~ container.10 minecraft:air
-replaceitem block ~ ~ ~ container.11 minecraft:air
-replaceitem block ~ ~ ~ container.19 minecraft:air
-replaceitem block ~ ~ ~ container.20 minecraft:air
-replaceitem block ~ ~ ~ container.24 minecraft:air
-replaceitem block ~ ~ ~ container.26 minecraft:air
+item replace block ~ ~ ~ container.1 with minecraft:air
+item replace block ~ ~ ~ container.7 with minecraft:air
+item replace block ~ ~ ~ container.9 with minecraft:air
+item replace block ~ ~ ~ container.10 with minecraft:air
+item replace block ~ ~ ~ container.11 with minecraft:air
+item replace block ~ ~ ~ container.19 with minecraft:air
+item replace block ~ ~ ~ container.20 with minecraft:air
+item replace block ~ ~ ~ container.24 with minecraft:air
+item replace block ~ ~ ~ container.26 with minecraft:air

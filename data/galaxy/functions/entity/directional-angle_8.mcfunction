@@ -1,4 +1,4 @@
-execute facing entity @a[tag=triggerPlaceEntity,limit=1] eyes run tp ~ ~ ~
+execute facing entity @a[tag=ThisPlaceEntity,limit=1] eyes run tp ~ ~ ~
 execute store result score #1 calcu_temp run data get entity @s Rotation[0]
 execute if score #1 calcu_temp matches -21..22 run tp @e[tag=init,limit=1] ~ ~ ~ 0 0
 execute if score #1 calcu_temp matches 23..67 run tp @e[tag=init,limit=1] ~ ~ ~ 45 0

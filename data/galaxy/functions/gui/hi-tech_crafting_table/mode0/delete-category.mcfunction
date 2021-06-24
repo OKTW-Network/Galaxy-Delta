@@ -1,3 +1,3 @@
-replaceitem block ~ ~ ~ container.1 air
-replaceitem block ~ ~ ~ container.10 air
-replaceitem block ~ ~ ~ container.19 air
+item replace block ~ ~ ~ container.1 with air
+item replace block ~ ~ ~ container.10 with air
+item replace block ~ ~ ~ container.19 with air

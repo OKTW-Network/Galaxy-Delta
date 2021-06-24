@@ -1,1 +1,1 @@
-replaceitem block ~ ~ ~ container.13 minecraft:air
+item replace block ~ ~ ~ container.13 with minecraft:air

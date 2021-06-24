@@ -1,15 +1,15 @@
-replaceitem block ~ ~ ~ container.3 air
-replaceitem block ~ ~ ~ container.4 air
-replaceitem block ~ ~ ~ container.5 air
-replaceitem block ~ ~ ~ container.6 air
-replaceitem block ~ ~ ~ container.7 air
-replaceitem block ~ ~ ~ container.12 air
-replaceitem block ~ ~ ~ container.13 air
-replaceitem block ~ ~ ~ container.14 air
-replaceitem block ~ ~ ~ container.15 air
-replaceitem block ~ ~ ~ container.16 air
-replaceitem block ~ ~ ~ container.21 air
-replaceitem block ~ ~ ~ container.22 air
-replaceitem block ~ ~ ~ container.23 air
-replaceitem block ~ ~ ~ container.24 air
-replaceitem block ~ ~ ~ container.25 air
+item replace block ~ ~ ~ container.3 with air
+item replace block ~ ~ ~ container.4 with air
+item replace block ~ ~ ~ container.5 with air
+item replace block ~ ~ ~ container.6 with air
+item replace block ~ ~ ~ container.7 with air
+item replace block ~ ~ ~ container.12 with air
+item replace block ~ ~ ~ container.13 with air
+item replace block ~ ~ ~ container.14 with air
+item replace block ~ ~ ~ container.15 with air
+item replace block ~ ~ ~ container.16 with air
+item replace block ~ ~ ~ container.21 with air
+item replace block ~ ~ ~ container.22 with air
+item replace block ~ ~ ~ container.23 with air
+item replace block ~ ~ ~ container.24 with air
+item replace block ~ ~ ~ container.25 with air

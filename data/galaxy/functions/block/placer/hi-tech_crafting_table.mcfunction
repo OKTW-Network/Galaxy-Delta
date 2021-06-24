@@ -17,6 +17,6 @@ execute as @e[tag=customBlock,tag=galaxy.hi-tech_crafting_table,tag=init] run fu
 execute as @e[tag=customBlock,tag=galaxy.hi-tech_crafting_table,tag=init] run function galaxy:gui/hi-tech_crafting_table/main
 tag @e[tag=customBlock,tag=galaxy.hi-tech_crafting_table,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceBlock,gamemode=!creative] run function galaxy:block/give/hi-tech_crafting_table
+execute if entity @s[tag=placeFailed] as @a[tag=ThisPlaceBlock,gamemode=!creative] run function galaxy:block/give/hi-tech_crafting_table
 
 execute unless entity @s[tag=placeFailed] run playsound block.metal.place block @a ~ ~ ~ 1 1.1

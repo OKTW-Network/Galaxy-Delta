@@ -14,4 +14,4 @@ data modify storage cu:item input.tag.CustomData.galaxy.tag set from storage gal
 data modify storage cu:item input.tag.CustomData.galaxy.tag.type set value 1b
 function cu:item/replaceitem/hand_off
 
-replaceitem entity @s weapon.mainhand minecraft:air
+item replace entity @s weapon.mainhand with minecraft:air

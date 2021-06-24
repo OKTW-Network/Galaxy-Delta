@@ -1,4 +1,4 @@
-replaceitem entity @s weapon.mainhand minecraft:air
+item replace entity @s weapon.mainhand with minecraft:air
 data modify storage galaxy:get item set value []
 execute store result score #1 calcu_temp run data get entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaTag.type
 execute if score #1 calcu_temp matches 1 run function galaxy:weapon/katana/get/katana

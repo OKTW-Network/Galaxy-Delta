@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.13 carrot_on_a_stick{CustomData:{galaxy:{Type:"item",id:"gun",tag:{type:0,cosmetic:{id:"none"},status:0}}},display:{Name:'{"translate":"item.galaxy.lasor","italic":false}'},CustomModelData:100,HideFlags:39,RepairCost:-2147483648,Unbreakable:1b}
+item replace block ~ ~ ~ container.13 with carrot_on_a_stick{CustomData:{galaxy:{Type:"item",id:"gun",tag:{type:0,cosmetic:{id:"none"},status:0}}},display:{Name:'{"translate":"item.galaxy.lasor","italic":false}'},CustomModelData:100,HideFlags:39,RepairCost:-2147483648,Unbreakable:1b}
 # type:0,cosmetic:0,cosmeticName:"none",cosmeticModel:100,special:0,specialName:"none",status:0,projectile:{penetrate:0,trace:0,extra:0,color:0,colorName:"none"}
 
 function cu:uuid/generate

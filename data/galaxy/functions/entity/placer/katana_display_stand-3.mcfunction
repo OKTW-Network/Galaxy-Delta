@@ -5,7 +5,7 @@ scoreboard players set @e[tag=customEntity,tag=galaxy.katana_display_stand,tag=t
 scoreboard players set @e[tag=customEntity,tag=galaxy.katana_display_stand,tag=type-3,tag=init] kdsStatus 1
 tag @e[tag=customEntity,tag=galaxy.katana_display_stand,tag=type-3,tag=init] remove init
 
-execute if entity @s[tag=placeFailed] as @a[tag=triggerPlaceEntity,gamemode=!creative] run function galaxy:entity/give/katana_display_stand-3
+execute if entity @s[tag=placeFailed] as @a[tag=ThisPlaceEntity,gamemode=!creative] run function galaxy:entity/give/katana_display_stand-3
 
 execute unless entity @s[tag=placeFailed] run playsound block.wood.place block @a ~ ~ ~ 1 1.4
 
