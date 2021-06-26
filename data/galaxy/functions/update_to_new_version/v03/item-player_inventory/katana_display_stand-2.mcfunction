@@ -1,4 +1,5 @@
 execute store result score #1 calcu_temp run clear @s minecraft:item_frame{katanaShowcase:{type:2}} 64
+execute unless score #1 calcu_temp matches 1.. store result score #1 calcu_temp run clear @s minecraft:item_frame{EntityTag:{Tags:["entity_placer","katana_display_stand_placer","type-2"]}} 64
 execute if score #1 calcu_temp matches 1.. run data modify storage galaxy:get item set value []
 execute if score #1 calcu_temp matches 1.. run function galaxy:entity/get/katana_display_stand-2
 execute if score #1 calcu_temp matches 1.. run execute store result storage galaxy:get item[0].Count byte 1 run scoreboard players get #1 calcu_temp
