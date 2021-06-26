@@ -1,6 +1,6 @@
 execute if entity @s[tag=displaying] run function galaxy:entity/katana_display_stand/convert-player
 
-item replace entity @s weapon.offhand with air
+item replace entity @s weapon.offhand with minecraft:air
 
 execute if predicate galaxy:tool/hand_main-wrench run function galaxy:entity/katana_display_stand/convert_from-display
 execute if predicate galaxy:tool/hand_main-crowbar run function galaxy:entity/katana_display_stand/convert_from-display

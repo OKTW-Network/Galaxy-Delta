@@ -1,6 +1,6 @@
 function galaxy:entity/katana_display_stand/convert-player
 
-item replace entity @s weapon.offhand with air
+item replace entity @s weapon.offhand with minecraft:air
 
 scoreboard players set @s kdsDisplayType 0
 scoreboard players set @s kdsDisplayStyle 0

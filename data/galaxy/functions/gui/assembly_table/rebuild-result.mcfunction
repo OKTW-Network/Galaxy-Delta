@@ -1,7 +1,4 @@
-execute store result score #1 calcu_temp run data get block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID[0]
-execute store result score #2 calcu_temp run data get block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID[1]
-execute store result score #3 calcu_temp run data get block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID[2]
-execute store result score #4 calcu_temp run data get block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID[3]
-function galaxy:meta/data/delete_uuid-data_container
+data modify storage cu:data_storage input set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID
+function cu:data_storage/delete-uuid_container
 
 function galaxy:gui/assembly_table/build-result/main

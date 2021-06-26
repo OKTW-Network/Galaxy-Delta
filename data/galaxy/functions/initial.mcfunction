@@ -6,8 +6,6 @@ function #galaxy:config
 
 function galaxy:check-version
 
-execute unless entity @e[tag=dataBase] run function galaxy:meta/data/create-data_base
-
 function galaxy:recipe/initial
 function galaxy:block/initial
 function galaxy:book/initial
