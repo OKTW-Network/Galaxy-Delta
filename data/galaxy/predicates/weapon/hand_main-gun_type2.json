@@ -3,7 +3,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "item":"minecraft:carrot_on_a_stick",
+                "items": ["minecraft:carrot_on_a_stick"],
                 "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{type:2}}}}"
             }
         }

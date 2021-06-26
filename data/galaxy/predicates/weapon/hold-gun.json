@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "item": "minecraft:carrot_on_a_stick",
+            "items": ["minecraft:carrot_on_a_stick"],
             "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
           }
         }
@@ -19,7 +19,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "item": "minecraft:carrot_on_a_stick",
+            "items": ["minecraft:carrot_on_a_stick"],
             "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
           }
         }

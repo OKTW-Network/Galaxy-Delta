@@ -3,7 +3,7 @@
     "offsetY": -1,
     "predicate": {
         "block": {
-            "block": "minecraft:barrel",
+            "blocks": ["minecraft:barrel"],
             "nbt": "{CustomName:'{\"translate\":\"container.elevator\"}'}"
         }
     }

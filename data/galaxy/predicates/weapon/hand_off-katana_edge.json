@@ -3,7 +3,7 @@
     "predicate": {
 	    "equipment": {
 		    "offhand": {
-                "item":"minecraft:netherite_sword",
+                "items": ["minecraft:netherite_sword"],
                 "nbt": "{CustomData:{galaxy:{id:\"katana\",tag:{type:2b}}}}"
             }
 	    }
