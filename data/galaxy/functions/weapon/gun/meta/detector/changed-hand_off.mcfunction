@@ -1,3 +1,5 @@
+execute unless score @s FhGunUUID0 matches -2147483648..2147483647 unless score @s FhGunUUID1 matches -2147483648..2147483647 unless score @s FhGunUUID2 matches -2147483648..2147483647 unless score @s FhGunUUID3 matches -2147483648..2147483647 run tag @s add FhGunNew
+
 function galaxy:weapon/gun/meta/uuid/get-hand_off
 execute unless score @s FhGunUUID0New = @s FhGunUUID0 run tag @s add FhGunChanged
 execute unless score @s FhGunUUID1New = @s FhGunUUID1 run tag @s add FhGunChanged

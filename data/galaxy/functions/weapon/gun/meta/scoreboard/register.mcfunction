@@ -1,3 +1,5 @@
+scoreboard objectives add galaxy.gun dummy
+
 scoreboard objectives add reqGunFire dummy "request-Gun fire"
 
 scoreboard objectives add gunType dummy "num-Gun fire switch"

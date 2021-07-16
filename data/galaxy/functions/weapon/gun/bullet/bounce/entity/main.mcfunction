@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["bulletTracer"],Particle:"block air",Radius:0.125f,WaitTime:2147483647}
+summon minecraft:marker ~ ~ ~ {Tags:["bulletTracer"]}
 execute as @e[tag=bulletTracer] run function galaxy:hitbox/store-hitbox
 scoreboard players set #1 calcu_temp 40
 scoreboard players operation @e[tag=bulletTracer] hitboxXMin += #1 calcu_temp
