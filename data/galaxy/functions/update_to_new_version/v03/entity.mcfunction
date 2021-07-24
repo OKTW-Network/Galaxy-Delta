@@ -9,3 +9,6 @@ tag @e[tag=katana_display_stand] remove katana_display_stand
 
 tag @e[tag=empower_lens] add galaxy.empower_lens
 tag @e[tag=empower_lens] remove empower_lens
+
+kill @e[tag=dataBase]
+kill @e[tag=dataContainer]
