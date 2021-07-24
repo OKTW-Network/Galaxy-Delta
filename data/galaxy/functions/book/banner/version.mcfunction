@@ -36,4 +36,4 @@ execute if score #1 calcu_temp matches 1.. run function galaxy:book/center_space
 data modify storage cu:string toStatic.input set value '{"nbt":"string","storage":"galaxy:temp","interpret":true}'
 function cu:string/convert_to-static
 data modify storage galaxy:book bannerObj.versionSpace set from storage cu:string toStatic.result
-data modify storage galaxy:book bannerObj.version set value '["",{"nbt":"bannerObj.versionSpace","storage":"galaxy:book","interpret":true},{"translate":"v%s","with":[{"nbt":"currently","storage":"galaxy:version","interpret":true}],"clickEvent":{"action":"run_command","value":"/trigger bookGdUpdate add 1"},"color":"gray"}]'
+data modify storage galaxy:book bannerObj.version set value '["",{"nbt":"bannerObj.versionSpace","storage":"galaxy:book","interpret":true},{"translate":"v%s","with":[{"nbt":"currently","storage":"galaxy:version","interpret":true}],"clickEvent":{"action":"run_command","value":"/trigger bookGdUpdate add 1"},"color":"gray","underlined":true,"hoverEvent":{"action":"show_text","contents":{"text":"(click to refresh)","color":"gray"}}}]'
