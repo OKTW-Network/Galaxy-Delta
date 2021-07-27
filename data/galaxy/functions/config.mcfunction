@@ -198,3 +198,7 @@ scoreboard players set #galaxy$hud_gun_type1 Config 1
 # Enable type2 gun on HUD:gun
 # boolean, default: 1
 scoreboard players set #galaxy$hud_gun_type2 Config 1
+
+# Enable type3 gun on HUD:gun
+# boolean, default: 1
+scoreboard players set #galaxy$hud_gun_type3 Config 1
