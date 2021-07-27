@@ -21,7 +21,7 @@ execute if score @s reqGunFire matches 20 run scoreboard players set @s gunDelay
 
 execute if score @s reqGunFire matches 20 if score @s gunChargeLvl matches ..99 run scoreboard players operation @s MhGunHeat = @s gunChargeHeat
 
-execute unless score @s reqGunFire matches 11 unless score @s reqGunFire matches 20 unless score @s reqGunFire matches 30..31 run function galaxy:weapon/gun/temperature/heat-hand_main
+execute unless score @s reqGunFire matches 11 unless score @s reqGunFire matches 20 run function galaxy:weapon/gun/temperature/heat-hand_main
 execute if score @s reqGunFire matches 11 run function galaxy:weapon/gun/temperature/heat-hand_off
 execute if score @s reqGunFire matches 20 if score @s gunChargeLvl matches ..99 run function galaxy:weapon/gun/temperature/heat-hand_main
 
