@@ -1,6 +1,6 @@
 scoreboard players set @s sucHitboxCheck 0
 data modify storage cu:list include.inputTarget set from entity @s UUID
-data modify storage cu:list include.inputSource set from entity @e[tag=bullet,tag=flighting,limit=1] data.entityDamaged
+data modify storage cu:list include.inputSource set from entity @e[tag=galaxy.bullet,tag=flighting,limit=1] data.entityDamaged
 function cu:list/include/main
 execute if score #result listInclude matches 0 run scoreboard players set @s sucHitboxCheck 1
 

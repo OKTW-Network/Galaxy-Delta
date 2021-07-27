@@ -26,7 +26,7 @@ execute if score @s sucBulletHit matches 1 if score @s bulletBounce matches 1.. 
 
 execute if score @s sucBulletMove matches 1 at @s run function galaxy:weapon/gun/bullet/particle
 
-execute unless entity @e[tag=bullet,tag=flighting] run tag @s add pathfindEnd
+execute unless entity @e[tag=galaxy.bullet,tag=flighting] run tag @s add pathfindEnd
 execute if score @s bulletDistRem matches ..0 run tag @s add pathfindEnd
 execute if score @s sucBulletMove matches 0 run tag @s add pathfindEnd
 execute if score @s sucBulletHit matches 1 run tag @s add pathfindEnd
