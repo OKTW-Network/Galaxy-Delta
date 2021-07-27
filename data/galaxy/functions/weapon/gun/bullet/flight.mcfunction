@@ -19,7 +19,8 @@ execute unless score @s sucBulletMove matches 0 unless score @s bulletTraceCD ma
 
 scoreboard players set @s sucBulletHit 0
 scoreboard players set @s sucBulletKill 0
-execute if score @s sucBulletMove matches 1 run function galaxy:hitbox/tag/bullet
+execute if score @s sucBulletMove matches 1 at @s run function galaxy:damage/tag/target
+execute if entity @e[tag=galaxy.damage.possible_target] at @s run function galaxy:damage/tag/bullet
 execute if score @s sucBulletHit matches 1 run function galaxy:damage/bullet
 execute if score @s sucBulletHit matches 1 if score @s bulletPenetrate matches 1.. run function galaxy:weapon/gun/bullet/penetrate/entity
 execute if score @s sucBulletHit matches 1 if score @s bulletBounce matches 1.. at @s run function galaxy:weapon/gun/bullet/bounce/entity/main
