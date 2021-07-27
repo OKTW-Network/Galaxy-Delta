@@ -19,17 +19,17 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.pro
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.aim_zoom int 1 run scoreboard players get @s optAimZoom
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.accelerate int 1 run scoreboard players get @s optAccelerate
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.penetrate int 1 run scoreboard players get @s optPjPenetrate
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.bounce int 1 run scoreboard players get @s optPjBounce
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.trace int 1 run scoreboard players get @s optPjTrace
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.extra int 1 run scoreboard players get @s optPjExtra
+
+function galaxy:recipe/super_assembler/convert/main
+
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.special set from storage galaxy:temp +recipe.super_assembler.convert.special
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData int 1 run scoreboard players get @s rstCMD
 
 data remove storage galaxy:temp itemTag
 data modify storage galaxy:temp itemTag set from block ~ ~ ~ Items[{Slot:16b}].tag
 function galaxy:gui/assembly_table/build-lore/main
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore set from storage galaxy:temp lore
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore prepend value '[{"translate":"tooltip.super_build","color":"dark_gray","italic":false}]'
-
-execute if data block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag{type:1,cosmetic:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 210100
-execute if data block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag{type:2,cosmetic:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 220100
-execute if data block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag{type:3,cosmetic:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 230100
-
-execute if data block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag{type:2,cosmetic:1} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 220200

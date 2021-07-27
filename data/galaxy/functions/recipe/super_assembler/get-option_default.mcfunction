@@ -15,5 +15,6 @@ scoreboard players set @s optPjAimOffset 0
 scoreboard players set @s optAimZoom 7
 scoreboard players set @s optAccelerate 0
 scoreboard players set @s optPjPenetrate 0
+scoreboard players set @s optPjBounce 0
 scoreboard players set @s optPjTrace 0
 scoreboard players set @s optPjExtra 0

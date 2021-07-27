@@ -1,0 +1,2 @@
+function galaxy:recipe/super_assembler/convert/special
+function galaxy:recipe/super_assembler/convert/custom_model_data

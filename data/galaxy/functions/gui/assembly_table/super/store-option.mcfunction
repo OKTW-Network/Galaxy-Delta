@@ -15,5 +15,6 @@ execute if score @s sbldAttribute matches 14 store result score @s optPjAimOffse
 execute if score @s sbldAttribute matches 15 store result score @s optAimZoom run scoreboard players get @s sbldValue
 execute if score @s sbldAttribute matches 16 store result score @s optAccelerate run scoreboard players get @s sbldValue
 execute if score @s sbldAttribute matches 17 store result score @s optPjPenetrate run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 18 store result score @s optPjTrace run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 19 store result score @s optPjExtra run scoreboard players get @s sbldValue
+execute if score @s sbldAttribute matches 18 store result score @s optPjBounce run scoreboard players get @s sbldValue
+execute if score @s sbldAttribute matches 19 store result score @s optPjTrace run scoreboard players get @s sbldValue
+execute if score @s sbldAttribute matches 20 store result score @s optPjExtra run scoreboard players get @s sbldValue

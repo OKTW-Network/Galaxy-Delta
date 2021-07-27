@@ -53,6 +53,9 @@ data modify storage galaxy:recipe Samb.attribute append from storage galaxy:reci
 function galaxy:recipe/super_assembler/build-attribute/projectile_penetrate
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_penetrate
 
+function galaxy:recipe/super_assembler/build-attribute/projectile_bounce
+data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_bounce
+
 function galaxy:recipe/super_assembler/build-attribute/projectile_trace
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_trace
 

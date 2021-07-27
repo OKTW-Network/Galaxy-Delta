@@ -59,6 +59,9 @@ scoreboard objectives add optPjOffset dummy "num-Generate Option: Projectile Off
 scoreboard objectives add optPjAimOffset dummy "num-Generate Option: Projectile Aim Offset"
 scoreboard objectives add optAccelerate dummy "num-Generate Option: Accelerate"
 scoreboard objectives add optPjPenetrate dummy "num-Generate Option: Projectile Penetrate"
+scoreboard objectives add optPjBounce dummy "num-Generate Option: Projectile Bounce"
 scoreboard objectives add optPjTrace dummy "num-Generate Option: Projectile Trace"
 scoreboard objectives add optPjExtra dummy "num-Generate Option: Projectile Extra"
 scoreboard objectives add optPjColor dummy "num-Generate Option: Projectile Color"
+
+scoreboard objectives add rstCMD dummy "num-Generate Result: Custom Model Data"
