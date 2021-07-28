@@ -15,12 +15,13 @@ execute if score @s sucBulletMove matches 1 run scoreboard players add @s bullet
 execute if score @s sucBulletMove matches 1 if score @s bulletTraceCD matches 1.. run scoreboard players remove @s bulletTraceCD 1
 execute if score @s sucBulletMove matches 0 if score @s bulletPenetrate matches 1.. run function galaxy:weapon/gun/bullet/penetrate/block
 execute if score @s sucBulletMove matches 0 if score @s bulletBounce matches 1.. at @s run function galaxy:weapon/gun/bullet/bounce/block/main
-execute unless score @s sucBulletMove matches 0 unless score @s bulletTraceCD matches 1.. if score @s bulletTrace matches 1.. at @s run function galaxy:weapon/gun/bullet/trace/main
 
 scoreboard players set @s sucBulletHit 0
 scoreboard players set @s sucBulletKill 0
 execute if score @s sucBulletMove matches 1 at @s run function galaxy:damage/tag/target
 execute if entity @e[tag=galaxy.damage.possible_target] at @s run function galaxy:damage/tag/bullet
+execute if entity @e[tag=galaxy.damage.possible_target] unless score @s bulletTraceCD matches 1.. if score @s bulletTrace matches 1.. at @s run function galaxy:weapon/gun/bullet/trace/main
+tag @e remove galaxy.damage.possible_target
 execute if score @s sucBulletHit matches 1 run function galaxy:damage/bullet
 execute if score @s sucBulletHit matches 1 if score @s bulletPenetrate matches 1.. run function galaxy:weapon/gun/bullet/penetrate/entity
 execute if score @s sucBulletHit matches 1 if score @s bulletBounce matches 1.. at @s run function galaxy:weapon/gun/bullet/bounce/entity/main

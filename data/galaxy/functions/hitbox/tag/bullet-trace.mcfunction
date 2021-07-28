@@ -1,8 +1,12 @@
-execute if score #galaxy$target_hostile Config matches 1 if score #galaxy$target_neutral Config matches 1 run tag @e[type=#minecraft:hostile,distance=..12] add bulletPossibleTrace
-execute if score #galaxy$target_hostile Config matches 1 unless score #galaxy$target_neutral Config matches 1 run tag @e[type=#minecraft:hostile,type=!#minecraft:neutral,distance=..12] add bulletPossibleTrace
-execute if score #galaxy$target_neutral Config matches 1 run tag @e[type=#minecraft:neutral,type=!#minecraft:hostile,distance=..12] add bulletPossibleTrace
-execute if score #galaxy$target_passive Config matches 1 run tag @e[type=#minecraft:passive,distance=..12] add bulletPossibleTrace
+tag @s add galaxy.hitbox.source
 
-execute as @e[tag=bulletPossibleTrace,sort=nearest] run function galaxy:hitbox/check/bullet-trace
+summon marker ~ ~ ~ {Tags:["galaxy.hitbox.bullet.trace.selector"]}
+execute as @e[tag=galaxy.hitbox.bullet.trace.selector] at @s positioned ~-5 ~-5 ~-5 run tag @e[dx=8,dy=8,dz=8] add galaxy.hitbox.bullet.trace.in_first_box
+execute as @e[tag=galaxy.hitbox.bullet.trace.selector] at @s positioned ~-4 ~-4 ~-4 run tag @e[dx=8,dy=8,dz=8,tag=galaxy.hitbox.bullet.trace.in_first_box] add galaxy.hitbox.target
+kill @e[tag=galaxy.hitbox.bullet.trace.selector]
+tag @e[tag=galaxy.hitbox.bullet.trace.in_first_box] remove galaxy.hitbox.bullet.trace.in_first_box
+execute if entity @e[tag=galaxy.hitbox.target] run function galaxy:hitbox/tag/filter/target
+execute as @e[tag=galaxy.hitbox.target] run function galaxy:hitbox/tag/filter/source-didnt_damage_this
+execute if entity @e[tag=galaxy.hitbox.target] run function galaxy:hitbox/tag/filter/nearest
 
-tag @e[tag=bulletPossibleTrace] remove bulletPossibleTrace
+tag @e[tag=galaxy.hitbox.source] remove galaxy.hitbox.source

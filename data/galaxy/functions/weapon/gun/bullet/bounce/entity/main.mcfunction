@@ -1,27 +1,13 @@
-summon minecraft:marker ~ ~ ~ {Tags:["bulletTracer"]}
-execute as @e[tag=bulletTracer] run function galaxy:hitbox/store-hitbox
-scoreboard players set #1 calcu_temp 40
-scoreboard players operation @e[tag=bulletTracer] hitboxXMin += #1 calcu_temp
-scoreboard players operation @e[tag=bulletTracer] hitboxXMax -= #1 calcu_temp
-scoreboard players operation @e[tag=bulletTracer] hitboxZMin += #1 calcu_temp
-scoreboard players operation @e[tag=bulletTracer] hitboxZMax -= #1 calcu_temp
-scoreboard players operation @e[tag=bulletTracer] hitboxYMin -= #1 calcu_temp
-scoreboard players operation @e[tag=bulletTracer] hitboxYMax += #1 calcu_temp
+function galaxy:hitbox/tag/bullet-trace
 
-execute as @e[tag=bulletTracer] at @s run function galaxy:hitbox/tag/bullet-trace
-
-execute if entity @e[tag=bulletTraceTarget] facing entity @e[tag=bulletTraceTarget,limit=1] eyes run tp ~ ~ ~
+execute if entity @e[tag=galaxy.hitbox.target] facing entity @e[tag=galaxy.hitbox.target,limit=1] eyes run tp ~ ~ ~
 
 scoreboard players operation @s bulletWeaken = @s bulletBounce
-scoreboard players operation @s bulletWeaken /= #2 num
-execute if entity @e[tag=bulletTraceTarget] if score @s bulletWeaken matches 1..99 run function galaxy:weapon/gun/bullet/weaken
+execute if score @s bulletWeaken matches 1..99 run scoreboard players operation @s bulletWeaken /= #2 num
+execute if entity @e[tag=galaxy.hitbox.target] if score @s bulletWeaken matches 1..99 run function galaxy:weapon/gun/bullet/weaken
 
-execute unless entity @e[tag=bulletTraceTarget] run function galaxy:weapon/gun/bullet/bounce/entity/random_rotation
+execute unless entity @e[tag=galaxy.hitbox.target] run function galaxy:weapon/gun/bullet/bounce/entity/random_rotation
+
+tag @e[tag=galaxy.hitbox.target] remove galaxy.hitbox.target
 
 scoreboard players set @s sucBulletHit -1
-
-tag @e[tag=bulletTraceTarget] remove bulletTraceTarget
-kill @e[tag=bulletTracer]
-
-
-
