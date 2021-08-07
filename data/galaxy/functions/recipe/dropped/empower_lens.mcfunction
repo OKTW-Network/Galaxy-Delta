@@ -1,17 +1,16 @@
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_1,nbt={Item:{id:"minecraft:blaze_rod"}},nbt=!{Item:{Count:6b}}] run tag @s remove dropRcpEmpLens_1
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:blaze_rod",Count:6b}}] run tag @s add dropRcpEmpLens_1
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:blaze_rod",Count:6b},PickupDelay:0s}] if data entity @s Thrower run tag @s add galaxy.recipe.dropped.empower_lens.material_1
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_ingot",Count:4b},PickupDelay:0s}] if data entity @s Thrower run tag @s add galaxy.recipe.dropped.empower_lens.material_2
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_pane",Count:2b},PickupDelay:0s}] if data entity @s Thrower run tag @s add galaxy.recipe.dropped.empower_lens.material_3
 
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_2,nbt={Item:{id:"minecraft:gold_ingot"}},nbt=!{Item:{Count:4b}}] run tag @s remove dropRcpEmpLens_2
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_ingot",Count:4b}}] run tag @s add dropRcpEmpLens_2
+scoreboard players set @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] sucDropRcp 0
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] at @s if entity @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_2,distance=..0.5] if entity @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_3,distance=..0.5] run scoreboard players set @s sucDropRcp 1
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] at @s if score @s sucDropRcp matches 1 run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] at @s if score @s sucDropRcp matches 1 run function galaxy:tool/summon/empower_lens
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] at @s if score @s sucDropRcp matches 1 as @a[distance=..4,predicate=!galaxy:advancement/reached-structure_empower] run function galaxy:advancement/structure_empower
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] at @s if score @s sucDropRcp matches 1 run kill @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_2,distance=..1,sort=nearest,limit=1]
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] at @s if score @s sucDropRcp matches 1 run kill @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_3,distance=..1,sort=nearest,limit=1]
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] if score @s sucDropRcp matches 1 run kill @s
 
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3,nbt={Item:{id:"minecraft:glass_pane"}},nbt=!{Item:{Count:2b}}] run tag @s remove dropRcpEmpLens_3
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:glass_pane",Count:2b}}] run tag @s add dropRcpEmpLens_3
-
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] at @s store success score @s sucDropRcp run execute if entity @e[type=minecraft:item,tag=dropRcpEmpLens_1,distance=..0.5] if entity @e[type=minecraft:item,tag=dropRcpEmpLens_2,distance=..0.5]
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] if score @s sucDropRcp matches 1 run scoreboard players set @s sucDropRcp -1
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] at @s if score @s sucDropRcp matches -1 run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] at @s if score @s sucDropRcp matches -1 run function galaxy:tool/summon/structure_empower
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] at @s if score @s sucDropRcp matches -1 as @a[distance=..4,predicate=!galaxy:advancement/reached-structure_empower] run function galaxy:advancement/structure_empower
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] at @s if score @s sucDropRcp matches -1 run kill @e[type=minecraft:item,tag=dropRcpEmpLens_1,distance=..1,sort=nearest,limit=1]
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] at @s if score @s sucDropRcp matches -1 run kill @e[type=minecraft:item,tag=dropRcpEmpLens_2,distance=..1,sort=nearest,limit=1]
-execute as @e[type=minecraft:item,tag=dropRcpEmpLens_3] if score @s sucDropRcp matches -1 run kill @s
+tag @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_1] remove galaxy.recipe.dropped.empower_lens.material_1
+tag @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_2] remove galaxy.recipe.dropped.empower_lens.material_2
+tag @e[type=minecraft:item,tag=galaxy.recipe.dropped.empower_lens.material_3] remove galaxy.recipe.dropped.empower_lens.material_3

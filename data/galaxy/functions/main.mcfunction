@@ -8,6 +8,6 @@ function galaxy:block/main
 function galaxy:entity/main
 function galaxy:tool/main
 function galaxy:book/main
-function galaxy:recipe/main
+# function galaxy:recipe/main
 function galaxy:status_effect/main
 function galaxy:visual_effect/main
