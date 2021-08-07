@@ -3,7 +3,7 @@
     "predicate": {
         "player": {
             "advancements": {
-                "galaxy:structure_empower": true
+                "galaxy:empower_lens": true
             }
         }
     },
