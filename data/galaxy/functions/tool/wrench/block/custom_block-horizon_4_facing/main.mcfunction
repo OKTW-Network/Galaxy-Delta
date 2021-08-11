@@ -1,4 +1,4 @@
-tag @e[tag=customBlock,distance=..0.05] add ThisWrenchCustomBlockTarget
+tag @e[tag=galaxy.customBlock,distance=..0.05] add ThisWrenchCustomBlockTarget
 execute positioned ~ ~1 ~ run tag @e[tag=customFakeBlock,distance=..0.05] add ThisWrenchCustomBlockTargetFakeBlock
 
 execute if entity @s[tag=wrenchFirstUse] if predicate galaxy:entity/item_frame/vertical run tag @s add wrenchCustomBlockH4FFacing

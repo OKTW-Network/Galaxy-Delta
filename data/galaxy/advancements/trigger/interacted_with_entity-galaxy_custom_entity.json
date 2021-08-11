@@ -8,11 +8,11 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "galaxy_custom_entity": {
+        "interacted_with_galaxy_custom_entity": {
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "team": "GalaxyCustomE"
+                    "nbt": "{Tags:[\"galaxy.customEntity\"]}"
                 }
             }
         }

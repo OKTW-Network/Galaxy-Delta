@@ -1,3 +1,6 @@
+tag @e[tag=customEntity] add galaxy.customEntity
+tag @e[tag=customEntity] remove customEntity
+
 tag @e[tag=no_overlap] add noOverlap
 tag @e[tag=no_overlap] remove no_overlap
 

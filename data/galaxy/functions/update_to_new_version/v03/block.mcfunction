@@ -1,3 +1,6 @@
+tag @e[tag=customBlock] add galaxy.customBlock
+tag @e[tag=customBlock] remove customBlock
+
 tag @e[tag=fake_block] add customFakeBlock
 tag @e[tag=fake_block] remove fake_block
 
