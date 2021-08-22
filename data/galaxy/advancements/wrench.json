@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{wrench:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"wrench\"}}}"
                     }
                 ]
             }

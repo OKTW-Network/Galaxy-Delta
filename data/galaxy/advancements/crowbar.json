@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{crowbar:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"crowbar\"}}}"
                     }
                 ]
             }

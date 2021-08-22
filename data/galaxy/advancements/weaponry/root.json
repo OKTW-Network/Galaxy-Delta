@@ -16,13 +16,23 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{katana:1}"
+                        "nbt": "{CustomData:{galaxy:{id:\"katana\"}}}"
+                    }
+                ]
+            }
+        },
+        "lasor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
                     }
                 ]
             }
         }
     },
     "requirements": [
-        ["katana"]
+        ["katana","lasor"]
     ]
 }

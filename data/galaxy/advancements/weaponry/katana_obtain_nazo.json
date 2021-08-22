@@ -17,7 +17,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{katana:{style:2b}}"
+						"nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"katana\",tag:{style:2b}}}}"
                     }
                 ]
             }

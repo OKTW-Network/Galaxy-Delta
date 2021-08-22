@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"steel_ingot\"}}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"steel_ingot\"}}}"
                     }
                 ]
             }

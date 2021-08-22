@@ -16,7 +16,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{empower_lens:{}}"
+						"nbt": "{CustomData:{galaxy:{id:\"empower_lens\"}}}"
                     }
                 ]
             }
@@ -26,7 +26,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{wrench:{}}"
+						"nbt": "{CustomData:{galaxy:{id:\"wrench\"}}}"
                     }
                 ]
             }
@@ -36,7 +36,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{crowbar:{}}"
+						"nbt": "{CustomData:{galaxy:{id:\"crowbar\"}}}"
                     }
                 ]
             }
@@ -46,7 +46,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{HTct:{}}"
+						"nbt": "{CustomData:{galaxy:{id:\"hi-tech_crafting_table\"}}}"
                     }
                 ]
             }

@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{empower_lens:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"empower_lens\"}}}"
                     }
                 ]
             }
