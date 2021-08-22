@@ -68,7 +68,8 @@ scoreboard players set #galaxy$katana_act_flash Config 1
 
 
 # Action: flash - charge
-# false = double click, true = hold and release
+# > false(0) = double click
+# > true(1) = hold, then release
 # boolean, default: 1
 scoreboard players set #galaxy$katana_act_flash_charge Config 1
 
@@ -112,7 +113,8 @@ scoreboard players set #galaxy$energy_saber_act_turn_off_cd Config 30
   ########################################
 
 # Allow sniper rifle charge
-# false = shoot instantly, true = hold
+# > false(0) = shoot instantly
+# > true(1) = hold, then release
 # boolean, default: 1
 scoreboard players set #galaxy$gun_sniper_charge Config 1
 
