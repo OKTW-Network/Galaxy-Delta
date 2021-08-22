@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:diamond_block"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:obsidian"
+        ]
+      }
+    }
+  }
+]

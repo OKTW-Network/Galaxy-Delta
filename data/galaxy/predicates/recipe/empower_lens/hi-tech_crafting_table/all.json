@@ -1,0 +1,14 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:recipe/empower_lens/hi-tech_crafting_table/center"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:recipe/empower_lens/hi-tech_crafting_table/side"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:recipe/empower_lens/hi-tech_crafting_table/corner"
+  }
+]

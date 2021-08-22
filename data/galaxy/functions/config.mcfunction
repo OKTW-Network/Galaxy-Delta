@@ -38,7 +38,7 @@ scoreboard players set #galaxy$target_passive Config 1
 
 
 ############################################
-# Machine                                  #
+# Block                                    #
 ############################################
 
 # Coke furnace operating speed
@@ -48,25 +48,6 @@ scoreboard players set #galaxy$coke_furnace_dur Config 400
 # Advanced blast furnace operating speed
 # integer, tick, default: 800
 scoreboard players set #galaxy$advanced_blast_furnace_dur Config 800
-
-
-############################################
-# Tool                                     #
-############################################
-
-  ########################################
-  # Empower Lens                         #
-  ########################################
-
-# Weather conditions of the process
-# 0 = process in any weather, 1 = only process while thunder weather, 2 = only process while raining (or thunder weather)
-# integer, default: 2
-scoreboard players set #galaxy$empower_lens_weather_condition Config 2
-
-# Success chance of the process
-# higher value mean higher success chance
-# float, range: 0 ~ 1.0, default: 0.0005
-## see the file at ..\data\galaxy\predicates\configurable\empower_lens_success_chance
 
 
 ############################################
