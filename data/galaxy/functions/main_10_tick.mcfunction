@@ -1,1 +1,1 @@
-function galaxy:recipe/main
+function galaxy:recipe/main_10_tick

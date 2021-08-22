@@ -31,8 +31,8 @@ scoreboard players operation @s gunBulletSummon = @s gunBulletTotal
 
 execute unless score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/bullet/summon/main
 
-execute unless score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/sound-shoot
-# execute if score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/sound-charge
+execute unless score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/sound/shoot/main
+# execute if score @s reqGunFire matches 20 at @s run function galaxy:weapon/gun/sound/charge/main
 
 execute if score @s reqGunFire matches 21 run function galaxy:weapon/gun/shoot/charge/end
 

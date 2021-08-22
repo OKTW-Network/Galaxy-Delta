@@ -18,4 +18,4 @@ execute if score #1 calcu_temp matches 14 as @a[tag=reqElevatorGoUp] at @s run t
 execute if score #1 calcu_temp matches 15 as @a[tag=reqElevatorGoUp] at @s run tp @s ~ ~15 ~
 execute if score #1 calcu_temp matches 16 as @a[tag=reqElevatorGoUp] at @s run tp @s ~ ~16 ~
 
-execute if score #1 calcu_temp matches 2..16 at @a[tag=reqElevatorGoUp] run function galaxy:block/elevator/sound-teleport
+execute if score #1 calcu_temp matches 2..16 at @a[tag=reqElevatorGoUp] run function galaxy:block/elevator/sound/teleport

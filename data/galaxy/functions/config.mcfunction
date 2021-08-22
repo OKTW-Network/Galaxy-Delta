@@ -73,15 +73,6 @@ scoreboard players set #galaxy$katana_act_flash Config 1
 scoreboard players set #galaxy$katana_act_flash_charge Config 1
 
 
-# Sounds - Action: swap
-# boolean, default: 1
-scoreboard players set #galaxy$katana_act_swap_sound Config 1
-
-# Sounds - Action: stun
-# boolean, default: 1
-scoreboard players set #galaxy$katana_act_stun_sound Config 1
-
-
 # Cooldown - Action: swap-pull
 # integer, tick, default: 10
 scoreboard players set #galaxy$katana_act_swap_pull_cd Config 10
@@ -106,11 +97,6 @@ scoreboard players set #galaxy$katana_act_flash_cd_max Config 80
   ########################################
   # Energy saber                         #
   ########################################
-
-# Sounds - Action: turn-on/off
-# boolean, default: 1
-scoreboard players set #galaxy$energy_saber_act_turn_sound Config 1
-
 
 # Cooldown - Action: turn-on
 # integer, tick, default: 30
