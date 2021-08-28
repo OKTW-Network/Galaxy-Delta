@@ -1,5 +1,5 @@
-execute at @s if predicate galaxy:block/step_on-elevator run tag @s add elevatorSneak
+tag @s[predicate=galaxy:block/step_on-elevator] add galaxy.elevator.action.sneak
 
-execute at @s as @e[tag=galaxy.customBlock,tag=galaxy.elevator,distance=..2] at @s run function galaxy:block/elevator/request_manager
+execute as @s[tag=galaxy.elevator.action.sneak] at @s run function galaxy:block/elevator/request_manager
 
-tag @a[tag=elevatorSneak] remove elevatorSneak
+tag @s[tag=galaxy.elevator.action.sneak] remove galaxy.elevator.action.sneak

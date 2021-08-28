@@ -50,6 +50,10 @@ scoreboard players set #galaxy$coke_furnace_dur Config 400
 # integer, tick, default: 800
 scoreboard players set #galaxy$advanced_blast_furnace_dur Config 800
 
+# Elevator teleport range
+# integer, block, 2 ~ 16, default: 16
+scoreboard players set #galaxy$elevator_range Config 16
+
 
 ############################################
 # Weapon                                   #

@@ -1,6 +1,7 @@
 {
   "values": [
     "galaxy:config",
+    "galaxy:meta/config_limit",
     "galaxy:meta/broadcast/config"
   ]
 }

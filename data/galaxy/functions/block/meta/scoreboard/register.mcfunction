@@ -1,3 +1,5 @@
+scoreboard objectives add galaxy.block dummy
+
 scoreboard objectives add statesFacing dummy "num-Block state facing"
 scoreboard objectives add statesLit dummy "num-Block state lit"
 

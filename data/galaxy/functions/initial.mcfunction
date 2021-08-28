@@ -7,7 +7,6 @@ function #galaxy:config
 function galaxy:check-version
 
 function galaxy:recipe/initial
-function galaxy:block/initial
 function galaxy:book/initial
 function galaxy:weapon/initial
 

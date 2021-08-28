@@ -1,16 +1,16 @@
-execute store result score #1 calcu_temp run data get entity @s Pos[0]
-execute store result score #2 calcu_temp run data get entity @s Pos[1]
-execute store result score #3 calcu_temp run data get entity @s Pos[2]
-scoreboard players add #2 calcu_temp 1
-execute positioned ~ ~1 ~ as @a[predicate=galaxy:block/step_on-elevator,distance=..0.7] run function galaxy:block/elevator/check_position
+tag @s add ThisElevatorUser
 
-tag @a[tag=elevatorJump,tag=sucElevatorPos,tag=!reqElevatorGoUp] add reqElevatorGoUp
-tag @a[tag=reqElevatorGoUp] remove elevatorJump
+function galaxy:block/elevator/find_using/main
 
-tag @a[tag=elevatorSneak,tag=sucElevatorPos,tag=!reqElevatorGoDown] add reqElevatorGoDown
-tag @a[tag=reqElevatorGoDown] remove elevatorSneak
+execute as @e[tag=ThisUsingElevator] at @s run summon minecraft:marker ~ ~ ~ {Tags:["galaxy.scanner.elevator"]}
+execute if entity @s[tag=galaxy.elevator.action.jump] run tag @e[tag=galaxy.scanner.elevator] add galaxy.scannerAct.Up
+execute if entity @s[tag=galaxy.elevator.action.sneak] run tag @e[tag=galaxy.scanner.elevator] add galaxy.scannerAct.Down
+scoreboard players operation #elevator.find_target.stepLimit galaxy.block = #galaxy$elevator_range Config
+execute as @e[tag=galaxy.scanner.elevator] at @s run function galaxy:block/elevator/find_target
 
-tag @a[tag=sucElevatorPos] remove sucElevatorPos
+execute as @e[tag=galaxy.TargetElevator] at @s run function galaxy:block/elevator/teleport
 
-execute if entity @a[tag=reqElevatorGoUp] run function galaxy:block/elevator/go-up
-execute if entity @a[tag=reqElevatorGoDown] run function galaxy:block/elevator/go-down
+tag @e[tag=galaxy.TargetElevator] remove galaxy.TargetElevator
+tag @e[tag=ThisUsingElevator] remove ThisUsingElevator
+
+tag @s remove ThisElevatorUser
