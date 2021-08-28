@@ -1,6 +1,5 @@
 {
     "values":[
-        "galaxy:weapon/katana/action/handler-use_item-break",
-        "galaxy:weapon/gun/shoot/handler-use_item-break"
+        "galaxy:weapon/katana/action/handler-use_item-break"
     ]
 }

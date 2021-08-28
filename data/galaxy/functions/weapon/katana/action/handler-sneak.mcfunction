@@ -1,1 +1,1 @@
-function galaxy:weapon/katana/action/flash/charge/reset
+function galaxy:weapon/katana/action/swap_pull/ready/reset

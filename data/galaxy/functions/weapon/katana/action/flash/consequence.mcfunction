@@ -3,8 +3,7 @@ data modify entity @e[tag=actFlashPathfinder,limit=1] Rotation set from entity @
 
 scoreboard players set @s ktnFlashMoved 0
 
-execute if score #galaxy$katana_act_flash_charge Config matches 0 run function galaxy:weapon/katana/action/flash/calculate-move
-execute if score #galaxy$katana_act_flash_charge Config matches 1 run function galaxy:weapon/katana/action/flash/calculate-move-charge
+function galaxy:weapon/katana/action/flash/calculate-move
 
 tag @s add galaxy.ktnFalshUser
 execute as @e[tag=actFlashPathfinder] at @s run function galaxy:weapon/katana/action/flash/move

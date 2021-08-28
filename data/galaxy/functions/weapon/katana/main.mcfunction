@@ -1,4 +1,4 @@
-execute as @a[predicate=galaxy:weapon/postures-katana,scores={ktnFlashCd=0,ktnFlashCrgeLvl=..99},tag=cu.useItemContinuous,tag=!galaxy.ktnTickPatchLock] run function galaxy:weapon/katana/action/flash/charge/tick_patch
+execute as @a[predicate=galaxy:weapon/postures-katana,scores={ktnFlashCd=0,ktnFlashCrgeLvl=..99},tag=cu.usingItemContinuously,tag=!galaxy.ktnTickPatchLock] run function galaxy:weapon/katana/action/flash/charge/tick_patch
 
 execute as @a[tag=wasActShock,predicate=minecraft:on_ground] at @s run function galaxy:weapon/katana/action/shock/levitation-end
 
