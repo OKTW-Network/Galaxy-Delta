@@ -2,8 +2,8 @@ execute if score @s FhGunTemper matches 100.. run data modify storage galaxy:tem
 execute if score @s FhGunTemper matches 10..99 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value_space set value '{"text":" "}'
 execute if score @s FhGunTemper matches 0..9 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value_space set value '{"text":"  "}'
 
-execute if score @s FhGunOverheat matches 0 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value set value '{"translate":"%s%s℃","with":[{"nbt":"+HUD.gun.temperature.offhand_value_space","storage":"galaxy:temp","interpret":true},{"score":{"name":"*","objective":"FhGunTemper"}}],"color":"aqua"}'
-execute if score @s FhGunOverheat matches 1 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value set value '{"translate":"%s%s℃","with":[{"nbt":"+HUD.gun.temperature.offhand_value_space","storage":"galaxy:temp","interpret":true},{"score":{"name":"*","objective":"FhGunTemper"}}],"color":"red"}'
+execute if score @s FhGunOverheat matches 0 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value set value '{"translate":"%s%sK","with":[{"nbt":"+HUD.gun.temperature.offhand_value_space","storage":"galaxy:temp","interpret":true},{"score":{"name":"*","objective":"FhGunTemper"}}],"color":"aqua"}'
+execute if score @s FhGunOverheat matches 1 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value set value '{"translate":"%s%sK","with":[{"nbt":"+HUD.gun.temperature.offhand_value_space","storage":"galaxy:temp","interpret":true},{"score":{"name":"*","objective":"FhGunTemper"}}],"color":"red"}'
 
 execute if score #1 calcu_temp matches 901.. run data modify storage galaxy:temp +HUD.gun.temperature.offhand_bar_front_raw set value '{"text":"=========="}'
 execute if score #1 calcu_temp matches 801..900 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_bar_front_raw set value '{"text":"========="}'

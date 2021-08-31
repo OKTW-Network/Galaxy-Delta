@@ -6,4 +6,4 @@ execute if entity @s[tag=Aiming] unless score @s reqGunFire matches 31 store res
 execute store result score @e[tag=galaxy.bullet,tag=init,limit=1] bulletPenetrate run data get entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.projectile.penetrate
 execute store result score @e[tag=galaxy.bullet,tag=init,limit=1] bulletTrace run data get entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.projectile.trace
 execute store result score @e[tag=galaxy.bullet,tag=init,limit=1] bulletBounce run data get entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.projectile.bounce
-execute store result score @e[tag=galaxy.bullet,tag=init,limit=1] bulletColor run data get entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.projectile.color
+execute store result score @e[tag=galaxy.bullet,tag=init,limit=1] bulletColor run data get entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.projectile.color.id

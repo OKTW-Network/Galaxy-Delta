@@ -1,5 +1,4 @@
-item replace block ~ ~ ~ container.13 with carrot_on_a_stick{CustomData:{galaxy:{Type:"item",id:"gun",tag:{type:0,cosmetic:{id:"none"},status:0}}},display:{Name:'{"translate":"item.galaxy.lasor","italic":false}'},CustomModelData:100,HideFlags:39,RepairCost:-2147483648,Unbreakable:1b}
-# type:0,cosmetic:0,cosmeticName:"none",cosmeticModel:100,special:0,specialName:"none",status:0,projectile:{penetrate:0,trace:0,extra:0,color:0,colorName:"none"}
+item replace block ~ ~ ~ container.13 with carrot_on_a_stick{CustomData:{galaxy:{Type:"item",id:"gun",tag:{status:0}}},display:{Name:'{"translate":"item.galaxy.gun","italic":false}'},CustomModelData:100,HideFlags:39,RepairCost:-2147483648,Unbreakable:1b}
 
 function cu:uuid/generate
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID set from storage cu:uuid generate
@@ -37,14 +36,18 @@ execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{C
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}] run function galaxy:gui/assembly_table/build-result/cosmetic
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{color_lens:{}}}}}] run function galaxy:gui/assembly_table/build-result/projectile_color
 
-data modify storage galaxy:temp itemTag set from block ~ ~ ~ Items[{Slot:13b}].tag
-function galaxy:gui/assembly_table/build-lore/main
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore set from storage galaxy:temp lore
-
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:1,cosmetic:{id:"none"}} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:2,cosmetic:{id:"none"}} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 220100
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:3,cosmetic:{id:"none"}} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 230100
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:1} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:2} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 220100
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:3} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 230100
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.Model run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.Model
+
+data modify storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag
+function galaxy:gui/assembly_table/build-lore/main
+data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Lore set from storage galaxy:temp +gui.assembly_table.build-lore.result
+
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:1} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"translate":"item.galaxy.gun.pistol","italic":false}'
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:2} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"translate":"item.galaxy.gun.sniper","italic":false}'
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:3} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.display.Name set value '{"translate":"item.galaxy.gun.shotgun","italic":false}'
 
 function galaxy:gui/assembly_table/data_save-parts
 function galaxy:gui/assembly_table/data_save-result
