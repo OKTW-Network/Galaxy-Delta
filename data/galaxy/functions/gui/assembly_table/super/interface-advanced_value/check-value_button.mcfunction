@@ -1,0 +1,15 @@
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:2b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:3b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:4b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:5b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:6b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:7b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:8b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:10b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:20b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:21b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:22b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:23b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:24b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:25b}]} run tag @s add setValueButton
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:26b}]} run tag @s add setValueButton

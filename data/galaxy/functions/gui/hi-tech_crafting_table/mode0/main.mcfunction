@@ -30,6 +30,6 @@ tag @s[tag=setRecipePage] remove setRecipePage
 
 # mode switch, recipe request
 function galaxy:gui/hi-tech_crafting_table/mode0/check-request
-execute if entity @s[tag=switchToMode1] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=switchToMode1] run function galaxy:gui/hi-tech_crafting_table/mode0/get-request
-execute if entity @s[tag=switchToMode1] run function galaxy:gui/hi-tech_crafting_table/switch_mode
+execute if entity @s[tag=switchToInterface.recipe_require] run function galaxy:gui/remove-gui_item
+execute if entity @s[tag=switchToInterface.recipe_require] run function galaxy:gui/hi-tech_crafting_table/mode0/get-request
+execute if entity @s[tag=switchToInterface.recipe_require] run function galaxy:gui/hi-tech_crafting_table/switch_mode

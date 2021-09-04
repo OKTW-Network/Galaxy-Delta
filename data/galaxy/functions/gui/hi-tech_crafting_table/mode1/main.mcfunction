@@ -33,6 +33,6 @@ execute if entity @s[tag=setButtonReturn] run item replace block ~ ~ ~ container
 tag @s[tag=setButtonReturn] remove setButtonReturn
 
 # mode switch, return
-execute unless data block ~ ~ ~ Items[{Slot:18b}] run tag @s add switchToMode0
-execute if entity @s[tag=switchToMode0] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=switchToMode0] run function galaxy:gui/hi-tech_crafting_table/switch_mode
+execute unless data block ~ ~ ~ Items[{Slot:18b}] run tag @s add switchToInterface.recipe_list
+execute if entity @s[tag=switchToInterface.recipe_list] run function galaxy:gui/remove-gui_item
+execute if entity @s[tag=switchToInterface.recipe_list] run function galaxy:gui/hi-tech_crafting_table/switch_mode

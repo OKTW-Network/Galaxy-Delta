@@ -1,4 +1,4 @@
-scoreboard objectives add guiMode dummy "num-GUI mode"
+scoreboard objectives add guiInterface dummy "num-GUI mode"
 
 scoreboard objectives add countItems dummy "num-GUI total item quantity"
 scoreboard objectives add countTags dummy "num-GUI taged item quantity"
@@ -38,8 +38,8 @@ scoreboard objectives add sucHTctRcp dummy "num-GUI:HTct recipe check success"
 scoreboard objectives add sbldGAtbMax dummy "num-GUI:Sbld-Gun attribute type max"
 scoreboard objectives add sbldAttribute dummy "num-GUI:Sbld attribute type"
 scoreboard objectives add sbldValue dummy "num-GUI:Sbld attribute value"
-scoreboard objectives add sbldValueMax dummy "num-GUI:Sbld maximum attribute value"
-scoreboard objectives add sbldValueMin dummy "num-GUI:Sbld minimum attribute value"
+scoreboard objectives add sbldValueMax dummy "num-GUI:Sbld attribute value max"
+scoreboard objectives add sbldValueMin dummy "num-GUI:Sbld attribute value min"
 
 scoreboard objectives add optType dummy "num-Generate Option: Type"
 scoreboard objectives add optCosmetic dummy "num-Generate Option: Cosmetic"

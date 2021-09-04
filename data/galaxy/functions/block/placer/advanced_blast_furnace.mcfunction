@@ -19,7 +19,7 @@ scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furna
 scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] workProc1Burn 0
 scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] workProc1BurnMax 10
 scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] workProc1Prog 0
-scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] guiMode 0
+scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] guiInterface 0
 scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] guiSmltValue -2147483648
 scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] guiProcValue -2147483648
 scoreboard players set @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,tag=init] guiProgValue -2147483648

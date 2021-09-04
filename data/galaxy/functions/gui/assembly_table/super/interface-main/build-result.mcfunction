@@ -1,5 +1,5 @@
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add setTemplate
-execute if entity @s[tag=setTemplate] run function galaxy:gui/assembly_table/super/build-result_template
+execute if entity @s[tag=setTemplate] run function galaxy:gui/assembly_table/super/interface-main/build-result_template
 tag @s[tag=setTemplate] remove setTemplate
 
 data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cosmetic
