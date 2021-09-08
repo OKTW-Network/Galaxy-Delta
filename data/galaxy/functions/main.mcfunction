@@ -10,3 +10,5 @@ function galaxy:tool/main
 function galaxy:book/main
 # function galaxy:recipe/main
 function galaxy:status_effect/main
+
+function galaxy:debug/re-give/_request/main

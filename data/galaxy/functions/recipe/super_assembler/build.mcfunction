@@ -26,6 +26,9 @@ data modify storage galaxy:recipe Samb.attribute append from storage galaxy:reci
 function galaxy:recipe/super_assembler/build-attribute/heat
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.heat
 
+function galaxy:recipe/super_assembler/build-attribute/temperature_min
+data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.temperature_min
+
 function galaxy:recipe/super_assembler/build-attribute/temperature_max
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.temperature_max
 

@@ -15,7 +15,8 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.pro
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.delay int 1 run scoreboard players get @s optDelay
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.distance int 1 run scoreboard players get @s optPjDistance
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.heat int 1 run scoreboard players get @s optHeat
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperMax int 1 run scoreboard players get @s optTemperMax
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_min int 1 run scoreboard players get @s optTemperMin
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_max int 1 run scoreboard players get @s optTemperMax
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cooling int 1 run scoreboard players get @s optCooling
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cooling_delay int 1 run scoreboard players get @s optCoolingDly
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.speed int 1 run scoreboard players get @s optPjSpeed

@@ -10,7 +10,7 @@ execute if data storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDat
 
 function galaxy:gui/assembly_table/build-lore/heat
 
-function galaxy:gui/assembly_table/build-lore/temperature_max
+function galaxy:gui/assembly_table/build-lore/temperature
 
 function galaxy:gui/assembly_table/build-lore/cooling
 

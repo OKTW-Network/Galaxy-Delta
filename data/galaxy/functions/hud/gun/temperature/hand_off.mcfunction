@@ -1,3 +1,10 @@
+scoreboard players operation #1 calcu_temp = @s FhGunTemper
+scoreboard players operation #1 calcu_temp -= @s FhGunTemperMin
+scoreboard players operation #2 calcu_temp = @s FhGunTemperMax
+scoreboard players operation #2 calcu_temp -= @s FhGunTemperMin
+scoreboard players operation #1 calcu_temp *= #1000 num
+scoreboard players operation #1 calcu_temp /= #2 calcu_temp
+
 execute if score @s FhGunTemper matches 100.. run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value_space set value '{"text":""}'
 execute if score @s FhGunTemper matches 10..99 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value_space set value '{"text":" "}'
 execute if score @s FhGunTemper matches 0..9 run data modify storage galaxy:temp +HUD.gun.temperature.offhand_value_space set value '{"text":"  "}'

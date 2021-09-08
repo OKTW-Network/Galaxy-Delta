@@ -17,6 +17,7 @@ function galaxy:gui/assembly_table/build-result/type
 function galaxy:gui/assembly_table/build-result/projectile_damage
 function galaxy:gui/assembly_table/build-result/delay
 function galaxy:gui/assembly_table/build-result/projectile_distance
+function galaxy:gui/assembly_table/build-result/temperature_min
 function galaxy:gui/assembly_table/build-result/temperature_max
 function galaxy:gui/assembly_table/build-result/heat
 function galaxy:gui/assembly_table/build-result/cooling
@@ -26,8 +27,6 @@ function galaxy:gui/assembly_table/build-result/projectile_offset
 function galaxy:gui/assembly_table/build-result/projectile_aim_offset
 function galaxy:gui/assembly_table/build-result/aim_zoom
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{handle_gun:{}}}}}].CustomData.galaxy.tag.handle_gun.Alteration.accelerate run function galaxy:gui/assembly_table/build-result/accelerate
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.charge run function galaxy:gui/assembly_table/build-result/charge
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.charge_heat run function galaxy:gui/assembly_table/build-result/charge_heat
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.projectile.penetrate run function galaxy:gui/assembly_table/build-result/projectile_penetrate
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.projectile.bounce run function galaxy:gui/assembly_table/build-result/projectile_bounce
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.projectile.trace run function galaxy:gui/assembly_table/build-result/projectile_trace

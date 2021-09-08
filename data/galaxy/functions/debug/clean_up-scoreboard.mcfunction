@@ -26,3 +26,4 @@ scoreboard objectives remove sbldAttribute
 scoreboard objectives remove sbldPistolAtbMax
 scoreboard objectives remove sbldPistolAtVMax
 scoreboard objectives remove sbldPistolAtVMin
+scoreboard objectives remove guiMode
