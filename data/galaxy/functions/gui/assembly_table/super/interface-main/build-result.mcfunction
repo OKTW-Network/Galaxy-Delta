@@ -40,7 +40,7 @@ execute if score @s optType matches 3 run data modify block ~ ~ ~ Items[{Slot:16
 execute unless score @s optCosmetic matches 0 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set from block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cosmetic.Model
 
 data modify storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag set from block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag
-function galaxy:gui/assembly_table/build-lore/main
+function galaxy:gui/assembly_table/interface-gun_main/build-lore/main
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore set from storage galaxy:temp +gui.assembly_table.build-lore.result
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore prepend value '[{"translate":"tooltip.super_build","color":"dark_gray","italic":false}]'
 

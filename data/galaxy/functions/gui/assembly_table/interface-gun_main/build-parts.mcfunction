@@ -18,5 +18,5 @@ execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{C
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}] run data modify block ~ ~ ~ Items[{Slot:24b}].tag set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}]
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{color_lens:{}}}}}] run data modify block ~ ~ ~ Items[{Slot:26b}].tag set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{color_lens:{}}}}}]
 
-function galaxy:gui/assembly_table/data_save-parts
-function galaxy:gui/assembly_table/data_save-result
+function galaxy:gui/assembly_table/interface-gun_main/data_save-parts
+function galaxy:gui/assembly_table/interface-gun_main/data_save-result
