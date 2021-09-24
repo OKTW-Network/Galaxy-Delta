@@ -1,38 +1,26 @@
-{
-  "condition": "minecraft:inverted",
-  "term": {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "mainhand": {
-                "items": ["minecraft:carrot_on_a_stick"],
-                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
-              }
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:inverted",
-        "term": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "offhand": {
-                "items": ["minecraft:carrot_on_a_stick"],
-                "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
-              }
-            }
-          }
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": ["minecraft:carrot_on_a_stick"],
+          "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
         }
       }
-    ]
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "offhand": {
+          "items": ["minecraft:carrot_on_a_stick"],
+          "nbt": "{CustomData:{galaxy:{id:\"gun\",tag:{special:{id:\"gun.special.type1.dual\"}}}}}"
+        }
+      }
+    }
   }
-}
+]

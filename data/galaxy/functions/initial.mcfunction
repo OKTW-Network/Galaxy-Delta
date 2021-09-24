@@ -8,7 +8,6 @@ function galaxy:check-version
 
 function galaxy:recipe/initial
 function galaxy:book/initial
-function galaxy:weapon/initial
 
 execute as @a run function galaxy:initial-player
 

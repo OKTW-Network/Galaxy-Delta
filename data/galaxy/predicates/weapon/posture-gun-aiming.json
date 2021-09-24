@@ -1,10 +1,10 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "galaxy:weapon/hand_main-gun_type1"
+    "name": "minecraft:sneaking"
   },
   {
     "condition": "minecraft:reference",
-    "name": "galaxy:weapon/hand_off-gun_type1"
+    "name": "galaxy:weapon/posture-gun"
   }
 ]
