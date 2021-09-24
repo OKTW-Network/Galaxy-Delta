@@ -1,4 +1,4 @@
-execute if entity @s[tag=!galaxy.gun.swap.mainHand,tag=!MhGunNew] run function galaxy:weapon/gun/meta/data/store_manager-hand_main
+execute if entity @s[tag=!galaxy.gun.swap.mainHand,tag=!galaxy.gun.isNew.mainHand] run function galaxy:weapon/gun/meta/data/store_manager-hand_main
 
 execute if entity @s[tag=!galaxy.gun.swap.mainHand] run scoreboard players operation @s MhGunUUID0 = @s MhGunUUID0New
 execute if entity @s[tag=!galaxy.gun.swap.mainHand] run scoreboard players operation @s MhGunUUID1 = @s MhGunUUID1New

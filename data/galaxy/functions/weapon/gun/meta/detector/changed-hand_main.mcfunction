@@ -1,4 +1,4 @@
-execute unless score @s MhGunUUID0 matches -2147483648..2147483647 unless score @s MhGunUUID1 matches -2147483648..2147483647 unless score @s MhGunUUID2 matches -2147483648..2147483647 unless score @s MhGunUUID3 matches -2147483648..2147483647 run tag @s add MhGunNew
+execute unless score @s MhGunUUID0 matches -2147483648..2147483647 unless score @s MhGunUUID1 matches -2147483648..2147483647 unless score @s MhGunUUID2 matches -2147483648..2147483647 unless score @s MhGunUUID3 matches -2147483648..2147483647 run tag @s add galaxy.gun.isNew.mainHand
 
 function galaxy:weapon/gun/meta/uuid/get-hand_main
 execute unless score @s MhGunUUID0New = @s MhGunUUID0 run tag @s add galaxy.gun.changed.mainHand

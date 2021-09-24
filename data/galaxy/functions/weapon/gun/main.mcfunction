@@ -12,6 +12,7 @@ execute as @a[predicate=galaxy:weapon/posture-gun-aiming,tag=!galaxy.gun.zooming
 
 execute as @e[tag=galaxy.bullet] run function galaxy:weapon/gun/bullet/main
 
+execute as @a[tag=galaxy.gun.changed] run function galaxy:weapon/gun/temperature/base
 execute as @a[scores={MhGunTemper=1..}] if score @s MhGunTemper > @s MhGunTemperMin run function galaxy:weapon/gun/temperature/hand_main
 execute as @a[scores={FhGunTemper=1..}] if score @s FhGunTemper > @s FhGunTemperMin run function galaxy:weapon/gun/temperature/hand_off
 execute as @a[scores={MhGunAclrateTim=1..}] run function galaxy:weapon/gun/accelerate/hand_main

@@ -4,3 +4,5 @@ execute if entity @s[predicate=galaxy:weapon/hand_off-gun] run function galaxy:w
 tag @s[tag=galaxy.gun.changed.mainHand] add galaxy.gun.changed
 tag @s[tag=galaxy.gun.changed.offHand] add galaxy.gun.changed
 tag @s[tag=galaxy.gun.swap.mainHand,tag=galaxy.gun.swap.offHand] add galaxy.gun.swap
+tag @s[tag=galaxy.gun.isNew.mainHand] add galaxy.gun.isNew
+tag @s[tag=galaxy.gun.isNew.offHand] add galaxy.gun.isNew
