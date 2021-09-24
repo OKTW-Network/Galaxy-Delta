@@ -2,7 +2,7 @@ data modify storage galaxy:temp +weapon.katana.replaceitem.itemTag set from enti
 data modify storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag set from storage galaxy:temp +weapon.katana.replaceitem.itemTag.CustomData.galaxy.tag
 
 data modify storage galaxy:get item set value []
-function galaxy:weapon/katana/get/katana
+function galaxy:weapon/katana/get/_dummy
 data modify storage cu:item input set from storage galaxy:get item[0]
 function galaxy:weapon/katana/replaceitem/calculate_cmd-katana
 execute store result storage cu:item input.tag.CustomModelData int 1 run scoreboard players get @s ktnMdlKatana
