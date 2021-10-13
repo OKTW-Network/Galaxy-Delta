@@ -20,6 +20,9 @@ data modify storage galaxy:recipe Samb.attribute append from storage galaxy:reci
 function galaxy:recipe/super_assembler/build-attribute/delay
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.delay
 
+function galaxy:recipe/super_assembler/build-attribute/charge
+data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.charge
+
 function galaxy:recipe/super_assembler/build-attribute/projectile_distance
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_distance
 

@@ -15,7 +15,8 @@ execute if data block ~ ~ ~ Items[{Slot:26b}].tag.CustomData.galaxy.tag.color_le
 
 function galaxy:gui/assembly_table/interface-gun_main/build-result/type
 function galaxy:gui/assembly_table/interface-gun_main/build-result/projectile_damage
-function galaxy:gui/assembly_table/interface-gun_main/build-result/delay
+execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.charge run function galaxy:gui/assembly_table/interface-gun_main/build-result/delay
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{barrel:{}}}}}].CustomData.galaxy.tag.barrel.Alteration.charge run function galaxy:gui/assembly_table/interface-gun_main/build-result/charge
 function galaxy:gui/assembly_table/interface-gun_main/build-result/projectile_distance
 function galaxy:gui/assembly_table/interface-gun_main/build-result/temperature_min
 function galaxy:gui/assembly_table/interface-gun_main/build-result/temperature_max

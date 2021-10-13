@@ -2,6 +2,7 @@ execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run tag @s add s
 execute if entity @s[tag=setTemplate] run function galaxy:gui/assembly_table/super/interface-main/build-result_template
 tag @s[tag=setTemplate] remove setTemplate
 
+data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.charge
 data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cosmetic
 data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.color
 data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.special
@@ -13,6 +14,7 @@ data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.t
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.type int 1 run scoreboard players get @s optType
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.damage int 1 run scoreboard players get @s optPjDamage
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.delay int 1 run scoreboard players get @s optDelay
+execute unless score @s optCharge matches 0 store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.charge int 1 run scoreboard players get @s optCharge
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.distance int 1 run scoreboard players get @s optPjDistance
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.heat int 1 run scoreboard players get @s optHeat
 execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_min int 1 run scoreboard players get @s optTemperMin

@@ -4,7 +4,9 @@ execute if data storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDat
 
 execute if data storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag.special run function galaxy:gui/assembly_table/interface-gun_main/build-lore/special
 
-function galaxy:gui/assembly_table/interface-gun_main/build-lore/delay
+execute if data storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag.delay run function galaxy:gui/assembly_table/interface-gun_main/build-lore/delay
+
+execute if data storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag.charge run function galaxy:gui/assembly_table/interface-gun_main/build-lore/charge
 
 execute if data storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag.accelerate run function galaxy:gui/assembly_table/interface-gun_main/build-lore/accelerate
 

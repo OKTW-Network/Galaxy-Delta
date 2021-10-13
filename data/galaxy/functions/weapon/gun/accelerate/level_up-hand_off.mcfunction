@@ -1,5 +1,5 @@
 scoreboard players operation @s FhGunAclrateLvl += @s FhGunAclrate
-scoreboard players set #1 calcu_temp 95
+scoreboard players set #1 calcu_temp 75
 scoreboard players operation @s FhGunAclrateLvl < #1 calcu_temp
 
 scoreboard players operation #1 calcu_temp = @s FhGunDelay
