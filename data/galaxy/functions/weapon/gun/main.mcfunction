@@ -10,7 +10,7 @@ execute as @a[scores={gunChargeLvl=1..}] run function galaxy:weapon/gun/charge/c
 
 execute as @a[predicate=galaxy:weapon/hand_main-gun,predicate=galaxy:weapon/hand_main-gun_status-1] run function galaxy:weapon/gun/holster/end-hand_main
 execute as @a[predicate=galaxy:weapon/hand_off-gun,predicate=galaxy:weapon/hands-gun_special-dual,predicate=galaxy:weapon/hand_off-gun_status-1] run function galaxy:weapon/gun/holster/end-hand_off
-execute if entity @s[predicate=!galaxy:weapon/hands-gun_special-dual,predicate=!galaxy:weapon/hand_off-gun_status-1] run function galaxy:weapon/gun/holster/start-hand_off
+execute as @a[predicate=galaxy:weapon/hand_off-gun,predicate=!galaxy:weapon/hands-gun_special-dual,predicate=!galaxy:weapon/hand_off-gun_status-1] run function galaxy:weapon/gun/holster/start-hand_off
 
 execute as @a[predicate=galaxy:weapon/hold-gun_status1,predicate=!galaxy:weapon/posture-gun-aiming] run function galaxy:weapon/gun/aim/end
 execute as @a[tag=galaxy.gun.changed.mainHand,predicate=galaxy:weapon/posture-gun-aiming] run function galaxy:weapon/gun/aim/start
