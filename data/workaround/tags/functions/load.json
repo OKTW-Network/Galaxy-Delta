@@ -1,5 +1,5 @@
 {
   "values":[
-      "galaxy:get-version_string"
+    "#galaxy:workaround_load"
   ]
 }

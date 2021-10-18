@@ -7,7 +7,6 @@ function #galaxy:config
 function galaxy:check-version
 
 function galaxy:recipe/initial
-function galaxy:book/initial
 
 execute as @a run function galaxy:initial-player
 
