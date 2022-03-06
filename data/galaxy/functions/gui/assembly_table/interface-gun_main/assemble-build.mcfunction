@@ -1,6 +1,6 @@
 # Parts to result
 tag @s[tag=!lockAssemble,predicate=galaxy:gui/assembly_table/check-gun_require,predicate=!galaxy:gui/assembly_table/check-gun_result] add setResult
-execute if entity @s[tag=setResult] run function galaxy:gui/assembly_table/interface-gun_main/build-result/main
+execute if entity @s[tag=setResult] run function galaxy:gui/assembly_table/interface-gun_main/build-result
 execute if entity @s[tag=setResult] run tag @s add lockAssemble
 tag @s[tag=setResult] remove setResult
 

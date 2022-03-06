@@ -26,7 +26,7 @@ execute if entity @s[tag=setValue] run function galaxy:gui/assembly_table/super/
 tag @s[tag=setValue] remove setValue
 
 # button return
-execute if entity @s[tag=setButtonReturn] run item replace block ~ ~ ~ container.18 with minecraft:golden_hoe{display:{Name:'{"translate":"gui.back","italic":false}'},HideFlags:63,CustomModelData:10120,guiItem:1}
+execute if entity @s[tag=setButtonReturn] run item replace block ~ ~ ~ container.18 with minecraft:golden_hoe{display:{Name:'{"translate":"gui.back","italic":false}'},HideFlags:63,CustomModelData:10120,CustomData:{galaxy:{id:"gui_item"}}}
 tag @s[tag=setButtonReturn] remove setButtonReturn
 
 tag @s[tag=update] remove update

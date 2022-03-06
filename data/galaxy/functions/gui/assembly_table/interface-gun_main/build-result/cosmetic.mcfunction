@@ -1,5 +1,0 @@
-# data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.id set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}].CustomData.galaxy.tag.cosmetic.Alteration.cosmetic.id
-# data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.Name set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}].CustomData.galaxy.tag.cosmetic.Alteration.cosmetic.Name
-# data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.Model set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}].CustomData.galaxy.tag.cosmetic.Alteration.cosmetic.Model
-
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts[{CustomData:{galaxy:{tag:{cosmetic:{}}}}}].CustomData.galaxy.tag.cosmetic.Alteration.cosmetic

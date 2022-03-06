@@ -1,1 +1,1 @@
-execute as @a if data entity @s Inventory[].tag.guiItem run clear @s #minecraft:all{guiItem:1}
+execute as @a if data entity @s Inventory[].tag.CustomData.galaxy{id:"gui_item"} run clear @s #minecraft:all{CustomData:{galaxy:{id:"gui_item"}}}

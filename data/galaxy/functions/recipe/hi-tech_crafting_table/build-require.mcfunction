@@ -11,7 +11,7 @@ data modify storage galaxy:temp require prepend from storage galaxy:temp recipe[
 data modify storage cu:item simplify.item set from storage galaxy:temp require
 function cu:item/simplify
 data modify storage galaxy:temp require[0] set from storage cu:item simplify.item
-data modify storage galaxy:temp require[0].tag merge value {HideFlags:63,guiItem:1}
+data modify storage galaxy:temp require[0].tag merge value {HideFlags:63,CustomData:{galaxy:{id:"gui_item"}}}
 execute store result storage galaxy:temp require[0].Slot byte 1 run scoreboard players get #2 calcu_temp
 
 data remove storage galaxy:temp recipe[-1].require[-1]

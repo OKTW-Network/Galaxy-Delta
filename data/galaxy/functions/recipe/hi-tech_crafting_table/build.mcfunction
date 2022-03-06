@@ -10,4 +10,4 @@ function galaxy:recipe/hi-tech_crafting_table/component/build
 
 function galaxy:recipe/hi-tech_crafting_table/weapon/build
 
-execute store result score #global htctCatgMax run data get storage galaxy:recipe HTct.category
+execute store result score #global galaxy.GUI.HTct.categoryMax run data get storage galaxy:recipe HTct.category

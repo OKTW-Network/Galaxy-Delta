@@ -68,4 +68,4 @@ data modify storage galaxy:recipe Samb.attribute append from storage galaxy:reci
 function galaxy:recipe/super_assembler/build-attribute/projectile_extra
 data modify storage galaxy:recipe Samb.attribute append from storage galaxy:recipe Samb.attributes.projectile_extra
 
-execute store result score #global sbldGAtbMax run data get storage galaxy:recipe Samb.attribute
+execute store result score #global galaxy.GUI.attribute.typeMax run data get storage galaxy:recipe Samb.attribute

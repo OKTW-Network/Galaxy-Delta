@@ -1,1 +1,1 @@
-clear @a #minecraft:all{guiItem:1}
+clear @a #minecraft:all{CustomData:{galaxy:{id:"gui_item"}}}

@@ -1,2 +1,2 @@
-scoreboard players set @s workStatus 0
-execute if score @s workProcStatus1 matches 1..9 run scoreboard players set @s workStatus 1
+scoreboard players set @s galaxy.block.work.status 0
+execute if score @s galaxy.block.work.process.status1 matches 1..9 run scoreboard players set @s galaxy.block.work.status 1

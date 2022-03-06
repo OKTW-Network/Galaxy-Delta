@@ -11,41 +11,41 @@ data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.p
 data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.bounce
 data remove block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.trace
 
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.type int 1 run scoreboard players get @s optType
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.damage int 1 run scoreboard players get @s optPjDamage
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.delay int 1 run scoreboard players get @s optDelay
-execute unless score @s optCharge matches 0 store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.charge int 1 run scoreboard players get @s optCharge
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.distance int 1 run scoreboard players get @s optPjDistance
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.heat int 1 run scoreboard players get @s optHeat
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_min int 1 run scoreboard players get @s optTemperMin
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_max int 1 run scoreboard players get @s optTemperMax
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cooling int 1 run scoreboard players get @s optCooling
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cooling_delay int 1 run scoreboard players get @s optCoolingDly
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.speed int 1 run scoreboard players get @s optPjSpeed
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.offset int 1 run scoreboard players get @s optPjOffset
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.aim_offset int 1 run scoreboard players get @s optPjAimOffset
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.aim_zoom int 1 run scoreboard players get @s optAimZoom
-execute unless score @s optAccelerate matches 0 store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.accelerate int 1 run scoreboard players get @s optAccelerate
-execute unless score @s optPjPenetrate matches 0 store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.penetrate int 1 run scoreboard players get @s optPjPenetrate
-execute unless score @s optPjBounce matches 0 store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.bounce int 1 run scoreboard players get @s optPjBounce
-execute unless score @s optPjTrace matches 0 store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.trace int 1 run scoreboard players get @s optPjTrace
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.extra int 1 run scoreboard players get @s optPjExtra
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.type set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.type
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.damage set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileDamage
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.delay set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.delay
+execute unless data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{charge:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.charge set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.charge
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.distance set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileDistance
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.heat set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.heat
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_min set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.temperatureMin
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.temperature_max set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.temperatureMax
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cooling set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.cooling
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cooling_delay set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.coolingDelay
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.speed set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileSpeed
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.offset set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileOffset
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.aim_offset set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileAimOffset
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.aim_zoom set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.aimZoom
+execute unless data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{accelerate:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.accelerate set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.accelerate
+execute unless data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{projectilePenetrate:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.penetrate set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectilePenetrate
+execute unless data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{projectileBounce:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.bounce set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileBounce
+execute unless data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{projectileTrace:0} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.trace set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileTrace
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.extra set from entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileExtra
 
 function galaxy:recipe/super_assembler/convert/main
 execute if data storage galaxy:temp +recipe.super_assembler.convert.cosmetic run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cosmetic set from storage galaxy:temp +recipe.super_assembler.convert.cosmetic
 execute if data storage galaxy:temp +recipe.super_assembler.convert.projectile_color run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.projectile.color set from storage galaxy:temp +recipe.super_assembler.convert.projectile_color
 execute if data storage galaxy:temp +recipe.super_assembler.convert.special run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.special set from storage galaxy:temp +recipe.super_assembler.convert.special
 
-execute if score @s optType matches 1 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 210100
-execute if score @s optType matches 2 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 220100
-execute if score @s optType matches 3 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 230100
+execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{type:1} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 210100
+execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{type:2} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 220100
+execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{type:3} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 230100
 execute unless score @s optCosmetic matches 0 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set from block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag.cosmetic.Model
 
-data modify storage galaxy:temp +gui.assembly_table.build-lore.itemCustomDataTag set from block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag
-function galaxy:gui/assembly_table/interface-gun_main/build-lore/main
-data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore set from storage galaxy:temp +gui.assembly_table.build-lore.result
+data modify storage galaxy:temp +block.assembly_table.lore.itemCustomDataTag set from block ~ ~ ~ Items[{Slot:16b}].tag.CustomData.galaxy.tag
+function galaxy:block/assembly_table/blueprint-gun/lore/main
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore set from storage galaxy:temp +block.assembly_table.lore.result
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore prepend value '[{"translate":"tooltip.super_build","color":"dark_gray","italic":false}]'
 
-execute if score @s optType matches 1 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.gun.pistol","italic":false}'
-execute if score @s optType matches 2 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.gun.sniper","italic":false}'
-execute if score @s optType matches 3 run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.gun.shotgun","italic":false}'
+execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{type:1} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.gun.pistol","italic":false}'
+execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{type:2} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.gun.sniper","italic":false}'
+execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption{type:3} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set value '{"translate":"item.galaxy.gun.shotgun","italic":false}'

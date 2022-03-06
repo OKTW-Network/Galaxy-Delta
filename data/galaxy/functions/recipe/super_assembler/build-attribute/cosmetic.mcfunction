@@ -1,5 +1,5 @@
 data modify storage galaxy:recipe Samb.attributes.cosmetic.icon set value {id:"minecraft:golden_hoe",Count:1b}
-data modify storage galaxy:recipe Samb.attributes.cosmetic.icon.tag merge value {display:{Name:'{"translate":"attribute.cosmetic","italic":false}'},HideFlags:63,CustomModelData:10108,guiItem:1}
+data modify storage galaxy:recipe Samb.attributes.cosmetic.icon.tag merge value {display:{Name:'{"translate":"attribute.cosmetic","italic":false}'},HideFlags:63,CustomModelData:10108,CustomData:{galaxy:{id:"gui_item"}}}
 data modify storage galaxy:recipe Samb.attributes.cosmetic.value set value [{type:1},{type:2},{type:3}]
 data modify storage galaxy:recipe Samb.attributes.cosmetic.value[{type:1}].min set value 0
 data modify storage galaxy:recipe Samb.attributes.cosmetic.value[{type:1}].max set value 0

@@ -1,22 +1,22 @@
-execute if score @s sbldAttribute matches 1 store result score @s optType run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 2 store result score @s optCosmetic run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 3 store result score @s optPjColor run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 4 store result score @s optAddon run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 5 store result score @s optPjDamage run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 6 store result score @s optDelay run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 7 store result score @s optCharge run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 8 store result score @s optPjDistance run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 9 store result score @s optHeat run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 10 store result score @s optTemperMin run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 11 store result score @s optTemperMax run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 12 store result score @s optCooling run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 13 store result score @s optCoolingDly run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 14 store result score @s optPjSpeed run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 15 store result score @s optPjOffset run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 16 store result score @s optPjAimOffset run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 17 store result score @s optAimZoom run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 18 store result score @s optAccelerate run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 19 store result score @s optPjPenetrate run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 20 store result score @s optPjBounce run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 21 store result score @s optPjTrace run scoreboard players get @s sbldValue
-execute if score @s sbldAttribute matches 22 store result score @s optPjExtra run scoreboard players get @s sbldValue
+execute if score @s galaxy.GUI.attribute.type matches 1 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.type int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 2 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.cosmetic int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 3 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileColor int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 4 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.addon int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 5 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileDamage int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 6 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.delay int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 7 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.charge int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 8 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileDistance int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 9 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.heat int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 10 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.temperatureMin int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 11 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.temperatureMax int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 12 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.cooling int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 13 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.coolingDelay int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 14 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileSpeed int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 15 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileOffset int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 16 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileAimOffset int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 17 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.aimZoom int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 18 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.accelerate int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 19 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectilePenetrate int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 20 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileBounce int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 21 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileTrace int 1 run scoreboard players get @s galaxy.GUI.attribute.value
+execute if score @s galaxy.GUI.attribute.type matches 22 store result entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileExtra int 1 run scoreboard players get @s galaxy.GUI.attribute.value

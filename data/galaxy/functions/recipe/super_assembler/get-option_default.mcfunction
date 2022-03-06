@@ -1,20 +1,22 @@
-scoreboard players set @s optType 1
-scoreboard players set @s optCosmetic 0
-scoreboard players set @s optPjColor 17
-scoreboard players set @s optAddon 0
-scoreboard players set @s optPjDamage 1
-scoreboard players set @s optDelay 3
-scoreboard players set @s optPjDistance 16
-scoreboard players set @s optHeat 0
-scoreboard players set @s optTemperMax 999
-scoreboard players set @s optCooling 999
-scoreboard players set @s optCoolingDly 0
-scoreboard players set @s optPjSpeed 64
-scoreboard players set @s optPjOffset 0
-scoreboard players set @s optPjAimOffset 0
-scoreboard players set @s optAimZoom 7
-scoreboard players set @s optAccelerate 0
-scoreboard players set @s optPjPenetrate 0
-scoreboard players set @s optPjBounce 0
-scoreboard players set @s optPjTrace 0
-scoreboard players set @s optPjExtra 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.type set value 1
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.cosmetic set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileColor set value 17
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.addon set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileDamage set value 1
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.delay set value 3
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.charge set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileDistance set value 16
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.heat set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.temperatureMin set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.temperatureMax set value 999999
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.cooling set value 999999
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.coolingDelay set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileSpeed set value 64
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileOffset set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileAimOffset set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.aimZoom set value 7
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.accelerate set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectilePenetrate set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileBounce set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileTrace set value 0
+data modify entity @s HandItems[0].tag.CustomData.galaxy.data.generateOption.projectileExtra set value 0
