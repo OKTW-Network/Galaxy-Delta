@@ -3,8 +3,7 @@ execute store result storage galaxy:temp +GUI._build.progress.1x2.result.Slot by
 
 scoreboard players set #modelData galaxy.GUI 20400
 execute store result storage galaxy:temp +GUI._build.progress.1x2.result.tag.CustomModelData int 1 run scoreboard players operation #modelData galaxy.GUI += #progressValue galaxy.GUI
-execute if score #progressValue galaxy.GUI matches -1 run data modify storage galaxy:temp +GUI._build.progress.1x2.result.tag.CustomModelData set value 20423
 
 data modify block ~ ~ ~ Items append from storage galaxy:temp +GUI._build.progress.1x2.result
 
-scoreboard players operation @s galaxy.GUI.temp.progressValue = #progressValue galaxy.GUI
+scoreboard players operation @s galaxy.GUI._temp.progressValue = #progressValue galaxy.GUI

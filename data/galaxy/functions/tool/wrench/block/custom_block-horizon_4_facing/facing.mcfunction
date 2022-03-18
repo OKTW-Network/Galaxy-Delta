@@ -1,4 +1,4 @@
-scoreboard players operation #1 calcu_temp = @e[tag=ThisWrenchCustomBlockTarget] galaxy.block.state.facing
+scoreboard players operation #1 calcu_temp = @e[tag=ThisWrenchCustomBlockTarget] galaxy.block.states.facing
 
 execute if predicate galaxy:entity/item_frame/facing-south store result score #3 calcu_temp run scoreboard players set #2 calcu_temp 0
 execute if predicate galaxy:entity/item_frame/facing-west store result score #3 calcu_temp run scoreboard players set #2 calcu_temp 1
@@ -13,6 +13,6 @@ execute unless score #1 calcu_temp = #2 calcu_temp run tag @e[tag=ThisWrenchAnch
 
 scoreboard players operation @s wrenchDoFacing = #3 calcu_temp
 
-scoreboard players operation @e[tag=ThisWrenchCustomBlockTarget] galaxy.block.state.facing = @s wrenchDoFacing
+scoreboard players operation @e[tag=ThisWrenchCustomBlockTarget] galaxy.block.states.facing = @s wrenchDoFacing
 
 function galaxy:tool/wrench/block/custom_block-horizon_4_facing/set_fake_block/main

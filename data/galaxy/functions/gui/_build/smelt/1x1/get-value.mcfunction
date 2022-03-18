@@ -1,14 +1,10 @@
-execute if score #fuel galaxy.GUI matches 924..1000 run scoreboard players set #smeltValue galaxy.GUI 13
-execute if score #fuel galaxy.GUI matches 847..923 run scoreboard players set #smeltValue galaxy.GUI 12
-execute if score #fuel galaxy.GUI matches 770..846 run scoreboard players set #smeltValue galaxy.GUI 11
-execute if score #fuel galaxy.GUI matches 693..769 run scoreboard players set #smeltValue galaxy.GUI 10
-execute if score #fuel galaxy.GUI matches 616..692 run scoreboard players set #smeltValue galaxy.GUI 9
-execute if score #fuel galaxy.GUI matches 538..615 run scoreboard players set #smeltValue galaxy.GUI 8
-execute if score #fuel galaxy.GUI matches 462..538 run scoreboard players set #smeltValue galaxy.GUI 7
-execute if score #fuel galaxy.GUI matches 385..461 run scoreboard players set #smeltValue galaxy.GUI 6
-execute if score #fuel galaxy.GUI matches 308..384 run scoreboard players set #smeltValue galaxy.GUI 5
-execute if score #fuel galaxy.GUI matches 231..307 run scoreboard players set #smeltValue galaxy.GUI 4
-execute if score #fuel galaxy.GUI matches 154..230 run scoreboard players set #smeltValue galaxy.GUI 3
-execute if score #fuel galaxy.GUI matches 77..153 run scoreboard players set #smeltValue galaxy.GUI 2
-execute if score #fuel galaxy.GUI matches 1..76 run scoreboard players set #smeltValue galaxy.GUI 1
-execute if score #fuel galaxy.GUI matches 0 run scoreboard players set #smeltValue galaxy.GUI 0
+execute store result score #smeltValue galaxy.GUI run scoreboard players get #processor.burnTime1000 galaxy.block
+scoreboard players set #1 calcu_temp 13
+scoreboard players operation #smeltValue galaxy.GUI *= #1 calcu_temp
+scoreboard players set #1 calcu_temp 1000
+scoreboard players operation #smeltValue galaxy.GUI /= #1 calcu_temp
+scoreboard players add #smeltValue galaxy.GUI 1
+scoreboard players set #1 calcu_temp 13
+scoreboard players operation #smeltValue galaxy.GUI < #1 calcu_temp
+
+execute if score #processor.burnTime1000 galaxy.block matches 0 run scoreboard players set #smeltValue galaxy.GUI 0

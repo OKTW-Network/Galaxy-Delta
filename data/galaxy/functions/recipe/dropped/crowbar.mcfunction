@@ -1,12 +1,12 @@
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_ingot",Count:4b},PickupDelay:0s}] if data entity @s Thrower run tag @s add galaxy.recipe.dropped.crowbar.material_1
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:stick",Count:2b},PickupDelay:0s}] if data entity @s Thrower run tag @s add galaxy.recipe.dropped.crowbar.material_2
 
-scoreboard players set @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1] sucDropRcp 0
-execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1] at @s if entity @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_2,distance=..0.5] run scoreboard players set @s sucDropRcp 1
-execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={sucDropRcp=1}] at @s run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2
-execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={sucDropRcp=1}] at @s run function galaxy:tool/summon/crowbar
-execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={sucDropRcp=1}] at @s run kill @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_2,distance=..1,sort=nearest,limit=1]
-execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={sucDropRcp=1}] run kill @s
+scoreboard players set @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1] galaxy.recipe.droppedSuccess 0
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1] at @s if entity @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_2,distance=..0.5] run scoreboard players set @s galaxy.recipe.droppedSuccess 1
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={galaxy.recipe.droppedSuccess=1}] at @s run playsound minecraft:entity.zombie_villager.converted block @a ~ ~ ~ 1 2
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={galaxy.recipe.droppedSuccess=1}] at @s run function galaxy:tool/summon/crowbar
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={galaxy.recipe.droppedSuccess=1}] at @s run kill @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_2,distance=..1,sort=nearest,limit=1]
+execute as @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1,scores={galaxy.recipe.droppedSuccess=1}] run kill @s
 
 tag @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_1] remove galaxy.recipe.dropped.crowbar.material_1
 tag @e[type=minecraft:item,tag=galaxy.recipe.dropped.crowbar.material_2] remove galaxy.recipe.dropped.crowbar.material_2

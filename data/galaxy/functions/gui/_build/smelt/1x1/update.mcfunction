@@ -6,4 +6,4 @@ execute store result storage galaxy:temp +GUI._build.smelt.1x1.result.tag.Custom
 
 data modify block ~ ~ ~ Items append from storage galaxy:temp +GUI._build.smelt.1x1.result
 
-scoreboard players operation @s galaxy.GUI.temp.smeltValue = #smeltValue galaxy.GUI
+scoreboard players operation @s galaxy.GUI._temp.smeltValue = #smeltValue galaxy.GUI

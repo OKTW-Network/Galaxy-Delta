@@ -8,6 +8,7 @@ item replace block ~ ~ ~ container.7 with minecraft:white_stained_glass_pane{dis
 item replace block ~ ~ ~ container.8 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,CustomData:{galaxy:{id:"gui_item"}}}
 item replace block ~ ~ ~ container.9 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,CustomData:{galaxy:{id:"gui_item"}}}
 item replace block ~ ~ ~ container.10 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,CustomData:{galaxy:{id:"gui_item"}}}
+item replace block ~ ~ ~ container.13 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
 item replace block ~ ~ ~ container.14 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
 item replace block ~ ~ ~ container.16 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
 item replace block ~ ~ ~ container.17 with minecraft:white_stained_glass_pane{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:10200,CustomData:{galaxy:{id:"gui_item"}}}

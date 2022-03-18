@@ -2,23 +2,15 @@ scoreboard objectives add galaxy.GUI dummy "@galaxy+GUI"
 
 scoreboard objectives add galaxy.GUI.interface dummy "@galaxy+GUI interface"
 
-scoreboard objectives add galaxy.GUI.temp.smeltValue dummy "@galaxy+GUI temp smelt value"
-scoreboard objectives add galaxy.GUI.temp.workStatus dummy "@galaxy+GUI temp work status"
-scoreboard objectives add galaxy.GUI.temp.progressValue dummy "@galaxy+GUI temp progress value"
+scoreboard objectives add galaxy.GUI._temp.smeltValue dummy "@galaxy+GUI temp smelt value"
+scoreboard objectives add galaxy.GUI._temp.workStatus dummy "@galaxy+GUI temp work status"
+scoreboard objectives add galaxy.GUI._temp.progressValue dummy "@galaxy+GUI temp progress value"
 
 scoreboard objectives add galaxy.GUI.attribute.typeMax dummy "@galaxy+GUI attribute type max"
 scoreboard objectives add galaxy.GUI.attribute.type dummy "@galaxy+GUI attribute type"
 scoreboard objectives add galaxy.GUI.attribute.value dummy "@galaxy+GUI attribute value"
 scoreboard objectives add galaxy.GUI.attribute.valueMax dummy "@galaxy+GUI attribute value max"
 scoreboard objectives add galaxy.GUI.attribute.valueMin dummy "@galaxy+GUI attribute value min"
-
-# scoreboard objectives add setGui dummy "@galaxy+GUI update"
-# scoreboard objectives add setGuiCover dummy "@galaxy+GUI cover update"
-# scoreboard objectives add setSmelt dummy "@galaxy+GUI smelt status update"
-# scoreboard objectives add setProcess dummy "@galaxy+GUI process status update"
-# scoreboard objectives add setProgress dummy "@galaxy+GUI progress bar update"
-# scoreboard objectives add setButtBack1 dummy "@galaxy+GUI HTct.button:Back1 update"
-# scoreboard objectives add setButtConfirm dummy "@galaxy+GUI:HTct.button:Confirm update"
 
 scoreboard objectives add galaxy.GUI.HTct.requestCraftSuccess dummy "@galaxy+GUI HTct request to craft success count"
 
