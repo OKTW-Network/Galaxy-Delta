@@ -1,5 +1,4 @@
 function #galaxy:scoreboard-register
-function #galaxy:storage-register
 function #galaxy:team-register
 
 function #galaxy:config

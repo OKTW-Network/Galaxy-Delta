@@ -1,6 +1,0 @@
-{
-  "values": [
-    "galaxy:gui/meta/storage/register",
-    "galaxy:hud/meta/storage/register"
-  ]
-}
