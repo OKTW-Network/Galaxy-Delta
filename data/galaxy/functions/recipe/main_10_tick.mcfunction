@@ -1,1 +1,1 @@
-function galaxy:recipe/dropped/main
+function galaxy:recipe/dropped/main_10_tick
