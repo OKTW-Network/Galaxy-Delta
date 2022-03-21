@@ -1,1 +1,1 @@
-data modify storage galaxy:get itemTag prepend value {pages:['["",{"nbt":"galaxy_delta.index","storage":"galaxy:book","interpret":true}]'],title:"Galaxy: Delta",author:"OKTW Network",bookGalaxyDelta:{},CustomModelData:101}
+data modify storage galaxy:get itemTag prepend value {pages:['["",{"nbt":"galaxy_delta.index","storage":"galaxy:book","interpret":true}]'],title:"Galaxy: Delta",author:"OKTW Network",CustomData:{galaxy:{Type:"item",id:"book_galaxy_delta"}},CustomModelData:101}

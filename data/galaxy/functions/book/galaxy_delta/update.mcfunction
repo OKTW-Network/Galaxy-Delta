@@ -12,5 +12,5 @@ execute if predicate galaxy:book/hand_off-galaxy_delta run function cu:get/hand_
 execute if predicate galaxy:book/hand_off-galaxy_delta run data modify storage cu:item input.Count set from storage cu:get item[0].Count
 execute if predicate galaxy:book/hand_off-galaxy_delta run function cu:item/replaceitem/hand_off
 
-scoreboard players set @s bookGdUpdate 0
-scoreboard players enable @s bookGdUpdate
+scoreboard players set @s galaxy.book.triggerUpdate.galaxy_delta 0
+scoreboard players enable @s galaxy.book.triggerUpdate.galaxy_delta

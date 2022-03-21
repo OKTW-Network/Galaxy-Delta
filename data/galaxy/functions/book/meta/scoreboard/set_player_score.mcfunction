@@ -1,2 +1,2 @@
-scoreboard players enable @s bookGdUpdate
-scoreboard players remove @s bookGdUpdate 0
+scoreboard players enable @s galaxy.book.triggerUpdate.galaxy_delta
+scoreboard players remove @s galaxy.book.triggerUpdate.galaxy_delta 0

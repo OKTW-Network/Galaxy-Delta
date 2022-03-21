@@ -4,7 +4,7 @@
         "equipment": {
             "offhand": {
                 "items": ["minecraft:written_book"],
-                "nbt": "{bookGalaxyDelta:{}}"
+                "nbt": "{CustomData:{galaxy:{id:\"book_galaxy_delta\"}}}"
             }
         }
     },
