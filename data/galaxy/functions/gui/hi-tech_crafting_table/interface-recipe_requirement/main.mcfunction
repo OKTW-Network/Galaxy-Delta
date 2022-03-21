@@ -4,10 +4,6 @@ execute if entity @s[tag=setCover] run function galaxy:gui/remove-gui_item
 execute if entity @s[tag=setCover] run function galaxy:gui/hi-tech_crafting_table/interface-recipe_requirement/build-cover
 tag @s[tag=setCover] remove setCover
 
-# get recipe
-execute if entity @s[tag=getRecipe] run function galaxy:gui/hi-tech_crafting_table/interface-recipe_requirement/get-recipe
-tag @s[tag=getRecipe] remove getRecipe
-
 # result
 execute unless data block ~ ~ ~ Items[{Slot:16b}] run tag @s add setResult
 execute if entity @s[tag=setResult] run function galaxy:gui/hi-tech_crafting_table/interface-recipe_requirement/check-request

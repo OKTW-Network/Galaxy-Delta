@@ -1,0 +1,9 @@
+data modify storage galaxy:get item set value []
+function galaxy:component/get/barrel_scatter
+data modify storage galaxy:get recipe append from storage galaxy:get item[0]
+
+data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:crying_obsidian",Count:2b}
+data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:purpur_block",Count:4b}
+data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:prismarine_crystals",Count:8b}
+
+data modify storage galaxy:get recipe[-1].HTctRecipeID set value "component.galaxy.barrel_scatter"
