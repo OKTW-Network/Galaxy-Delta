@@ -1,17 +1,17 @@
-scoreboard players reset @s UseCrowbarUUID0
-scoreboard players reset @s UseCrowbarUUID1
-scoreboard players reset @s UseCrowbarUUID2
-scoreboard players reset @s UseCrowbarUUID3
-execute if entity @s[tag=holdCrowbarMh] run scoreboard players operation @s UseCrowbarUUID0 = @s MhCrowbarUUID0
-execute if entity @s[tag=holdCrowbarMh] run scoreboard players operation @s UseCrowbarUUID1 = @s MhCrowbarUUID1
-execute if entity @s[tag=holdCrowbarMh] run scoreboard players operation @s UseCrowbarUUID2 = @s MhCrowbarUUID2
-execute if entity @s[tag=holdCrowbarMh] run scoreboard players operation @s UseCrowbarUUID3 = @s MhCrowbarUUID3
-execute if entity @s[tag=!holdCrowbarMh,tag=holdCrowbarFh] run scoreboard players operation @s UseCrowbarUUID0 = @s FhCrowbarUUID0
-execute if entity @s[tag=!holdCrowbarMh,tag=holdCrowbarFh] run scoreboard players operation @s UseCrowbarUUID1 = @s FhCrowbarUUID1
-execute if entity @s[tag=!holdCrowbarMh,tag=holdCrowbarFh] run scoreboard players operation @s UseCrowbarUUID2 = @s FhCrowbarUUID2
-execute if entity @s[tag=!holdCrowbarMh,tag=holdCrowbarFh] run scoreboard players operation @s UseCrowbarUUID3 = @s FhCrowbarUUID3
+scoreboard players reset @s galaxy.tool.crowbar.UUID.using0
+scoreboard players reset @s galaxy.tool.crowbar.UUID.using1
+scoreboard players reset @s galaxy.tool.crowbar.UUID.using2
+scoreboard players reset @s galaxy.tool.crowbar.UUID.using3
+execute if entity @s[tag=galaxy._tag.holdCrowbarMainHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using0 = @s galaxy.tool.crowbar.UUID.mainHand0
+execute if entity @s[tag=galaxy._tag.holdCrowbarMainHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using1 = @s galaxy.tool.crowbar.UUID.mainHand1
+execute if entity @s[tag=galaxy._tag.holdCrowbarMainHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using2 = @s galaxy.tool.crowbar.UUID.mainHand2
+execute if entity @s[tag=galaxy._tag.holdCrowbarMainHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using3 = @s galaxy.tool.crowbar.UUID.mainHand3
+execute if entity @s[tag=!galaxy._tag.holdCrowbarMainHand,tag=galaxy._tag.holdCrowbarOffHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using0 = @s galaxy.tool.crowbar.UUID.offHand0
+execute if entity @s[tag=!galaxy._tag.holdCrowbarMainHand,tag=galaxy._tag.holdCrowbarOffHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using1 = @s galaxy.tool.crowbar.UUID.offHand1
+execute if entity @s[tag=!galaxy._tag.holdCrowbarMainHand,tag=galaxy._tag.holdCrowbarOffHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using2 = @s galaxy.tool.crowbar.UUID.offHand2
+execute if entity @s[tag=!galaxy._tag.holdCrowbarMainHand,tag=galaxy._tag.holdCrowbarOffHand] run scoreboard players operation @s galaxy.tool.crowbar.UUID.using3 = @s galaxy.tool.crowbar.UUID.offHand3
 
-tag @s remove useCrowbarMh
-tag @s remove useCrowbarFh
-execute if entity @s[tag=holdCrowbarMh] run tag @s add useCrowbarMh
-execute if entity @s[tag=!holdCrowbarMh,tag=holdCrowbarFh] run tag @s add useCrowbarFh
+tag @s remove galaxy._tag.useCrowbarMainHand
+tag @s remove galaxy._tag.useCrowbarOffHand
+execute if entity @s[tag=galaxy._tag.holdCrowbarMainHand] run tag @s add galaxy._tag.useCrowbarMainHand
+execute if entity @s[tag=!galaxy._tag.holdCrowbarMainHand,tag=galaxy._tag.holdCrowbarOffHand] run tag @s add galaxy._tag.useCrowbarOffHand

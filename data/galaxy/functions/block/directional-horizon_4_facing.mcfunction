@@ -1,4 +1,4 @@
-execute facing entity @a[tag=ThisPlaceBlock,limit=1] eyes run tp ~ ~ ~
+execute facing entity @a[tag=galaxy._tag.ThisPlaceBlock,limit=1] eyes run tp ~ ~ ~
 execute store result score #1 calcu_temp run data get entity @s Rotation[0]
 execute if score #1 calcu_temp matches -44..45 run data merge entity @e[tag=galaxy.customFakeBlock,tag=init,limit=1] {Pose:{Head:[0f,180f,0f]}}
 execute if score #1 calcu_temp matches -44..45 run scoreboard players set @e[tag=galaxy.customBlock,tag=init] galaxy.block.states.facing 0

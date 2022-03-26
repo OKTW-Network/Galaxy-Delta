@@ -1,12 +1,12 @@
-tag @s add ThisCrowbarUser
+tag @s add galaxy._tag.ThisCrowbarUser
 
-execute as @a[tag=ThisCrowbarUser] run function galaxy:tool/crowbar/uuid/get-use
-execute as @a[tag=ThisCrowbarUser] run function galaxy:tool/crowbar/return_used
+execute as @a[tag=galaxy._tag.ThisCrowbarUser] run function galaxy:tool/crowbar/uuid/get-use
+execute as @a[tag=galaxy._tag.ThisCrowbarUser] run function galaxy:tool/crowbar/return_used
 
 function galaxy:tool/crowbar/used_on-block/crowbar/find
 
-execute as @a[tag=ThisCrowbarUser,predicate=minecraft:sneaking] run function galaxy:tool/crowbar/used_on-block/main
+execute as @a[tag=galaxy._tag.ThisCrowbarUser,predicate=minecraft:sneaking] run function galaxy:tool/crowbar/used_on-block/main
 
-kill @e[tag=ThisCrowbar]
+kill @e[tag=galaxy._tag.ThisCrowbar]
 
-tag @s remove ThisCrowbarUser
+tag @s remove galaxy._tag.ThisCrowbarUser

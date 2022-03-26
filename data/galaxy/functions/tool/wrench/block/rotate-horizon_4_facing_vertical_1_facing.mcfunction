@@ -5,9 +5,9 @@ execute if predicate minecraft:block_states/facing-east store result score #3 ca
 execute if predicate minecraft:block_states/facing-down store result score #3 calcu_temp run scoreboard players set #1 calcu_temp 4
 execute if predicate minecraft:block_states/facing-up store result score #3 calcu_temp run scoreboard players set #1 calcu_temp 5
 
-scoreboard players operation #2 calcu_temp = @e[tag=ThisWrenchAnchor] wrenchOriFacing
+scoreboard players operation #2 calcu_temp = @e[tag=galaxy._tag.ThisWrenchAnchor] galaxy.tool.wrench.block.originalFacing
 
-execute store result score #6 calcu_temp run scoreboard players operation #5 calcu_temp = @e[tag=ThisWrenchAnchor] sucWrenchRotate
+execute store result score #6 calcu_temp run scoreboard players operation #5 calcu_temp = @e[tag=galaxy._tag.ThisWrenchAnchor] galaxy.tool.wrench.rotateSuccess
 scoreboard players add #6 calcu_temp 1
 scoreboard players operation #6 calcu_temp %= #5 num
 
@@ -20,6 +20,6 @@ execute unless score #5 calcu_temp matches 0 if score #6 calcu_temp matches 0 ru
 execute if score #2 calcu_temp = #4 calcu_temp if score #2 calcu_temp matches 0..3 run scoreboard players set #3 calcu_temp 4
 execute if score #2 calcu_temp = #4 calcu_temp if score #2 calcu_temp matches 4..5 run scoreboard players set #3 calcu_temp 0
 
-scoreboard players add @e[tag=ThisWrenchAnchor] sucWrenchRotate 1
+scoreboard players add @e[tag=galaxy._tag.ThisWrenchAnchor] galaxy.tool.wrench.rotateSuccess 1
 
-scoreboard players operation @s wrenchDoFacing = #3 calcu_temp
+scoreboard players operation @s galaxy.tool.wrench.doFacing = #3 calcu_temp

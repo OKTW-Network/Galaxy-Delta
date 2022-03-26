@@ -1,1 +1,1 @@
-execute as @e[tag=ThisWrenchTarget] at @s run function galaxy:tool/wrench/entity/main
+execute as @e[tag=galaxy._tag.ThisWrenchTarget] at @s run function galaxy:tool/wrench/entity/main

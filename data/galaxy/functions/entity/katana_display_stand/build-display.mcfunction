@@ -1,4 +1,4 @@
-execute if entity @s[tag=displaying] run function galaxy:entity/katana_display_stand/convert-player
+execute if entity @s[tag=galaxy._tag.isDisplaying] run function galaxy:entity/katana_display_stand/convert-player
 
 item replace entity @s weapon.offhand with minecraft:air
 
@@ -13,4 +13,4 @@ data modify entity @s HandItems[0].tag.katanaDisplay set value 1b
 
 function galaxy:entity/katana_display_stand/convert_to-display
 
-tag @s[tag=!displaying] add displaying
+tag @s[tag=!galaxy._tag.isDisplaying] add galaxy._tag.isDisplaying

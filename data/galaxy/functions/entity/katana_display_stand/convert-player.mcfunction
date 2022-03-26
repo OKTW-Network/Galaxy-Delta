@@ -7,4 +7,4 @@ data modify storage cu:item input set from storage galaxy:get item[0]
 data modify storage cu:item input.tag.CustomData.galaxy.tag set from entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaTag
 data modify storage cu:item input.tag.display set from entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaDisplay
 data modify storage cu:item input.tag.CustomModelData set from entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaCustomModelData
-execute as @a[tag=ThisPlayer] run function cu:item/replaceitem/hand_main
+execute as @a[tag=galaxy._tag.ThisPlayer] run function cu:item/replaceitem/hand_main

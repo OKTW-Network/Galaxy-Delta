@@ -1,4 +1,4 @@
-execute if score @s wrenchDoFacing matches 0 run setblock ~ ~ ~ yellow_shulker_box[facing=south]
-execute if score @s wrenchDoFacing matches 1 run setblock ~ ~ ~ yellow_shulker_box[facing=west]
-execute if score @s wrenchDoFacing matches 2 run setblock ~ ~ ~ yellow_shulker_box[facing=north]
-execute if score @s wrenchDoFacing matches 3 run setblock ~ ~ ~ yellow_shulker_box[facing=east]
+execute if score @s galaxy.tool.wrench.doFacing matches 0 run setblock ~ ~ ~ yellow_shulker_box[facing=south]
+execute if score @s galaxy.tool.wrench.doFacing matches 1 run setblock ~ ~ ~ yellow_shulker_box[facing=west]
+execute if score @s galaxy.tool.wrench.doFacing matches 2 run setblock ~ ~ ~ yellow_shulker_box[facing=north]
+execute if score @s galaxy.tool.wrench.doFacing matches 3 run setblock ~ ~ ~ yellow_shulker_box[facing=east]

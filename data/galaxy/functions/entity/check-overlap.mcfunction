@@ -1,15 +1,15 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["overlapCheck"],Particle:"block air",Radius:0.5f,WaitTime:2147483647}
-execute as @e[tag=overlapCheck] run function galaxy:hitbox/store-hitbox
-scoreboard players remove @e[tag=overlapCheck] hitboxXMax 5
-scoreboard players add @e[tag=overlapCheck] hitboxXMin 5
-scoreboard players remove @e[tag=overlapCheck] hitboxZMax 5
-scoreboard players add @e[tag=overlapCheck] hitboxZMin 5
-scoreboard players add @e[tag=overlapCheck] hitboxYMax 10
+summon minecraft:marker ~ ~ ~ {Tags:["galaxy.dummy.overlapCheck"]}
+execute as @e[tag=galaxy.dummy.overlapCheck] run function galaxy:hitbox/store-hitbox
+scoreboard players remove @e[tag=galaxy.dummy.overlapCheck] hitboxXMax 5
+scoreboard players add @e[tag=galaxy.dummy.overlapCheck] hitboxXMin 5
+scoreboard players remove @e[tag=galaxy.dummy.overlapCheck] hitboxZMax 5
+scoreboard players add @e[tag=galaxy.dummy.overlapCheck] hitboxZMin 5
+scoreboard players add @e[tag=galaxy.dummy.overlapCheck] hitboxYMax 10
 
-execute as @e[tag=overlapCheck] at @s run function galaxy:hitbox/tag/overlap
+execute as @e[tag=galaxy.dummy.overlapCheck] at @s run function galaxy:hitbox/tag/overlap
 
-execute if entity @e[tag=overlapped] run tag @s add placeFailed
+execute if entity @e[tag=galaxy._tag.overlapped] run tag @s add galaxy._tag.placeFailed
 
-tag @e[tag=overlapped] remove overlapped
+tag @e[tag=galaxy._tag.overlapped] remove galaxy._tag.overlapped
 
-kill @e[tag=overlapCheck]
+kill @e[tag=galaxy.dummy.overlapCheck]

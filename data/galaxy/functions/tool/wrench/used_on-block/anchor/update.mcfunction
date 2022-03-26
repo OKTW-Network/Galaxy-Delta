@@ -1,1 +1,1 @@
-execute as @e[tag=WrenchAnchor] run function galaxy:tool/wrench/used_on-block/anchor/check_and-kill_not_use
+execute as @e[tag=galaxy.dummy.wrenchAnchor] run function galaxy:tool/wrench/used_on-block/anchor/kill_not_use

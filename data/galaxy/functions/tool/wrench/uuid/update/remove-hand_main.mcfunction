@@ -1,6 +1,6 @@
-scoreboard players reset @s MhWrenchUUID0
-scoreboard players reset @s MhWrenchUUID1
-scoreboard players reset @s MhWrenchUUID2
-scoreboard players reset @s MhWrenchUUID3
+scoreboard players reset @s galaxy.tool.wrench.UUID.mainHand0
+scoreboard players reset @s galaxy.tool.wrench.UUID.mainHand1
+scoreboard players reset @s galaxy.tool.wrench.UUID.mainHand2
+scoreboard players reset @s galaxy.tool.wrench.UUID.mainHand3
 
-tag @s remove holdWrenchMh
+tag @s remove galaxy._tag.holdWrenchMainHand

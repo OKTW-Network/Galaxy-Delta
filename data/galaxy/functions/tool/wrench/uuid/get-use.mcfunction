@@ -1,17 +1,18 @@
-scoreboard players reset @s UseWrenchUUID0
-scoreboard players reset @s UseWrenchUUID1
-scoreboard players reset @s UseWrenchUUID2
-scoreboard players reset @s UseWrenchUUID3
-execute if entity @s[tag=holdWrenchMh] run scoreboard players operation @s UseWrenchUUID0 = @s MhWrenchUUID0
-execute if entity @s[tag=holdWrenchMh] run scoreboard players operation @s UseWrenchUUID1 = @s MhWrenchUUID1
-execute if entity @s[tag=holdWrenchMh] run scoreboard players operation @s UseWrenchUUID2 = @s MhWrenchUUID2
-execute if entity @s[tag=holdWrenchMh] run scoreboard players operation @s UseWrenchUUID3 = @s MhWrenchUUID3
-execute if entity @s[tag=!holdWrenchMh,tag=holdWrenchFh] run scoreboard players operation @s UseWrenchUUID0 = @s FhWrenchUUID0
-execute if entity @s[tag=!holdWrenchMh,tag=holdWrenchFh] run scoreboard players operation @s UseWrenchUUID1 = @s FhWrenchUUID1
-execute if entity @s[tag=!holdWrenchMh,tag=holdWrenchFh] run scoreboard players operation @s UseWrenchUUID2 = @s FhWrenchUUID2
-execute if entity @s[tag=!holdWrenchMh,tag=holdWrenchFh] run scoreboard players operation @s UseWrenchUUID3 = @s FhWrenchUUID3
+scoreboard players reset @s galaxy.tool.wrench.UUID.using0
+scoreboard players reset @s galaxy.tool.wrench.UUID.using1
+scoreboard players reset @s galaxy.tool.wrench.UUID.using2
+scoreboard players reset @s galaxy.tool.wrench.UUID.using3
+execute if entity @s[tag=galaxy._tag.holdWrenchMainHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using0 = @s galaxy.tool.wrench.UUID.mainHand0
+execute if entity @s[tag=galaxy._tag.holdWrenchMainHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using1 = @s galaxy.tool.wrench.UUID.mainHand1
+execute if entity @s[tag=galaxy._tag.holdWrenchMainHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using2 = @s galaxy.tool.wrench.UUID.mainHand2
+execute if entity @s[tag=galaxy._tag.holdWrenchMainHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using3 = @s galaxy.tool.wrench.UUID.mainHand3
+execute if entity @s[tag=!galaxy._tag.holdWrenchMainHand,tag=galaxy._tag.holdWrenchOffHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using0 = @s galaxy.tool.wrench.UUID.offHand0
+execute if entity @s[tag=!galaxy._tag.holdWrenchMainHand,tag=galaxy._tag.holdWrenchOffHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using1 = @s galaxy.tool.wrench.UUID.offHand1
+execute if entity @s[tag=!galaxy._tag.holdWrenchMainHand,tag=galaxy._tag.holdWrenchOffHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using2 = @s galaxy.tool.wrench.UUID.offHand2
+execute if entity @s[tag=!galaxy._tag.holdWrenchMainHand,tag=galaxy._tag.holdWrenchOffHand] run scoreboard players operation @s galaxy.tool.wrench.UUID.using3 = @s galaxy.tool.wrench.UUID.offHand3
 
-tag @s remove useWrenchMh
-tag @s remove useWrenchFh
-execute if entity @s[tag=holdWrenchMh] run tag @s add useWrenchMh
-execute if entity @s[tag=!holdWrenchMh,tag=holdWrenchFh] run tag @s add useWrenchFh
+tag @s remove galaxy._tag.useWrenchMainHand
+tag @s remove galaxy._tag.useWrenchOffHand
+
+execute if entity @s[tag=galaxy._tag.holdWrenchMainHand] run tag @s add galaxy._tag.useWrenchMainHand
+execute if entity @s[tag=!galaxy._tag.holdWrenchMainHand,tag=galaxy._tag.holdWrenchOffHand] run tag @s add galaxy._tag.useWrenchOffHand

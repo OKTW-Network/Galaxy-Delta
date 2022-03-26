@@ -6,4 +6,4 @@ data remove entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaTag
 data remove entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaDisplay
 data remove entity @s ArmorItems[3].tag.CustomData.galaxy.data.katanaCustomModelData
 
-tag @s[tag=displaying] remove displaying
+tag @s[tag=galaxy._tag.isDisplaying] remove galaxy._tag.isDisplaying

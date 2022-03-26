@@ -1,15 +1,15 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["collisionCheck"],Particle:"block air",Radius:0.5f,WaitTime:2147483647}
-execute as @e[tag=collisionCheck] run function galaxy:hitbox/store-hitbox
-scoreboard players remove @e[tag=collisionCheck] hitboxXMax 5
-scoreboard players add @e[tag=collisionCheck] hitboxXMin 5
-scoreboard players remove @e[tag=collisionCheck] hitboxZMax 5
-scoreboard players add @e[tag=collisionCheck] hitboxZMin 5
-scoreboard players add @e[tag=collisionCheck] hitboxYMax 10
+summon minecraft:marker ~ ~ ~ {Tags:["galaxy.dummy.collisionCheck"]}
+execute as @e[tag=galaxy.dummy.collisionCheck] run function galaxy:hitbox/store-hitbox
+scoreboard players remove @e[tag=galaxy.dummy.collisionCheck] hitboxXMax 5
+scoreboard players add @e[tag=galaxy.dummy.collisionCheck] hitboxXMin 5
+scoreboard players remove @e[tag=galaxy.dummy.collisionCheck] hitboxZMax 5
+scoreboard players add @e[tag=galaxy.dummy.collisionCheck] hitboxZMin 5
+scoreboard players add @e[tag=galaxy.dummy.collisionCheck] hitboxYMax 10
 
-execute as @e[tag=collisionCheck] at @s run function galaxy:hitbox/tag/block_collision
+execute as @e[tag=galaxy.dummy.collisionCheck] at @s run function galaxy:hitbox/tag/block_collision
 
-execute if entity @e[tag=blockCollision] run tag @s add placeFailed
+execute if entity @e[tag=galaxy._tag.blockCollision] run tag @s add galaxy._tag.placeFailed
 
-tag @e[tag=blockCollision] remove blockCollision
+tag @e[tag=galaxy._tag.blockCollision] remove galaxy._tag.blockCollision
 
-kill @e[tag=collisionCheck]
+kill @e[tag=galaxy.dummy.collisionCheck]

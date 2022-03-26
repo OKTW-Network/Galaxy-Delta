@@ -1,6 +1,6 @@
-scoreboard players reset @s FhCrowbarUUID0
-scoreboard players reset @s FhCrowbarUUID1
-scoreboard players reset @s FhCrowbarUUID2
-scoreboard players reset @s FhCrowbarUUID3
+scoreboard players reset @s galaxy.tool.crowbar.UUID.offHand0
+scoreboard players reset @s galaxy.tool.crowbar.UUID.offHand1
+scoreboard players reset @s galaxy.tool.crowbar.UUID.offHand2
+scoreboard players reset @s galaxy.tool.crowbar.UUID.offHand3
 
-tag @s remove holdCrowbarFh
+tag @s remove galaxy._tag.holdCrowbarOffHand

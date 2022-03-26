@@ -20,7 +20,7 @@ execute if score #1 calcu_temp = #2 calcu_temp if score #1 calcu_temp matches 4.
 execute if score #1 calcu_temp = #2 calcu_temp if score #1 calcu_temp matches 4..5 if score #3 calcu_temp matches 2.. run scoreboard players remove #3 calcu_temp 2
 execute if score #1 calcu_temp = #2 calcu_temp if score #1 calcu_temp matches 4..5 run scoreboard players add #3 calcu_temp 4
 
-execute if score #1 calcu_temp = #2 calcu_temp run scoreboard players add @e[tag=ThisWrenchAnchor] sucWrenchRotate 1
-execute unless score #1 calcu_temp = #2 calcu_temp run tag @e[tag=ThisWrenchAnchor] add storeOriginalStates
+execute if score #1 calcu_temp = #2 calcu_temp run scoreboard players add @e[tag=galaxy._tag.ThisWrenchAnchor] galaxy.tool.wrench.rotateSuccess 1
+execute unless score #1 calcu_temp = #2 calcu_temp run tag @e[tag=galaxy._tag.ThisWrenchAnchor] add galaxy._tag.storeOriginalStates
 
-scoreboard players operation @s wrenchDoFacing = #3 calcu_temp
+scoreboard players operation @s galaxy.tool.wrench.doFacing = #3 calcu_temp

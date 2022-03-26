@@ -1,7 +1,4 @@
-scoreboard objectives add statusDisplay dummy "num-Display status"
+scoreboard objectives add galaxy.entity dummy "@galaxy+entity"
 
-scoreboard objectives add kdsType dummy "num-Katana Display Stand type"
-scoreboard objectives add kdsStatus dummy "num-Katana Display Stand type"
-scoreboard objectives add kdsDisplayType dummy "num-Katana Display Stand type"
-scoreboard objectives add kdsDisplayStyle dummy "num-Katana Display Stand style"
-scoreboard objectives add kdsDisplayModel dummy "num-Katana Display Stand model"
+scoreboard objectives add galaxy.entity.katana_display_stand.type dummy "@galaxy+entity Katana Display Stand type"
+scoreboard objectives add galaxy.entity.katana_display_stand.status dummy "@galaxy+entity Katana Display Stand status"

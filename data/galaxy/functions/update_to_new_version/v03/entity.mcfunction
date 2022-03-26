@@ -1,10 +1,10 @@
 tag @e[tag=customEntity] add galaxy.customEntity
 tag @e[tag=customEntity] remove customEntity
 
-tag @e[tag=no_overlap] add noOverlap
+tag @e[tag=no_overlap] add galaxy._tag.noOverlap
 tag @e[tag=no_overlap] remove no_overlap
 
-tag @e[tag=drop_self] add dropSelf
+tag @e[tag=drop_self] add galaxy._tag.attachment.dropSelf
 tag @e[tag=drop_self] remove drop_self
 
 tag @e[tag=katana_display_stand] add galaxy.katana_display_stand
