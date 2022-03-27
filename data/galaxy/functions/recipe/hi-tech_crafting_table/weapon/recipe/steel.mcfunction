@@ -1,5 +1,5 @@
 data modify storage galaxy:get item set value []
-function galaxy:weapon/katana/get/steel
+function galaxy:weapon/get/steel
 data modify storage galaxy:get recipe append from storage galaxy:get item[0]
 
 data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:stick",Count:2b}

@@ -1,4 +1,4 @@
-function galaxy:weapon/katana/get_data-action
+function galaxy:weapon/get_data-action
 
 execute if score #galaxy$katana_act_flash Config matches 1 if entity @s[predicate=minecraft:sneaking,predicate=galaxy:weapon/posture-katana-1,scores={ktnSwapPullCd=0},tag=!cu.usingItemContinuously] run tag @s add galaxy.reqKtnSwapPullReady
 execute if score #galaxy$katana_act_flash Config matches 0 if entity @s[predicate=minecraft:sneaking,predicate=galaxy:weapon/posture-katana-1,scores={ktnSwapPullCd=0},tag=galaxy.ktnSwapPullReady] run tag @s add galaxy.reqKtnSwapPull
