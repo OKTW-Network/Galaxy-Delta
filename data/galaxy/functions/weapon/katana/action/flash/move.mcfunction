@@ -6,7 +6,7 @@ execute store result entity @s Rotation[1] float 0.1 run scoreboard players get 
 function galaxy:hitbox/store-postition
 
 scoreboard players set #1 calcu_temp 0
-execute at @s if block ~ ~ ~ #minecraft:passable if block ~ ~1 ~ #minecraft:passable unless block ~ ~-1 ~ #minecraft:passable run scoreboard players set #1 calcu_temp 1
+execute at @s if block ~ ~ ~ #global:passable if block ~ ~1 ~ #global:passable unless block ~ ~-1 ~ #global:passable run scoreboard players set #1 calcu_temp 1
 
 execute if score #1 calcu_temp matches 1 at @s as @a[tag=galaxy.ktnFalshUser] run tp ~ ~ ~
 execute if score #1 calcu_temp matches 1 run scoreboard players add @a[tag=galaxy.ktnFalshUser] ktnFlashMoved 25

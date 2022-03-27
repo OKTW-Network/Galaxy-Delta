@@ -1,4 +1,4 @@
-execute if block ^ ^ ^-1 #minecraft:passable run tag @s add placeNormal
+execute if block ^ ^ ^-1 #global:passable run tag @s add placeNormal
 execute unless entity @s[tag=galaxy._tag.placeFailed] unless entity @s[tag=placeNormal] if entity @s[predicate=galaxy:entity/item_frame/vertical] unless entity @a[tag=triggerPlace,predicate=minecraft:sneaking] run function galaxy:entity/placer/katana_display_stand-4
 
 execute unless entity @s[tag=galaxy._tag.placeFailed] unless entity @s[tag=placeCanceled] run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,Invulnerable:1b,Small:1b,Invisible:1b,Silent:1b,ShowArms:1b,DisabledSlots:4079166,Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f]},ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{CustomModelData:20101}}],Tags:["galaxy.customEntity","galaxy.katana_display_stand","type-2","galaxy._tag.noOverlap","init"]}

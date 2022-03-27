@@ -1,6 +1,6 @@
 tag @s add galaxy.success.HTct.recipeRequirementCheck
 
-execute store result score #1 calcu_temp run clear @s minecraft:terracotta 0
+execute store result score #1 calcu_temp run clear @s #global:terracotta 0
 execute unless score #1 calcu_temp matches 2.. run tag @s remove galaxy.success.HTct.recipeRequirementCheck
 
 execute store result score #1 calcu_temp run clear @s minecraft:lime_stained_glass 0

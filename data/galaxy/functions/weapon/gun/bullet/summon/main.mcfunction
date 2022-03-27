@@ -1,5 +1,5 @@
 execute at @s anchored eyes run summon minecraft:marker ^ ^ ^0.5 {Tags:["galaxy.bullet","init"]}
-execute as @e[tag=galaxy.bullet,tag=init] at @s unless block ~ ~ ~ #minecraft:passable unless block ~ ~ ~ #minecraft:transparent run kill @s
+execute as @e[tag=galaxy.bullet,tag=init] at @s unless block ~ ~ ~ #global:passable unless block ~ ~ ~ #global:transparent run kill @s
 
 execute unless score @s reqGunFire matches 11 run function galaxy:weapon/gun/bullet/summon/get_data-hand_main
 execute if score @s reqGunFire matches 11 run function galaxy:weapon/gun/bullet/summon/get_data-hand_off

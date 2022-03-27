@@ -7,8 +7,8 @@ execute store result score @s posY run data get entity @s Pos[1] 10
 execute store result score @s posZ run data get entity @s Pos[2] 10
 
 scoreboard players set @s sucBulletMove 0
-execute if block ~ ~ ~ #minecraft:passable run scoreboard players set @s sucBulletMove 1
-execute if block ~ ~ ~ #minecraft:transparent run scoreboard players set @s sucBulletMove 1
+execute if block ~ ~ ~ #global:passable run scoreboard players set @s sucBulletMove 1
+execute if block ~ ~ ~ #global:transparent run scoreboard players set @s sucBulletMove 1
 execute if score @s sucBulletMove matches 1 run scoreboard players remove @s bulletMoveRem 1
 execute if score @s sucBulletMove matches 1 run scoreboard players remove @s bulletDistRem 1
 execute if score @s sucBulletMove matches 1 run scoreboard players add @s bulletDistance 1
