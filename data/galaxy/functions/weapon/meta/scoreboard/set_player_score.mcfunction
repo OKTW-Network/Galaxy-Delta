@@ -1,0 +1,10 @@
+scoreboard players remove @s galaxy.weapon.katana.action.swap_pull.cooldown 0
+scoreboard players remove @s galaxy.weapon.katana.action.swap_put.cooldown 0
+scoreboard players remove @s galaxy.weapon.katana.action.stun.cooldown 0
+scoreboard players remove @s galaxy.weapon.katana.action.stun.damage 0
+scoreboard players remove @s galaxy.weapon.katana.action.stun.duration 0
+scoreboard players remove @s galaxy.weapon.katana.action.flash.cooldown 0
+scoreboard players remove @s galaxy.weapon.katana.action.flash.cooldownMax 0
+scoreboard players remove @s galaxy.weapon.katana.action.flash.damage 0
+scoreboard players remove @s galaxy.weapon.katana.action.flash.distance 0
+scoreboard players remove @s galaxy.weapon.katana.action.flash.moved 0

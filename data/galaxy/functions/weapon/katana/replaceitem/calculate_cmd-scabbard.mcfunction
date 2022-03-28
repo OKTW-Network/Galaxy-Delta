@@ -8,4 +8,4 @@ scoreboard players operation #2 calcu_temp *= #3 calcu_temp
 
 scoreboard players operation #1 calcu_temp += #2 calcu_temp
 
-scoreboard players operation @s ktnMdlScabbard = #1 calcu_temp
+scoreboard players operation #katana.model.katana_scabbard galaxy.weapon = #1 calcu_temp

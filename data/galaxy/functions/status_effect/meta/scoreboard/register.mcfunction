@@ -1,6 +1,3 @@
+scoreboard objectives add galaxy.status_effect dummy "@galaxy+status_effect"
 
-# True if entity got stunned.
-scoreboard objectives add isStuStun dummy "boolean-Status:Stun"
-
-# How long the stun status is.
-scoreboard objectives add durStuStun dummy "num-Status:Stun duration"
+scoreboard objectives add galaxy.status_effect.stun.duration dummy "@galaxy+status_effect Stun duration"

@@ -5,5 +5,5 @@ execute as @e[tag=galaxy.damage.target] run scoreboard players operation @s heal
 execute as @e[tag=galaxy.damage.target,scores={health=..0}] at @s run function galaxy:damage/custom_death
 execute as @e[tag=galaxy.damage.target,scores={health=..0}] run scoreboard players add @s sucBulletKill 1
 execute as @e[tag=galaxy.damage.target,scores={health=1..}] store result entity @s Health float 1 run scoreboard players get @s health
-execute as @e[tag=galaxy.damage.target,scores={health=1..}] run data modify entity @e[tag=galaxy.bullet,tag=flighting,limit=1] data.entityDamaged append from entity @s UUID
+execute as @e[tag=galaxy.damage.target,scores={health=1..}] run data modify entity @e[tag=galaxy.bullet,tag=flighting,limit=1] data.galaxy.entityDamaged append from entity @s UUID
 tag @e[tag=galaxy.damage.target] remove galaxy.damage.target

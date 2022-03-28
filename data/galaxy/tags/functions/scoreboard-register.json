@@ -8,8 +8,6 @@
     "galaxy:entity/meta/scoreboard/register",
     "galaxy:tool/meta/scoreboard/register",
     "galaxy:book/meta/scoreboard/register",
-    "galaxy:weapon/katana/meta/scoreboard/register",
-    "galaxy:weapon/energy_saber/meta/scoreboard/register",
-    "galaxy:weapon/gun/meta/scoreboard/register"
+    "galaxy:weapon/meta/scoreboard/register"
   ]
 }

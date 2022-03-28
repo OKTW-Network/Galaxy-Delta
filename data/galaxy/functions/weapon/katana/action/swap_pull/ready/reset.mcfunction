@@ -1,1 +1,1 @@
-tag @s remove galaxy.ktnSwapPullReady
+tag @s remove galaxy._tag.katanaActionSwapPullReady
