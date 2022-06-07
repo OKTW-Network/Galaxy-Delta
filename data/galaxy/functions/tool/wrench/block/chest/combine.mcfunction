@@ -27,7 +27,7 @@ execute if score #7 calcu_temp matches 4.. run scoreboard players remove #7 calc
 execute if score #5 calcu_temp = #6 calcu_temp run scoreboard players set #8 calcu_temp 0
 execute if score #5 calcu_temp = #7 calcu_temp run scoreboard players set #8 calcu_temp 1
 
-execute if score #2 calcu_temp = #4 calcu_temp if score #1 calcu_temp = #3 calcu_temp run tag @s add wrenchChestCombineSuccess
+execute if score #2 calcu_temp = #4 calcu_temp if score #1 calcu_temp = #3 calcu_temp run tag @s add galaxy._tag.wrenchChestCombineSuccess
 
 scoreboard players operation @s galaxy.tool.wrench.doFacing = #1 calcu_temp
 scoreboard players operation @s galaxy.tool.wrench.doChestSpecial = #8 calcu_temp

@@ -6,5 +6,3 @@ execute if predicate minecraft:block_states/facing-east run scoreboard players s
 scoreboard players operation @s galaxy.tool.wrench.doFacing = #1 calcu_temp
 
 function galaxy:tool/wrench/block/chest/set_block/single
-
-execute as @a[tag=TriggerWrench] run function galaxy:tool/wrench/used_on_block/reset-target
