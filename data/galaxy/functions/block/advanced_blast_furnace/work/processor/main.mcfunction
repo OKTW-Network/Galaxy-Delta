@@ -1,21 +1,21 @@
-scoreboard players operation #temp.processor.progress galaxy.block = #processor.progress galaxy.block
+scoreboard players operation #block._temp.work.processor.progress galaxy = #block.work.processor.progress galaxy
 
 function galaxy:block/advanced_blast_furnace/work/processor/check-recipe
 
-execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 unless score #processor.burnTime galaxy.block matches 1.. run function galaxy:block/advanced_blast_furnace/work/processor/burn/start
+execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 unless score #block.work.processor.burnTime galaxy matches 1.. run function galaxy:block/advanced_blast_furnace/work/processor/burn/start
 
-execute unless score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #processor.progress galaxy.block matches 1.. run scoreboard players set #processor.progress galaxy.block 0
+execute unless score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #block.work.processor.progress galaxy matches 1.. run scoreboard players set #block.work.processor.progress galaxy 0
 
-execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #processor.burnTime galaxy.block matches 1.. run scoreboard players add #processor.progress galaxy.block 1
-execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #processor.progress galaxy.block >= #galaxy$advanced_blast_furnace_dur Config run function galaxy:block/advanced_blast_furnace/work/processor/complete
+execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #block.work.processor.burnTime galaxy matches 1.. run scoreboard players add #block.work.processor.progress galaxy 1
+execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #block.work.processor.progress galaxy >= #galaxy$advanced_blast_furnace_dur Config run function galaxy:block/advanced_blast_furnace/work/processor/complete
 
-scoreboard players set #temp.processor.burnTime galaxy.block -1
-execute if score #processor.burnTime galaxy.block matches 1.. store result score #temp.processor.burnTime galaxy.block run scoreboard players remove #processor.burnTime galaxy.block 1
-execute if score #temp.processor.burnTime galaxy.block matches 0 run scoreboard players operation @s galaxy.block.work.status.burning += #_ID galaxy.block
+scoreboard players set #block._temp.work.processor.burnTime galaxy -1
+execute if score #block.work.processor.burnTime galaxy matches 1.. store result score #block._temp.work.processor.burnTime galaxy run scoreboard players remove #block.work.processor.burnTime galaxy 1
+execute if score #block._temp.work.processor.burnTime galaxy matches 0 run scoreboard players operation @s galaxy.block.work.status.burning += #block.work.processor.ID galaxy
 
-execute unless score #processor.burnTime galaxy.block matches 1.. if score #processor.progress galaxy.block matches 1.. run function galaxy:block/advanced_blast_furnace/work/processor/burn/check-fuel
-execute unless score #processor.burnTime galaxy.block matches 1.. if score #processor.progress galaxy.block matches 1.. unless score #advanced_blast_furnace.checkFuel galaxy.recipe matches 1 run scoreboard players set #processor.progress galaxy.block 0
+execute unless score #block.work.processor.burnTime galaxy matches 1.. if score #block.work.processor.progress galaxy matches 1.. run function galaxy:block/advanced_blast_furnace/work/processor/burn/check-fuel
+execute unless score #block.work.processor.burnTime galaxy matches 1.. if score #block.work.processor.progress galaxy matches 1.. unless score #advanced_blast_furnace.checkFuel galaxy.recipe matches 1 run scoreboard players set #block.work.processor.progress galaxy 0
 
-execute unless score #processor.progress galaxy.block = #temp.processor.progress galaxy.block if score #processor.progress galaxy.block matches 0 run scoreboard players add #updateGUI galaxy.block 100
-execute if score #processor.progress galaxy.block matches 1.. run scoreboard players operation @s galaxy.block.work.status.processing += #_ID galaxy.block
-execute if score #processor.burnTime galaxy.block matches 1.. run scoreboard players operation @s galaxy.block.work.status.burning += #_ID galaxy.block
+execute unless score #block.work.processor.progress galaxy = #block._temp.work.processor.progress galaxy if score #block.work.processor.progress galaxy matches 0 run scoreboard players add #block.updateGUI galaxy 100
+execute if score #block.work.processor.progress galaxy matches 1.. run scoreboard players operation @s galaxy.block.work.status.processing += #block.work.processor.ID galaxy
+execute if score #block.work.processor.burnTime galaxy matches 1.. run scoreboard players operation @s galaxy.block.work.status.burning += #block.work.processor.ID galaxy

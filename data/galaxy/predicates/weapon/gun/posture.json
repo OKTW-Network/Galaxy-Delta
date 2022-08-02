@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [    
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/main_hand"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/hands-pistol"
+    }
+  ]
+}

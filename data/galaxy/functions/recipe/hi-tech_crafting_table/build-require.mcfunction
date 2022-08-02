@@ -13,7 +13,7 @@ data modify storage galaxy:temp +recipe.build.require prepend from storage galax
 data modify storage cu:item simplify.item set from storage galaxy:temp +recipe.build.require[0]
 function cu:item/simplify
 data modify storage galaxy:temp +recipe.build.require[0] set from storage cu:item simplify.item
-data modify storage galaxy:temp +recipe.build.require[0].tag merge value {HideFlags:63,CustomData:{galaxy:{id:"gui_item"}}}
+data modify storage galaxy:temp +recipe.build.require[0].tag merge value {HideFlags:63,CustomData:{galaxy:{Type:"gui"}}}
 execute store result storage galaxy:temp +recipe.build.require[0].Slot byte 1 run scoreboard players get #_build.HTct.require.slotNumber galaxy.recipe
 
 data remove storage galaxy:temp +recipe.build.input[-1].require[-1]

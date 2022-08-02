@@ -1,4 +1,4 @@
-tag @e[tag=galaxy.hitbox.target,sort=nearest,limit=1] add galaxy.hitbox.pass_filter
+tag @e[tag=galaxy._tag.hitboxSelected,sort=nearest,limit=1] add galaxy._tag.passHitboxFilter
 
-tag @e[tag=galaxy.hitbox.target,tag=!galaxy.hitbox.pass_filter] remove galaxy.hitbox.target
-tag @e[tag=galaxy.hitbox.pass_filter] remove galaxy.hitbox.pass_filter
+tag @e[tag=galaxy._tag.hitboxSelected,tag=!galaxy._tag.passHitboxFilter] remove galaxy._tag.hitboxSelected
+tag @e[tag=galaxy._tag.passHitboxFilter] remove galaxy._tag.passHitboxFilter

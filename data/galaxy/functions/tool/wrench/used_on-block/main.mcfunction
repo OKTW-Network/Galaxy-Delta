@@ -4,10 +4,10 @@ function galaxy:tool/wrench/used_on-block/target/find
 function galaxy:tool/wrench/used_on-block/anchor/find
 
 function galaxy:tool/wrench/used_on-block/user/check-first_use
-execute if entity @s[tag=galaxy._tag.doWrenchFirstUse] run function galaxy:tool/wrench/used_on-block/user/store-target
-execute if entity @s[tag=galaxy._tag.doWrenchFirstUse] as @e[tag=galaxy._tag.ThisWrenchAnchor] run function galaxy:tool/wrench/used_on-block/anchor/store-original_states
-execute if entity @s[tag=galaxy._tag.doWrenchFirstUse] run tag @e[tag=galaxy._tag.ThisWrench] add galaxy._tag.isWrenchFirstUse
-tag @s[tag=galaxy._tag.doWrenchFirstUse] remove galaxy._tag.doWrenchFirstUse
+execute if entity @s[tag=galaxy._tag.FirstTimeWrenchUse] run function galaxy:tool/wrench/used_on-block/user/store-target
+execute if entity @s[tag=galaxy._tag.FirstTimeWrenchUse] as @e[tag=galaxy._tag.ThisWrenchAnchor] run function galaxy:tool/wrench/used_on-block/anchor/store-original_states
+execute if entity @s[tag=galaxy._tag.FirstTimeWrenchUse] run tag @e[tag=galaxy._tag.ThisWrench] add galaxy._tag.isWrenchFirstUse
+tag @s[tag=galaxy._tag.FirstTimeWrenchUse] remove galaxy._tag.FirstTimeWrenchUse
 
 function galaxy:tool/wrench/used_on-block/anchor/update
 

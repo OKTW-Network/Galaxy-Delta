@@ -1,8 +1,8 @@
 # Gun casing
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.casing_gun_gold"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/casing_gun_gold
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.casing_gun_iron"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/casing_gun_iron
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.casing_gun_steel"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/casing_gun_steel
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.casing_gun_netherite"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/casing_gun_netherite
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.gun_casing_gold"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/gun_casing_gold
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.gun_casing_iron"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/gun_casing_iron
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.gun_casing_steel"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/gun_casing_steel
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.gun_casing_netherite"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/gun_casing_netherite
 
 # Laser core
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.laser_core_t1"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/laser_core_t1
@@ -15,25 +15,20 @@ execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.cool
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.cooling_system_t3"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/cooling_system_t3
 
 # Handle
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.handle_gun_slime"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/handle_gun_slime
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.handle_gun_wood"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/handle_gun_wood
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.handle_gun_obsidian"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/handle_gun_obsidian
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.handle_wood"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/handle_wood
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.handle_obsidian"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/handle_obsidian
 
 # Barrel
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.barrel_pure"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/barrel_pure
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.barrel_bounce"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/barrel_bounce
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.barrel_trace"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/barrel_trace
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.barrel_condenser"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/barrel_condenser
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.barrel_scatter"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/barrel_scatter
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.gun_barrel_pistol"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/gun_barrel_pistol
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.gun_barrel_sniper_rifle"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/gun_barrel_sniper_rifle
 
 # Sight
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.sight_clear"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/sight_clear
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.sight_scope"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/sight_scope
 
-# Special
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.special_dual"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/special_dual
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.special_flow"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/special_flow
-execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.special_sequence"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/special_sequence
+# upgrade
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.upgrade_gun_dual"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/upgrade_gun_dual
+execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.upgrade_gun_flow"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/upgrade_gun_flow
 
 # Color lens
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.color_lens_red"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/color_lens_red
@@ -54,4 +49,4 @@ execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.colo
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.color_lens_white"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/color_lens_white
 execute if data storage galaxy:recipe HTct.craft{recipeID:"component.galaxy.color_lens_rainbow"} run function galaxy:recipe/hi-tech_crafting_table/component/craft/color_lens_rainbow
 
-execute if entity @s[tag=galaxy.request.HTct.craft,tag=!galaxy.success.HTct.recipeRequirementCheck] run function #galaxy:recipe/hi-tech_crafting_table/_craft_component
+execute if entity @s[tag=galaxy._request.HTct.craft,tag=!galaxy._success.hi-tech_crafting_table.recipeRequirementCheck] run function #galaxy:recipe/hi-tech_crafting_table/_craft_component

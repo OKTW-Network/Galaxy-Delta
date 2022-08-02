@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "block": {
+            "nbt": "{Items:[{Slot:9b,tag:{CustomData:{galaxy:{tag:{component:{Type:\"gun_barrel\"}}}}}},{Slot:10b,tag:{CustomData:{galaxy:{tag:{component:{Type:\"gun_casing\"}}}}}},{Slot:11b,tag:{CustomData:{galaxy:{tag:{component:{Type:\"laser_core\"}}}}}},{Slot:19b,tag:{CustomData:{galaxy:{tag:{component:{Type:\"cooling_system\"}}}}}},{Slot:20b,tag:{CustomData:{galaxy:{tag:{component:{Type:\"handle\"}}}}}}]}"
+        }
+    }
+}

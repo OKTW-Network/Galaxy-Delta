@@ -10,4 +10,4 @@ execute store result score #2 calcu_temp run data get storage galaxy:get recipe[
 data modify block ~ ~ ~ Items[{Slot:15b}] merge from storage galaxy:get recipe[0]
 execute store result block ~ ~ ~ Items[{Slot:15b}].Count byte 1 run scoreboard players operation #1 calcu_temp += #2 calcu_temp
 
-scoreboard players set #processor.progress galaxy.block 0
+scoreboard players set #block.work.processor.progress galaxy 0

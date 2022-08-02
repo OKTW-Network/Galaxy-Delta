@@ -1,4 +1,4 @@
-scoreboard players set #processor galaxy.block 1
+scoreboard players set #block._input.processor_ID galaxy 1
 function galaxy:block/advanced_blast_furnace/work/processor/get-progress_1000
 
 scoreboard players set #build.input.slot galaxy.GUI 12

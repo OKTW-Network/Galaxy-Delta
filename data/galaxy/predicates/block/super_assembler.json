@@ -3,7 +3,7 @@
     "predicate": {
         "block": {
             "blocks": ["minecraft:barrel"],
-            "nbt": "{CustomName:'{\"translate\":\"container.super_assembler\"}'}"
+            "nbt": "{CustomName:'{\"translate\":\"container.galaxy.super_assemble\"}'}"
         }
     }
 }

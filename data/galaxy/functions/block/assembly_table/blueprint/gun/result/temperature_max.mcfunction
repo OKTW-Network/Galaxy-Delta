@@ -1,0 +1,1 @@
+execute store result block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.temperature_max int 1 run data get storage galaxy:temp +block.assembly_table.get.parts.gun_casing.tag.CustomData.galaxy.tag.component.Alteration.gun.temperature_max 1

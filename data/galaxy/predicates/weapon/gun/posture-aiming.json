@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "minecraft:sneaking"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/gun/posture"
+  }
+]

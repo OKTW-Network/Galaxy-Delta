@@ -1,17 +1,25 @@
-execute at @s run tp ^ ^ ^0.25
+tag @s add galaxy._tag.ThisHitboxSource
+function galaxy:hitbox/remove_selected_tag
+execute positioned ~-0.75 ~-0.75 ~-0.75 run tag @e[dx=1.5,dy=1.5,dz=1.5] add galaxy._tag.hitboxCandidate
+execute positioned ~-1.75 ~-1.75 ~-1.75 run tag @e[dx=1.5,dy=1.5,dz=1.5,tag=galaxy._tag.hitboxCandidate] add galaxy._tag.hitboxSelected
+tag @s remove galaxy._tag.hitboxSelected
+tag @a remove galaxy._tag.hitboxSelected
+tag @s remove galaxy._tag.ThisHitboxSource
 
-execute store result score @s posX run data get entity @s Pos[0] 10
-execute store result score @s posY run data get entity @s Pos[1] 10
-execute store result score @s posZ run data get entity @s Pos[2] 10
+execute if entity @e[tag=galaxy._tag.hitboxSelected] run tag @s add galaxy._success.weapon.katana.stun.hitEntity
 
-execute if score @s galaxy.weapon.katana.action.stun.damage matches 1.. at @s run function galaxy:hitbox/tag/action-stun
+scoreboard players operation #stun.duration galaxy.statusEffect = #katana.action.stun.duration galaxy
+execute as @e[tag=galaxy._tag.hitboxSelected] run function galaxy:status_effect/stun/set
 
-scoreboard players remove #katana.action.stun.recursiveLimit galaxy.weapon 1
+function galaxy:damage/default_value
+scoreboard players operation #damage1000 galaxy.damage = #katana.action.stun.damage galaxy
+scoreboard players operation #damage1000 galaxy.damage *= #1000 num
+scoreboard players set #ignoreArmor galaxy.damage 1
+scoreboard players set #ignoreResistanceEffect galaxy.damage 1
+scoreboard players set #ignoreUniqueResistance galaxy.damage 1
+scoreboard players set #ignoreHurtCD galaxy.damage 1
+scoreboard players set #hurtTime galaxy.damage 0
 
-execute unless score #katana.action.stun.recursiveLimit galaxy.weapon matches 1.. run tag @s add galaxy._STOP
+execute as @e[tag=galaxy._tag.hitboxSelected] run function galaxy:damage/main
 
-execute if entity @s[tag=galaxy._STOP] run function galaxy:damage/action-stun
-execute unless entity @s run tag @s add galaxy._STOP
-execute if entity @s[tag=galaxy._STOP] run kill @s
-
-execute if entity @s[tag=!galaxy._STOP] at @s run function galaxy:weapon/katana/action/stun/damage
+# scoreboard players operation @s galaxy.projectile.killCount = #killCount galaxy.damage

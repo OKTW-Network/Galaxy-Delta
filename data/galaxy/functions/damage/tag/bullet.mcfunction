@@ -9,6 +9,6 @@ execute if entity @e[tag=galaxy.damage.target] run function galaxy:damage/tag/fi
 execute as @e[tag=galaxy.damage.target] run function galaxy:damage/tag/filter/source-didnt_damage_this
 execute if entity @e[tag=galaxy.damage.target] run function galaxy:damage/tag/filter/nearest
 
-execute store success score @s sucBulletHit if entity @e[tag=galaxy.damage.target]
+execute if entity @e[tag=galaxy.damage.target] run tag @s add galaxy._success.gun.bullet.hitEntity
 
 tag @s remove galaxy._tag.ThisDamageSource

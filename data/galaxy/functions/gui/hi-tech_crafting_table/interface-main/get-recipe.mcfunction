@@ -15,9 +15,9 @@ execute if score @s galaxy.GUI.HTct.recipeSubjectListSlotMax matches 14.. unless
 execute if score @s galaxy.GUI.HTct.recipeSubjectListSlotMax matches 15.. unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:25b}]} run scoreboard players set @s galaxy.GUI.HTct.recipeNumber 15
 
 data modify storage cu:list index.input set from entity @s HandItems[0].tag.CustomData.galaxy.data.recipePage
-execute store result score #length listIndex run data get storage cu:list index.input
+execute store result score #list.length cu run data get storage cu:list index.input
 scoreboard players operation #1 calcu_temp = @s galaxy.GUI.HTct.recipeNumber
-execute store result score #index listIndex run scoreboard players remove #1 calcu_temp 1
+execute store result score #list.index cu run scoreboard players remove #1 calcu_temp 1
 function cu:list/index/main
 data modify entity @s HandItems[0].tag.CustomData.galaxy.data.recipe set from storage cu:list index.result
 data modify entity @s HandItems[0].tag.CustomData.galaxy.data.recipe merge value {Slot:16b,tag:{CustomData:{galaxy:{trigger:"htct_request_craft"}}}}

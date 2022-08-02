@@ -1,2 +1,2 @@
-execute if score @s MhGunTemper < @s MhGunTemperMin run scoreboard players operation @s MhGunTemper = @s MhGunTemperMin
-execute if score @s FhGunTemper < @s FhGunTemperMin run scoreboard players operation @s FhGunTemper = @s FhGunTemperMin
+execute if score @s galaxy.gun.temperature.mainHand < @s galaxy.gun.temperatureMin.mainHand run scoreboard players operation @s galaxy.gun.temperature.mainHand = @s galaxy.gun.temperatureMin.mainHand
+execute if score @s galaxy.gun.temperature.offHand < @s galaxy.gun.temperatureMin.offHand run scoreboard players operation @s galaxy.gun.temperature.offHand = @s galaxy.gun.temperatureMin.offHand

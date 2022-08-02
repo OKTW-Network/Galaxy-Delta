@@ -1,29 +1,31 @@
-execute if score @s reqGunFire matches 10..11 run scoreboard players add @s gunSwitch 1
-execute if score @s gunSwitch matches 2.. run scoreboard players set @s gunSwitch 0
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players add @s galaxy.gun.dualSwitch 1
+execute if score @s galaxy.gun.dualSwitch matches 2.. run scoreboard players set @s galaxy.gun.dualSwitch 0
 
-execute unless score @s reqGunFire matches 11 run function galaxy:weapon/gun/get_data-hand_main
-execute if score @s reqGunFire matches 11 run function galaxy:weapon/gun/get_data-hand_off
+execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/get_data-hand_main
+execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/get_data-hand_off
 
-scoreboard players set @s gunBulletArrange 0
-execute if score @s reqGunFire matches 30 run scoreboard players set @s gunBulletArrange 1
-execute if score @s reqGunFire matches 31 run scoreboard players set @s gunBulletArrange 2
+scoreboard players operation @s galaxy.gun.interval = #gun.shoot.interval.mainHand galaxy
+execute if score @s galaxy.gun.requestShoot matches 100..101 if score #gun.shoot.interval.mainHand galaxy < #gun.shoot.interval.offHand galaxy run scoreboard players operation @s galaxy.gun.interval = #gun.shoot.interval.offHand galaxy
+scoreboard players set #1 calcu_temp 900
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval *= #1 calcu_temp
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval /= #1000 num
 
-execute unless score @s reqGunFire matches 11 unless score @s reqGunFire matches 20 unless score @s MhGunAclrate matches 0 run function galaxy:weapon/gun/accelerate/level_up-hand_main
-execute if score @s reqGunFire matches 11 unless score @s FhGunAclrate matches 0 run function galaxy:weapon/gun/accelerate/level_up-hand_off
-execute if score @s reqGunFire matches 20 run function galaxy:weapon/gun/accelerate/level_up-hand_main-charge
+execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.mainHand += #gun.shoot.heat galaxy
+execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.offHand += #gun.shoot.heat galaxy
 
-execute unless score @s reqGunFire matches 10..11 run scoreboard players operation @s gunDelay = @s MhGunDelay
-execute if score @s reqGunFire matches 10..11 if score @s MhGunDelay >= @s FhGunDelay run scoreboard players operation @s gunDelay = @s MhGunDelay
-execute if score @s reqGunFire matches 10..11 if score @s MhGunDelay < @s FhGunDelay run scoreboard players operation @s gunDelay = @s FhGunDelay
+function galaxy:weapon/gun/accuracy/result
 
-execute unless score @s reqGunFire matches 11 run function galaxy:weapon/gun/temperature/heat-hand_main
-execute if score @s reqGunFire matches 11 run function galaxy:weapon/gun/temperature/heat-hand_off
+# Respect first shot
+scoreboard players operation #gun.accuracy.instability galaxy = #gun.shoot.instability.shot galaxy
+execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/accuracy/instability/level_up/hand_main
+execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/accuracy/instability/level_up/hand_off
 
-execute if score @s reqGunFire matches 20 run function galaxy:weapon/gun/charge/reset-soft
+execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation #gun.bullet.summon.accuracy galaxy = #gun.accuracy.mainHand galaxy
+execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation #gun.bullet.summon.accuracy galaxy = #gun.accuracy.offHand galaxy
 
-scoreboard players set @s gunBulletTotal 1
-execute if score @s gunExtraBullet matches 1.. run scoreboard players operation @s gunBulletTotal += @s gunExtraBullet
-scoreboard players operation @s gunBulletSummon = @s gunBulletTotal
+scoreboard players set #gun.bullet.summon.totalBullet galaxy 1
+scoreboard players operation #gun.bullet.summon.totalBullet galaxy += #gun.shoot.extraBullet galaxy
+scoreboard players operation #gun.bullet.summon.remainingBullet galaxy = #gun.bullet.summon.totalBullet galaxy
 
 execute at @s run function galaxy:weapon/gun/bullet/summon/main
 

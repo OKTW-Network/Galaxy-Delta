@@ -4,6 +4,6 @@ execute if data storage galaxy:recipe HTct.craft{categoryID:"interactive_block"}
 execute if data storage galaxy:recipe HTct.craft{categoryID:"component"} run function galaxy:recipe/hi-tech_crafting_table/component/craft
 execute if data storage galaxy:recipe HTct.craft{categoryID:"weapon"} run function galaxy:recipe/hi-tech_crafting_table/weapon/craft
 
-execute if entity @s[tag=galaxy.request.HTct.craft,tag=!galaxy.success.HTct.recipeRequirementCheck] run function #galaxy:recipe/hi-tech_crafting_table/_craft_external
+execute if entity @s[tag=galaxy._request.HTct.craft,tag=!galaxy._success.hi-tech_crafting_table.recipeRequirementCheck] run function #galaxy:recipe/hi-tech_crafting_table/_craft_external
 
-tag @a[tag=galaxy.success.HTct.recipeRequirementCheck] remove galaxy.success.HTct.recipeRequirementCheck
+tag @a[tag=galaxy._success.hi-tech_crafting_table.recipeRequirementCheck] remove galaxy._success.hi-tech_crafting_table.recipeRequirementCheck

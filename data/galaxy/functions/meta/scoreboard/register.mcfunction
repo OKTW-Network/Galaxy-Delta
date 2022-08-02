@@ -3,6 +3,8 @@ scoreboard objectives add VersionGalaxyY dummy
 scoreboard objectives add VersionGalaxyZ dummy
 scoreboard objectives add VersionGalaxyA dummy
 
+scoreboard objectives add galaxy dummy
+
 scoreboard objectives add Debug dummy
 
 scoreboard objectives add useItemFrame minecraft.used:minecraft.item_frame "num-Item Frame Used"

@@ -5,7 +5,7 @@ data modify storage galaxy:get item set value []
 function galaxy:weapon/get/_dummy_katana_edge
 data modify storage cu:item input set from storage galaxy:get item[0]
 function galaxy:weapon/katana/replaceitem/calculate_cmd-edge
-execute store result storage cu:item input.tag.CustomModelData int 1 run scoreboard players get #katana.model.katana_edge galaxy.weapon
+execute store result storage cu:item input.tag.CustomModelData int 1 run scoreboard players get #katana.model.katana_edge galaxy
 data modify storage galaxy:temp +weapon.katana.build-lore.itemCustomDataTag set from storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag
 function galaxy:weapon/katana/build-lore/edge
 data modify storage cu:item input.tag.display.Lore set from storage galaxy:temp +weapon.katana.build-lore.result
@@ -18,7 +18,7 @@ data modify storage galaxy:get item set value []
 function galaxy:weapon/get/_dummy_katana_scabbard
 data modify storage cu:item input set from storage galaxy:get item[0]
 function galaxy:weapon/katana/replaceitem/calculate_cmd-scabbard
-execute store result storage cu:item input.tag.CustomModelData int 1 run scoreboard players get #katana.model.katana_scabbard galaxy.weapon
+execute store result storage cu:item input.tag.CustomModelData int 1 run scoreboard players get #katana.model.katana_scabbard galaxy
 data modify storage galaxy:temp +weapon.katana.build-lore.itemCustomDataTag set from storage galaxy:temp +weapon.katana.replaceitem.itemCustomDataTag
 function galaxy:weapon/katana/build-lore/scabbard
 data modify storage cu:item input.tag.display.Lore set from storage galaxy:temp +weapon.katana.build-lore.result

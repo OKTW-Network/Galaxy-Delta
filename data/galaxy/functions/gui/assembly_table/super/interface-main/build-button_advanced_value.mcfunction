@@ -1,9 +1,0 @@
-item replace block ~ ~ ~ container.3 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.4 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.12 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.13 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:10400,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.14 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.21 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.22 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}
-item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.edit.value","italic":false}'},CustomModelData:100,CustomData:{galaxy:{id:"gui_item"}}}

@@ -1,3 +1,3 @@
 effect clear @s slowness
-scoreboard players set @s gunZoom -1
-tag @s remove galaxy.gun.zooming
+scoreboard players set @s galaxy.gun.aimZoom -1
+tag @s remove galaxy._tag.gun.zooming

@@ -1,0 +1,10 @@
+scoreboard players reset @s galaxy.gun.temperature.offHand
+scoreboard players reset @s galaxy.gun.temperatureMin.offHand
+scoreboard players reset @s galaxy.gun.temperatureMax.offHand
+scoreboard players reset @s galaxy.gun.overheat.offHand
+scoreboard players reset @s galaxy.gun.cooling.offHand
+scoreboard players reset @s galaxy.gun.coolingDelay.offHand
+scoreboard players reset @s galaxy.gun.coolingTimer.offHand
+scoreboard players reset @s galaxy.gun.unstableShot.offHand
+scoreboard players reset @s galaxy.gun.unstableShotTimer.offHand
+scoreboard players reset @s galaxy.gun.flexibility.offHand

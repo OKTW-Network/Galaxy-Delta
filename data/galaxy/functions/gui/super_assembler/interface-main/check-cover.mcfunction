@@ -1,0 +1,12 @@
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:2b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:6b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:7b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:8b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:9b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:11b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:15b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:17b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:20b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:24b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:25b}]} run tag @s add galaxy._task.GUI.buildCover
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:26b}]} run tag @s add galaxy._task.GUI.buildCover

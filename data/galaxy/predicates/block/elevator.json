@@ -3,7 +3,7 @@
     "predicate": {
         "block": {
             "blocks": ["minecraft:barrel"],
-            "nbt": "{CustomName:'{\"translate\":\"container.elevator\"}'}"
+            "nbt": "{CustomName:'{\"translate\":\"container.galaxy.elevator\"}'}"
         }
     }
 }

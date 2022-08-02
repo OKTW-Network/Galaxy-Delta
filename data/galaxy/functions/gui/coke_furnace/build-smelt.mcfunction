@@ -1,8 +1,8 @@
-scoreboard players set #processor galaxy.block 1
+scoreboard players set #block._input.processor_ID galaxy 1
 function galaxy:block/coke_furnace/work/processor/get-progress_1000
-scoreboard players operation #processor.burnTime1000 galaxy.block = #processor.progress1000 galaxy.block
-execute unless score #processor.progress1000 galaxy.block matches 0 run scoreboard players remove #processor.burnTime1000 galaxy.block 1000
-execute unless score #processor.progress1000 galaxy.block matches 0 run scoreboard players operation #processor.burnTime1000 galaxy.block *= #-1 num
+scoreboard players operation #block.get.processor.burnTime1000 galaxy = #block.get.processor.progress1000 galaxy
+execute unless score #block.get.processor.progress1000 galaxy matches 0 run scoreboard players remove #block.get.processor.burnTime1000 galaxy 1000
+execute unless score #block.get.processor.progress1000 galaxy matches 0 run scoreboard players operation #block.get.processor.burnTime1000 galaxy *= #-1 num
 
 scoreboard players set #build.input.slot galaxy.GUI 20
 scoreboard players set #build.force galaxy.GUI 0

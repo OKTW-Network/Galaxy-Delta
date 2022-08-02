@@ -12,6 +12,6 @@ data modify storage galaxy:recipe HTct.category[-1].icon set from storage galaxy
 data modify storage galaxy:temp +recipe.build.resultTag set value {}
 execute if data storage galaxy:recipe HTct.category[-1].icon.tag.CustomModelData run data modify storage galaxy:temp +recipe.build.resultTag.CustomModelData set from storage galaxy:recipe HTct.category[-1].icon.tag.CustomModelData
 data modify storage galaxy:recipe HTct.category[-1].icon.tag set from storage galaxy:temp +recipe.build.resultTag
-data modify storage galaxy:recipe HTct.category[-1].icon.tag merge value {display:{Name:'{"translate":"gui.htct.weapon","italic":false}'},HideFlags:63,CustomData:{galaxy:{id:"gui_item"}}}
+data modify storage galaxy:recipe HTct.category[-1].icon.tag merge value {display:{Name:'{"translate":"gui.htct.weapon","italic":false}'},HideFlags:63,CustomData:{galaxy:{Type:"gui"}}}
 data remove storage galaxy:recipe HTct.category[-1].icon.tag.display.Lore
-# data modify storage galaxy:recipe HTct.category[-1].icon set value {id:"minecraft:golden_hoe",Count:1b,tag:{display:{Name:'{"translate":"gui.htct.weapon","italic":false}'},HideFlags:63,CustomModelData:30104,CustomData:{galaxy:{id:"gui_item"}}}}
+# data modify storage galaxy:recipe HTct.category[-1].icon set value {id:"minecraft:golden_hoe",Count:1b,tag:{display:{Name:'{"translate":"gui.htct.weapon","italic":false}'},HideFlags:63,CustomModelData:30104,CustomData:{galaxy:{Type:"gui"}}}}

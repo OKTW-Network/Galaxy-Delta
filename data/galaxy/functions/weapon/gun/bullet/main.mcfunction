@@ -1,2 +1,2 @@
-execute store result score @s bulletMoveRem run scoreboard players get @s bulletSpeed
-execute at @s run function galaxy:weapon/gun/bullet/flight
+execute store result score #gun.bullet.flight.recursiveLimit galaxy run scoreboard players get @s galaxy.projectile.velocity
+execute at @s run function galaxy:weapon/gun/bullet/flight/main

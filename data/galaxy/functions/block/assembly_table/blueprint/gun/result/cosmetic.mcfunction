@@ -1,0 +1,1 @@
+data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic set from storage galaxy:temp +block.assembly_table.get.parts.cosmetic.tag.CustomData.galaxy.tag.component.Alteration.gun.cosmetic

@@ -1,5 +1,3 @@
-scoreboard objectives add galaxy.block dummy "@galaxy+block"
-
 scoreboard objectives add galaxy.block.states.facing dummy "@galaxy+block state facing"
 scoreboard objectives add galaxy.block.states.lit dummy "@galaxy+block state lit"
 

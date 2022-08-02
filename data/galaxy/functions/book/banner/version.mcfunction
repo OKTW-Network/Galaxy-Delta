@@ -1,24 +1,24 @@
 scoreboard players set #1 calcu_temp 0
 
-scoreboard players operation #input lengthDigit = #galaxy$version_currently_x.*.*-* Meta
-scoreboard players set #ignoreNegative lengthDigit 1
+scoreboard players operation #length.input cu = #galaxy$version_currently_x.*.*-* Meta
+scoreboard players set #length.ignoreNegative cu 1
 function cu:length/digit
-scoreboard players operation #1 calcu_temp += #result lengthDigit
+scoreboard players operation #1 calcu_temp += #length.result cu
 
-scoreboard players operation #input lengthDigit = #galaxy$version_currently_*.x.*-* Meta
-scoreboard players set #ignoreNegative lengthDigit 1
+scoreboard players operation #length.input cu = #galaxy$version_currently_*.x.*-* Meta
+scoreboard players set #length.ignoreNegative cu 1
 function cu:length/digit
-scoreboard players operation #1 calcu_temp += #result lengthDigit
+scoreboard players operation #1 calcu_temp += #length.result cu
 
-scoreboard players operation #input lengthDigit = #galaxy$version_currently_*.*.x-* Meta
-scoreboard players set #ignoreNegative lengthDigit 1
+scoreboard players operation #length.input cu = #galaxy$version_currently_*.*.x-* Meta
+scoreboard players set #length.ignoreNegative cu 1
 function cu:length/digit
-scoreboard players operation #1 calcu_temp += #result lengthDigit
+scoreboard players operation #1 calcu_temp += #length.result cu
 
-execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players operation #input lengthDigit = #galaxy$version_currently_*.*.*-x Meta
-execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players set #ignoreNegative lengthDigit 1
+execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players operation #length.input cu = #galaxy$version_currently_*.*.*-x Meta
+execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players set #length.ignoreNegative cu 1
 execute if score #galaxy$version_currently_pre Meta matches 1 run function cu:length/digit
-execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players operation #1 calcu_temp += #result lengthDigit
+execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players operation #1 calcu_temp += #length.result cu
 execute if score #galaxy$version_currently_pre Meta matches 1 run scoreboard players add #1 calcu_temp 4
 
 scoreboard players add #1 calcu_temp 1

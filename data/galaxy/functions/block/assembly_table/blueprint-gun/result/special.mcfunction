@@ -1,2 +1,0 @@
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.special.id set from storage galaxy:temp +block.assembly_table.result.parts[{CustomData:{galaxy:{tag:{special:{}}}}}].CustomData.galaxy.tag.special.Alteration.special.id
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.special.Name set from storage galaxy:temp +block.assembly_table.result.parts[{CustomData:{galaxy:{tag:{special:{}}}}}].CustomData.galaxy.tag.special.Alteration.special.Name

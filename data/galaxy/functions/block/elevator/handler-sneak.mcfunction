@@ -1,5 +1,5 @@
-tag @s[predicate=galaxy:block/step_on_elevator] add galaxy._tag.elevatorSneak
+tag @s[predicate=galaxy:block/step_on_elevator] add galaxy._task.elevator.goDown
 
-execute as @s[tag=galaxy._tag.elevatorSneak] at @s run function galaxy:block/elevator/request_manager
+execute as @s[tag=galaxy._task.elevator.goDown] at @s run function galaxy:block/elevator/request_manager
 
-tag @s[tag=galaxy._tag.elevatorSneak] remove galaxy._tag.elevatorSneak
+tag @s[tag=galaxy._task.elevator.goDown] remove galaxy._task.elevator.goDown

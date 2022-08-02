@@ -1,0 +1,5 @@
+execute store result score @s galaxy.gun.temperature.mainHand run data get entity @e[tag=cu.dataStorage.container,tag=galaxy.data.gun,tag=galaxy._tag.ThisDataTarget,limit=1] data.galaxy.gun.temperature
+execute store result score @s galaxy.gun.overheat.mainHand run data get entity @e[tag=cu.dataStorage.container,tag=galaxy.data.gun,tag=galaxy._tag.ThisDataTarget,limit=1] data.galaxy.gun.overheat
+execute store result score @s galaxy.gun.coolingTimer.mainHand run data get entity @e[tag=cu.dataStorage.container,tag=galaxy.data.gun,tag=galaxy._tag.ThisDataTarget,limit=1] data.galaxy.gun.coolingTimer
+execute store result score @s galaxy.gun.unstableShot.mainHand run data get entity @e[tag=cu.dataStorage.container,tag=galaxy.data.gun,tag=galaxy._tag.ThisDataTarget,limit=1] data.galaxy.gun.unstableShot
+execute store result score @s galaxy.gun.unstableShotTimer.mainHand run data get entity @e[tag=cu.dataStorage.container,tag=galaxy.data.gun,tag=galaxy._tag.ThisDataTarget,limit=1] data.galaxy.gun.unstableShotTimer

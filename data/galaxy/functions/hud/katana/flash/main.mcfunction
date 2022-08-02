@@ -1,6 +1,6 @@
-execute store result score #1 calcu_temp run scoreboard players get @s galaxy.weapon.katana.action.flash.cooldown
-execute if entity @s[scores={galaxy.weapon.katana.action.flash.moved=1..}] run scoreboard players operation #1 calcu_temp *= #1000 num
-execute if entity @s[scores={galaxy.weapon.katana.action.flash.moved=1..}] run scoreboard players operation #1 calcu_temp /= @s galaxy.weapon.katana.action.flash.cooldownMax
+scoreboard players operation #1 calcu_temp = @s galaxy.katana.flash.cooldown
+execute if entity @s[scores={galaxy.katana.flash.moved=1..}] run scoreboard players operation #1 calcu_temp *= #1000 num
+execute if entity @s[scores={galaxy.katana.flash.moved=1..}] run scoreboard players operation #1 calcu_temp /= @s galaxy.katana.flash.cooldownMax
 execute if score #1 calcu_temp matches 901..1000 run data modify storage galaxy:temp +HUD.katana.flash_value set value '[{"text":"+","color":"yellow"},{"text":"---------","color":"gray"}]'
 execute if score #1 calcu_temp matches 801..900 run data modify storage galaxy:temp +HUD.katana.flash_value set value '[{"text":"=","color":"green"},{"text":"+","color":"yellow"},{"text":"--------","color":"gray"}]'
 execute if score #1 calcu_temp matches 701..800 run data modify storage galaxy:temp +HUD.katana.flash_value set value '[{"text":"==","color":"green"},{"text":"+","color":"yellow"},{"text":"-------","color":"gray"}]'
