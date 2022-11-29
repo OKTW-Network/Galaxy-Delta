@@ -4,7 +4,7 @@ function galaxy:weapon/gun/remove_uuid_data
 item replace block ~ ~ ~ container.13 with carrot_on_a_stick{CustomData:{galaxy:{Type:"item",id:"gun",tag:{status:0}}},display:{Name:'{"translate":"item.galaxy.gun","italic":false}'},CustomModelData:100,HideFlags:39,RepairCost:-2147483648,Unbreakable:1b}
 
 function cu:uuid/generate
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID set from storage cu:uuid generate
+data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.UUID set from storage cu:uuid generate.result
 
 function galaxy:block/assembly_table/blueprint/gun/get/parts
 data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.parts set from storage galaxy:temp +block.assembly_table.get.parts

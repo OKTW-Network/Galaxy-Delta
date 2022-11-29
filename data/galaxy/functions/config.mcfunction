@@ -140,21 +140,9 @@ scoreboard players set #galaxy$hud_katana_act_flash Config 1
 
 
   ########################################
-  # Pistol                               #
+  # Gun                                  #
   ########################################
 
 # Enable HUD:gun
 # boolean, default: 1
 scoreboard players set #galaxy$hud_gun Config 1
-
-# Enable type1 gun on HUD:gun
-# boolean, default: 1
-scoreboard players set #galaxy$hud_gun_type1 Config 1
-
-# Enable type2 gun on HUD:gun
-# boolean, default: 1
-scoreboard players set #galaxy$hud_gun_type2 Config 1
-
-# Enable type3 gun on HUD:gun
-# boolean, default: 1
-scoreboard players set #galaxy$hud_gun_type3 Config 1

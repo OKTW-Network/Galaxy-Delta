@@ -1,7 +1,5 @@
 gamerule maxCommandChainLength 2147483647
 
-scoreboard objectives add Config dummy
-
 datapack disable "file/Galaxy-Delta"
 datapack disable "file/Galaxy-Delta.zip"
 

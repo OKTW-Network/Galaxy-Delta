@@ -1,7 +1,6 @@
-scoreboard objectives add VersionGalaxyX dummy
-scoreboard objectives add VersionGalaxyY dummy
-scoreboard objectives add VersionGalaxyZ dummy
-scoreboard objectives add VersionGalaxyA dummy
+scoreboard objectives add galaxy.meta.version.x dummy
+scoreboard objectives add galaxy.meta.version.y dummy
+scoreboard objectives add galaxy.meta.version.z dummy
 
 scoreboard objectives add galaxy dummy "@galaxy"
 
