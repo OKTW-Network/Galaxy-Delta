@@ -1,14 +1,10 @@
-function galaxy:damage/default_value
-scoreboard players operation #damage1000 galaxy.damage = #katana.action.flash.damage galaxy
-scoreboard players operation #damage1000 galaxy.damage *= #1000 num
-scoreboard players set #ignoreArmor galaxy.damage 1
-scoreboard players set #ignoreResistanceEffect galaxy.damage 1
-scoreboard players set #ignoreUniqueResistance galaxy.damage 1
-scoreboard players set #ignoreHurtCD galaxy.damage 1
-scoreboard players set #hurtTime galaxy.damage 0
+function cu:entity/damage/setup_input/default_value
+scoreboard players operation #entity.damage.source.damageValue1000 cu = #katana.action.flash.damage galaxy
+scoreboard players operation #entity.damage.source.damageValue1000 cu *= #1000 num
+# scoreboard players operation #entity.damage.source.killCount cu = @s galaxy.projectile.killCount
 
-execute as @e[tag=galaxy._tag.katanaFlashVictim] run function galaxy:damage/main
+execute as @e[tag=galaxy._tag.katanaFlashVictim] run function cu:entity/damage/main
 
-# scoreboard players operation @s galaxy.projectile.killCount = #killCount galaxy.damage
+# scoreboard players operation @s galaxy.projectile.killCount = #entity.damage.source.killCount galaxy
 
 tag @e[tag=galaxy._tag.katanaFlashVictim] remove galaxy._tag.katanaFlashVictim

@@ -3,7 +3,6 @@
     "galaxy:meta/scoreboard/register",
     "galaxy:recipe/meta/scoreboard/register",
     "galaxy:gui/meta/scoreboard/register",
-    "galaxy:damage/meta/scoreboard/register",
     "galaxy:status_effect/meta/scoreboard/register",
     "galaxy:block/meta/scoreboard/register",
     "galaxy:entity/meta/scoreboard/register",

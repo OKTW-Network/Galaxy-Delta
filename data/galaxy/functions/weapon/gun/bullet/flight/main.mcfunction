@@ -15,7 +15,7 @@ execute if entity @s[tag=galaxy._success.gun.bullet.hitBlock] if score @s galaxy
 # execute if entity @s[tag=galaxy._success.gun.bullet.hitBlock] if score @s galaxy.projectile.bounce matches 1.. at @s run function galaxy:weapon/gun/bullet/flight/bounce/block/main
 
 execute if entity @s unless entity @s[tag=galaxy._success.gun.bullet.hitBlock,tag=!galaxy._tag.ignoreHitBlock] at @s run function galaxy:weapon/gun/bullet/flight/damage
-execute if entity @s[tag=!galaxy._success.gun.bullet.hitEntity] if score @s galaxy.projectile.trace matches 1.. unless score @s galaxy.projectile.traceCooldown matches 1.. at @s run function galaxy:weapon/gun/bullet/flight/trace/main
+execute if entity @s[tag=!galaxy._success.gun.bullet.hitEntity] if score @s galaxy.projectile.trace matches 1.. unless score @s galaxy.projectile.traceCooldown matches 1.. at @s run function galaxy:weapon/gun/bullet/flight/trace
 execute if entity @s[tag=galaxy._success.gun.bullet.hitEntity] if score @s galaxy.projectile.penetrate matches 1.. run function galaxy:weapon/gun/bullet/flight/penetrate/entity
 execute if entity @s[tag=galaxy._success.gun.bullet.hitEntity] if score @s galaxy.projectile.bounce matches 1.. at @s run function galaxy:weapon/gun/bullet/flight/bounce/entity/main
 
