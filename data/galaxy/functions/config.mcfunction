@@ -7,14 +7,6 @@
 # integer, default: 2
 scoreboard players set #galaxy$print_version Config 2
 
-# Allow initial prompt print out while initializing
-# boolean, default: 0
-scoreboard players set #galaxy$print_init Config 0
-
-# Allow config prompt print out while initializing
-# boolean, default: 0
-scoreboard players set #galaxy$print_config Config 0
-
 
 ############################################
 # Block                                    #
