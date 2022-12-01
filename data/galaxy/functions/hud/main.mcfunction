@@ -1,5 +1,5 @@
-execute if score #galaxy$hud_katana Config matches 1 as @a run function galaxy:hud/katana/main
-execute if score #galaxy$hud_gun Config matches 1 as @a run function galaxy:hud/gun/main
+execute if score #galaxy$hud.katana Config matches 1 as @a run function galaxy:hud/katana/main
+execute if score #galaxy$hud.gun Config matches 1 as @a run function galaxy:hud/gun/main
 
 tag @a[tag=galaxy.hud.succes] add galaxy.hud.isShowing
 title @a[tag=!galaxy.hud.succes,tag=galaxy.hud.isShowing] actionbar {"text":""}

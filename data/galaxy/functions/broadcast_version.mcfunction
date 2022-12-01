@@ -1,5 +1,5 @@
 data modify storage cu:version broadcast_relation.input.datapack_name set value '{"text":"Galaxy"}'
-scoreboard players operation #version.broadcast_relation.input.method cu = #galaxy$print_version Config
+scoreboard players operation #version.broadcast_relation.input.method cu = #galaxy$general.print_version Config
 function galaxy:version
 scoreboard players operation #version.broadcast_relation.input_1.x cu = #galaxy$version.x Meta
 scoreboard players operation #version.broadcast_relation.input_1.y cu = #galaxy$version.y Meta

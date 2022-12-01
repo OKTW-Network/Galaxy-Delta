@@ -1,2 +1,2 @@
-execute if score #galaxy$hud_katana_act_stun Config matches 1 if entity @s[predicate=!minecraft:sneaking,predicate=galaxy:weapon/posture-katana-2] run function galaxy:hud/katana/stun
-execute if score #galaxy$hud_katana_act_flash Config matches 1 if entity @s[predicate=minecraft:sneaking,predicate=minecraft:on_ground,predicate=galaxy:weapon/postures-katana] run function galaxy:hud/katana/flash/main
+execute if score #galaxy$weapon.katana.action.stun Config matches 1 if entity @s[predicate=!minecraft:sneaking,predicate=galaxy:weapon/posture-katana-2] run function galaxy:hud/katana/stun
+execute if score #galaxy$weapon.katana.action.flash Config matches 1 if entity @s[predicate=minecraft:sneaking,predicate=minecraft:on_ground,predicate=galaxy:weapon/postures-katana] run function galaxy:hud/katana/flash/main

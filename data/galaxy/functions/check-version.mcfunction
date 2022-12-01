@@ -1,4 +1,4 @@
-execute if score #galaxy$print_version Config matches 1..2 run function galaxy:broadcast_version
+execute if score #galaxy$general.print_version Config matches 1..2 run function galaxy:broadcast_version
 
 scoreboard players operation #galaxy$previous_version.x Meta = #galaxy$current_version.x Meta
 scoreboard players operation #galaxy$previous_version.y Meta = #galaxy$current_version.y Meta
