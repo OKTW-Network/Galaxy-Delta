@@ -1,1 +1,1 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.coke","italic":false,"color":"white"}'},CustomModelData:1020,CustomData:{galaxy:{Type:"item",id:"coke",tag:{fuelABf:6400s}}}}
+data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.coke","italic":false,"color":"white"}'},CustomModelData:1020,CustomData:{galaxy:{Type:"item",id:"coke",tag:{advancedBlastFurnaceFuel:6400s}}}}

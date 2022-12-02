@@ -2,7 +2,8 @@ scoreboard players operation #block._temp.work.processor.progress galaxy = #bloc
 
 function galaxy:block/advanced_blast_furnace/work/processor/check-recipe
 
-execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 unless score #block.work.processor.burnTime galaxy matches 1.. run function galaxy:block/advanced_blast_furnace/work/processor/burn/start
+execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 unless score #block.work.processor.burnTime galaxy matches 1.. run function galaxy:block/advanced_blast_furnace/work/processor/burn/check-fuel
+execute if score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 unless score #block.work.processor.burnTime galaxy matches 1.. if score #advanced_blast_furnace.checkFuel galaxy.recipe matches 1 run function galaxy:block/advanced_blast_furnace/work/processor/burn/start
 
 execute unless score #advanced_blast_furnace.checkIO galaxy.recipe matches 1 if score #block.work.processor.progress galaxy matches 1.. run scoreboard players set #block.work.processor.progress galaxy 0
 
