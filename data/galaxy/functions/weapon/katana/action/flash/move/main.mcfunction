@@ -5,7 +5,7 @@ data modify entity @s Rotation[1] set value 0f
 execute at @s run tp @s ^ ^ ^0.25
 execute store result entity @s Rotation[1] float 0.001 run scoreboard players get #1 calcu_temp
 
-execute at @s if predicate galaxy:weapon/katana/flash_path_check at @s positioned ~0.35 ~ ~0.35 if predicate galaxy:weapon/katana/flash_path_check at @s positioned ~-0.35 ~ ~0.35 if predicate galaxy:weapon/katana/flash_path_check at @s positioned ~-0.35 ~ ~-0.35 if predicate galaxy:weapon/katana/flash_path_check at @s positioned ~0.35 ~ ~-0.35 if predicate galaxy:weapon/katana/flash_path_check run tag @s add galaxy._success.weapon.katana.slash.pathPassed
+execute at @s run function galaxy:weapon/katana/action/flash/move/path_check
 execute if entity @s[tag=galaxy._success.weapon.katana.slash.pathPassed] at @s run function galaxy:weapon/katana/action/flash/move/path_pass
 
 scoreboard players remove #katana.action.flash.recursiveLimit galaxy 1

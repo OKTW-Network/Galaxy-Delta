@@ -3,7 +3,7 @@
     "offsetY": 1,
     "predicate": {
         "block": {
-            "tag": "global:passable"
+            "tag": "global:entity_passable"
         }
     }
 }
