@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:10107,HideFlags:39}"
+            "nbt": "{CustomModelData:10107,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.collections"},
         "description": {"translate":"advancements.weaponry.collections.description"},

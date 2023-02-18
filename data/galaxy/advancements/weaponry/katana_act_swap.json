@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:10101,HideFlags:39}"
+            "nbt": "{CustomModelData:10101,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.katana_act_swap.title"},
         "description": {"translate":"advancements.weaponry.katana_act_swap.description"},

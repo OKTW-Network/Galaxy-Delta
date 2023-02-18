@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:210100,HideFlags:39}"
+            "nbt": "{CustomModelData:210100,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.lasor.title"},
         "description": {"translate":"advancements.weaponry.lasor.description"},

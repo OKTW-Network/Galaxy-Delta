@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:command_block",
-            "nbt": "{CustomModelData:1020,HideFlags:39}"
+            "nbt": "{CustomModelData:1020,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.coke.title"},
         "description": {"translate":"advancements.galaxy.coke.description"}
