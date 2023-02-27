@@ -15,10 +15,10 @@ scoreboard players set #4 calcu_temp -1
 execute at @e[tag=galaxy._tag.ThisWrench] align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ minecraft:chest[type=single] run scoreboard players set #4 calcu_temp 0
 execute at @e[tag=galaxy._tag.ThisWrench] align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ minecraft:trapped_chest[type=single] run scoreboard players set #4 calcu_temp 1
 
-execute if predicate galaxy:entity/item_frame/facing-south run scoreboard players set #5 calcu_temp 0
-execute if predicate galaxy:entity/item_frame/facing-west run scoreboard players set #5 calcu_temp 1
-execute if predicate galaxy:entity/item_frame/facing-north run scoreboard players set #5 calcu_temp 2
-execute if predicate galaxy:entity/item_frame/facing-east run scoreboard players set #5 calcu_temp 3
+execute if predicate minecraft:entity_properties/item_frame/facing-south run scoreboard players set #5 calcu_temp 0
+execute if predicate minecraft:entity_properties/item_frame/facing-west run scoreboard players set #5 calcu_temp 1
+execute if predicate minecraft:entity_properties/item_frame/facing-north run scoreboard players set #5 calcu_temp 2
+execute if predicate minecraft:entity_properties/item_frame/facing-east run scoreboard players set #5 calcu_temp 3
 execute store result score #6 calcu_temp store result score #7 calcu_temp run scoreboard players get #1 calcu_temp
 scoreboard players remove #6 calcu_temp 1
 execute if score #6 calcu_temp matches ..-1 run scoreboard players add #6 calcu_temp 4

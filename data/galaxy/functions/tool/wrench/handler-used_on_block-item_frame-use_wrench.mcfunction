@@ -5,7 +5,7 @@ execute as @s[tag=galaxy._tag.ThisWrenchUser] run function galaxy:tool/wrench/re
 
 execute as @s[tag=galaxy._tag.ThisWrenchUser] run function galaxy:tool/wrench/used_on-block/wrench/find
 
-execute as @s[tag=galaxy._tag.ThisWrenchUser,predicate=minecraft:sneaking] run function galaxy:tool/wrench/used_on-block/main
+execute as @s[tag=galaxy._tag.ThisWrenchUser,predicate=minecraft:entity_properties/sneaking] run function galaxy:tool/wrench/used_on-block/main
 
 kill @e[tag=galaxy._tag.ThisWrench]
 

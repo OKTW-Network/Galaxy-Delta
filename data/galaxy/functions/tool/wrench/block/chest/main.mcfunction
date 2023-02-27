@@ -1,7 +1,7 @@
 execute unless predicate minecraft:block_states/type-single run tag @s add galaxy._tag.wrenchChestSeparate
-execute if predicate minecraft:block_states/type-single if predicate galaxy:entity/item_frame/vertical run tag @s add galaxy._tag.wrenchChestCombine
-execute if predicate minecraft:block_states/type-single if entity @s[tag=galaxy._tag.isWrenchFirstUse] if predicate galaxy:entity/item_frame/vertical run tag @s add galaxy._tag.wrenchChestFacing
-execute if predicate minecraft:block_states/type-single if entity @s[tag=galaxy._tag.isWrenchFirstUse] if predicate galaxy:entity/item_frame/horizontal run tag @s add galaxy._tag.wrenchChestRotate
+execute if predicate minecraft:block_states/type-single if predicate minecraft:entity_properties/item_frame/vertical run tag @s add galaxy._tag.wrenchChestCombine
+execute if predicate minecraft:block_states/type-single if entity @s[tag=galaxy._tag.isWrenchFirstUse] if predicate minecraft:entity_properties/item_frame/vertical run tag @s add galaxy._tag.wrenchChestFacing
+execute if predicate minecraft:block_states/type-single if entity @s[tag=galaxy._tag.isWrenchFirstUse] if predicate minecraft:entity_properties/item_frame/horizontal run tag @s add galaxy._tag.wrenchChestRotate
 execute if predicate minecraft:block_states/type-single if entity @s[tag=!galaxy._tag.isWrenchFirstUse] run tag @s add galaxy._tag.wrenchChestRotate
 
 execute if entity @s[tag=galaxy._tag.wrenchChestSeparate] run function galaxy:tool/wrench/block/chest/separate

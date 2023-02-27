@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "minecraft:sneaking"
+    "name": "minecraft:entity_properties/sneaking"
   },
   {
     "condition": "minecraft:reference",

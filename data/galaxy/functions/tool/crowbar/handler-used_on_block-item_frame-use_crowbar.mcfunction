@@ -5,7 +5,7 @@ execute as @a[tag=galaxy._tag.ThisCrowbarUser] run function galaxy:tool/crowbar/
 
 function galaxy:tool/crowbar/used_on-block/crowbar/find
 
-execute as @a[tag=galaxy._tag.ThisCrowbarUser,predicate=minecraft:sneaking] run function galaxy:tool/crowbar/used_on-block/main
+execute as @a[tag=galaxy._tag.ThisCrowbarUser,predicate=minecraft:entity_properties/sneaking] run function galaxy:tool/crowbar/used_on-block/main
 
 kill @e[tag=galaxy._tag.ThisCrowbar]
 

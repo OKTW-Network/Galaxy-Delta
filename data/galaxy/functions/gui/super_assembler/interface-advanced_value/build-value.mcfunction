@@ -8,10 +8,10 @@ item replace block ~ ~ ~ container.14 with minecraft:potion{display:{Name:'{"tex
 item replace block ~ ~ ~ container.15 with minecraft:potion{display:{Name:'{"text":""}'},HideFlags:63,CustomPotionColor:3663371,CustomModelData:10141,CustomData:{galaxy:{Type:"gui"}}}
 item replace block ~ ~ ~ container.16 with minecraft:potion{display:{Name:'{"text":""}'},HideFlags:63,CustomPotionColor:3663371,CustomModelData:10141,CustomData:{galaxy:{Type:"gui"}}}
 item replace block ~ ~ ~ container.17 with minecraft:potion{display:{Name:'{"text":""}'},HideFlags:63,CustomPotionColor:3663371,CustomModelData:10141,CustomData:{galaxy:{Type:"gui"}}}
-scoreboard players operation #length.input cu = @s galaxy.GUI.attribute.value
-scoreboard players set #length.ignoreNegative cu 1
-function cu:length/digit
-scoreboard players operation #3 calcu_temp = #length.result cu
+scoreboard players operation #value.digit.length.input cu = @s galaxy.GUI.attribute.value
+scoreboard players set #value.digit.length.ignoreNegativeMark cu 1
+function cu:value/digit/length/main
+scoreboard players operation #3 calcu_temp = #value.digit.length.result cu
 execute store result score #1 calcu_temp run scoreboard players get @s galaxy.GUI.attribute.value
 execute if score #3 calcu_temp matches 1..7 run scoreboard players operation #2 calcu_temp = #1 calcu_temp
 execute if score #3 calcu_temp matches 1..7 run scoreboard players operation #2 calcu_temp %= #10 num

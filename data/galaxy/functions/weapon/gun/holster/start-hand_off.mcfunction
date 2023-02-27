@@ -12,5 +12,5 @@ scoreboard players operation #2 calcu_temp += #3 calcu_temp
 
 execute store result storage galaxy:temp +weapon.gun.holster.item.tag.CustomData.galaxy.tag.status int 1 run scoreboard players get #1 calcu_temp
 execute store result storage galaxy:temp +weapon.gun.holster.item.tag.CustomModelData int 1 run scoreboard players get #2 calcu_temp
-data modify storage cu:item input set from storage galaxy:temp +weapon.gun.holster.item
+data modify storage cu:item replaceitem.input set from storage galaxy:temp +weapon.gun.holster.item
 function cu:item/replaceitem/hand_off
