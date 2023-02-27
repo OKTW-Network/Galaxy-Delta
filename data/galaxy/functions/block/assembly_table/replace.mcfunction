@@ -4,4 +4,4 @@ function galaxy:gui/cleanup_gui_item
 setblock ~ ~ ~ minecraft:air destroy
 kill @e[type=minecraft:item,nbt={Item:{tag:{display:{Name:'{"translate":"container.galaxy.assembly_table"}'}}}}]
 setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.galaxy.assembly_table"}'} replace
-function galaxy:gui/assembly_table/update
+tag @s add galaxy._task.gui.refresh

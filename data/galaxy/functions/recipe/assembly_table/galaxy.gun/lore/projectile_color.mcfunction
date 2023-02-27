@@ -1,0 +1,4 @@
+execute unless data storage galaxy:temp +block.assembly_table.lore.itemCustomDataTag.projectile.color run data modify storage cu:value string.static.input set value '{"translate":"  %s: %s","with":[{"translate":"attribute.name.galaxy.projectile.color","color":"aqua"},{"translate":"color.galaxy.default","color":"dark_green"}],"color":"gray","italic":false}'
+execute if data storage galaxy:temp +block.assembly_table.lore.itemCustomDataTag.projectile.color run data modify storage cu:value string.static.input set value '{"translate":"  %s: %s","with":[{"translate":"attribute.name.galaxy.projectile.color","color":"aqua"},{"storage":"galaxy:temp","nbt":"+block.assembly_table.lore.itemCustomDataTag.projectile.color.Name","color":"dark_green","interpret":true}],"color":"gray","italic":false}'
+function cu:value/string/static
+data modify storage galaxy:temp +block.assembly_table.lore.result append from storage cu:value string.static.result

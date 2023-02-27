@@ -1,0 +1,3 @@
+data modify block ~ ~ ~ Items append from storage galaxy:reicpe assembly_table.gui.home[{tag:{CustomData:{galaxy:{group:["assembly_table.home.blueprint_page_button"]}}}}]
+execute if score #recipe.assembly_table.blueprintPageMax galaxy matches 2.. run data modify block ~ ~ ~ Items[{tag:{CustomData:{galaxy:{id:"assembly_table.home.blueprint_page_button.previous_page"}}}}].tag merge value {display:{Name:'{"translate":"gui.previous.page","italic":false}'},CustomModelData:10200}
+execute if score #recipe.assembly_table.blueprintPageMax galaxy matches 2.. run data modify block ~ ~ ~ Items[{tag:{CustomData:{galaxy:{id:"assembly_table.home.blueprint_page_button.next_page"}}}}].tag merge value {display:{Name:'{"translate":"gui.next.page","italic":false}'},CustomModelData:10201}

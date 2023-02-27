@@ -26,3 +26,5 @@ scoreboard objectives add galaxy.GUI.hi-tech_crafting_table.recipeRequirementPag
 scoreboard objectives add galaxy.GUI.hi-tech_crafting_table.recipeRequirementPageSlotMax dummy "@galaxy+GUI HTct requirement page slot max"
 scoreboard objectives add galaxy.GUI.hi-tech_crafting_table.recipeResultQuantity dummy "@galaxy+GUI HTct recipe result quantity"
 
+scoreboard objectives add galaxy.GUI.assembly_table.blueprintPage dummy "@galaxy+GUI assembly table blueprint page"
+scoreboard objectives add galaxy.GUI.assembly_table.blueprintPageSlotMax dummy "@galaxy+GUI assembly table blueprint page slot max"

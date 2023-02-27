@@ -1,1 +1,0 @@
-execute store result block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.accelerate int 1 run data get storage galaxy:temp +block.assembly_table.get.parts[{CustomData:{galaxy:{tag:{handle_gun:{}}}}}].CustomData.galaxy.tag.handle_gun.Alteration.accelerate 1

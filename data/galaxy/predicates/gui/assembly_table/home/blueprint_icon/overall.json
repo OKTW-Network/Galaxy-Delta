@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/blueprint_icon/slot_1"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/blueprint_icon/slot_2"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/blueprint_icon/slot_3"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/blueprint_icon/slot_4"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/blueprint_icon/slot_5"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/blueprint_icon/slot_6"
+  }
+]

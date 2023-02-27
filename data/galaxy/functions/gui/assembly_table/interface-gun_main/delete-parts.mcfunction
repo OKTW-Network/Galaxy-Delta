@@ -1,9 +1,0 @@
-item replace block ~ ~ ~ container.1 with minecraft:air
-item replace block ~ ~ ~ container.7 with minecraft:air
-item replace block ~ ~ ~ container.9 with minecraft:air
-item replace block ~ ~ ~ container.10 with minecraft:air
-item replace block ~ ~ ~ container.11 with minecraft:air
-item replace block ~ ~ ~ container.19 with minecraft:air
-item replace block ~ ~ ~ container.20 with minecraft:air
-item replace block ~ ~ ~ container.24 with minecraft:air
-item replace block ~ ~ ~ container.26 with minecraft:air

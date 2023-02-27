@@ -1,1 +1,0 @@
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.projectile.color set from storage galaxy:temp +block.assembly_table.get.parts.color_lens.tag.CustomData.galaxy.tag.component.Alteration.gun.projectile.color

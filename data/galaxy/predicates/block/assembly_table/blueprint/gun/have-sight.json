@@ -1,8 +1,0 @@
-{
-    "condition": "minecraft:location_check",
-    "predicate": {
-        "block": {
-            "nbt": "{Items:[{Slot:1b,tag:{CustomData:{galaxy:{tag:{component:{Type:\"sight\"}}}}}}]}"
-        }
-    }
-}
