@@ -1,5 +1,3 @@
-execute if entity @a[tag=galaxy._tag.ThisCrowbarUser,predicate=minecraft:sneaking] run tag @s add galaxy._tag.crowbarEmpowerLensDestruct
+execute if entity @a[tag=galaxy._tag.ThisCrowbarUser,predicate=minecraft:entity_properties/sneaking] run tag @s add galaxy._task.empower_lens.destruct
 
-execute if entity @s[tag=galaxy._tag.crowbarEmpowerLensDestruct] run function galaxy:entity/empower_lens/main
-
-tag @s remove galaxy._tag.crowbarEmpowerLensDestruct
+execute if entity @s[tag=galaxy._task.empower_lens.destruct] run function galaxy:entity/empower_lens/main
