@@ -1,4 +1,4 @@
-scoreboard players set #block.work.update_processor.recursiveLimit galaxy 1
+scoreboard players set #block.work.update_processor._recursiveTimes galaxy 1
 scoreboard players set #block.work.update_processor.recursiveStep galaxy 1
 scoreboard players set #block.updateGUI galaxy 0
 scoreboard players set @s galaxy.block.work.status.processing 0

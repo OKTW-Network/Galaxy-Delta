@@ -1,4 +1,4 @@
-data modify storage galaxy:temp +GUI._build.progress.1x2.result set value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"translate":"gui.blank","italic":false}'},CustomModelData:20400,CustomData:{galaxy:{Type:"gui"}}}}
+data modify storage galaxy:temp +GUI._build.progress.1x2.result set value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":""}'},CustomModelData:20400,CustomData:{galaxy:{Type:"gui"}}}}
 execute store result storage galaxy:temp +GUI._build.progress.1x2.result.Slot byte 1 run scoreboard players get #build.input.slot galaxy.GUI
 
 scoreboard players set #modelData galaxy.GUI 20400

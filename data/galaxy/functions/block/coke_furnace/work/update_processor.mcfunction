@@ -6,4 +6,4 @@ execute if score #block.work.processor.ID galaxy matches 1 run scoreboard player
 
 scoreboard players add #block.work.update_processor.recursiveStep galaxy 1
 scoreboard players operation #block.work.processor.ID galaxy *= #2 num
-execute if score #block.work.update_processor.recursiveStep galaxy <= #block.work.update_processor.recursiveLimit galaxy run function galaxy:block/coke_furnace/work/update_processor
+execute if score #block.work.update_processor.recursiveStep galaxy <= #block.work.update_processor._recursiveTimes galaxy run function galaxy:block/coke_furnace/work/update_processor

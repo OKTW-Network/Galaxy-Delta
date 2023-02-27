@@ -23,7 +23,7 @@ execute if entity @s unless entity @s[tag=galaxy._success.gun.bullet.hitBlock,ta
 
 execute if score @s galaxy.projectile.traceCooldown matches 1.. run scoreboard players remove @s galaxy.projectile.traceCooldown 1
 
-scoreboard players remove #gun.bullet.flight.recursiveLimit galaxy 1
+scoreboard players remove #gun.bullet.flight._recursiveTimes galaxy 1
 scoreboard players remove @s galaxy.projectile.remainFlightDistance 1
 
 execute unless entity @s run tag @s add galaxy._STOP
@@ -41,4 +41,4 @@ tag @s remove galaxy._tag.ignoreHitEntity
 
 kill @e[tag=galaxy.dummy.previousBullet]
 
-execute if entity @s[tag=!galaxy._STOP] if score #gun.bullet.flight.recursiveLimit galaxy matches 1.. at @s run function galaxy:weapon/gun/bullet/flight/main
+execute if entity @s[tag=!galaxy._STOP] if score #gun.bullet.flight._recursiveTimes galaxy matches 1.. at @s run function galaxy:weapon/gun/bullet/flight/main
