@@ -37,4 +37,4 @@ function galaxy:recipe/hi-tech_crafting_table/component/recipe/color_lens_white
 function galaxy:recipe/hi-tech_crafting_table/component/recipe/color_lens_rainbow
 
 # External
-function #galaxy:recipe/hi-tech_crafting_table/component
+function #galaxy:recipe/hi-tech_crafting_table/get_component

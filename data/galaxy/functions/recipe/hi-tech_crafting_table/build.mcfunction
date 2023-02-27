@@ -1,4 +1,4 @@
-data modify storage galaxy:recipe HTct.category set value []
+data modify storage galaxy:recipe hi-tech_crafting_table.category set value []
 
 function galaxy:recipe/hi-tech_crafting_table/tool/build
 
@@ -10,9 +10,8 @@ function galaxy:recipe/hi-tech_crafting_table/component/build
 
 function galaxy:recipe/hi-tech_crafting_table/weapon/build
 
-# external use
-function #galaxy:recipe/hi-tech_crafting_table/_build_external
+function #galaxy:recipe/hi-tech_crafting_table/build_external
 
-execute store result score #global galaxy.GUI.HTct.categoryMax run data get storage galaxy:recipe HTct.category
+execute store result score #recipe.hi-tech_crafting_table.categoryMax galaxy run data get storage galaxy:recipe hi-tech_crafting_table.category
 
-tag @e[tag=galaxy.customBlock,tag=galaxy.hi-tech_crafting_table] add galaxy.updateHTctRecipe
+tag @e[tag=galaxy.customBlock,tag=galaxy.hi-tech_crafting_table] add galaxy._task.hi-tech_crafting_table.refreshGui

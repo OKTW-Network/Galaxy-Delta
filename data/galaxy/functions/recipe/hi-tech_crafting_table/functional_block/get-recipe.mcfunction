@@ -5,5 +5,4 @@ function galaxy:recipe/hi-tech_crafting_table/functional_block/recipe/coke_furna
 function galaxy:recipe/hi-tech_crafting_table/functional_block/recipe/advanced_blast_furnace
 function galaxy:recipe/hi-tech_crafting_table/functional_block/recipe/assembly_table
 
-# external use
-function #galaxy:recipe/hi-tech_crafting_table/functional_block
+function #galaxy:recipe/hi-tech_crafting_table/get_functional_block

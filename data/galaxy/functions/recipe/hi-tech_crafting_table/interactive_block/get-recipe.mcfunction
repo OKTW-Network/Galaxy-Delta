@@ -5,5 +5,4 @@ function galaxy:recipe/hi-tech_crafting_table/interactive_block/recipe/katana_di
 function galaxy:recipe/hi-tech_crafting_table/interactive_block/recipe/katana_display_stand-2
 function galaxy:recipe/hi-tech_crafting_table/interactive_block/recipe/katana_display_stand-3
 
-# external use
-function #galaxy:recipe/hi-tech_crafting_table/interactive_block
+function #galaxy:recipe/hi-tech_crafting_table/get_interactive_block

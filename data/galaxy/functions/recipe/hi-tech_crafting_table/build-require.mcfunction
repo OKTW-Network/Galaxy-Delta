@@ -10,10 +10,10 @@ execute if score #1 calcu_temp matches 1.. run scoreboard players operation #1 c
 scoreboard players operation #_build.HTct.require.slotNumber galaxy.recipe += #1 calcu_temp
 
 data modify storage galaxy:temp +recipe.build.require prepend from storage galaxy:temp +recipe.build.input[-1].require[-1]
-data modify storage cu:item simplify.item set from storage galaxy:temp +recipe.build.require[0]
-function cu:item/simplify
-data modify storage galaxy:temp +recipe.build.require[0] set from storage cu:item simplify.item
-data modify storage galaxy:temp +recipe.build.require[0].tag merge value {HideFlags:63,CustomData:{galaxy:{Type:"gui"}}}
+data modify storage cu:item simplify.keep_displayable_tags.items append from storage galaxy:temp +recipe.build.require[0]
+function cu:item/simplify/keep_displayable_tags/main
+data modify storage galaxy:temp +recipe.build.require[0] set from storage cu:item simplify.keep_displayable_tags.result
+data modify storage galaxy:temp +recipe.build.require[0].tag merge value {HideFlags:127,CustomData:{galaxy:{Type:"gui"}}}
 execute store result storage galaxy:temp +recipe.build.require[0].Slot byte 1 run scoreboard players get #_build.HTct.require.slotNumber galaxy.recipe
 
 data remove storage galaxy:temp +recipe.build.input[-1].require[-1]
