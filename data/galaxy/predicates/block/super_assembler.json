@@ -1,9 +1,0 @@
-{
-    "condition": "minecraft:location_check",
-    "predicate": {
-        "block": {
-            "blocks": ["minecraft:barrel"],
-            "nbt": "{CustomName:'{\"translate\":\"container.galaxy.super_assemble\"}'}"
-        }
-    }
-}
