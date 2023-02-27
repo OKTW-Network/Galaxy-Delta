@@ -1,4 +1,8 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.katana_scabbard","italic":false,"color":"yellow"}'},HideFlags:39,RepairCost:-2147483648,Unbreakable:1b,CustomModelData:120202,CustomData:{galaxy:{Type:"item",id:"katana",tag:{type:3b,style:2b,flash:{damage:12,distance:8,charge:15},stun:{damage:2,duration:10},Name:'{"translate":"item.galaxy.nazo","italic":false,"color":"yellow"}'}}}}
-data modify storage galaxy:temp +weapon.katana.build-lore.itemCustomDataTag set from storage galaxy:get itemTag[0].CustomData.galaxy.tag
-function galaxy:weapon/katana/build-lore/scabbard
-data modify storage galaxy:get itemTag[0].display.Lore set from storage galaxy:temp +weapon.katana.build-lore.result
+function galaxy:weapon/get/tag/_dummy_katana_scabbard
+data modify storage galaxy:get itemTag[0] merge value {display:{Name:'{"translate":"item.galaxy.katana.nazo","italic":false,"color":"yellow"}'},CustomModelData:120202,CustomData:{galaxy:{tag:{type:"nazo"}}}}
+data modify storage galaxy:get customAttribute set value []
+function galaxy:weapon/get/custom_attribute/nazo
+data modify storage galaxy:get itemTag[0].CustomData.galaxy.tag merge from storage galaxy:get customAttribute[0]
+data modify storage galaxy:temp +weapon.katana.lore.input set from storage galaxy:get customAttribute[0]
+function galaxy:weapon/katana/lore/scabbard
+data modify storage galaxy:get itemTag[0].display.Lore set from storage galaxy:temp +weapon.katana.lore.result

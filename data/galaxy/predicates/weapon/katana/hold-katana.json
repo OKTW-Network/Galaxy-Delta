@@ -1,0 +1,29 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/hand_main-katana"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/hand_off-katana"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/hand_main-blade"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/hand_off-blade"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/hand_main-scabbard"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/hand_off-scabbard"
+    }
+  ]
+}

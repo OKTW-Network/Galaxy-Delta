@@ -1,6 +1,5 @@
-data modify storage galaxy:get item set value []
-data modify storage galaxy:get item append from entity @s HandItems[1]
-execute if data storage galaxy:get item[0] run data modify storage cu:item input set from storage galaxy:get item[0]
-execute if data storage galaxy:get item[0] run data modify storage cu:item pickupDelay set value 0s
-execute if data storage galaxy:get item[0] run function cu:item/summon
+data modify storage cu:item input set from entity @s HandItems[1]
+execute if predicate galaxy:recipe/convertible/hand_off run data modify storage cu:item input set from entity @s HandItems[1].tag.CustomData.galaxy.convertToItem
 item replace entity @s weapon.offhand with minecraft:air
+data modify storage cu:item pickupDelay set value 10s
+function cu:item/summon

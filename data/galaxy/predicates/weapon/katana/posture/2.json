@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/katana/hand_main-blade"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/katana/hand_off-scabbard"
+  }
+]

@@ -4,8 +4,8 @@
             "item": "minecraft:carrot_on_a_stick",
             "nbt": "{CustomModelData:110100,HideFlags:127}"
         },
-        "title": {"translate":"advancements.weaponry.katana_obtain_katana.title"},
-        "description": {"translate":"advancements.weaponry.katana_obtain_katana.description"},
+        "title": {"translate":"advancements.weaponry.katana_obtain_steel.title"},
+        "description": {"translate":"advancements.weaponry.katana_obtain_steel.description"},
         "hidden": true,
         "show_toast": false,
         "announce_to_chat": false
@@ -17,7 +17,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"katana\",tag:{style:1b}}}}"
+						"nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"katana\",tag:{type:\"steel\"}}}}"
                     }
                 ]
             }

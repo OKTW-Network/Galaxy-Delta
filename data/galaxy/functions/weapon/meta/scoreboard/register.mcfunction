@@ -1,5 +1,3 @@
-scoreboard objectives add galaxy dummy "@galaxy"
-
 scoreboard objectives add galaxy.katana.swapPull.cooldown dummy "@galaxy Katana action Swap-PullOut cooldown"
 scoreboard objectives add galaxy.katana.swapPut.cooldown dummy "@galaxy Katana action Swap-PutIn cooldown"
 scoreboard objectives add galaxy.katana.stun.cooldown dummy "@galaxy Katana action Stun cooldown"
