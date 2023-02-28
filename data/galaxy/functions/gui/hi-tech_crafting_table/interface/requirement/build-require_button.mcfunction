@@ -9,7 +9,7 @@ execute if entity @s[tag=getRequirePage] run function galaxy:gui/hi-tech_craftin
 execute if entity @s[tag=getRequirePage] run tag @s add setRequirePage
 tag @s[tag=getRequirePage] remove getRequirePage
 
-item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false,"color":"dark_gray"}'},CustomModelData:20200,CustomData:{galaxy:{Type:"gui"}}}
-item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false,"color":"dark_gray"}'},CustomModelData:20201,CustomData:{galaxy:{Type:"gui"}}}
-execute if score @s galaxy.GUI.hi-tech_crafting_table.recipeRequirementPageMax matches 2.. run item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false}'},CustomModelData:10200,CustomData:{galaxy:{Type:"gui"}}}
-execute if score @s galaxy.GUI.hi-tech_crafting_table.recipeRequirementPageMax matches 2.. run item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false}'},CustomModelData:10201,CustomData:{galaxy:{Type:"gui"}}}
+item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false,"color":"dark_gray"}'},CustomModelData:102000,CustomData:{galaxy:{Type:"gui"}}}
+item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false,"color":"dark_gray"}'},CustomModelData:102001,CustomData:{galaxy:{Type:"gui"}}}
+execute if score @s galaxy.GUI.hi-tech_crafting_table.recipeRequirementPageMax matches 2.. run item replace block ~ ~ ~ container.5 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous.page","italic":false}'},CustomModelData:101000,CustomData:{galaxy:{Type:"gui"}}}
+execute if score @s galaxy.GUI.hi-tech_crafting_table.recipeRequirementPageMax matches 2.. run item replace block ~ ~ ~ container.23 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next.page","italic":false}'},CustomModelData:101001,CustomData:{galaxy:{Type:"gui"}}}

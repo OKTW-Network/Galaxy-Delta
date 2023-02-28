@@ -5,10 +5,9 @@ execute store result score #2 calcu_temp store result score #3 calcu_temp run da
 
 scoreboard players set #1 calcu_temp -1
 
-scoreboard players operation #3 calcu_temp %= #100 num
+scoreboard players operation #3 calcu_temp %= #10 num
 scoreboard players operation #2 calcu_temp -= #3 calcu_temp
-scoreboard players set #3 calcu_temp 10
-scoreboard players operation #2 calcu_temp += #3 calcu_temp
+scoreboard players add #2 calcu_temp 9
 
 execute store result storage galaxy:temp +weapon.gun.holster.item.tag.CustomData.galaxy.tag.status int 1 run scoreboard players get #1 calcu_temp
 execute store result storage galaxy:temp +weapon.gun.holster.item.tag.CustomModelData int 1 run scoreboard players get #2 calcu_temp

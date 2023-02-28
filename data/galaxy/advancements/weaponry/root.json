@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:10105,HideFlags:127}"
+            "item": "minecraft:gray_stained_glass_pane",
+            "nbt": "{CustomModelData:201005,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.root.title"},
         "description": {"translate":"advancements.weaponry.root.description"},
@@ -21,7 +21,7 @@
                 ]
             }
         },
-        "lasor": {
+        "gun": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
@@ -33,6 +33,6 @@
         }
     },
     "requirements": [
-        ["katana","lasor"]
+        ["katana","gun"]
     ]
 }

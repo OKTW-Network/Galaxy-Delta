@@ -2,16 +2,16 @@
     "display": {
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:210100,HideFlags:127}"
+            "nbt": "{CustomModelData:201000,HideFlags:127}"
         },
-        "title": {"translate":"advancements.weaponry.lasor.title"},
-        "description": {"translate":"advancements.weaponry.lasor.description"},
+        "title": {"translate":"advancements.weaponry.gun.title"},
+        "description": {"translate":"advancements.weaponry.gun.description"},
         "show_toast": false,
         "announce_to_chat": false
     },
     "parent": "galaxy:weaponry/root",
     "criteria": {
-        "lasor": {
+        "gun": {
             "trigger": "minecraft:impossible"
         }
     }

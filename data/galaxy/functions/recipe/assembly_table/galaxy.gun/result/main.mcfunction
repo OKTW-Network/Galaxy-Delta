@@ -30,8 +30,8 @@ execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts
 execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"cosmetic"}}}}}}] run function galaxy:recipe/assembly_table/galaxy.gun/result/cosmetic
 execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"color_lens"}}}}}}] run function galaxy:recipe/assembly_table/galaxy.gun/result/projectile_color
 
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:1b} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 210100
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:2b} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 220100
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:1b} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 201000
+execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag{type:2b} run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set value 202000
 execute if data block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.Model run data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomModelData set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.cosmetic.Model
 
 data modify storage galaxy:temp +block.assembly_table.lore.itemCustomDataTag set from block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag

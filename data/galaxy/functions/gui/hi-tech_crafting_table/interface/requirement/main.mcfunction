@@ -27,7 +27,7 @@ execute if entity @s[tag=setRequirePage] run data modify block ~ ~ ~ Items appen
 tag @s[tag=setRequirePage] remove setRequirePage
 
 # button return
-execute if entity @s[tag=setButtonReturn] run item replace block ~ ~ ~ container.18 with minecraft:golden_hoe{display:{Name:'{"translate":"gui.back","italic":false}'},HideFlags:127,CustomModelData:10120,CustomData:{galaxy:{Type:"gui"}}}
+execute if entity @s[tag=setButtonReturn] run item replace block ~ ~ ~ container.18 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.back","italic":false}'},HideFlags:127,CustomModelData:201020,CustomData:{galaxy:{Type:"gui"}}}
 tag @s[tag=setButtonReturn] remove setButtonReturn
 
 # mode switch, return

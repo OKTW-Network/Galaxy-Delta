@@ -6,7 +6,7 @@ execute store result score #2 calcu_temp store result score #3 calcu_temp run da
 scoreboard players set #1 calcu_temp 1
 execute if predicate galaxy:weapon/gun/hands-pistol run scoreboard players set #1 calcu_temp 2
 
-scoreboard players operation #3 calcu_temp %= #100 num
+scoreboard players operation #3 calcu_temp %= #10 num
 scoreboard players operation #2 calcu_temp -= #3 calcu_temp
 scoreboard players operation #2 calcu_temp += #1 calcu_temp
 

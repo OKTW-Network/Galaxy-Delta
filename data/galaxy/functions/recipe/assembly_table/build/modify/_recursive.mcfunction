@@ -21,7 +21,7 @@ data modify storage cu:item simulate_container.input[0].value set value [{Slot:3
 data modify storage cu:item simulate_container.input[1].value set from storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].parts
 function cu:item/simulate_container/main
 data modify storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].cover set from storage cu:item simulate_container.result[0]
-data modify storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].cover[] merge value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":""}'},CustomModelData:10200,CustomData:{galaxy:{Type:"gui",id:"assembly_table.cover"}}}}
+data modify storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].cover[] merge value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":""}'},CustomModelData:101001,CustomData:{galaxy:{Type:"gui",id:"assembly_table.cover"}}}}
 
 data modify storage galaxy:recipe assembly_table.blueprint append from storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0]
 data remove storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0]

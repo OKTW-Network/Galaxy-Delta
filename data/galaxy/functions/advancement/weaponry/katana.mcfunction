@@ -1,3 +1,3 @@
 advancement grant @s until galaxy:weaponry/katana
-function galaxy:advancement/weaponry/katana_actions
-function galaxy:advancement/weaponry/katana_collections
+advancement grant @s only galaxy:weaponry/katana_actions
+advancement grant @s only galaxy:weaponry/katana_collections

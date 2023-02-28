@@ -1,5 +1,5 @@
-scoreboard players set #1 calcu_temp 310200
-scoreboard players set #2 calcu_temp 10000
+scoreboard players set #1 calcu_temp 301010
+scoreboard players set #2 calcu_temp 1000
 execute store result score #3 calcu_temp run data get storage galaxy:temp +weapon.energy_saber.replaceitem.itemCustomDataTag.style
 
 scoreboard players remove #3 calcu_temp 1

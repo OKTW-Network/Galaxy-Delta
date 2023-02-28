@@ -1,5 +1,5 @@
 function galaxy:weapon/get/tag/_dummy_katana_blade
-data modify storage galaxy:get itemTag[0] merge value {display:{Name:'{"translate":"item.galaxy.katana.steel","italic":false,"color":"white"}'},CustomModelData:110201,CustomData:{galaxy:{tag:{type:"steel"}}}}
+data modify storage galaxy:get itemTag[0] merge value {display:{Name:'{"translate":"item.galaxy.katana.steel","italic":false,"color":"white"}'},CustomModelData:101011,CustomData:{galaxy:{tag:{type:"steel"}}}}
 data modify storage galaxy:get attributeModifier set value []
 function galaxy:weapon/get/attribute_modifier/steel_blade
 data modify storage galaxy:get itemTag[0].CustomData.galaxy.tag.bladeAttributeModifier set from storage galaxy:get attributeModifier[0]

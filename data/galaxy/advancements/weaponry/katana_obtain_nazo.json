@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:120100,HideFlags:127}"
+            "nbt": "{CustomModelData:102000,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.katana_obtain_nazo.title"},
         "description": {"translate":"advancements.weaponry.katana_obtain_nazo.description"},

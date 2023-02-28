@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:10104,HideFlags:127}"
+            "item": "minecraft:gray_stained_glass_pane",
+            "nbt": "{CustomModelData:201004,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.root.title"},
         "description": {"translate":"advancements.galaxy.root.description"},

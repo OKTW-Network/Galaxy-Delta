@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:20100,HideFlags:127}"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:101001,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.katana.title"},
         "description": {"translate":"advancements.weaponry.katana.description"},

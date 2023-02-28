@@ -1,7 +1,7 @@
-data modify storage galaxy:temp +GUI._build.smelt.1x1.result set value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":""}'},CustomModelData:20500,CustomData:{galaxy:{Type:"gui"}}}}
+data modify storage galaxy:temp +GUI._build.smelt.1x1.result set value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":""}'},CustomModelData:202000,CustomData:{galaxy:{Type:"gui"}}}}
 execute store result storage galaxy:temp +GUI._build.smelt.1x1.result.Slot byte 1 run scoreboard players get #build.input.slot galaxy.GUI
 
-scoreboard players set #modelData galaxy.GUI 20500
+scoreboard players set #modelData galaxy.GUI 202000
 execute store result storage galaxy:temp +GUI._build.smelt.1x1.result.tag.CustomModelData int 1 run scoreboard players operation #modelData galaxy.GUI += #smeltValue galaxy.GUI
 
 data modify block ~ ~ ~ Items append from storage galaxy:temp +GUI._build.smelt.1x1.result

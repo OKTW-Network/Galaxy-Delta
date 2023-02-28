@@ -1,5 +1,5 @@
 function galaxy:weapon/get/tag/_dummy_katana
-data modify storage galaxy:get itemTag[0] merge value {display:{Name:'{"translate":"item.galaxy.katana.nazo","italic":false,"color":"yellow"}'},CustomModelData:120200,CustomData:{galaxy:{tag:{type:"nazo"}}}}
+data modify storage galaxy:get itemTag[0] merge value {display:{Name:'{"translate":"item.galaxy.katana.nazo","italic":false,"color":"yellow"}'},CustomModelData:102010,CustomData:{galaxy:{tag:{type:"nazo"}}}}
 data modify storage galaxy:get attributeModifier set value []
 function galaxy:weapon/get/attribute_modifier/nazo_blade
 data modify storage galaxy:get itemTag[0].CustomData.galaxy.tag.bladeAttributeModifier set from storage galaxy:get attributeModifier[0]

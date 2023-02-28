@@ -14,5 +14,5 @@ execute if entity @s[tag=galaxy._task.gui.updateThings] run tag @s add getRecipe
 execute if entity @s[tag=galaxy._task.gui.updateThings] run tag @s add setRecipePage
 tag @s[tag=galaxy._task.gui.updateThings] remove galaxy._task.gui.updateThings
 
-item replace block ~ ~ ~ container.0 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous","italic":false}'},CustomModelData:10200,CustomData:{galaxy:{Type:"gui"}}}
-item replace block ~ ~ ~ container.18 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next","italic":false}'},CustomModelData:10201,CustomData:{galaxy:{Type:"gui"}}}
+item replace block ~ ~ ~ container.0 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.previous","italic":false}'},CustomModelData:101000,CustomData:{galaxy:{Type:"gui"}}}
+item replace block ~ ~ ~ container.18 with minecraft:gray_stained_glass_pane{display:{Name:'{"translate":"gui.next","italic":false}'},CustomModelData:101001,CustomData:{galaxy:{Type:"gui"}}}

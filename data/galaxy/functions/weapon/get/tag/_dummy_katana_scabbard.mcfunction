@@ -1,1 +1,1 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy._dummy","italic":false}'},HideFlags:127,RepairCost:-2147483648,Unbreakable:1b,CustomModelData:110202,CustomData:{galaxy:{Type:"item",id:"katana_scabbard",tag:{type:"_dummy"}}}}
+data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy._dummy","italic":false}'},HideFlags:127,RepairCost:-2147483648,Unbreakable:1b,CustomModelData:100,CustomData:{galaxy:{Type:"item",id:"katana_scabbard",tag:{type:"_dummy"}}}}

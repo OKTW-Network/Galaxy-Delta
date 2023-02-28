@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:110100,HideFlags:127}"
+            "nbt": "{CustomModelData:101000,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.katana_obtain_steel.title"},
         "description": {"translate":"advancements.weaponry.katana_obtain_steel.description"},

@@ -6,6 +6,6 @@ data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:go
 data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:glass_pane",Count:2b}
 data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:emerald",Count:1b}
 data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:sea_lantern",Count:1b}
-data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:terracotta",tag:{display:{Lore:['{"translate":"item_info.any_type","color":"dark_gray","italic":false}']}},Count:2b}
+data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:terracotta",tag:{display:{Lore:['{"translate":"text.any_type","color":"dark_gray","italic":false}']}},Count:2b}
 
 data modify storage galaxy:get recipe[-1].HTctRecipeID set value "component.galaxy.laser_core_t2"

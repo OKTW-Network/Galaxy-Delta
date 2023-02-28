@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:item_frame",
-            "nbt": "{CustomModelData:30200,HideFlags:127}"
+            "nbt": "{CustomModelData:302000,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.crowbar.title"},
         "description": {"translate":"advancements.galaxy.crowbar.description"}

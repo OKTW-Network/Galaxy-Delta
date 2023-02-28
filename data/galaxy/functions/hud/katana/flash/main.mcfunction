@@ -13,8 +13,8 @@ execute if score #1 calcu_temp matches 101..200 run data modify storage galaxy:t
 execute if score #1 calcu_temp matches 1..100 run data modify storage galaxy:temp +HUD.katana.flash_value set value '[{"text":"=========","color":"green"},{"text":"+","color":"yellow"}]'
 execute if score #1 calcu_temp matches ..0 run data modify storage galaxy:temp +HUD.katana.flash_value set value '{"text":"==========","color":"green"}'
 
-data modify storage galaxy:temp +HUD.katana.flash set value '{"translate":"%s [%s]","with":[{"translate":"action.flash","color":"gray"},{"nbt":"+HUD.katana.flash_value","storage":"galaxy:temp","interpret":true}],"color":"dark_gray"}'
-execute if predicate galaxy:weapon/katana/posture/1 if score #1 calcu_temp matches ..0 run data modify storage galaxy:temp +HUD.katana.flash set value '{"translate":"%s [%s]","with":[{"translate":"action.flash","color":"aqua"},{"nbt":"+HUD.katana.flash_value","storage":"galaxy:temp","interpret":true}],"color":"gray"}'
+data modify storage galaxy:temp +HUD.katana.flash set value '{"translate":"%s [%s]","with":[{"translate":"action.galaxy.katana.flash","color":"gray"},{"nbt":"+HUD.katana.flash_value","storage":"galaxy:temp","interpret":true}],"color":"dark_gray"}'
+execute if predicate galaxy:weapon/katana/posture/1 if score #1 calcu_temp matches ..0 run data modify storage galaxy:temp +HUD.katana.flash set value '{"translate":"%s [%s]","with":[{"translate":"action.galaxy.katana.flash","color":"aqua"},{"nbt":"+HUD.katana.flash_value","storage":"galaxy:temp","interpret":true}],"color":"gray"}'
 
 title @s actionbar {"nbt":"+HUD.katana.flash","storage":"galaxy:temp","interpret":true}
 

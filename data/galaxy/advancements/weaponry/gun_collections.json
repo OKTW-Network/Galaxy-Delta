@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:10107,HideFlags:127}"
+            "item": "minecraft:gray_stained_glass_pane",
+            "nbt": "{CustomModelData:201007,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.collections"},
         "description": {"translate":"advancements.weaponry.collections.description"},
@@ -11,9 +11,9 @@
         "show_toast": false,
         "announce_to_chat": false
     },
-    "parent": "galaxy:weaponry/lasor",
+    "parent": "galaxy:weaponry/gun",
     "criteria": {
-        "lasor": {
+        "gun_collections": {
             "trigger": "minecraft:impossible"
         }
     }

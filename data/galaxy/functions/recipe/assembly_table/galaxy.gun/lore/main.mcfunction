@@ -2,7 +2,7 @@ data modify storage galaxy:temp +block.assembly_table.lore.result set value []
 
 data modify storage galaxy:temp +block.assembly_table.lore.result append value '{"text":""}'
 
-data modify storage galaxy:temp +block.assembly_table.lore.result append value '{"translate":"item_info.galaxy.modular_item","color":"gray","italic":false}'
+data modify storage galaxy:temp +block.assembly_table.lore.result append value '{"translate":"%s:","with":[{"translate":"item.galaxy.gun"}],"color":"gray","italic":false}'
 
 execute if data storage galaxy:temp +block.assembly_table.lore.itemCustomDataTag.cosmetic run function galaxy:recipe/assembly_table/galaxy.gun/lore/cosmetic
 

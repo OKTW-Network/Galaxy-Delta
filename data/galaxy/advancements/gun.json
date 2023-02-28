@@ -2,17 +2,17 @@
     "display": {
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:210100,HideFlags:127}"
+            "nbt": "{CustomModelData:201000,HideFlags:127}"
         },
-        "title": {"translate":"advancements.galaxy.lasor.title"},
-        "description": {"translate":"advancements.galaxy.lasor.description"}
+        "title": {"translate":"advancements.galaxy.gun.title"},
+        "description": {"translate":"advancements.galaxy.gun.description"}
     },
     "parent": "galaxy:assembly_table",
     "rewards": {
-		"function": "galaxy:advancement/weaponry/lasor"
+		"function": "galaxy:advancement/weaponry/gun"
     },
     "criteria": {
-        "lasor": {
+        "gun": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [

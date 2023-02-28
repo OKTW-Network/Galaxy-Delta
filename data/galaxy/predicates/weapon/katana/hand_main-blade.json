@@ -1,12 +1,12 @@
 {
-    "condition": "minecraft:entity_properties",
-    "predicate": {
-	    "equipment": {
-		    "mainhand": {
-                "items": ["minecraft:netherite_sword"],
-                "nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"katana_blade\"}}}"
-            }
-	    }
-    },
-    "entity":"this"
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": ["minecraft:netherite_sword"],
+        "nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"katana_blade\"}}}"
+      }
+    }
+  },
+  "entity":"this"
 }

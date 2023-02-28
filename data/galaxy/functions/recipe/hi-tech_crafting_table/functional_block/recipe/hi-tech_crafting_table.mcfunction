@@ -9,4 +9,4 @@ data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:di
 data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:iron_ingot",Count:2b}
 data modify storage galaxy:get recipe[-1].require append value {id:"minecraft:obsidian",Count:1b}
 
-data modify storage galaxy:get recipe[-1].HTctRecipeID set value "functional_block.galaxy.hi-tech_crafting_table"
+data modify storage galaxy:get recipe[-1].HTctRecipeID set value "functional_block.galaxy.hi_tech_crafting_table"
