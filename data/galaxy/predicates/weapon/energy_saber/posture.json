@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/energy_saber/hand_main"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "minecraft:entity_properties/mob/hand_off-empty"
+  }
+]

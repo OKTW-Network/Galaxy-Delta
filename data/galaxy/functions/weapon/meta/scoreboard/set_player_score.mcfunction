@@ -8,3 +8,6 @@ scoreboard players remove @s galaxy.katana.flash.moved 0
 scoreboard players remove @s galaxy.gun.requestShoot 0
 scoreboard players remove @s galaxy.gun.dualSwitch 0
 scoreboard players remove @s galaxy.gun.aimZoom 0
+
+scoreboard players remove @s galaxy.energy_saber.turnOn.cooldown 0
+scoreboard players remove @s galaxy.energy_saber.turnOff.cooldown 0

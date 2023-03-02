@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"energy_saber\",tag:{active:1b}}}}"
+      }
+    }
+  },
+  "entity":"this"
+}
