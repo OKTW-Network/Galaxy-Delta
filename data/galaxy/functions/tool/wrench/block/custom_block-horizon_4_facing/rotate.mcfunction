@@ -9,4 +9,4 @@ scoreboard players operation @s galaxy.tool.wrench.doFacing = #1 calcu_temp
 
 scoreboard players operation @e[tag=galaxy._tag.ThisWrenchCustomBlockTarget] galaxy.block.states.facing = #1 calcu_temp
 
-function galaxy:tool/wrench/block/custom_block-horizon_4_facing/set_fake_block/main
+function galaxy:tool/wrench/block/custom_block-horizon_4_facing/update_block_states
