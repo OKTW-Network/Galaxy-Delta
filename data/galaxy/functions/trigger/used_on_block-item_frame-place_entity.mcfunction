@@ -1,3 +1,2 @@
-execute if score @s galaxy.flag.useItemFrame matches 1.. run function galaxy:entity/handler-used_on_block-item_frame-place_entity
-scoreboard players set @s galaxy.flag.useItemFrame 0
+function galaxy:entity/handler-used_on_block-item_frame-place_entity
 advancement revoke @s only galaxy:trigger/used_on_block-item_frame-place_entity
