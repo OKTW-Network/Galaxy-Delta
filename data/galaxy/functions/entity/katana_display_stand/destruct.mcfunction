@@ -6,7 +6,7 @@ execute if entity @s[scores={galaxy.entity.katana_display_stand.type=4}] run fun
 data modify storage cu:item input set from entity @s ArmorItems[3].tag.CustomData.galaxy.data.displayOriginalItem
 item replace entity @s weapon.mainhand with minecraft:air
 item replace entity @s weapon.offhand with minecraft:air
-data modify storage cu:item pickupDelay set value 0s
+data modify storage cu:item pickupDelay set value 10s
 function cu:item/summon
 
 kill @s
