@@ -6,7 +6,7 @@ execute at @e[tag=galaxy._tag.set_block.init] positioned ~ ~0.5 ~ run summon min
 scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.states.facing 0
 execute if score #block.set_block.block_states.facing galaxy matches -2147483648..2147483647 run scoreboard players operation @e[tag=galaxy._tag.set_block.init] galaxy.block.states.facing = #block.set_block.block_states.facing galaxy
 scoreboard players reset #block.set_block.block_states.facing galaxy
-execute as @e[tag=galaxy._tag.set_block.init] at @e run function galaxy:block/advanced_blast_furnace/states/facing
+execute as @e[tag=galaxy._tag.set_block.init] at @s run function galaxy:block/advanced_blast_furnace/states/facing
 scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.states.lit 0
 scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.work.status.processing 0
 scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.work.status.burning 0
