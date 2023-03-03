@@ -10,6 +10,7 @@ execute if entity @s[tag=galaxy._task.gui.buildCover] run data modify block ~ ~ 
 tag @s[tag=galaxy._task.gui.buildCover] remove galaxy._task.gui.buildCover
 
 execute if entity @s[tag=galaxy._task.gui.cleanupGuiItem] run function galaxy:gui/cleanup_gui_item
+tag @s[tag=galaxy._task.gui.cleanupGuiItem] remove galaxy._task.gui.cleanupGuiItem
 
 tag @s[tag=galaxy._task.gui.buildPlaceholder] remove galaxy._task.gui.buildPlaceholder
 tag @s[tag=galaxy._task.gui.refresh] remove galaxy._task.gui.refresh

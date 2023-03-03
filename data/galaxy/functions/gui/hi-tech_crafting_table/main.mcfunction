@@ -13,6 +13,7 @@ execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.hi-tech_crafti
 execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.hi-tech_crafting{interface:"requirement"} run function galaxy:gui/hi-tech_crafting_table/interface/requirement/main
 
 execute if entity @s[tag=galaxy._task.gui.cleanupGuiItem] run function galaxy:gui/cleanup_gui_item
+tag @s[tag=galaxy._task.gui.cleanupGuiItem] remove galaxy._task.gui.cleanupGuiItem
 
 tag @s[tag=galaxy._task.gui.refresh] remove galaxy._task.gui.refresh
 
