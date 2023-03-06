@@ -1,23 +1,6 @@
-# cover
-tag @s[predicate=!galaxy:gui/check_cover-2i1o1p1s] add setGuiCover
-execute if entity @s[tag=setGuiCover] run function galaxy:gui/cleanup_gui_item
-execute if entity @s[tag=setGuiCover] run function galaxy:gui/advanced_blast_furnace/drop-not_gui
-execute if entity @s[tag=setGuiCover] run function galaxy:gui/build-2i1o1p1s-cover
-tag @s[tag=setGuiCover] remove setGuiCover
-
-# progress bar
-tag @s[predicate=!galaxy:gui/check_slot-12] add setProgress
-execute if entity @s[tag=setProgress] run function galaxy:gui/cleanup_gui_item
-execute if entity @s[tag=setProgress] run function galaxy:gui/advanced_blast_furnace/build-progress
-tag @s[tag=setProgress] remove setProgress
-
-# fuel bar
-tag @s[predicate=!galaxy:gui/check_slot-11] add setSmelt
-execute if entity @s[tag=setSmelt] run function galaxy:gui/cleanup_gui_item
-execute if entity @s[tag=setSmelt] run function galaxy:gui/advanced_blast_furnace/build-smelt
-tag @s[tag=setSmelt] remove setSmelt
-
-# update process
-execute if entity @s[tag=galaxy.gui.updateProcess] run function galaxy:gui/advanced_blast_furnace/build-progress
-execute if entity @s[tag=galaxy.gui.updateProcess] run function galaxy:gui/advanced_blast_furnace/build-smelt
-tag @s[tag=galaxy.gui.updateProcess] remove galaxy.gui.updateProcess
+scoreboard players operation #gui.furnace_like.processProgress galaxy = @s galaxy.block.process.progress
+scoreboard players operation #gui.furnace_like.processProgressMax galaxy = #galaxy$block.advanced_blast_furnace.process_duration Config
+scoreboard players operation #gui.furnace_like.processProgressMax galaxy = #galaxy$block.advanced_blast_furnace.process_duration Config
+scoreboard players operation #gui.furnace_like.burnTime galaxy = @s galaxy.block.process.burnTime
+execute store result score #gui.furnace_like.burnTimeMax galaxy run data get entity @s HandItems[0].tag.CustomData.galaxy.data.advanced_blast_furnace.burnTimeMax
+function galaxy:gui/furnace_like/main

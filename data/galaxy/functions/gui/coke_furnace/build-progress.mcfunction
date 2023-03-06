@@ -1,7 +1,0 @@
-scoreboard players set #block._input.processor_ID galaxy 1
-function galaxy:block/coke_furnace/work/processor/get-progress_1000
-
-scoreboard players set #build.input.slot galaxy.GUI 12
-scoreboard players set #build.force galaxy.GUI 0
-execute unless predicate galaxy:gui/check_slot-12 run scoreboard players set #build.force galaxy.GUI 1
-function galaxy:gui/_build/progress/1x2/main

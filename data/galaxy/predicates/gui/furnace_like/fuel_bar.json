@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[{Slot:11b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"piece.fuel_bar_1x1\"}}}}]}"
+    }
+  }
+}

@@ -1,16 +1,7 @@
 scoreboard objectives add galaxy.GUI dummy "@galaxy+GUI"
 
-scoreboard objectives add galaxy.GUI.interface dummy "@galaxy+GUI interface"
-
-scoreboard objectives add galaxy.GUI._temp.smeltValue dummy "@galaxy+GUI temp smelt value"
-scoreboard objectives add galaxy.GUI._temp.workStatus dummy "@galaxy+GUI temp work status"
-scoreboard objectives add galaxy.GUI._temp.progressValue dummy "@galaxy+GUI temp progress value"
-
-scoreboard objectives add galaxy.GUI.attribute.typeMax dummy "@galaxy+GUI attribute type max"
-scoreboard objectives add galaxy.GUI.attribute.type dummy "@galaxy+GUI attribute type"
-scoreboard objectives add galaxy.GUI.attribute.value dummy "@galaxy+GUI attribute value"
-scoreboard objectives add galaxy.GUI.attribute.valueMax dummy "@galaxy+GUI attribute value max"
-scoreboard objectives add galaxy.GUI.attribute.valueMin dummy "@galaxy+GUI attribute value min"
+scoreboard objectives add galaxy.GUI.build_piece.fuel_bar_1x1.lastValue dummy "@galaxy+GUI build piece fuel_bar_1x1 last value"
+scoreboard objectives add galaxy.GUI.build_piece.progress_bar_2x1.lastValue dummy "@galaxy+GUI build piece progress_bar_2x1 last value"
 
 scoreboard objectives add galaxy.GUI.hi-tech_crafting_table.requestCraft dummy "@galaxy+GUI HTct request to craft"
 

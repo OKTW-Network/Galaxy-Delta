@@ -8,14 +8,14 @@ execute if score #block.set_block.block_states.facing galaxy matches -2147483648
 scoreboard players reset #block.set_block.block_states.facing galaxy
 execute as @e[tag=galaxy._tag.set_block.init] at @s run function galaxy:block/advanced_blast_furnace/states/facing
 scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.states.lit 0
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.work.status.processing 0
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.work.status.burning 0
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.work.processor1.progress 0
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.work.processor1.burnTime 0
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.GUI.interface 0
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.GUI._temp.smeltValue -2147483648
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.GUI._temp.workStatus -2147483648
-scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.GUI._temp.progressValue -2147483648
-execute as @e[tag=galaxy._tag.set_block.init] run function galaxy:gui/advanced_blast_furnace/update
-execute as @e[tag=galaxy._tag.set_block.init] run function galaxy:gui/advanced_blast_furnace/main
+execute as @e[tag=galaxy._tag.set_block.init] at @s run function galaxy:block/advanced_blast_furnace/states/lit
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.process.idle 0
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.process.isProcessing 0
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.process.isBurning 0
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.process.progress 0
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.block.process.burnTime 0
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.GUI.build_piece.fuel_bar_1x1.lastValue -2147483648
+scoreboard players set @e[tag=galaxy._tag.set_block.init] galaxy.GUI.build_piece.progress_bar_2x1.lastValue -2147483648
+tag @s[tag=galaxy._tag.set_block.init] add galaxy._task.gui.refresh
+execute as @e[tag=galaxy._tag.set_block.init] at @s run function galaxy:gui/advanced_blast_furnace/main
 tag @e[tag=galaxy._tag.set_block.init] remove galaxy._tag.set_block.init
