@@ -14,4 +14,4 @@ function #galaxy:recipe/hi_tech_crafting_table/build_external
 
 execute store result score #recipe.hi_tech_crafting_table.categoryMax galaxy run data get storage galaxy:recipe hi_tech_crafting_table.category
 
-tag @e[tag=galaxy.customBlock,tag=galaxy.hi_tech_crafting_table] add galaxy._task.hi_tech_crafting_table.refreshGui
+tag @e[tag=galaxy.block,tag=galaxy.block.hi_tech_crafting_table] add galaxy._task.hi_tech_crafting_table.refreshGui

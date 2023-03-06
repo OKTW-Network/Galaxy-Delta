@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {"item": "minecraft:barrier"},
-        "title": {"text":"interacted_with_entity-any-galaxy_custom_entity"},
+        "title": {"text":"interacted_with_entity-any-galaxy_entity"},
         "description": {"text":""},
 		"background": "minecraft:textures/block/command_block_back.png",
         "show_toast": false,
@@ -12,7 +12,7 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"galaxy.customEntity\"]}"
+                    "nbt": "{Tags:[\"galaxy.entity\"]}"
                 }
             }
         }

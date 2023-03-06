@@ -1,4 +1,4 @@
-tag @e[tag=galaxy.customBlock,distance=..0.05] add galaxy._tag.ThisWrenchCustomBlockTarget
+tag @e[tag=galaxy.block,distance=..0.05] add galaxy._tag.ThisWrenchCustomBlockTarget
 
 execute if entity @s[tag=galaxy._tag.isWrenchFirstUse] if predicate minecraft:entity_properties/item_frame/vertical run tag @s add wrenchCustomBlockH4FFacing
 execute if entity @s[tag=galaxy._tag.isWrenchFirstUse] if predicate minecraft:entity_properties/item_frame/horizontal run tag @s add wrenchCustomBlockH4FRotate

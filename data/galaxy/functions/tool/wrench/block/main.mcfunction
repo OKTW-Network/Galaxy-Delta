@@ -1,5 +1,5 @@
-execute if entity @e[tag=galaxy.customBlock,tag=galaxy.coke_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
-execute if entity @e[tag=galaxy.customBlock,tag=galaxy.advanced_blast_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
+execute if entity @e[tag=galaxy.block.coke_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
+execute if entity @e[tag=galaxy.block.advanced_blast_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
 execute if block ~ ~ ~ #minecraft:large_chests run tag @s add galaxy._tag.wrenchChest
 execute if block ~ ~ ~ hopper run tag @s add galaxy._tag.wrenchHopper
 execute if block ~ ~ ~ #minecraft:slabs run tag @s add galaxy._tag.wrenchSlab
@@ -17,7 +17,7 @@ execute if block ~ ~ ~ dispenser run tag @s add galaxy._tag.wrenchA6F
 execute if block ~ ~ ~ dropper run tag @s add galaxy._tag.wrenchA6F
 execute if block ~ ~ ~ piston unless predicate minecraft:block_states/extended run tag @s add galaxy._tag.wrenchA6F
 execute if block ~ ~ ~ sticky_piston unless predicate minecraft:block_states/extended run tag @s add galaxy._tag.wrenchA6F
-execute if block ~ ~ ~ barrel unless entity @e[tag=galaxy.customBlock,distance=..0.05] run tag @s add galaxy._tag.wrenchA6F
+execute if block ~ ~ ~ barrel unless entity @e[tag=galaxy.block,distance=..0.05] run tag @s add galaxy._tag.wrenchA6F
 execute if block ~ ~ ~ #minecraft:shulker_boxes run tag @s add galaxy._tag.wrenchA6F
 
 execute if entity @s[tag=galaxy._tag.wrenchCustomBlockH4F] run function galaxy:tool/wrench/block/custom_block-horizon_4_facing/main

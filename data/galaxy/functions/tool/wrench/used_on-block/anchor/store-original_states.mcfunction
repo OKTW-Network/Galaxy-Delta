@@ -11,7 +11,7 @@ execute at @s if predicate minecraft:block_states/facing-east run scoreboard pla
 execute at @s if predicate minecraft:block_states/facing-down run scoreboard players set @s galaxy.tool.wrench.block.originalFacing 4
 execute at @s if predicate minecraft:block_states/facing-up run scoreboard players set @s galaxy.tool.wrench.block.originalFacing 5
 
-execute at @s if score @e[tag=galaxy.customBlock,distance=..0.05,limit=1] galaxy.block.states.facing matches -2147483648..2147483647 run scoreboard players operation @s galaxy.tool.wrench.block.originalFacing = @e[tag=galaxy.customBlock,distance=..0.05,limit=1] galaxy.block.states.facing
+execute at @s if score @e[tag=galaxy.block,distance=..0.05,limit=1] galaxy.block.states.facing matches -2147483648..2147483647 run scoreboard players operation @s galaxy.tool.wrench.block.originalFacing = @e[tag=galaxy.block,distance=..0.05,limit=1] galaxy.block.states.facing
 
 scoreboard players set @s galaxy.tool.wrench.block.originalAttachment -1
 execute at @s if predicate minecraft:block_states/attachment-floor run scoreboard players set @s galaxy.tool.wrench.block.originalAttachment 0
