@@ -46,7 +46,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt": "{CustomData:{galaxy:{id:\"hi-tech_crafting_table\"}}}"
+						"nbt": "{CustomData:{galaxy:{id:\"hi_tech_crafting_table\"}}}"
                     }
                 ]
             }

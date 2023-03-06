@@ -7,7 +7,7 @@
         "title": {"translate":"advancements.galaxy.elevator.title"},
         "description": {"translate":"advancements.galaxy.elevator.description"}
     },
-    "parent": "galaxy:hi-tech_crafting_table",
+    "parent": "galaxy:hi_tech_crafting_table",
     "criteria": {
         "elevator": {
             "trigger": "minecraft:inventory_changed",
