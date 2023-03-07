@@ -1,5 +1,5 @@
 execute if entity @s[tag=galaxy._task.gui.refresh] run function galaxy:gui/cleanup_gui_item
-execute if entity @s[tag=galaxy._task.gui.refresh] run function galaxy:gui/remove-all_slots
+execute if entity @s[tag=galaxy._task.gui.refresh] run data remove block ~ ~ ~ Items
 execute if entity @s[tag=galaxy._task.gui.refresh] run tag @s add galaxy._task.gui.buildCover
 
 execute store result score #1 calcu_temp if data block ~ ~ ~ Items[]
