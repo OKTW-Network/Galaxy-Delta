@@ -1,4 +1,4 @@
-execute as @a[tag=interactedWithGalaxyCustomEntity] run function galaxy:trigger/interacted_with_entity-galaxy_custom_entity
+execute as @a[tag=galaxy._tag.trigger.interactedWithGalaxyEntity] run function galaxy:trigger/interacted_with_galaxy_entity
 
 function galaxy:weapon/main
 function galaxy:hud/main
