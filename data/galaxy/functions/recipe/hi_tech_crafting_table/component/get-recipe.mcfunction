@@ -14,8 +14,8 @@ function galaxy:recipe/hi_tech_crafting_table/component/recipe/handle_wood
 function galaxy:recipe/hi_tech_crafting_table/component/recipe/handle_obsidian
 function galaxy:recipe/hi_tech_crafting_table/component/recipe/gun_barrel_pistol
 function galaxy:recipe/hi_tech_crafting_table/component/recipe/gun_barrel_sniper_rifle
-function galaxy:recipe/hi_tech_crafting_table/component/recipe/sight_clear
-function galaxy:recipe/hi_tech_crafting_table/component/recipe/sight_scope
+function galaxy:recipe/hi_tech_crafting_table/component/recipe/gun_sight_clear
+function galaxy:recipe/hi_tech_crafting_table/component/recipe/gun_sight_scope
 function galaxy:recipe/hi_tech_crafting_table/component/recipe/upgrade_gun_dual
 function galaxy:recipe/hi_tech_crafting_table/component/recipe/upgrade_gun_flow
 function galaxy:recipe/hi_tech_crafting_table/component/recipe/color_lens_red

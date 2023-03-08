@@ -23,8 +23,8 @@ execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"com
 execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"component.galaxy.gun_barrel_sniper_rifle"} run function galaxy:recipe/hi_tech_crafting_table/component/craft/gun_barrel_sniper_rifle
 
 # Sight
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"component.galaxy.sight_clear"} run function galaxy:recipe/hi_tech_crafting_table/component/craft/sight_clear
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"component.galaxy.sight_scope"} run function galaxy:recipe/hi_tech_crafting_table/component/craft/sight_scope
+execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"component.galaxy.gun_sight_clear"} run function galaxy:recipe/hi_tech_crafting_table/component/craft/gun_sight_clear
+execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"component.galaxy.gun_sight_scope"} run function galaxy:recipe/hi_tech_crafting_table/component/craft/gun_sight_scope
 
 # upgrade
 execute if data storage galaxy:recipe hi_tech_crafting_table.craft{recipeID:"component.galaxy.upgrade_gun_dual"} run function galaxy:recipe/hi_tech_crafting_table/component/craft/upgrade_gun_dual
