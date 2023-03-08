@@ -1,7 +1,7 @@
 execute unless score #galaxy$general.print_version Config matches 0..2 run scoreboard players set #galaxy$general.print_version Config 2
 
 execute unless score #galaxy$block.coke_furnace.process_duration Config matches 1..2147483647 run scoreboard players set #galaxy$block.coke_furnace.process_duration Config 400
-execute unless score #galaxy$block.advanced_blast_furnace.process_duration Config matches 1..2147483647 run scoreboard players set #galaxy$block.advanced_blast_furnace.process_duration Config 800
+execute unless score #galaxy$block.reinforced_blast_furnace.process_duration Config matches 1..2147483647 run scoreboard players set #galaxy$block.reinforced_blast_furnace.process_duration Config 800
 execute unless score #galaxy$block.elevator.range Config matches 2..16 run scoreboard players set #galaxy$block.elevator.range Config 16
 
 execute unless score #galaxy$weapon.katana.action.stun Config matches 0..1 run scoreboard players set #galaxy$weapon.katana.action.stun Config 1

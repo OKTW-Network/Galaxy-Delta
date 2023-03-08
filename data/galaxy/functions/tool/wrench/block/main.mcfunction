@@ -1,5 +1,5 @@
 execute if entity @e[tag=galaxy.block.coke_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
-execute if entity @e[tag=galaxy.block.advanced_blast_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
+execute if entity @e[tag=galaxy.block.reinforced_blast_furnace,distance=..0.05] run tag @s add galaxy._tag.wrenchCustomBlockH4F
 execute if block ~ ~ ~ #minecraft:large_chests run tag @s add galaxy._tag.wrenchChest
 execute if block ~ ~ ~ hopper run tag @s add galaxy._tag.wrenchHopper
 execute if block ~ ~ ~ #minecraft:slabs run tag @s add galaxy._tag.wrenchSlab

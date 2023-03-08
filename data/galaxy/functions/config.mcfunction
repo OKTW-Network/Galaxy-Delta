@@ -18,7 +18,7 @@ scoreboard players set #galaxy$block.coke_furnace.process_duration Config 400
 
 # Advanced blast furnace operating speed
 # integer, tick, default: 800
-scoreboard players set #galaxy$block.advanced_blast_furnace.process_duration Config 800
+scoreboard players set #galaxy$block.reinforced_blast_furnace.process_duration Config 800
 
 # Elevator teleport range
 # integer, block, 2 ~ 16, default: 16
