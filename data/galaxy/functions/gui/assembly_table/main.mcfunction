@@ -1,8 +1,6 @@
 execute if entity @s[tag=galaxy._task.gui.refresh] run function galaxy:block/inventory/remove_gui_type
 tag @s[tag=galaxy._task.gui.refresh] add galaxy._task.gui.buildCover
 
-# execute if entity @s[tag=!galaxy._task.assembly_table.buildPlaceholder,tag=galaxy._tag.assembly_table.resultChanged,tag=galaxy._tag.assembly_table.resultEmpty] if data entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.blueprint run tag @s add galaxy._task.assembly_table.buildPlaceholder
-
 execute unless data entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.blueprint run function galaxy:gui/assembly_table/interface/home/main
 execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.blueprint run function galaxy:gui/assembly_table/interface/blueprint/main
 
