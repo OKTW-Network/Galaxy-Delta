@@ -1,0 +1,6 @@
+execute if score #tool.wrench.set_block.state.facing galaxy matches 0 run setblock ~ ~ ~ minecraft:piston[facing=north]
+execute if score #tool.wrench.set_block.state.facing galaxy matches 1 run setblock ~ ~ ~ minecraft:piston[facing=east]
+execute if score #tool.wrench.set_block.state.facing galaxy matches 2 run setblock ~ ~ ~ minecraft:piston[facing=south]
+execute if score #tool.wrench.set_block.state.facing galaxy matches 3 run setblock ~ ~ ~ minecraft:piston[facing=west]
+execute if score #tool.wrench.set_block.state.facing galaxy matches 4 run setblock ~ ~ ~ minecraft:piston[facing=up]
+execute if score #tool.wrench.set_block.state.facing galaxy matches 5 run setblock ~ ~ ~ minecraft:piston[facing=down]

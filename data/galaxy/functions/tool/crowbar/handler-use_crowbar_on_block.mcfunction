@@ -1,12 +1,11 @@
-tag @s add galaxy._tag.ThisCrowbarUser
+tag @s add galaxy._tag.ThisUseCrowbar
 
-execute as @a[tag=galaxy._tag.ThisCrowbarUser] run function galaxy:tool/crowbar/uuid/get-use
-execute as @a[tag=galaxy._tag.ThisCrowbarUser] run function galaxy:tool/crowbar/return_used
+execute if entity @s[gamemode=!creative] run function galaxy:tool/crowbar/return_used
 
-function galaxy:tool/crowbar/used_on-block/crowbar/find
+tag @e[tag=galaxy.tool.crowbar] add galaxy._tag.ThisCrowbar
 
-execute as @a[tag=galaxy._tag.ThisCrowbarUser,predicate=minecraft:entity_properties/sneaking] run function galaxy:tool/crowbar/used_on-block/main
+execute if predicate minecraft:entity_properties/sneaking as @e[tag=galaxy._tag.ThisCrowbar] at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^-1 run function galaxy:tool/crowbar/block/main
 
 kill @e[tag=galaxy._tag.ThisCrowbar]
 
-tag @s remove galaxy._tag.ThisCrowbarUser
+tag @s remove galaxy._tag.ThisUseCrowbar

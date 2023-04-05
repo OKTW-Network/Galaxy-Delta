@@ -8,4 +8,4 @@ scoreboard players operation #3 calcu_temp %= #4 num
 execute if score #3 calcu_temp matches 0 run scoreboard players add #2 calcu_temp 1
 execute if score #2 calcu_temp matches 2.. run scoreboard players set #2 calcu_temp 0
 
-scoreboard players operation @s galaxy.tool.wrench.doHalf = #2 calcu_temp
+scoreboard players operation #tool.wrench.set_block.state.half galaxy = #2 calcu_temp

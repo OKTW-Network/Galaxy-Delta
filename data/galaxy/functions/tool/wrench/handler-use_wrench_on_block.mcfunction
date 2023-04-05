@@ -1,12 +1,11 @@
-tag @s add galaxy._tag.ThisWrenchUser
+tag @s add galaxy._tag.ThisUseWrench
 
-execute as @s[tag=galaxy._tag.ThisWrenchUser] run function galaxy:tool/wrench/uuid/get-use
-execute as @s[tag=galaxy._tag.ThisWrenchUser] run function galaxy:tool/wrench/return_used
+execute if entity @s[gamemode=!creative] run function galaxy:tool/wrench/return_used
 
-execute as @s[tag=galaxy._tag.ThisWrenchUser] run function galaxy:tool/wrench/used_on-block/wrench/find
+tag @e[tag=galaxy.tool.wrench] add galaxy._tag.ThisWrench
 
-execute as @s[tag=galaxy._tag.ThisWrenchUser,predicate=minecraft:entity_properties/sneaking] run function galaxy:tool/wrench/used_on-block/main
+execute if predicate minecraft:entity_properties/sneaking run function galaxy:tool/wrench/used_on_block/main
 
 kill @e[tag=galaxy._tag.ThisWrench]
 
-tag @s remove galaxy._tag.ThisWrenchUser
+tag @s remove galaxy._tag.ThisUseWrench

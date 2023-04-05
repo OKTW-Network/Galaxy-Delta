@@ -1,2 +1,2 @@
-function galaxy:tool/wrench/uuid/update/main
-function galaxy:tool/crowbar/uuid/update/main
+function galaxy:tool/wrench/update_tags
+function galaxy:tool/crowbar/update_tags

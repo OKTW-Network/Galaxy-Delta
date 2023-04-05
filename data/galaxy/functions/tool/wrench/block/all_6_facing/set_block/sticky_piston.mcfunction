@@ -1,6 +1,0 @@
-execute if score @s galaxy.tool.wrench.doFacing matches 0 run setblock ~ ~ ~ sticky_piston[facing=south]
-execute if score @s galaxy.tool.wrench.doFacing matches 1 run setblock ~ ~ ~ sticky_piston[facing=west]
-execute if score @s galaxy.tool.wrench.doFacing matches 2 run setblock ~ ~ ~ sticky_piston[facing=north]
-execute if score @s galaxy.tool.wrench.doFacing matches 3 run setblock ~ ~ ~ sticky_piston[facing=east]
-execute if score @s galaxy.tool.wrench.doFacing matches 4 run setblock ~ ~ ~ sticky_piston[facing=down]
-execute if score @s galaxy.tool.wrench.doFacing matches 5 run setblock ~ ~ ~ sticky_piston[facing=up]

@@ -1,10 +1,18 @@
-data modify storage galaxy:temp +tool.get.UUID set value [I;0,0,0,0]
-execute store result storage galaxy:temp +tool.get.UUID[0] int 1 run scoreboard players get @s galaxy.tool.wrench.UUID.using0
-execute store result storage galaxy:temp +tool.get.UUID[1] int 1 run scoreboard players get @s galaxy.tool.wrench.UUID.using1
-execute store result storage galaxy:temp +tool.get.UUID[2] int 1 run scoreboard players get @s galaxy.tool.wrench.UUID.using2
-execute store result storage galaxy:temp +tool.get.UUID[3] int 1 run scoreboard players get @s galaxy.tool.wrench.UUID.using3
 data modify storage galaxy:get item set value []
-function galaxy:tool/get/wrench-given_uuid
-data modify storage cu:item replaceitem.input set from storage galaxy:get item[0]
-execute if entity @s[tag=galaxy._tag.useWrenchMainHand] run function cu:item/replaceitem/hand_main
-execute if entity @s[tag=galaxy._tag.useWrenchOffHand] run function cu:item/replaceitem/hand_off
+function galaxy:tool/get/wrench
+data modify storage galaxy:temp +tool.wrench.return_used.item set from storage galaxy:get item[0]
+
+scoreboard players set #tool.wrench.return_used.method galaxy 0
+execute if entity @s[tag=galaxy._tag.wrench.inMainHand,predicate=minecraft:entity_properties/mob/hand_main-empty] run scoreboard players set #tool.wrench.return_used.method galaxy 1
+execute if score #tool.wrench.return_used.method galaxy matches 0 if entity @s[tag=galaxy._tag.wrench.inOffHand,predicate=minecraft:entity_properties/mob/hand_off-empty] run scoreboard players set #tool.wrench.return_used.method galaxy 2
+execute if score #tool.wrench.return_used.method galaxy matches 0 if entity @s[predicate=minecraft:entity_properties/mob/hand_main-empty] run scoreboard players set #tool.wrench.return_used.method galaxy 1
+execute if score #tool.wrench.return_used.method galaxy matches 0 if entity @s[predicate=minecraft:entity_properties/mob/hand_off-empty] run scoreboard players set #tool.wrench.return_used.method galaxy 2
+
+execute if score #tool.wrench.return_used.method galaxy matches 0 run data modify storage cu:item input set from storage galaxy:temp +tool.wrench.return_used.item
+execute if score #tool.wrench.return_used.method galaxy matches 0 run function cu:item/give
+
+execute if score #tool.wrench.return_used.method galaxy matches 1.. run data modify storage cu:item replaceitem.input set from storage galaxy:temp +tool.wrench.return_used.item
+execute if score #tool.wrench.return_used.method galaxy matches 1 run function cu:item/replaceitem/hand_main
+execute if score #tool.wrench.return_used.method galaxy matches 2 run function cu:item/replaceitem/hand_off
+
+function galaxy:tool/wrench/update_tags

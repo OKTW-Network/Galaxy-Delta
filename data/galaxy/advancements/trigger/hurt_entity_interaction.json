@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {"item": "minecraft:barrier"},
+    "title": {"text":"hurt_entity_interaction"},
+    "description": {"text":""},
+    "background": "minecraft:textures/block/command_block_back.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "hurt_entity_interaction": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"galaxy.entity_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "galaxy:trigger/hurt_entity_interaction"
+  }
+}
