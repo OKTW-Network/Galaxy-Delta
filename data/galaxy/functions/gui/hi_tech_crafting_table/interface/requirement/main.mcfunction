@@ -23,7 +23,7 @@ tag @s[tag=setRequireButton] remove setRequireButton
 function galaxy:gui/hi_tech_crafting_table/interface/requirement/check-require_page
 execute if entity @s[tag=setRequirePage] run tag @s add galaxy._task.gui.cleanupGuiItem
 execute if entity @s[tag=setRequirePage] run function galaxy:gui/hi_tech_crafting_table/interface/requirement/delete-require_page
-execute if entity @s[tag=setRequirePage] run data modify block ~ ~ ~ Items append from entity @s HandItems[0].tag.CustomData.galaxy.data.requirePage[]
+execute if entity @s[tag=setRequirePage] run data modify block ~ ~ ~ Items append from entity @s data.galaxy.hi_tech_crafting_table.requirePage[]
 tag @s[tag=setRequirePage] remove setRequirePage
 
 # button return

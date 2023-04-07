@@ -1,1 +1,1 @@
-data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.upgrade set from entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"upgrade"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration.gun.upgrade
+data modify block ~ ~ ~ Items[{Slot:13b}].tag.CustomData.galaxy.tag.upgrade set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"upgrade"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration.gun.upgrade

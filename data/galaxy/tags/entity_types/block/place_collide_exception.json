@@ -3,6 +3,9 @@
     "#global:projectile",
     "#minecraft:drop",
     "#minecraft:item_frame",
-    "minecraft:painting"
+    "minecraft:painting",
+    "minecraft:marker",
+    "#minecraft:display",
+    "minecraft:interaction"
   ]
 }

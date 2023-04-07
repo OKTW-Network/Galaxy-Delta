@@ -14,6 +14,6 @@ execute if entity @s[tag=galaxy._task.coke_furnace.processIdleStart] run tag @s 
 execute if entity @s[tag=galaxy._task.coke_furnace.processIdleStart] run scoreboard players set @s galaxy.block.process.idle 1
 tag @s[tag=galaxy._task.coke_furnace.processIdleStart] remove galaxy._task.coke_furnace.processIdleStart
 
-execute unless score @s galaxy.block.states.lit = #_temp.block.states.lit galaxy run function galaxy:block/coke_furnace/states/lit
+execute unless score @s galaxy.block.states.lit = #_temp.block.states.lit galaxy run function galaxy:block/coke_furnace/update_block_states
 
 function galaxy:recipe/coke_furnace/check_io/reset

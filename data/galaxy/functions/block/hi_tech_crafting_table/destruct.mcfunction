@@ -1,5 +1,4 @@
-execute positioned ~ ~0.5 ~ run kill @e[tag=galaxy.block_mask.hi_tech_crafting_table,distance=..0.05,sort=nearest,limit=1]
+execute if predicate galaxy:block/hi_tech_crafting_table run setblock ~ ~ ~ minecraft:air destroy
+function galaxy:gui/cleanup_gui_item
 kill @e[type=minecraft:item,nbt={Item:{tag:{display:{Name:'{"translate":"container.galaxy.hi_tech_crafting"}'}}}}]
 function galaxy:block/summon_item/hi_tech_crafting_table
-function galaxy:gui/cleanup_gui_item
-kill @s

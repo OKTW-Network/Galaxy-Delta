@@ -1,2 +1,2 @@
-data remove entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.partsSlot
-data remove entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts
+data remove entity @s data.galaxy.assembly_table.partsSlot
+data remove entity @s data.galaxy.assembly_table.parts

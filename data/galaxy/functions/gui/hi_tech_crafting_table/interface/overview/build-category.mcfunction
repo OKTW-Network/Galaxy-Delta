@@ -2,7 +2,7 @@ data remove block ~ ~ ~ Items[{Slot:10b}]
 data remove block ~ ~ ~ Items[{Slot:1b}]
 data remove block ~ ~ ~ Items[{Slot:19b}]
 
-data modify storage galaxy:temp +gui.hi_tech_crafting_table.build-category.icon set from entity @s HandItems[0].tag.CustomData.galaxy.data.hi_tech_crafting_table.category.icon
+data modify storage galaxy:temp +gui.hi_tech_crafting_table.build-category.icon set from entity @s data.galaxy.hi_tech_crafting_table.category.icon
 data modify storage galaxy:temp +gui.hi_tech_crafting_table.build-category.icon merge value {Slot:10b}
 data modify block ~ ~ ~ Items prepend from storage galaxy:temp +gui.hi_tech_crafting_table.build-category.icon
 

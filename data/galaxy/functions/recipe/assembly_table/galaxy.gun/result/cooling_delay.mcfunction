@@ -1,6 +1,6 @@
-execute store result score #percent.base math run data get entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"cooling_system"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration.gun.cooling_delay 1
+execute store result score #percent.base math run data get entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"cooling_system"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration.gun.cooling_delay 1
 scoreboard players set #1 calcu_temp 100
-execute store result score #2 calcu_temp run data get entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"gun_casing"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration.gun.cooling_delay_modifier 1
+execute store result score #2 calcu_temp run data get entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"gun_casing"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration.gun.cooling_delay_modifier 1
 scoreboard players operation #1 calcu_temp += #2 calcu_temp
 execute store result score #percent.modifier math run scoreboard players operation #1 calcu_temp > #0 num
 function math:percent/main

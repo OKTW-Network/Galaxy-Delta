@@ -16,7 +16,7 @@ execute if score @s galaxy.block.process.burnTime matches 0 if score #_temp.bloc
 
 scoreboard players set @s galaxy.block.states.lit 0
 execute if score @s galaxy.block.process.burnTime matches 1.. run scoreboard players set @s galaxy.block.states.lit 1
-execute unless score @s galaxy.block.states.lit = #_temp.block.states.lit galaxy run function galaxy:block/reinforced_blast_furnace/states/lit
+execute unless score @s galaxy.block.states.lit = #_temp.block.states.lit galaxy run function galaxy:block/reinforced_blast_furnace/update_block_states
 
 execute if entity @s[tag=galaxy._task.reinforced_blast_furnace.processIdleStart] run scoreboard players set @s galaxy.block.process.progress 0
 execute if entity @s[tag=galaxy._task.reinforced_blast_furnace.processIdleStart] run tag @s add galaxy._task.gui.furnace_like.refreshProcess

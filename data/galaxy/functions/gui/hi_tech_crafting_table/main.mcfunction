@@ -9,8 +9,8 @@ execute if entity @s[tag=galaxy._task.gui.popAll] run data modify storage galaxy
 execute if entity @s[tag=galaxy._task.gui.popAll] run function galaxy:block/pop_item/on_top
 tag @s[tag=galaxy._task.gui.popAll] remove galaxy._task.gui.popAll
 
-execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.hi_tech_crafting_table{interface:"overview"} run function galaxy:gui/hi_tech_crafting_table/interface/overview/main
-execute if data entity @s HandItems[0].tag.CustomData.galaxy.data.hi_tech_crafting_table{interface:"requirement"} run function galaxy:gui/hi_tech_crafting_table/interface/requirement/main
+execute if data entity @s data.galaxy.hi_tech_crafting_table{interface:"overview"} run function galaxy:gui/hi_tech_crafting_table/interface/overview/main
+execute if data entity @s data.galaxy.hi_tech_crafting_table{interface:"requirement"} run function galaxy:gui/hi_tech_crafting_table/interface/requirement/main
 
 execute if entity @s[tag=galaxy._task.gui.cleanupGuiItem] run function galaxy:gui/cleanup_gui_item
 tag @s[tag=galaxy._task.gui.cleanupGuiItem] remove galaxy._task.gui.cleanupGuiItem

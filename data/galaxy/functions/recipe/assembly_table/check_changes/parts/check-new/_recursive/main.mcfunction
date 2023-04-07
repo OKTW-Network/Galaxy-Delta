@@ -1,4 +1,4 @@
-data modify storage cu:value object.find_match.source set from entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.blueprint.parts
+data modify storage cu:value object.find_match.source set from entity @s data.galaxy.assembly_table.blueprint.parts
 data modify storage cu:value object.find_match.input set value {Slot:0b}
 data modify storage cu:value object.find_match.input.Slot set from storage galaxy:temp +recipe.assembly_table.check_changes._partsDifferent[0][0].Slot
 scoreboard players set #value.object.find_match.method cu 1

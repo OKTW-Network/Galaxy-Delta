@@ -35,7 +35,7 @@ tag @s[tag=getRecipePage] remove getRecipePage
 
 # recipe page
 execute if entity @s[tag=setRecipePage] run function galaxy:gui/hi_tech_crafting_table/interface/overview/delete-recipe_page
-execute if entity @s[tag=setRecipePage] run data modify block ~ ~ ~ Items append from entity @s HandItems[0].tag.CustomData.galaxy.data.hi_tech_crafting_table.recipePage[]
+execute if entity @s[tag=setRecipePage] run data modify block ~ ~ ~ Items append from entity @s data.galaxy.hi_tech_crafting_table.recipePage[]
 tag @s[tag=setRecipePage] remove setRecipePage
 
 # recipe request

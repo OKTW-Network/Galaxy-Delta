@@ -1,7 +1,7 @@
-data modify storage cu:item input set from block ~ ~ ~ Items
-data remove storage cu:item input[{tag:{CustomData:{galaxy:{Type:"gui"}}}}]
-execute if data storage cu:item input[0] run data modify storage cu:item pickupDelay set value 0s
-execute if data storage cu:item input[0] run function cu:item/summon
-setblock ~ ~ ~ minecraft:air replace
+tag @e[tag=galaxy.block,distance=..0.05] add galaxy._tag.ThisCrowbarGalaxyBlockTarget
+
+execute as @e[tag=galaxy._tag.ThisCrowbarGalaxyBlockTarget] run function galaxy:block/destruct
+
+tag @e[tag=galaxy._tag.ThisCrowbarGalaxyBlockTarget] remove galaxy._tag.ThisCrowbarGalaxyBlockTarget
 
 tag @s remove galaxy._task.crowbar.doGalaxyBlock

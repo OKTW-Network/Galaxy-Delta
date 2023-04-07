@@ -1,6 +1,6 @@
-data modify storage cu:block container.get_slot_item.input set from entity @s HandItems[0].tag.CustomData.galaxy.data.gui.cover
+data modify storage cu:block container.get_slot_item.input set from entity @s data.galaxy.gui.cover
 function cu:block/container/get_slot_item
-data modify storage cu:value different.input1 set from entity @s HandItems[0].tag.CustomData.galaxy.data.gui.cover
+data modify storage cu:value different.input1 set from entity @s data.galaxy.gui.cover
 data modify storage cu:value different.input2 set from storage cu:block container.get_slot_item.result
 function cu:value/different
 execute if score #value.different.result cu matches 1 run tag @s add galaxy._task.gui.cleanupGuiItem

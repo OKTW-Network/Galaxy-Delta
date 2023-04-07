@@ -1,4 +1,4 @@
-execute store result score #percent.base math run data get entity @s HandItems[0].tag.CustomData.galaxy.data.assembly.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"gun_barrel"}}}}}}].CustomData.galaxy.tag.barrel.Alteration.charge 1
+execute store result score #percent.base math run data get entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"gun_barrel"}}}}}}].CustomData.galaxy.tag.barrel.Alteration.charge 1
 execute store result score #percent.modifier math run data get storage galaxy:temp +recipe.assembly_table.get.parts[{CustomData:{galaxy:{tag:{handle_gun:{}}}}}].CustomData.galaxy.tag.handle_gun.Alteration.charge_modifier 1
 function math:percent/main
 
