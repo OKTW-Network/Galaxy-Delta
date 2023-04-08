@@ -6,7 +6,7 @@ execute store result score #block.coke_furnace.states.facing.rotation_0 galaxy s
 data modify storage cu:entity find_uuid.input set from entity @s data.galaxy.block.sprite
 function cu:entity/find_uuid/main
 
-execute as @e[tag=cu._tag.entity.find_uuid.elect,tag=galaxy._tag.block_sprite.horizontal_face] store result entity @s Rotation[0] float 1 run scoreboard players get #block.coke_furnace.states.facing.rotation_0 galaxy
+execute as @e[tag=cu._tag.entity.find_uuid.elect,tag=galaxy._tag.block_sprite.horizontal_face] store result entity @s Rotation[0] float 1 run scoreboard players add #block.coke_furnace.states.facing.rotation_0 galaxy 180
 tag @e[tag=cu._tag.entity.find_uuid.elect] remove galaxy._tag.block_sprite.front_face
 execute as @e[tag=cu._tag.entity.find_uuid.elect,tag=galaxy._tag.block_sprite.vertical_face] run data modify entity @s item.tag.CustomModelData set value 102101
 execute if score @s galaxy.block.states.facing matches 0 run tag @e[tag=cu._tag.entity.find_uuid.elect,tag=galaxy.block_sprite.coke_furnace.north_face,limit=1] add galaxy._tag.block_sprite.front_face
