@@ -16,7 +16,7 @@ execute if score #entity.katana_display_stand.operation galaxy matches 0 run fun
 execute if score #entity.katana_display_stand.operation galaxy matches 1 run function galaxy:entity/katana_display_stand/interactive/interaction/set_display
 execute if score #entity.katana_display_stand.operation galaxy matches 2 run function galaxy:entity/katana_display_stand/interactive/interaction/replace_display
 execute if score #entity.katana_display_stand.operation galaxy matches 3 run function galaxy:entity/katana_display_stand/interactive/interaction/toggle_style_state
-execute if score #entity.katana_display_stand.operation galaxy matches 4 run function galaxy:entity/katana_display_stand/destruct
+execute if score #entity.katana_display_stand.operation galaxy matches 4 run function galaxy:entity/destruct
 
 tag @e[tag=galaxy._tag.katana_display_stand.ThisDisplayItem1] remove galaxy._tag.katana_display_stand.ThisDisplayItem1
 tag @e[tag=galaxy._tag.katana_display_stand.ThisDisplayItem2] remove galaxy._tag.katana_display_stand.ThisDisplayItem2
