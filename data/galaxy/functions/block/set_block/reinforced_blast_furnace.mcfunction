@@ -7,7 +7,7 @@ execute align xyz positioned ~0.5 ~1.5 ~0.5 run summon minecraft:item_display ~ 
 execute align xyz positioned ~0.5 ~-0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {Rotation:[180f,-90f],item:{id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:103102}},Tags:["galaxy.block_sprite","galaxy.block_sprite.reinforced_blast_furnace","galaxy.block_sprite.reinforced_blast_furnace.down_face","galaxy._tag.block_sprite.horizontal_face","galaxy._tag.set_block.init"]}
 
 execute as @e[tag=!galaxy.block,tag=galaxy._tag.set_block.init] run data modify entity @e[tag=galaxy.block,tag=galaxy._tag.set_block.init,limit=1] data.galaxy._subordinates append from entity @s UUID
-execute as @e[tag=galaxy.block_sprite,tag=galaxy._tag.set_block.init] run data modify entity @e[tag=galaxy.block,tag=galaxy._tag.set_block.init,limit=1] data.galaxy.block.sprite append from entity @s UUID
+execute as @e[tag=galaxy.block_sprite,tag=galaxy._tag.set_block.init] run data modify entity @e[tag=galaxy.block,tag=galaxy._tag.set_block.init,limit=1] data.galaxy.block.sprites append from entity @s UUID
 
 execute at @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] run setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.galaxy.reinforced_blast_furnace"}'} replace
 

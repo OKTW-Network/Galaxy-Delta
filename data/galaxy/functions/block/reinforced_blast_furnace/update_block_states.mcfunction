@@ -3,7 +3,7 @@ scoreboard players set #2 calcu_temp 90
 scoreboard players operation #2 calcu_temp *= @s galaxy.block.states.facing
 execute store result score #block.reinforced_blast_furnace.states.facing.rotation_0 galaxy store result entity @s Rotation[0] float 1 run scoreboard players operation #1 calcu_temp += #2 calcu_temp
 
-data modify storage cu:entity find_uuid.input set from entity @s data.galaxy.block.sprite
+data modify storage cu:entity find_uuid.input set from entity @s data.galaxy.block.sprites
 function cu:entity/find_uuid/main
 
 execute as @e[tag=cu._tag.entity.find_uuid.elect,tag=galaxy._tag.block_sprite.horizontal_face] store result entity @s Rotation[0] float 1 run scoreboard players add #block.reinforced_blast_furnace.states.facing.rotation_0 galaxy 180
