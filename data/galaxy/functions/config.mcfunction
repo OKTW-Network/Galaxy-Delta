@@ -21,7 +21,7 @@ scoreboard players set #galaxy$block.coke_furnace.process_duration Config 400
 scoreboard players set #galaxy$block.reinforced_blast_furnace.process_duration Config 800
 
 # Elevator teleport range
-# integer, block, 2 ~ 16, default: 16
+# integer, block, 3 ~ 32, default: 16
 scoreboard players set #galaxy$block.elevator.range Config 16
 
 
