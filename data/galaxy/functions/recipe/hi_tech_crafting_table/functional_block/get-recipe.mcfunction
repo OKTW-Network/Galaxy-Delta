@@ -1,8 +1,0 @@
-data modify storage galaxy:get recipe set value []
-
-function galaxy:recipe/hi_tech_crafting_table/functional_block/recipe/hi_tech_crafting_table
-function galaxy:recipe/hi_tech_crafting_table/functional_block/recipe/coke_furnace
-function galaxy:recipe/hi_tech_crafting_table/functional_block/recipe/reinforced_blast_furnace
-function galaxy:recipe/hi_tech_crafting_table/functional_block/recipe/assembly_table
-
-function #galaxy:recipe/hi_tech_crafting_table/get_functional_block

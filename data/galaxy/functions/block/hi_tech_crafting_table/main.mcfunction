@@ -7,6 +7,4 @@ execute if entity @s[tag=galaxy._STOP] run function galaxy:block/kill
 
 execute if entity @s[tag=!galaxy._STOP] run function galaxy:block/protection/main
 
-execute if entity @s[tag=!galaxy._STOP] if predicate minecraft:block_states/open if entity @s[tag=galaxy._task.hi_tech_crafting_table.refreshGui] run function galaxy:block/hi_tech_crafting_table/refresh_gui
-
-execute if entity @s[tag=!galaxy._STOP] if predicate minecraft:block_states/open run function galaxy:gui/hi_tech_crafting_table/main
+execute if entity @s[tag=!galaxy._STOP] if predicate minecraft:block_states/open run function galaxy:block/hi_tech_crafting_table/functional/main

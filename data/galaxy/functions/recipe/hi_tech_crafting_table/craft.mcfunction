@@ -1,9 +1,52 @@
 scoreboard players set #recipe.craftingStatus galaxy 0
 
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{categoryID:"tool"} run function galaxy:recipe/hi_tech_crafting_table/tool/craft
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{categoryID:"functional_block"} run function galaxy:recipe/hi_tech_crafting_table/functional_block/craft
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{categoryID:"interactive_block"} run function galaxy:recipe/hi_tech_crafting_table/interactive_block/craft
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{categoryID:"component"} run function galaxy:recipe/hi_tech_crafting_table/component/craft
-execute if data storage galaxy:recipe hi_tech_crafting_table.craft{categoryID:"weapon"} run function galaxy:recipe/hi_tech_crafting_table/weapon/craft
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:galaxy_delta"} run function galaxy:recipe/hi_tech_crafting_table/craft/galaxy_delta
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:wrench"} run function galaxy:recipe/hi_tech_crafting_table/craft/wrench
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:crowbar"} run function galaxy:recipe/hi_tech_crafting_table/craft/crowbar
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:empower_lens"} run function galaxy:recipe/hi_tech_crafting_table/craft/empower_lens
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:hi_tech_crafting_table"} run function galaxy:recipe/hi_tech_crafting_table/craft/hi_tech_crafting_table
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:coke_furnace"} run function galaxy:recipe/hi_tech_crafting_table/craft/coke_furnace
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:reinforced_blast_furnace"} run function galaxy:recipe/hi_tech_crafting_table/craft/reinforced_blast_furnace
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:assembly_table"} run function galaxy:recipe/hi_tech_crafting_table/craft/assembly_table
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:elevator"} run function galaxy:recipe/hi_tech_crafting_table/craft/elevator
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_display_stand_1"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_display_stand_1
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_display_stand_2"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_display_stand_2
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_display_stand_3"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_display_stand_3
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:steel_katana"} run function galaxy:recipe/hi_tech_crafting_table/craft/steel_katana
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_casing_gold"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_casing_gold
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_casing_iron"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_casing_iron
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_casing_steel"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_casing_steel
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_casing_netherite"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_casing_netherite
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:laser_core_t1"} run function galaxy:recipe/hi_tech_crafting_table/craft/laser_core_t1
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:laser_core_t2"} run function galaxy:recipe/hi_tech_crafting_table/craft/laser_core_t2
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:laser_core_t3"} run function galaxy:recipe/hi_tech_crafting_table/craft/laser_core_t3
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:cooling_system_t1"} run function galaxy:recipe/hi_tech_crafting_table/craft/cooling_system_t1
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:cooling_system_t2"} run function galaxy:recipe/hi_tech_crafting_table/craft/cooling_system_t2
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:cooling_system_t3"} run function galaxy:recipe/hi_tech_crafting_table/craft/cooling_system_t3
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:handle_wood"} run function galaxy:recipe/hi_tech_crafting_table/craft/handle_wood
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:handle_obsidian"} run function galaxy:recipe/hi_tech_crafting_table/craft/handle_obsidian
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_barrel_pistol"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_barrel_pistol
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_barrel_sniper_rifle"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_barrel_sniper_rifle
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_sight_clear"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_sight_clear
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_sight_scope"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_sight_scope
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:upgrade_gun_dual"} run function galaxy:recipe/hi_tech_crafting_table/craft/upgrade_gun_dual
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:upgrade_gun_flow"} run function galaxy:recipe/hi_tech_crafting_table/craft/upgrade_gun_flow
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_red"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_red
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_orange"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_orange
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_yellow"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_yellow
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_lime"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_lime
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_light_blue"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_light_blue
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_blue"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_blue
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_purple"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_purple
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_black"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_black
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_brown"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_brown
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_cyan"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_cyan
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_gray"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_gray
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_green"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_green
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_light_gray"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_light_gray
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_magenta"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_magenta
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_pink"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_pink
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_white"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_white
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_rainbow"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_rainbow
 
-execute if score #recipe.craftingStatus galaxy matches 0 run function #galaxy:recipe/hi_tech_crafting_table/craft_external
+execute if score #recipe.craftingStatus galaxy matches 0 run function #galaxy:recipe/hi_tech_crafting_table/craft

@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[{Slot:8b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.overview.content_page_button.page_previous\"}}}}]}"
+    }
+  }
+}
