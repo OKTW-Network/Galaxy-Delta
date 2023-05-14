@@ -6,8 +6,8 @@ execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weap
 
 scoreboard players operation @s galaxy.gun.interval = #gun.shoot.interval.mainHand galaxy
 execute if score @s galaxy.gun.requestShoot matches 100..101 if score #gun.shoot.interval.mainHand galaxy < #gun.shoot.interval.offHand galaxy run scoreboard players operation @s galaxy.gun.interval = #gun.shoot.interval.offHand galaxy
-scoreboard players set #1 calcu_temp 900
-execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval *= #1 calcu_temp
+scoreboard players set #1 temp 900
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval *= #1 temp
 execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval /= #1000 num
 
 execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.mainHand += #gun.shoot.heat galaxy

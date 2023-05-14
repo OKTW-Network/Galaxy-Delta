@@ -1,15 +1,15 @@
 # icon
 data modify storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].icon.tag merge value {CustomData:{galaxy:{Type:"gui",id:"assembly_table.blueprint_icon"}}}
-scoreboard players set #1 calcu_temp 6
-scoreboard players set #3 calcu_temp 9
-execute store result score #4 calcu_temp run scoreboard players operation #2 calcu_temp = #recipe.assembly_table.build.modify._recursiveCount galaxy
-scoreboard players operation #2 calcu_temp %= #2 num
-scoreboard players operation #4 calcu_temp %= #6 num
-scoreboard players operation #4 calcu_temp /= #2 num
-scoreboard players operation #3 calcu_temp *= #4 calcu_temp
-scoreboard players operation #1 calcu_temp += #2 calcu_temp
-scoreboard players operation #1 calcu_temp += #3 calcu_temp
-execute store result storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].icon.Slot byte 1 store result storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].icon.tag.CustomData.galaxy.gui.Slot byte 1 run scoreboard players get #1 calcu_temp
+scoreboard players set #1 temp 6
+scoreboard players set #3 temp 9
+execute store result score #4 temp run scoreboard players operation #2 temp = #recipe.assembly_table.build.modify._recursiveCount galaxy
+scoreboard players operation #2 temp %= #2 num
+scoreboard players operation #4 temp %= #6 num
+scoreboard players operation #4 temp /= #2 num
+scoreboard players operation #3 temp *= #4 temp
+scoreboard players operation #1 temp += #2 temp
+scoreboard players operation #1 temp += #3 temp
+execute store result storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].icon.Slot byte 1 store result storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].icon.tag.CustomData.galaxy.gui.Slot byte 1 run scoreboard players get #1 temp
 
 # parts
 data modify storage galaxy:temp +recipe.assembly_table.build.modify.blueprint[0].parts[] merge value {Count:1b,tag:{CustomData:{galaxy:{Type:"gui",id:"assembly_table.parts_placeholder"}}}}

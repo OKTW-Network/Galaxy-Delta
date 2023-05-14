@@ -9,5 +9,5 @@ data modify storage galaxy:temp +recipe.assembly_table.check_changes._partsDiffe
 function galaxy:recipe/assembly_table/check_changes/parts/check-new/_recursive/main
 data remove storage galaxy:temp +recipe.assembly_table.check_changes._partsDifferent
 
-execute store result score #1 calcu_temp run data get entity @s data.galaxy.assembly_table.blueprint.requiredCount
-execute if score #1 calcu_temp = @s galaxy.block.assembly_table.requiredCount run tag @s add galaxy._task.assembly_table.assembleResult
+execute store result score #1 temp run data get entity @s data.galaxy.assembly_table.blueprint.requiredCount
+execute if score #1 temp = @s galaxy.block.assembly_table.requiredCount run tag @s add galaxy._task.assembly_table.assembleResult

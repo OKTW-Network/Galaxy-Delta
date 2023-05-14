@@ -1,9 +1,9 @@
 function galaxy:weapon/katana/action/flash/move/tag_victim
 
-execute store result score #1 calcu_temp run data get entity @s Rotation[1] 1000
+execute store result score #1 temp run data get entity @s Rotation[1] 1000
 data modify entity @s Rotation[1] set value 0f
 execute at @s run tp @s ^ ^ ^0.25
-execute store result entity @s Rotation[1] float 0.001 run scoreboard players get #1 calcu_temp
+execute store result entity @s Rotation[1] float 0.001 run scoreboard players get #1 temp
 
 execute at @s run function galaxy:weapon/katana/action/flash/move/path_check
 execute if entity @s[tag=galaxy._success.weapon.katana.slash.pathPassed] at @s run function galaxy:weapon/katana/action/flash/move/path_pass

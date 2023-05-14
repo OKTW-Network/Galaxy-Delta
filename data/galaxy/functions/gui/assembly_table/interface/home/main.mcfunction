@@ -2,10 +2,10 @@ execute if entity @s[tag=galaxy._task.gui.refresh] run function galaxy:gui/assem
 tag @s[tag=galaxy._task.gui.refresh] add galaxy._task.assembly_table.blueprintPageButton
 tag @s[tag=galaxy._task.gui.refresh] add galaxy._task.assembly_table.buildBlueprintPage
 
-execute store result score #1 calcu_temp if data block ~ ~ ~ Items[]
-execute store result score #2 calcu_temp if data block ~ ~ ~ Items[{tag:{CustomData:{galaxy:{Type:"gui"}}}}]
-execute if predicate galaxy:recipe/assembly_table/result/is-not_placeholder run scoreboard players add #2 calcu_temp 1
-execute if score #1 calcu_temp > #2 calcu_temp run tag @s add galaxy._task.gui.popAll
+execute store result score #1 temp if data block ~ ~ ~ Items[]
+execute store result score #2 temp if data block ~ ~ ~ Items[{tag:{CustomData:{galaxy:{Type:"gui"}}}}]
+execute if predicate galaxy:recipe/assembly_table/result/is-not_placeholder run scoreboard players add #2 temp 1
+execute if score #1 temp > #2 temp run tag @s add galaxy._task.gui.popAll
 execute if entity @s[tag=galaxy._task.gui.popAll] run data modify storage galaxy:temp +block.pop_item.input set from block ~ ~ ~ Items
 execute if entity @s[tag=galaxy._task.gui.popAll] run function galaxy:block/pop_item/on_top
 tag @s[tag=galaxy._task.gui.popAll] remove galaxy._task.gui.popAll

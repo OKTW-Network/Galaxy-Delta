@@ -11,8 +11,8 @@ function #galaxy:recipe/assembly_table/build_external
 
 function galaxy:recipe/assembly_table/build/modify/main
 
-execute store result score #1 calcu_temp store result score #2 calcu_temp store result score #recipe.assembly_table.blueprintMax galaxy run data get storage galaxy:recipe assembly_table.blueprint
-scoreboard players operation #1 calcu_temp /= #6 num
-scoreboard players operation #2 calcu_temp %= #6 num
-execute if score #2 calcu_temp matches 1.. run scoreboard players add #1 calcu_temp 1
-execute store result score #recipe.assembly_table.blueprintPageMax galaxy run scoreboard players get #1 calcu_temp
+execute store result score #1 temp store result score #2 temp store result score #recipe.assembly_table.blueprintMax galaxy run data get storage galaxy:recipe assembly_table.blueprint
+scoreboard players operation #1 temp /= #6 num
+scoreboard players operation #2 temp %= #6 num
+execute if score #2 temp matches 1.. run scoreboard players add #1 temp 1
+execute store result score #recipe.assembly_table.blueprintPageMax galaxy run scoreboard players get #1 temp

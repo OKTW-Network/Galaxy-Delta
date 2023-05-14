@@ -1,7 +1,7 @@
-scoreboard players set #1 calcu_temp -180
-scoreboard players set #2 calcu_temp 90
-scoreboard players operation #2 calcu_temp *= @s galaxy.block.states.facing
-execute store result score #block.reinforced_blast_furnace.states.facing.rotation_0 galaxy store result entity @s Rotation[0] float 1 run scoreboard players operation #1 calcu_temp += #2 calcu_temp
+scoreboard players set #1 temp -180
+scoreboard players set #2 temp 90
+scoreboard players operation #2 temp *= @s galaxy.block.states.facing
+execute store result score #block.reinforced_blast_furnace.states.facing.rotation_0 galaxy store result entity @s Rotation[0] float 1 run scoreboard players operation #1 temp += #2 temp
 
 data modify storage cu:entity find_uuid.input set from entity @s data.galaxy.block.sprites
 function cu:entity/find_uuid/main
