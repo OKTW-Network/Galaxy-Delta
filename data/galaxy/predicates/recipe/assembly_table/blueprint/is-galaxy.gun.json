@@ -1,11 +1,7 @@
 {
   "condition": "minecraft:entity_properties",
   "predicate": {
-    "equipment": {
-      "mainhand": {
-        "nbt": "{CustomData:{galaxy:{data:{assembly:{blueprint:{id:\"galaxy.gun\"}}}}}}"
-      }
-    }
+    "nbt": "{data:{galaxy:{assembly_table:{blueprint:{id:\"galaxy.gun\"}}}}}"
   },
   "entity":"this"
 }
