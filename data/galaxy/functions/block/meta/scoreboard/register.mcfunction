@@ -10,4 +10,6 @@ scoreboard objectives add galaxy.block.process.progress dummy "@galaxy+block pro
 scoreboard objectives add galaxy.block.hi_tech_crafting_table.contentPageSlotMax dummy "@galaxy+block HiTechCraftingTable content page slot max"
 scoreboard objectives add galaxy.block.hi_tech_crafting_table.requirementPageSlotMax dummy "@galaxy+block HiTechCraftingTable requirement page slot max"
 
-scoreboard objectives add galaxy.block.assembly_table.requiredCount dummy "@galaxy+block AssemblyTable required parts"
+scoreboard objectives add galaxy.block.assembly_table.resultSlotStatus dummy "@galaxy+block AssemblyTable result slot status"
+scoreboard objectives add galaxy.block.assembly_table.blueprintPageNumber dummy "@galaxy+block AssemblyTable blueprint page number"
+scoreboard objectives add galaxy.block.assembly_table.blueprintPageSlotMax dummy "@galaxy+block AssemblyTable blueprint page slot max"

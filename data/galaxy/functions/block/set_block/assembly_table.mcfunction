@@ -11,9 +11,9 @@ execute as @e[tag=galaxy.block_sprite,tag=galaxy._tag.set_block.init] run data m
 
 execute at @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] run setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.galaxy.assembly_table"}'} replace
 
-tag @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] add galaxy._tag.assembly_table.resultEmpty
-scoreboard players set @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] galaxy.GUI.assembly_table.blueprintPage 1
-tag @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] add galaxy._task.gui.refresh
+scoreboard players set @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] galaxy.block.assembly_table.resultSlotStatus 0
+scoreboard players set @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] galaxy.block.assembly_table.blueprintPageNumber 1
+execute as @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] at @s run function galaxy:block/assembly_table/functional/switch_to_home
 execute as @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] at @s run function galaxy:gui/assembly_table/main
 
 tag @e[tag=galaxy._tag.set_block.init] remove galaxy._tag.set_block.init
