@@ -1,3 +1,5 @@
+function galaxy:recipe/assembly_table/delete_result_data
+
 item replace block ~ ~ ~ container.13 with minecraft:air
 function galaxy:block/assembly_table/functional/data/delete-result
 scoreboard players set @s galaxy.block.assembly_table.resultSlotStatus 0
