@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/gun/main_hand-sniper_rifle"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "minecraft:entity_properties/mob/hand_off-empty"
+  }
+]

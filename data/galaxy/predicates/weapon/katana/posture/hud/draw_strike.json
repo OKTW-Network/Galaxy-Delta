@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/posture/action/draw"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/posture/action/store"
+    }
+  ]
+}

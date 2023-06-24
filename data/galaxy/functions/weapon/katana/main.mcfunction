@@ -1,3 +1,1 @@
-function galaxy:weapon/katana/cooldown
-
-# function galaxy:weapon/katana/special_item_entity/main
+execute as @a at @s run function galaxy:weapon/katana/player

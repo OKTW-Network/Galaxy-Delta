@@ -1,1 +1,1 @@
-function galaxy:weapon/katana/action/swap_pull/ready/reset
+tag @s remove galaxy._tag.katana.readyToDraw

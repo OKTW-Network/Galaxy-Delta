@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "minecraft:entity_properties/sneaking"
+    }
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/katana/posture/blade_and_scabbard"
+  }
+]

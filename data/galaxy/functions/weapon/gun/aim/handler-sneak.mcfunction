@@ -1,1 +1,1 @@
-execute if entity @s[predicate=minecraft:entity_properties/sneaking] run function galaxy:weapon/gun/aim/start
+execute if entity @s[predicate=galaxy:weapon/gun/posture/any-aiming] run function galaxy:weapon/gun/aim/start

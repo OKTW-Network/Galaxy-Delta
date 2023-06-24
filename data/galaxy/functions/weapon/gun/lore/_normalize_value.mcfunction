@@ -1,0 +1,15 @@
+data modify storage galaxy:temp +weapon.gun.lore.input.interval set from storage galaxy:temp +weapon.gun.lore.input.interval_value
+data modify storage galaxy:temp +weapon.gun.lore.input.heat set from storage galaxy:temp +weapon.gun.lore.input.heat_value
+data modify storage galaxy:temp +weapon.gun.lore.input.temperature_min set from storage galaxy:temp +weapon.gun.lore.input.temperature_min_value
+data modify storage galaxy:temp +weapon.gun.lore.input.temperature_max set from storage galaxy:temp +weapon.gun.lore.input.temperature_max_value
+data modify storage galaxy:temp +weapon.gun.lore.input.cooling set from storage galaxy:temp +weapon.gun.lore.input.cooling_value
+data modify storage galaxy:temp +weapon.gun.lore.input.cooling_delay set from storage galaxy:temp +weapon.gun.lore.input.cooling_delay_value
+data modify storage galaxy:temp +weapon.gun.lore.input.instability set from storage galaxy:temp +weapon.gun.lore.input.instability_value
+data modify storage galaxy:temp +weapon.gun.lore.input.flexibility set from storage galaxy:temp +weapon.gun.lore.input.flexibility_value
+data modify storage galaxy:temp +weapon.gun.lore.input.aim_zoom set from storage galaxy:temp +weapon.gun.lore.input.aim_zoom_value
+data modify storage galaxy:temp +weapon.gun.lore.input.projectile.damage set from storage galaxy:temp +weapon.gun.lore.input.projectile.damage_value
+data modify storage galaxy:temp +weapon.gun.lore.input.projectile.velocity set from storage galaxy:temp +weapon.gun.lore.input.projectile.velocity_value
+data modify storage galaxy:temp +weapon.gun.lore.input.projectile.distance set from storage galaxy:temp +weapon.gun.lore.input.projectile.distance_value
+data modify storage galaxy:temp +weapon.gun.lore.input.projectile.penetrate set from storage galaxy:temp +weapon.gun.lore.input.projectile.penetrate_value
+data modify storage galaxy:temp +weapon.gun.lore.input.projectile.bounce set from storage galaxy:temp +weapon.gun.lore.input.projectile.bounce_value
+data modify storage galaxy:temp +weapon.gun.lore.input.projectile.trace set from storage galaxy:temp +weapon.gun.lore.input.projectile.trace_value

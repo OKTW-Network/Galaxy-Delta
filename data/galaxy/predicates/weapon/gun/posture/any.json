@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [    
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/posture/pistol"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/posture/sinper_rifle"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/posture/dual_wield_pistol"
+    }
+  ]
+}

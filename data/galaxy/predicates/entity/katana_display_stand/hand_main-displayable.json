@@ -3,15 +3,15 @@
   "terms": [
     {
       "condition": "minecraft:reference",
-      "name": "galaxy:weapon/katana/hand_main-katana"
+      "name": "galaxy:weapon/katana/main_hand-katana"
     },
     {
       "condition": "minecraft:reference",
-      "name": "galaxy:weapon/katana/hand_main-blade"
+      "name": "galaxy:weapon/katana/main_hand-blade"
     },
     {
       "condition": "minecraft:reference",
-      "name": "galaxy:weapon/katana/hand_main-scabbard"
+      "name": "galaxy:weapon/katana/main_hand-scabbard"
     }
   ]
 }

@@ -33,33 +33,10 @@ scoreboard players set #galaxy$block.elevator.range Config 16
   # Katana                               #
   ########################################
 
-# Enable Action: stun
-# boolean, default: 1
-scoreboard players set #galaxy$weapon.katana.action.stun Config 1
-
-# Enable Action: flash
-# boolean, default: 1
-scoreboard players set #galaxy$weapon.katana.action.flash Config 1
-
-# Cooldown - Action: swap-pull
-# integer, tick, default: 10
-scoreboard players set #galaxy$weapon.katana.action.swap_pull.cd Config 10
-
-# Cooldown - Action: swap-put
-# integer, tick, default: 10
-scoreboard players set #galaxy$weapon.katana.action.swap_put.cd Config 10
-
-# Cooldown (hit) - Action: stun
-# integer, tick, default: 60
-scoreboard players set #galaxy$weapon.katana.action.stun.hit_cd Config 60
-
-# Cooldown (miss) - Action: stun
-# integer, tick, default: 20
-scoreboard players set #galaxy$weapon.katana.action.stun.miss_cd Config 20
-
-# Cooldown - Action: flash
-# integer, tick, default: 80
-scoreboard players set #galaxy$weapon.katana.action.flash.cd Config 80
+# Period to perform a draw strike
+# A period of time between "ready to draw" & "draw out" is used to determine and perform a draw strike.
+# integer, tick, 0 ~ 20, default: 10
+scoreboard players set #galaxy$weapon.katana.draw_strike_period Config 10
 
   ########################################
   # Energy saber                         #

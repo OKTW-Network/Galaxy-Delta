@@ -1,7 +1,7 @@
 execute if score #galaxy$hud.katana Config matches 1 as @a run function galaxy:hud/katana/main
 execute if score #galaxy$hud.gun Config matches 1 as @a run function galaxy:hud/gun/main
 
-tag @a[tag=galaxy.hud.succes] add galaxy.hud.isShowing
-title @a[tag=!galaxy.hud.succes,tag=galaxy.hud.isShowing] actionbar {"text":""}
-tag @a[tag=!galaxy.hud.succes] remove galaxy.hud.isShowing
-tag @a[tag=galaxy.hud.succes] remove galaxy.hud.succes
+tag @a[tag=galaxy._success.hud] add galaxy._tag.hud
+title @a[tag=!galaxy._success.hud,tag=galaxy._tag.hud] actionbar {"text":""}
+tag @a[tag=!galaxy._success.hud] remove galaxy._tag.hud
+tag @a[tag=galaxy._success.hud] remove galaxy._success.hud

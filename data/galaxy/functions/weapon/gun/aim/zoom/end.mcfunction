@@ -1,3 +1,2 @@
-effect clear @s slowness
-scoreboard players set @s galaxy.gun.aimZoom -1
+effect clear @s minecraft:slowness
 tag @s remove galaxy._tag.gun.zooming

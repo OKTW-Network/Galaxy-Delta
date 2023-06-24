@@ -15,17 +15,5 @@
         "tag": "global:entity_passable"
       }
     }
-  },
-  {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:location_check",
-      "offsetY": -1,
-      "predicate": {
-        "block": {
-          "tag": "global:entity_passable"
-        }
-      }
-    }
   }
 ]

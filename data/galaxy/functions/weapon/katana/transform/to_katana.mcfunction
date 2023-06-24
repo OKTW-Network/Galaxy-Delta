@@ -11,5 +11,6 @@ scoreboard players operation #3 temp /= #1000 num
 scoreboard players operation #2 temp *= #3 temp
 execute store result storage galaxy:temp +weapon.katana.transform.result.katana.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #2 temp
 data modify storage galaxy:temp +weapon.katana.lore.input set from storage galaxy:temp +weapon.katana.transform.input.tag.CustomData.galaxy.tag
-function galaxy:weapon/katana/lore/katana
+scoreboard players set #weapon.katana.lore.class galaxy 0
+function galaxy:weapon/katana/lore/main
 data modify storage galaxy:temp +weapon.katana.transform.result.katana.tag.display.Lore set from storage galaxy:temp +weapon.katana.lore.result

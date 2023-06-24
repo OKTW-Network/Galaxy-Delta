@@ -13,7 +13,8 @@ scoreboard players operation #2 temp *= #3 temp
 scoreboard players operation #weapon.katana.transform.custom_model_data_value galaxy = #2 temp
 execute store result storage galaxy:temp +weapon.katana.transform.result.blade.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #2 temp
 data modify storage galaxy:temp +weapon.katana.lore.input set from storage galaxy:temp +weapon.katana.transform.input.tag.CustomData.galaxy.tag
-function galaxy:weapon/katana/lore/blade
+scoreboard players set #weapon.katana.lore.class galaxy 1
+function galaxy:weapon/katana/lore/main
 data modify storage galaxy:temp +weapon.katana.transform.result.blade.tag.display.Lore set from storage galaxy:temp +weapon.katana.lore.result
 
 data modify storage galaxy:get item set value []
@@ -26,5 +27,6 @@ scoreboard players set #1 temp 100012
 scoreboard players operation #2 temp = #weapon.katana.transform.custom_model_data_value galaxy
 execute store result storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #2 temp
 data modify storage galaxy:temp +weapon.katana.lore.input set from storage galaxy:temp +weapon.katana.transform.input.tag.CustomData.galaxy.tag
-function galaxy:weapon/katana/lore/scabbard
+scoreboard players set #weapon.katana.lore.class galaxy 2
+function galaxy:weapon/katana/lore/main
 data modify storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.display.Lore set from storage galaxy:temp +weapon.katana.lore.result

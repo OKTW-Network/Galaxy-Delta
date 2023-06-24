@@ -1,1 +1,1 @@
-data modify storage galaxy:get customAttribute prepend value {flash:{damage:12,distance:8},stun:{damage:2,duration:10}}
+data modify storage galaxy:get customAttribute prepend value {draw_strike:{id:"galaxy.flash",name:'{"translate":"item.galaxy.katana_draw_strike.flash.name"}',cooldown:80,damage:12,range:8},skill:{id:"galaxy.stun",name:'{"translate":"item.galaxy.katana_skill.stun.name"}',damage:2,effect_duration:10}}
