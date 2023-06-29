@@ -8,7 +8,7 @@
     "terms": [
       {
         "condition": "minecraft:reference",
-        "name": "minecraft:entity_properties/mob/hand_off-empty"
+        "name": "minecraft:entity_properties/mob/off_hand-empty"
       },
       {
         "condition": "minecraft:inverted",

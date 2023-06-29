@@ -3,6 +3,6 @@ data modify entity @s data.galaxy.katana_display_stand.item set from entity @a[t
 function galaxy:entity/katana_display_stand/interactive/interaction/build_display
 
 data modify storage cu:item replaceitem.input set from storage galaxy:temp +entity.katana_display_stand.replace_display.item
-execute as @a[tag=galaxy._tag.ThisPlayer] run function cu:item/replaceitem/hand_main
+execute as @a[tag=galaxy._tag.ThisPlayer] run function cu:item/replaceitem/main_hand
 
 data remove storage galaxy:temp +entity.katana_display_stand.replace_display.item

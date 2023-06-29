@@ -1,6 +1,6 @@
-data modify storage cu:entity find_uuid.input append from entity @s data.galaxy.projectile.owner
-function cu:entity/find_uuid/main
-tag @a[tag=cu._tag.entity.find_uuid.elect] add galaxy._tag.ThisProjectileOwner
+data modify storage cu:entity find_player.input append from entity @s data.galaxy.projectile.owner
+function cu:entity/find_player/main
+tag @a[tag=cu._tag.entity.find_player.elect] add galaxy._tag.ThisProjectileOwner
 
 execute store result score #gun.bullet.flight._recursiveTimes galaxy run scoreboard players get @s galaxy.projectile.velocity
 function galaxy:weapon/gun/bullet/flight/main

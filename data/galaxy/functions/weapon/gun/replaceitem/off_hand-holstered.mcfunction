@@ -2,4 +2,4 @@ data modify storage galaxy:temp +weapon.gun.transform.input set from entity @s I
 function galaxy:weapon/gun/transform/to_holstered
 
 data modify storage cu:item replaceitem.input set from storage galaxy:temp +weapon.gun.transform.result
-function cu:item/replaceitem/hand_off
+function cu:item/replaceitem/off_hand

@@ -3,4 +3,4 @@ execute if predicate galaxy:weapon/gun/posture/dual_wield_pistol run scoreboard 
 function galaxy:weapon/gun/transform/to_aiming
 
 data modify storage cu:item replaceitem.input set from storage galaxy:temp +weapon.gun.transform.result
-function cu:item/replaceitem/hand_off
+function cu:item/replaceitem/off_hand

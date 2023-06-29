@@ -6,7 +6,7 @@ execute if score @s galaxy.entity.katana_display_stand.type matches 1 run functi
 execute if score @s galaxy.entity.katana_display_stand.type matches 1 run tag @e[tag=cu._tag.entity.find_uuid.elect] add galaxy._tag.katana_display_stand.ThisDisplayItem2
 
 scoreboard players set #entity.katana_display_stand.operation galaxy -1
-execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=minecraft:entity_properties/mob/hand_main-empty] run scoreboard players set #entity.katana_display_stand.operation galaxy 0
+execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=minecraft:entity_properties/mob/main_hand-empty] run scoreboard players set #entity.katana_display_stand.operation galaxy 0
 execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:entity/katana_display_stand/hand_main-displayable] run scoreboard players set #entity.katana_display_stand.operation galaxy 1
 execute if score #entity.katana_display_stand.operation galaxy matches 1 if entity @s[tag=galaxy._tag.katana_display_stand.displaying] run scoreboard players set #entity.katana_display_stand.operation galaxy 2
 execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:tool/hand_main-wrench,predicate=minecraft:entity_properties/sneaking] run scoreboard players set #entity.katana_display_stand.operation galaxy 3

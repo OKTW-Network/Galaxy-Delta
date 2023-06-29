@@ -3,4 +3,4 @@ function galaxy:weapon/katana/transform/to_katana
 
 item replace entity @s weapon.mainhand with minecraft:air
 data modify storage cu:item replaceitem.input set from storage galaxy:temp +weapon.katana.transform.result.katana
-function cu:item/replaceitem/hand_off
+function cu:item/replaceitem/off_hand
