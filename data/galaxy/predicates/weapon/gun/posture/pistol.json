@@ -4,7 +4,31 @@
     "name": "galaxy:weapon/gun/main_hand-pistol"
   },
   {
-    "condition": "minecraft:reference",
-    "name": "minecraft:entity_properties/mob/hand_off-empty"
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "minecraft:entity_properties/mob/hand_off-empty"
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:alternative",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:reference",
+                "name": "galaxy:weapon/gun/off_hand"
+              }
+            },
+            {
+              "condition": "minecraft:reference",
+              "name": "galaxy:weapon/gun/off_hand-pistol"
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

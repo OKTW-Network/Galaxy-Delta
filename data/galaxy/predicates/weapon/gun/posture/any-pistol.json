@@ -3,11 +3,11 @@
   "terms": [
     {
       "condition": "minecraft:reference",
-      "name": "galaxy:weapon/gun/posture/any-pistol"
+      "name": "galaxy:weapon/gun/posture/pistol"
     },
     {
       "condition": "minecraft:reference",
-      "name": "galaxy:weapon/gun/posture/sinper_rifle"
+      "name": "galaxy:weapon/gun/posture/dual_wield_pistol"
     }
   ]
 }

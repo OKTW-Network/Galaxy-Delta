@@ -1,6 +1,3 @@
-execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players add @s galaxy.gun.dualSwitch 1
-execute if score @s galaxy.gun.dualSwitch matches 2.. run scoreboard players set @s galaxy.gun.dualSwitch 0
-
 execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/get_data_from_main_hand
 execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/get_data_from_off_hand
 
