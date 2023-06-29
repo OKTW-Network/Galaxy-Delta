@@ -18,4 +18,4 @@ execute if predicate galaxy:weapon/katana/posture/action/draw if score #1 temp m
 
 title @s actionbar {"nbt":"+hud.katana.draw_strike.result","storage":"galaxy:temp","interpret":true}
 
-tag @s add galaxy._success.hud
+tag @s add galaxy._success.hud.action_bar

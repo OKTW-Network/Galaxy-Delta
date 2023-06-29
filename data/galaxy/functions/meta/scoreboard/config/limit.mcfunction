@@ -7,6 +7,3 @@ execute unless score #galaxy$block.elevator.range Config matches 3..32 run score
 execute unless score #galaxy$weapon.katana.draw_strike_period Config matches 0..20 run scoreboard players set #galaxy$weapon.katana.draw_strike_period Config 10
 execute unless score #galaxy$weapon.energy_saber.action.turn_on.cd Config matches 0..2147483647 run scoreboard players set #galaxy$weapon.energy_saber.action.turn_on.cd Config 30
 execute unless score #galaxy$weapon.energy_saber.action.turn_off.cd Config matches 0..2147483647 run scoreboard players set #galaxy$weapon.energy_saber.action.turn_off.cd Config 30
-
-execute unless score #galaxy$hud.katana Config matches 0..1 run scoreboard players set #galaxy$hud.katana Config 1
-execute unless score #galaxy$hud.gun Config matches 0..1 run scoreboard players set #galaxy$hud.gun Config 1

@@ -13,4 +13,4 @@ execute if score #1 temp matches 101..200 run title @s actionbar [{"translate":"
 execute if score #1 temp matches 1..100 run title @s actionbar [{"translate":"attribute.name.galaxy.katana.skill","color":"gray"},{"text":" [","color":"dark_gray"},{"text":"=========","color":"green"},{"text":"+","color":"yellow"},{"text":"]","color":"dark_gray"}]
 execute if score #1 temp matches ..0 run title @s actionbar [{"translate":"attribute.name.galaxy.katana.skill","color":"aqua"},{"text":" [","color":"gray"},{"text":"==========","color":"green"},{"text":"]","color":"gray"}]
 
-tag @s add galaxy._success.hud
+tag @s add galaxy._success.hud.action_bar

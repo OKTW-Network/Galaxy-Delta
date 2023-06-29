@@ -49,18 +49,3 @@ scoreboard players set #galaxy$weapon.energy_saber.action.turn_on.cd Config 30
 # Cooldown - Action: turn-off
 # integer, tick, default: 30
 scoreboard players set #galaxy$weapon.energy_saber.action.turn_off.cd Config 30
-
-
-############################################
-# HUD (Head Up Display)                    #
-############################################
-
-# HUD by using title, subtitle, actionbar, bossbar, scoreboard side display.
-
-# Enable HUD:katana
-# boolean, default: 1
-scoreboard players set #galaxy$hud.katana Config 1
-
-# Enable HUD:gun
-# boolean, default: 1
-scoreboard players set #galaxy$hud.gun Config 1
