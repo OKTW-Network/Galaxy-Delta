@@ -29,9 +29,10 @@ execute store result score #2 temp run scoreboard players operation #1 temp /= #
 scoreboard players operation #1 temp /= #10 num
 scoreboard players operation #2 temp %= #10 num
 execute if score #2 temp matches 6.. run scoreboard players add #1 temp 1
-data modify storage galaxy:temp string set value []
-execute if score #1 temp matches 1.. run function galaxy:book/center_space
-data modify storage cu:value string.static.input set value '{"nbt":"string","storage":"galaxy:temp","interpret":true}'
+data modify storage cu:value list.duplicate.input set value " "
+scoreboard players operation #value.list.duplicate.count cu = #1 temp
+function cu:value/list/duplicate/main
+data modify storage cu:value string.static.input set value '{"storage":"cu:value","nbt":"list.duplicate.result","interpret":true}'
 function cu:value/string/static
 data modify storage galaxy:book bannerObj.versionSpace set from storage cu:value string.static.result
-data modify storage galaxy:book bannerObj.version set value '["",{"nbt":"bannerObj.versionSpace","storage":"galaxy:book","interpret":true},{"translate":"v%s","with":[{"nbt":"current_version.string","storage":"meta:galaxy","interpret":true}],"clickEvent":{"action":"run_command","value":"/trigger galaxy.book.triggerUpdate.galaxy_delta add 1"},"color":"gray","underlined":true,"hoverEvent":{"action":"show_text","contents":{"text":"(click to refresh)","color":"gray"}}}]'
+data modify storage galaxy:book bannerObj.version set value '[{"storage":"galaxy:book","nbt":"bannerObj.versionSpace","interpret":true},{"translate":"v%s","with":[{"storage":"meta:galaxy","nbt":"current_version.string","interpret":true}],"clickEvent":{"action":"run_command","value":"/trigger galaxy.book.refresh.galaxy_delta add 1"},"color":"gray","underlined":true,"hoverEvent":{"action":"show_text","contents":{"translate":"book.tooltip.click_event.refresh_content","color":"gray"}}}]'

@@ -1,1 +1,1 @@
-data modify storage galaxy:book bannerObj.title set value '["",{"text":"     "},{"text":"OKTW Galaxy","bold":true,"color":"#5CB3FF"},{"text":"\\n"},{"text":"           "},{"text":"Delta","color":"#FFB936"}]'
+data modify storage galaxy:book bannerObj.title set value '[{"text":"     "},{"text":"OKTW Galaxy","bold":true,"color":"#5CB3FF"},{"text":"\\n"},{"text":"           "},{"text":"Delta","color":"#FFB936"}]'
