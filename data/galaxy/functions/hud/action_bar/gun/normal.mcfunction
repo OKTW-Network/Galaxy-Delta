@@ -1,4 +1,4 @@
-function galaxy:hud/action_bar/gun/temperature/hand_main
+function galaxy:hud/action_bar/gun/temperature/main_hand
 
 title @s actionbar {"translate":"%s","with":[{"nbt":"+hud.gun.temperature.mainhand","storage":"galaxy:temp","interpret":true}],"color":"white"}
 

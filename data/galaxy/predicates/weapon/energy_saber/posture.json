@@ -1,7 +1,7 @@
 [
   {
     "condition": "minecraft:reference",
-    "name": "galaxy:weapon/energy_saber/hand_main"
+    "name": "galaxy:weapon/energy_saber/main_hand"
   },
   {
     "condition": "minecraft:reference",

@@ -29,8 +29,8 @@ execute if entity @s[tag=galaxy._status.gun.aiming] run scoreboard players opera
 execute if entity @s[tag=galaxy._status.gun.aiming] run scoreboard players operation #gun.shoot.unstable galaxy /= #100 num
 scoreboard players operation #gun.shoot.accuracy galaxy -= #gun.shoot.unstable galaxy
 
-execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/instability_level_up/hand_main
-execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/instability_level_up/hand_off
+execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/instability_level_up/main_hand
+execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/instability_level_up/off_hand
 
 scoreboard players operation #gun.bullet.summon.accuracy galaxy = #gun.shoot.accuracy galaxy
 

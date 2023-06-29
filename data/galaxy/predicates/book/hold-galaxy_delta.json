@@ -2,28 +2,12 @@
   "condition": "minecraft:alternative",
   "terms": [
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "mainhand": {
-            "items": ["minecraft:written_book"],
-            "nbt": "{CustomData:{galaxy:{id:\"book_galaxy_delta\"}}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:book/main_hand-galaxy_delta"
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "offhand": {
-            "items": ["minecraft:written_book"],
-            "nbt": "{CustomData:{galaxy:{id:\"book_galaxy_delta\"}}}"
-          }
-        }
-      }
+      "condition": "minecraft:reference",
+      "name": "galaxy:book/off_hand-galaxy_delta"
     }
   ]
 }

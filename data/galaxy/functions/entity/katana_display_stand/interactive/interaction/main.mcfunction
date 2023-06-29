@@ -7,10 +7,10 @@ execute if score @s galaxy.entity.katana_display_stand.type matches 1 run tag @e
 
 scoreboard players set #entity.katana_display_stand.operation galaxy -1
 execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=minecraft:entity_properties/mob/main_hand-empty] run scoreboard players set #entity.katana_display_stand.operation galaxy 0
-execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:entity/katana_display_stand/hand_main-displayable] run scoreboard players set #entity.katana_display_stand.operation galaxy 1
+execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:entity/katana_display_stand/main_hand-displayable] run scoreboard players set #entity.katana_display_stand.operation galaxy 1
 execute if score #entity.katana_display_stand.operation galaxy matches 1 if entity @s[tag=galaxy._tag.katana_display_stand.displaying] run scoreboard players set #entity.katana_display_stand.operation galaxy 2
-execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:tool/hand_main-wrench,predicate=minecraft:entity_properties/sneaking] run scoreboard players set #entity.katana_display_stand.operation galaxy 3
-execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:tool/hand_main-crowbar,predicate=minecraft:entity_properties/sneaking] run scoreboard players set #entity.katana_display_stand.operation galaxy 4
+execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:tool/main_hand-wrench,predicate=minecraft:entity_properties/sneaking] run scoreboard players set #entity.katana_display_stand.operation galaxy 3
+execute if entity @a[tag=galaxy._tag.ThisPlayer,predicate=galaxy:tool/main_hand-crowbar,predicate=minecraft:entity_properties/sneaking] run scoreboard players set #entity.katana_display_stand.operation galaxy 4
 
 execute if score #entity.katana_display_stand.operation galaxy matches 0 run function galaxy:entity/katana_display_stand/interactive/interaction/take_display
 execute if score #entity.katana_display_stand.operation galaxy matches 1 run function galaxy:entity/katana_display_stand/interactive/interaction/set_display
