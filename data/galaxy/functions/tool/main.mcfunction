@@ -1,2 +1,1 @@
-function galaxy:tool/wrench/update_tags
-function galaxy:tool/crowbar/update_tags
+execute as @a run function galaxy:tool/player
