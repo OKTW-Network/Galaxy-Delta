@@ -2,6 +2,7 @@ scoreboard players reset @s galaxy.gun.mainHandUUID0
 scoreboard players reset @s galaxy.gun.mainHandUUID1
 scoreboard players reset @s galaxy.gun.mainHandUUID2
 scoreboard players reset @s galaxy.gun.mainHandUUID3
+scoreboard players reset @s galaxy.gun.interval.mainHand
 scoreboard players reset @s galaxy.gun.temperature.mainHand
 scoreboard players reset @s galaxy.gun.temperatureMin.mainHand
 scoreboard players reset @s galaxy.gun.temperatureMax.mainHand

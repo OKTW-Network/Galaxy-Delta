@@ -4,6 +4,7 @@ execute store result score @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limi
 execute store result score @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] galaxy.data.UUID1 run scoreboard players get @s galaxy.gun.offHandUUID1
 execute store result score @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] galaxy.data.UUID2 run scoreboard players get @s galaxy.gun.offHandUUID2
 execute store result score @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] galaxy.data.UUID3 run scoreboard players get @s galaxy.gun.offHandUUID3
+execute store result entity @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] data.galaxy.gun.interval int 1 run scoreboard players get @s galaxy.gun.interval.offHand
 execute store result entity @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] data.galaxy.gun.temperature int 1 run scoreboard players get @s galaxy.gun.temperature.offHand
 execute store result entity @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] data.galaxy.gun.overheat int 1 run scoreboard players get @s galaxy.gun.overheat.offHand
 execute store result entity @e[tag=galaxy.data.gun,tag=galaxy._tag.data.init,limit=1] data.galaxy.gun.coolingTimer int 1 run scoreboard players get @s galaxy.gun.coolingTimer.offHand

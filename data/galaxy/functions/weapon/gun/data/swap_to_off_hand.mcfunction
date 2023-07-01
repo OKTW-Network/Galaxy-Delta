@@ -2,6 +2,7 @@ scoreboard players operation @s galaxy.gun.offHandUUID0 = @s galaxy.gun.mainHand
 scoreboard players operation @s galaxy.gun.offHandUUID1 = @s galaxy.gun.mainHandUUID1
 scoreboard players operation @s galaxy.gun.offHandUUID2 = @s galaxy.gun.mainHandUUID2
 scoreboard players operation @s galaxy.gun.offHandUUID3 = @s galaxy.gun.mainHandUUID3
+scoreboard players operation @s galaxy.gun.interval.offHand = @s galaxy.gun.interval.mainHand
 scoreboard players operation @s galaxy.gun.temperature.offHand = @s galaxy.gun.temperature.mainHand
 scoreboard players operation @s galaxy.gun.temperatureMin.offHand = @s galaxy.gun.temperatureMin.mainHand
 scoreboard players operation @s galaxy.gun.temperatureMax.offHand = @s galaxy.gun.temperatureMax.mainHand

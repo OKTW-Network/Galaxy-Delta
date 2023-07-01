@@ -1,14 +1,14 @@
-execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/get_data_from_main_hand
-execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/get_data_from_off_hand
+function galaxy:weapon/gun/shoot/get_data/main
 
 execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.coolingTimer.mainHand = @s galaxy.gun.coolingDelay.mainHand
 execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.coolingTimer.offHand = @s galaxy.gun.coolingDelay.offHand
 
-scoreboard players operation @s galaxy.gun.interval = #gun.shoot.interval.mainHand galaxy
-execute if score @s galaxy.gun.requestShoot matches 100..101 if score #gun.shoot.interval.mainHand galaxy < #gun.shoot.interval.offHand galaxy run scoreboard players operation @s galaxy.gun.interval = #gun.shoot.interval.offHand galaxy
+scoreboard players operation #gun.shoot.interval galaxy = #gun.shoot.interval.mainHand galaxy
+execute if score @s galaxy.gun.requestShoot matches 100..101 if score #gun.shoot.interval.mainHand galaxy < #gun.shoot.interval.offHand galaxy run scoreboard players operation #gun.shoot.interval galaxy = #gun.shoot.interval.offHand galaxy
 scoreboard players set #1 temp 900
-execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval *= #1 temp
-execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation @s galaxy.gun.interval /= #1000 num
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation #gun.shoot.interval galaxy *= #1 temp
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation #gun.shoot.interval galaxy /= #1000 num
+execute store result score @s galaxy.gun.interval.offHand run scoreboard players operation @s galaxy.gun.interval.mainHand = #gun.shoot.interval galaxy
 
 execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.mainHand += #gun.shoot.heat galaxy
 execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.offHand += #gun.shoot.heat galaxy

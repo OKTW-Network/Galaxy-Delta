@@ -17,7 +17,8 @@ execute if entity @s[predicate=galaxy:weapon/gun/posture/any-aiming,tag=!galaxy.
 execute if score @s galaxy.gun.temperature.mainHand > @s galaxy.gun.temperatureMin.mainHand run function galaxy:weapon/gun/temperature/main_hand
 execute if score @s galaxy.gun.temperature.offHand > @s galaxy.gun.temperatureMin.offHand run function galaxy:weapon/gun/temperature/off_hand
 
-execute if score @s galaxy.gun.interval matches 1.. run function galaxy:weapon/gun/interval
+execute if score @s galaxy.gun.interval.mainHand matches 1.. run scoreboard players remove @s galaxy.gun.interval.mainHand 1
+execute if score @s galaxy.gun.interval.offHand matches 1.. run scoreboard players remove @s galaxy.gun.interval.offHand 1
 
 execute if score @s galaxy.gun.unstableShot.mainHand matches 1.. run function galaxy:weapon/gun/instability/main_hand
 execute if score @s galaxy.gun.unstableShot.offHand matches 1.. run function galaxy:weapon/gun/instability/off_hand
