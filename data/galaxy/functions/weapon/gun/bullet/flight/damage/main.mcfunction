@@ -3,7 +3,7 @@ execute positioned ~-0.125 ~-0.125 ~-0.125 run tag @e[dx=0,dy=0,dz=0] add cu._ta
 execute positioned ~-0.875 ~-0.875 ~-0.875 run tag @e[dx=0,dy=0,dz=0,tag=cu._tag.hitboxCandidate] add cu._tag.hitboxElect
 tag @s remove cu._tag.hitboxElect
 tag @a[tag=galaxy._tag.ThisProjectileOwner] remove cu._tag.hitboxElect
-function cu:entity/hitbox/filter/marker_and_display
+function cu:entity/hitbox/filter/ignore_attack
 data modify storage cu:temp +hitbox.filter.sourcePastVictim set from entity @s data.galaxy.projectile.pastVictim
 function cu:entity/hitbox/filter/elect_is_source_past_victim/main
 execute if entity @e[tag=cu._tag.hitboxElect] run tag @s add galaxy._success.gun.bullet.hitEntity

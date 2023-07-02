@@ -2,7 +2,7 @@ function cu:entity/hitbox/reset_tag
 execute positioned ~-4 ~-4 ~-4 run tag @e[dx=7,dy=7,dz=7] add cu._tag.hitboxElect
 tag @s remove cu._tag.hitboxElect
 tag @a[tag=galaxy._tag.ThisProjectileOwner] remove cu._tag.hitboxElect
-function cu:entity/hitbox/filter/marker_and_display
+function cu:entity/hitbox/filter/ignore_attack
 data modify storage cu:temp +hitbox.filter.sourcePastVictim set from entity @s data.galaxy.projectile.pastVictim
 function cu:entity/hitbox/filter/elect_is_source_past_victim/main
 execute if entity @e[tag=cu._tag.hitboxElect] run function cu:entity/hitbox/filter/nearest
