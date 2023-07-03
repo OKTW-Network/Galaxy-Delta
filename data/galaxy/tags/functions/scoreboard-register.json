@@ -1,7 +1,6 @@
 {
   "values": [
     "galaxy:meta/scoreboard/register",
-    "galaxy:recipe/meta/scoreboard/register",
     "galaxy:gui/meta/scoreboard/register",
     "galaxy:effect/meta/scoreboard/register",
     "galaxy:block/meta/scoreboard/register",
