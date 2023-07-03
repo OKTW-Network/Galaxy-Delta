@@ -21,12 +21,9 @@ data modify storage galaxy:get item set value []
 function galaxy:weapon/get/_dummy_katana_scabbard
 data modify storage galaxy:temp +weapon.katana.transform.result.scabbard set from storage galaxy:get item[0]
 data modify storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.display.Name set from storage galaxy:temp +weapon.katana.transform.input.tag.display.Name
-data modify storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.CustomData.galaxy.tag set from storage galaxy:temp +weapon.katana.transform.input.tag.CustomData.galaxy.tag
-data remove storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.CustomData.galaxy.tag.bladeAttributeModifier
+data modify storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.CustomData.galaxy.tag.type set from storage galaxy:temp +weapon.katana.transform.input.tag.CustomData.galaxy.tag.type
 scoreboard players set #1 temp 100012
-scoreboard players operation #2 temp = #weapon.katana.transform.custom_model_data_value galaxy
-execute store result storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #2 temp
-data modify storage galaxy:temp +weapon.katana.lore.input set from storage galaxy:temp +weapon.katana.transform.input.tag.CustomData.galaxy.tag
+execute store result storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #weapon.katana.transform.custom_model_data_value galaxy
 scoreboard players set #weapon.katana.lore.class galaxy 2
 function galaxy:weapon/katana/lore/main
 data modify storage galaxy:temp +weapon.katana.transform.result.scabbard.tag.display.Lore set from storage galaxy:temp +weapon.katana.lore.result
