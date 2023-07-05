@@ -9,5 +9,4 @@ scoreboard players operation @s galaxy.katana.drawStrikePeriod = #galaxy$weapon.
 scoreboard players remove @s galaxy.gun.requestShoot 0
 scoreboard players remove @s galaxy.gun.dualSwitch 0
 
-scoreboard players remove @s galaxy.energy_saber.turnOn.cooldown 0
-scoreboard players remove @s galaxy.energy_saber.turnOff.cooldown 0
+scoreboard players remove @s galaxy.energy_saber.switchCooldown 0

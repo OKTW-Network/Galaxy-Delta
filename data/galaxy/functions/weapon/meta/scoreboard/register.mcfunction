@@ -47,5 +47,4 @@ scoreboard objectives add galaxy.projectile.traceCooldown dummy "@galaxy project
 scoreboard objectives add galaxy.projectile.bounce dummy "@galaxy projectile bounce"
 scoreboard objectives add galaxy.projectile.color dummy "@galaxy projectile color"
 
-scoreboard objectives add galaxy.energy_saber.turnOn.cooldown dummy "@galaxy EnergySaber action Turn-On cooldown"
-scoreboard objectives add galaxy.energy_saber.turnOff.cooldown dummy "@galaxy EnergySaber action Turn-Off cooldown"
+scoreboard objectives add galaxy.energy_saber.switchCooldown dummy "@galaxy Energy Saber switch cooldown"

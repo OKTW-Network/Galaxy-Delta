@@ -1,1 +1,1 @@
-function galaxy:weapon/energy_saber/cooldown
+execute as @a run function galaxy:weapon/energy_saber/player
