@@ -8,9 +8,9 @@ data modify storage galaxy:recipe assembly_table.blueprint[-1].icon set from sto
 scoreboard players set #1 temp 6
 scoreboard players set #3 temp 9
 execute store result score #4 temp run scoreboard players operation #2 temp = #recipe.assembly_table.build.standardization._recursiveCount galaxy
-scoreboard players operation #2 temp %= #2 num
+scoreboard players operation #2 temp %= #3 num
 scoreboard players operation #4 temp %= #6 num
-scoreboard players operation #4 temp /= #2 num
+scoreboard players operation #4 temp /= #3 num
 scoreboard players operation #3 temp *= #4 temp
 scoreboard players operation #1 temp += #2 temp
 scoreboard players operation #1 temp += #3 temp

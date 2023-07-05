@@ -36,7 +36,7 @@
               "condition": "minecraft:location_check",
               "predicate": {
                 "block": {
-                  "nbt": "{Items:[{Slot:15b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.blueprint_icon\",gui:{Slot:15b}}}}}]}"
+                  "nbt": "{Items:[{Slot:8b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.blueprint_icon\",gui:{Slot:8b}}}}}]}"
                 }
               }
             }
