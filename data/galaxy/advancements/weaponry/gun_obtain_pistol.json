@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:201000,HideFlags:127}"
+        },
+        "title": {"translate":"advancements.weaponry.gun_obtain_pistol.title"},
+        "description": {"translate":"advancements.weaponry.gun_obtain_pistol.description"},
+        "hidden": true,
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/gun_collections",
+    "criteria": {
+        "obtain_pistol": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"nbt": "{CustomData:{galaxy:{Type:\"item\",id:\"gun\",tag:{type:1b}}}}"
+                    }
+                ]
+            }
+        }
+    }
+}

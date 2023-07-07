@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "block": {
+            "nbt": "{Items:[{Slot:0b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:1b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:2b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:3b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:4b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:5b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:6b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:7b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:8b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:9b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:10b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:11b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:12b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:13b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:14b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:15b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:16b,tag:{gun:{CustomData:{galaxy:{id:\"gui_item\"}}}}},{Slot:17b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:18b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:19b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:20b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:21b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:22b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:23b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:24b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:25b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}},{Slot:26b,tag:{CustomData:{galaxy:{id:\"gui_item\"}}}}]}"
+        }
+    }
+}

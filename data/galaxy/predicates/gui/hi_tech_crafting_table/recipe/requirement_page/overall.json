@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_1"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_2"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_3"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_4"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_5"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_6"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_7"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_8"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_9"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_10"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_11"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/recipe/requirement_page/slot_12"
+  }
+]

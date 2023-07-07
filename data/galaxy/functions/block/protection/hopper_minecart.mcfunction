@@ -1,5 +1,6 @@
 kill @s
-summon minecraft:item ~ ~ ~ {Item:{Count:1b,id:"minecraft:minecart"}}
-summon minecraft:item ~ ~ ~ {Item:{Count:1b,id:"minecraft:hopper"}}
+summon minecraft:item ~ ~ ~ {Item:{Count:1b,id:"minecraft:hopper_minecart"}}
 
-playsound entity.item.pickup block @a ~ ~ ~ 1 0.6
+playsound minecraft:entity.item.break block @a ~ ~ ~ 1 0.6
+
+function galaxy:gui/cleanup_gui_item

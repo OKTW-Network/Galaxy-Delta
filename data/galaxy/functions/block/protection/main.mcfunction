@@ -12,4 +12,4 @@ execute if block ~ ~ ~1 minecraft:dropper[facing=north] run setblock ~ ~ ~1 air 
 execute if block ~-1 ~ ~ minecraft:dropper[facing=east] run setblock ~-1 ~ ~ air destroy
 execute if block ~1 ~ ~ minecraft:dropper[facing=west] run setblock ~1 ~ ~ air destroy
 
-execute positioned ~ ~-1 ~ as @e[type=minecraft:hopper_minecart,distance=..0.5] at @s run function galaxy:block/protection/hopper_minecart
+execute align xyz positioned ~ ~-1 ~ as @e[type=minecraft:hopper_minecart,dx=0,dy=0,dz=0] at @s run function galaxy:block/protection/hopper_minecart

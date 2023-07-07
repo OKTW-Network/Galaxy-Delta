@@ -1,10 +1,10 @@
 function galaxy:weapon/gun/aim/zoom/end
-execute store result score @s gunZoom run data get entity @s SelectedItem.tag.gun.aim_zoom
-effect give @s[scores={gunZoom=1}] slowness 1000000 0 true
-effect give @s[scores={gunZoom=2}] slowness 1000000 1 true
-effect give @s[scores={gunZoom=3}] slowness 1000000 2 true
-effect give @s[scores={gunZoom=4}] slowness 1000000 3 true
-effect give @s[scores={gunZoom=5}] slowness 1000000 4 true
-effect give @s[scores={gunZoom=6}] slowness 1000000 5 true
-effect give @s[scores={gunZoom=7}] slowness 1000000 6 true
-tag @s add Zooming
+execute store result score #weapon.gun.aim.zoom galaxy run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.aim_zoom
+execute if score #weapon.gun.aim.zoom galaxy matches 1 run effect give @s slowness infinite 0 true
+execute if score #weapon.gun.aim.zoom galaxy matches 2 run effect give @s slowness infinite 1 true
+execute if score #weapon.gun.aim.zoom galaxy matches 3 run effect give @s slowness infinite 2 true
+execute if score #weapon.gun.aim.zoom galaxy matches 4 run effect give @s slowness infinite 3 true
+execute if score #weapon.gun.aim.zoom galaxy matches 5 run effect give @s slowness infinite 4 true
+execute if score #weapon.gun.aim.zoom galaxy matches 6 run effect give @s slowness infinite 5 true
+execute if score #weapon.gun.aim.zoom galaxy matches 7 run effect give @s slowness infinite 6 true
+tag @s add galaxy._tag.gun.zooming

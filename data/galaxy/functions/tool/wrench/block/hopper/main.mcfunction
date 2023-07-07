@@ -1,6 +1,8 @@
-execute if entity @s[tag=wrenchFirstUse] unless predicate galaxy:entity/item_frame/facing-up run tag @s add wrenchHopperFacing
-execute if entity @s[tag=wrenchFirstUse] if predicate galaxy:entity/item_frame/facing-up run tag @s add wrenchHopperRotate
-execute if entity @s[tag=!wrenchFirstUse] run tag @s add wrenchHopperRotate
+execute if entity @s[tag=galaxy._tag.wrenchFirstTimeUse] unless predicate minecraft:entity_properties/item_frame/facing-up run tag @s add galaxy._task.wrench.setFacing
+execute if entity @s[tag=galaxy._tag.wrenchFirstTimeUse] if predicate minecraft:entity_properties/item_frame/facing-up run tag @s add galaxy._task.wrench.rotateFacing
+execute if entity @s[tag=!galaxy._tag.wrenchFirstTimeUse] run tag @s add galaxy._task.wrench.rotateFacing
 
-execute if entity @s[tag=wrenchHopperFacing] run function galaxy:tool/wrench/block/hopper/facing
-execute if entity @s[tag=wrenchHopperRotate] run function galaxy:tool/wrench/block/hopper/rotate
+execute if entity @s[tag=galaxy._task.wrench.setFacing] run function galaxy:tool/wrench/block/hopper/set_facing
+execute if entity @s[tag=galaxy._task.wrench.rotateFacing] run function galaxy:tool/wrench/block/hopper/rotate_facing
+
+tag @s remove galaxy._task.wrench.doHopper

@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[{Slot:24b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.blueprint_page_button.page_previous\"}}}}]}"
+    }
+  }
+}

@@ -1,1 +1,0 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"item.galaxy.scabbard","italic":false,"color":"yellow"}'},HideFlags:39,RepairCost:2147483644,Unbreakable:1b,CustomModelData:120202,katana:{type:3b,style:2b}}

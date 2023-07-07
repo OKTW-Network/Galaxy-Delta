@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/posture/any-pistol"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/gun/posture/sinper_rifle"
+    }
+  ]
+}

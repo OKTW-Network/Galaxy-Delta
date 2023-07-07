@@ -1,20 +1,11 @@
-function galaxy:meta/scoreboard/register
-function galaxy:config
-function galaxy:check-dependency
+function #galaxy:config
+
+function #galaxy:scoreboard-register
+function #galaxy:team-register
+
 function galaxy:check-version
-
-execute unless entity @e[tag=dataBase] run function galaxy:meta/data/create-data_base
-
-function galaxy:recipe/initial
-function galaxy:gui/initial
-function galaxy:hud/initial
-function galaxy:status_effect/initial
-function galaxy:block/initial
-function galaxy:entity/initial
-function galaxy:tool/initial
-function galaxy:book/initial
-function galaxy:weapon/initial
 
 execute as @a run function galaxy:initial-player
 
-execute if score #galaxy_print_init Config matches 1 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Initialize complete!"}]
+function galaxy:book/initial
+function galaxy:recipe/initial

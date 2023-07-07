@@ -1,2 +1,1 @@
-function galaxy:tool/summon/empower_lens
-kill @s
+function galaxy:tool/summon_item/empower_lens

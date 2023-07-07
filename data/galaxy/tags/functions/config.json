@@ -1,0 +1,7 @@
+{
+  "values": [
+    "galaxy:meta/scoreboard/config/register",
+    "galaxy:config",
+    "galaxy:meta/scoreboard/config/limit"
+  ]
+}

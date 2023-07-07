@@ -2,8 +2,8 @@
     "condition": "minecraft:location_check",
     "predicate": {
         "block": {
-            "block": "minecraft:barrel",
-            "nbt": "{CustomName:'{\"translate\":\"container.assembly_table\"}'}"
+            "blocks": ["minecraft:barrel"],
+            "nbt": "{CustomName:'{\"translate\":\"container.galaxy.assembly_table\"}'}"
         }
     }
 }

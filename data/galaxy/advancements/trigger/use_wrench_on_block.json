@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {"item": "minecraft:barrier"},
+    "title": {"text":"use_wrench_on_block"},
+    "description": {"text":""},
+    "background": "minecraft:textures/block/command_block_back.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "use_wrench_on_block": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:item_frame"],
+          "nbt": "{CustomData:{galaxy:{trigger:\"use_wrench\"}}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "galaxy:trigger/use_wrench_on_block"
+  }
+}

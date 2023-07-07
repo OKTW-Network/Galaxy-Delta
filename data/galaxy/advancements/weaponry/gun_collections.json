@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gray_stained_glass_pane",
+            "nbt": "{CustomModelData:201007,HideFlags:127}"
+        },
+        "title": {"translate":"advancements.weaponry.collections"},
+        "description": {"translate":"advancements.weaponry.collections.description"},
+		"hidden": true,
+		"frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/gun",
+    "criteria": {
+        "gun_collections": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,24 +1,34 @@
-# cover
-tag @s[predicate=!galaxy:gui/check_cover-1i1o1p1s] add setGuiCover
-execute if entity @s[tag=setGuiCover] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setGuiCover] run function galaxy:gui/coke_furnace/drop-not_gui
-execute if entity @s[tag=setGuiCover] run function galaxy:gui/build-1i1o1p1s-cover
-tag @s[tag=setGuiCover] remove setGuiCover
+execute if entity @s[tag=galaxy._task.gui.refresh] run tag @s add galaxy._task.gui.buildCover
+execute if entity @s[tag=galaxy._task.gui.refresh] run tag @s add galaxy._task.gui.coke_furnace.buildProcessProgress
+execute if entity @s[tag=galaxy._task.gui.refresh] run tag @s add galaxy._task.gui.coke_furnace.buildFuelBar
 
-# progress bar
-tag @s[predicate=!galaxy:gui/check_slot-12] add setProgress
-execute if entity @s[tag=setProgress] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setProgress] run function galaxy:gui/coke_furnace/build-progress
-tag @s[tag=setProgress] remove setProgress
+data modify storage galaxy:temp +block.pop_item.input set from block ~ ~ ~ Items
+data remove storage galaxy:temp +block.pop_item.input[{Slot:11b}]
+data remove storage galaxy:temp +block.pop_item.input[{Slot:15b}]
+function galaxy:block/pop_item/in_front
 
-# process status
-tag @s[predicate=!galaxy:gui/check_slot-13] add setProcess
-execute if entity @s[tag=setProcess] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setProcess] run function galaxy:gui/coke_furnace/build-process
-tag @s[tag=setProcess] remove setProcess
+tag @s[predicate=!galaxy:gui/coke_furnace/cover] add galaxy._task.gui.buildCover
+execute if entity @s[tag=galaxy._task.gui.buildCover] run tag @s add galaxy._task.gui.cleanupGuiItem
+execute if entity @s[tag=galaxy._task.gui.buildCover] run function galaxy:gui/coke_furnace/build-cover
+tag @s[tag=galaxy._task.gui.buildCover] remove galaxy._task.gui.buildCover
 
-# smelt status
-tag @s[predicate=!galaxy:gui/check_slot-20] add setSmelt
-execute if entity @s[tag=setSmelt] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setSmelt] run function galaxy:gui/coke_furnace/build-smelt
-tag @s[tag=setSmelt] remove setSmelt
+tag @s[predicate=!galaxy:gui/coke_furnace/process_progress] add galaxy._task.gui.coke_furnace.buildProcessProgress
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.buildProcessProgress] run tag @s add galaxy._task.gui.cleanupGuiItem
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.buildProcessProgress] run scoreboard players set #gui.build_piece.progress_bar_2x1.force galaxy 1
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.buildProcessProgress] run function galaxy:gui/coke_furnace/build-process_progress
+tag @s[tag=galaxy._task.gui.coke_furnace.buildProcessProgress] remove galaxy._task.gui.coke_furnace.buildProcessProgress
+
+tag @s[predicate=!galaxy:gui/coke_furnace/fuel_bar] add galaxy._task.gui.coke_furnace.buildFuelBar
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.buildFuelBar] run tag @s add galaxy._task.gui.cleanupGuiItem
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.buildFuelBar] run scoreboard players set #gui.build_piece.fuel_bar_1x1.force galaxy 1
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.buildFuelBar] run function galaxy:gui/coke_furnace/build-fuel_bar
+tag @s[tag=galaxy._task.gui.coke_furnace.buildFuelBar] remove galaxy._task.gui.coke_furnace.buildFuelBar
+
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.updateProcess] run function galaxy:gui/coke_furnace/build-process_progress
+execute if entity @s[tag=galaxy._task.gui.coke_furnace.updateProcess] run function galaxy:gui/coke_furnace/build-fuel_bar
+tag @s[tag=galaxy._task.gui.coke_furnace.updateProcess] remove galaxy._task.gui.coke_furnace.updateProcess
+
+execute if entity @s[tag=galaxy._task.gui.cleanupGuiItem] run function galaxy:gui/cleanup_gui_item
+tag @s[tag=galaxy._task.gui.cleanupGuiItem] remove galaxy._task.gui.cleanupGuiItem
+
+tag @s[tag=galaxy._task.gui.refresh] remove galaxy._task.gui.refresh

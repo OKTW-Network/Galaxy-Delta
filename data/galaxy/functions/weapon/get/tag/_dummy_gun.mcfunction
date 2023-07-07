@@ -1,0 +1,1 @@
+data modify storage galaxy:get itemTag append value {display:{Name:'{"text":""}'},HideFlags:127,RepairCost:-2147483648,Unbreakable:1b,CustomModelData:100,CustomData:{galaxy:{Type:"item",id:"gun",tag:{status:0,assemblyInfo:{blueprintID:"galaxy.gun"}}}}}

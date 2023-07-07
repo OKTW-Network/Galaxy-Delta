@@ -1,1 +1,0 @@
-execute store result block ~ ~ ~ Items[{Slot:13b}].tag.gun.projectile.extra int 1 run data get block ~ ~ ~ Items[{Slot:13b}].tag.gun.parts[{component:{barrel:1}}].component.alteration.projectile.extra 1

@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:golden_hoe",
-            "nbt": "{CustomModelData:20100,HideFlags:39}"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:101001,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.katana.title"},
         "description": {"translate":"advancements.galaxy.katana.description"}
@@ -17,7 +17,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{katana:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"katana\"}}}"
                     }
                 ]
             }

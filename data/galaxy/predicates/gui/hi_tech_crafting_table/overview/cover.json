@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[{Slot:2b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"blank_cover\"}}}},{Slot:9b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.overview.category_row_background\"}}}},{Slot:11b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.overview.section_divider\"}}}},{Slot:17b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.overview.content_page_cover\"}}}},{Slot:20b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.overview.category_row_foreground\"}}}}]}"
+    }
+  }
+}

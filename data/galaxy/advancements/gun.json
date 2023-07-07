@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:201000,HideFlags:127}"
+        },
+        "title": {"translate":"advancements.galaxy.gun.title"},
+        "description": {"translate":"advancements.galaxy.gun.description"}
+    },
+    "parent": "galaxy:assembly_table",
+    "rewards": {
+		"function": "galaxy:advancement/weaponry/gun"
+    },
+    "criteria": {
+        "gun": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{CustomData:{galaxy:{id:\"gun\"}}}"
+                    }
+                ]
+            }
+        }
+    }
+}

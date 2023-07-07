@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": 1,
+    "predicate": {
+      "block": {
+        "tag": "galaxy:block/elevator/space_acceptable"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": 2,
+    "predicate": {
+      "block": {
+        "tag": "galaxy:block/elevator/space_acceptable"
+      }
+    }
+  }
+]

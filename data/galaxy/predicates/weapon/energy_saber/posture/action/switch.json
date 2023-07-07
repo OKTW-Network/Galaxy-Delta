@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "minecraft:entity_properties/sneaking"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/energy_saber/posture/main_hand"
+  }
+]

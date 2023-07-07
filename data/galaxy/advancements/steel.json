@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:command_block",
-            "nbt": "{CustomModelData:1010,HideFlags:39}"
+            "nbt": "{CustomModelData:102000,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.steel.title"},
         "description": {"translate":"advancements.galaxy.steel.description"}
@@ -14,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{ingotSteel:{}}"
+                        "nbt": "{CustomData:{galaxy:{id:\"steel_ingot\"}}}"
                     }
                 ]
             }

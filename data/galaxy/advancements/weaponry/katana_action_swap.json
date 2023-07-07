@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gray_stained_glass_pane",
+            "nbt": "{CustomModelData:201001,HideFlags:127}"
+        },
+        "title": {"translate":"advancements.weaponry.katana_action_swap.title"},
+        "description": {"translate":"advancements.weaponry.katana_action_swap.description"},
+		"frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/katana_actions",
+    "criteria": {
+        "katana": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

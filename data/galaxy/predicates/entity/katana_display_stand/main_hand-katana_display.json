@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "nbt": "{CustomData:{galaxy:{Type:\"display\",display:{purpose:\"katana_display_stand\"}}}}"
+      }
+    }
+  },
+  "entity":"this"
+}

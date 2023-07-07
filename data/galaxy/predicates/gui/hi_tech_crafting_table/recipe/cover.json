@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[{Slot:6b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.0\"}}}},{Slot:7b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.1\"}}}},{Slot:8b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.2\"}}}},{Slot:9b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.menu_cover\"}}}},{Slot:14b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.requirement_page_cover\"}}}},{Slot:15b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.3\"}}}},{Slot:17b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.4\"}}}},{Slot:24b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.5\"}}}},{Slot:25b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.6\"}}}},{Slot:26b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.result_slot_cover.7\"}}}}]}"
+    }
+  }
+}

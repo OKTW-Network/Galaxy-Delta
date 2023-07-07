@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": ["minecraft:item_frame"],
+                "nbt": "{CustomData:{galaxy:{id:\"wrench\"}}}"
+            }
+        }
+    },
+    "entity":"this"
+}

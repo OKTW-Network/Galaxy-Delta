@@ -1,5 +1,8 @@
-function galaxy:block/elevator/jump_inhibition
+execute unless predicate galaxy:block/elevator run tag @s add galaxy._task.block.destruct
+tag @s[tag=galaxy._task.block.destruct] add galaxy._STOP
+execute if entity @s[tag=galaxy._task.block.destruct] run function galaxy:block/elevator/destruct
+tag @s[tag=galaxy._task.block.destruct] remove galaxy._task.block.destruct
 
-execute unless predicate galaxy:block/elevator run function galaxy:block/elevator/destroy
+execute if entity @s[tag=galaxy._STOP] run function galaxy:block/kill
 
-execute if predicate minecraft:block_states/open run function galaxy:block/elevator/replace
+execute if entity @s[tag=!galaxy._STOP] if predicate minecraft:block_states/open run function galaxy:block/elevator/replace

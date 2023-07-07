@@ -1,1 +1,0 @@
-data modify storage galaxy:get itemTag prepend value {display:{Name:'{"translate":"block.galaxy.advanced_blast_furnace","italic":false}'},CustomModelData:10300,blockPlacer:{},advancedBlastFurnace:{},EntityTag:{CustomNameVisible:0b,Invulnerable:1b,Invisible:1b,Fixed:1b,Silent:1b,Tags:["block_placer","advanced_blast_furnace_placer"]}}

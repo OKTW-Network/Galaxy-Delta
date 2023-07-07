@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:weapon/energy_saber/main_hand"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "minecraft:entity_properties/mob/off_hand-empty"
+  }
+]

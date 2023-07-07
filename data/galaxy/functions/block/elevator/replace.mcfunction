@@ -1,2 +1,2 @@
 setblock ~ ~ ~ minecraft:air replace
-setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.elevator"}'} replace
+setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"container.galaxy.elevator"}'} replace

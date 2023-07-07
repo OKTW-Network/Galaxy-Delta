@@ -1,2 +1,2 @@
-scoreboard players enable @s bookGdUpdate
-scoreboard players remove @s bookGdUpdate 0
+scoreboard players reset @s galaxy.book.refresh.galaxy_delta
+scoreboard players enable @s galaxy.book.refresh.galaxy_delta

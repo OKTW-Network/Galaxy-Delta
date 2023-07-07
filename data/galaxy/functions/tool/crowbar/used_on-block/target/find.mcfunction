@@ -1,1 +1,0 @@
-execute at @e[tag=ThisCrowbar] align xyz positioned ~0.5 ~ ~0.5 positioned ^ ^ ^-1 run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["ThisCrowbarTarget"],Particle:"block air",Radius:0.25f,WaitTime:2147483647}

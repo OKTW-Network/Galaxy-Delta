@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/overview/content_page_button/page_previous"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/hi_tech_crafting_table/overview/content_page_button/page_next"
+  }
+]

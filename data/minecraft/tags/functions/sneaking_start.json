@@ -1,0 +1,6 @@
+{
+    "values":[
+        "galaxy:block/elevator/interactive/handler-sneak",
+        "galaxy:weapon/gun/aim/handler-sneak"
+    ]
+}

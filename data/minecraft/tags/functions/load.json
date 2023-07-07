@@ -1,5 +1,5 @@
 {
-    "values":[
-        "global:load"
-    ]
+  "values": [
+    "galaxy:check_and_run-setup"
+  ]
 }

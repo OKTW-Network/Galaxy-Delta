@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:lapis_block"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:lapis_block"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:redstone_block"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:redstone_block"
+        ]
+      }
+    }
+  }
+]

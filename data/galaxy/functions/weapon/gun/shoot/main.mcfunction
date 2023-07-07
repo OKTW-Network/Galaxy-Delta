@@ -1,25 +1,43 @@
-execute if score @s reqGunFire matches 2 run scoreboard players add @s gunSwitch 1
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 2.. run scoreboard players set @s gunSwitch 0
+function galaxy:weapon/gun/shoot/get_data/main
 
-execute if score @s reqGunFire matches 1 run function galaxy:weapon/gun/get_data-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 run function galaxy:weapon/gun/get_data-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run function galaxy:weapon/gun/get_data-hand_off
+execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.coolingTimer.mainHand = @s galaxy.gun.coolingDelay.mainHand
+execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.coolingTimer.offHand = @s galaxy.gun.coolingDelay.offHand
 
-execute if score @s reqGunFire matches 1 if score @s MhGunAclrate matches -2147483648..2147483647 run function galaxy:weapon/gun/accelerate/level_up-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 if score @s MhGunAclrate matches -2147483648..2147483647 run function galaxy:weapon/gun/accelerate/level_up-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 if score @s FhGunAclrate matches -2147483648..2147483647 run function galaxy:weapon/gun/accelerate/level_up-hand_off
+scoreboard players operation #gun.shoot.interval galaxy = #gun.shoot.interval.mainHand galaxy
+execute if score @s galaxy.gun.requestShoot matches 100..101 if score #gun.shoot.interval.mainHand galaxy < #gun.shoot.interval.offHand galaxy run scoreboard players operation #gun.shoot.interval galaxy = #gun.shoot.interval.offHand galaxy
+scoreboard players set #1 temp 900
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation #gun.shoot.interval galaxy *= #1 temp
+execute if score @s galaxy.gun.requestShoot matches 100..101 run scoreboard players operation #gun.shoot.interval galaxy /= #1000 num
+execute store result score @s galaxy.gun.interval.offHand run scoreboard players operation @s galaxy.gun.interval.mainHand = #gun.shoot.interval galaxy
 
-execute if score @s reqGunFire matches 1 run scoreboard players operation @s gunDelay = @s MhGunDelay
-execute if score @s reqGunFire matches 2 if score @s MhGunDelay >= @s FhGunDelay run scoreboard players operation @s gunDelay = @s MhGunDelay
-execute if score @s reqGunFire matches 2 if score @s MhGunDelay < @s FhGunDelay run scoreboard players operation @s gunDelay = @s FhGunDelay
+execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.mainHand += #gun.shoot.heat galaxy
+execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation @s galaxy.gun.temperature.offHand += #gun.shoot.heat galaxy
 
-execute if score @s reqGunFire matches 1 run function galaxy:weapon/gun/temperature/heat-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 0 run function galaxy:weapon/gun/temperature/heat-hand_main
-execute if score @s reqGunFire matches 2 if score @s gunSwitch matches 1 run function galaxy:weapon/gun/temperature/heat-hand_off
+scoreboard players operation #1 temp = #gun.shoot.flexibility galaxy
+scoreboard players operation #1 temp -= #1000 num
+scoreboard players operation #1 temp *= #-1 num
+scoreboard players set #2 temp 600
+execute store result score #gun.shoot.unstableMove galaxy run scoreboard players operation #1 temp < #2 temp
 
-execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/bullet/summon
-execute if score @s reqGunFire matches 1.. at @s run function galaxy:weapon/gun/sound-shoot
+scoreboard players set #gun.shoot.accuracy galaxy 1000
+scoreboard players set #gun.shoot.unstable galaxy 0
+execute unless score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation #gun.shoot.unstable galaxy += @s galaxy.gun.unstableShot.mainHand
+execute if score @s galaxy.gun.requestShoot matches 101 run scoreboard players operation #gun.shoot.unstable galaxy += @s galaxy.gun.unstableShot.offHand
+execute if entity @s[tag=cu._status.moving] run scoreboard players operation #gun.shoot.unstable galaxy += #gun.shoot.unstableMove galaxy
+scoreboard players operation #gun.shoot.unstable galaxy < #1000 num
+execute if entity @s[tag=galaxy._status.gun.aiming] run scoreboard players operation #gun.shoot.unstable galaxy *= #75 num
+execute if entity @s[tag=galaxy._status.gun.aiming] run scoreboard players operation #gun.shoot.unstable galaxy /= #100 num
+scoreboard players operation #gun.shoot.accuracy galaxy -= #gun.shoot.unstable galaxy
 
-execute store result score #1 calcu_temp run scoreboard players get @s gunDelay
-scoreboard players operation #1 calcu_temp %= #4 num
-execute unless score #1 calcu_temp matches 0 run scoreboard players add @s gunSchedule 1
+execute unless score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/instability_level_up/main_hand
+execute if score @s galaxy.gun.requestShoot matches 101 run function galaxy:weapon/gun/shoot/instability_level_up/off_hand
+
+scoreboard players operation #gun.bullet.summon.accuracy galaxy = #gun.shoot.accuracy galaxy
+
+scoreboard players set #gun.bullet.summon.totalBullet galaxy 1
+scoreboard players operation #gun.bullet.summon.totalBullet galaxy += #gun.shoot.extraBullet galaxy
+scoreboard players operation #gun.bullet.summon.remainingBullet galaxy = #gun.bullet.summon.totalBullet galaxy
+
+execute at @s run function galaxy:weapon/gun/bullet/summon/main
+
+execute at @s run function galaxy:weapon/gun/sound/shoot/main

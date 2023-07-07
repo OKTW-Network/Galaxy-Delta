@@ -1,13 +1,12 @@
-scoreboard objectives add Meta dummy
-scoreboard objectives add Config dummy
+scoreboard objectives add galaxy.meta.version.x dummy
+scoreboard objectives add galaxy.meta.version.y dummy
+scoreboard objectives add galaxy.meta.version.z dummy
 
-scoreboard objectives add VersionGalaxyX dummy
-scoreboard objectives add VersionGalaxyY dummy
-scoreboard objectives add VersionGalaxyZ dummy
-scoreboard objectives add VersionGalaxyA dummy
+scoreboard objectives add galaxy dummy "@galaxy"
 
-scoreboard objectives add Debug dummy
+scoreboard objectives add galaxy._success dummy "@galaxy success count return"
 
-scoreboard objectives add useItemFrame minecraft.used:minecraft.item_frame "num-Item Frame Used"
-
-scoreboard objectives add sucHitboxCheck dummy "num-Hitbox check success count"
+scoreboard objectives add galaxy.data.UUID0 dummy "@galaxy data UUID[0]"
+scoreboard objectives add galaxy.data.UUID1 dummy "@galaxy data UUID[1]"
+scoreboard objectives add galaxy.data.UUID2 dummy "@galaxy data UUID[2]"
+scoreboard objectives add galaxy.data.UUID3 dummy "@galaxy data UUID[3]"

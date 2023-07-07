@@ -1,0 +1,12 @@
+{
+  "values": [
+    "galaxy:meta/scoreboard/register",
+    "galaxy:gui/meta/scoreboard/register",
+    "galaxy:effect/meta/scoreboard/register",
+    "galaxy:block/meta/scoreboard/register",
+    "galaxy:entity/meta/scoreboard/register",
+    "galaxy:tool/meta/scoreboard/register",
+    "galaxy:book/meta/scoreboard/register",
+    "galaxy:weapon/meta/scoreboard/register"
+  ]
+}

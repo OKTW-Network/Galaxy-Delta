@@ -1,0 +1,2 @@
+function galaxy:entity/place/handler-use_place_entity_trigger_on_block
+advancement revoke @s only galaxy:trigger/use_place_entity_trigger_on_block

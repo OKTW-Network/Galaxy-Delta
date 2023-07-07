@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[{Slot:12b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"piece.progress_bar_2x1\"}}}}]}"
+    }
+  }
+}

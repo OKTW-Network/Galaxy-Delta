@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/posture/any-non_action"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:weapon/katana/posture/any-action"
+    }
+  ]
+}

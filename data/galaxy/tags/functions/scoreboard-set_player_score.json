@@ -1,0 +1,6 @@
+{
+  "values": [
+    "galaxy:book/meta/scoreboard/set_player_score",
+    "galaxy:weapon/meta/scoreboard/set_player_score"
+  ]
+}

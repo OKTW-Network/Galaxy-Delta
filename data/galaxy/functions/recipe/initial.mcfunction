@@ -1,6 +1,2 @@
-function galaxy:recipe/meta/scoreboard/register
-
-function galaxy:recipe/hi-tech_crafting_table/build
-function galaxy:recipe/super_assembler/build
-
-execute if score #galaxy_print_init Config matches 1 run tellraw @a ["",{"text":"[Galaxy]: ","color":"yellow","bold":true},{"text":"Recipe: "},{"text":"Initialize complete!"}]
+function galaxy:recipe/hi_tech_crafting_table/build/main
+function galaxy:recipe/assembly_table/build/main

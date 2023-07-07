@@ -1,0 +1,48 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "galaxy.block.hi_tech_crafting_table.requirementPageSlotMax": {
+            "min": 10
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:alternative",
+        "terms": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "galaxy.block.hi_tech_crafting_table.requirementPageSlotMax": {
+                  "min": 10
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": "{Items:[{Slot:10b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.requirement_icon\",gui:{Slot:10b}}}}}]}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

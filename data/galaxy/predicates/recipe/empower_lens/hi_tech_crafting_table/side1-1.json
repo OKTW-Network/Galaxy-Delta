@@ -1,0 +1,37 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:iron_block"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:iron_block"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "galaxy:recipe/empower_lens/hi_tech_crafting_table/side2-3"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "galaxy:recipe/empower_lens/hi_tech_crafting_table/side2-4"
+      }
+    ]
+  }
+]

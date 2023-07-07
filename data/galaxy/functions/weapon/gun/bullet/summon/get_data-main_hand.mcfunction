@@ -1,0 +1,7 @@
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.damage run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.damage
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.maxFlightDistance store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.remainFlightDistance run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.distance 4
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.velocity run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.velocity
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.penetrate run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.penetrate
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.trace run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.trace
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.bounce run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.bounce
+execute store result score @e[tag=galaxy.projectile.bullet,tag=galaxy._preparing,limit=1] galaxy.projectile.color run data get entity @s SelectedItem.tag.CustomData.galaxy.tag.projectile.color.numericID

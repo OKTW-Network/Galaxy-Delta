@@ -1,0 +1,9 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:recipe/assembly_table/blueprint/is-galaxy.gun"
+    }
+  ]
+}

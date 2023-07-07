@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "items": ["minecraft:item_frame"],
+                "nbt": "{CustomData:{galaxy:{id:\"crowbar\"}}}"
+            }
+        }
+    },
+    "entity":"this"
+}

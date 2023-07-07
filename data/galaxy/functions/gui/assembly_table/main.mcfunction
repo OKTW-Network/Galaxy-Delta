@@ -1,21 +1,15 @@
-# GUI cover
-execute unless entity @s[tag=setCover] run function galaxy:gui/assembly_table/check-cover
-execute if entity @s[tag=setCover] run function galaxy:gui/remove-gui_item
-execute if entity @s[tag=setCover] run function galaxy:gui/assembly_table/drop_displace-cover
-execute if entity @s[tag=setCover] run function galaxy:gui/assembly_table/build-cover
-tag @s[tag=setCover] remove setCover
+execute if entity @s[tag=galaxy._task.gui.refresh] run function galaxy:block/inventory/remove_gui_type
+execute if entity @s[tag=galaxy._task.gui.refresh] run tag @s add galaxy._task.gui.cleanupGuiItem
+execute if entity @s[tag=galaxy._task.gui.refresh] run tag @s add galaxy._task.gui.buildCover
 
-# Drop unallowed
-function galaxy:gui/assembly_table/check-unallowed
-execute if entity @s[tag=dropUnallowed] run function galaxy:gui/assembly_table/drop-unallowed
-tag @s[tag=dropUnallowed] remove dropUnallowed
+execute unless data entity @s data.galaxy.assembly_table.blueprint run function galaxy:gui/assembly_table/interface/home/main
+execute if data entity @s data.galaxy.assembly_table.blueprint run function galaxy:gui/assembly_table/interface/blueprint/main
 
-# Type unallowed
-function galaxy:gui/assembly_table/check-fortype
-execute if entity @s[tag=dropFortype] run function galaxy:gui/assembly_table/drop-fortype
-tag @s[tag=dropFortype] remove dropFortype
+execute if entity @s[tag=galaxy._task.gui.buildCover] run data modify block ~ ~ ~ Items append from entity @s data.galaxy.gui.cover[]
+tag @s[tag=galaxy._task.gui.buildCover] remove galaxy._task.gui.buildCover
 
-# Assemble
-execute if entity @s[tag=!lockAssemble] run function galaxy:gui/assembly_table/assemble-build
-execute if entity @s[tag=lockAssemble] run function galaxy:gui/assembly_table/assemble-destruct
-execute if entity @s[tag=lockAssemble] run function galaxy:gui/assembly_table/assemble-update
+execute if entity @s[tag=galaxy._task.gui.cleanupGuiItem] run function galaxy:gui/cleanup_gui_item
+tag @s[tag=galaxy._task.gui.cleanupGuiItem] remove galaxy._task.gui.cleanupGuiItem
+
+tag @s[tag=galaxy._task.gui.buildPlaceholder] remove galaxy._task.gui.buildPlaceholder
+tag @s[tag=galaxy._task.gui.refresh] remove galaxy._task.gui.refresh

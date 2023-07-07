@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:201000,HideFlags:127}"
+        },
+        "title": {"translate":"advancements.weaponry.gun.title"},
+        "description": {"translate":"advancements.weaponry.gun.description"},
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "galaxy:weaponry/root",
+    "criteria": {
+        "gun": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
