@@ -1,1 +1,1 @@
-data modify storage galaxy:get customAttribute prepend value {}
+data modify storage galaxy:get customAttribute append value {}
