@@ -1,6 +1,6 @@
 tag @s add galaxy._tag.ThisPerformKatanaSkill
 
-data modify storage galaxy:temp +weapon.katana.action.skill set from entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.skill
+data modify storage galaxy:temp +weapon.katana.action.skill set from entity @s SelectedItem.tag.CustomData.galaxy.tag.skill
 execute store result score #weapon.katana.action.skill.cooldown galaxy run data get storage galaxy:temp +weapon.katana.action.skill.cooldown
 
 execute if data storage galaxy:temp +weapon.katana.action.skill{id:"galaxy.stun"} run function galaxy:weapon/katana/action/skill/stun/main

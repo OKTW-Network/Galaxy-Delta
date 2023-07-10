@@ -1,6 +1,6 @@
 tag @s add galaxy._tag.ThisPerformKatanaDrawStrike
 
-data modify storage galaxy:temp +weapon.katana.action.drawStrike set from entity @s Inventory[{Slot:-106b}].tag.CustomData.galaxy.tag.draw_strike
+data modify storage galaxy:temp +weapon.katana.action.drawStrike set from entity @s SelectedItem.tag.CustomData.galaxy.tag.draw_strike
 execute store result score #weapon.katana.action.drawStrikeCooldown galaxy run data get storage galaxy:temp +weapon.katana.action.drawStrike.cooldown
 
 execute if data storage galaxy:temp +weapon.katana.action.drawStrike{id:"galaxy.flash"} run function galaxy:weapon/katana/action/draw_strike/flash/main
