@@ -8,7 +8,7 @@ execute if entity @s[tag=galaxy._task.katana.drawReady] run function galaxy:weap
 execute if entity @s[tag=galaxy._task.katana.draw] run function galaxy:weapon/katana/action/draw/main
 execute if entity @s[tag=galaxy._task.katana.drawStrike] run function galaxy:weapon/katana/action/draw_strike/main
 execute if entity @s[tag=galaxy._task.katana.skill] run function galaxy:weapon/katana/action/skill/main
-execute if entity @s[tag=galaxy._task.katana.store] run function galaxy:weapon/katana/action/store
+execute if entity @s[tag=galaxy._task.katana.store] run function galaxy:weapon/katana/action/store/main
 
 tag @s[tag=galaxy._task.katana.drawReady] remove galaxy._task.katana.drawReady
 tag @s[tag=galaxy._task.katana.draw] remove galaxy._task.katana.draw
