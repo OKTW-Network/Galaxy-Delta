@@ -32,4 +32,3 @@ data modify storage galaxy:temp +recipe.assembly_table.assemble.result.tag.Custo
 data modify storage galaxy:temp +recipe.assembly_table.assemble.result.tag.CustomData.galaxy.tag.assemblyInfo.blueprintID set value "galaxy.gun"
 
 data remove storage galaxy:temp +recipe.assembly_table.assemble._customAttribute
-data remove storage galaxy:temp +recipe.assembly_table.assemble._lore
