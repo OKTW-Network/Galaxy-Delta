@@ -29,6 +29,7 @@ data modify storage galaxy:temp +recipe.assembly_table.assemble.result.tag.displ
 function cu:uuid/generate
 data modify storage galaxy:temp +recipe.assembly_table.assemble.result.tag.CustomData.galaxy.tag.assemblyInfo.UUID set from storage cu:uuid generate.result
 data modify storage galaxy:temp +recipe.assembly_table.assemble.result.tag.CustomData.galaxy.tag.assemblyInfo.parts set from entity @s data.galaxy.assembly_table.parts
+data modify storage galaxy:temp +recipe.assembly_table.assemble.result.tag.CustomData.galaxy.tag.assemblyInfo.blueprintID set value "galaxy.gun"
 
 data remove storage galaxy:temp +recipe.assembly_table.assemble._customAttribute
 data remove storage galaxy:temp +recipe.assembly_table.assemble._lore
