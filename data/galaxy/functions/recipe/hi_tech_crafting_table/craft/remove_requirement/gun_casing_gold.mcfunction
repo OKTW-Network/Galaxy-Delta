@@ -1,1 +1,1 @@
-clear @s minecraft:gold_ingot 6
+clear @s minecraft:gold_ingot 4

@@ -1,1 +1,1 @@
-clear @s minecraft:iron_ingot 6
+clear @s minecraft:iron_ingot 4

@@ -7,4 +7,4 @@ data modify storage galaxy:recipe hi_tech_crafting_table.recipe[-1].icon set fro
 data modify storage galaxy:get item set value []
 function galaxy:material/get/steel_ingot
 data modify storage galaxy:recipe hi_tech_crafting_table.recipe[-1].requirement append from storage galaxy:get item[0]
-data modify storage galaxy:recipe hi_tech_crafting_table.recipe[-1].requirement[-1] merge value {Count:6b}
+data modify storage galaxy:recipe hi_tech_crafting_table.recipe[-1].requirement[-1] merge value {Count:4b}

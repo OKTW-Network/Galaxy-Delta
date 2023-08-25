@@ -1,1 +1,1 @@
-clear @s minecraft:netherite_ingot 6
+clear @s minecraft:netherite_ingot 4
