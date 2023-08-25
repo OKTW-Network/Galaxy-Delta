@@ -2,6 +2,5 @@ data modify storage galaxy:get itemTag append value {display:{Name:'{"translate"
 data modify storage galaxy:temp +component.build_lore.input set from storage galaxy:get itemTag[0].CustomData.galaxy.tag.component.Alteration
 data modify storage galaxy:temp +component.build_lore.target set from storage galaxy:temp +component.get.tag.alterationTarget
 data remove storage galaxy:temp +component.get.tag.alterationTarget
-scoreboard players set #weapon.gun.lore.isComponent galaxy 1
 function galaxy:component/build_lore/main
 data modify storage galaxy:get itemTag[0].display.Lore append from storage galaxy:temp +component.build_lore.result[]
