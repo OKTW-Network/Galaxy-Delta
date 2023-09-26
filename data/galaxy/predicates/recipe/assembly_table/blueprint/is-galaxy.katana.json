@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "nbt": "{data:{galaxy:{assembly_table:{blueprint:{id:\"galaxy.katana\"}}}}}"
+  },
+  "entity":"this"
+}

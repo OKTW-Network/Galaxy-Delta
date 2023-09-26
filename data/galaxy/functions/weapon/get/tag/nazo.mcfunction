@@ -7,6 +7,6 @@ data modify storage galaxy:get customAttribute set value []
 function galaxy:weapon/get/custom_attribute/nazo
 data modify storage galaxy:get itemTag[0].CustomData.galaxy.tag merge from storage galaxy:get customAttribute[0]
 data modify storage galaxy:temp +weapon.katana.lore.input set from storage galaxy:get customAttribute[0]
-scoreboard players set #weapon.katana.lore.class galaxy 0
+scoreboard players set #weapon.katana.lore.itemType galaxy 0
 function galaxy:weapon/katana/lore/main
 data modify storage galaxy:get itemTag[0].display.Lore set from storage galaxy:temp +weapon.katana.lore.result

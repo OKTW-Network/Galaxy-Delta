@@ -1,6 +1,6 @@
 function galaxy:weapon/katana/action/skill/stun/tag_victim
 
-execute store result score #effect.stun.set.duration galaxy run data get storage galaxy:temp +weapon.katana.action.skill.effect_duration
+scoreboard players operation #effect.stun.set.duration galaxy = #weapon.katana.action.skill.effect_strength galaxy
 execute as @e[tag=galaxy._tag.TheseKatanaActionVictim] run function galaxy:effect/stun/set
 
 execute if entity @e[tag=galaxy._tag.TheseKatanaActionVictim] run function galaxy:weapon/katana/sound/skill/stun/hit

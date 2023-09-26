@@ -10,7 +10,7 @@ function galaxy:recipe/hi_tech_crafting_table/recipe/elevator
 function galaxy:recipe/hi_tech_crafting_table/recipe/katana_display_stand_1
 function galaxy:recipe/hi_tech_crafting_table/recipe/katana_display_stand_2
 function galaxy:recipe/hi_tech_crafting_table/recipe/katana_display_stand_3
-function galaxy:recipe/hi_tech_crafting_table/recipe/steel_katana
+# function galaxy:recipe/hi_tech_crafting_table/recipe/steel_katana
 
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_casing_gold
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_casing_iron
@@ -45,6 +45,11 @@ function galaxy:recipe/hi_tech_crafting_table/recipe/color_lens_magenta
 function galaxy:recipe/hi_tech_crafting_table/recipe/color_lens_pink
 function galaxy:recipe/hi_tech_crafting_table/recipe/color_lens_white
 function galaxy:recipe/hi_tech_crafting_table/recipe/color_lens_rainbow
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_blade_wood
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_blade_steel
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_scabbard
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_skill_stun
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_draw_strike_flash
 
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_component/gun_casing_gold
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_component/gun_casing_iron
@@ -79,5 +84,13 @@ function galaxy:recipe/hi_tech_crafting_table/recipe/gun_component/color_lens_ma
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_component/color_lens_pink
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_component/color_lens_white
 function galaxy:recipe/hi_tech_crafting_table/recipe/gun_component/color_lens_rainbow
+
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/katana_blade_wood
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/katana_blade_steel
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/katana_scabbard
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/handle_wood
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/handle_obsidian
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/katana_skill_stun
+function galaxy:recipe/hi_tech_crafting_table/recipe/katana_component/katana_draw_strike_flash
 
 function #galaxy:recipe/hi_tech_crafting_table/build_recipe

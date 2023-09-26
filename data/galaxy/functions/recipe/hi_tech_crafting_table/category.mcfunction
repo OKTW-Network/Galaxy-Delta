@@ -1,7 +1,7 @@
 data modify storage galaxy:recipe hi_tech_crafting_table.category append value {id:"galaxy:gun_component",name:'{"translate":"gui.galaxy.hi_tech_crafting_table.category.galaxy:gun_component","italic":false}',icon:{},content:[]}
 data modify storage galaxy:get item set value []
-function galaxy:weapon/get/_dummy_gun_pistol
-data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].icon set from storage galaxy:get item[0]
+function galaxy:weapon/get/_icon_gun_pistol
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].icon set from storage galaxy:get item[-1]
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:gun_component.gun_casing_gold"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:gun_component.gun_casing_iron"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:gun_component.gun_casing_steel"}]
@@ -35,5 +35,17 @@ data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content ap
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:gun_component.color_lens_pink"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:gun_component.color_lens_white"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:gun_component.color_lens_rainbow"}]
+
+data modify storage galaxy:recipe hi_tech_crafting_table.category append value {id:"galaxy:katana_component",name:'{"translate":"gui.galaxy.hi_tech_crafting_table.category.galaxy:katana_component","italic":false}',icon:{},content:[]}
+data modify storage galaxy:get item set value []
+function galaxy:weapon/get/_icon_katana_steel
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].icon set from storage galaxy:get item[-1]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_component.katana_blade_wood"}]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_component.katana_blade_steel"}]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_scabbard"}]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_component.handle_wood"}]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_component.handle_obsidian"}]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_component.katana_draw_strike_flash"}]
+data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].content append from storage galaxy:recipe hi_tech_crafting_table.recipe[{id:"galaxy:katana_component.katana_skill_stun"}]
 
 function #galaxy:recipe/hi_tech_crafting_table/build_category

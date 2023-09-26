@@ -4,6 +4,10 @@
     {
       "condition": "minecraft:reference",
       "name": "galaxy:recipe/assembly_table/blueprint/is-galaxy.gun"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "galaxy:recipe/assembly_table/blueprint/is-galaxy.katana"
     }
   ]
 }

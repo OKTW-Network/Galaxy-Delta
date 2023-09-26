@@ -25,9 +25,6 @@ function galaxy:block/get/elevator
 data modify storage galaxy:recipe hi_tech_crafting_table.category[-1].icon set from storage galaxy:get item[0]
 function galaxy:recipe/hi_tech_crafting_table/category_content/interactive_block
 
-# data modify storage galaxy:recipe hi_tech_crafting_table.category append value {id:"ingredient",icon:{},content:[]}
-# function galaxy:recipe/hi_tech_crafting_table/category_content/ingredient
-
 data modify storage galaxy:recipe hi_tech_crafting_table.category append value {id:"weapon",name:'{"translate":"gui.galaxy.hi_tech_crafting_table.category.weapon","italic":false}',icon:{},content:[]}
 data modify storage galaxy:get item set value []
 function galaxy:weapon/get/plasum
@@ -45,7 +42,6 @@ data modify storage galaxy:recipe hi_tech_crafting_table.overview append value {
 data modify storage galaxy:recipe hi_tech_crafting_table.overview[-1].category append from storage galaxy:recipe hi_tech_crafting_table.category[{id:"tool"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.overview[-1].category append from storage galaxy:recipe hi_tech_crafting_table.category[{id:"functional_block"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.overview[-1].category append from storage galaxy:recipe hi_tech_crafting_table.category[{id:"interactive_block"}]
-# data modify storage galaxy:recipe hi_tech_crafting_table.overview[-1].category append from storage galaxy:recipe hi_tech_crafting_table.category[{id:"ingredient"}]
 data modify storage galaxy:recipe hi_tech_crafting_table.overview[-1].category append from storage galaxy:recipe hi_tech_crafting_table.category[{id:"weapon"}]
 
 function galaxy:recipe/hi_tech_crafting_table/overview

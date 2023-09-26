@@ -12,7 +12,7 @@ execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_display_stand_1"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_display_stand_1
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_display_stand_2"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_display_stand_2
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_display_stand_3"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_display_stand_3
-execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:steel_katana"} run function galaxy:recipe/hi_tech_crafting_table/craft/steel_katana
+# execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:steel_katana"} run function galaxy:recipe/hi_tech_crafting_table/craft/steel_katana
 
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_casing_gold"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_casing_gold
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_casing_iron"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_casing_iron
@@ -47,6 +47,11 @@ execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_pink"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_pink
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_white"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_white
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:color_lens_rainbow"} run function galaxy:recipe/hi_tech_crafting_table/craft/color_lens_rainbow
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_blade_wood"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_blade_wood
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_blade_steel"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_blade_steel
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_scabbard"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_scabbard
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_draw_strike_flash"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_draw_strike_flash
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_skill_stun"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_skill_stun
 
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_component.gun_casing_gold"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_component/gun_casing_gold
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_component.gun_casing_iron"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_component/gun_casing_iron
@@ -81,5 +86,13 @@ execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_component.color_lens_pink"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_component/color_lens_pink
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_component.color_lens_white"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_component/color_lens_white
 execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:gun_component.color_lens_rainbow"} run function galaxy:recipe/hi_tech_crafting_table/craft/gun_component/color_lens_rainbow
+
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.katana_blade_wood"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/katana_blade_wood
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.katana_blade_steel"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/katana_blade_steel
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.katana_scabbard"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/katana_scabbard
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.handle_wood"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/handle_wood
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.handle_obsidian"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/handle_obsidian
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.katana_draw_strike_flash"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/katana_draw_strike_flash
+execute if data storage galaxy:temp +recipe.hi_tech_crafting_table.craft{recipe:"galaxy:katana_component.katana_skill_stun"} run function galaxy:recipe/hi_tech_crafting_table/craft/katana_component/katana_skill_stun
 
 execute if score #recipe.craftingStatus galaxy matches 0 run function #galaxy:recipe/hi_tech_crafting_table/craft

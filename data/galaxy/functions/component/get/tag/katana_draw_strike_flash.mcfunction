@@ -1,0 +1,6 @@
+data modify storage galaxy:get itemTag append value {display:{Name:'{"translate":"item.galaxy.katana_draw_strike.flash","italic":false}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Slot:"mainhand",Name:"generic.attackDamage",Amount:-1,Operation:2,UUID:[I;0,670247,0,1710]},{AttributeName:"generic.attack_speed",Name:"generic.attackSpeed",Amount:0,Operation:0,UUID:[I;0,587794,0,746340]}],HideFlags:127,RepairCost:-2147483648,Unbreakable:1b,CustomModelData:113000,CustomData:{galaxy:{Type:"item",id:"component_katana_draw_strike_flash",tag:{component:{Type:"katana_draw_strike",Alteration:{galaxy.katana:{draw_strike:{id:"galaxy.flash",name:'{"translate":"item.galaxy.katana_draw_strike.flash.name"}',damage_modifier:35,cooldown_value:80,effect_strength_value:5}}}}}}}}
+data modify storage galaxy:temp +component.build_lore.input set from storage galaxy:get itemTag[0].CustomData.galaxy.tag.component.Alteration
+data modify storage galaxy:temp +component.build_lore.target set from storage galaxy:temp +component.get.tag.alterationTarget
+data remove storage galaxy:temp +component.get.tag.alterationTarget
+function galaxy:component/build_lore/main
+data modify storage galaxy:get itemTag[0].display.Lore append from storage galaxy:temp +component.build_lore.result[]

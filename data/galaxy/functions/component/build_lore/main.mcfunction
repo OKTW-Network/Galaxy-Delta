@@ -2,6 +2,7 @@ data remove storage galaxy:temp +component.build_lore.result
 scoreboard players set #build_lore.isComponent galaxy 1
 
 execute if data storage galaxy:temp +component.build_lore.input."galaxy.gun" run function galaxy:component/gun/build_lore/main
+execute if data storage galaxy:temp +component.build_lore.input."galaxy.katana" run function galaxy:component/katana/build_lore/main
 
 function #galaxy:component/build_lore
 execute if data storage galaxy:temp +component.build_lore.result.suitable[0] run function galaxy:component/build_lore/suitable/main

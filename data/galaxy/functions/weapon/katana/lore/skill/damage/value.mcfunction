@@ -1,0 +1,6 @@
+execute store result score #1 temp store result score #weapon.katana.lore._skillDamageInt galaxy store result score #weapon.katana.lore._skillDamageDec galaxy run data get storage galaxy:temp +weapon.katana.lore.input.skill.damage
+execute if score #weapon.katana.lore._buildSkillDamage galaxy matches 1 store result score #weapon.katana.lore._skillDamageInt galaxy store result score #weapon.katana.lore._skillDamageDec galaxy run scoreboard players add #1 temp 100
+scoreboard players operation #weapon.katana.lore._skillDamageInt galaxy /= #100 num
+scoreboard players operation #weapon.katana.lore._skillDamageDec galaxy %= #100 num
+execute if score #weapon.katana.lore._buildSkillDamage galaxy matches 1 run data modify storage galaxy:temp +weapon.katana.lore._finalValue set value '{"translate":"%s.%s","with":[{"score":{"name":"#weapon.katana.lore._skillDamageInt","objective":"galaxy"}},{"score":{"name":"#weapon.katana.lore._skillDamageDec","objective":"galaxy"}}],"color":"dark_green"}'
+execute if score #weapon.katana.lore._buildSkillDamage galaxy matches 2 run data modify storage galaxy:temp +weapon.katana.lore._finalValue set value '{"translate":"+%s.%s","with":[{"score":{"name":"#weapon.katana.lore._skillDamageInt","objective":"galaxy"}},{"score":{"name":"#weapon.katana.lore._skillDamageDec","objective":"galaxy"}}],"color":"dark_green"}'
