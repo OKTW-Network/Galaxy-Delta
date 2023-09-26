@@ -1,1 +1,0 @@
-data modify storage galaxy:get customAttribute append value {draw_strike:{id:"galaxy.flash",name:'{"translate":"item.galaxy.katana_draw_strike.flash.name"}',cooldown:80,damage:12,range:8},skill:{id:"galaxy.stun",name:'{"translate":"item.galaxy.katana_skill.stun.name"}',cooldown:12,damage:2,effect_duration:10}}

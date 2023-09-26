@@ -1,1 +1,0 @@
-data modify storage galaxy:get attributeModifier append value [{AttributeName:"generic.attack_damage",Name:"generic.attackDamage",Amount:7d,Operation:0,UUID:[I;0,670247,0,1710],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attackSpeed",Amount:-2d,Operation:0,UUID:[I;0,587794,0,746340],Slot:"mainhand"}]
