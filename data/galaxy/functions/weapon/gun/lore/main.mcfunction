@@ -3,7 +3,7 @@ function galaxy:weapon/gun/lore/_inspect
 function galaxy:weapon/gun/lore/_normalize_value
 
 data modify storage galaxy:temp +weapon.gun.lore.result append value '{"text":""}'
-execute unless score #build_lore.isComponent galaxy matches 1 run data modify storage galaxy:temp +weapon.gun.lore.result append value '{"translate":"%s","with":[{"translate":"text.express.relate","with":[{"translate":"item.galaxy.gun"},""],"color":"gray","italic":false}]}'
+execute unless score #build_lore.isComponent galaxy matches 1 run data modify storage galaxy:temp +weapon.gun.lore.result append value '{"translate":"text.express.relate","with":[{"translate":"item.galaxy.gun"},""],"color":"gray","italic":false}'
 execute if score #build_lore.isComponent galaxy matches 1 run data modify storage galaxy:temp +weapon.gun.lore.result append value '{"translate":"component.alterations.galaxy.gun","color":"gray","italic":false}'
 
 # generic
