@@ -12,7 +12,7 @@
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
         "item": {
-          "items": ["minecraft:item_frame"],
+          "items": ["minecraft:glow_item_frame"],
           "nbt": "{CustomData:{galaxy:{trigger:\"use_wrench\"}}}"
         }
       }

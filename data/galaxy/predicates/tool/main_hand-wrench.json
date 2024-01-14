@@ -3,7 +3,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "items": ["minecraft:item_frame"],
+                "items": ["minecraft:glow_item_frame"],
                 "nbt": "{CustomData:{galaxy:{id:\"wrench\"}}}"
             }
         }
