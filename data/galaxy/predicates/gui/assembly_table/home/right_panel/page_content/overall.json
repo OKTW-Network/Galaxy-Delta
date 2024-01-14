@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_content/slot_1"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_content/slot_2"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_content/slot_3"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_content/slot_4"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_content/slot_5"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_content/slot_6"
+  }
+]

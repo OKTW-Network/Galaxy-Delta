@@ -13,7 +13,9 @@ execute at @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] run setblock ~ ~ 
 
 scoreboard players set @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] galaxy.block.assembly_table.resultSlotStatus 0
 scoreboard players set @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] galaxy.block.assembly_table.blueprintPageNumber 1
-execute as @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] at @s run function galaxy:block/assembly_table/functional/switch_to_home
+scoreboard players set @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] galaxy.block.assembly_table.alterationPageNumber 1
+scoreboard players set #block.assembly_table.modeSwitch galaxy 0
+execute as @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] at @s run function galaxy:block/assembly_table/functional/mode_switch/main
 execute as @e[tag=galaxy.block,tag=galaxy._tag.set_block.init] at @s run function galaxy:gui/assembly_table/main
 
 tag @e[tag=galaxy._tag.set_block.init] remove galaxy._tag.set_block.init

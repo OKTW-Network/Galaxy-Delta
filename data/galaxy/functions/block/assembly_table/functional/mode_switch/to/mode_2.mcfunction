@@ -1,0 +1,1 @@
+function galaxy:block/assembly_table/functional/alteration_page/refresh

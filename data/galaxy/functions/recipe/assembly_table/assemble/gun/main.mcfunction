@@ -1,4 +1,4 @@
-data modify storage galaxy:temp +recipe.assembly_table.assemble._customAttribute.type set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"gun_barrel"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration."galaxy.gun".type
+data modify storage galaxy:temp +recipe.assembly_table.assemble._customAttribute.type set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"gun_barrel"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration[{id:"galaxy.gun"}].value.type
 function galaxy:recipe/assembly_table/assemble/gun/interval
 function galaxy:recipe/assembly_table/assemble/gun/temperature_min
 function galaxy:recipe/assembly_table/assemble/gun/temperature_max
@@ -14,8 +14,8 @@ function galaxy:recipe/assembly_table/assemble/gun/aim_zoom
 function galaxy:recipe/assembly_table/assemble/gun/projectile_penetrate
 function galaxy:recipe/assembly_table/assemble/gun/projectile_bounce
 function galaxy:recipe/assembly_table/assemble/gun/projectile_trace
-data modify storage galaxy:temp +recipe.assembly_table.assemble._customAttribute.cosmetic set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"cosmetic"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration."galaxy.gun".cosmetic
-data modify storage galaxy:temp +recipe.assembly_table.assemble._customAttribute.projectile.color set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"color_lens"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration."galaxy.gun".projectile.color
+data modify storage galaxy:temp +recipe.assembly_table.assemble._customAttribute.cosmetic set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"cosmetic"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration[{id:"galaxy.gun"}].value.cosmetic
+data modify storage galaxy:temp +recipe.assembly_table.assemble._customAttribute.projectile.color set from entity @s data.galaxy.assembly_table.parts[{tag:{CustomData:{galaxy:{tag:{component:{Type:"color_lens"}}}}}}].tag.CustomData.galaxy.tag.component.Alteration[{id:"galaxy.gun"}].value.projectile.color
 
 data modify storage galaxy:get item set value []
 execute if data storage galaxy:temp +recipe.assembly_table.assemble._customAttribute{type:1b} run function galaxy:weapon/get/_dummy_gun_pistol

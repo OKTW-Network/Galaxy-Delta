@@ -7,8 +7,8 @@
         "condition": "minecraft:entity_scores",
         "entity": "this",
         "scores": {
-          "galaxy.block.assembly_table.blueprintPageSlotMax": {
-            "min": 3
+          "galaxy.block.assembly_table.rightPanelPageContentMax": {
+            "min": 2
           }
         }
       }
@@ -24,8 +24,8 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "galaxy.block.assembly_table.blueprintPageSlotMax": {
-                  "min": 3
+                "galaxy.block.assembly_table.rightPanelPageContentMax": {
+                  "min": 2
                 }
               }
             }
@@ -36,7 +36,7 @@
               "condition": "minecraft:location_check",
               "predicate": {
                 "block": {
-                  "nbt": "{Items:[{Slot:8b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.blueprint_icon\",gui:{Slot:8b}}}}}]}"
+                  "nbt": "{Items:[{Slot:7b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.right_panel.page_content\",gui:{Slot:7b}}}}}]}"
                 }
               }
             }

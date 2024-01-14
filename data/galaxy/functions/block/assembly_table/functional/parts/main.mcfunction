@@ -2,7 +2,6 @@ function galaxy:recipe/assembly_table/delete_result_data
 
 item replace block ~ ~ ~ container.13 with minecraft:air
 function galaxy:block/assembly_table/functional/data/delete-result
-scoreboard players set @s galaxy.block.assembly_table.resultSlotStatus 0
 
 function galaxy:block/assembly_table/functional/data/save-parts
 execute store result score #block.assembly_table._requiredRemain galaxy if data entity @s data.galaxy.assembly_table.partSlotComplete[{tag:{CustomData:{galaxy:{tag:{assemblyPartSlotRequired:1b}}}}}]

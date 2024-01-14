@@ -15,10 +15,10 @@ scoreboard players operation #3 temp *= #4 temp
 scoreboard players operation #1 temp += #2 temp
 scoreboard players operation #1 temp += #3 temp
 execute store result storage galaxy:recipe assembly_table.blueprint[-1].icon.Slot byte 1 store result storage galaxy:recipe assembly_table.blueprint[-1].icon.tag.CustomData.galaxy.gui.Slot byte 1 run scoreboard players get #1 temp
-data modify storage galaxy:recipe assembly_table.blueprint[-1].icon.tag merge value {HideFlags:127,CustomData:{galaxy:{Type:"gui",id:"assembly_table.home.blueprint_icon"}}}
+data modify storage galaxy:recipe assembly_table.blueprint[-1].icon.tag merge value {HideFlags:127,CustomData:{galaxy:{Type:"gui",id:"assembly_table.home.right_panel.page_content"}}}
 data modify storage galaxy:recipe assembly_table.blueprint[-1].icon.tag.display.Name set from storage galaxy:temp +recipe.assembly_table.build.standardization.blueprint[0].name
 
-data modify storage galaxy:temp +recipe.assembly_table.build.standardization.blueprint[0].parts[] merge value {Count:1b,tag:{CustomData:{galaxy:{Type:"gui",id:"assembly_table.parts_placeholder"}}}}
+data modify storage galaxy:temp +recipe.assembly_table.build.standardization.blueprint[0].parts[] merge value {Count:1b,tag:{CustomData:{galaxy:{Type:"gui",id:"assembly_table.parts_placeholder",group:["assembly_table._slot_placeholder"]}}}}
 function galaxy:recipe/assembly_table/build/standardization/blueprint/parts
 
 # cover

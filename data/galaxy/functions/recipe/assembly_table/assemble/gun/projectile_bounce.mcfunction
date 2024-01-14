@@ -1,7 +1,7 @@
-data modify storage math:io addition.input append from entity @s data.galaxy.assembly_table.parts[].tag.CustomData.galaxy.tag.component.Alteration."galaxy.gun".projectile.bounce_value
+data modify storage math:io addition.input append from entity @s data.galaxy.assembly_table.parts[].tag.CustomData.galaxy.tag.component.Alteration[{id:"galaxy.gun"}].value.projectile.bounce_value
 function math:addition/main
 scoreboard players operation #recipe.assembly_table.resultCustomAttributeValue galaxy = #addition.result math
-data modify storage math:io addition.input append from entity @s data.galaxy.assembly_table.parts[].tag.CustomData.galaxy.tag.component.Alteration."galaxy.gun".projectile.bounce_modifier
+data modify storage math:io addition.input append from entity @s data.galaxy.assembly_table.parts[].tag.CustomData.galaxy.tag.component.Alteration[{id:"galaxy.gun"}].value.projectile.bounce_modifier
 function math:addition/main
 scoreboard players set #percent.modifier math 100
 scoreboard players operation #percent.modifier math += #addition.result math

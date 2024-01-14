@@ -9,3 +9,5 @@ data modify storage cu:item simulate_container.input[0].value set from entity @s
 data modify storage cu:item simulate_container.input[0].value append from storage galaxy:recipe assembly_table.gui._piece[{tag:{CustomData:{galaxy:{id:"assembly_table._piece.result_slot_placeholder"}}}}]
 function cu:item/simulate_container/main
 data modify entity @s data.galaxy.gui.placeholder set from storage cu:item simulate_container.result[0]
+
+data modify entity @s data.galaxy.gui.strict_slot set from entity @s data.galaxy.gui.cover

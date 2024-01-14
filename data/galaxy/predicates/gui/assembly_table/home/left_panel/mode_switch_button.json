@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "nbt": "{Items:[{Slot:0b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.1\"}}}},{Slot:1b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.2\"}}}},{Slot:2b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.3\"}}}},{Slot:9b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.4\"}}}},{Slot:10b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.5\"}}}},{Slot:11b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.6\"}}}},{Slot:18b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.7\"}}}},{Slot:19b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.8\"}}}},{Slot:20b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"assembly_table.home.left_panel.mode_switch_button.9\"}}}}]}"
+      }
+    }
+  }
+]

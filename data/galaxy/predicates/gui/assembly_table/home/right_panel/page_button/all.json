@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_button/page_previous"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "galaxy:gui/assembly_table/home/right_panel/page_button/page_next"
+  }
+]
