@@ -8,10 +8,10 @@ data modify storage galaxy:temp +component.get.tag.alterationTarget set value "g
 function galaxy:component/get/katana_scabbard
 data modify storage galaxy:get item[-1].Slot set from storage galaxy:recipe assembly_table.blueprint[{id:"galaxy.katana"}].parts[{galaxyAssembly:{acceptTypes:["katana_scabbard"]}}].Slot
 data modify storage galaxy:temp +weapon.katana.transform.result.katana.tag.CustomData.galaxy.tag.assemblyInfo.parts append from storage galaxy:get item[-1]
-scoreboard players set #1 temp 100010
-scoreboard players set #2 temp 1000
+scoreboard players set #1 temp 1000100
+scoreboard players set #2 temp 10000
 execute store result score #3 temp run data get storage galaxy:temp +weapon.katana.transform.input.tag.CustomModelData
-scoreboard players remove #3 temp 100000
+scoreboard players remove #3 temp 1000000
 scoreboard players operation #3 temp /= #1000 num
 scoreboard players operation #2 temp *= #3 temp
 execute store result storage galaxy:temp +weapon.katana.transform.result.katana.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #2 temp

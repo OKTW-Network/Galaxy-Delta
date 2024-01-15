@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:glow_item_frame",
-            "nbt": "{CustomModelData:105000,HideFlags:127}"
+            "nbt": "{CustomModelData:1050000,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.elevator.title"},
         "description": {"translate":"advancements.galaxy.elevator.description"}

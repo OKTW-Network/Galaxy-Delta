@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:gray_stained_glass_pane",
-            "nbt": "{CustomModelData:201011,HideFlags:127}"
+            "item": "minecraft:diamond_hoe",
+            "nbt": "{CustomModelData:1400080,HideFlags:127}"
         },
         "title": {"translate":"advancements.weaponry.gun_action_shoot.title"},
         "description": {"translate":"advancements.weaponry.gun_action_shoot.description"},

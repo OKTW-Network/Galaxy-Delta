@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:101001,HideFlags:127}"
+            "nbt": "{CustomModelData:1010001,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.katana.title"},
         "description": {"translate":"advancements.galaxy.katana.description"}

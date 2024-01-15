@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:glow_item_frame",
-            "nbt": "{CustomModelData:101000,HideFlags:127}"
+            "nbt": "{CustomModelData:1010000,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.hi_tech_crafting_table.title"},
         "description": {"translate":"advancements.galaxy.hi_tech_crafting_table.description"}

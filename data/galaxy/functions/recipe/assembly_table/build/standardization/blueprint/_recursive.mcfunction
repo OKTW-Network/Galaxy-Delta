@@ -27,7 +27,7 @@ data modify storage cu:item simulate_container.input[0].value set value [{Slot:3
 data modify storage cu:item simulate_container.input[1].value set from storage galaxy:recipe assembly_table.blueprint[-1].parts
 function cu:item/simulate_container/main
 data modify storage galaxy:recipe assembly_table.blueprint[-1].cover set from storage cu:item simulate_container.result[0]
-data modify storage galaxy:recipe assembly_table.blueprint[-1].cover[] merge value {id:"minecraft:white_stained_glass_pane",Count:1b,tag:{display:{Name:'{"text":""}'},CustomModelData:101001,CustomData:{galaxy:{Type:"gui",id:"blank_cover"}}}}
+data modify storage galaxy:recipe assembly_table.blueprint[-1].cover[] merge value {id:"minecraft:diamond_hoe",Count:1b,tag:{display:{Name:'{"text":""}'},HideFlags:127,CustomModelData:1010000,CustomData:{galaxy:{Type:"gui",id:"blank_cover"}}}}
 
 data remove storage galaxy:temp +recipe.assembly_table.build.standardization.blueprint[0]
 scoreboard players add #recipe.assembly_table.build.standardization._recursiveCount galaxy 1

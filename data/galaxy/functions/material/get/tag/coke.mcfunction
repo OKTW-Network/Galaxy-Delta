@@ -1,1 +1,1 @@
-data modify storage galaxy:get itemTag append value {display:{Name:'{"translate":"item.galaxy.coke","italic":false,"color":"white"}'},CustomModelData:101000,CustomData:{galaxy:{Type:"item",id:"coke",tag:{reinforcedBlastFurnaceFuel:6400s}}}}
+data modify storage galaxy:get itemTag append value {display:{Name:'{"translate":"item.galaxy.coke","italic":false,"color":"white"}'},CustomModelData:4000000,CustomData:{galaxy:{Type:"item",id:"coke",tag:{reinforcedBlastFurnaceFuel:6400s}}}}

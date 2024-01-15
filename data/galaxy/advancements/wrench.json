@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:glow_item_frame",
-            "nbt": "{CustomModelData:301000,HideFlags:127}"
+            "nbt": "{CustomModelData:3010000,HideFlags:127}"
         },
         "title": {"translate":"advancements.galaxy.wrench.title"},
         "description": {"translate":"advancements.galaxy.wrench.description"}
