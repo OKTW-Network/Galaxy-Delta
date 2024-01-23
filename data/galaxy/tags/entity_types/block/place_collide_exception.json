@@ -1,11 +1,11 @@
 {
   "values": [
     "#global:projectile",
-    "#minecraft:drop",
-    "#minecraft:item_frame",
+    "#minecraft:drops",
+    "#minecraft:item_frames",
     "minecraft:painting",
     "minecraft:marker",
-    "#minecraft:display",
+    "#minecraft:displays",
     "minecraft:interaction"
   ]
 }

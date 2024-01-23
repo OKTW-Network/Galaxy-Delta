@@ -11,10 +11,15 @@
     "use_place_entity_trigger_on_block": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": ["minecraft:glow_item_frame"],
-          "nbt": "{CustomData:{galaxy:{trigger:\"place_entity\"}}}"
-        }
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:glow_item_frame"],
+              "nbt": "{CustomData:{galaxy:{trigger:\"place_entity\"}}}"
+            }
+          }
+        ]
       }
     }
   },

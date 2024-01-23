@@ -1,5 +1,5 @@
 {
-  "condition": "minecraft:alternative",
+  "condition": "minecraft:any_of",
   "terms": [
     {
       "condition": "minecraft:inverted",
@@ -14,35 +14,26 @@
       }
     },
     {
-      "condition": "minecraft:inverted",
-      "term": {
-        "condition": "minecraft:alternative",
-        "terms": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "galaxy.block.hi_tech_crafting_table.requirementPageSlotMax": {
-                  "min": 5
-                }
-              }
-            }
-          },
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:location_check",
-              "predicate": {
-                "block": {
-                  "nbt": "{Items:[{Slot:5b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.requirement_icon\",gui:{Slot:5b}}}}}]}"
-                }
-              }
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "galaxy.block.hi_tech_crafting_table.requirementPageSlotMax": {
+              "min": 5
             }
           }
-        ]
-      }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "nbt": "{Items:[{Slot:10b,tag:{CustomData:{galaxy:{Type:\"gui\",id:\"hi_tech_crafting_table.recipe.requirement_icon\",gui:{Slot:10b}}}}}]}"
+            }
+          }
+        }
+      ]
     }
   ]
 }

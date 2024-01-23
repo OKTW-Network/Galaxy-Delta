@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 12,
-    "description": "OKTW Galaxy: Delta"
+    "description": "OKTW Galaxy: Delta",
+    "pack_format": 22,
+    "supported_formats": {
+      "min_inclusive": 18,
+      "max_inclusive": 22
+    }
   }
 }

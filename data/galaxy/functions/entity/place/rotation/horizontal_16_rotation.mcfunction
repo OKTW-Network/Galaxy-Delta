@@ -7,5 +7,5 @@ scoreboard players set #2 temp 22500
 scoreboard players operation #1 temp /= #2 temp
 execute if score #1 temp matches 16.. run scoreboard players remove #1 temp 16
 scoreboard players operation #2 temp *= #1 temp
-execute store result storage galaxy:temp +entity.summon.reversedRotation[0] float 0.001 run scoreboard players get #2 temp
-execute store result storage galaxy:temp +entity.summon.rotation[0] float 0.001 run scoreboard players add #2 temp 180000
+execute store result storage galaxy:temp +entity.summon.rotation[0] float 0.001 run scoreboard players get #2 temp
+execute store result storage galaxy:temp +entity.summon.reversedRotation[0] float 0.001 run scoreboard players add #2 temp 180000
