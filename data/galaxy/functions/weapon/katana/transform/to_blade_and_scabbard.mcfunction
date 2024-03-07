@@ -9,7 +9,7 @@ scoreboard players set #1 temp 1000101
 scoreboard players set #2 temp 10000
 execute store result score #3 temp run data get storage galaxy:temp +weapon.katana.transform.input.tag.CustomModelData
 scoreboard players remove #3 temp 1000000
-scoreboard players operation #3 temp /= #1000 num
+scoreboard players operation #3 temp /= #10000 num
 scoreboard players operation #2 temp *= #3 temp
 scoreboard players operation #weapon.katana.transform.custom_model_data_value galaxy = #2 temp
 execute store result storage galaxy:temp +weapon.katana.transform.result.blade.tag.CustomModelData int 1 run scoreboard players operation #1 temp += #2 temp
